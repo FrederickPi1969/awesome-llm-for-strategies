@@ -1,6 +1,6 @@
-# LLM for Strategies
+# Awesome LLM for Strategies
 
-A curated research repository for large language models in strategic decision-making: finance, investment, geoeconomics, geopolitics, governance, forecasting, policy analysis, diplomatic simulation, and multi-agent strategy environments.
+An Awesome-style curated research repository for large language models in strategic decision-making: finance, investment, geoeconomics, geopolitics, governance, forecasting, policy analysis, diplomatic simulation, and multi-agent strategy environments.
 
 > Status: preliminary public seed. This repository starts from 110 seed papers and a first systematic Semantic Scholar expansion over papers that cite them and papers they cite.
 

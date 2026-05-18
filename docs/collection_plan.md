@@ -2,7 +2,7 @@
 
 ## Objective
 
-Build a high-impact Awesome-style repository for LLMs in strategic decision-making: finance, investment, geoeconomics, geopolitics, governance, forecasting, policy analysis, diplomatic simulation, and multi-agent strategy environments.
+Build a high-impact Awesome LLM for Strategies repository for LLMs in strategic decision-making: finance, investment, geoeconomics, geopolitics, governance, forecasting, policy analysis, diplomatic simulation, and multi-agent strategy environments.
 
 ## Round 0: Seed Consolidation
 
