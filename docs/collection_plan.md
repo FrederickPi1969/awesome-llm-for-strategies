@@ -41,6 +41,8 @@ Current status: complete.
 - Filter candidates by the five focus areas before adding them to the README.
 - Keep finance/trading candidates out unless the paper is directly about policymaking, geopolitics, or strategic decision-making.
 
+Current status: complete for the first strategy-only pass. The README now includes Semantic Scholar citation counts for core papers and a manually filtered set of high-citation/high-relevance expansion candidates.
+
 ## Round 2: Manual Curation
 
 - Add accepted papers to the README under the correct category.
