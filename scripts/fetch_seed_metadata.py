@@ -44,6 +44,23 @@ def normalize_title(value: str) -> str:
     return " ".join(value.lower().split())
 
 
+def title_tokens(value: str) -> set[str]:
+    stopwords = {"a", "an", "and", "as", "at", "for", "from", "in", "of", "on", "the", "to", "with"}
+    return {
+        token
+        for token in re.findall(r"[a-z0-9]+", normalize_title(value))
+        if len(token) > 1 and token not in stopwords
+    }
+
+
+def title_similarity(left: str, right: str) -> float:
+    left_tokens = title_tokens(left)
+    right_tokens = title_tokens(right)
+    if not left_tokens or not right_tokens:
+        return 0.0
+    return len(left_tokens & right_tokens) / len(left_tokens | right_tokens)
+
+
 def parse_arxiv_id(url: str) -> str:
     match = re.search(r"arxiv\.org/(?:abs|html|pdf)/([^/?#]+)", url or "", re.I)
     if not match:
@@ -151,7 +168,11 @@ def resolve_by_title(client: SemanticScholarClient, title: str) -> tuple[dict[st
     for candidate in candidates:
         if normalize_title(candidate.get("title") or "") == target:
             return candidate, "title_exact"
-    return candidates[0], "title_top_result"
+    best = max(candidates, key=lambda candidate: title_similarity(title, candidate.get("title") or ""))
+    best_score = title_similarity(title, best.get("title") or "")
+    if best_score < 0.68:
+        raise RuntimeError(f"title search returned no sufficiently similar candidate; best_score={best_score:.2f}")
+    return best, "title_fuzzy"
 
 
 def resolve_paper(client: SemanticScholarClient, row: dict[str, str]) -> tuple[dict[str, Any], str]:

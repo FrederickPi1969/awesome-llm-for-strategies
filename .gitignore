@@ -9,3 +9,7 @@ data/processed/candidate_related_papers_preliminary.csv
 data/processed/expansion_edges_preliminary.csv
 data/processed/resolve_failures.csv
 data/processed/seeds_enriched.csv
+data/processed/second_order/candidate_related_papers_preliminary.csv
+data/processed/second_order/expansion_edges_preliminary.csv
+data/processed/second_order/resolve_failures.csv
+data/processed/second_order/seeds_enriched.csv

@@ -11,7 +11,9 @@ Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-20
 ## Contents
 
 - [Core Papers](#core-papers)
-- [High-Citation and High-Relevance Related Papers from Expansion](#high-citation-and-high-relevance-related-papers-from-expansion)
+- [First-Order Expansion Candidates](#first-order-expansion-candidates)
+- [Priority Seeds for Second-Order Expansion](#priority-seeds-for-second-order-expansion)
+- [Second-Order Expansion Results](#second-order-expansion-results)
 - [Data and Collection](#data-and-collection)
 
 ## Core Papers
@@ -74,9 +76,9 @@ Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-20
 - [Geoeconomic Pressure](https://www.nber.org/papers/w34020) (2026 or current working paper) - Core; citations: 1.
 - [The AI-GPR Index: Measuring Geopolitical Risk using Artificial Intelligence](https://www.matteoiacoviello.com/research_files/AI_GPR_PAPER.pdf) (2024 or 2025) - Core; citations: n/a.
 
-## High-Citation and High-Relevance Related Papers from Expansion
+## First-Order Expansion Candidates
 
-These papers were surfaced by expanding the core list through Semantic Scholar citations and references, then filtering for relevance to politics, geopolitics, policymaking, strategic studies, and decision-making. They are strong candidates for promotion into the main sections after manual review.
+These papers were surfaced by expanding the core list through Semantic Scholar citations and references, then filtering for relevance to politics, geopolitics, policymaking, strategic studies, and decision-making. They are strong first-round candidates for promotion into the main sections after manual review.
 
 ### Forecasting and Decision-Making
 
@@ -117,6 +119,117 @@ These papers were surfaced by expanding the core list through Semantic Scholar c
 - [A Large-Scale Simulation on Large Language Models for Decision-Making in Political Science](https://www.semanticscholar.org/paper/66d89814faca6ca8209cf23ca4ce64e91ab5d035) (2024) - citations: 7; seed hits: 1.
 - [Echoes of Power: Investigating Geopolitical Bias in US and China Large Language Models](https://www.semanticscholar.org/paper/a0a77a0d66e213c6014aefb8f9a0705aed0da1f5) (2025) - citations: 5; seed hits: 2.
 
+## Priority Seeds for Second-Order Expansion
+
+These are the first-order papers selected for deeper citation/reference expansion because they are either recent and strongly relevant, highly cited and strongly relevant, or both.
+
+### Recent and Highly Relevant (2024+)
+
+- [AI can help humans find common ground in democratic deliberation](https://www.semanticscholar.org/paper/5456e833710dba2bb3ae92621fa89c27733b1db0) (2024) - citations: 208; seed hits: 1; category: Politics, Governance, and Public Opinion.
+- [Large language models as a substitute for human experts in annotating political text](https://www.semanticscholar.org/paper/f8b64c2dad165c92cfb43081c7e0ed70b077ae85) (2024) - citations: 94; seed hits: 1; category: Politics, Governance, and Public Opinion.
+- [Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents](https://www.semanticscholar.org/paper/7b508f5a3168e2ecfcb821752dcae576905a50c5) (2024) - citations: 87; seed hits: 1; category: Multi-Agent Social and Political Simulation.
+- [Wisdom of the silicon crowd: LLM ensemble prediction capabilities rival human crowd accuracy](https://www.semanticscholar.org/paper/e78188daf9a18840933f3acfc9b3ccfea3db7856) (2024) - citations: 72; seed hits: 3; category: Forecasting and Decision-Making.
+- [From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents](https://www.semanticscholar.org/paper/11a6d66791e244b01bf1a23a98158be789854876) (2024) - citations: 71; seed hits: 2; category: Multi-Agent Social and Political Simulation.
+- [Strategic behavior of large language models and the role of game structure versus contextual framing](https://www.semanticscholar.org/paper/e46db119b320df6ac4a5091e1561c54c5aece797) (2024) - citations: 57; seed hits: 1; category: Geopolitics, Diplomacy, and Strategic Simulation.
+- [ElectionSim: Massive Population Election Simulation Powered by Large Language Model Driven Agents](https://www.semanticscholar.org/paper/57494e9f4eadbcdcd0dd4a6ba5c182dc64c0511d) (2024) - citations: 37; seed hits: 4; category: Multi-Agent Social and Political Simulation.
+- [Network formation and dynamics among multi-LLMs](https://www.semanticscholar.org/paper/2acbb0a3833c13ecaec963e6b481c13152d5d585) (2024) - citations: 35; seed hits: 3; category: Multi-Agent Social and Political Simulation.
+- [On Large Language Models in National Security Applications](https://www.semanticscholar.org/paper/bd802c99e2c2f5ead95507f252d6403f54077f18) (2024) - citations: 31; seed hits: 3; category: Geopolitics, Diplomacy, and Strategic Simulation.
+- [Emergence of human-like polarization among large language model agents](https://www.semanticscholar.org/paper/61d18f878dcd6ee9af171e45e763af114e6eced4) (2025) - citations: 23; seed hits: 1; category: Politics, Governance, and Public Opinion.
+- [Validation is the central challenge for generative social simulation: a critical review of LLMs in agent-based modeling](https://www.semanticscholar.org/paper/5cd29f769cced349fb7c5affb5c6d27fb387a69c) (2025) - citations: 12; seed hits: 4; category: Multi-Agent Social and Political Simulation.
+- [Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle](https://www.semanticscholar.org/paper/51229961bb32b1233be87b77946bfebefaff1f96) (2024) - citations: 11; seed hits: 3; category: Forecasting and Decision-Making.
+- [Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity](https://www.semanticscholar.org/paper/c79d3682d8506601b3018e91951aa2c7c1da42c0) (2025) - citations: 8; seed hits: 2; category: Multi-Agent Social and Political Simulation.
+- [Echoes of Power: Investigating Geopolitical Bias in US and China Large Language Models](https://www.semanticscholar.org/paper/a0a77a0d66e213c6014aefb8f9a0705aed0da1f5) (2025) - citations: 5; seed hits: 2; category: Politics, Governance, and Public Opinion.
+
+### High-Citation and Highly Relevant
+
+- [Whose Opinions Do Language Models Reflect?](https://www.semanticscholar.org/paper/e38a29f6463f38f43797b128673b9e44d18a991e) (2023) - citations: 782; seed hits: 4; category: Politics, Governance, and Public Opinion.
+- [Human-level play in the game of Diplomacy by combining language models with strategic reasoning](https://www.semanticscholar.org/paper/e89ed6bb1864558e3889f5f2fb8931643c633479) (2022) - citations: 548; seed hits: 3; category: Geopolitics, Diplomacy, and Strategic Simulation.
+- [Playing repeated games with large language models](https://www.semanticscholar.org/paper/3f98cf521222c65522200037c0eb95a17081b2dd) (2023) - citations: 243; seed hits: 1; category: Geopolitics, Diplomacy, and Strategic Simulation.
+- [AI can help humans find common ground in democratic deliberation](https://www.semanticscholar.org/paper/5456e833710dba2bb3ae92621fa89c27733b1db0) (2024) - citations: 208; seed hits: 1; category: Politics, Governance, and Public Opinion.
+- [War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars](https://www.semanticscholar.org/paper/9ad3edeea4732cb44a26f39652a668d1a562b0cf) (2023) - citations: 149; seed hits: 2; category: Geopolitics, Diplomacy, and Strategic Simulation.
+
+## Second-Order Expansion Results
+
+These papers came from expanding the priority seeds above. The longlist was filtered again, and only highly relevant papers are shown here.
+
+### Recent and Highly Relevant (2024+)
+
+#### Behavioral and Opinion Simulation
+
+- [A Turing test of whether AI chatbots are behaviorally similar to humans](https://www.semanticscholar.org/paper/331fa9e381cd219a3961cd5ef7dda401e8751606) (2024) - citations: 254; seed hits: 1.
+- [Beyond Demographics: Aligning Role-playing LLM-based Agents Using Human Belief Networks](https://www.semanticscholar.org/paper/04e5c40f897098d1781e2d6ee721f5fafcbf0417) (2024) - citations: 41; seed hits: 1.
+
+#### Geopolitics, Diplomacy, and Strategic Simulation
+
+- [COA-GPT: Generative Pre-Trained Transformers for Accelerated Course of Action Development in Military Operations](https://www.semanticscholar.org/paper/a1b7eb8f067eff50e726555d1e69cbd6a0b0fea0) (2024) - citations: 28; seed hits: 1.
+- [BattleAgent: Multi-modal Dynamic Emulation on Historical Battles to Complement Historical Analysis](https://www.semanticscholar.org/paper/fca5511c66bb1f8647063ce2a08a81441a254a36) (2024) - citations: 26; seed hits: 1.
+
+#### Multi-Agent Social and Political Simulation
+
+- [OASIS: Open Agent Social Interaction Simulations with One Million Agents](https://www.semanticscholar.org/paper/9a6206f4ea5a809132c1df7697c37a53b88aeff3) (2024) - citations: 97; seed hits: 1.
+- [Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation](https://www.semanticscholar.org/paper/4cebc2cff69642ed9f0d847d7c01f050703b0856) (2024) - citations: 81; seed hits: 4.
+- [GenSim: A General Social Simulation Platform with Large Language Model based Agents](https://www.semanticscholar.org/paper/b60d60e04b2ab6fb1845101bdd3156651b12482d) (2024) - citations: 41; seed hits: 1.
+- [SocioVerse: A World Model for Social Simulation Powered by LLM Agents and A Pool of 10 Million Real-World Users](https://www.semanticscholar.org/paper/8445acec53b5668d6fe0701513e99590be4233bb) (2025) - citations: 40; seed hits: 2.
+- [Agent-Based Modelling Meets Generative AI in Social Network Simulations](https://www.semanticscholar.org/paper/52d0ea706a1272a98c58fddfdf09ab9b1e159902) (2024) - citations: 34; seed hits: 2.
+
+#### Politics, Governance, and Public Opinion
+
+- [Generative Echo Chamber? Effect of LLM-Powered Search Systems on Diverse Information Seeking](https://www.semanticscholar.org/paper/0b26abcbb54394c79234eeefe9cb1da5f183d47b) (2024) - citations: 171; seed hits: 1.
+- [Systematic Biases in LLM Simulations of Debates](https://www.semanticscholar.org/paper/f503b95c0a64f6a84eb1d90e5ea1e094b1e1892b) (2024) - citations: 119; seed hits: 1.
+- [Performance and biases of Large Language Models in public opinion simulation](https://www.semanticscholar.org/paper/e6d14d140c4faaf8f3d9f47e61cc5c6091bccf1e) (2024) - citations: 97; seed hits: 1.
+- [From Skepticism to Acceptance: Simulating the Attitude Dynamics Toward Fake News](https://www.semanticscholar.org/paper/1bd4b8be136072c8f56114f2f8479aaed2ad6d9b) (2024) - citations: 74; seed hits: 2.
+- [Hidden Persuaders: LLMs’ Political Leaning and Their Influence on Voters](https://www.semanticscholar.org/paper/af47fadf6adaa81c949c82c8479734d4ea727795) (2024) - citations: 74; seed hits: 1.
+- [LLM-generated messages can persuade humans on policy issues](https://www.semanticscholar.org/paper/da2ed9d7804f138a1108089891fd07df15a70a3a) (2025) - citations: 67; seed hits: 1.
+- [Random Silicon Sampling: Simulating Human Sub-Population Opinion Using a Large Language Model Based on Group-Level Demographic Information](https://www.semanticscholar.org/paper/c9110c103f26a886ebaea98ef6501724add1d5a4) (2024) - citations: 44; seed hits: 1.
+- [Decoding Echo Chambers: LLM-Powered Simulations Revealing Polarization in Social Networks](https://www.semanticscholar.org/paper/ddde6399e0c9bae504f1f80d47feff6cacbcec64) (2024) - citations: 32; seed hits: 1.
+- [A Public Dataset Tracking Social Media Discourse about the 2024 U.S. Presidential Election on Twitter/X](https://www.semanticscholar.org/paper/30d9e520a2fea9651f198a4dadf0c8c0a2ff8b1f) (2024) - citations: 24; seed hits: 1.
+
+#### Strategic Reasoning and Decision-Making
+
+- [Generative Artificial Intelligence and Evaluating Strategic Decisions](https://www.semanticscholar.org/paper/1b43632036f7e1f45a4759849f2924478eccc81e) (2024) - citations: 119; seed hits: 1.
+- [LLM as a Mastermind: A Survey of Strategic Reasoning with Large Language Models](https://www.semanticscholar.org/paper/ac8bc36c253c8593492afc2db620c01b152dc778) (2024) - citations: 115; seed hits: 3.
+- [GTBench: Uncovering the Strategic Reasoning Limitations of LLMs via Game-Theoretic Evaluations](https://www.semanticscholar.org/paper/3e2ecfd1934a64582a6d2b5be20f18db78cc787d) (2024) - citations: 112; seed hits: 3.
+- [GameBench: Evaluating Strategic Reasoning Abilities of LLM Agents](https://www.semanticscholar.org/paper/c5bf4546eaf4b6c8e531dae0aebb76208d719539) (2024) - citations: 69; seed hits: 1.
+- [How Far Are We on the Decision-Making of LLMs? Evaluating LLMs' Gaming Ability in Multi-Agent Environments](https://www.semanticscholar.org/paper/f8359e7d74b2be343379472be3d2b452fcfa4801) (2024) - citations: 67; seed hits: 2.
+- [Nicer Than Humans: How do Large Language Models Behave in the Prisoner's Dilemma?](https://www.semanticscholar.org/paper/9b2743735f7ae61c4b54fdc46193b626014ee102) (2024) - citations: 65; seed hits: 2.
+- [Game-theoretic LLM: Agent Workflow for Negotiation Games](https://www.semanticscholar.org/paper/659d78d44ed1fab15ac2a7b8d81dd6f9641b2d7c) (2024) - citations: 59; seed hits: 2.
+- [Decision-Making Behavior Evaluation Framework for LLMs under Uncertain Context](https://www.semanticscholar.org/paper/a5a3dd4af6e754ac82670751f6789c389e91d533) (2024) - citations: 53; seed hits: 1.
+- [Simulating Human Strategic Behavior: Comparing Single and Multi-agent LLMs](https://www.semanticscholar.org/paper/952f4efa812589a113b7825693a809e093a02d83) (2024) - citations: 50; seed hits: 1.
+- [Shall We Team Up: Exploring Spontaneous Cooperation of Competing LLM Agents](https://www.semanticscholar.org/paper/11d4478587c4d2ecb195fe911809946928767657) (2024) - citations: 49; seed hits: 2.
+- [Measuring Bargaining Abilities of LLMs: A Benchmark and A Buyer-Enhancement Method](https://www.semanticscholar.org/paper/f85ec64b14494216702d5218f58e725224ad80aa) (2024) - citations: 41; seed hits: 1.
+- [Game Theory Meets Large Language Models: A Systematic Survey](https://www.semanticscholar.org/paper/c9df92684eab49aea9b74a4b6409e2fb5963834d) (2024) - citations: 32; seed hits: 2.
+- [Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas](https://www.semanticscholar.org/paper/844fdeb5089e6d1bb99fe3c8a830bf7f722ba910) (2024) - citations: 32; seed hits: 1.
+- [Cultural Evolution of Cooperation among LLM Agents](https://www.semanticscholar.org/paper/f6f6535192427abdc122c1d74b1efdb5624da4f0) (2024) - citations: 26; seed hits: 1.
+- [A Survey on Large Language Model-Based Social Agents in Game-Theoretic Scenarios](https://www.semanticscholar.org/paper/30dcacbf0b7a93196e07c721be35274afdcb4aa4) (2024) - citations: 24; seed hits: 3.
+
+#### Strategic Risk and Safety
+
+- [Multi-Agent Risks from Advanced AI](https://www.semanticscholar.org/paper/4c1a51f7b4d97e93564e3a4728dc6ad2bd28e4b6) (2025) - citations: 127; seed hits: 1.
+
+### High-Citation and Highly Relevant
+
+#### Multi-Agent Social and Political Simulation
+
+- [Social Simulacra: Creating Populated Prototypes for Social Computing Systems](https://www.semanticscholar.org/paper/49b499598a8864eee55ab264fc16a5bf8d2f87ef) (2022) - citations: 456; seed hits: 4.
+
+#### Politics, Governance, and Public Opinion
+
+- [More human than human: measuring ChatGPT political bias](https://www.semanticscholar.org/paper/3d8a3517231643c1df79bc32c8c2664a4cba3a41) (2023) - citations: 407; seed hits: 2.
+- [Should ChatGPT be Biased? Challenges and Risks of Bias in Large Language Models](https://www.semanticscholar.org/paper/16d83e930a4dab2d49f5d276838ddce79df3f787) (2023) - citations: 369; seed hits: 1.
+- [The political ideology of conversational AI: Converging evidence on ChatGPT's pro-environmental, left-libertarian orientation](https://www.semanticscholar.org/paper/b6f8cffc5da51581aec71d919d010d55e5ac068a) (2023) - citations: 322; seed hits: 2.
+- [Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations](https://www.semanticscholar.org/paper/c9ad9d69d7568110dd5527598a92c7f8b335eef4) (2023) - citations: 317; seed hits: 1.
+- [Cultural bias and cultural alignment of large language models](https://www.semanticscholar.org/paper/5f8bf881c80125452e4a73ad51fdb2c72c65c551) (2023) - citations: 307; seed hits: 1.
+
+#### Strategic Reasoning and Decision-Making
+
+- [SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents](https://www.semanticscholar.org/paper/f6e893b3e2ee7a62c2fe8a3b0e33920c3e596969) (2023) - citations: 302; seed hits: 3.
+- [Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf](https://www.semanticscholar.org/paper/24d52678c887331b9da0368e8a2f58bec07f7203) (2023) - citations: 287; seed hits: 3.
+- [Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback](https://www.semanticscholar.org/paper/2e6b6de08f459e2165b11ed8d2103916966b0fcf) (2023) - citations: 248; seed hits: 2.
+
+#### Strategic Risk and Safety
+
+- [AI deception: A survey of examples, risks, and potential solutions](https://www.semanticscholar.org/paper/afe455cfb03b9487c8f0b67993f42f834b633c23) (2023) - citations: 314; seed hits: 1.
+
 ## Data and Collection
 
 - Core seeds: 40
@@ -125,17 +238,26 @@ These papers were surfaced by expanding the core list through Semantic Scholar c
 - Raw citation/reference edges: 3889
 - Relevance-filtered candidate longlist: 1681
 - Curated candidate additions in README: 27
+- Priority seeds for second-order expansion: 18
+- Second-order expanded seeds: 18
+- Second-order citation/reference edges: 2871
+- Second-order longlist candidates: 1513
+- Curated second-order additions in README: 44
 
 Data files:
 
 - `data/raw/core_seed_papers.csv`: current homepage seed list.
 - `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.
 - `data/processed/candidate_additions_strategy.csv`: selected high-citation/high-relevance expansion candidates shown above.
+- `data/processed/priority_expansion_seeds.csv`: first-order papers selected for deeper expansion.
+- `data/processed/second_order/run_summary.json`: second-order Semantic Scholar expansion summary.
+- `data/processed/second_order_candidate_additions_strategy.csv`: selected recent and high-citation second-order additions shown above.
 
 Scripts:
 
 - `scripts/expand_semantic_scholar.py`: resolves seeds, fetches citations/references, and writes expansion tables.
 - `scripts/fetch_seed_metadata.py`: enriches seed papers with Semantic Scholar metadata.
+- `scripts/build_priority_expansion.py`: selects priority expansion seeds and curated second-order additions.
 - `scripts/build_readme.py`: rebuilds this README and the curated candidate CSV from processed data.
 
 ## Contributing
