@@ -8,7 +8,7 @@ Out of scope: finance, trading, stock prediction, portfolio management, generic 
 
 Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-20.
 
-Current curated coverage: **129 unique papers** organized into 8 themes.
+Current curated coverage: **159 unique papers** organized into 9 themes.
 
 ## Contents
 
@@ -41,6 +41,49 @@ Current curated coverage: **129 unique papers** organized into 8 themes.
 - [Game Theory Meets Large Language Models: A Systematic Survey](https://www.semanticscholar.org/paper/c9df92684eab49aea9b74a4b6409e2fb5963834d) (2024) - citations: 32.
 - [Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas](https://www.semanticscholar.org/paper/844fdeb5089e6d1bb99fe3c8a830bf7f722ba910) (2024) - citations: 32.
 - [A Survey on Large Language Model-Based Social Agents in Game-Theoretic Scenarios](https://www.semanticscholar.org/paper/30dcacbf0b7a93196e07c721be35274afdcb4aa4) (2024) - citations: 24.
+
+### Classical Political NLP and Information Extraction
+
+30 papers.
+
+#### Political text as data and policy-position extraction
+
+- [Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts](https://www.semanticscholar.org/paper/b9921fb4d1448058642897797e77bdaf8f444404) (2013) - Core; citations: 2987.
+- [Extracting Policy Positions from Political Texts Using Words as Data](https://www.semanticscholar.org/paper/7d9cc63dfbd34acf271e3a2c922ea1c07fb2f482) (2003) - Core; citations: 1353.
+- [A Method of Automated Nonparametric Content Analysis for Social Science](https://www.semanticscholar.org/paper/f057500971a5466f9580002e495044fd3e64429d) (2010) - Core; citations: 815.
+- [A Scaling Model for Estimating Time-Series Party Positions from Texts](https://www.semanticscholar.org/paper/5109c519cd4442041a5d3915ca305eba6d68ee10) (2007) - Core; citations: 741.
+- [How to Analyze Political Attention with Minimal Assumptions and Costs](https://www.semanticscholar.org/paper/43233894df92aba0267d182d1f0b27651d0935ee) (2010) - Core; citations: 703.
+- [Fightin' Words: Lexical Feature Selection and Evaluation for Identifying the Content of Political Conflict](https://www.semanticscholar.org/paper/ebc37575aa4e4afeb1dc94a18022cc0ebeb2fe09) (2008) - Core; citations: 646.
+- [A Bayesian Hierarchical Topic Model for Political Texts: Measuring Expressed Agendas in Senate Press Releases](https://www.semanticscholar.org/paper/b06056c20f4ed118e7db9f4e35e674570b2cf8f6) (2010) - Core; citations: 584.
+- [Computer-Assisted Text Analysis for Comparative Politics](https://www.semanticscholar.org/paper/ca1469279ace2e341fd385c884129367e1b7dda7) (2015) - Core; citations: 464.
+
+#### Legislative speech and policy text classification
+
+- [Get out the vote: Determining support or opposition from Congressional floor-debate transcripts](https://www.semanticscholar.org/paper/dc832b298290e316d1218266f6f33de97c9b5679) (2006) - Core; citations: 648.
+- [The Media Frames Corpus: Annotations of Frames Across Issues](https://www.semanticscholar.org/paper/92408cc19033cc4af29accef3793014ab79355c2) (2015) - Important; citations: 271.
+- [Predicting Legislative Roll Calls from Text](https://www.semanticscholar.org/paper/62e14dec73970514a5e3f81b059d63b34e9ad37c) (2011) - Core; citations: 209.
+- [Measuring Political Positions from Legislative Speech](https://www.semanticscholar.org/paper/78073f687117e15ca4786def603d1509d09c99bf) (2016) - Core; citations: 155.
+- [Textual Predictors of Bill Survival in Congressional Committees](https://www.semanticscholar.org/paper/36da409e56a1a47691bd880fa73954a4aeae41b3) (2012) - Core; citations: 70.
+
+#### Political event data and conflict information extraction
+
+- [An Automated Information Extraction Tool for International Conflict Data with Performance as Good as Human Coders: A Rare Events Evaluation Design](https://www.semanticscholar.org/paper/195ba4e60c5840de438aa5b22bd99aca33339ffd) (2003) - Core; citations: 432.
+- [Integrated Data for Events Analysis (IDEA): An Event Typology for Automated Events Data Development](https://www.semanticscholar.org/paper/e2ea7868124efba5283ee98f3d0db5ebb296cc86) (2003) - Core; citations: 257.
+- [Conflict and Mediation Event Observations (CAMEO): A New Event Data Framework for the Analysis of Foreign Policy Interactions](https://www.semanticscholar.org/paper/775d7f7262ffb42972e5b87a245bc4b63c20396d) (2002) - Core; citations: 189.
+- [Political Science: KEDS-A Program for the Machine Coding of Event Data](https://www.semanticscholar.org/paper/f2a0ce8d7316814628853ec135d465e25dd89279) (1994) - Core; citations: 165.
+- [Precedents, Progress, and Prospects in Political Event Data](https://www.semanticscholar.org/paper/86b1d0c06965266939a167ebe135bfda62234d0d) (2012) - Important; citations: 126.
+- [Learning to Extract International Relations from Political Context](https://www.semanticscholar.org/paper/de0c0563ee36f3485b5547482cf2b9296107d716) (2013) - Core; citations: 76.
+- [Automated Coding of International Event Data Using Sparse Parsing Techniques](https://www.semanticscholar.org/paper/f9dc1de1dea55eef0bfdea0231e95045dd7e64b3) (2000) - Core; citations: 67.
+- [The CAMEO (Conflict and Mediation Event Observations) Actor Coding Framework](https://www.semanticscholar.org/paper/dd9b3253977b889490c5baf33502230b6939fa6b) (2008) - Important; citations: 67.
+- [Automated Coding of Political Event Data](https://www.semanticscholar.org/paper/f572d3ae9579b94dd7576ea16ff879ee357c54d9) (2013) - Important; citations: 52.
+- [Automatic Extraction of Events from Open Source Text for Predictive Forecasting](https://www.semanticscholar.org/paper/323d03d202b9fea2696cbfa86ef86a29bea10b50) (2013) - Important; citations: 52.
+- [Three's a Charm?: Open Event Data Coding with EL:DIABLO, PETRARCH, and the Open Event Data Alliance.](https://www.semanticscholar.org/paper/ebec268b3097a364f04c9630521ca2c16a3bdfb2) (2014) - Important; citations: 49.
+- [Automated Production of High-Volume, Near-Real-Time Political Event Data](https://www.semanticscholar.org/paper/22317c1fb2e0339771cb6f263e58c31ea421054c) (2011) - Important; citations: 35.
+- [Improving the selection of news reports for event coding using ensemble classification](https://www.semanticscholar.org/paper/b1dc323fcad19c28240906b989afc02f7d2849d4) (2015) - Important; citations: 34.
+- [Creating Custom Event Data Without Dictionaries: A Bag-of-Tricks](https://www.semanticscholar.org/paper/3a8d5ee46951eda62e38ca4d9b364de5387d8be4) (2023) - Important; citations: 9.
+- [Creating a Real-Time, Reproducible Event Dataset](https://www.semanticscholar.org/paper/680ef0b7b3e0a415a29ca28e4bb40dad220ad69e) (2016) - Important; citations: 5.
+- [Political Event Coding as Text-to-Text Sequence Generation](https://www.semanticscholar.org/paper/f4666ec25c7af298ed359c0eca05295b908bab59) (2022) - Important; citations: 3.
+- [GDELT: Global Data on Events, Location and Tone, 1979-2012](https://data.gdeltproject.org/documentation/ISA.2013.GDELT.pdf) (2013) - Core; citations: n/a.
 
 ### Politics, Democracy, Public Opinion, and Persuasion
 
@@ -277,11 +320,11 @@ Current curated coverage: **129 unique papers** organized into 8 themes.
 
 ## Data and Collection
 
-- Total unique papers in the thematic list: 129
-- Source rows checked before merge: 147
+- Total unique papers in the thematic list: 159
+- Source rows checked before merge: 177
 - Duplicate source rows removed during merge: 18
 - Core seed papers: 40
-- Curated additions merged into themes: 89
+- Curated additions merged into themes: 119
 - Initial citation/reference edges scanned: 3889
 - Additional citation/reference edges scanned from priority papers: 2871
 - Targeted strategic-decision related-work edges scanned: 119
@@ -291,8 +334,10 @@ Data files:
 - `data/processed/thematic_papers.csv`: merged thematic paper table used to build the homepage.
 - `data/raw/core_seed_papers.csv`: original core seed list.
 - `data/raw/targeted_strategic_decisions_seed.csv`: targeted trace seed for the strategic-decision paper.
+- `data/raw/classical_political_nlp_ie_seed.csv`: curated classical political NLP and information-extraction seed list.
 - `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.
 - `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.
+- `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.
 - `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.
 
 Scripts:

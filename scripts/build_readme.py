@@ -18,6 +18,7 @@ CURATED_CANDIDATES = ROOT / "data" / "processed" / "candidate_additions_strategy
 PRIORITY_SEEDS = ROOT / "data" / "processed" / "priority_expansion_seeds.csv"
 SECOND_ORDER_CANDIDATES = ROOT / "data" / "processed" / "second_order_candidate_additions_strategy.csv"
 TARGETED_RELATED_WORKS = ROOT / "data" / "processed" / "targeted_related_works_strategy.csv"
+CLASSICAL_POLITICAL_NLP_IE = ROOT / "data" / "processed" / "classical_political_nlp_ie_enriched.csv"
 RUN_SUMMARY = ROOT / "data" / "processed" / "run_summary.json"
 SECOND_ORDER_SUMMARY = ROOT / "data" / "processed" / "second_order" / "run_summary.json"
 TARGETED_SUMMARY = ROOT / "data" / "processed" / "targeted_strategic_decisions" / "run_summary.json"
@@ -26,6 +27,7 @@ README = ROOT / "README.md"
 
 THEME_ORDER = [
     "Foundations, Surveys, and Methods",
+    "Classical Political NLP and Information Extraction",
     "Politics, Democracy, Public Opinion, and Persuasion",
     "Policymaking, Governance, and Institutional Decision Support",
     "Geopolitics, Diplomacy, National Security, and Wargaming",
@@ -40,6 +42,11 @@ SUBTHEME_ORDER = {
         "Political science and computational social science overviews",
         "Social simulation and agent-based modeling reviews",
         "Strategic reasoning and game-theoretic reviews",
+    ],
+    "Classical Political NLP and Information Extraction": [
+        "Political text as data and policy-position extraction",
+        "Legislative speech and policy text classification",
+        "Political event data and conflict information extraction",
     ],
     "Politics, Democracy, Public Opinion, and Persuasion": [
         "Political ideology, representation, and bias",
@@ -99,6 +106,36 @@ Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews
 Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews|Game Theory Meets Large Language Models: A Systematic Survey
 Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews|Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas
 Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews|A Survey on Large Language Model-Based Social Agents in Game-Theoretic Scenarios
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Computer-Assisted Text Analysis for Comparative Politics
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|A Method of Automated Nonparametric Content Analysis for Social Science
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Extracting Policy Positions from Political Texts Using Words as Data
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|A Scaling Model for Estimating Time-Series Party Positions from Texts
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Fightin' Words: Lexical Feature Selection and Evaluation for Identifying the Content of Political Conflict
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|How to Analyze Political Attention with Minimal Assumptions and Costs
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|A Bayesian Hierarchical Topic Model for Political Texts: Measuring Expressed Agendas in Senate Press Releases
+Classical Political NLP and Information Extraction|Legislative speech and policy text classification|Measuring Political Positions from Legislative Speech
+Classical Political NLP and Information Extraction|Legislative speech and policy text classification|Get out the vote: Determining support or opposition from Congressional floor-debate transcripts
+Classical Political NLP and Information Extraction|Legislative speech and policy text classification|Predicting Legislative Roll Calls from Text
+Classical Political NLP and Information Extraction|Legislative speech and policy text classification|Textual Predictors of Bill Survival in Congressional Committees
+Classical Political NLP and Information Extraction|Legislative speech and policy text classification|The Media Frames Corpus: Annotations of Frames Across Issues
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|An Automated Information Extraction Tool for International Conflict Data with Performance as Good as Human Coders: A Rare Events Evaluation Design
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Political Science: KEDS-A Program for the Machine Coding of Event Data
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Automated Coding of International Event Data Using Sparse Parsing Techniques
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Integrated Data for Events Analysis (IDEA): An Event Typology for Automated Events Data Development
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Conflict and Mediation Event Observations (CAMEO): A New Event Data Framework for the Analysis of Foreign Policy Interactions
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|The CAMEO (Conflict and Mediation Event Observations) Actor Coding Framework
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|GDELT: Global Data on Events, Location and Tone, 1979-2012
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Automated Production of High-Volume, Near-Real-Time Political Event Data
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Automated Coding of Political Event Data
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Precedents, Progress, and Prospects in Political Event Data
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Three's a Charm?: Open Event Data Coding with EL:DIABLO, PETRARCH, and the Open Event Data Alliance.
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Learning to Extract International Relations from Political Context
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Automatic Extraction of Events from Open Source Text for Predictive Forecasting
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Improving the selection of news reports for event coding using ensemble classification
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Creating a Real-Time, Reproducible Event Dataset
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Political Event Coding as Text-to-Text Sequence Generation
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Creating Custom Event Data Without Dictionaries: A Bag-of-Tricks
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Whose Opinions Do Language Models Reflect?
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Large language models reflect the ideology of their creators
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Echoes of Power: Investigating Geopolitical Bias in US and China Large Language Models
@@ -388,6 +425,23 @@ def source_rows() -> list[dict[str, str]]:
             }
         )
 
+    for row in read_csv_if_exists(CLASSICAL_POLITICAL_NLP_IE):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("resolved_year") or row.get("year_or_timeframe", ""),
+                "citationCount": citation_display({"title": row["title"]}, row),
+                "importance": row.get("priority", "Core"),
+                "url": row.get("semantic_scholar_url") or row.get("source_url", ""),
+                "doi": row.get("doi", ""),
+                "arxiv": row.get("arxiv", ""),
+                "venue": row.get("venue", ""),
+                "authors": row.get("authors", ""),
+                "abstract": row.get("abstract", ""),
+                "source_tables": "classical_political_nlp_ie_enriched.csv",
+            }
+        )
+
     return rows
 
 
@@ -544,8 +598,10 @@ def build_readme() -> str:
             "- `data/processed/thematic_papers.csv`: merged thematic paper table used to build the homepage.",
             "- `data/raw/core_seed_papers.csv`: original core seed list.",
             "- `data/raw/targeted_strategic_decisions_seed.csv`: targeted trace seed for the strategic-decision paper.",
+            "- `data/raw/classical_political_nlp_ie_seed.csv`: curated classical political NLP and information-extraction seed list.",
             "- `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.",
             "- `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.",
+            "- `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.",
             "- `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.",
             "",
             "Scripts:",

@@ -50,7 +50,7 @@ Current status: complete for the first strategy-only pass. The README now includ
 - Track deferred/rejected candidates separately if needed.
 - Avoid turning the README into a data report; data and pipeline details belong below the paper list or in docs.
 
-Current status: complete. The homepage now uses a thematic structure with 129 unique papers across 8 themes and 31 subthemes.
+Current status: complete. The homepage now uses a thematic structure with 159 unique papers across 9 themes and 34 subthemes.
 
 ## Targeted Related-Work Tracing
 
@@ -59,3 +59,12 @@ Current status: complete. The homepage now uses a thematic structure with 129 un
 - Add accepted targeted papers to `data/processed/targeted_related_works_strategy.csv`, then rebuild the thematic README.
 
 Current status: complete for `Generative Artificial Intelligence and Evaluating Strategic Decisions`.
+
+## Classical Political NLP and Information Extraction Foundations
+
+- Add pre-LLM political NLP and information-extraction papers that form the methodological base for current LLM-for-strategy work.
+- Cover political text-as-data, policy-position extraction, legislative speech and bill-text classification, media-frame annotation, international-relations extraction, and political event-data systems.
+- Prioritize high-citation classics and directly relevant bridge work over generic NLP.
+- Keep this as a methods/foundations theme, not a finance/trading expansion.
+
+Current status: complete for the first pass. The README now includes 30 classical political NLP and IE papers, including Text as Data, Wordscores, Wordfish-style scaling, Hopkins-King content analysis, congressional debate stance extraction, King-Lowe event IE, KEDS, CAMEO, IDEA, GDELT, PETRARCH/Open Event Data, Phoenix/POLECAT bridge work, and neural event coding.
