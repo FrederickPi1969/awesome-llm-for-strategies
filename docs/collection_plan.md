@@ -2,46 +2,48 @@
 
 ## Objective
 
-Build a high-impact Awesome LLM for Strategies repository for LLMs in strategic decision-making: finance, investment, geoeconomics, geopolitics, governance, forecasting, policy analysis, diplomatic simulation, and multi-agent strategy environments.
+Build a high-quality Awesome-style paper list for LLMs in politics, geopolitics, policymaking, strategic studies, and decision-making.
 
-## Round 0: Seed Consolidation
+## Scope
 
-- Normalize the two source CSVs into one combined seed table.
-- Resolve each seed paper against Semantic Scholar.
-- Store citation counts, venues, authors, URLs, abstracts, and match status.
-- Keep unresolved and low-confidence rows for manual inspection instead of dropping them.
+Included:
 
-Current status: complete for the 110-paper combined seed list.
+- Political science and computational social science with LLMs
+- Geopolitical, diplomatic, military, and wargame simulation
+- Policy analysis, policy generation, governance, democracy, and political influence
+- Forecasting, event prediction, and decision-making benchmarks
+- Multi-agent social and political simulation
+- Geopolitical risk and policy-signal measurement
 
-## Round 1: Citation and Reference Expansion
+Excluded:
 
-- Expand high-confidence, high-priority seeds through both citations and references.
-- Aggregate duplicate papers across all seed neighborhoods.
-- Remove existing seeds and near-duplicate title variants.
-- Score candidates using topic evidence, seed overlap, citation count, and recency.
-- Split generic foundation-model papers into a separate context table.
+- Finance-only LLMs
+- Trading systems
+- Stock prediction
+- Portfolio management
+- Generic financial benchmarks
+- Generic foundation-model papers without a direct politics/geopolitics/policy/strategy/decision-making link
 
-Current status: 65 seeds expanded, 9,454 raw edges collected, 3,815 longlist candidates exported, 405 preliminary domain additions separated from 20 foundation/context papers.
+## Round 0: Homepage Cleanup
+
+- Replace the data-heavy homepage with a paper-first Awesome list.
+- Remove mixed finance/trading expansion artifacts.
+- Keep one clean seed file: `data/raw/core_seed_papers.csv`.
+- Make the README categories match the five focus areas.
+
+Current status: complete.
+
+## Round 1: Strategy-Only Expansion
+
+- Use `data/raw/core_seed_papers.csv` as the only expansion seed set.
+- Resolve each paper with Semantic Scholar.
+- Fetch citations and references only for high-confidence matches.
+- Filter candidates by the five focus areas before adding them to the README.
+- Keep finance/trading candidates out unless the paper is directly about policymaking, geopolitics, or strategic decision-making.
 
 ## Round 2: Manual Curation
 
-- Promote accepted papers into a readable Awesome-style README.
-- Add decision columns such as `accepted`, `deferred`, `reject_reason`, and `curator_notes`.
-- Review low-confidence seed resolutions before using them for later expansion.
-- Promote geoeconomics, forecasting, governance, and strategy papers only when they support the repository's LLM-for-strategic-decision-making thesis.
-- Keep generic ML/NLP foundation papers in a short background/context section only when they are repeatedly cited by the domain literature.
-
-## Round 3: Deeper Expansion
-
-- Re-run citation/reference expansion on manually accepted additions.
-- Add tags for task, domain, method, asset type, benchmark, dataset, model, code, and evaluation setting.
-- Add GitHub, dataset, model, and project links where available.
-- Create issue and pull request templates for community submissions.
-- Add a paper-status workflow: proposed, accepted, background, rejected, needs verification.
-
-## Review Criteria
-
-- Direct relevance to LLMs, foundation models, agents, retrieval, reasoning, forecasting, simulation, or language-centric benchmarks.
-- Clear strategic domain relevance: finance, markets, macro, geopolitics, governance, policy, diplomacy, wargaming, or multi-agent social simulation.
-- High citation count, high-quality venue, or repeated appearance across multiple seed-paper neighborhoods.
-- Practical value for readers building systems for investment research, financial analysis, macro/geopolitical forecasting, strategic simulation, policy support, or governance analysis.
+- Add accepted papers to the README under the correct category.
+- Use short inclusion notes only when they clarify strategic relevance.
+- Track deferred/rejected candidates separately if needed.
+- Avoid turning the README into a data report; data and pipeline details belong below the paper list or in docs.

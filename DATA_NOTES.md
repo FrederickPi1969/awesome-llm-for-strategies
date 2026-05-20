@@ -1,27 +1,15 @@
 # Data Notes
 
-This repository currently includes a 110-paper seed list covering:
+This repository is now scoped to five areas only:
 
-- LLMs for finance and investment
-- Financial-domain LLMs, benchmarks, reports, filings, XBRL, and agents
-- Macroeconomic forecasting and geoeconomics
-- Geopolitical risk, political science, governance, and policy
-- Diplomatic, military, wargame, and multi-agent strategic simulation
+- Politics
+- Geopolitics
+- Policymaking
+- Strategic studies
+- Decision-making
 
-The first expansion pass produced:
+The current public seed table is `data/raw/core_seed_papers.csv`. It contains 44 papers selected from the politics/geopolitics/governance seed list and excludes finance, trading, stock prediction, portfolio management, and generic financial LLM material.
 
-- 100 resolved seeds
-- 65 high-confidence/high-priority expanded seeds
-- 9,454 raw citation/reference edges
-- 3,815 relevance-filtered longlist candidates
-- 405 preliminary curated additions
-- 20 separated foundation/context papers
+The earlier mixed 110-seed expansion artifacts were removed because they blended finance/trading candidates with the strategy literature and were not suitable for the repository homepage.
 
-The raw edge table is included so the ranking can be audited. Candidate scores
-are curation aids, not acceptance decisions.
-
-Rows marked as `low_confidence_top_result` in the enriched seed table should be
-checked before they are promoted or used as second-order expansion seeds.
-
-Abstracts and provider metadata are included for review convenience and remain
-subject to their original rights and provider terms.
+Future expansion should use `core_seed_papers.csv` as the seed set, not the previous combined finance dataset.

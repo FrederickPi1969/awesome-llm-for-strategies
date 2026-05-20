@@ -67,56 +67,58 @@ TOPIC_KEYWORDS = {
     "chatgpt": 4,
     "agent": 2,
     "agents": 2,
-    "finance": 5,
-    "financial": 5,
-    "investment": 5,
-    "stock": 4,
-    "trading": 4,
-    "portfolio": 4,
-    "equity": 4,
-    "bank": 3,
-    "banking": 3,
-    "sec filing": 5,
-    "10-k": 4,
-    "xbrl": 4,
-    "risk": 2,
-    "macroeconomic": 4,
+    "politics": 5,
+    "political": 5,
+    "political science": 5,
+    "policy": 5,
+    "policymaking": 5,
+    "governance": 5,
+    "democracy": 4,
+    "election": 4,
+    "legislative": 4,
+    "geopolitical": 5,
+    "geopolitics": 5,
+    "diplomatic": 5,
+    "diplomacy": 5,
+    "foreign policy": 5,
+    "military": 4,
+    "wargame": 5,
+    "strategic": 5,
+    "strategy": 5,
+    "decision-making": 5,
+    "decision making": 5,
+    "risk": 3,
+    "uncertainty": 3,
+    "macroeconomic": 2,
     "forecast": 3,
     "forecasting": 3,
-    "geopolitical": 4,
-    "geoeconomic": 4,
-    "political": 3,
-    "politics": 3,
-    "policy": 3,
-    "governance": 3,
-    "democracy": 3,
-    "diplomatic": 4,
-    "wargame": 4,
-    "military": 3,
-    "supply chain": 3,
-    "social simulation": 3,
+    "event prediction": 4,
+    "social simulation": 4,
+    "agent-based modeling": 4,
 }
 
 STRONG_TOPIC_TERMS = {
-    "finance",
-    "financial",
-    "investment",
-    "stock",
-    "trading",
-    "portfolio",
-    "equity",
-    "xbrl",
-    "sec filing",
     "geopolitical",
-    "geoeconomic",
+    "geopolitics",
     "political",
     "politics",
     "policy",
+    "policymaking",
     "governance",
+    "democracy",
     "diplomatic",
+    "diplomacy",
+    "foreign policy",
+    "strategic",
+    "strategy",
+    "decision-making",
+    "decision making",
     "wargame",
+    "military",
     "forecast",
     "forecasting",
+    "event prediction",
+    "social simulation",
 }
 
 SEED_COLUMNS = [
@@ -354,12 +356,7 @@ def seed_record(path: Path, row: dict[str, str]) -> dict[str, str]:
 
 def should_expand(seed: dict[str, str]) -> bool:
     priority = (seed.get("seed_priority") or "").lower()
-    return (
-        priority in {"p0", "p1", "core", "important"}
-        or "important" in priority
-        or seed.get("seed_file", "").startswith("llm_finance")
-        and priority != "p2"
-    )
+    return priority in {"core", "important"} or "important" in priority
 
 
 def resolve_paper(client: SemanticScholarClient, title: str) -> tuple[dict[str, Any] | None, str]:
