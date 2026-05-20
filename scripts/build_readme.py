@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build README and curated expansion CSV for Awesome LLM for Strategies."""
+"""Build README and a merged thematic paper table."""
 
 from __future__ import annotations
 
@@ -14,138 +14,188 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 CORE_SEEDS = ROOT / "data" / "raw" / "core_seed_papers.csv"
 ENRICHED_SEEDS = ROOT / "data" / "processed" / "core_seed_papers_enriched.csv"
-CANDIDATES = ROOT / "data" / "processed" / "candidate_related_papers_preliminary.csv"
-RUN_SUMMARY = ROOT / "data" / "processed" / "run_summary.json"
 CURATED_CANDIDATES = ROOT / "data" / "processed" / "candidate_additions_strategy.csv"
-PRIORITY_EXPANSION_SEEDS = ROOT / "data" / "processed" / "priority_expansion_seeds.csv"
-SECOND_ORDER_SUMMARY = ROOT / "data" / "processed" / "second_order" / "run_summary.json"
+PRIORITY_SEEDS = ROOT / "data" / "processed" / "priority_expansion_seeds.csv"
 SECOND_ORDER_CANDIDATES = ROOT / "data" / "processed" / "second_order_candidate_additions_strategy.csv"
+RUN_SUMMARY = ROOT / "data" / "processed" / "run_summary.json"
+SECOND_ORDER_SUMMARY = ROOT / "data" / "processed" / "second_order" / "run_summary.json"
+THEMATIC_PAPERS = ROOT / "data" / "processed" / "thematic_papers.csv"
 README = ROOT / "README.md"
 
-SECTION_ORDER = [
-    "Politics and Political Science",
-    "Geopolitics, Diplomacy, and Strategic Simulation",
-    "Forecasting and Decision-Making",
-    "Governance, Democracy, and Policymaking",
-    "Multi-Agent Social and Political Simulation",
-    "Geopolitical Risk and Policy Signals",
+THEME_ORDER = [
+    "Foundations, Surveys, and Methods",
+    "Politics, Democracy, Public Opinion, and Persuasion",
+    "Policymaking, Governance, and Institutional Decision Support",
+    "Geopolitics, Diplomacy, National Security, and Wargaming",
+    "Forecasting, Geopolitical Risk, and Foresight",
+    "Strategic Reasoning, Games, Negotiation, and Cooperation",
+    "Multi-Agent Social Simulation and Synthetic Societies",
+    "AI Safety, Influence Operations, and Societal Risk",
 ]
 
-CANDIDATE_SELECTION = [
-    (
-        "Geopolitics, Diplomacy, and Strategic Simulation",
-        "Human-level play in the game of Diplomacy by combining language models with strategic reasoning",
-    ),
-    (
-        "Geopolitics, Diplomacy, and Strategic Simulation",
-        "Playing repeated games with large language models",
-    ),
-    (
-        "Geopolitics, Diplomacy, and Strategic Simulation",
-        "War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars",
-    ),
-    (
-        "Geopolitics, Diplomacy, and Strategic Simulation",
-        "Strategic behavior of large language models and the role of game structure versus contextual framing",
-    ),
-    (
-        "Geopolitics, Diplomacy, and Strategic Simulation",
-        "On Large Language Models in National Security Applications",
-    ),
-    (
-        "Geopolitics, Diplomacy, and Strategic Simulation",
-        "Do Large Language Models Know Conflict? Investigating Parametric vs. Non-Parametric Knowledge of LLMs for Conflict Forecasting",
-    ),
-    (
-        "Geopolitics, Diplomacy, and Strategic Simulation",
-        "When AI Navigates the Fog of War",
-    ),
-    (
-        "Geopolitics, Diplomacy, and Strategic Simulation",
-        "Managing Escalation in Off-the-Shelf Large Language Models",
-    ),
-    (
-        "Geopolitics, Diplomacy, and Strategic Simulation",
-        "Effective and responsible use of large language models in strategic wargaming",
-    ),
-    (
-        "Geopolitics, Diplomacy, and Strategic Simulation",
-        "Causal Reasoning and Large Language Models for Military Decision-Making: Rethinking the Command Structures in the Era of Generative AI",
-    ),
-    (
-        "Politics, Governance, and Public Opinion",
-        "Whose Opinions Do Language Models Reflect?",
-    ),
-    (
-        "Politics, Governance, and Public Opinion",
-        "AI can help humans find common ground in democratic deliberation",
-    ),
-    (
-        "Politics, Governance, and Public Opinion",
-        "Large language models as a substitute for human experts in annotating political text",
-    ),
-    (
-        "Politics, Governance, and Public Opinion",
-        "Demonstrations of the Potential of AI-based Political Issue Polling",
-    ),
-    (
-        "Politics, Governance, and Public Opinion",
-        "Emergence of human-like polarization among large language model agents",
-    ),
-    (
-        "Politics, Governance, and Public Opinion",
-        "Echoes of Power: Investigating Geopolitical Bias in US and China Large Language Models",
-    ),
-    (
-        "Politics, Governance, and Public Opinion",
-        "A Large-Scale Simulation on Large Language Models for Decision-Making in Political Science",
-    ),
-    (
-        "Forecasting and Decision-Making",
-        "Forecasting Future World Events with Neural Networks",
-    ),
-    (
-        "Forecasting and Decision-Making",
-        "Wisdom of the silicon crowd: LLM ensemble prediction capabilities rival human crowd accuracy",
-    ),
-    (
-        "Forecasting and Decision-Making",
-        "Large Language Model Prediction Capabilities: Evidence from a Real-World Forecasting Tournament",
-    ),
-    (
-        "Forecasting and Decision-Making",
-        "Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle",
-    ),
-    (
-        "Multi-Agent Social and Political Simulation",
-        "From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents",
-    ),
-    (
-        "Multi-Agent Social and Political Simulation",
-        "Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents",
-    ),
-    (
-        "Multi-Agent Social and Political Simulation",
-        "Validation is the central challenge for generative social simulation: a critical review of LLMs in agent-based modeling",
-    ),
-    (
-        "Multi-Agent Social and Political Simulation",
-        "ElectionSim: Massive Population Election Simulation Powered by Large Language Model Driven Agents",
-    ),
-    (
-        "Multi-Agent Social and Political Simulation",
-        "Network formation and dynamics among multi-LLMs",
-    ),
-    (
-        "Multi-Agent Social and Political Simulation",
-        "Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity",
-    ),
-]
-
-BUCKET_LABELS = {
-    "recent_relevant_2024_plus": "Recent and Highly Relevant (2024+)",
-    "high_citation_relevant": "High-Citation and Highly Relevant",
+SUBTHEME_ORDER = {
+    "Foundations, Surveys, and Methods": [
+        "Political science and computational social science overviews",
+        "Social simulation and agent-based modeling reviews",
+        "Strategic reasoning and game-theoretic reviews",
+    ],
+    "Politics, Democracy, Public Opinion, and Persuasion": [
+        "Political ideology, representation, and bias",
+        "Elections, voters, and campaign discourse",
+        "Public opinion, polling, and political annotation",
+        "Deliberation, persuasion, and information environments",
+        "Legislative and political-agent simulation",
+    ],
+    "Policymaking, Governance, and Institutional Decision Support": [
+        "Democratic governance and augmentation",
+        "Policy translation and policy brief generation",
+        "Policy persuasion and democratic deliberation",
+        "Strategic and institutional decision support",
+    ],
+    "Geopolitics, Diplomacy, National Security, and Wargaming": [
+        "Diplomacy and international institutions",
+        "Military decision-making and wargaming",
+        "Conflict, escalation, and geopolitical simulation",
+        "National security applications and doctrine",
+    ],
+    "Forecasting, Geopolitical Risk, and Foresight": [
+        "Forecasting benchmarks and datasets",
+        "Forecasting performance and aggregation",
+        "Geopolitical event prediction systems",
+        "Geoeconomic and geopolitical risk signals",
+    ],
+    "Strategic Reasoning, Games, Negotiation, and Cooperation": [
+        "Game-theoretic and strategic reasoning benchmarks",
+        "Negotiation, bargaining, and communication games",
+        "Cooperation and social dilemmas",
+        "Behavioral game tests and human-like strategy",
+    ],
+    "Multi-Agent Social Simulation and Synthetic Societies": [
+        "Generative agents and social simulation platforms",
+        "Synthetic populations and human samples",
+        "Social networks, movements, and polarization",
+        "Agent behavior quality and social-simulation validation",
+    ],
+    "AI Safety, Influence Operations, and Societal Risk": [
+        "Influence operations and persuasion risk",
+        "Deception, multi-agent risk, and control",
+        "Bias, toxicity, and cultural alignment risks",
+    ],
 }
+
+THEME_ASSIGNMENTS = """
+Foundations, Surveys, and Methods|Political science and computational social science overviews|Political-LLM: Large Language Models in Political Science
+Foundations, Surveys, and Methods|Political science and computational social science overviews|Large Language Models in Politics and Democracy: A Comprehensive Survey
+Foundations, Surveys, and Methods|Political science and computational social science overviews|Can Large Language Models Transform Computational Social Science?
+Foundations, Surveys, and Methods|Political science and computational social science overviews|Large language models and political science
+Foundations, Surveys, and Methods|Social simulation and agent-based modeling reviews|Large language models empowered agent-based modeling and simulation: a survey and perspectives
+Foundations, Surveys, and Methods|Social simulation and agent-based modeling reviews|From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents
+Foundations, Surveys, and Methods|Social simulation and agent-based modeling reviews|Validation is the central challenge for generative social simulation: a critical review of LLMs in agent-based modeling
+Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews|LLM as a Mastermind: A Survey of Strategic Reasoning with Large Language Models
+Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews|Game Theory Meets Large Language Models: A Systematic Survey
+Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews|Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas
+Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews|A Survey on Large Language Model-Based Social Agents in Game-Theoretic Scenarios
+Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Whose Opinions Do Language Models Reflect?
+Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Large language models reflect the ideology of their creators
+Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Echoes of Power: Investigating Geopolitical Bias in US and China Large Language Models
+Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|More human than human: measuring ChatGPT political bias
+Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Should ChatGPT be Biased? Challenges and Risks of Bias in Large Language Models
+Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|The political ideology of conversational AI: Converging evidence on ChatGPT's pro-environmental, left-libertarian orientation
+Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Cultural bias and cultural alignment of large language models
+Politics, Democracy, Public Opinion, and Persuasion|Elections, voters, and campaign discourse|ElectionSim: Massive Population Election Simulation Powered by Large Language Model Driven Agents
+Politics, Democracy, Public Opinion, and Persuasion|Elections, voters, and campaign discourse|Large-Scale Longitudinal Study of LLMs During the 2024 United States Election Season
+Politics, Democracy, Public Opinion, and Persuasion|Elections, voters, and campaign discourse|A Public Dataset Tracking Social Media Discourse about the 2024 U.S. Presidential Election on Twitter/X
+Politics, Democracy, Public Opinion, and Persuasion|Elections, voters, and campaign discourse|Hidden Persuaders: LLMs’ Political Leaning and Their Influence on Voters
+Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|Large language models as a substitute for human experts in annotating political text
+Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|Demonstrations of the Potential of AI-based Political Issue Polling
+Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|Performance and biases of Large Language Models in public opinion simulation
+Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|Random Silicon Sampling: Simulating Human Sub-Population Opinion Using a Large Language Model Based on Group-Level Demographic Information
+Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|Generative Echo Chamber? Effect of LLM-Powered Search Systems on Diverse Information Seeking
+Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|Systematic Biases in LLM Simulations of Debates
+Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|From Skepticism to Acceptance: Simulating the Attitude Dynamics Toward Fake News
+Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|Political Actor Agent: Simulating Legislative Politics with LLM Agents
+Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|LegiGPT: Party Politics and Transport Policy with Large Language Model
+Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|A Large-Scale Simulation on Large Language Models for Decision-Making in Political Science
+Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Large Language Models as agents for augmented democracy
+Policymaking, Governance, and Institutional Decision Support|Policy translation and policy brief generation|Sci2Pol: Evaluating and Fine-tuning LLMs on Scientific-to-Policy Brief Generation
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|AI can help humans find common ground in democratic deliberation
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Large Language Models Can Argue in Convincing Ways About Politics, But Humans Dislike AI Authors: Implications for Governance
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|LLM-generated messages can persuade humans on policy issues
+Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Biased LLMs can Influence Political Decision-Making
+Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Generative Artificial Intelligence and Evaluating Strategic Decisions
+Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Human-level play in the game of Diplomacy by combining language models with strategic reasoning
+Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Critical Foreign Policy Decisions Benchmark: Measuring Diplomatic Preferences in Large Language Models
+Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Benchmarking LLMs for Political Science: A United Nations Perspective / United Nations Benchmark
+Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|UNSC-Bench: Evaluating LLM Diplomatic Role-Playing Through UN Security Council Vote Prediction
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Escalation Risks from Language Models in Military and Diplomatic Decision-Making
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Behavioral Differences Between Expert Humans and Language Models in Wargame Simulations / Human vs. Machine
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Open-Ended Wargames with Large Language Models
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|LLM-based wargame scenario generation with domain ontology
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|COA-GPT: Generative Pre-Trained Transformers for Accelerated Course of Action Development in Military Operations
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|BattleAgent: Multi-modal Dynamic Emulation on Historical Battles to Complement Historical Analysis
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Causal Reasoning and Large Language Models for Military Decision-Making: Rethinking the Command Structures in the Era of Generative AI
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Effective and responsible use of large language models in strategic wargaming
+Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|Simulating Influence Dynamics with LLM Agents
+Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|LLMs as Strategic Actors: Behavioral Alignment, Risk Calibration, and Argumentation Framing in Geopolitical Simulations
+Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars
+Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|Do Large Language Models Know Conflict? Investigating Parametric vs. Non-Parametric Knowledge of LLMs for Conflict Forecasting
+Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|When AI Navigates the Fog of War
+Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|Managing Escalation in Off-the-Shelf Large Language Models
+Geopolitics, Diplomacy, National Security, and Wargaming|National security applications and doctrine|On Large Language Models in National Security Applications
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|MIRAI: Evaluating LLM Agents for Event Forecasting
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Forecasting Future International Events: A Reliable Dataset for Text-Based Event Modeling / WORLDREP
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|OpenEP: Open-Ended Future Event Prediction
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Forecasting Future World Events with Neural Networks
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Approaching Human-Level Forecasting with Language Models
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|A Comprehensive Evaluation of Large Language Models on Temporal Event Forecasting
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|The Power of Simplicity in LLM-Based Event Forecasting
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|The Future Is Unevenly Distributed: Forecasting Ability of LLMs Depends on What We’re Asking
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Wisdom of the silicon crowd: LLM ensemble prediction capabilities rival human crowd accuracy
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Large Language Model Prediction Capabilities: Evidence from a Real-World Forecasting Tournament
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle
+Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|LLM4Geopolitics: A Framework Leveraging Large Language Models for Predicting Geopolitical Events
+Forecasting, Geopolitical Risk, and Foresight|Geoeconomic and geopolitical risk signals|Geoeconomic Pressure
+Forecasting, Geopolitical Risk, and Foresight|Geoeconomic and geopolitical risk signals|The AI-GPR Index: Measuring Geopolitical Risk using Artificial Intelligence
+Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Playing repeated games with large language models
+Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Strategic behavior of large language models and the role of game structure versus contextual framing
+Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|GTBench: Uncovering the Strategic Reasoning Limitations of LLMs via Game-Theoretic Evaluations
+Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|GameBench: Evaluating Strategic Reasoning Abilities of LLM Agents
+Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|How Far Are We on the Decision-Making of LLMs? Evaluating LLMs' Gaming Ability in Multi-Agent Environments
+Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Game-theoretic LLM: Agent Workflow for Negotiation Games
+Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Decision-Making Behavior Evaluation Framework for LLMs under Uncertain Context
+Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents
+Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf
+Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback
+Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|Measuring Bargaining Abilities of LLMs: A Benchmark and A Buyer-Enhancement Method
+Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social dilemmas|Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents
+Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social dilemmas|Nicer Than Humans: How do Large Language Models Behave in the Prisoner's Dilemma?
+Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social dilemmas|Shall We Team Up: Exploring Spontaneous Cooperation of Competing LLM Agents
+Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social dilemmas|Cultural Evolution of Cooperation among LLM Agents
+Strategic Reasoning, Games, Negotiation, and Cooperation|Behavioral game tests and human-like strategy|A Turing test of whether AI chatbots are behaviorally similar to humans
+Strategic Reasoning, Games, Negotiation, and Cooperation|Behavioral game tests and human-like strategy|Simulating Human Strategic Behavior: Comparing Single and Multi-agent LLMs
+Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|Generative Agents: Interactive Simulacra of Human Behavior
+Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society
+Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|S3: Social-network Simulation System with Large Language Model-Empowered Agents
+Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|GA-S3: Comprehensive Social Network Simulation with Group Agents
+Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|OASIS: Open Agent Social Interaction Simulations with One Million Agents
+Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|GenSim: A General Social Simulation Platform with Large Language Model based Agents
+Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|SocioVerse: A World Model for Social Simulation Powered by LLM Agents and A Pool of 10 Million Real-World Users
+Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|Social Simulacra: Creating Populated Prototypes for Social Computing Systems
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Out of One, Many: Using Language Models to Simulate Human Samples
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Generative Agent Simulations of 1,000 People
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Beyond Demographics: Aligning Role-playing LLM-based Agents Using Human Belief Networks
+Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Network formation and dynamics among multi-LLMs
+Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Emergence of human-like polarization among large language model agents
+Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation
+Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Agent-Based Modelling Meets Generative AI in Social Network Simulations
+Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Decoding Echo Chambers: LLM-Powered Simulations Revealing Polarization in Social Networks
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations
+AI Safety, Influence Operations, and Societal Risk|Deception, multi-agent risk, and control|Multi-Agent Risks from Advanced AI
+AI Safety, Influence Operations, and Societal Risk|Deception, multi-agent risk, and control|AI deception: A survey of examples, risks, and potential solutions
+AI Safety, Influence Operations, and Societal Risk|Bias, toxicity, and cultural alignment risks|Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity
+""".strip()
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -153,12 +203,12 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(f))
 
 
-def read_csv_if_exists(path: Path) -> list[dict[str, str]]:
-    return read_csv(path) if path.exists() else []
-
-
 def read_json_if_exists(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+
+
+def read_csv_if_exists(path: Path) -> list[dict[str, str]]:
+    return read_csv(path) if path.exists() else []
 
 
 def normalize(value: str) -> str:
@@ -182,11 +232,13 @@ def title_similarity(left: str, right: str) -> float:
     return len(left_tokens & right_tokens) / len(left_tokens | right_tokens)
 
 
-def as_int(value: Any) -> int:
+def as_int(value: Any, default: int = 0) -> int:
     try:
+        if value in {"", None, "n/a"}:
+            return default
         return int(value)
     except (TypeError, ValueError):
-        return 0
+        return default
 
 
 def citation_display(seed: dict[str, str], enriched: dict[str, str] | None) -> str:
@@ -209,94 +261,190 @@ def row_url(row: dict[str, str]) -> str:
     return row.get("url") or row.get("source_url") or (f"https://arxiv.org/abs/{row['arxiv']}" if row.get("arxiv") else "")
 
 
-def bucket_rows(rows: list[dict[str, str]], bucket_field: str, bucket: str) -> list[dict[str, str]]:
-    selected = [row for row in rows if bucket in row.get(bucket_field, "").split("; ")]
-    return sorted(
-        selected,
-        key=lambda row: (
-            -as_int(row.get("citationCount")),
-            row.get("category") or row.get("curated_category") or "",
-            row.get("title", "").lower(),
-        ),
-    )
+def parse_assignments() -> dict[str, tuple[str, str]]:
+    assignments: dict[str, tuple[str, str]] = {}
+    for line in THEME_ASSIGNMENTS.splitlines():
+        theme, subtheme, title = [part.strip() for part in line.split("|", 2)]
+        key = normalize(title)
+        if key in assignments:
+            raise RuntimeError(f"Duplicate theme assignment: {title}")
+        if theme not in THEME_ORDER:
+            raise RuntimeError(f"Unknown theme for {title}: {theme}")
+        if subtheme not in SUBTHEME_ORDER[theme]:
+            raise RuntimeError(f"Unknown subtheme for {title}: {subtheme}")
+        assignments[key] = (theme, subtheme)
+    return assignments
 
 
-def build_candidate_rows() -> list[dict[str, str]]:
-    if not CANDIDATES.exists() and CURATED_CANDIDATES.exists():
-        return read_csv(CURATED_CANDIDATES)
-
-    candidates = read_csv(CANDIDATES)
-    by_title = {normalize(row["title"]): row for row in candidates}
+def source_rows() -> list[dict[str, str]]:
+    enriched_by_title = {normalize(row["title"]): row for row in read_csv(ENRICHED_SEEDS)}
     rows: list[dict[str, str]] = []
 
-    for category, title in CANDIDATE_SELECTION:
-        row = by_title.get(normalize(title))
-        if not row:
-            raise RuntimeError(f"Selected candidate not found: {title}")
-        rows.append({"curated_category": category, **row})
-
-    rows.sort(
-        key=lambda row: (
-            row["curated_category"],
-            -as_int(row.get("citationCount")),
-            -as_int(row.get("seed_overlap_count")),
-            row.get("title", "").lower(),
+    for row in read_csv(CORE_SEEDS):
+        enriched = enriched_by_title.get(normalize(row["title"]))
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("year_or_timeframe", ""),
+                "citationCount": citation_display(row, enriched),
+                "importance": row.get("priority", "Core"),
+                "url": row.get("source_url", ""),
+                "doi": enriched.get("doi", "") if enriched else "",
+                "arxiv": enriched.get("arxiv", "") if enriched else "",
+                "venue": enriched.get("venue", "") if enriched else row.get("paper_type_or_source", ""),
+                "authors": enriched.get("authors", "") if enriched else "",
+                "abstract": enriched.get("abstract", "") if enriched else "",
+                "source_tables": "core_seed_papers.csv",
+            }
         )
-    )
-    for index, row in enumerate(rows, start=1):
-        row["curated_rank"] = str(index)
+
+    for row in read_csv(CURATED_CANDIDATES):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("year", ""),
+                "citationCount": row.get("citationCount", ""),
+                "importance": "Curated",
+                "url": row_url(row),
+                "doi": row.get("doi", ""),
+                "arxiv": row.get("arxiv", ""),
+                "venue": row.get("venue", ""),
+                "authors": row.get("authors", ""),
+                "abstract": row.get("abstract", ""),
+                "source_tables": "curated_candidate_tables",
+            }
+        )
+
+    for row in read_csv_if_exists(PRIORITY_SEEDS):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("year_or_timeframe", ""),
+                "citationCount": row.get("citationCount", ""),
+                "importance": "Curated",
+                "url": row_url(row),
+                "doi": "",
+                "arxiv": "",
+                "venue": "",
+                "authors": "",
+                "abstract": "",
+                "source_tables": "curated_candidate_tables",
+            }
+        )
+
+    for row in read_csv(SECOND_ORDER_CANDIDATES):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("year", ""),
+                "citationCount": row.get("citationCount", ""),
+                "importance": "Curated",
+                "url": row_url(row),
+                "doi": row.get("doi", ""),
+                "arxiv": row.get("arxiv", ""),
+                "venue": row.get("venue", ""),
+                "authors": row.get("authors", ""),
+                "abstract": row.get("abstract", ""),
+                "source_tables": "curated_candidate_tables",
+            }
+        )
+
     return rows
 
 
-def write_candidate_csv(rows: list[dict[str, str]]) -> None:
+def merge_rows(
+    rows: list[dict[str, str]],
+    assignments: dict[str, tuple[str, str]],
+) -> tuple[list[dict[str, str]], int, int]:
+    merged: dict[str, dict[str, str]] = {}
+    source_count = len(rows)
+    for row in rows:
+        key = normalize(row["title"])
+        if key not in assignments:
+            raise RuntimeError(f"Missing theme assignment: {row['title']}")
+        theme, subtheme = assignments[key]
+        if key not in merged:
+            merged[key] = {**row, "theme": theme, "subtheme": subtheme}
+            continue
+        existing = merged[key]
+        existing["source_tables"] = "; ".join(sorted(set(existing["source_tables"].split("; ") + [row["source_tables"]])))
+        if existing.get("citationCount") in {"", "n/a"} and row.get("citationCount") not in {"", "n/a"}:
+            existing["citationCount"] = row["citationCount"]
+        if existing.get("importance") != "Core" and row.get("importance") == "Core":
+            existing["importance"] = "Core"
+
+    if len(merged) != len(assignments):
+        assigned_without_source = sorted(set(assignments) - set(merged))
+        if assigned_without_source:
+            raise RuntimeError(f"Theme assignments without source rows: {assigned_without_source[:5]}")
+
+    output = list(merged.values())
+    if len(output) != len({normalize(row["title"]) for row in output}):
+        raise RuntimeError("Merged rows contain duplicate normalized titles.")
+    duplicate_count = source_count - len(output)
+    return output, source_count, duplicate_count
+
+
+def theme_sort_key(row: dict[str, str]) -> tuple[int, int, int, int, str]:
+    theme_index = THEME_ORDER.index(row["theme"])
+    subtheme_index = SUBTHEME_ORDER[row["theme"]].index(row["subtheme"])
+    importance_rank = {"Core": 0, "Important": 1, "Optional": 2, "Optional / Engineering": 2, "Curated": 3}.get(
+        row.get("importance", ""),
+        3,
+    )
+    return (
+        theme_index,
+        subtheme_index,
+        -as_int(row.get("citationCount"), -1),
+        importance_rank,
+        row["title"].lower(),
+    )
+
+
+def write_thematic_csv(rows: list[dict[str, str]]) -> None:
     columns = [
-        "curated_rank",
-        "curated_category",
-        "paperId",
+        "theme",
+        "subtheme",
         "title",
         "year",
         "citationCount",
-        "seed_overlap_count",
-        "relevance_score",
-        "relation_summary",
-        "source_seed_titles",
+        "importance",
         "url",
         "doi",
         "arxiv",
         "venue",
         "authors",
+        "source_tables",
         "abstract",
     ]
-    CURATED_CANDIDATES.parent.mkdir(parents=True, exist_ok=True)
-    with CURATED_CANDIDATES.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=columns)
+    THEMATIC_PAPERS.parent.mkdir(parents=True, exist_ok=True)
+    with THEMATIC_PAPERS.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=columns, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({column: row.get(column, "") for column in columns})
 
 
+def paper_line(row: dict[str, str]) -> str:
+    importance = row.get("importance", "")
+    label = f"{importance}; " if importance and importance != "Curated" else ""
+    citation_count = row.get("citationCount") or "n/a"
+    return f"- {markdown_link(row['title'], row.get('url', ''))} ({row.get('year') or 'n.d.'}) - {label}citations: {citation_count}."
+
+
 def build_readme() -> str:
-    seeds = read_csv(CORE_SEEDS)
-    enriched_rows = read_csv(ENRICHED_SEEDS)
-    enriched_by_title = {normalize(row["title"]): row for row in enriched_rows}
-    candidates = build_candidate_rows()
-    write_candidate_csv(candidates)
-    summary = json.loads(RUN_SUMMARY.read_text(encoding="utf-8"))
-    priority_seeds = read_csv_if_exists(PRIORITY_EXPANSION_SEEDS)
-    second_order_candidates = read_csv_if_exists(SECOND_ORDER_CANDIDATES)
-    second_order_summary = read_json_if_exists(SECOND_ORDER_SUMMARY)
+    assignments = parse_assignments()
+    rows, source_count, duplicate_count = merge_rows(source_rows(), assignments)
+    rows = sorted(rows, key=theme_sort_key)
+    write_thematic_csv(rows)
 
-    by_section: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for seed in seeds:
-        by_section[seed["awesome_section"]].append(seed)
+    by_theme: dict[str, dict[str, list[dict[str, str]]]] = defaultdict(lambda: defaultdict(list))
+    for row in rows:
+        by_theme[row["theme"]][row["subtheme"]].append(row)
 
-    candidate_sections: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for row in candidates:
-        candidate_sections[row["curated_category"]].append(row)
-
-    second_order_sections: dict[str, dict[str, list[dict[str, str]]]] = defaultdict(lambda: defaultdict(list))
-    for row in second_order_candidates:
-        second_order_sections[row["selection_bucket"]][row["curated_category"]].append(row)
+    first_summary = json.loads(RUN_SUMMARY.read_text(encoding="utf-8"))
+    second_summary = read_json_if_exists(SECOND_ORDER_SUMMARY)
+    theme_counts = {theme: sum(len(items) for items in by_theme.get(theme, {}).values()) for theme in THEME_ORDER}
 
     lines = [
         "# Awesome LLM for Strategies",
@@ -309,124 +457,54 @@ def build_readme() -> str:
         "",
         "Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-20.",
         "",
+        f"Current curated coverage: **{len(rows)} unique papers** organized into {len(THEME_ORDER)} themes.",
+        "",
         "## Contents",
         "",
-        "- [Core Papers](#core-papers)",
-        "- [First-Order Expansion Candidates](#first-order-expansion-candidates)",
-        "- [Priority Seeds for Second-Order Expansion](#priority-seeds-for-second-order-expansion)",
-        "- [Second-Order Expansion Results](#second-order-expansion-results)",
+        "- [Papers by Theme](#papers-by-theme)",
         "- [Data and Collection](#data-and-collection)",
+        "- [Contributing](#contributing)",
         "",
-        "## Core Papers",
+        "## Papers by Theme",
         "",
     ]
 
-    for section in SECTION_ORDER:
-        if section not in by_section:
+    for theme in THEME_ORDER:
+        if theme not in by_theme:
             continue
-        lines.extend([f"### {section}", ""])
-        for seed in by_section[section]:
-            enriched = enriched_by_title.get(normalize(seed["title"]))
-            citation_count = citation_display(seed, enriched)
-            lines.append(
-                f"- {markdown_link(seed['title'], seed['source_url'])} "
-                f"({seed['year_or_timeframe']}) - {seed['priority']}; citations: {citation_count}."
-            )
-        lines.append("")
-
-    lines.extend(
-        [
-            "## First-Order Expansion Candidates",
-            "",
-            "These papers were surfaced by expanding the core list through Semantic Scholar citations and references, then filtering for relevance to politics, geopolitics, policymaking, strategic studies, and decision-making. They are strong first-round candidates for promotion into the main sections after manual review.",
-            "",
-        ]
-    )
-    for section in sorted(candidate_sections):
-        lines.extend([f"### {section}", ""])
-        for row in candidate_sections[section]:
-            lines.append(
-                f"- {markdown_link(row['title'], row_url(row))} ({row.get('year') or 'n.d.'}) - "
-                f"citations: {row.get('citationCount') or '0'}; seed hits: {row.get('seed_overlap_count') or '0'}."
-            )
-        lines.append("")
-
-    if priority_seeds:
-        lines.extend(
-            [
-                "## Priority Seeds for Second-Order Expansion",
-                "",
-                "These are the first-order papers selected for deeper citation/reference expansion because they are either recent and strongly relevant, highly cited and strongly relevant, or both.",
-                "",
-            ]
-        )
-        for bucket, label in BUCKET_LABELS.items():
-            rows = bucket_rows(priority_seeds, "expansion_bucket", bucket)
-            if not rows:
+        lines.extend([f"### {theme}", "", f"{theme_counts[theme]} papers.", ""])
+        for subtheme in SUBTHEME_ORDER[theme]:
+            papers = by_theme[theme].get(subtheme, [])
+            if not papers:
                 continue
-            lines.extend([f"### {label}", ""])
-            for row in rows:
-                lines.append(
-                    f"- {markdown_link(row['title'], row_url(row))} ({row.get('year_or_timeframe') or 'n.d.'}) - "
-                    f"citations: {row.get('citationCount') or '0'}; seed hits: {row.get('seed_overlap_count') or '0'}; "
-                    f"category: {row.get('category') or 'n/a'}."
-                )
+            lines.extend([f"#### {subtheme}", ""])
+            for row in papers:
+                lines.append(paper_line(row))
             lines.append("")
-
-    if second_order_candidates:
-        lines.extend(
-            [
-                "## Second-Order Expansion Results",
-                "",
-                "These papers came from expanding the priority seeds above. The longlist was filtered again, and only highly relevant papers are shown here.",
-                "",
-            ]
-        )
-        for bucket, label in BUCKET_LABELS.items():
-            sections = second_order_sections.get(bucket, {})
-            if not sections:
-                continue
-            lines.extend([f"### {label}", ""])
-            for section in sorted(sections):
-                lines.extend([f"#### {section}", ""])
-                for row in sections[section]:
-                    lines.append(
-                        f"- {markdown_link(row['title'], row_url(row))} ({row.get('year') or 'n.d.'}) - "
-                        f"citations: {row.get('citationCount') or '0'}; seed hits: {row.get('seed_overlap_count') or '0'}."
-                    )
-                lines.append("")
 
     lines.extend(
         [
             "## Data and Collection",
             "",
-            f"- Core seeds: {summary['seed_count']}",
-            f"- Resolved seeds: {summary['resolved_seed_count']}",
-            f"- Expanded high-confidence/high-priority seeds: {summary['expanded_seed_count']}",
-            f"- Raw citation/reference edges: {summary['edge_count']}",
-            f"- Relevance-filtered candidate longlist: {summary['candidate_count_after_filter']}",
-            f"- Curated candidate additions in README: {len(candidates)}",
-            f"- Priority seeds for second-order expansion: {len(priority_seeds)}",
-            f"- Second-order expanded seeds: {second_order_summary.get('expanded_seed_count', 0)}",
-            f"- Second-order citation/reference edges: {second_order_summary.get('edge_count', 0)}",
-            f"- Second-order longlist candidates: {second_order_summary.get('candidate_count_after_filter', 0)}",
-            f"- Curated second-order additions in README: {len(second_order_candidates)}",
+            f"- Total unique papers in the thematic list: {len(rows)}",
+            f"- Source rows checked before merge: {source_count}",
+            f"- Duplicate source rows removed during merge: {duplicate_count}",
+            f"- Core seed papers: {sum(1 for row in rows if row.get('source_tables') == 'core_seed_papers.csv')}",
+            f"- Curated additions merged into themes: {sum(1 for row in rows if row.get('source_tables') != 'core_seed_papers.csv')}",
+            f"- Initial citation/reference edges scanned: {first_summary.get('edge_count', 0)}",
+            f"- Additional citation/reference edges scanned from priority papers: {second_summary.get('edge_count', 0)}",
             "",
             "Data files:",
             "",
-            "- `data/raw/core_seed_papers.csv`: current homepage seed list.",
+            "- `data/processed/thematic_papers.csv`: merged thematic paper table used to build the homepage.",
+            "- `data/raw/core_seed_papers.csv`: original core seed list.",
             "- `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.",
-            "- `data/processed/candidate_additions_strategy.csv`: selected high-citation/high-relevance expansion candidates shown above.",
-            "- `data/processed/priority_expansion_seeds.csv`: first-order papers selected for deeper expansion.",
-            "- `data/processed/second_order/run_summary.json`: second-order Semantic Scholar expansion summary.",
-            "- `data/processed/second_order_candidate_additions_strategy.csv`: selected recent and high-citation second-order additions shown above.",
             "",
             "Scripts:",
             "",
-            "- `scripts/expand_semantic_scholar.py`: resolves seeds, fetches citations/references, and writes expansion tables.",
+            "- `scripts/expand_semantic_scholar.py`: resolves seeds, fetches citations/references, and writes candidate tables.",
             "- `scripts/fetch_seed_metadata.py`: enriches seed papers with Semantic Scholar metadata.",
-            "- `scripts/build_priority_expansion.py`: selects priority expansion seeds and curated second-order additions.",
-            "- `scripts/build_readme.py`: rebuilds this README and the curated candidate CSV from processed data.",
+            "- `scripts/build_readme.py`: rebuilds this README and validates that every curated paper is assigned to a theme.",
             "",
             "## Contributing",
             "",

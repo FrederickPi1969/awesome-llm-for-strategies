@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Select priority expansion seeds and second-order candidates."""
+"""Select priority tracing seeds and candidate papers."""
 
 from __future__ import annotations
 
@@ -163,7 +163,7 @@ def build_priority_seeds() -> list[dict[str, str]]:
             "citationCount": row.get("citationCount", ""),
             "seed_overlap_count": row.get("seed_overlap_count", ""),
             "source_url": row.get("url", ""),
-            "notes": "Selected from first-order Semantic Scholar expansion for second-order expansion.",
+            "notes": "Selected from the curated Semantic Scholar candidate set for deeper citation/reference tracing.",
         }
 
     output = sorted(
@@ -202,7 +202,7 @@ def build_second_order_candidates() -> list[dict[str, str]]:
     for bucket, category, title in SECOND_ORDER_SELECTION:
         row = by_title.get(normalize(title))
         if not row:
-            raise RuntimeError(f"Selected second-order candidate not found: {title}")
+            raise RuntimeError(f"Selected traced candidate not found: {title}")
         citations = as_int(row.get("citationCount"))
         seed_hits = as_int(row.get("seed_overlap_count"))
         selected_rows.append(
@@ -331,12 +331,12 @@ def build_second_order_candidates_auto() -> list[dict[str, str]]:
 
 def main() -> None:
     priority = build_priority_seeds()
-    print(f"priority_expansion_seeds={len(priority)}")
+    print(f"priority_tracing_seeds={len(priority)}")
     second_order = build_second_order_candidates()
     if second_order:
-        print(f"second_order_selected={len(second_order)}")
+        print(f"traced_candidate_selected={len(second_order)}")
     else:
-        print("second_order_selected=0 (run second-order expansion first)")
+        print("traced_candidate_selected=0 (run the deeper tracing step first)")
 
 
 if __name__ == "__main__":

@@ -49,3 +49,5 @@ Current status: complete for the first strategy-only pass. The README now includ
 - Use short inclusion notes only when they clarify strategic relevance.
 - Track deferred/rejected candidates separately if needed.
 - Avoid turning the README into a data report; data and pipeline details belong below the paper list or in docs.
+
+Current status: complete. The homepage now uses a thematic structure with 111 unique papers across 8 themes and 29 subthemes.
