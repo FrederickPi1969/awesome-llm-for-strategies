@@ -8,7 +8,7 @@ Out of scope: finance, trading, stock prediction, portfolio management, generic 
 
 Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-20.
 
-Current curated coverage: **111 unique papers** organized into 8 themes.
+Current curated coverage: **129 unique papers** organized into 8 themes.
 
 ## Contents
 
@@ -84,7 +84,7 @@ Current curated coverage: **111 unique papers** organized into 8 themes.
 
 ### Policymaking, Governance, and Institutional Decision Support
 
-7 papers.
+25 papers.
 
 #### Democratic governance and augmentation
 
@@ -104,6 +104,30 @@ Current curated coverage: **111 unique papers** organized into 8 themes.
 
 - [Generative Artificial Intelligence and Evaluating Strategic Decisions](https://www.semanticscholar.org/paper/1b43632036f7e1f45a4759849f2924478eccc81e) (2024) - citations: 119.
 - [Biased LLMs can Influence Political Decision-Making](https://aclanthology.org/2025.acl-long.328/) (2025) - Important; citations: 22.
+
+#### AI-assisted strategy and managerial decision-making
+
+- [Effect of Generative Artificial Intelligence on Strategic Decision Making in Entrepreneurial Business Initiatives: A Systematic Literature Review](https://www.semanticscholar.org/paper/2ad7e5a6a7fe3f337fe3e51945078e1a4a6ecbf0) (2025) - citations: 44.
+- [Advancing Decision-Making through AI-Human Collaboration: A Systematic Review and Conceptual Framework](https://www.semanticscholar.org/paper/e9953ca2ec43f97a9d9f1799bd9a0d3a5e36e3a4) (2026) - citations: 5.
+- [Can AI Do Strategy? A Dialogue and Debate](https://www.semanticscholar.org/paper/8c1a7f651cc9531fb880b1a97b352853fbdde3e4) (2026) - citations: 2.
+- [How Well Can AI Do Strategy? Empirical Benchmarking Using Strategy Simulations](https://www.semanticscholar.org/paper/dcb8f50169a77b359546610f4d354c62503c6357) (2026) - citations: 2.
+- [The role of artificial intelligence in international strategic decision-making for SMEs](https://www.semanticscholar.org/paper/ee44f0e9b0fd844b0ebc2212b90ad7da075a5350) (2025) - citations: 2.
+- [AI-Augmented Strategic Decision-Making Under Time Constraints: An Experimental Study on Mental Representations and Strategic Foresight](https://www.semanticscholar.org/paper/1fd6e00dc9b8b39d15d93bc544968aee99e0ce59) (2026) - citations: 1.
+- [Beyond Black Boxes: Designing and Testing Agentic AI Systems for Strategy](https://www.semanticscholar.org/paper/c9b0199c66eb0cc9a80624f97114e643c40ba66c) (2026) - citations: 1.
+- [Can AI Do Strategy?](https://www.semanticscholar.org/paper/df3612f5be1e2bbd499b9807431f2cd94bb03187) (2026) - citations: 1.
+- [Towards Using Prompt Engineering in Large Language Models to Assist Decision Making](https://www.semanticscholar.org/paper/c332dfdcb17d8c426c18da1e952f6809e95adbe3) (2025) - citations: 1.
+- [When Artificial Intelligence Does Strategy: Learning, Good Times, Lock-in, and Human-Driven Strategic Renewal](https://www.semanticscholar.org/paper/30bcdb368cd73aafaf9699b3293422cd7c99f568) (2026) - citations: 1.
+- [AI in strategic alliance formation: a framework for human-AI collaboration](https://www.semanticscholar.org/paper/5cf5b32c5170a80cb6f881de7080f72ca7030990) (2025) - citations: 0.
+- [Generative AI in Managerial Decision-Making: Redefining Boundaries through Ambiguity Resolution and Sycophancy Analysis](https://www.semanticscholar.org/paper/b296f8b4bef9933539a667dcd1ab59188394b70a) (2026) - citations: 0.
+- [Reliance on AI in augmented strategic decision-making: Navigating cultural and national dynamics](https://www.semanticscholar.org/paper/5200a457b36ba3879bea48710f5e93b730aa71ec) (2026) - citations: 0.
+
+#### Strategic evaluation, bias, and foresight
+
+- [Reproducing and Extending Experiments in Behavioral Strategy with Large Language Models](https://www.semanticscholar.org/paper/82506d4c40abcd9cefdc71c44eb02021907e78cf) (2024) - citations: 3.
+- [AI strategy under institutional pressure: strategic conformity and decision-making in large language models](https://www.semanticscholar.org/paper/d2e24d551c5eb3fb9bcaf5da5265af1ba61ef007) (2026) - citations: 0.
+- [Bias in, symbolic compliance out? GPT's reliance on gender and race in strategic evaluations](https://www.semanticscholar.org/paper/dfb6c8ffd3d162c2c3496e9c4a14d7f0628aa07b) (2026) - citations: 0.
+- [From Problems to Solutions in Strategic Decision-Making: The Effects of Generative AI on Problem Formulation](https://www.semanticscholar.org/paper/4f54aa6a09787eb6303e406a46e65db2a8995c7c) (2025) - citations: 0.
+- [How AI-assisted scenario thinking develops agile minds for a successful digital strategy?](https://www.semanticscholar.org/paper/1cee20d1b163cc44f7fbe4b3afdf5216ae83c971) (2026) - citations: 0.
 
 ### Geopolitics, Diplomacy, National Security, and Wargaming
 
@@ -253,24 +277,29 @@ Current curated coverage: **111 unique papers** organized into 8 themes.
 
 ## Data and Collection
 
-- Total unique papers in the thematic list: 111
-- Source rows checked before merge: 129
+- Total unique papers in the thematic list: 129
+- Source rows checked before merge: 147
 - Duplicate source rows removed during merge: 18
 - Core seed papers: 40
-- Curated additions merged into themes: 71
+- Curated additions merged into themes: 89
 - Initial citation/reference edges scanned: 3889
 - Additional citation/reference edges scanned from priority papers: 2871
+- Targeted strategic-decision related-work edges scanned: 119
 
 Data files:
 
 - `data/processed/thematic_papers.csv`: merged thematic paper table used to build the homepage.
 - `data/raw/core_seed_papers.csv`: original core seed list.
+- `data/raw/targeted_strategic_decisions_seed.csv`: targeted trace seed for the strategic-decision paper.
 - `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.
+- `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.
+- `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.
 
 Scripts:
 
 - `scripts/expand_semantic_scholar.py`: resolves seeds, fetches citations/references, and writes candidate tables.
 - `scripts/fetch_seed_metadata.py`: enriches seed papers with Semantic Scholar metadata.
+- `scripts/build_targeted_related_works.py`: selects targeted related-work additions from a trace longlist.
 - `scripts/build_readme.py`: rebuilds this README and validates that every curated paper is assigned to a theme.
 
 ## Contributing

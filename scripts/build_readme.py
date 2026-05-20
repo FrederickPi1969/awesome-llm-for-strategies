@@ -17,8 +17,10 @@ ENRICHED_SEEDS = ROOT / "data" / "processed" / "core_seed_papers_enriched.csv"
 CURATED_CANDIDATES = ROOT / "data" / "processed" / "candidate_additions_strategy.csv"
 PRIORITY_SEEDS = ROOT / "data" / "processed" / "priority_expansion_seeds.csv"
 SECOND_ORDER_CANDIDATES = ROOT / "data" / "processed" / "second_order_candidate_additions_strategy.csv"
+TARGETED_RELATED_WORKS = ROOT / "data" / "processed" / "targeted_related_works_strategy.csv"
 RUN_SUMMARY = ROOT / "data" / "processed" / "run_summary.json"
 SECOND_ORDER_SUMMARY = ROOT / "data" / "processed" / "second_order" / "run_summary.json"
+TARGETED_SUMMARY = ROOT / "data" / "processed" / "targeted_strategic_decisions" / "run_summary.json"
 THEMATIC_PAPERS = ROOT / "data" / "processed" / "thematic_papers.csv"
 README = ROOT / "README.md"
 
@@ -51,6 +53,8 @@ SUBTHEME_ORDER = {
         "Policy translation and policy brief generation",
         "Policy persuasion and democratic deliberation",
         "Strategic and institutional decision support",
+        "AI-assisted strategy and managerial decision-making",
+        "Strategic evaluation, bias, and foresight",
     ],
     "Geopolitics, Diplomacy, National Security, and Wargaming": [
         "Diplomacy and international institutions",
@@ -123,6 +127,24 @@ Policymaking, Governance, and Institutional Decision Support|Policy persuasion a
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|LLM-generated messages can persuade humans on policy issues
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Biased LLMs can Influence Political Decision-Making
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Generative Artificial Intelligence and Evaluating Strategic Decisions
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|How Well Can AI Do Strategy? Empirical Benchmarking Using Strategy Simulations
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|AI-Augmented Strategic Decision-Making Under Time Constraints: An Experimental Study on Mental Representations and Strategic Foresight
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Generative AI in Managerial Decision-Making: Redefining Boundaries through Ambiguity Resolution and Sycophancy Analysis
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Effect of Generative Artificial Intelligence on Strategic Decision Making in Entrepreneurial Business Initiatives: A Systematic Literature Review
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Towards Using Prompt Engineering in Large Language Models to Assist Decision Making
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Beyond Black Boxes: Designing and Testing Agentic AI Systems for Strategy
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|The role of artificial intelligence in international strategic decision-making for SMEs
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|When Artificial Intelligence Does Strategy: Learning, Good Times, Lock-in, and Human-Driven Strategic Renewal
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|AI in strategic alliance formation: a framework for human-AI collaboration
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Can AI Do Strategy?
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Reliance on AI in augmented strategic decision-making: Navigating cultural and national dynamics
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Advancing Decision-Making through AI-Human Collaboration: A Systematic Review and Conceptual Framework
+Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Can AI Do Strategy? A Dialogue and Debate
+Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|Reproducing and Extending Experiments in Behavioral Strategy with Large Language Models
+Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|AI strategy under institutional pressure: strategic conformity and decision-making in large language models
+Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|Bias in, symbolic compliance out? GPT's reliance on gender and race in strategic evaluations
+Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|From Problems to Solutions in Strategic Decision-Making: The Effects of Generative AI on Problem Formulation
+Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|How AI-assisted scenario thinking develops agile minds for a successful digital strategy?
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Human-level play in the game of Diplomacy by combining language models with strategic reasoning
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Critical Foreign Policy Decisions Benchmark: Measuring Diplomatic Preferences in Large Language Models
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Benchmarking LLMs for Political Science: A United Nations Perspective / United Nations Benchmark
@@ -349,6 +371,23 @@ def source_rows() -> list[dict[str, str]]:
             }
         )
 
+    for row in read_csv_if_exists(TARGETED_RELATED_WORKS):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("year", ""),
+                "citationCount": row.get("citationCount", ""),
+                "importance": "Curated",
+                "url": row_url(row),
+                "doi": row.get("doi", ""),
+                "arxiv": row.get("arxiv", ""),
+                "venue": row.get("venue", ""),
+                "authors": row.get("authors", ""),
+                "abstract": row.get("abstract", ""),
+                "source_tables": "targeted_related_works_strategy.csv",
+            }
+        )
+
     return rows
 
 
@@ -422,7 +461,11 @@ def write_thematic_csv(rows: list[dict[str, str]]) -> None:
         writer = csv.DictWriter(f, fieldnames=columns, lineterminator="\n")
         writer.writeheader()
         for row in rows:
-            writer.writerow({column: row.get(column, "") for column in columns})
+            writer.writerow({column: clean_csv_value(row.get(column, "")) for column in columns})
+
+
+def clean_csv_value(value: Any) -> str:
+    return " ".join(str(value or "").split())
 
 
 def paper_line(row: dict[str, str]) -> str:
@@ -444,6 +487,7 @@ def build_readme() -> str:
 
     first_summary = json.loads(RUN_SUMMARY.read_text(encoding="utf-8"))
     second_summary = read_json_if_exists(SECOND_ORDER_SUMMARY)
+    targeted_summary = read_json_if_exists(TARGETED_SUMMARY)
     theme_counts = {theme: sum(len(items) for items in by_theme.get(theme, {}).values()) for theme in THEME_ORDER}
 
     lines = [
@@ -493,17 +537,22 @@ def build_readme() -> str:
             f"- Curated additions merged into themes: {sum(1 for row in rows if row.get('source_tables') != 'core_seed_papers.csv')}",
             f"- Initial citation/reference edges scanned: {first_summary.get('edge_count', 0)}",
             f"- Additional citation/reference edges scanned from priority papers: {second_summary.get('edge_count', 0)}",
+            f"- Targeted strategic-decision related-work edges scanned: {targeted_summary.get('edge_count', 0)}",
             "",
             "Data files:",
             "",
             "- `data/processed/thematic_papers.csv`: merged thematic paper table used to build the homepage.",
             "- `data/raw/core_seed_papers.csv`: original core seed list.",
+            "- `data/raw/targeted_strategic_decisions_seed.csv`: targeted trace seed for the strategic-decision paper.",
             "- `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.",
+            "- `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.",
+            "- `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.",
             "",
             "Scripts:",
             "",
             "- `scripts/expand_semantic_scholar.py`: resolves seeds, fetches citations/references, and writes candidate tables.",
             "- `scripts/fetch_seed_metadata.py`: enriches seed papers with Semantic Scholar metadata.",
+            "- `scripts/build_targeted_related_works.py`: selects targeted related-work additions from a trace longlist.",
             "- `scripts/build_readme.py`: rebuilds this README and validates that every curated paper is assigned to a theme.",
             "",
             "## Contributing",

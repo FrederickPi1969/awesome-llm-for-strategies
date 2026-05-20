@@ -50,4 +50,12 @@ Current status: complete for the first strategy-only pass. The README now includ
 - Track deferred/rejected candidates separately if needed.
 - Avoid turning the README into a data report; data and pipeline details belong below the paper list or in docs.
 
-Current status: complete. The homepage now uses a thematic structure with 111 unique papers across 8 themes and 29 subthemes.
+Current status: complete. The homepage now uses a thematic structure with 129 unique papers across 8 themes and 31 subthemes.
+
+## Targeted Related-Work Tracing
+
+- Use targeted Semantic Scholar traces when a specific high-value paper should be expanded.
+- Keep selected additions strict: they must fit politics, geopolitics, policymaking, strategic studies, or decision-making.
+- Add accepted targeted papers to `data/processed/targeted_related_works_strategy.csv`, then rebuild the thematic README.
+
+Current status: complete for `Generative Artificial Intelligence and Evaluating Strategic Decisions`.
