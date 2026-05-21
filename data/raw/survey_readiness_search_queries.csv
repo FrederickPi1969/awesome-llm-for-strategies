@@ -1,0 +1,9 @@
+id,focus,query,max_results
+validity-001,"Foundations, Surveys, and Methods","large language model social simulation validation calibration construct validity political agents",50
+validity-002,"Multi-Agent Social Simulation and Synthetic Societies","LLM agent based modeling validation empirical grounding social simulation political behavior",50
+validity-003,"Forecasting, Geopolitical Risk, and Foresight","large language model forecasting temporal leakage retrospective evaluation knowledge cutoff political forecasting",50
+validity-004,"Forecasting, Geopolitical Risk, and Foresight","LLM forecaster benchmark validity temporal masking simulated ignorance forecasting evaluation",50
+multilingual-001,"Politics, Democracy, Public Opinion, and Persuasion","multilingual large language model political bias geopolitical bias contested political documents",50
+multilingual-002,"Politics, Democracy, Public Opinion, and Persuasion","LLM geopolitical bias non Western politics multilingual political fairness international relations",50
+diplomacy-001,"Geopolitics, Diplomacy, National Security, and Wargaming","large language model United Nations diplomacy foreign policy decision benchmark Security Council",50
+diplomacy-002,"Strategic Reasoning, Games, Negotiation, and Cooperation","LLM strategic negotiation diplomatic bargaining social reasoning benchmark foreign policy",50

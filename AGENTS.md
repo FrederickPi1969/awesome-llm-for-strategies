@@ -22,6 +22,7 @@ Exclude finance-only, trading, stock prediction, portfolio management, cryptocur
 - Do not keep "first-order expansion" or "second-order expansion" sections in the README. Expansion provenance belongs in data files; accepted papers must be merged into thematic sections.
 - Add a new theme only when the existing themes would mix genuinely different literatures.
 - When adding a source table, update `scripts/build_readme.py` so the generated README, `docs/full-bibliography.md`, and `data/processed/thematic_papers.csv` include every accepted paper.
+- Prefer adding narrower subthemes over overloading broad ones when a survey-paper gap becomes visible. Current examples include `Evaluation, validity, and contamination` and `Multilingual and geopolitical bias`.
 
 ## Foundation Papers
 
@@ -64,6 +65,7 @@ For targeted deep dives, be stricter than for broad discovery. If the seed is ab
 - Ask critique to review shortlists before merging low-citation or broad candidates.
 - Critique should not edit files directly; implementation and merge decisions stay in the main repository workflow.
 - Preserve critique decisions through explicit seed files, curated-addition files, and collection-plan notes.
+- Treat critique's reject/downgrade decisions as binding unless there is new metadata that clearly changes the case. Especially reject generic agent papers, economic negotiation, finance-specific forecasting, generic LLM evaluation, and generic multilingual bias unless there is a direct political, geopolitical, policy, strategic-studies, or decision-making link.
 
 ## Data Workflow
 
@@ -112,6 +114,7 @@ source_paths = [
     'data/processed/critique_next_expansion/curated_additions.csv',
     'data/processed/critique_followup_expansion/curated_additions.csv',
     'data/processed/critique_round3_expansion/curated_additions.csv',
+    'data/processed/survey_readiness_expansion/curated_additions.csv',
 ]
 
 def norm(value):

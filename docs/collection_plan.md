@@ -50,7 +50,7 @@ Current status: complete for the first strategy-only pass. The README now includ
 - Track deferred/rejected candidates separately if needed.
 - Avoid turning the README into a data report; data and pipeline details belong below the paper list or in docs.
 
-Current status: superseded by the curated-guide pass. The full bibliography now contains 322 unique papers across 10 reader-oriented themes, while the README highlights only Core and Important papers.
+Current status: superseded by the curated-guide pass. The full bibliography now contains 355 unique papers across 10 reader-oriented themes, while the README highlights only Core and Important papers.
 
 ## Targeted Related-Work Tracing
 
@@ -76,7 +76,7 @@ Current status: complete for the first pass. The README now includes 30 classica
 - Add reader guidance, Start Here papers, public label definitions, selection criteria, and stricter contribution standards.
 - Normalize public theme names around reader intent: foundations, political text, public opinion, policy support, geopolitics/wargaming, forecasting, strategic games, social simulation, and risk.
 
-Current status: complete for the first pass. The README highlights Core and Important papers only, and `docs/full-bibliography.md` preserves the full 248-paper list.
+Current status: complete for the first pass. The README highlights Core and Important papers only, and `docs/full-bibliography.md` preserves the full generated bibliography.
 
 ## Critique-Guided Next Expansion
 
@@ -105,3 +105,13 @@ Current status: complete for this pass. The trace scanned 367 citation/reference
 - Reject economic negotiation, generic games, generic agent platforms, generic misinformation/safety, corporate/marketing persuasion, and finance/trading/time-series-adjacent candidates.
 
 Current status: complete for this pass. The trace scanned 1,064 influence/diplomacy citation-reference edges, 304 social-simulation related-work edges, and 132 Semantic Scholar query results. The critique-reviewed merge added 41 non-duplicate papers.
+
+## Survey-Readiness Expansion
+
+- Use Critique's survey-paper gap assessment to target validity/evaluation, multilingual and geopolitical bias, institutional diplomacy, foreign-policy decision-making, and strategic-reasoning mechanisms.
+- Trace existing high-value seeds rather than starting a broad discovery pass.
+- Add two narrower subthemes: `Evaluation, validity, and contamination` and `Multilingual and geopolitical bias`.
+- Keep generic LLM evaluation only when it directly supports contamination, temporal leakage, or validity standards for political-strategic tasks.
+- Reject generic agent papers, economic negotiation, finance-specific forecasting, and generic multilingual-bias work without political or geopolitical content.
+
+Current status: complete for this pass. The trace scanned 721 citation/reference edges and 166 Semantic Scholar query results. The critique-reviewed merge added 33 non-duplicate papers, bringing the full bibliography to 355 unique papers. See `docs/survey_readiness_gap_analysis.md` for the remaining survey-paper gaps.

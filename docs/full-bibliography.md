@@ -3,14 +3,14 @@
 This is the complete thematic bibliography generated from `data/processed/thematic_papers.csv`.
 The public README highlights Core and Important items; this file keeps Curated and Watchlist entries visible without overloading the homepage.
 
-Total papers: **322**.
+Total papers: **355**.
 
 Label counts:
 
 - Core: 60
-- Important: 97
-- Curated: 147
-- Watchlist: 18
+- Important: 112
+- Curated: 163
+- Watchlist: 20
 
 ## Papers
 
@@ -18,7 +18,7 @@ Label counts:
 
 Canonical IR, strategic-studies, intelligence-analysis, and forecasting foundations for interpreting LLM behavior in strategic settings.
 
-31 papers.
+32 papers.
 
 #### Deterrence, coercion, and nuclear strategy
 
@@ -48,6 +48,7 @@ Canonical IR, strategic-studies, intelligence-analysis, and forecasting foundati
 - [Analysis, War, and Decision: Why Intelligence Failures Are Inevitable](https://www.semanticscholar.org/paper/0d5f8a5303dc849f3a3c0080fbf0ca683066024d) (1978) - Core; venue: World Politics; citations: 326.
 - [Wargaming for International Relations research](https://www.semanticscholar.org/paper/972ce50bb17b167190e785b1bbe08d48a07a3a56) (2021) - Curated; venue: European Journal of International Relations; citations: 36.
 - [Evaluating Escalation: Conceptualizing Escalation in an Era of Emerging Military Technologies](https://www.semanticscholar.org/paper/d2c9d39b2773231954b20b9a884d2b323d8402d9) (2023) - Curated; venue: Journal of Politics; citations: 19.
+- [Advisers and Aggregation in Foreign Policy Decision Making](https://www.semanticscholar.org/paper/63ebe0f54b97741fce6d056a5475ed6a855358b2) (2024) - Important; venue: International Organization; citations: 16.
 
 #### Intelligence analysis and structured analytic techniques
 
@@ -70,13 +71,14 @@ Canonical IR, strategic-studies, intelligence-analysis, and forecasting foundati
 
 LLM-era surveys and methodological overviews that orient political science, social simulation, and game-theoretic agent work.
 
-12 papers.
+18 papers.
 
 #### Political science and computational social science overviews
 
 - [Can Large Language Models Transform Computational Social Science?](https://aclanthology.org/2024.cl-1.8/) (2024) - Core; venue: International Conference on Computational Logic; citations: 508.
 - [Large language models and political science](https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2023.1257092/full) (2023) - Important; venue: Frontiers in Political Science; citations: 36.
 - [Political-LLM: Large Language Models in Political Science](https://arxiv.org/abs/2412.06864) (2024) - Core; venue: arXiv.org; citations: 32.
+- [The Consequences of Generative AI for Democracy, Governance and War](https://www.semanticscholar.org/paper/e714419610942d378b7d6bf28e0839d1b4be61e1) (2023) - Watchlist; venue: Survival: Global Politics and Strategy; citations: 23.
 - [Intelligent Computing Social Modeling and Methodological Innovations in Political Science in the Era of Large Language Models](https://www.semanticscholar.org/paper/be8c344ed7728367a25b074bf98c9a7569d15f74) (2024) - Important; venue: Journal of Chinese Political Science; citations: 19.
 - [Large Language Models in Politics and Democracy: A Comprehensive Survey](https://arxiv.org/abs/2412.04498) (2024) - Core; venue: arXiv.org; citations: 5.
 
@@ -85,6 +87,8 @@ LLM-era surveys and methodological overviews that orient political science, soci
 - [Large language models empowered agent-based modeling and simulation: a survey and perspectives](https://www.nature.com/articles/s41599-024-03611-3) (2024) - Core; venue: Humanities and Social Sciences Communications; citations: 400.
 - [From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents](https://www.semanticscholar.org/paper/11a6d66791e244b01bf1a23a98158be789854876) (2024) - Important; venue: ACM Computing Surveys; citations: 71.
 - [Validation is the central challenge for generative social simulation: a critical review of LLMs in agent-based modeling](https://www.semanticscholar.org/paper/5cd29f769cced349fb7c5affb5c6d27fb387a69c) (2025) - Important; venue: Artificial Intelligence Review; citations: 12.
+- [Generative Agents in Agent-Based Modeling: Overview, Validation, and Emerging Challenges](https://www.semanticscholar.org/paper/93649b764b1d9f57b75a57561107e4884a7dda0b) (2025) - Curated; venue: IEEE Transactions on Artificial Intelligence; citations: 9.
+- [Integrating LLM in Agent-Based Social Simulation: Opportunities and Challenges](https://www.semanticscholar.org/paper/363636e14d23fefba385847824e0c7719de180c3) (2025) - Curated; venue: arXiv.org; citations: 7.
 
 #### Strategic reasoning and game-theoretic reviews
 
@@ -93,11 +97,17 @@ LLM-era surveys and methodological overviews that orient political science, soci
 - [Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas](https://www.semanticscholar.org/paper/844fdeb5089e6d1bb99fe3c8a830bf7f722ba910) (2024) - Curated; venue: Neurocomputing; citations: 32.
 - [A Survey on Large Language Model-Based Social Agents in Game-Theoretic Scenarios](https://www.semanticscholar.org/paper/30dcacbf0b7a93196e07c721be35274afdcb4aa4) (2024) - Curated; venue: arXiv.org; citations: 24.
 
+#### Evaluation, validity, and contamination
+
+- [Leak, Cheat, Repeat: Data Contamination and Evaluation Malpractices in Closed-Source LLMs](https://www.semanticscholar.org/paper/798feda076ad710df65d509a7884bd15937c8056) (2024) - Curated; venue: Conference of the European Chapter of the Association for Computational Linguistics; citations: 307.
+- [LLM-Based Social Simulations Require a Boundary](https://www.semanticscholar.org/paper/345a35ad4020dee737cb905239af9234584fbd33) (2025) - Important; venue: arXiv.org; citations: 11.
+- [AI Agents Alone Are Not (Yet) Sufficient for Social Simulation](https://www.semanticscholar.org/paper/b591727c39c8df8a7dc55b8e2c4ce032afc08644) (2026) - Important; venue: arXiv; citations: 1.
+
 ### Political Text and Measurement
 
 Pre-LLM and bridge methods for political text measurement, legislative text classification, and event-data extraction.
 
-40 papers.
+42 papers.
 
 #### Political text as data and policy-position extraction
 
@@ -110,6 +120,7 @@ Pre-LLM and bridge methods for political text measurement, legislative text clas
 - [A Bayesian Hierarchical Topic Model for Political Texts: Measuring Expressed Agendas in Senate Press Releases](https://www.semanticscholar.org/paper/b06056c20f4ed118e7db9f4e35e674570b2cf8f6) (2010) - Core; venue: Political Analysis; citations: 584.
 - [Computer-Assisted Text Analysis for Comparative Politics](https://www.semanticscholar.org/paper/ca1469279ace2e341fd385c884129367e1b7dda7) (2015) - Core; venue: Political Analysis; citations: 464.
 - [How to train your stochastic parrot: large language models for political texts](https://www.semanticscholar.org/paper/d0416928f4f8ecc7adc81d4072ae22911a863664) (2025) - Curated; venue: Political Science Research and Methods; citations: 57.
+- [Using Imperfect Surrogates for Downstream Inference: Design-based Supervised Learning for Social Science Applications of Large Language Models](https://www.semanticscholar.org/paper/04071b5817d84eacc5d56816c0158c1fbee0d286) (2023) - Important; venue: Neural Information Processing Systems; citations: 49.
 - [Synthetically generated text for supervised text analysis](https://www.semanticscholar.org/paper/1a3099125dd700a65dbe6c1c2cc4067e12d5171a) (2023) - Curated; venue: Political Analysis; citations: 16.
 - [Measurement in the Age of LLMs: An Application to Ideological Scaling](https://www.semanticscholar.org/paper/f1847c5693f7dac9ba89b3e0571ee27cfca720dc) (2023) - Curated; venue: arXiv.org; citations: 15.
 - [Measuring Scalar Constructs in Social Science with LLMs](https://www.semanticscholar.org/paper/26730e1800a33de13aa8ce01f1400b4818e9de42) (2025) - Curated; venue: Conference on Empirical Methods in Natural Language Processing; citations: 8.
@@ -142,6 +153,7 @@ Pre-LLM and bridge methods for political text measurement, legislative text clas
 - [Automated Production of High-Volume, Near-Real-Time Political Event Data](https://www.semanticscholar.org/paper/22317c1fb2e0339771cb6f263e58c31ea421054c) (2011) - Important; citations: 35.
 - [Improving the selection of news reports for event coding using ensemble classification](https://www.semanticscholar.org/paper/b1dc323fcad19c28240906b989afc02f7d2849d4) (2015) - Important; citations: 34.
 - [Creating Custom Event Data Without Dictionaries: A Bag-of-Tricks](https://www.semanticscholar.org/paper/3a8d5ee46951eda62e38ca4d9b364de5387d8be4) (2023) - Important; venue: arXiv.org; citations: 9.
+- [Applications of GPT in Political Science Research: Extracting Information from Unstructured Text](https://www.semanticscholar.org/paper/f387afbd458580b4b92123491247538b456f71f7) (2025) - Curated; venue: PS: Political Science & Politics; citations: 9.
 - [Socio-political Events of Conflict and Unrest: A Survey of Available Datasets](https://www.semanticscholar.org/paper/e2f0fca4113a62ff2cfdc8901265f89af6bf4516) (2024) - Curated; venue: CASE; citations: 7.
 - [Creating a Real-Time, Reproducible Event Dataset](https://www.semanticscholar.org/paper/680ef0b7b3e0a415a29ca28e4bb40dad220ad69e) (2016) - Important; venue: arXiv.org; citations: 5.
 - [Coding with the machines: machine-assisted coding of rare event data](https://www.semanticscholar.org/paper/a92f37aa991a60147f51ffdd24e86bd6c011370c) (2024) - Curated; venue: PNAS Nexus; citations: 5.
@@ -152,23 +164,41 @@ Pre-LLM and bridge methods for political text measurement, legislative text clas
 
 LLM work on ideology, voter behavior, opinion simulation, political annotation, deliberation, and persuasion.
 
-37 papers.
+52 papers.
 
 #### Political ideology, representation, and bias
 
 - [Whose Opinions Do Language Models Reflect?](https://www.semanticscholar.org/paper/e38a29f6463f38f43797b128673b9e44d18a991e) (2023) - Important; venue: International Conference on Machine Learning; citations: 782.
 - [More human than human: measuring ChatGPT political bias](https://www.semanticscholar.org/paper/3d8a3517231643c1df79bc32c8c2664a4cba3a41) (2023) - Important; venue: Public Choice; citations: 407.
 - [Should ChatGPT be Biased? Challenges and Risks of Bias in Large Language Models](https://www.semanticscholar.org/paper/16d83e930a4dab2d49f5d276838ddce79df3f787) (2023) - Important; venue: First Monday; citations: 369.
+- [From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models](https://www.semanticscholar.org/paper/5471114e37448bea2457b74894b1ecb92bbcfdf6) (2023) - Curated; venue: Annual Meeting of the Association for Computational Linguistics; citations: 367.
 - [The political ideology of conversational AI: Converging evidence on ChatGPT's pro-environmental, left-libertarian orientation](https://www.semanticscholar.org/paper/b6f8cffc5da51581aec71d919d010d55e5ac068a) (2023) - Curated; venue: Social Science Research Network; citations: 322.
 - [Cultural bias and cultural alignment of large language models](https://www.semanticscholar.org/paper/5f8bf881c80125452e4a73ad51fdb2c72c65c551) (2023) - Important; venue: PNAS Nexus; citations: 307.
+- [The Political Biases of ChatGPT](https://www.semanticscholar.org/paper/3aa22ac9e265cfb5158ad8b0b9e584e50504585e) (2023) - Curated; venue: The social science; citations: 245.
+- [Political Compass or Spinning Arrow? Towards More Meaningful Evaluations for Values and Opinions in Large Language Models](https://www.semanticscholar.org/paper/5bd44a34457d3f323eea4d961dd762003be3961d) (2024) - Important; venue: Annual Meeting of the Association for Computational Linguistics; citations: 155.
+- [Measuring Political Bias in Large Language Models: What Is Said and How It Is Said](https://www.semanticscholar.org/paper/8f77307a394f006633c27cca56a345c0879eb67c) (2024) - Curated; venue: Annual Meeting of the Association for Computational Linguistics; citations: 112.
 - [Large language models reflect the ideology of their creators](https://www.nature.com/articles/s44387-025-00048-0) (2025) - Important; venue: npj Artificial Intelligence; citations: 58.
+- [Beyond Prompt Brittleness: Evaluating the Reliability and Consistency of Political Worldviews in LLMs](https://www.semanticscholar.org/paper/292d5013b1642eb7245f3d653695c4d31f4f3aa5) (2024) - Important; venue: Transactions of the Association for Computational Linguistics; citations: 52.
+- [Assessing political bias in large language models](https://www.semanticscholar.org/paper/684d7ea1b5c890346e68c0ca604a591e0e73e60a) (2024) - Curated; venue: Journal of Computational Social Science; citations: 50.
 - [Large Means Left: Political Bias in Large Language Models Increases with Their Number of Parameters](https://www.semanticscholar.org/paper/2d635fa1b8af339e7029105fc5e0a64681d9b5e5) (2025) - Important; venue: arXiv.org; citations: 10.
-- [Echoes of Power: Investigating Geopolitical Bias in US and China Large Language Models](https://www.semanticscholar.org/paper/a0a77a0d66e213c6014aefb8f9a0705aed0da1f5) (2025) - Curated; venue: Humanities and Social Sciences Communications; citations: 5.
 - [Media Source Matters More Than Content: Unveiling Political Bias in LLM-Generated Citations](https://www.semanticscholar.org/paper/8be09e69ebbcfbcfa93c912146ed8ea9cb665862) (2025) - Curated; venue: Conference on Empirical Methods in Natural Language Processing; citations: 4.
+- [What Is The Political Content in LLMs' Pre- and Post-Training Data?](https://www.semanticscholar.org/paper/6ea5c7a8dcd2e516177cd1cc49c14babc0b2962c) (2025) - Important; venue: arXiv.org; citations: 3.
 - [Ideology-Based LLMs for Content Moderation](https://www.semanticscholar.org/paper/0673fa71acff0a399f2996615c4d8c11f70bf371) (2025) - Curated; venue: ACM Transactions on Intelligent Systems and Technology; citations: 1.
 - [A Multi-Dimensional Audit of Politically Aligned Large Language Models](https://www.semanticscholar.org/paper/2612ab7c6481f5ae634ab11c34f36d56897ddc12) (2026) - Curated; venue: arXiv; citations: 0.
+
+#### Multilingual and geopolitical bias
+
+- [This Land is Your, My Land: Evaluating Geopolitical Bias in Language Models through Territorial Disputes](https://www.semanticscholar.org/paper/1f5c666f2462190f76749be65764f43c393b0c0c) (2023) - Important; venue: North American Chapter of the Association for Computational Linguistics; citations: 34.
+- [John vs. Ahmed: Debate-Induced Bias in Multilingual LLMs](https://www.semanticscholar.org/paper/972c97a151960d8f6b16e0a570c2ccbfbf8e01e8) (2024) - Curated; venue: ARABICNLP; citations: 11.
+- [Political biases and inconsistencies in bilingual GPT models—the cases of the U.S. and China](https://www.semanticscholar.org/paper/4dfa4b7f9eca1b90778dfc6543ec074ba56683e3) (2024) - Curated; venue: Scientific Reports; citations: 11.
+- [Democratic or Authoritarian? Probing a New Dimension of Political Biases in Large Language Models](https://www.semanticscholar.org/paper/e97107eede375d1eb0dfc540e3c0753a5b35b18d) (2025) - Important; venue: arXiv.org; citations: 5.
+- [Echoes of Power: Investigating Geopolitical Bias in US and China Large Language Models](https://www.semanticscholar.org/paper/a0a77a0d66e213c6014aefb8f9a0705aed0da1f5) (2025) - Curated; venue: Humanities and Social Sciences Communications; citations: 5.
+- [Framing Political Bias in Multilingual LLMs Across Pakistani Languages](https://www.semanticscholar.org/paper/a643e78f431e94749c681a8009f6e7a3003e707a) (2025) - Important; venue: arXiv; citations: 4.
+- [Mapping Geopolitical Bias in 11 Large Language Models: A Bilingual, Dual-Framing Analysis of U.S.-China Tensions](https://www.semanticscholar.org/paper/e1bd56bf0964cdb979cc6ba65c8b93a79eb8b8e5) (2025) - Important; venue: arXiv.org; citations: 4.
+- [Bias Beyond Borders: Political Ideology Evaluation and Steering in Multilingual LLMs](https://www.semanticscholar.org/paper/81024568c22b38af2e40df9964ddc91dbd825248) (2026) - Important; venue: arXiv.org; citations: 1.
 - [An evaluation of LLMs for political bias in Western media: Israel-Hamas and Ukraine-Russia wars](https://www.semanticscholar.org/paper/b6908b838ad2d52233bc4b9898086ca2969d8d00) (2026) - Curated; venue: arXiv.org; citations: 0.
 - [Assessing the Political Fairness of Multilingual LLMs: A Case Study based on a 21-way Multiparallel EuroParl Dataset](https://www.semanticscholar.org/paper/39ee3b79aa1e63fe327c7f59001077a8d2ad8bb2) (2025) - Curated; venue: arXiv.org; citations: 0.
+- [International political bias in large language models: a critical discourse analysis of narratives in ChatGPT, LLaMA, Gemini, and DeepSeek](https://www.semanticscholar.org/paper/78e428c2443856492d9f3ba45b6374778d6dd13f) (2026) - Curated; venue: Полис. Политические исследования; citations: 0.
 - [The Language You Ask In: Language-Conditioned Ideological Divergence in LLM Analysis of Contested Political Documents](https://www.semanticscholar.org/paper/95852e9b07af846a01840bb385c91e21c6bfaf74) (2026) - Watchlist; venue: arXiv.org; citations: 0.
 
 #### Elections, voters, and campaign discourse
@@ -210,7 +240,7 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 
 Papers on public decision support, policy communication, democratic deliberation, and institutional uses of LLMs.
 
-42 papers.
+43 papers.
 
 #### Democratic governance and augmentation
 
@@ -230,6 +260,7 @@ Papers on public decision support, policy communication, democratic deliberation
 - [AI can help humans find common ground in democratic deliberation](https://www.semanticscholar.org/paper/5456e833710dba2bb3ae92621fa89c27733b1db0) (2024) - Important; venue: Science; citations: 208.
 - [LLM-generated messages can persuade humans on policy issues](https://www.semanticscholar.org/paper/da2ed9d7804f138a1108089891fd07df15a70a3a) (2025) - Important; venue: Nature Communications; citations: 67.
 - [Generative Social Choice](https://www.semanticscholar.org/paper/faacd17525147b8cf89948573e3d13f3cf8023e9) (2023) - Curated; venue: ACM Conference on Economics and Computation; citations: 62.
+- [Opportunities and Risks of LLMs for Scalable Deliberation with Polis](https://www.semanticscholar.org/paper/ede87ffc69414d3ca86c5e57b96757d0245eab82) (2023) - Important; venue: arXiv.org; citations: 60.
 - [Large Language Models Can Argue in Convincing Ways About Politics, But Humans Dislike AI Authors: Implications for Governance](https://collaborate.princeton.edu/en/publications/large-language-models-can-argue-in-convincing-ways-about-politics/) (n.d.) - Important; venue: Political science; citations: 36.
 - [Can AI Truly Represent Your Voice in Deliberations? A Comprehensive Study of Large-Scale Opinion Aggregation with LLMs](https://www.semanticscholar.org/paper/29ecbb1c2fde56565ea283fb292f17dce21b2f0c) (2025) - Important; venue: arXiv.org; citations: 3.
 - [An Emergent Understanding of Human-AI Collaboration in Deliberation](https://www.semanticscholar.org/paper/82fdc8bb274a1bc21b9e005c033a952883b8c3e9) (2025) - Important; venue: CSCW Companion; citations: 2.
@@ -276,7 +307,7 @@ Papers on public decision support, policy communication, democratic deliberation
 
 Diplomatic agents, military decision support, escalation behavior, national security applications, and wargaming.
 
-37 papers.
+39 papers.
 
 #### Diplomacy and international institutions
 
@@ -286,6 +317,7 @@ Diplomatic agents, military decision support, escalation behavior, national secu
 - [Benchmarking LLMs for Political Science: A United Nations Perspective / United Nations Benchmark](https://arxiv.org/abs/2502.14122) (2025) - Core; venue: Proceedings of the AAAI Conference on Artificial Intelligence; citations: 5.
 - [Critical Foreign Policy Decisions Benchmark: Measuring Diplomatic Preferences in Large Language Models](https://arxiv.org/abs/2503.06263) (2025) - Core; venue: arXiv.org; citations: 4.
 - [DiplomacyAgent: Do LLMs Balance Interests and Ethical Principles in International Events?](https://www.semanticscholar.org/paper/042527cf922c53bcaa831699276205a110c42fbb) (2025) - Curated; venue: Conference on Empirical Methods in Natural Language Processing; citations: 4.
+- [Democratizing Diplomacy: A Harness for Evaluating Any Large Language Model on Full-Press Diplomacy](https://www.semanticscholar.org/paper/de50adf51dc109bb44e52d63490e7322ba50b1d7) (2025) - Important; venue: AAAI Conference on Artificial Intelligence; citations: 3.
 - [UNSC-Bench: Evaluating LLM Diplomatic Role-Playing Through UN Security Council Vote Prediction](https://aclanthology.org/2026.mme-main.10.pdf) (2026) - Core; venue: Proceedings of the First Workshop on Multilingual Multicultural Evaluation; citations: 0.
 - [ALGORITHMIC DIPLOMACY: THE ROLE OF ARTIFICIAL INTELLIGENCE IN SHAPING 21ST CENTURY FOREIGN POLICY DECISIONS](https://www.semanticscholar.org/paper/6e3c651e567db13815a1bb355335f6a256feb476) (2026) - Watchlist; venue: Al-Aasar; citations: 0.
 
@@ -316,6 +348,7 @@ Diplomatic agents, military decision support, escalation behavior, national secu
 - [Hacking Nuclear Stability: Wargaming Technology, Uncertainty, and Escalation](https://www.semanticscholar.org/paper/a103bb75a51840687befa963ca37abc00b52caa3) (2023) - Important; venue: International Organization; citations: 10.
 - [Simulating Influence Dynamics with LLM Agents](https://arxiv.org/html/2503.08709v1) (2025) - Important; venue: BigData Congress [Services Society]; citations: 5.
 - [AI Arms and Influence: Frontier Models Exhibit Sophisticated Reasoning in Simulated Nuclear Crises](https://www.semanticscholar.org/paper/61159eaad2619f56621105de3670b54da562e340) (2026) - Core; venue: arXiv.org; citations: 4.
+- [What is Escalation? Measuring Crisis Dynamics in International Relations with Human and LLM Generated Event Data](https://www.semanticscholar.org/paper/2fbeda24159ffccad81e33ced2c61c6f2f1ca236) (2024) - Important; venue: arXiv; citations: 3.
 - [Do Large Language Models Know Conflict? Investigating Parametric vs. Non-Parametric Knowledge of LLMs for Conflict Forecasting](https://www.semanticscholar.org/paper/e6f29dbbebaa8ce2c2da9581781aa03a58b4ed28) (2025) - Curated; venue: arXiv.org; citations: 2.
 - [LLMs as Strategic Actors: Behavioral Alignment, Risk Calibration, and Argumentation Framing in Geopolitical Simulations](https://arxiv.org/abs/2603.02128) (2026) - Important; venue: arXiv; citations: 1.
 - [Waltzing into uncertainty: AI in nuclear decision making and the challenge of divergent deterrence logics](https://www.semanticscholar.org/paper/5142d912986ab1e0d7e166f2c143ec25de99525b) (2026) - Curated; venue: Law and Governance; citations: 1.
@@ -391,7 +424,7 @@ Forecasting benchmarks, event-prediction systems, calibration studies, and geopo
 
 LLM strategic reasoning in games, bargaining, negotiation, cooperation, and multi-agent social dilemmas.
 
-22 papers.
+27 papers.
 
 #### Game-theoretic and strategic reasoning benchmarks
 
@@ -405,13 +438,16 @@ LLM strategic reasoning in games, bargaining, negotiation, cooperation, and mult
 - [Decision-Making Behavior Evaluation Framework for LLMs under Uncertain Context](https://www.semanticscholar.org/paper/a5a3dd4af6e754ac82670751f6789c389e91d533) (2024) - Curated; venue: Neural Information Processing Systems; citations: 53.
 - [SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially?](https://www.semanticscholar.org/paper/ec26efa475d105905d8553eedd141f7905967e5c) (2025) - Core; venue: arXiv.org; citations: 15.
 - [Multi-Agent Strategic Games with LLMs](https://www.semanticscholar.org/paper/58b591a6b644d5c0767abff1804ed46d7b5e60d9) (2026) - Curated; venue: arXiv; citations: 0.
+- [Why Do LLMs Struggle in Strategic Play? Broken Links Between Observations, Beliefs, and Actions](https://www.semanticscholar.org/paper/1f26ff0cc67c08a2fc0ce6b6f5493368bf02c308) (2026) - Curated; venue: arXiv; citations: 0.
 
 #### Negotiation, bargaining, and communication games
 
 - [SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents](https://www.semanticscholar.org/paper/f6e893b3e2ee7a62c2fe8a3b0e33920c3e596969) (2023) - Important; venue: International Conference on Learning Representations; citations: 302.
 - [Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf](https://www.semanticscholar.org/paper/24d52678c887331b9da0368e8a2f58bec07f7203) (2023) - Curated; venue: arXiv.org; citations: 287.
 - [Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback](https://www.semanticscholar.org/paper/2e6b6de08f459e2165b11ed8d2103916966b0fcf) (2023) - Curated; venue: arXiv.org; citations: 248.
+- [LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation Games](https://www.semanticscholar.org/paper/f3bcb9395d8b912361cc534f00e837c832000150) (2023) - Curated; venue: arXiv.org; citations: 65.
 - [Measuring Bargaining Abilities of LLMs: A Benchmark and A Buyer-Enhancement Method](https://www.semanticscholar.org/paper/f85ec64b14494216702d5218f58e725224ad80aa) (2024) - Curated; venue: Annual Meeting of the Association for Computational Linguistics; citations: 41.
+- [When Reasoning Models Hurt Behavioral Simulation: A Solver-Sampler Mismatch in Multi-Agent LLM Negotiation](https://www.semanticscholar.org/paper/690fa1c561a8979a13e9b5d42f6f928255d3c116) (2026) - Curated; venue: arXiv; citations: 1.
 
 #### Cooperation and social dilemmas
 
@@ -419,6 +455,7 @@ LLM strategic reasoning in games, bargaining, negotiation, cooperation, and mult
 - [Nicer Than Humans: How do Large Language Models Behave in the Prisoner's Dilemma?](https://www.semanticscholar.org/paper/9b2743735f7ae61c4b54fdc46193b626014ee102) (2024) - Curated; venue: International Conference on Web and Social Media; citations: 65.
 - [Shall We Team Up: Exploring Spontaneous Cooperation of Competing LLM Agents](https://www.semanticscholar.org/paper/11d4478587c4d2ecb195fe911809946928767657) (2024) - Curated; venue: Conference on Empirical Methods in Natural Language Processing; citations: 49.
 - [Cultural Evolution of Cooperation among LLM Agents](https://www.semanticscholar.org/paper/f6f6535192427abdc122c1d74b1efdb5624da4f0) (2024) - Curated; venue: Adaptive Agents and Multi-Agent Systems; citations: 26.
+- [Communication Enhances LLMs' Stability in Strategic Thinking](https://www.semanticscholar.org/paper/7c087b7ad39fcc85015256295c6cb1ab5ea243cd) (2026) - Curated; venue: arXiv.org; citations: 1.
 
 #### Behavioral game tests and human-like strategy
 
@@ -426,6 +463,7 @@ LLM strategic reasoning in games, bargaining, negotiation, cooperation, and mult
 - [Simulating Human Strategic Behavior: Comparing Single and Multi-agent LLMs](https://www.semanticscholar.org/paper/952f4efa812589a113b7825693a809e093a02d83) (2024) - Curated; venue: arXiv.org; citations: 50.
 - [Simulating Strategic Reasoning: Comparing the Ability of Single LLMs and Multi-Agent Systems to Replicate Human Behavior](https://www.semanticscholar.org/paper/2ad099eef1fd4bac4bafd4a52b6d2519083def51) (2024) - Curated; venue: Hawaii International Conference on System Sciences; citations: 21.
 - [Beyond Nash Equilibrium: Bounded Rationality of LLMs and humans in Strategic Decision-making](https://www.semanticscholar.org/paper/fc00e0b0f038966baac6fff21bcbd4514e6d5a59) (2025) - Curated; venue: arXiv.org; citations: 8.
+- [CHBench: A Cognitive Hierarchy Benchmark for Evaluating Strategic Reasoning Capability of LLMs](https://www.semanticscholar.org/paper/725ed79fec13105030620d8b4a5cf28cb078556b) (2025) - Curated; venue: arXiv.org; citations: 0.
 
 ### Social Simulation and Synthetic Populations
 
@@ -484,7 +522,7 @@ Generative agents, synthetic populations, and large-scale simulations of social 
 
 Political influence, persuasion risk, deception, bias, and social risks relevant to governance and strategy.
 
-21 papers.
+22 papers.
 
 #### Influence operations and persuasion risk
 
@@ -514,4 +552,5 @@ Political influence, persuasion risk, deception, bias, and social risks relevant
 
 #### Bias, toxicity, and cultural alignment risks
 
+- [Diversity and language technology: how language modeling bias causes epistemic injustice](https://www.semanticscholar.org/paper/5ce8f0e5abcf9e62d73e4b0bda56b2224ea1b712) (2024) - Watchlist; venue: Ethics and Information Technology; citations: 76.
 - [Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity](https://www.semanticscholar.org/paper/c79d3682d8506601b3018e91951aa2c7c1da42c0) (2025) - Important; venue: Online Soc. Networks Media; citations: 8.

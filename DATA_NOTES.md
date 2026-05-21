@@ -4,7 +4,7 @@ This repository is scoped to LLMs for political strategy, geopolitics, policymak
 
 Current generated coverage:
 
-- Full thematic bibliography: 322 unique papers
+- Full thematic bibliography: 355 unique papers
 - README highlights: Core and Important papers only
 - Theme count: 10 public-facing reader-oriented themes
 - Citation source: Semantic Scholar Graph API
@@ -16,6 +16,7 @@ Current generated coverage:
 - `docs/full-bibliography.md`: complete generated bibliography, including Curated and Watchlist entries.
 - `data/processed/thematic_papers.csv`: canonical merged table used to build both Markdown files.
 - `docs/selection-criteria.md`: inclusion rules, labels, rejection rules, and provenance notes.
+- `docs/survey_readiness_gap_analysis.md`: critique-informed gap analysis for turning the repository into a survey paper.
 
 ## Source Inputs
 
@@ -29,6 +30,8 @@ Current generated coverage:
 - `data/raw/critique_followup_search_queries.csv`: targeted Semantic Scholar query-search terms for forecasting, deliberation, and military decision-making.
 - `data/raw/critique_round3_expansion_seeds.csv`: critique-round-3 seeds for influence operations, Diplomacy, and synthetic-population tracing.
 - `data/raw/critique_round3_search_queries.csv`: targeted Semantic Scholar query-search terms for influence operations, diplomacy, and social simulation.
+- `data/raw/survey_readiness_expansion_seeds.csv`: critique-selected seeds for survey-readiness gaps in validity, multilingual/geopolitical bias, diplomacy, and strategic reasoning.
+- `data/raw/survey_readiness_search_queries.csv`: targeted Semantic Scholar query-search terms for those survey-readiness gaps.
 
 Processed curated CSVs hold Semantic Scholar metadata, citation counts, authors, venues, DOI/arXiv IDs, URLs, abstracts, and source provenance where available.
 
@@ -49,6 +52,8 @@ The critique-next expansion traced `Escalation Risks from Language Models in Mil
 The critique-followup expansion traced `ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities`, `AI can help humans find common ground in democratic deliberation`, and `WARBENCH: A Comprehensive Benchmark for Evaluating LLMs in Military Decision-Making`. It also ran targeted Semantic Scholar query searches for event forecasting, democratic deliberation, and military decision-making. After critique review, it accepted 33 non-duplicate papers into the taxonomy and explicitly rejected retail forecasting, finance-specific forecasting, generic time-series forecasting, and generic defense-AI items.
 
 The critique-round-3 expansion traced `Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations`, `Human-level play in the game of Diplomacy by combining language models with strategic reasoning`, and the Semantic Scholar record for `Generative Agent Simulations of 1,000 People` (`LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals`). It also ran targeted query searches for political influence operations, AI diplomacy/strategic negotiation, and validated synthetic-population simulation. After critique review, it accepted 41 non-duplicate papers and explicitly rejected economic negotiation, generic games, generic social agents, generic misinformation/safety, corporate/marketing persuasion, and finance/trading/time-series-adjacent items.
+
+The survey-readiness expansion traced validation/social-simulation, forecasting-evaluation, multilingual/geopolitical-bias, UN/diplomacy, and strategic-reasoning seeds. It also ran targeted query searches for validity, temporal leakage, multilingual political bias, non-Western politics, institutional diplomacy, and strategic negotiation. After critique review, it accepted 33 non-duplicate papers, added two more precise subthemes (`Evaluation, validity, and contamination`; `Multilingual and geopolitical bias`), and rejected generic agent papers, generic/economic negotiation, finance-specific temporal-modeling papers, and broad multilingual-bias papers without political relevance.
 
 ## Semantic Scholar Limitations
 

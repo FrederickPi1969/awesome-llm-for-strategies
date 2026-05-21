@@ -1,0 +1,11 @@
+{
+  "seed_count": 12,
+  "resolved_seed_count": 12,
+  "expanded_seed_count": 12,
+  "edge_count": 721,
+  "candidate_count_after_filter": 531,
+  "failure_count": 0,
+  "requests": 37,
+  "max_related_per_direction": 350,
+  "min_candidate_score": 12.0
+}
