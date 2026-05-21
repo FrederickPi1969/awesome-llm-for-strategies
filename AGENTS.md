@@ -101,6 +101,7 @@ source_paths = [
     'data/processed/fog_of_war_related_works_enriched.csv',
     'data/processed/strategic_studies_foundation_enriched.csv',
     'data/processed/critique_priority_expansion/curated_additions.csv',
+    'data/processed/critique_next_expansion/curated_additions.csv',
 ]
 
 def norm(value):

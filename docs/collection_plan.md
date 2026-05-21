@@ -50,7 +50,7 @@ Current status: complete for the first strategy-only pass. The README now includ
 - Track deferred/rejected candidates separately if needed.
 - Avoid turning the README into a data report; data and pipeline details belong below the paper list or in docs.
 
-Current status: superseded by the curated-guide pass. The full bibliography now contains 221 unique papers across 10 reader-oriented themes, while the README highlights only Core and Important papers.
+Current status: superseded by the curated-guide pass. The full bibliography now contains 248 unique papers across 10 reader-oriented themes, while the README highlights only Core and Important papers.
 
 ## Targeted Related-Work Tracing
 
@@ -76,4 +76,13 @@ Current status: complete for the first pass. The README now includes 30 classica
 - Add reader guidance, Start Here papers, public label definitions, selection criteria, and stricter contribution standards.
 - Normalize public theme names around reader intent: foundations, political text, public opinion, policy support, geopolitics/wargaming, forecasting, strategic games, social simulation, and risk.
 
-Current status: complete for the first pass. The README highlights Core and Important papers only, and `docs/full-bibliography.md` preserves the full 221-paper list.
+Current status: complete for the first pass. The README highlights Core and Important papers only, and `docs/full-bibliography.md` preserves the full 248-paper list.
+
+## Critique-Guided Next Expansion
+
+- Use Critique's priority recommendation to trace `Escalation Risks from Language Models in Military and Diplomatic Decision-Making` and `Political-LLM: Large Language Models in Political Science`.
+- Reject title variants already present in the bibliography.
+- Keep only papers that fit the existing taxonomy: military/diplomatic decision-making, political LLM methods, public opinion, democratic deliberation, political bias, strategic intelligence, nuclear escalation, and influence operations.
+- Mark low-citation but precise 2025-2026 papers as `Curated` or `Watchlist` unless they are central enough to highlight.
+
+Current status: complete for this pass. The trace scanned 144 citation/reference edges and added 27 non-duplicate papers.

@@ -1,0 +1,3 @@
+id,priority,category,title,year_or_timeframe,source_url,notes
+critique-next-001,Core,"Geopolitics, Diplomacy, National Security, and Wargaming",Escalation Risks from Language Models in Military and Diplomatic Decision-Making,2024,https://arxiv.org/abs/2401.03408,"Critique-prioritized seed for LLM crisis escalation, military decision-making, diplomatic decision-making, wargaming, and geopolitical simulation."
+critique-next-002,Core,"Foundations, Surveys, and Methods",Political-LLM: Large Language Models in Political Science,2024,https://arxiv.org/abs/2412.06864,"Critique-prioritized seed for political-science LLM applications, benchmarks, public opinion, ideology, governance, elections, and policy analysis."

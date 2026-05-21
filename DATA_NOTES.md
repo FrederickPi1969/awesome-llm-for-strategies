@@ -4,7 +4,7 @@ This repository is scoped to LLMs for political strategy, geopolitics, policymak
 
 Current generated coverage:
 
-- Full thematic bibliography: 221 unique papers
+- Full thematic bibliography: 248 unique papers
 - README highlights: Core and Important papers only
 - Theme count: 10 public-facing reader-oriented themes
 - Citation source: Semantic Scholar Graph API
@@ -24,8 +24,9 @@ Current generated coverage:
 - `data/raw/fog_of_war_related_work_seed.csv`: targeted Fog of War related-work and foundation list.
 - `data/raw/strategic_studies_foundation_seed.csv`: strategic studies, deterrence, bargaining, intelligence, and crisis-decision foundations.
 - `data/raw/critique_priority_expansion_seeds.csv`: critique-selected high-priority expansion seeds.
+- `data/raw/critique_next_expansion_seeds.csv`: next-round critique seeds for escalation-risk and Political-LLM tracing.
 
-Processed CSVs hold Semantic Scholar metadata, citation counts, authors, venues, DOI/arXiv IDs, URLs, abstracts, and source provenance where available.
+Processed curated CSVs hold Semantic Scholar metadata, citation counts, authors, venues, DOI/arXiv IDs, URLs, abstracts, and source provenance where available.
 
 ## Merge Process
 
@@ -38,6 +39,8 @@ The build script merges source rows by normalized title, applies a manually main
 Entries are manually curated after Semantic Scholar expansion. Raw citation-neighborhood longlists and edge dumps are treated as local intermediate files because they can contain finance, business, biomedical, generic NLP, or other off-scope noise.
 
 Preprints are allowed when they are highly relevant to the repository scope, especially for fast-moving LLM benchmark, wargaming, forecasting, and political-simulation work. Low-citation or recent papers are kept as Curated or Watchlist unless they are central to a topic.
+
+The critique-next expansion traced `Escalation Risks from Language Models in Military and Diplomatic Decision-Making` and `Political-LLM: Large Language Models in Political Science`, then accepted 27 non-duplicate papers into the taxonomy.
 
 ## Semantic Scholar Limitations
 

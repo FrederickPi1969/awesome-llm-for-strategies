@@ -4,7 +4,7 @@ A curated guide to large language models for political strategy, geopolitics, po
 
 The README is intentionally a curated route through the literature. The full bibliography remains available in [`docs/full-bibliography.md`](docs/full-bibliography.md) and `data/processed/thematic_papers.csv`.
 
-Current coverage: **221 papers** in the full bibliography; **130 Core/Important papers** highlighted on this page.
+Current coverage: **248 papers** in the full bibliography; **136 Core/Important papers** highlighted on this page.
 
 Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-21.
 
@@ -123,13 +123,14 @@ Canonical IR, strategic-studies, intelligence-analysis, and forecasting foundati
 
 LLM-era surveys and methodological overviews that orient political science, social simulation, and game-theoretic agent work.
 
-7 highlighted papers; 11 total in the full bibliography.
+8 highlighted papers; 12 total in the full bibliography.
 
 #### Political science and computational social science overviews
 
 - [Can Large Language Models Transform Computational Social Science?](https://aclanthology.org/2024.cl-1.8/) (2024) - Core; venue: International Conference on Computational Logic; citations: 508. Broad orientation to what LLMs change, and do not change, in computational social science.
 - [Large language models and political science](https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2023.1257092/full) (2023) - Important; venue: Frontiers in Political Science; citations: 36.
 - [Political-LLM: Large Language Models in Political Science](https://arxiv.org/abs/2412.06864) (2024) - Core; venue: arXiv.org; citations: 32.
+- [Intelligent Computing Social Modeling and Methodological Innovations in Political Science in the Era of Large Language Models](https://www.semanticscholar.org/paper/be8c344ed7728367a25b074bf98c9a7569d15f74) (2024) - Important; venue: Journal of Chinese Political Science; citations: 19.
 - [Large Language Models in Politics and Democracy: A Comprehensive Survey](https://arxiv.org/abs/2412.04498) (2024) - Core; venue: arXiv.org; citations: 5.
 
 #### Social simulation and agent-based modeling reviews
@@ -142,7 +143,7 @@ LLM-era surveys and methodological overviews that orient political science, soci
 
 Pre-LLM and bridge methods for political text measurement, legislative text classification, and event-data extraction.
 
-30 highlighted papers; 39 total in the full bibliography.
+30 highlighted papers; 40 total in the full bibliography.
 
 #### Political text as data and policy-position extraction
 
@@ -187,7 +188,7 @@ Pre-LLM and bridge methods for political text measurement, legislative text clas
 
 LLM work on ideology, voter behavior, opinion simulation, political annotation, deliberation, and persuasion.
 
-12 highlighted papers; 22 total in the full bibliography.
+13 highlighted papers; 31 total in the full bibliography.
 
 #### Political ideology, representation, and bias
 
@@ -196,6 +197,7 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 - [Should ChatGPT be Biased? Challenges and Risks of Bias in Large Language Models](https://www.semanticscholar.org/paper/16d83e930a4dab2d49f5d276838ddce79df3f787) (2023) - Important; venue: First Monday; citations: 369.
 - [Cultural bias and cultural alignment of large language models](https://www.semanticscholar.org/paper/5f8bf881c80125452e4a73ad51fdb2c72c65c551) (2023) - Important; venue: PNAS Nexus; citations: 307.
 - [Large language models reflect the ideology of their creators](https://www.nature.com/articles/s44387-025-00048-0) (2025) - Important; venue: npj Artificial Intelligence; citations: 58.
+- [Large Means Left: Political Bias in Large Language Models Increases with Their Number of Parameters](https://www.semanticscholar.org/paper/2d635fa1b8af339e7029105fc5e0a64681d9b5e5) (2025) - Important; venue: arXiv.org; citations: 10.
 
 #### Elections, voters, and campaign discourse
 
@@ -220,7 +222,7 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 
 Papers on public decision support, policy communication, democratic deliberation, and institutional uses of LLMs.
 
-7 highlighted papers; 18 total in the full bibliography.
+9 highlighted papers; 22 total in the full bibliography.
 
 #### Democratic governance and augmentation
 
@@ -235,17 +237,19 @@ Papers on public decision support, policy communication, democratic deliberation
 - [AI can help humans find common ground in democratic deliberation](https://www.semanticscholar.org/paper/5456e833710dba2bb3ae92621fa89c27733b1db0) (2024) - Important; venue: Science; citations: 208. A flagship empirical case for LLMs in democratic deliberation and policy communication.
 - [LLM-generated messages can persuade humans on policy issues](https://www.semanticscholar.org/paper/da2ed9d7804f138a1108089891fd07df15a70a3a) (2025) - Important; venue: Nature Communications; citations: 67.
 - [Large Language Models Can Argue in Convincing Ways About Politics, But Humans Dislike AI Authors: Implications for Governance](https://collaborate.princeton.edu/en/publications/large-language-models-can-argue-in-convincing-ways-about-politics/) (n.d.) - Important; venue: Political science; citations: 36.
+- [Can AI Truly Represent Your Voice in Deliberations? A Comprehensive Study of Large-Scale Opinion Aggregation with LLMs](https://www.semanticscholar.org/paper/29ecbb1c2fde56565ea283fb292f17dce21b2f0c) (2025) - Important; venue: arXiv.org; citations: 3.
 
 #### Strategic and institutional decision support
 
 - [Generative Artificial Intelligence and Evaluating Strategic Decisions](https://www.semanticscholar.org/paper/1b43632036f7e1f45a4759849f2924478eccc81e) (2024) - Important; venue: Social Science Research Network; citations: 119.
 - [Biased LLMs can Influence Political Decision-Making](https://aclanthology.org/2025.acl-long.328/) (2025) - Important; venue: Annual Meeting of the Association for Computational Linguistics; citations: 22.
+- [The LLM Effect: Are Humans Truly Using LLMs, or Are They Being Influenced By Them Instead?](https://www.semanticscholar.org/paper/4046475556d334a61612c63622a40676907c7b5d) (2024) - Important; venue: Conference on Empirical Methods in Natural Language Processing; citations: 20.
 
 ### Geopolitics, Diplomacy, and Wargaming
 
 Diplomatic agents, military decision support, escalation behavior, national security applications, and wargaming.
 
-14 highlighted papers; 29 total in the full bibliography.
+15 highlighted papers; 35 total in the full bibliography.
 
 #### Diplomacy and international institutions
 
@@ -266,6 +270,7 @@ Diplomatic agents, military decision support, escalation behavior, national secu
 
 #### Conflict, escalation, and geopolitical simulation
 
+- [Hacking Nuclear Stability: Wargaming Technology, Uncertainty, and Escalation](https://www.semanticscholar.org/paper/a103bb75a51840687befa963ca37abc00b52caa3) (2023) - Important; venue: International Organization; citations: 10.
 - [Simulating Influence Dynamics with LLM Agents](https://arxiv.org/html/2503.08709v1) (2025) - Important; venue: BigData Congress [Services Society]; citations: 5.
 - [AI Arms and Influence: Frontier Models Exhibit Sophisticated Reasoning in Simulated Nuclear Crises](https://www.semanticscholar.org/paper/61159eaad2619f56621105de3670b54da562e340) (2026) - Core; venue: arXiv.org; citations: 4.
 - [LLMs as Strategic Actors: Behavioral Alignment, Risk Calibration, and Argumentation Framing in Geopolitical Simulations](https://arxiv.org/abs/2603.02128) (2026) - Important; venue: arXiv; citations: 1.
@@ -274,7 +279,7 @@ Diplomatic agents, military decision support, escalation behavior, national secu
 
 Forecasting benchmarks, event-prediction systems, calibration studies, and geopolitical risk signals.
 
-16 highlighted papers; 31 total in the full bibliography.
+16 highlighted papers; 32 total in the full bibliography.
 
 #### Forecasting benchmarks and datasets
 
@@ -326,7 +331,7 @@ LLM strategic reasoning in games, bargaining, negotiation, cooperation, and mult
 
 Generative agents, synthetic populations, and large-scale simulations of social networks or political behavior.
 
-7 highlighted papers; 17 total in the full bibliography.
+7 highlighted papers; 19 total in the full bibliography.
 
 #### Generative agents and social simulation platforms
 
@@ -345,11 +350,12 @@ Generative agents, synthetic populations, and large-scale simulations of social 
 
 Political influence, persuasion risk, deception, bias, and social risks relevant to governance and strategy.
 
-2 highlighted papers; 4 total in the full bibliography.
+3 highlighted papers; 7 total in the full bibliography.
 
 #### Influence operations and persuasion risk
 
 - [Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations](https://www.semanticscholar.org/paper/c9ad9d69d7568110dd5527598a92c7f8b335eef4) (2023) - Important; venue: arXiv.org; citations: 317. Core risk framing for automated influence operations and strategic information environments.
+- [Charting the Landscape of Nefarious Uses of Generative Artificial Intelligence for Online Election Interference](https://www.semanticscholar.org/paper/4af68a3cc8871dfe6fe68f91b93cfd17d81076f7) (2024) - Important; venue: First Monday; citations: 14.
 
 #### Bias, toxicity, and cultural alignment risks
 
@@ -357,18 +363,19 @@ Political influence, persuasion risk, deception, bias, and social risks relevant
 
 ## Data and Collection
 
-- Total unique papers in the full thematic bibliography: 221
-- Papers highlighted on this page: 130
-- Label counts: Core 60, Important 70, Curated 88, Watchlist 3
-- Source rows checked before merge: 243
+- Total unique papers in the full thematic bibliography: 248
+- Papers highlighted on this page: 136
+- Label counts: Core 60, Important 76, Curated 106, Watchlist 6
+- Source rows checked before merge: 270
 - Duplicate source rows removed during merge: 22
 - Core seed papers: 40
-- Curated additions merged into themes: 181
+- Curated additions merged into themes: 208
 - Initial citation/reference edges scanned: 3889
 - Additional citation/reference edges scanned from priority papers: 2871
 - Targeted strategic-decision related-work edges scanned: 119
 - Fog-of-war related-work edges scanned: 49
 - Critique-priority citation/reference edges scanned: 2009
+- Critique-next citation/reference edges scanned: 144
 
 Data files:
 
@@ -381,15 +388,18 @@ Data files:
 - `data/raw/fog_of_war_related_work_seed.csv`: curated Fog of War related-work and foundation seed list.
 - `data/raw/strategic_studies_foundation_seed.csv`: curated strategic-studies foundation seed list.
 - `data/raw/critique_priority_expansion_seeds.csv`: critique-selected high-priority trace seeds.
+- `data/raw/critique_next_expansion_seeds.csv`: next-round critique seed list for escalation risk and Political-LLM traces.
 - `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.
 - `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.
 - `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.
 - `data/processed/fog_of_war_related_works_enriched.csv`: Semantic Scholar metadata for Fog of War related-work additions.
 - `data/processed/strategic_studies_foundation_enriched.csv`: Semantic Scholar metadata for strategic-studies foundation additions.
 - `data/processed/critique_priority_expansion/curated_additions.csv`: selected additions from critique-priority seed expansion.
+- `data/processed/critique_next_expansion/curated_additions.csv`: selected additions from escalation-risk and Political-LLM seed expansion.
 - `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.
 - `data/processed/fog_of_war/run_summary.json`: Fog of War trace summary.
 - `data/processed/critique_priority_expansion/run_summary.json`: critique-priority trace summary.
+- `data/processed/critique_next_expansion/run_summary.json`: critique-next trace summary.
 
 Scripts:
 
