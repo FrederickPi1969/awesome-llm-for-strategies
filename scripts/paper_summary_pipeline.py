@@ -21,6 +21,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from html.parser import HTMLParser
 from pathlib import Path
@@ -103,6 +104,23 @@ def as_int(value: str, default: int = 0) -> int:
         return int(value)
     except (TypeError, ValueError):
         return default
+
+
+def title_tokens(value: str) -> set[str]:
+    stopwords = {"a", "an", "and", "as", "at", "for", "from", "in", "of", "on", "the", "to", "with"}
+    return {
+        token
+        for token in re.findall(r"[a-z0-9]+", normalize(value))
+        if len(token) > 1 and token not in stopwords
+    }
+
+
+def title_similarity(left: str, right: str) -> float:
+    left_tokens = title_tokens(left)
+    right_tokens = title_tokens(right)
+    if not left_tokens or not right_tokens:
+        return 0.0
+    return len(left_tokens & right_tokens) / len(left_tokens | right_tokens)
 
 
 def read_catalog(args: argparse.Namespace) -> list[dict[str, str]]:
@@ -188,6 +206,12 @@ def fetch_json(url: str, api_key: str = "", timeout: int = 45) -> dict[str, Any]
         return json.loads(response.read().decode("utf-8", errors="replace"))
 
 
+def fetch_text(url: str, timeout: int = 45) -> tuple[str, str]:
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,*/*;q=0.8"})
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return response.read().decode("utf-8", errors="replace"), response.geturl()
+
+
 def semantic_scholar_candidates(row: dict[str, str], api_key: str, timeout: int) -> list[CandidateURL]:
     paper_id = semantic_scholar_id(row.get("url", ""))
     if not paper_id:
@@ -244,6 +268,175 @@ def direct_url_candidates(row: dict[str, str]) -> list[CandidateURL]:
             candidates.append(CandidateURL(url, "html", "publisher_html"))
         if lower.startswith("http") and "semanticscholar.org" not in lower:
             candidates.append(CandidateURL(url, "html", "source_landing_page"))
+    seen: set[str] = set()
+    deduped: list[CandidateURL] = []
+    for candidate in candidates:
+        if candidate.url and candidate.url not in seen:
+            deduped.append(candidate)
+            seen.add(candidate.url)
+    return deduped
+
+
+def doi_candidate_urls(doi: str) -> list[CandidateURL]:
+    doi = (doi or "").strip()
+    if not doi:
+        return []
+    lowered = doi.lower()
+    candidates: list[CandidateURL] = []
+    arxiv = doi_to_arxiv_pdf(doi)
+    if arxiv:
+        candidates.append(CandidateURL(arxiv, "pdf", "doi_arxiv"))
+    if lowered.startswith("10.18653/v1/"):
+        acl_id = doi.split("/", 1)[1].removeprefix("v1/")
+        candidates.append(CandidateURL(f"https://aclanthology.org/{acl_id}.pdf", "pdf", "doi_acl_anthology"))
+    if lowered.startswith("10.1073/"):
+        candidates.append(CandidateURL(f"https://www.pnas.org/doi/pdf/{doi}", "pdf", "doi_pnas_pdf"))
+    if lowered.startswith("10.1038/"):
+        suffix = doi.split("/", 1)[1]
+        candidates.append(CandidateURL(f"https://www.nature.com/articles/{suffix}.pdf", "pdf", "doi_nature_pdf"))
+    if lowered.startswith("10.1371/"):
+        candidates.append(CandidateURL(f"https://journals.plos.org/plosone/article/file?id={doi}&type=printable", "pdf", "doi_plos_pdf"))
+    candidates.append(CandidateURL(f"https://doi.org/{doi}", "html", "doi_landing_page"))
+    return candidates
+
+
+def recover_candidates(row: dict[str, str], args: argparse.Namespace, api_key: str) -> list[CandidateURL]:
+    candidates: list[CandidateURL] = []
+    candidates.extend(direct_url_candidates(row))
+
+    doi_candidates = doi_candidate_urls(row.get("doi", ""))
+    candidates.extend([candidate for candidate in doi_candidates if candidate.reason != "doi_landing_page"])
+
+    openalex = openalex_candidates(row, args.timeout)
+    candidates.extend(openalex)
+    if openalex:
+        time.sleep(args.openalex_delay)
+
+    landing = doi_landing_candidates(row, args.timeout)
+    candidates.extend(landing)
+    if landing:
+        time.sleep(args.doi_delay)
+
+    arxiv = arxiv_title_candidates(row, args.timeout)
+    candidates.extend(arxiv)
+    if arxiv:
+        time.sleep(args.arxiv_delay)
+
+    if args.semantic_scholar_lookup and api_key:
+        semantic = semantic_scholar_candidates(row, api_key, args.timeout)
+        candidates.extend(semantic)
+        time.sleep(args.semantic_scholar_delay)
+
+    candidates.extend([candidate for candidate in doi_candidates if candidate.reason == "doi_landing_page"])
+    return dedupe_candidates(candidates)
+
+
+def extract_meta_urls(html_text: str, final_url: str) -> list[CandidateURL]:
+    candidates: list[CandidateURL] = []
+    patterns = [
+        r'<meta[^>]+name=["\']citation_pdf_url["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']citation_pdf_url["\']',
+        r'<meta[^>]+name=["\']citation_fulltext_html_url["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']citation_fulltext_html_url["\']',
+    ]
+    for pattern in patterns:
+        for match in re.findall(pattern, html_text, flags=re.I):
+            url = html.unescape(match)
+            if url.startswith("//"):
+                parsed = urllib.parse.urlparse(final_url)
+                url = f"{parsed.scheme}:{url}"
+            if url.startswith("/"):
+                url = urllib.parse.urljoin(final_url, url)
+            kind = "pdf" if ".pdf" in url.lower() or "type=printable" in url.lower() else "html"
+            candidates.append(CandidateURL(url, kind, "doi_landing_meta"))
+    return dedupe_candidates(candidates)
+
+
+def doi_landing_candidates(row: dict[str, str], timeout: int) -> list[CandidateURL]:
+    doi = (row.get("doi") or "").strip()
+    if not doi:
+        return []
+    try:
+        text, final_url = fetch_text(f"https://doi.org/{doi}", timeout=timeout)
+    except Exception:
+        return []
+    return extract_meta_urls(text[:2_000_000], final_url)
+
+
+def openalex_candidates(row: dict[str, str], timeout: int) -> list[CandidateURL]:
+    urls: list[str] = []
+    doi = (row.get("doi") or "").strip()
+    if doi:
+        urls.append(f"https://api.openalex.org/works/https://doi.org/{urllib.parse.quote(doi, safe='')}")
+    title = (row.get("title") or "").strip()
+    if title:
+        urls.append(f"https://api.openalex.org/works?search={urllib.parse.quote(title)}&per-page=5")
+    candidates: list[CandidateURL] = []
+    for url in urls:
+        try:
+            data = fetch_json(url, timeout=timeout)
+        except Exception:
+            continue
+        works = data.get("results", data if isinstance(data, dict) else [])
+        if isinstance(works, dict):
+            works = [works]
+        if not isinstance(works, list):
+            continue
+        for work in works:
+            if not isinstance(work, dict):
+                continue
+            work_title = str(work.get("title") or "")
+            if title and work_title and title_similarity(title, work_title) < 0.55:
+                continue
+            for location_key in ["primary_location", "best_oa_location"]:
+                location = work.get(location_key) or {}
+                if isinstance(location, dict):
+                    candidates.extend(openalex_location_candidates(location))
+            for location in work.get("locations") or []:
+                if isinstance(location, dict):
+                    candidates.extend(openalex_location_candidates(location))
+    return dedupe_candidates(candidates)
+
+
+def openalex_location_candidates(location: dict[str, Any]) -> list[CandidateURL]:
+    candidates: list[CandidateURL] = []
+    pdf_url = location.get("pdf_url")
+    landing = location.get("landing_page_url")
+    if pdf_url:
+        candidates.append(CandidateURL(str(pdf_url), "pdf", "openalex_pdf_url"))
+    if landing:
+        candidates.append(CandidateURL(str(landing), "html", "openalex_landing_page"))
+    return candidates
+
+
+def arxiv_title_candidates(row: dict[str, str], timeout: int) -> list[CandidateURL]:
+    title = (row.get("title") or "").strip()
+    if not title:
+        return []
+    query = urllib.parse.quote(f'ti:"{title}"')
+    url = f"https://export.arxiv.org/api/query?search_query={query}&start=0&max_results=5"
+    try:
+        xml_text, _ = fetch_text(url, timeout=timeout)
+    except Exception:
+        return []
+    candidates: list[CandidateURL] = []
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError:
+        return []
+    ns = {"atom": "http://www.w3.org/2005/Atom"}
+    for entry in root.findall("atom:entry", ns):
+        entry_title = clean_text(" ".join((entry.findtext("atom:title", default="", namespaces=ns) or "").split()))
+        if title_similarity(title, entry_title) < 0.62:
+            continue
+        arxiv_id = entry.findtext("atom:id", default="", namespaces=ns) or ""
+        pdf = arxiv_pdf_url(arxiv_id)
+        if pdf:
+            candidates.append(CandidateURL(pdf, "pdf", "arxiv_title_search"))
+    return dedupe_candidates(candidates)
+
+
+def dedupe_candidates(candidates: list[CandidateURL]) -> list[CandidateURL]:
     seen: set[str] = set()
     deduped: list[CandidateURL] = []
     for candidate in candidates:
@@ -453,6 +646,105 @@ def write_manual_downloads() -> None:
     write_csv(MANUAL_DOWNLOADS, rows, columns)
 
 
+def command_recover_manual(args: argparse.Namespace) -> None:
+    ensure_dirs()
+    existing_rows = load_csv_by_slug(DOWNLOAD_MANIFEST)
+    catalog_by_slug = {slug_for(row["title"]): row for row in read_catalog(argparse.Namespace(**{**vars(args), "limit": None}))}
+    selected_slugs = {slug_for(row["title"]) for row in read_catalog(args)}
+    api_key = read_api_key()
+
+    manual_slugs = [
+        slug
+        for slug, row in sorted(existing_rows.items(), key=lambda item: item[1].get("title", "").lower())
+        if row.get("status") == "manual_needed" and (not selected_slugs or slug in selected_slugs)
+    ]
+    total = len(manual_slugs)
+    recovered = 0
+    output_rows = dict(existing_rows)
+
+    for index, slug in enumerate(manual_slugs, start=1):
+        manifest_row = existing_rows[slug]
+        catalog_row = catalog_by_slug.get(slug, {})
+        row = {**catalog_row, **manifest_row}
+        if not row.get("url"):
+            row["url"] = row.get("source_url", "")
+
+        manual = manual_file_for(slug)
+        if manual:
+            output_rows[slug] = download_manifest_row(
+                row,
+                slug,
+                "manual",
+                "",
+                repo_relative(manual),
+                manual.suffix.lstrip("."),
+                manual.stat().st_size,
+                "local_manual_file",
+                "",
+            )
+            recovered += 1
+            print(f"[{index}/{total}] recovered local_manual {row.get('title', slug)}", flush=True)
+            continue
+
+        candidates = recover_candidates(row, args, api_key)
+        errors: list[str] = []
+        downloaded = False
+        for candidate in candidates:
+            if not candidate.url:
+                if candidate.reason:
+                    errors.append(candidate.reason)
+                continue
+            try:
+                final_url, path, _content_type, size, ext = download_url(candidate, DOWNLOAD_DIR / slug, args.timeout)
+            except Exception as exc:
+                errors.append(f"{candidate.reason}: {exc}")
+                continue
+            output_rows[slug] = download_manifest_row(
+                row,
+                slug,
+                "downloaded",
+                final_url,
+                repo_relative(path),
+                ext.lstrip("."),
+                size,
+                f"recover_manual:{candidate.reason}",
+                "",
+            )
+            recovered += 1
+            downloaded = True
+            print(f"[{index}/{total}] recovered {row.get('title', slug)} via {candidate.reason}", flush=True)
+            break
+
+        if not downloaded:
+            error = " | ".join(errors)[:1500] if errors else "recover_manual: no candidates found"
+            output_rows[slug] = {**manifest_row, "error": error}
+            print(f"[{index}/{total}] still_manual_needed {row.get('title', slug)}", flush=True)
+
+    columns = [
+        "slug",
+        "title",
+        "year",
+        "importance",
+        "theme",
+        "subtheme",
+        "citationCount",
+        "status",
+        "download_url",
+        "file_path",
+        "file_type",
+        "bytes",
+        "download_reason",
+        "error",
+        "manual_path_hint",
+        "source_url",
+        "doi",
+        "arxiv",
+    ]
+    write_csv(DOWNLOAD_MANIFEST, sorted(output_rows.values(), key=lambda item: item["title"].lower()), columns)
+    write_manual_downloads()
+    print(f"Recovered {recovered}/{total} manual-needed papers.", flush=True)
+
+
 def clean_text(value: str) -> str:
     value = html.unescape(value or "")
     value = value.encode("utf-8", errors="replace").decode("utf-8", errors="replace")
@@ -526,11 +818,31 @@ def command_extract(args: argparse.Namespace) -> None:
     for slug in selected_slugs:
         row = download_rows.get(slug)
         catalog = catalog_by_slug.get(slug, {})
-        if args.resume and slug in existing and existing[slug].get("status") in {"extracted", "abstract_only"}:
+        existing_row = existing.get(slug, {})
+        existing_text_path = existing_row.get("text_path", "")
+        existing_text_ready = bool(existing_text_path) and manifest_path(existing_text_path).exists() and as_int(existing_row.get("text_chars", "")) >= 100
+        if args.resume and slug in existing and existing[slug].get("status") in {"extracted", "abstract_only"} and existing_text_ready:
             output_rows.append(existing[slug])
             continue
         if not row or row.get("status") not in {"downloaded", "manual"}:
-            output_rows.append(text_manifest_row(catalog, slug, "missing_download", "", "", 0, False, "download_missing"))
+            abstract = clean_text(catalog.get("abstract", ""))
+            if abstract:
+                text_path = TEXT_DIR / f"{slug}.txt"
+                text_path.write_text(abstract, encoding="utf-8")
+                output_rows.append(
+                    text_manifest_row(
+                        catalog,
+                        slug,
+                        "abstract_only",
+                        repo_relative(text_path),
+                        "abstract_missing_download",
+                        len(abstract),
+                        False,
+                        "download_missing; abstract fallback",
+                    )
+                )
+            else:
+                output_rows.append(text_manifest_row(catalog, slug, "missing_download", "", "", 0, False, "download_missing"))
             continue
         path = manifest_path(row["file_path"])
         text, source, error = extract_text_from_file(path, args.extract_chars)
@@ -542,6 +854,8 @@ def command_extract(args: argparse.Namespace) -> None:
                 source = "abstract"
                 error = error or "downloaded file had too little extractable text"
             else:
+                status = "missing_text"
+                text = ""
                 error = error or "no extractable text and no abstract"
         text_path = TEXT_DIR / f"{slug}.txt"
         if text:
@@ -736,6 +1050,10 @@ def load_jsonl_by_slug(path: Path) -> dict[str, dict[str, Any]]:
     return rows
 
 
+def successful_summary(item: dict[str, Any]) -> bool:
+    return bool(item.get("summary")) and not item.get("error") and not item.get("parse_error")
+
+
 def append_jsonl(path: Path, item: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as f:
@@ -750,16 +1068,16 @@ def command_summarize(args: argparse.Namespace) -> None:
     selected = read_catalog(args)
     for index, row in enumerate(selected, start=1):
         slug = slug_for(row["title"])
-        if slug in completed:
-            print(f"[{index}/{len(selected)}] skip {row['title']}")
+        if slug in completed and successful_summary(completed[slug]):
+            print(f"[{index}/{len(selected)}] skip {row['title']}", flush=True)
             continue
         text_row = text_rows.get(slug)
         if not text_row or text_row.get("status") not in {"extracted", "abstract_only"} or not text_row.get("text_path"):
-            print(f"[{index}/{len(selected)}] missing_text {row['title']}")
+            print(f"[{index}/{len(selected)}] missing_text {row['title']}", flush=True)
             continue
         text_path = manifest_path(text_row["text_path"])
         if not text_path.exists():
-            print(f"[{index}/{len(selected)}] missing_text_file {row['title']}")
+            print(f"[{index}/{len(selected)}] missing_text_file {row['title']}", flush=True)
             continue
         text = text_path.read_text(encoding="utf-8", errors="replace")
         merged_row = {**catalog.get(slug, {}), **row}
@@ -784,7 +1102,7 @@ def command_summarize(args: argparse.Namespace) -> None:
                     "parse_error": parse_error,
                 }
                 append_jsonl(SUMMARY_JSONL, item)
-                print(f"[{index}/{len(selected)}] summarized {row['title']}")
+                print(f"[{index}/{len(selected)}] summarized {row['title']}", flush=True)
                 break
             except Exception as exc:
                 if attempt == args.retries:
@@ -804,7 +1122,7 @@ def command_summarize(args: argparse.Namespace) -> None:
                             "error": str(exc),
                         },
                     )
-                    print(f"[{index}/{len(selected)}] failed {row['title']}: {exc}")
+                    print(f"[{index}/{len(selected)}] failed {row['title']}: {exc}", flush=True)
                 else:
                     time.sleep(args.retry_sleep * attempt)
     write_summary_csv()
@@ -820,8 +1138,12 @@ def as_list(value: Any) -> list[str]:
 
 def write_summary_csv() -> None:
     items = list(load_jsonl_by_slug(SUMMARY_JSONL).values())
+    text_rows = load_csv_by_slug(TEXT_MANIFEST)
     rows: list[dict[str, str]] = []
     for item in sorted(items, key=lambda row: (row.get("theme", ""), row.get("title", ""))):
+        text_row = text_rows.get(item.get("slug", ""))
+        if not text_row or text_row.get("status") not in {"extracted", "abstract_only"} or not text_row.get("text_path"):
+            continue
         summary = item.get("summary") or {}
         rows.append(
             {
@@ -909,6 +1231,7 @@ def command_report(args: argparse.Namespace) -> None:
 
 def command_run_all(args: argparse.Namespace) -> None:
     command_download(args)
+    command_recover_manual(args)
     command_extract(args)
     command_summarize(args)
     command_report(args)
@@ -937,6 +1260,16 @@ def build_parser() -> argparse.ArgumentParser:
     download.add_argument("--semantic-scholar-lookup", action=argparse.BooleanOptionalAction, default=True)
     download.add_argument("--semantic-scholar-delay", type=float, default=1.0)
     download.set_defaults(func=command_download)
+
+    recover = subparsers.add_parser("recover-manual", help="Search again for manual-needed PDFs/HTML and update the download manifest")
+    add_common_filters(recover)
+    recover.add_argument("--timeout", type=int, default=45)
+    recover.add_argument("--openalex-delay", type=float, default=0.2)
+    recover.add_argument("--doi-delay", type=float, default=0.2)
+    recover.add_argument("--arxiv-delay", type=float, default=1.0)
+    recover.add_argument("--semantic-scholar-lookup", action=argparse.BooleanOptionalAction, default=True)
+    recover.add_argument("--semantic-scholar-delay", type=float, default=1.0)
+    recover.set_defaults(func=command_recover_manual)
 
     extract = subparsers.add_parser("extract", help="Extract local full text for model input")
     add_common_filters(extract)
@@ -967,6 +1300,9 @@ def build_parser() -> argparse.ArgumentParser:
     run_all.add_argument("--timeout", type=int, default=240)
     run_all.add_argument("--semantic-scholar-lookup", action=argparse.BooleanOptionalAction, default=True)
     run_all.add_argument("--semantic-scholar-delay", type=float, default=1.0)
+    run_all.add_argument("--openalex-delay", type=float, default=0.2)
+    run_all.add_argument("--doi-delay", type=float, default=0.2)
+    run_all.add_argument("--arxiv-delay", type=float, default=1.0)
     run_all.add_argument("--extract-chars", type=int, default=120_000)
     run_all.add_argument("--max-model-chars", type=int, default=DEFAULT_MAX_MODEL_CHARS)
     run_all.add_argument("--min-text-chars", type=int, default=800)

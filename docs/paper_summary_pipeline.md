@@ -45,21 +45,28 @@ LOCAL_LLM_BASE=<local-llm-base> LOCAL_LLM_TOKEN=<local-token> \
 This performs:
 
 1. `download`: resolve open PDFs/HTML from arXiv, ACL Anthology, publisher URLs, and Semantic Scholar open-access metadata.
-2. `extract`: extract local text from PDF/HTML/TXT files and cap model input at 50,000 characters.
-3. `summarize`: call Qwen 3.6 35B and write structured JSONL/CSV summaries.
-4. `report`: build a compact Markdown report for human reading.
+2. `recover-manual`: search unresolved entries again through DOI publisher templates, DOI landing metadata, OpenAlex OA locations, arXiv title search, and Semantic Scholar open-access metadata.
+3. `extract`: extract local text from PDF/HTML/TXT files and cap model input at 50,000 characters. If the file cannot be recovered but the catalog has an abstract, the pipeline writes an `abstract_missing_download` fallback.
+4. `summarize`: call Qwen 3.6 35B and write structured JSONL/CSV summaries.
+5. `report`: build a compact Markdown report for human reading.
 
 All commands are resumable by default. Re-run the same command after interruptions.
 
-## Manual Downloads
+## Unresolved Downloads
 
-Some papers are books, publisher pages, or paywalled articles. Failed downloads are listed here:
+Some papers are books, publisher pages, paywalled articles, or very new papers without stable open files. The pipeline searches these again itself before leaving them unresolved. Remaining unresolved entries are listed here:
 
 ```text
 data/processed/paper_summaries/manual_downloads.csv
 ```
 
-For a failed paper, place a manually obtained file at the exact `manual_path_hint`, usually:
+To run only that second search stage:
+
+```bash
+.venv-paper-pipeline/bin/python scripts/paper_summary_pipeline.py recover-manual --timeout 45
+```
+
+If a local copy becomes available later, place it at the exact `manual_path_hint`, usually:
 
 ```text
 data/paper_cache/manual/<slug>.pdf
@@ -75,10 +82,7 @@ Supported manual file types:
 Then rerun:
 
 ```bash
-.venv-paper-pipeline/bin/python scripts/paper_summary_pipeline.py run-all \
-  --max-model-chars 50000 \
-  --model Qwen/Qwen3.6-35B-A3B \
-  --timeout 300
+.venv-paper-pipeline/bin/python scripts/paper_summary_pipeline.py extract
 ```
 
 ## Useful Partial Runs
@@ -101,7 +105,13 @@ Run only Core and Important papers first:
   --model Qwen/Qwen3.6-35B-A3B
 ```
 
-Only retry extraction after adding manual PDFs:
+Only retry unresolved-paper search:
+
+```bash
+.venv-paper-pipeline/bin/python scripts/paper_summary_pipeline.py recover-manual --timeout 45
+```
+
+Only retry extraction after adding local files or recovering new downloads:
 
 ```bash
 .venv-paper-pipeline/bin/python scripts/paper_summary_pipeline.py extract

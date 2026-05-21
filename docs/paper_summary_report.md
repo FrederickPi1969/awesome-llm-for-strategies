@@ -1,0 +1,2534 @@
+# Paper Summary Report
+
+Generated from `data/processed/paper_summaries/paper_summaries.jsonl`.
+Summaries included: **358**.
+
+Each entry is intentionally compact; full-text caches remain local under `data/paper_cache/` and are not committed.
+
+## AI Safety, Influence Operations, and Societal Risk
+
+### AI-Slop and Political Propaganda: The Role of AI-Generated Content in Memes and Influence Campaigns (2025; Curated; citations: 1)
+Tags: ai-slop; political-propaganda; memes; influence-operations; romanian-elections; disinformation; digital-literacy; generative-ai; political-communication; misinformation; social-media; troll-farms; deepfakes; nationalism; epistemic-crisis; democratic-resilience; content-moderation; algorithmic-amplification; political-strategy; ai-generated-content
+本文探讨“AI垃圾”在政治宣传中的作用，以2024-25年罗马尼亚选举为例，分析候选人如何利用低质AI生成迷因和粗劣视觉内容，通过营造草根真实性来放大民族主义叙事并规避传统媒体审查。
+Deliverables: 对“AI-slop”概念及其在数字文化、政治宣传中角色的理论分析。 | 基于2024-25年罗马尼亚总统选举的案例研究，展示AI迷因在竞选策略中的具体应用。 | 关于迷因作为政治传播工具与传统政治漫画对比的媒体理论视角。
+Method: 媒体理论与历史视角分析 | 案例研究（2024-25年罗马尼亚选举） | 比较分析（迷因 vs. 政治漫画） | 文献综述与专家观点整合
+Full-text notes: 全文已提供。文章详细阐述了AI-slop的定义、理论背景（如认识论危机、美学退化），并深入分析了罗马尼亚选举中Călin Georgescu和George Simion等候选人如何利用AI生成的迷因、深伪图像和自动化账号网络进行影响操作。
+
+### ClausewitzGPT Framework: A New Frontier in Theoretical Large Language Model Enhanced Information Operations (2023; Curated; citations: 2)
+Tags: large language models; information operations; ai ethics; autonomous agents; political strategy; influence campaigns; mathematical modeling; clausewitz; cyber warfare; propaganda; ai safety; strategic communication; computational social science; disinformation; ai governance
+提出ClausewitzGPT框架，结合克劳塞维茨战略与LLM，构建包含AI代理的道德信息作战数学模型，强调伦理约束与战略对齐。
+Deliverables: ClausewitzGPT理论框架 | 信息作战影响数学方程组 | 国家间AI信息战效能比较度量标准
+Method: 理论建模与数学公式推导 | 克劳塞维茨军事战略理论应用 | 计算伦理学与系统工程设计整合
+Full-text notes: 全文可获取。包含详细数学推导、克劳塞维茨原则映射、AI代理伦理仲裁机制设计及对中国等国家级信息作战案例的分析。
+
+### Exposing influence campaigns in the age of LLMs: a behavioral-based AI approach to detecting state-sponsored trolls (2022; Curated; citations: 27)
+Tags: influence operations; troll detection; behavioral analysis; llm resilience; social media forensics; lstm classification; state-sponsored actors; misinformation; political strategy; ai safety; twitter data; 2016 election; 2020 election; content-agnostic; sequence modeling
+提出基于LSTM的行为轨迹分类法，仅凭社交互动序列而非文本内容检测国家支持的水军，对LLM生成的虚假内容具有更强鲁棒性。
+Deliverables: 基于LSTM的行为轨迹分类模型代码 | Troll Score量化指标及分类阈值算法 | 2016年俄罗斯水军及2020年多国IO驱动者的行为数据集分析
+Method: LSTM序列分类 | 状态-动作对（State-Action Pairs）轨迹建模 | Troll Score指标计算 | 马尔可夫决策过程（MDP）建模
+Full-text notes: 全文可获取。核心贡献在于证明仅利用分享活动序列（主动行为+被动反馈）即可高精度识别水军，且该方法不依赖文本内容，从而规避了LLM在文本模仿上的优势。
+
+### Generative artificial intelligence in the electoral processes of 2024 in the world: disinformation campaigns and online trolls (2024; Curated; citations: 3)
+Tags: generative ai; election 2024; disinformation; influence operations; online trolls; bots; political strategy; social media manipulation; ai safety; misinformation risk; automated accounts; electoral security; llm abuse; political propaganda; digital influence
+探讨生成式AI在2024全球选举中加剧虚假信息传播的风险，指出LLM使自动化账号更具说服力，威胁社会安全。
+Deliverables: 关于生成式AI在选举中双重作用（效率提升vs信息操纵）的定性分析 | 对在线水军和自动化账号利用LLM进行信息战趋势的预警
+Method: 文献综述 | 定性分析 | 专家观点综合
+Full-text notes: 全文被付费墙限制。摘录仅包含摘要、引言部分及参考文献列表。正文中关于具体案例（如特朗普竞选、俄罗斯选举）的详细分析不可见。
+
+### How Strategic Information Operations Affect Peacekeeping: Two Case Studies from the Central African Republic (2025; Curated; citations: 2)
+Tags: strategic information operations; peacekeeping; disinformation; social media analysis; facebook; central african republic; un mission; influence operations; mixed methods; case study; actant theory; counter-disinformation; public opinion; propaganda; rumors
+研究将战略信息行动视为维和体系的行动者，通过中非共和国案例揭示其多向参与性，挑战传统自上而下观点，并反思其对反虚假信息策略设计的影响。
+Deliverables: 基于Facebook数据的混合方法分析框架 | 针对UNMINUSCA维和任务的两个案例研究
+Method: 混合方法分析 | Facebook平台数据考察 | 案例研究法
+Full-text notes: 仅获取摘要，缺乏具体数据细节、模型参数及详细案例过程描述。
+
+### Navigating the Web of Disinformation and Misinformation: Large Language Models as Double-Edged Swords (2025; Curated; citations: 38)
+Tags: large language models; disinformation; misinformation; fact-checking; political influence; ai safety; hallucination; bias; social media; nlp; deepfakes; propaganda; ethical ai; regulation; multimodal detection
+综述LLM在虚假信息传播与检测中的双重角色，分析其作为攻击工具和防御手段的潜力及局限。
+Deliverables: LLM在虚假信息领域的双刃剑效应分析框架 | 针对医疗、政治等敏感领域的风险评估 | 缓解策略与伦理监管建议
+Method: 文献综述 | 案例研究 | 技术对比分析
+Full-text notes: 全文公开（IEEE Access）。包含LLM生成假新闻的具体Prompt示例（如伪造名人去世新闻）及多模态检测技术对比表。
+
+### Prompt Injection Vulnerability of Consensus Generating Applications in Digital Democracy (2025; Curated; citations: 1)
+Tags: llm safety; prompt injection; digital democracy; consensus generation; political strategy; influence operations; llm alignment; reinforcement learning; adversarial attacks; algorithmic governance; political polarization; nlp security; deliberative democracy; llm vulnerability; defense mechanisms
+研究LLM在数字民主共识生成中的提示注入漏洞。发现LLM在意见均衡时易受攻击，且理性修辞策略比情感策略更有效。提出的防御管道可显著降低方向性错误。
+Deliverables: 数字民主共识生成系统的提示注入漏洞评估报告 | 针对LLM共识生成的鲁棒性防御管道（含GPT-OSS-SafeGuard和GSPO） | 提示注入攻击分类学（涵盖人类/机器可读、忽略/完成、框架、修辞策略）
+Method: 使用微调BERT模型对意见和共识效价进行分类 | 构建对抗性提示变体以模拟不同维度的提示注入攻击 | 计算LLM与人类多数意见的一致性比率（Agreement Rate） | 应用GSPO强化学习对齐模型以提升鲁棒性 | 利用GPT-OSS-SafeGuard进行注入检测
+Full-text notes: 全文为arXiv预印本，无付费墙。摘要和正文详细描述了实验设置、攻击分类学、防御管道及结果分析。
+
+### Simulating Misinformation Vulnerabilities with Agent Personas (2025; Curated; citations: 1)
+Tags: llm agents; misinformation simulation; influence operations; cognitive bias; agent-based modeling; political strategy; disinformation resilience; prompt engineering; human alignment; national security; information warfare; social simulation; gpt-4; llama; fake news detection; public perception; intervention strategies; trust polarization; social cognitive theory; information advantage
+利用LLM构建具有不同职业和认知图式的智能体，模拟其对虚假新闻的反应。发现认知图式比职业背景更显著影响判断，LLM智能体可作为研究信息传播的有效代理。
+Deliverables: 基于LLM的多智能体虚假信息模拟框架 | 包含8种职业和认知图式智能体的提示词模板 | 智能体反应与人类标注的对比数据集分析
+Method: 基于LLM（GPT-4, LLaMA 3.1）的代理建模 | 使用Misinfo Reaction Frames语料库 | 角色扮演提示工程（Role-playing Prompts） | 与人类标注和黄金标准标签的对比验证
+Full-text notes: 全文已提供。包含详细的方法论、8种智能体提示词、GPT与LLaMA的性能对比图表及具体案例。
+
+### Assessing the risks and opportunities posed by AI-enhanced influence operations on social media (2024; Important; citations: 10)
+Tags: large language models; influence operations; disinformation; social media manipulation; ai safety; public diplomacy; detection methods; rlhf; bot detection; synthetic media; political bias; content moderation; human-machine collaboration; strategic communication; hybrid threats
+探讨LLM如何降低虚假信息生产门槛并增强多语言伪装能力，同时指出其不稳定性与模式化特征为检测提供机会，强调人机结合是主要威胁。
+Deliverables: 对AI增强型影响力操作的风险与机遇的综合评估框架。 | 针对LLM生成内容的检测策略建议，包括利用内部生成模型增强训练数据、检测统计异常及构建专用分类器。 | 关于LLM在外交和公共外交领域应用的战略建议。
+Method: 文献综述与案例分析 | 对LLM能力（如自然语言处理、内容创作、多语言能力）及其局限性（如创造力有限、不可靠、文化偏见）的定性分析 | 对RLHF（基于人类反馈的强化学习）如何塑造模型价值观的政治分析
+Full-text notes: 全文为开放获取（CC BY 4.0），包含对LLM优缺点的详细列表、RLHF机制分析、具体检测案例（如NewsGuard发现的内容农场）及外交政策建议。
+
+### Characterizing the 2016 Russian IRA influence campaign (2018; Important; citations: 114)
+Tags: social media manipulation; russian interference; 2016 us election; twitter network analysis; political polarization; social bot detection; label propagation; ideology classification; influence operations; k-core decomposition; botometer; retweet network; geospatial analysis; computational social science; disinformation
+研究2016年俄罗斯IRA推特账号对美大选的影响。发现保守派用户转发量是自由派的8倍，且保守派中机器人比例更高。
+Deliverables: 1300万条2016年选举相关推文数据集 | 基于标签传播的用户意识形态分类模型(精度>84%) | IRA账号与传播者的网络结构分析 | 各州地理分布与参与度分析
+Method: Twitter API与Crimson Hexagon数据收集 | 标签传播算法(Label Propagation)进行意识形态分类 | Botometer机器学习框架进行机器人检测 | K-core分解进行网络中心性时序分析 | 文本挖掘与地理空间统计
+Full-text notes: 全文可获取。详细描述了1300万条推文的数据清洗、基于媒体偏好的种子用户构建、Botometer API调用细节及k-core网络演化图表。
+
+### Charting the Landscape of Nefarious Uses of Generative Artificial Intelligence for Online Election Interference (2024; Important; citations: 14)
+Tags: generative ai; election interference; deepfakes; misinformation; influence operations; llm risks; botnets; synthetic media; political strategy; ai safety; democratic integrity; disinformation; social media manipulation; policy mitigation; authoritarian ai
+综述生成式AI在选举干预中的滥用，涵盖深度伪造、机器人网络及定向误导，提出多维缓解策略。
+Deliverables: GenAI在选举干扰中的主要滥用类型分类表 | 民主与威权语境下的威胁类型学概览 | 历史选举干预案例数据库（2016-2024）
+Method: 系统性文献综述 | 案例研究与公开事件分析 | 威胁类型学构建
+Full-text notes: 全文可获取。包含详细案例表（Table 2）及民主/威权语境下的应用类型学（Table 3, 4）。
+
+### Do Bots Do It Better? Analyzing the Effectiveness of Automated Agents in State-Sponsored Information Operations (2025; Important; citations: 0)
+Tags: state-sponsored information operations; social bots; automated agents; influence operations; social roles; digital dna; glmm; x twitter; misinformation; propaganda; agent effectiveness; amplification; content production; network analysis; political strategy; ai safety; disinformation; coordination; botnet detection; policy implications
+研究X平台国家资助信息行动中自动化代理的有效性。发现自动化代理在参与度、粉丝数和寿命上均逊于人类，且主要起辅助作用。角色（如放大或生产）比自动化本身更决定成功。
+Deliverables: 基于X信息操作档案的25个SSIO操作数据集分析。 | 改进的嵌入数字DNA（Embedded Digital-DNA）序列聚类方法，用于识别社会角色。 | 广义线性混合模型（GLMM/ZINB）回归结果，量化自动化与角色对成功的影响。
+Method: 数据源：X Information Operations Archive（25个操作，2.07亿帖子，78,151个代理）。 | 行为编码：使用三个字母表（工具类型、活动类型、活动频率）将用户活动序列化为字符串。 | 聚类分析：嵌入数字DNA方法提取代理的社会角色。 | 统计建模：零膨胀负二项式广义线性混合模型（ZINB GLMM）分析代理成功指标。
+Full-text notes: 全文可获取。详细描述了SSIO背景、数字DNA字母表设计、GLMM模型构建、变量定义（如角色焦点、流入流出）及回归结果图表。
+
+### Evaluating the persuasive influence of political microtargeting with large language models (2024; Important; citations: 116)
+Tags: large language models; political microtargeting; political persuasion; gpt-4; influence operations; ai safety; randomized control trial; political strategy; automated communication; persuasion effectiveness; ai-mediated communication; societal risk; behavioral science; computational social science; election interference; disinformation; personalization; nlp in politics; policy implications; empirical baseline
+研究利用GPT-4进行政治微目标定位，发现个性化消息虽具说服力，但相比非定向消息无显著优势，表明LLM影响力源于通用说服力而非个性化。
+Deliverables: 实验数据集 GPTarget2024，作为未来研究的实证基线。 | 一个集成用户数据到GPT-4提示词的实时Web应用程序原型。 | 预注册随机对照实验（n=8,587）的详细结果与图表。
+Method: 预注册随机对照实验（Preregistered Randomized Control Experiment）。 | 大规模部署（n=8,587）以测试微定向与非定向消息的说服效果。 | 实时集成自我报告的人口统计和政治数据到GPT-4提示词中。 | 操纵属性类型和数量以测试微定向的边际效应。
+Full-text notes: 摘要及主要结论已完整提供。详细统计表格（如SI Appendix Table S1）和完整参考文献列表未在摘录中显示，但核心发现和数据对比已明确。
+
+### Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations (2023; Important; citations: 317)
+Tags: generative ai; influence operations; disinformation; ai safety; propaganda; mitigation strategies; kill chain framework; political strategy; social media manipulation; ai policy; automated content; belief formation; model access; content dissemination; deepfakes; misinformation; cyber security; openai; stanford internet observatory; cset
+本报告评估生成式语言模型对网络影响力行动的威胁，提出基于“行为链”的缓解框架，涵盖模型构建、访问、传播及信念形成四个阶段，强调需多方协作。
+Deliverables: 影响力行动ABC框架（行为体、行为、内容）的AI影响分析 | 针对AI影响力行动的四级缓解框架（模型构建、访问、传播、信念） | 关键不确定性因素清单（如微调成本、新能力涌现）
+Method: 专家研讨会（30名AI与政策专家） | 文献综述与框架分析 | 威胁建模与情景推演
+Full-text notes: 全文公开于arXiv。摘录包含执行摘要、威胁分析（ABC框架）、缓解策略框架及影响力行动背景。未包含具体的成本效益计算细节及后续章节的实证案例。
+
+### Ignore All Previous Instructions: Jailbreaking as a de-escalatory peace building practise to resist LLM social media bots (2026; Watchlist; citations: 0)
+Tags: llm safety; jailbreaking; misinformation; influence operations; social media bots; conflict escalation; prompt injection; ai peace building; disinformation resistance; user-centric moderation; political discourse; automated accounts; de-escalation; civic tech; ai governance
+提出将对抗性提示注入视为非暴力去激进化实践，通过暴露自动化行为来抵抗虚假信息。
+Deliverables: 概念框架：将Jailbreaking重新定义为去激进化手段 | 案例说明：通过无关请求（如蛋糕食谱）测试账号真实性
+Method: 理论分析与概念重构 | 基于现有文献的案例推演 | 非实证性理论提案
+Full-text notes: 全文公开，为ICLR 2026 AI for Peace workshop论文。主要依赖文献综述和逻辑论证，缺乏大规模实证数据或算法实验。
+
+### New parameters of power: On LLM-based manipulation and control and the spectre of strategic AI (2026; Watchlist; citations: 0)
+Tags: llm manipulation; strategic ai; influence operations; power dynamics; ai personas; silicon subjects; information pollution; meta cicero; ai safety; computational social science; political strategy; generative ai risk; persuasion technology; information environment; ai governance
+论文探讨LLM如何重构权力机制，提出四种新型权力：污染信息环境、通过AI人格说服、构建硅基个体与社会模型。以Meta Cicero为例，论证LLM是投射权力的工具。
+Deliverables: LLM操纵与控制的理论框架 | 四种新型权力类型的分类定义 | Meta Cicero案例的概念性分析
+Method: 理论分析与概念构建 | 案例研究（Meta Cicero模型） | 批判性话语分析
+Full-text notes: 仅获取到摘要和元数据。正文内容未提供，无法提取具体实证数据或详细论证过程。
+
+### Whose story wins? LLM-powered chatbots as sites and agents of memory-political contestation and corporate greenwashing (2026; Watchlist; citations: 2)
+Tags: llm bias; memory politics; nordic region; corporate greenwashing; indigenous perspectives; nato security; climate obstructionism; algorithmic auditing; narrative framing; disinformation risk; epistemic authority; prompt engineering; deepseek; chatgpt; mistral; collective memory; propaganda; ai safety; discourse analysis; geopolitics
+研究探讨LLM如何中介北欧气候、安全与殖民记忆政治。发现模型易受提示词引导，常复述企业洗绿叙事并边缘化原住民视角，成为记忆争夺场域。
+Deliverables: 针对ChatGPT, DeepSeek, Mistral在芬兰语、瑞典语、英语下的提示词响应数据集 | 关于LLM中介记忆政治和绿色洗绿的定性分析框架 | 北欧地区气候、安全、殖民主义三大主题的历史叙事对比表
+Method: 算法审计 (Algorithmic Auditing) | 叙事诱导 (Narrative Luring) - 迭代式提示词设计 | 定性话语分析 (Qualitative Discourse Analysis) | 多模型、多语言对比实验
+Full-text notes: 提供了完整正文摘录，包含详细的方法论、提示词设计、分主题发现（气候、北约、殖民主义）及结论。无付费墙限制，内容完整。
+
+## Classical Political NLP and Information Extraction
+
+### A Bayesian Hierarchical Topic Model for Political Texts: Measuring Expressed Agendas in Senate Press Releases (2010; Core; citations: 584)
+Tags: topic modeling; bayesian hierarchical models; political text analysis; expressed agendas; senate press releases; variational inference; legislative communication; unsupervised learning; political representation; nlp methods; policy priorities; congressional behavior; text as data; statistical modeling; political rhetoric
+提出表达议程模型，利用贝叶斯层次主题模型分析参议员新闻稿，量化其向选民传达的政策优先事项。
+Deliverables: 表达议程模型（Expressed Agenda Model）的统计框架 | 2007年美国参议院24,000多份新闻稿的原始数据集 | 用于R语言的免费软件包（预告）
+Method: 贝叶斯层次主题模型 | 变分推断（Variational Inference） | 冯·米塞斯-费舍尔分布（von Mises-Fisher distribution） | 文本预处理与词干提取
+Full-text notes: 全文提供了详细的模型推导、参数设置、与现有方法的对比实验（如单独聚类的问题）以及新闻稿在报纸中的覆盖率分析。包含具体的数学公式和验证步骤。
+
+### A Method of Automated Nonparametric Content Analysis for Social Science (2010; Core; citations: 815)
+Tags: automated content analysis; text as data; political text; nonparametric method; bias correction; proportion estimation; social science methodology; gary king; daniel hopkins; unstructured text; policy position extraction; computational social science; document classification; statistical inference; text mining
+提出一种优化群体比例估计而非单文档分类的自动化非参数内容分析方法，解决传统分类器在估计类别比例时的偏差问题。
+Deliverables: 实现该方法的软件工具 | 用于进一步分析的大型文本语料库
+Method: 自动化非参数内容分析 | 直接优化群体统计量估计 | 文本挖掘与社会科学数据结合
+Full-text notes: 摘要已提供核心逻辑：区分单文档分类与群体比例估计的目标差异。正文未完全提供，但摘要明确了方法旨在解决社会科学家对总体推断的需求，而非单纯的文档分类任务。
+
+### An Automated Information Extraction Tool for International Conflict Data with Performance as Good as Human Coders: A Rare Events Evaluation Design (2003; Core; citations: 432)
+Tags: information extraction; international conflict; rare events; automated coding; event data; political nlp; human vs machine; data collection; computational linguistics; conflict analysis; gary king; will lowe; international organization; news analysis; policy data
+提出罕见事件评估设计，验证自动信息提取工具在国际冲突数据中表现媲美人工，并发布370万条事件数据。
+Deliverables: 3.7 million international events dataset covering the entire world for the past decade | Rare events evaluation design methodology | Automated information extraction tool for international conflict data
+Method: Rare events evaluation design | Automated information extraction from news stories | Comparison with human coders | Event categorization schemes
+Full-text notes: Abstract confirms release of 3.7 million event dataset and evaluation of automated tool against human coders using rare events design. Full text details the specific software and statistical validation methods.
+
+### Automated Coding of International Event Data Using Sparse Parsing Techniques (2000; Core; citations: 67)
+Tags: event data; sparse parsing; automated coding; nlp for political science; tabari; ked; information extraction; conflict data; machine coding; text analysis; international relations; dictionary-based parsing; svo extraction; political nlp; historical nlp
+综述KEDS/TABARI系统，利用稀疏解析将新闻文本自动编码为政治事件数据，强调速度、一致性及对传统人工编码的替代优势。
+Deliverables: TABARI开源软件（C++） | KEDS/TABARI编码词典（约4000动词短语，500个主要行为体） | Actor_Filter工具用于自动提取潜在行为体
+Method: 稀疏解析（Sparse Parsing） | 基于词典的模式匹配（动词/名词短语） | 主谓宾（SVO）结构提取 | 开源自定义词典编辑
+Full-text notes: 全文详细描述了TABARI的Lexical/Syntactic处理流程、词典结构（Actor/Verb/Issue）、代词解析规则及错误案例分析。
+
+### Computer-Assisted Text Analysis for Comparative Politics (2015; Core; citations: 464)
+Tags: structural topic model; multilingual text analysis; machine translation; comparative politics; text preprocessing; r package stm; political text mining; fatwa analysis; social media analysis; unsupervised learning; document covariates; topic modeling; cross-lingual analysis; nlp for political science; text as data
+综述比较政治中的多语言文本分析，介绍STM模型及预处理工具，展示其在伊斯兰教法与社交媒体数据中的应用。
+Deliverables: R包stm（结构主题模型实现） | R包translateR（机器翻译接口） | Python工具txtorg（多语言文本预处理） | 在线附录中的方法综述与代码示例
+Method: 结构主题模型（Structural Topic Model, STM） | 多语言文本预处理（编码转换、分词、去停用词） | 机器翻译（Google/Microsoft API） | 文档级协变量分析
+Full-text notes: 全文可获取。包含详细的STM数学基础、多语言预处理技术细节、两个实证案例（伊斯兰教法分析、斯诺登事件社交媒体分析）及在线附录。
+
+### Conflict and Mediation Event Observations (CAMEO): A New Event Data Framework for the Analysis of Foreign Policy Interactions (2002; Core; citations: 189)
+Tags: event data; political nlp; conflict analysis; mediation; information extraction; tabari; codebook design; foreign policy; automated coding; weis comparison; text mining; international relations; data framework; sparse parsing; political science methods
+介绍CAMEO事件编码框架，旨在解决WEIS系统在现代冲突研究中的局限性。通过TABARI自动化程序生成巴尔干、黎凡特和西非数据，验证了CAMEO在调解与冲突分类上的精确性。
+Deliverables: CAMEO编码框架及详细代码本（Codebook） | 巴尔干、黎凡特、西非三个地区的事件数据集 | TABARI自动化编码软件及标准化词典 | CAMEO与WEIS系统的统计对比分析
+Method: 基于TABARI的稀疏解析（Sparse Parsing）自动化文本编码 | 对路透社和法新社新闻导语进行大规模事件提取 | CAMEO与WEIS编码结果的统计相关性分析与分布对比 | 多区域（巴尔干、黎凡特、西非）跨时间序列验证
+Full-text notes: 全文提供了CAMEO与WEIS的详细对比，包括具体的编码类别定义、动词词典构建过程、以及三个地区的数据分布表格和图表。重点展示了CAMEO如何通过合并和细分WEIS类别来提高对调解和现代冲突的测量精度。
+
+### Extracting Policy Positions from Political Texts Using Words as Data (2003; Core; citations: 1353)
+Tags: policy extraction; text as data; word scoring; party manifestos; legislative speeches; uncertainty measurement; comparative politics; british politics; german politics; applied nlp; political methodology; dimensionality reduction; laver benoit method; quantitative text analysis; political positioning
+提出将政治文本视为“词数据”而非话语的量化方法，通过词频评分提取政党政策立场。
+Deliverables: 一种无需语言背景知识的“语言盲”词评分技术 | 针对多语言环境（英、德）的政策立场提取框架 | 包含置信区间的政策位置估计结果
+Method: 词频统计与词评分（Word Scoring） | 跨语言政策立场复制与验证 | 测量误差与不确定性量化分析
+Full-text notes: 全文不可用。摘要表明该方法核心在于将文本视为数据而非话语，通过词频分布而非语义理解来定位政策维度，且强调其低成本和高可扩展性。
+
+### Fightin' Words: Lexical Feature Selection and Evaluation for Identifying the Content of Political Conflict (2008; Core; citations: 646)
+Tags: text-as-data; lexical-feature-selection; bayesian-shrinkage; political-nlp; partisan-framing; us-senate; regularization; word-scores; tf-idf; semantic-validity; overfitting; sampling-variation; log-odds-ratio; dirichlet-prior; laplace-prior; political-conflict; ideological-spatial; methodology; monroe-colaresi-quinn; political-analysis
+本文批判了政治文本分析中常见的词频统计缺陷，提出基于贝叶斯收缩和正则化的新特征选择方法，以准确识别党派话语差异。
+Deliverables: 一套用于政治文本特征选择与评估的贝叶斯统计框架。 | 针对党派、性别和分配性话语的分析代码与数据示例（美国参议院演讲）。 | 对现有文本即数据（Text-as-Data）方法的系统性方法论批判。
+Method: 贝叶斯收缩估计（Bayesian Shrinkage） | 正则化（Regularization） | 拉普拉斯先验（Laplace Prior） | 信息狄利克雷先验（Informative Dirichlet Prior） | 对数几率比（Log-Odds-Ratio） | 多项式分布建模（Multinomial Modeling）
+Full-text notes: 全文提供了详细的数学推导，对比了分类法、非模型法（频数差、tf.idf、WordScores）和模型法。重点展示了如何通过调整先验分布来平衡偏差与方差，解决了传统方法在特征选择中的语义效度问题。
+
+### Get out the vote: Determining support or opposition from Congressional floor-debate transcripts (2006; Core; citations: 648)
+Tags: sentiment analysis; political text classification; congressional debates; collective classification; graph-based learning; discourse relationships; agreement detection; semi-supervised learning; legislative speech; opinion mining; nlp for political science; text mining; machine learning; information extraction; policy analysis
+利用美国国会辩论转录文本，通过结合演讲者身份约束与跨发言者同意关系，显著提升了立法支持/反对立场分类的准确率。
+Deliverables: 基于2005年美国众议院辩论转录本和投票记录构建的语料库 | 一种结合个体文档分类与图割优化（graph mincuts）的集体分类框架 | 用于检测跨发言者同意的SVM分类器及其权重生成机制
+Method: 支持向量机（SVM）进行孤立演讲片段的情感极性分类 | 基于最小割（minimum cuts）的图论优化框架整合个体得分与关系约束 | 通过SVM分类器识别文本中的显式同意引用并生成边权重 | 硬约束（同一演讲者）与软约束（跨演讲者同意）相结合
+Full-text notes: 全文已提供。包含详细的语料库构建步骤（GovTrack数据清洗）、SVM特征工程、同意检测器训练细节、以及多种基线对比实验结果。
+
+### Measuring Political Positions from Legislative Speech (2016; Core; citations: 155)
+Tags: legislative speech; political positioning; text scaling; ideology measurement; polarization; parliamentary debate; irish politics; us senate; computational text analysis; political nlp; roll call votes; campaign finance; government opposition; anti-establishment; methodology
+提出从立法演讲语料库估算议员政治立场的新方法，揭示爱尔兰与美国参议院的党派极化及演讲维度。
+Deliverables: 爱尔兰Dáil和美国参议院的议员政治立场评分数据 | 演讲极化演变的量化指标 | 在线可用的复制材料（Replication materials）
+Method: 基于整个立法演讲语料库的文本缩放（Text Scaling） | 多维度空间投票模型分析 | 与滚记投票（Roll-call votes）和竞选捐款数据的效度验证
+Full-text notes: 摘要指出现有方法在狭窄文本上表现不佳，本文方法适用于整个语料库。正文被付费墙限制，但元数据和引用列表显示使用了R包quanteda及贝叶斯方法。
+
+### Predicting Legislative Roll Calls from Text (2011; Core; citations: 209)
+Tags: legislative prediction; ideal point model; topic modeling; supervised lda; variational inference; political text analysis; roll call data; us congress; policy text classification; nlp for political science; bill text analysis; voting prediction; latent variable models; political sentiment; legislative behavior
+将理想点模型与主题模型结合，利用法案文本预测议员投票，实现从文本到政治立场的映射。
+Deliverables: 理想点主题模型(IPTM) | 基于文本回归的理想点预测算法 | 变分推断算法实现 | 1997-2011年美国国会立法数据集分析
+Method: 理想点模型(Ideal Point Model) | 监督主题模型(sLDA) | 变分推断(Variational Inference) | L2正则化回归 | LARS回归
+Full-text notes: 全文提供详细模型推导、变分推断算法细节及111届国会具体案例（如医保法案、NASA授权法案）的预测分析。
+
+### Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts (2013; Core; citations: 2987)
+Tags: text as data; automated content analysis; political text; supervised learning; unsupervised clustering; text scaling; wordfish; wordscores; naive bayes; dictionary methods; validation; preprocessing; bag of words; stemming; document-term matrix; readme; fac; cac; political nlp; methodology
+综述政治文本自动内容分析方法，强调模型需验证且仅辅助人类，涵盖分类、缩放及预处理技术。
+Deliverables: 自动化文本分析指南 | 常见误解澄清 | 模型验证最佳实践建议
+Method: 文献综述 | 方法论指南 | 预处理技术（词袋模型、词干提取） | 监督学习（朴素贝叶斯、ReadMe） | 无监督聚类（FAC、CAC） | 文本缩放（Wordfish, Wordscores）
+Full-text notes: 摘要缺失。正文摘录详细阐述了四大原则、数据获取、从文本到数字的转换（预处理）、已知类别的分类（字典法、监督学习）及文本缩放方法。
+
+### Applications of GPT in Political Science Research: Extracting Information from Unstructured Text (2025; Curated; citations: 9)
+Tags: gpt; information_extraction; political_science; nlp; data_collection; prompt_engineering; historical_data; meeting_minutes; news_analysis; elite_biography; automation; research_methods; ethics; llm_bias; ocr_cleaning; human_ai_collaboration
+本文探讨GPT在政治学非结构化文本信息提取中的应用，通过清洗历史档案、提取会议纪要、新闻来源及精英传记四个案例，证明其能高效替代人工编码，并讨论伦理与最佳实践。
+Deliverables: 四个具体的政治学数据收集与清洗应用案例（历史档案、会议纪要、新闻来源、精英传记）。 | 针对LLM在政治学研究中的提示工程最佳实践指南（如多步提示、上下文窗口管理）。 | 关于LLM使用的伦理考量框架（学生就业、隐私、偏见、环境影响）。 | 公开的研究文档和数据集（Harvard Dataverse）。
+Method: 案例研究法：展示GPT在四种不同政治学数据任务中的具体应用。 | 提示工程（Prompt Engineering）：迭代优化提示词以提取结构化数据。 | 基准测试与验证：将GPT输出与黄金标准（如GCV处理文本、人工编码、众包验证）进行对比，计算字符错误率（CER）和提取准确率。 | API自动化：使用Python/R调用GPT API进行批量数据处理。
+Full-text notes: 全文为开放获取（Open Access），包含详细的案例描述、提示词示例、错误率图表及在线附录链接。
+
+### Bayesian Poisson Tensor Factorization for Inferring Multilateral Relations from Sparse Dyadic Event Counts (2015; Curated; citations: 112)
+Tags: bayesian tensor factorization; dyadic event data; international relations; sparse data; geopolitical networks; variational inference; gdelts; icews; multilateral relations; political event extraction; gamma prior; geometric expectation; predictive modeling; exploratory analysis; tensor decomposition
+提出BPTF模型，利用贝叶斯张量分解从稀疏二元事件数据中推断潜在的多边关系结构，优于传统非负张量分解。
+Deliverables: 开源Python实现代码（GitHub链接） | 基于GDELT和ICEWS数据的实验结果与分析 | 针对贝叶斯泊松矩阵/张量分解的几何期望点估计建议
+Method: 贝叶斯泊松张量分解（BPTF） | 变分推断（Variational Inference） | Gamma先验分布 | 几何期望点估计
+Full-text notes: 全文可获取。详细展示了GDELT和ICEWS数据集上的实验，包括预测误差表（Table 1）、潜在组件可视化（Figure 1, 4, 5, 6）以及几何期望与算术期望的理论对比（Figure 7）。
+
+### Coding with the machines: machine-assisted coding of rare event data (2024; Curated; citations: 5)
+Tags: llm validation; political event data; gpt-4 performance; machine coding; prompt engineering; rare event coding; political nlp; expert comparison; zero-shot learning; data preprocessing; conflict information extraction; model reliability; supervised learning; semi-supervised learning; bias in llms
+评估LLM在政治事件数据编码中的表现，发现仅GPT-4在熟悉语境下接近专家水平，强调提示工程与数据预处理的重要性。
+Deliverables: 三种模型（含GPT-4）在政治数据编码上的性能对比 | 提示工程对编码准确性的影响分析 | 针对LLM预训练数据污染问题的验证方法
+Method: 比较监督与半监督算法在政治数据编码中的相对性能 | 多轮迭代测试不同模型 | 与训练有素的专家编码结果进行基准对比 | 使用更新后的非公开数据集以规避预训练数据泄露
+Full-text notes: 摘要提及使用AUC/ROC图评估模型预测抗议事件的性能，并提到使用R语言cvAUC包进行五折交叉验证。
+
+### ConfliBERT: A Pre-trained Language Model for Political Conflict and Violence (2022; Curated; citations: 42)
+Tags: political conflict; language model; bert; domain adaptation; event extraction; political violence; nlp; pre-training; information extraction; conflict analysis; transfer learning; named entity recognition; text classification; political science; computational social science; low-resource learning; vocab design; naacl; policy analysis; security studies
+提出领域专用预训练模型ConfliBERT，通过构建冲突领域语料库并从头预训练，在18项政治冲突NLP任务中超越通用BERT，显著缓解标注数据稀缺问题。
+Deliverables: ConfliBERT预训练模型（含从头预训练和持续预训练版本） | 70亿词的政治冲突与暴力领域专用语料库 | 包含12个数据集和18个任务的综合评估基准 | 开源代码库
+Method: 构建包含专家报告、主流媒体、Gigaword等来源的7GB领域语料库 | 采用BERT架构，实施从头预训练（SCR）和持续预训练（Cont）两种策略 | 设计领域专用词表（ConfliVocab）以优化冲突术语分词 | 在12个数据集上进行18项NLP任务评估（分类、NER、事件提取等） | 通过消融实验和少样本学习实验验证模型鲁棒性
+Full-text notes: 全文公开，包含详细的语料库构建过程、预训练超参数设置、18项任务的详细结果表格及统计显著性分析。
+
+### How to train your stochastic parrot: large language models for political texts (2025; Curated; citations: 57)
+Tags: large language models; political text analysis; few-shot prompting; sentiment analysis; ideology scaling; topic modeling; text as data; political communication; automated content analysis; gpt-3; gpt-4; prompt engineering; cost efficiency; validation methods; political science methods
+本文论证了少样本提示LLM在政治文本分析中的有效性，其性能优于传统监督学习且成本极低，并提供了最佳实践与开源工具。
+Deliverables: 一套适用于社会科学测量的LLM提示最佳实践 | 开源R语言软件包 'promptr' (CRAN) | 四个预注册的实证分析案例（推文情感、广告语调、政党纲领、国会演讲）
+Method: 少样本提示（Few-shot prompting） | 将文本分类任务转化为下一个词预测问题 | 预注册分析以验证模型性能 | 与人工编码、众包及传统NLP模型进行基准对比
+Full-text notes: 全文公开获取。详细展示了四个应用场景的提示词设计、预注册协议、成本对比数据及与人工编码的相关性分析。
+
+### LLM Analysis of 150+ years of German Parliamentary Debates on Migration Reveals Shift from Post-War Solidarity to Anti-Solidarity in the Last Decade (2025; Curated; citations: 0)
+Tags: llm annotation; political discourse analysis; bias correction; dsl; migration policy; german parliament; solidarity; text classification; computational social science; longitudinal analysis; prompting strategies; model evaluation; systematic error; political strategy; public opinion trends
+评估LLM标注德国议会移民话语中团结/反团结立场的能力，发现GPT-5等模型接近人类水平但存在系统性偏差，结合DSL校正后揭示2015年后反团结显著上升。
+Deliverables: 多模型（GPT-4/5, Llama, Qwen等）在政治话语细粒度分类上的性能基准 | 基于DeuParl数据集的150年德国议会移民话语标注管道与DSL校正方法 | 德国政治话语中团结/反团结态度的长期量化趋势证据
+Method: 大规模LLM提示工程与性能评估 | 基于设计的监督学习（Design-based Supervised Learning, DSL）进行偏差校正 | 理论驱动的细粒度分类体系（Thijssen团结类型学） | 长时段政治文本挖掘与趋势分析
+Full-text notes: 全文为arXiv预印本，可获取。包含详细的混淆矩阵、错误分析及DSL数学推导。
+
+### Measurement in the Age of LLMs: An Application to Ideological Scaling (2023; Curated; citations: 15)
+Tags: ideological scaling; llm measurement; political text analysis; ideal points; prompt engineering; chain of thought; convergent validity; dog whistle detection; us congress; political ideology; text as data; gpt-3.5; gpt-4; social science methods; political strategy
+论文探讨利用LLM直接生成意识形态评分，验证其在立法者理想点及文本意识形态缩放中的效度与灵活性。
+Deliverables: 一套基于LLM直接指令的意识形态测量Prompt模板。 | 美国第114届国会参议员理想点评分数据集。 | 特朗普2009-2017年推文意识形态分类时间序列数据。 | 用于测试LLM意识形态感知能力的虚构情境数据集。
+Method: 直接数值评分（Direct Numeric Scoring） | 零样本思维链（Zero-shot Chain-of-Thought） | 动态自锚定（Dynamic Self-anchoring） | 收敛效度与建构效度验证 | 人工构造的虚构情境测试
+Full-text notes: 全文为arXiv预印本，无付费墙。正文包含详细的Prompt示例、图表分析及对传统量化测量局限性的理论讨论。
+
+### Measuring Scalar Constructs in Social Science with LLMs (2025; Curated; citations: 8)
+Tags: llm measurement; scalar constructs; political text analysis; prompting strategies; fine-tuning; reward modeling; pairwise comparison; pointwise scoring; social science nlp; text as data; calibration; heaping bias;  Bradley-terry model; political communication; immigration fear; ad negativity; grandstanding
+评估LLM在社会科学标量构念测量中的四种方法，发现概率加权点式评分优于直接评分，微调小模型可媲美大模型提示效果。
+Deliverables: 包含三个政治学数据集的文本评分基准 | 开源代码与数据仓库 | 针对实践者的LLM评分方法建议
+Method: 零样本与少样本提示 | Bradley-Terry模型推断潜变量 | 奖励模型微调 | 回归微调 | Spearman相关系数与RMSE评估
+Full-text notes: 全文可获取。详细实验设置、模型性能对比表格、不同训练数据规模的影响分析及局限性讨论均在正文中。
+
+### Multilingual Protest News Detection - Shared Task 1, CASE 2021 (2021; Curated; citations: 49)
+Tags: protest detection; multilingual nlp; event extraction; shared task; case 2021; political event data; cross-lingual transfer; zero-shot learning; information extraction; text classification; coreference resolution; glocon dataset; political conflict; social movements; benchmarking; nlp for social science
+CASE 2021共享任务1，聚焦多语言抗议新闻检测。涵盖文档/句子分类、事件共指识别及事件抽取。评估英、西、葡语及印地语零样本场景。IBM MNLP IE在事件抽取中表现最佳，多语言模型在低资源语言中有效，但单语模型在数据充足时更优。
+Deliverables: GLOCON Gold多语言标注数据集（英、西、葡、印地语） | 四个子任务的基准测试框架与评估脚本 | 238个参赛系统的性能排行榜 | 基线模型代码与结果
+Method: 多语言文本分类（BERT, RoBERTa, XLM-R） | 事件句子共指识别（聚类算法） | 序列标注（BIO格式事件抽取） | 零样本与少样本跨语言学习 | Codalab自动化评估平台
+Full-text notes: 全文公开。包含详细的数据集构建流程、标注规范、基线模型实现细节及所有参赛队伍的具体方法描述和结果表格。
+
+### Replacing or enhancing the human coder? Multiclass classification of policy documents with large language models (2025; Curated; citations: 2)
+Tags: large language models; policy text classification; computational social science; human-ai collaboration; congressional bills; comparative agendas project; gpt-4; gemini; text as data; political nlp; f1 score; multiclass classification; policy coding; automated content analysis; llm limitations
+评估GPT与Gemini模型对国会法案的多类政策主题分类能力，发现完全依赖LLM不足，需结合人工干预，最佳混合方案F1达0.82，但仍低于定制算法Babel。
+Deliverables: 三种不同人工干预程度的LLM使用场景评估 | 基于GPT和Gemini模型的国会法案分类基准数据 | 复现代码与数据链接 (doi:10.7910/DVN/SGIDYO)
+Method: 多模型对比实验 (GPT系列 vs Gemini系列) | 多类文本分类 (Multiclass Classification) | 加权F1分数评估 | 混合人类-AI编码工作流测试
+Full-text notes: 全文受Springer订阅墙保护。摘要提供了核心结论：LLM单独使用效果有限，混合模式优于纯LLM但不及专用ML模型。数据可用性声明提供了复现链接。
+
+### Socio-political Events of Conflict and Unrest: A Survey of Available Datasets (2024; Curated; citations: 7)
+Tags: event extraction; political science datasets; conflict data; nlp survey; data ethics; information extraction; socio-political events; dataset comparison; bias in data; automated coding; manual coding; text annotation; event ontology; peace science; data availability
+综述冲突与动荡事件数据集，对比政治学数据库与NLP标注集，分析两者在抽象度、文本关联及伦理上的差异。
+Deliverables: 政治学事件数据库分类（手动/自动） | NLP事件提取数据集分类（MUC/ACE/ERE等） | 跨学科差距分析与伦理建议
+Method: 系统性文献综述 | 跨学科数据集对比分析 | 方法论差异评估
+Full-text notes: 全文可获取，详细列出了UCDP GED, ACLED, CAMEO, ACE, MUC等具体数据集的元数据、规模及方法论细节。
+
+### Synthetically generated text for supervised text analysis (2023; Curated; citations: 16)
+Tags: synthetic data; llm for text analysis; supervised learning; political nlp; event detection; populism measurement; named entity recognition; data augmentation; prompt engineering; model adaptation; adversarial evaluation; zero-shot learning; political violence; manifesto analysis; reproducibility; ethics in ai; ukraine war; multilingual nlp; cost reduction; rare class handling
+提出利用LLM生成合成文本以训练传统监督模型，解决标注成本高、稀有类检索难及版权隐私问题。
+Deliverables: 合成文本生成指南（适配与提示策略） | 基于对抗分类器的文本质量评估与优化方法 | 三个政治学应用案例：乌克兰战争武器NER、政治暴力事件检测、多语言民粹主义分类器
+Method: 大语言模型文本生成（GPT-2, GPT-3） | 领域适配（Adaptation）与提示工程（Prompting） | 对抗性分类器用于超参数调优 | 监督学习模型训练与评估（SVM, SetFit）
+Full-text notes: 全文已提供。包含详细的三个应用案例：1) 适配GPT-2生成乌克兰战争推文以训练武器NER；2) 提示GPT-2生成新闻以训练暴力事件分类器；3) 提示GPT-3生成多语言民粹主义句子以训练分类器并分析真实宣言。
+
+### Automated Coding of Political Event Data (2013; Important; citations: 52)
+Tags: political event data; automated coding; keds; cameo; information extraction; conflict data; rule-based systems; counterterrorism; nlp history; data quality; schrodt; ice; event ontology; text mining; political science methods
+综述政治事件数据自动编码的发展，对比KEDS与VRA-Reader等系统，指出当前系统多基于字典和规则而非统计方法。
+Deliverables: 政治事件数据编码系统的历史演进综述 | KEDS与VRA-Reader系统的技术对比分析 | CAMEO与IDEA编码本体在自动化中的应用讨论
+Method: 文献综述 | 系统比较分析 | 历史数据分析
+Full-text notes: 全文受付费墙限制。摘要缺失。摘录仅包含引言、脚注（涉及数据清洗、重复检测、编码效率）及参考文献。核心论证细节（如具体算法性能对比、CAMEO实现细节）不可见。
+
+### Automatic Extraction of Events from Open Source Text for Predictive Forecasting (2013; Important; citations: 52)
+Tags: event extraction; political nlp; predictive forecasting; statistical nlp; conflict data; information extraction; bbn serif; text mining; political instability; automated coding; serif; ontopic; counterterrorism; nlp evaluation; open source intelligence
+本章对比了基于统计NLP（BBN SERIF/OnTopic）与传统规则系统（KEDS/TABARI）在政治事件提取上的表现，证明统计方法在准确性、覆盖率及去噪方面显著优于传统方法，有助于提升政治不稳定性的预测模型精度。
+Deliverables: BBN SERIF和BBN OnTopic统计NLP引擎在政治事件提取任务上的性能评估报告。 | 针对25万文档语料库的事件提取基准测试结果。
+Method: 实证比较研究：对比统计NLP方法与KEDS/TABARI规则系统。 | 多维度评估：包括准确性、覆盖率、历史事件过滤、主题过滤和领域迁移。 | 使用约250,000份文档的语料库进行验证，并应用语义去重过滤器。
+Full-text notes: 全文位于Springer付费墙后。摘要提供了核心论点，正文摘录包含评估维度、部分脚注（如评估语料库规模、标注者一致性数据）及参考文献。具体实验细节、数据表格及模型参数不可见。
+
+### Creating Custom Event Data Without Dictionaries: A Bag-of-Tricks (2023; Important; citations: 9)
+Tags: event extraction; political nlp; large language models; question answering; entity resolution; conflict data; ice replacement; active learning; transformer models; political violence; information extraction; plover ontology; polecats dataset; ngec pipeline; actor categorization; geolocation; dictionary-free coding; political instability; nlp for social science; automated coding
+提出无需字典的NGEC管道，利用LLM、主动学习和QA模型自动提取政治事件数据，旨在替代ICEWS并支持定制化数据集构建。
+Deliverables: POLECAT全球事件数据集 | NGEC事件编码器的Python代码和模型 | 离线Wikipedia索引构建工具 | 用于实体解析和分类的神经网络模型
+Method: 基于Transformer的文档级事件分类（使用DistilBERT） | 主动学习优化事件类别分类器训练 | 提取式问答（QA）模型识别事件属性（主体、受体、地点、时间） | 基于神经相似度的实体解析（链接至Wikipedia） | 基于Geonames的地理位置解析 | 神经网络相似度模型进行实体分类
+Full-text notes: 全文公开于arXiv。详细描述了NGEC管道的六个步骤：事件分类、子事件模式分类、上下文分类、属性识别、实体解析和实体分类。包含与BFRS数据集的对比实验及代码链接。
+
+### Creating a Real-Time, Reproducible Event Dataset (2016; Important; citations: 5)
+Tags: political event data; information extraction; nlp for political science; petrarch; real-time data; reproducibility; conflict analysis; syria conflict; icevs comparison; open source nlp; cameso ontology; geolocation; text mining; computational social science; data pipeline
+介绍Phoenix数据集，利用开源NLP和实时新闻抓取构建可复现的政治事件数据，对比ICEWS验证有效性。
+Deliverables: Phoenix事件数据集 | EL:DIABLO虚拟环境部署脚本 | hypnos REST API服务 | 开源代码库（PETRARCH, Atlas scraper等）
+Method: 深度句法解析（Deep Parsing via CoreNLP） | 实时RSS新闻抓取与清洗 | CAMEO事件本体编码 | 地理定位与实体消歧 | 与ICEWS数据的对比分析
+Full-text notes: 全文为arXiv预印本，无付费墙。详细描述了PETRARCH/PETRARCH2算法、地理定位挑战、与ICEWS的系统及数据对比、叙利亚案例研究及代码仓库链接。
+
+### Improving the selection of news reports for event coding using ensemble classification (2015; Important; citations: 34)
+Tags: political event coding; semi-automatic pipeline; ensemble classification; news selection; conflict data extraction; human-in-the-loop; unbalanced classes; protest data; mass mobilization; nlp for political science; data collection efficiency; supervised learning; heterogeneous ensemble; croicu; weidmann; 2015; research & politics; information extraction; political science methods; automation
+提出半自动新闻编码流水线，利用集成分类器筛选无关材料，大幅降低人工编码成本。
+Deliverables: 一种用于政治事件数据提取的半自动编码流水线 | 针对极不平衡数据集优化的异构集成分类器模型
+Method: 监督学习 | 异构集成分类器 | 半自动人工编码流程 | 大规模新闻文本筛选
+Full-text notes: 摘要及元数据完整，但正文摘录仅包含元数据页面，无具体算法细节或实验数据。
+
+### Political Event Coding as Text-to-Text Sequence Generation (2022; Important; citations: 3)
+Tags: political event coding; text-to-text generation; transformer models; synthetic data; information extraction; cameso; nlp for political science; conflict data; t5 model; structured data from text
+提出将政治事件编码视为文本到文本生成任务，利用T5模型结合合成数据训练，实现从非结构化文本中提取结构化事件记录。
+Deliverables: 基于T5-Base的政治事件编码模型 | 合成新闻故事与事件记录配对数据集 | 基于规则与释义模型的数据生成方法
+Method: Text-to-Text Sequence Generation (T5) | Synthetic Data Generation (Rule-based + Paraphrasing) | CAMEO Ontology Integration | Fine-tuning on 4.08M synthetic samples
+Full-text notes: 全文可获取。详细描述了合成数据生成过程（使用CAMEO字典和NYT句子）、T5模型微调参数、以及针对AP新闻标题的初步真实世界评估结果和局限性分析。
+
+### The CAMEO (Conflict and Mediation Event Observations) Actor Coding Framework (2008; Important; citations: 67)
+Tags: event data; actor coding; conflict analysis; nlp; information extraction; political science; mediation; sub-state actors; international relations; data standardization; tabari; ked; cameso; text analysis; political behavior; coding framework; hierarchical coding; non-state actors; geopolitical data; automated coding
+介绍CAMEO框架的演员编码系统，旨在解决传统国家中心编码在当代冲突中的不足。通过层级化、标准化的三字代码体系，系统识别国家、次国家、非国家及国际行为体，支持自动化文本分析。
+Deliverables: CAMEO Actor Coding Framework 编码手册 | 区域演员词典（黎凡特、巴尔干、西非） | TABARI 自动化编码软件 | KEDS 项目数据集
+Method: 层级化编码规则设计 | 基于ISO-3166和UN标准的标准化代码映射 | 自动化自然语言处理（NLP）软件验证 | 区域特定词典开发与维护
+Full-text notes: 全文提供了详细的编码规则、示例代码表（宗教、国际组织、国内角色等）及区域词典结构，内容实质性强，无付费墙限制。
+
+### The Media Frames Corpus: Annotations of Frames Across Issues (2015; Important; citations: 271)
+Tags: media framing; political communication; text annotation; dataset release; content analysis; nlp for social science; inter-annotator agreement; policy issues; news classification; computational social science; discourse analysis; political strategy; public opinion; lexis-nexis; ground truth data
+发布首个跨议题媒体框架语料库，含数千篇新闻标注，旨在推动计算语言学对政治框架的研究。
+Deliverables: Media Frames Corpus v1 (公开数据集) | 15维通用框架标注指南与代码本 | GitHub上的数据处理工具
+Method: 基于15个通用维度的多层级人工标注 | 三阶段迭代式标注流程以优化一致性 | 使用Krippendorff's alpha衡量标注者间信度 | Lexis-Nexis数据库检索与清洗
+Full-text notes: 全文公开，详细描述了15个框架维度定义、三阶段标注过程及信度分析结果。
+
+### Three's a Charm?: Open Event Data Coding with EL:DIABLO, PETRARCH, and the Open Event Data Alliance. (2014; Important; citations: 49)
+Tags: political event data; automated coding; open source nlp; petrarch; eldiablo; open event data alliance; information extraction; cameo ontology; stanford corenlp; conflict data; text mining; schrodt; digital methods; open science; python nlp
+综述EL:DIABLO、PETRARCH及OEDA三大开源政治事件数据自动化采集与编码系统，强调透明性与模块化。
+Deliverables: EL:DIABLO开源软件代码库 | PETRARCH事件编码引擎 | Open Event Data Alliance (OEDA)组织框架 | 基于WordNet的扩展动词与实体词典
+Method: 自然语言处理 (NLP) 与信息抽取 | 基于Stanford CoreNLP的全句法解析 | 模块化软件架构设计 | 开源协作与众包数据生产模式
+Full-text notes: 全文公开。详细描述了EL:DIABLO的爬虫、过滤、格式化及去重模块，PETRARCH的词典构建逻辑，以及OEDA的治理结构。包含对现有本体（CAMEO/IDEA）局限性的深入分析及未来扩展方向。
+
+### Using Imperfect Surrogates for Downstream Inference: Design-based Supervised Learning for Social Science Applications of Large Language Models (2023; Important; citations: 49)
+Tags: llm annotation; measurement error; statistical inference; debiased machine learning; political text analysis; surrogate labels; confidence intervals; regression analysis; computational social science; bias correction; pseudo-outcomes; cross-fitting; text as data; policy position extraction; uncertainty quantification; neural information processing systems; social science methodology; gold standard labeling; asymptotic unbiasedness; double robustness
+提出DSL估计量，结合LLM代理标签与少量黄金标准标签，通过偏差校正实现下游统计推断的无偏性与置信区间有效性。
+Deliverables: DSL估计量算法及理论证明 | 18个社会科学数据集的实验基准结果 | 偏差校正伪结果构建方法
+Method: 设计基础监督学习 (Design-based Supervised Learning) | 双重稳健估计 (Doubly Robust Estimation) | 交叉拟合 (Cross-fitting) | 偏差校正伪结果 (Bias-corrected Pseudo-outcomes)
+Full-text notes: 全文已提供。包含详细的数学推导、算法伪代码、18个数据集的实验结果图表及与现有方法（SO, GSO, SL）的对比分析。
+
+## Forecasting, Geopolitical Risk, and Foresight
+
+### Approaching Human-Level Forecasting with Language Models (2024; Core; citations: 77)
+Tags: large language models; event forecasting; retrieval augmented generation; geopolitical risk; policy decision making; self-supervised learning; ensemble methods; brier score; calibration; automated reasoning; news retrieval; prediction markets; human-level AI; strategic foresight; binary classification; hyperparameter optimization; data curation; institutional decision support; neural information processing systems; forecasting aggregation
+构建检索增强LM系统，结合新闻检索、推理微调与集成，在二元事件预测上逼近人类竞争者水平，部分场景超越人类。
+Deliverables: 包含5516个二元问题的最新预测数据集 | 端到端检索增强预测系统代码与配置 | 自监督微调预测推理的数据生成方法
+Method: 检索增强生成（RAG）用于新闻信息获取 | 自监督微调（Self-supervised fine-tuning）优化推理 | 剪枝均值集成（Trimmed mean ensembling）聚合预测 | 基于Brier Score的评估与校准分析
+Full-text notes: 全文开源于arXiv，无付费墙限制。
+
+### ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities (2024; Core; citations: 57)
+Tags: forecasting benchmark; llm evaluation; geopolitical risk; superforecasters; brier score; prediction markets; ai capabilities; dynamic dataset; political strategy; human vs ai; data leakage prevention; probabilistic forecasting; iclr 2025; retrieval augmented generation; ensemble methods
+提出动态基准ForecastBench评估LLM预测能力。结果显示专家预测者显著优于顶级LLM，LLM在组合事件预测上表现较差。
+Deliverables: ForecastBench动态基准平台及公共排行榜（www.forecastbench.org）。 | 包含LLM和人类预测、推理过程及准确性的辅助数据集。 | 包含6,435个问题的自动更新问题库（Question Bank）。
+Method: 构建动态问题库，从预测市场（如Polymarket, Metaculus）和实时数据集（如ACLED, FRED）自动获取未决问题。 | 使用Brier Score评估二元及组合事件的概率预测准确性。 | 对比实验：评估17种LLM（零样本、检索增强、集成等）与两类人类群体（普通公众、超级预测者）的表现。 | 通过冻结值（Freeze Values）和新闻检索作为LLM的上下文输入基线。
+Full-text notes: 全文公开于arXiv。附录包含详细的数据字典、伦理审查批准号、复现代码链接及人类调查的人口统计学细节。
+
+### Geoeconomic Pressure (n.d.; Core; citations: 1)
+Tags: geoeconomic pressure; llm methodology; text mining; trade war; firm response; export controls; tariffs; political risk; nber; measurement uncertainty; prompt engineering; international trade; sanctions; strategic forecasting; policy analysis
+利用LLM从文本中提取地缘经济压力信号，量化政策实施与威胁的影响，分析企业差异化响应。
+Deliverables: 地缘经济压力识别方法论 | 政府-企业-工具关联数据集
+Method: 大语言模型文本挖掘 | 多模型一致性检验 | 提示词敏感性分析
+Full-text notes: 仅摘要，无全文细节。
+
+### MIRAI: Evaluating LLM Agents for Event Forecasting (2024; Core; citations: 33)
+Tags: llm agents; event forecasting; geopolitical risk; gdelt; temporal reasoning; benchmark; international relations; tool use; reAct; policy analysis; gpt-4o; code execution; self-consistency; knowledge graphs; news analysis
+提出MIRAI基准，评估LLM智能体利用GDELT数据和新闻预测国际事件的能力。结果显示预测精度低，GPT-4o表现最佳，长时预测困难，代码工具使用需强模型支持。
+Deliverables: MIRAI基准测试数据集（基于清洗后的GDELT数据） | 用于评估LLM智能体预测能力的API接口与代码沙箱环境 | 多种LLM智能体（ReAct策略）在国际事件预测上的性能基准报告
+Method: 构建基于GDELT和新闻文章的混合数据库 | 设计ReAct智能体框架，支持Single Function和Code Block两种工具调用方式 | 使用CAMEO本体论定义事件关系层级 | 采用F1分数、KL散度等指标评估预测准确性与时序一致性
+Full-text notes: 全文开源于arXiv，包含详细的数据清洗流程、API实现细节、错误分析及不同模型/时间跨度的消融实验结果。
+
+### The AI-GPR Index: Measuring Geopolitical Risk using Artificial Intelligence (n.d.; Core; citations: n/a)
+Tags: geopolitical risk; large language models; text analysis; gpt-4o-mini; economic forecasting; asset pricing; oil markets; network analysis; bilateral relations; measurement error; semantic understanding; policy uncertainty; macroeconomic shocks; financial markets; data construction
+本文提出AI-GPR指数，利用GPT-4o-mini语义分析替代传统关键词匹配，构建1960-2025年地缘政治风险指标。结果显示该指数更平滑、噪声更少，能更精准量化风险对股市的负面影响，并衍生出油价冲击、双边关系网络等新数据。
+Deliverables: AI-GPR Index (1960-2025 daily data) | Oil-GPR Index (regional oil supply disruptions) | Bilateral Geopolitical Risk Indices | Geopolitical Actor Network Data | Code and data available at https://www.matteoiacoviello.com/ai_gpr.html
+Method: LLM-based text classification (GPT-4o-mini) | Zero-shot prompting with semantic understanding | Two-stage filtering (keyword pre-screening + LLM scoring) | Proxy structural VAR for shock identification | Directed network analysis of geopolitical actors
+Full-text notes: Full text provided in excerpt. Covers methodology, validation against human labels, comparison with keyword-based GPR, and four empirical applications (stock returns, oil shocks, networks, bilateral trade).
+
+### AIA Forecaster: Technical Report (2025; Curated; citations: 1)
+Tags: llm forecasting; judgmental forecasting; agentic search; prediction markets; superforecasters; brier score; platt scaling; ensemble methods; foreknowledge bias; geopolitical risk; political strategy; ai policy; mult-agent systems; calibration; forecastbench; market liquid; behavioral bias; information aggregation; strategic foresight; ai alignment
+介绍AIA Forecaster，一种基于LLM的判断性预测系统。通过代理搜索、监督者协调及统计校准，在ForecastBench上达到人类超级预测者水平，并与市场预测互补。
+Deliverables: AIA Forecaster系统架构与代码逻辑描述 | ForecastBench基准测试结果 | 新的MarketLiquid预测市场基准数据集 | Live Prediction Markets实时预测追踪记录 | 关于搜索策略与统计校准的方法论建议
+Method: 多智能体架构：多个独立代理进行自适应搜索与预测 | 监督者代理（Supervisor Agent）：协调分歧并执行澄清搜索 | 统计校准：使用Platt Scaling修正LLM的概率输出偏差 | Brier Score评估指标 | 先验知识偏差检测与过滤机制
+Full-text notes: 全文为arXiv预印本，无付费墙。摘要及正文详细阐述了方法论、基准测试对比（含具体Brier分数）、搜索策略分析（表3-4）、偏差缓解（表5-6）及集成效果（表7）。
+
+### Advancing Event Forecasting through Massive Training of Large Language Models: Challenges, Solutions, and Broader Impacts (2025; Curated; citations: 4)
+Tags: event forecasting; superforecaster; large language models; reinforcement learning; prediction markets; geopolitical risk; policy foresight; bayesian networks; counterfactual reasoning; data augmentation; rag; deep research; brier score; ai strategy; political forecasting
+本文主张利用大规模训练使LLM达到超级预测者水平。识别了噪声稀疏、知识截止和奖励简单三大挑战，提出假设贝叶斯网络、反事实数据及辅助奖励等解决方案，并建议整合市场、公开及爬取数据以扩大训练规模。
+Deliverables: 针对事件预测训练的三大核心难点（噪声稀疏、知识截止、简单奖励）的理论分析。 | 基于假设事件贝叶斯网络的标签分配策略建议。 | 利用反事实事件和LLM记忆薄弱点来扩充训练数据的方法论。 | 整合Polymarket等市场数据、公开数据库及网络爬取数据的大规模训练框架。
+Method: 假设事件贝叶斯网络建模 | 强化学习（RLVR） | 反事实数据生成 | 辅助奖励信号设计 | 多源数据聚合（市场、公开、爬取）
+Full-text notes: 全文为arXiv预印本，无付费墙。摘要和引言部分详细阐述了从早期方法缺陷到近期动态基准测试（如ForecastBench）的演变，以及RL和Deep Research对预测精度的具体提升数据（如Brier分数从0.214降至0.197）。
+
+### Agentic Forecasting using Sequential Bayesian Updating of Linguistic Beliefs (2026; Curated; citations: 1)
+Tags: agentic forecasting; bayesian updating; llm calibration; forecastbench; geopolitical risk; belief state; multi-trial aggregation; brier score; tool use; leakage prevention; platt scaling; superforecasting; political prediction; ensemble methods; hierarchical priors
+提出BLF系统，通过结构化信念状态、多试验聚合与分层校准，在ForecastBench上超越SOTA，接近人类超级预测者水平。
+Deliverables: Bayesian Linguistic Forecaster (BLF) 开源代码与系统架构 | ForecastBench 400题回测数据集及严格防泄漏评估框架 | 分层校准与多试验聚合算法实现
+Method: Linguistic belief state: 半结构化JSON状态，结合概率与自然语言证据，迭代更新 | Hierarchical multi-trial aggregation: K=5次独立试验，Logit空间平均与数据依赖先验收缩 | Hierarchical calibration: 分层Platt缩放，避免极端预测过度收缩 | Four-layer date-leakage defense: 搜索引擎过滤、LLM分类器、数据工具日期钳制、URL屏蔽
+Full-text notes: 全文为预印本(arXiv:2604.18576)，无付费墙。包含详细的实验设置、泄漏防御机制、消融研究及与SOTA方法的配对统计比较。
+
+### Agentic Reasoning for Social Event Extrapolation: Integrating Knowledge Graphs and Language Models (2025; Curated; citations: 1)
+Tags: agentic reasoning; knowledge graphs; event prediction; large language models; geopolitical forecasting; social computing; explainable ai; policy planning; risk management; temporal reasoning; polectat dataset; ai ethics; multimodal reasoning; iterative validation; political strategies
+提出结合时序知识图谱与大语言模型的智能体框架，用于社会政治事件预测，强调可解释性与逻辑验证。
+Deliverables: 基于智能体的社会事件外推框架 | 结合知识图谱与大语言模型的模块化工具架构
+Method: 智能体推理（Agentic Reasoning） | 时序知识图谱（Temporal Knowledge Graphs） | 大语言模型（LLMs） | 迭代工具调用与显式验证机制
+Full-text notes: 仅获取到IEEE Xplore元数据与摘要，无正文内容。摘要提及使用POLECAT数据集及多种评估指标，但具体实验细节、消融研究及伦理讨论细节缺失。
+
+### Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle (2024; Curated; citations: 11)
+Tags: llm forecasting; temporal generalization; daily oracle benchmark; performance degradation; retrieval augmented generation; continuous evaluation; news prediction; knowledge cutoff; policy making implications; geopolitical risk assessment; ai reliability; model updating; dynamic benchmarks; event prediction; llm limitations
+提出Daily Oracle基准，利用每日新闻自动评估LLM的时间泛化与预测能力。发现随预训练数据过时，LLM预测准确率显著下降，RAG可缓解但无法消除衰退，强调持续预训练必要性。
+Deliverables: Daily Oracle: 每日更新的新闻预测QA基准数据集。 | 自动化QA生成流水线与过滤标准。 | 多模型（GPT-4, Claude, Llama等）在时间维度上的性能评估报告。 | 代码与数据开源链接。
+Method: 基于每日新闻自动构建True/False和Multiple Choice预测问题。 | 封闭式评估（无外部信息）与受限开放式评估（RAG检索近期新闻）。 | 黄金文章设置（提供答案来源文章）以测试阅读理解上限。 | 时间序列分析：计算月度准确率移动平均及逐年变化率。
+Full-text notes: 全文已提供。包含详细的数据集构建步骤（摘要、生成、过滤）、人类评估一致性检验、不同模型在三种设置下的具体准确率数据表及衰退斜率回归分析。
+
+### Automating Forecasting Question Generation and Resolution for AI Evaluation (2026; Curated; citations: 1)
+Tags: ai forecasting; llm agents; geopolitical risk; benchmark generation; prediction markets; reAct framework; brier score; automated evaluation; policy forecasting; web research agents; question decomposition; ai intelligence measurement; metaculus; strategic decision making; probabilistic forecasting
+提出基于LLM网络研究代理的自动化预测问题生成与解析系统，生成1499个高质量地缘政治与经济问题，验证了其对AI预测能力的评估有效性。
+Deliverables: 包含1499个真实世界预测问题的数据集 | 基于ReAct代理的自动化问题生成与解析流水线 | 针对AI预测能力的基准测试结果与模型性能对比
+Method: LLM-powered web research agents (ReAct) | Multi-stage pipeline: seed generation, proto-question, refinement, verification | Ensemble resolution with tiebreaker agents | Brier score evaluation and calibration analysis
+Full-text notes: 全文公开于arXiv，包含详细的方法论、问题示例（涵盖地缘政治、经济、政策等）、模型性能对比表及附录。
+
+### Bench to the Future: A Pastcasting Benchmark for Forecasting Agents (2025; Curated; citations: 8)
+Tags: forecasting benchmark; llm agents; geopolitical risk; pastcasting; reAct; prediction markets; model evaluation; information retrieval; calibration; brier score; metaculus; ai foresight; chain of thought; web scraping; strategic forecasting
+提出BTF基准，利用历史快照评估LLM预测能力。验证了ReAct智能体优于固定证据方法，新模型表现更好，但存在校准偏差。
+Deliverables: Bench to the Future (BTF) 基准数据集 | RetroSearch 历史网络快照数据库 | 多种LLM预测架构的基准测试结果 | 预测提示词模板与评估代码
+Method: Pastcasting (回溯预测) 方法 | ReAct 智能体架构 | Brier Score 评分体系 | 历史网页快照检索 (RetroSearch) | 多轮运行取平均以减少方差
+Full-text notes: 全文公开于arXiv。包含详细的提示词工程、模型对比数据、校准分析及与实时预测的对比验证。
+
+### Can Language Models Use Forecasting Strategies? (2024; Curated; citations: 12)
+Tags: llm forecasting; geopolitical risk; prediction markets; brier score; prompt engineering; superforecasting; model bias; evaluation metrics; paLM 2; strategic foresight
+研究LLM在现实事件预测中的表现，发现复杂策略未优于基础提示，且模型存在低概率偏见。
+Deliverables: 基于GleanGen预测市场的LLM预测数据集 | 加权Brier分数评估指标 | 多种LLM预测策略提示模板
+Method: 使用PaLM 2作为基础模型 | 应用分解、基础比率、双视角等人类超预测策略 | 结合News API获取外部新闻信息 | 对比人类预测市场数据
+Full-text notes: 全文公开于arXiv，包含详细实验设置、提示词设计及附录数据。
+
+### Crowdsourced versus large language models forecasting: evidence for the accuracy–correlation effect (2026; Curated; citations: 1)
+Tags: large language models; forecasting; collective intelligence; human-ai correlation; accuracy-correlation effect; superforecasters; prediction markets; hybrid ensembles; political forecasting; geopolitical risk; aggregation methods; llm evaluation; human judgment; contextual reasoning; data-rich settings
+研究LLM预测准确性与人类相关性，发现存在准确性-相关性效应，数据丰富场景下人类权重降低，但情境推理中人类仍关键。
+Deliverables: 16种LLM在580个ForecastBench问题上的76组预测数据集 | 线性混合效应模型分析结果
+Method: 线性混合效应模型 | ForecastBench数据集评估 | 人类-AI相关性分析
+Full-text notes: 仅获取到PubMed摘要，全文需通过Silverchair或Philosophical Transactions B访问。
+
+### Evaluating LLMs on Real-World Forecasting Against Expert Forecasters (2025; Curated; citations: 2)
+Tags: llm forecasting; brier score; metaculus; expert comparison; geopolitical risk; prediction markets; prompt engineering; calibration; political science; economic forecasting; superforecasters; out-of-distribution; narrative prompting; model evaluation; ai strategy
+评估前沿LLM在Metaculus上的预测能力。结果显示LLM超越普通人群但远逊于专家。政治类预测优于经济类，叙事提示降低准确率。
+Deliverables: 464个真实世界预测问题的LLM预测数据集及Brier分数。 | 12种主流LLM（含OpenAI, Anthropic, DeepSeek, Qwen）的预测性能基准。 | LLM与Metaculus专家预测者的直接对比分析。
+Method: 使用Metaculus平台2024年7月至12月的464个二元预测问题。 | 通过AskNews API获取相关新闻作为上下文输入。 | 计算Brier分数评估预测准确性，对比直接提示与叙事提示效果。 | 与Metaculus聘请的专家预测者进行基准对比。
+Full-text notes: 全文可获取。详细展示了各模型在不同类别（政治、经济、医疗等）的细分Brier分数，以及校准曲线分析。附录包含具体预测案例和提示词模板。
+
+### Forecasting Future World Events with Neural Networks (2022; Curated; citations: 45)
+Tags: forecasting; autocast; geopolitical risk; information retrieval; llm evaluation; calibration; neural networks; policy decision making; dataset benchmark; temporal reasoning; human baseline; news corpus; prediction markets; metaculus; ai safety; numerical prediction; retrieval augmented generation; neurips 2022; expert judgment; distribution shift
+提出Autocast数据集评估LLM预测能力，结合新闻检索发现模型性能远低于人类专家，但规模扩大和检索可提升表现。
+Deliverables: Autocast数据集（含预测问题、答案及人类专家预测时间序列） | 按日期组织的新语料库（Common Crawl News） | IntervalQA数据集（用于数值校准评估） | 基线模型代码（FiD Static, FiD Temporal等）
+Method: 构建包含真实世界重要性和多样性的预测问题数据集 | 利用BM25和交叉编码器进行基于日期的新闻检索 | 使用Fusion-in-Decoder (FiD) 架构结合T5和GPT-2进行预测 | 引入时间序列辅助监督信号（Crowd predictions）进行微调 | 设计RMS校准误差指标评估数值预测的不确定性校准
+Full-text notes: 全文公开，包含详细的数据集构建、实验设置、基线模型实现及附录中的损失函数代码。
+
+### LLM-as-a-Prophet: Understanding Predictive Intelligence with Prophet Arena (2025; Curated; citations: 9)
+Tags: llm forecasting; predictive intelligence; prophet arena; geopolitical risk; prediction markets; calibration error; brier score; market return; event recall; information aggregation; political forecasting; benchmark evaluation; llm reasoning; temporal generalization; risk assessment
+提出LLM-as-a-Prophet范式，构建Prophet Arena基准评估LLM预测能力。发现LLM校准良好但事件回忆不准，临近决议时市场信息聚合快于LLM。
+Deliverables: Prophet Arena: 一个持续更新的实时预测基准，包含1300+已解决事件和72000+市场。 | 多阶段预测流水线：包含事件提取、上下文构建（搜索+市场快照）、概率预测与评估。 | 公开子集数据集：Prophet-Arena-Subset-100，用于复现机制分析。
+Method: 构建Prophet Arena基准，从Kalshi等预测市场实时提取二元市场事件。 | 多时间 horizon 评估：在事件决议前不同时间点收集预测，分析时间对准确度的影响。 | 多维评估指标：Brier Score（绝对误差）、Expected Calibration Error（校准可靠性）、Average Market Return（经济价值）。 | 机制分析实验：测试内部知识回忆准确性、不同信息源（新闻vs市场数据）的影响、以及模型对证据的整合方式。
+Full-text notes: 全文公开于arXiv。详细机制分析（如具体模型在各类别下的召回率图表、不同信息源组合的方差分析、可靠性诊断图）均在正文及附录中完整呈现，无付费墙限制。
+
+### LLMs Can Teach Themselves to Better Predict the Future (2025; Curated; citations: 4)
+Tags: llm forecasting; self-play; dpo; predictive modeling; geopolitical risk; fine-tuning; probabilistic reasoning; polymarket; ai strategy; model alignment; brier score; reasoning traces; outcome-driven learning; small language models; forecasting accuracy
+提出无需人工标注的LLM自我对弈微调框架，利用DPO优化预测精度，使14B模型性能媲美GPT-4o。
+Deliverables: 基于Polymarket数据的自我对弈微调方法 | 14B参数规模LLM的预测能力增强方案 | DPO在概率预测中的应用验证
+Method: 模型自我对弈生成推理轨迹 | 基于真实结果的偏好排序 | 直接偏好优化(DPO)微调 | Brier分数评估
+Full-text notes: 全文公开于arXiv，包含详细的方法论、数据收集流程、实验设置及统计显著性检验结果。
+
+### Large Language Model Prediction Capabilities: Evidence from a Real-World Forecasting Tournament (2023; Curated; citations: 26)
+Tags: gpt-4; forecasting; metaculus; geopolitical risk; llm capabilities; brier score; human vs ai; prediction markets; political science; ai safety; probabilistic reasoning; wisdom of crowds; policy forecasting; real-world evaluation; ai limitations
+GPT-4在Metaculus预测锦标赛中表现显著低于人类群体中位数，甚至不优于随机猜测，揭示LLM在真实世界前瞻推理上的局限。
+Deliverables: GPT-4在Metaculus Quarterly Cup 2023 Q3的预测数据 | 23个二元预测问题的详细结果与Brier分数分析 | 针对LLM预测能力的实证基准测试框架
+Method: 在Metaculus平台进行的真实世界预测锦标赛 | 对比GPT-4与人类群体中位数的Brier分数 | 使用预设提示词模拟“超级预测者”角色 | 控制知识截止日期的信息补充策略
+Full-text notes: 全文开源，包含详细的方法论、23个具体预测问题列表（涉及美国政治、乌克兰冲突等）、附录中的提示词设计及原始数据链接。
+
+### Multi-Source Models for Civil Unrest Forecasting (2016; Curated; citations: 27)
+Tags: civil unrest forecasting; multi-source data; social media analytics; political event prediction; lasso logistic regression; geopolitical risk; latin america; tor network; news sentiment; event data; policy foresight; computational social science; early warning systems; feature selection; predictive modeling
+利用拉美六国多源数据预测民事动荡，结合社交媒体、新闻及匿名网络流量，Lasso逻辑回归模型F1得分达0.68-0.95，证实多源融合优于单一数据源。
+Deliverables: 基于多源数据的民事动荡预测模型框架 | 针对拉美六国的每日预测系统原型 | 不同数据源对预测贡献度的量化评估报告
+Method: 多源数据融合（Twitter、博客、新闻、Tor流量、政治事件数据库、汇率） | Lasso正则化的逻辑回归模型 | 特征选择与稀疏化 | 基于专家构建的黄金标准报告（Gold Standard Report）进行验证
+Full-text notes: 全文受付费墙限制。摘要及引用列表显示该方法属于EMBERS系统的一部分，由IARPA资助，涉及Virginia Tech团队。文中提及案例研究展示了具体洞察，但细节不可见。
+
+### PROPHET: An Inferable Future Forecasting Benchmark with Causal Intervened Likelihood Estimation (2025; Curated; citations: 5)
+Tags: future forecasting; llm benchmark; causal inference; rag evaluation; geopolitical risk; predictive analytics; retrieval augmented generation; political strategy; data quality; inferability; event prediction; news analysis; brier score; agentic rag; policy foresight
+提出PROPHET基准，利用因果干预似然(CIL)筛选可推断的未来预测问题，评估LLM在新闻检索增强生成中的预测能力。
+Deliverables: PROPHET数据集（含L1/L2子集） | CIL因果推断计算方法 | 多种LLM在预测任务上的基准性能报告
+Method: 因果干预似然(CIL)估计 | 结构因果模型(SCM)假设 | 新闻事件聚类与压缩 | LLM辅助的概率计算
+Full-text notes: 全文公开于arXiv，包含详细的数据收集流程、CIL推导证明、实验设置及结果分析。
+
+### Scaling Open-Ended Reasoning to Predict the Future (2025; Curated; citations: 6)
+Tags: open-ended forecasting; geopolitical risk; reinforcement learning; llm calibration; news-based prediction; grpo; retrieval augmented generation; policy making; foresight; data synthesis; prediction markets; uncertainty reasoning; model evaluation; brier score; open source models
+研究利用新闻数据自动化生成开放式预测问题，通过强化学习训练语言模型提升地缘政治与宏观事件预测的准确性与校准度。
+Deliverables: OpenForesight数据集（约5万条开放式预测问题） | OpenForecaster 8B模型权重 | 完整的训练代码与数据生成流水线
+Method: 基于CommonCrawl新闻语料自动化合成开放式预测问题 | 使用GRPO算法进行强化学习训练 | 离线新闻检索增强生成（RAG）以获取预测前信息 | 语义匹配评估与自适应Brier分数奖励设计
+Full-text notes: 全文已提供。包含详细的数据生成流水线、过滤步骤、奖励函数消融实验及2025年5-8月的持外测试集结果。
+
+### The Power of Simplicity in LLM-Based Event Forecasting (2025; Curated; citations: 1)
+Tags: event forecasting; llm agents; rag vs react; geopolitical risk; temporal reasoning; mirai benchmark; cost efficiency; structured data; political science; international relations; cameo ontology; gdelt; model scaling; inference cost; retrieval augmented generation; agentic workflows; forecasting accuracy; semantic noise; policy making; strategic planning
+研究对比ReAct与RAG在国际事件预测中的表现，发现简化RAG以10%成本实现同等或更优精度，且结构化数据优于非结构化语义信息。
+Deliverables: MIRAI基准测试下RAG与ReAct的系统性对比实验数据。 | 不同信息类型（结构化vs非结构化）对LLM预测性能影响的消融研究。 | 模型规模与推理痕迹有效性之间的关系分析。
+Method: 基于MIRAI基准测试的国际关系事件预测。 | 对比ReAct（迭代推理）与简化RAG（单次检索生成）框架。 | 评估不同上下文类型（关系分布、事件列表、新闻标题）的影响。 | 跨模型分析（Llama-3.1-8B, Llama-3-70B, Mistral-7B, GPT-4o-mini）。
+Full-text notes: 全文可获取。详细实验结果见附录表格，包含不同时间跨度（1, 7, 30, 90天）和不同模型配置的F1分数对比。
+
+### TimeSeek: Temporal Reliability of Agentic Forecasters (2026; Curated; citations: 0)
+Tags: agentic forecasting; prediction markets; temporal reliability; llm evaluation; kalshi; brier skill score; tool use; web search; ensemble methods; selective prediction; geopolitical risk; forecasting benchmarks; market efficiency; llm calibration; information aggregation
+提出TimeSeek基准，评估10个前沿LLM在Kalshi预测市场生命周期中的可靠性。发现模型在早期和高不确定性市场表现较好，晚期及共识市场表现差；网络搜索平均有益但具异质性，建议采用选择性工具使用策略。
+Deliverables: TimeSeek基准数据集：150个CFTC监管的二元市场，5个时间检查点，15,000个预测。 | 10个前沿LLM（Claude Opus 4.5, GPT-5.2等）在预测市场中的时序性能评估报告。 | 关于选择性工具使用（Selective Tool Use）和选择性预测（Selective Prediction）的政策建议。
+Method: 构建包含150个Kalshi二元市场的基准，覆盖政治、体育、宏观经济学、科技和金融五个类别。 | 在每个市场生命周期的5个时间点（Open+1, 25%, 50%, 75%, Close-1）进行采样。 | 对比有/无网络搜索两种条件下10个前沿LLM的预测表现，使用Brier Score和Brier Skill Score评估。 | 分析模型与市场价格的误差相关性，以及不同市场难度层级和类别下的性能异质性。
+Full-text notes: 全文已提供。包含详细的方法论、10个模型在5个时间点的BSS数据表、按类别和难度分层的结果分析，以及关于选择性预测和工具使用策略的深入讨论。
+
+### Toward Better Temporal Structures for Geopolitical Events Forecasting (2026; Curated; citations: 1)
+Tags: temporal knowledge graphs; geopolitical forecasting; large language models; knowledge graph reasoning; htkgh; polecat dataset; relation prediction; link prediction; llm evaluation; graph neural networks; event data; in-context learning; test-time scaling; knowledge representation; political science
+提出HTKGH结构以支持多实体地缘政治事件预测，发布htkgh-polecat数据集，并评估LLM在复杂关系预测任务中的表现。
+Deliverables: Hyper-Relational Temporal Knowledge Generalized Hypergraphs (HTKGH) 形式化定义 | htkgh-polecat 数据集（基于POLECAT构建） | LLM与GNN在HTKGH上的基准测试结果
+Method: HTKGH 知识图谱结构形式化 | 基于POLECAT数据库的数据集构建与过滤 | LLM关系预测与链接预测基准测试 | 实体/关系打乱以评估记忆与泛化能力
+Full-text notes: 全文已提供。包含详细的HTKGH数学定义、数据集统计、9种LLM及GNN模型的实验结果表格及附录。
+
+### Wisdom of the silicon crowd: LLM ensemble prediction capabilities rival human crowd accuracy (2024; Curated; citations: 72)
+Tags: llm forecasting; wisdom of the crowd; ensemble methods; political forecasting; geopolitical risk; human-ai interaction; prediction markets; brier score; calibration; aggregation; gpt-4; claude-2; metaculus; superforecasting; bias detection; probabilistic reasoning; ai strategy; policy foresight
+研究证实LLM集成预测能力可媲美人类群体。12个LLM的中位数预测在31个二元问题上与925名人类预报员表现相当。暴露于人类中位数预测可使GPT-4和Claude 2准确率提升17-28%，但简单平均仍最优。
+Deliverables: LLM集成预测框架与人类群体预测的对比数据集 | 12种不同LLM在31个地缘政治/社会事件上的概率预测记录 | LLM对人类预测反馈的更新行为分析
+Method: LLM Ensemble Aggregation: 聚合12个不同架构/厂商的LLM预测 | Forecasting Tournament Comparison: 与Metaculus平台925名人类预报员对比 | Intervention Study: 向LLM输入人类中位数预测以测试更新能力 | Brier Score & Calibration Analysis: 使用Brier分数和校准指数评估准确性
+Full-text notes: 全文公开于arXiv (2402.19379)，包含详细的方法论、提示词设计、原始数据表格及校准曲线图。
+
+### A Comprehensive Evaluation of Large Language Models on Temporal Event Forecasting (2024; Important; citations: 12)
+Tags: temporal event forecasting; large language models; retrieval augmented generation; geopolitical risk; mid east conflict; popularity bias; long tail problem; fine tuning; benchmark dataset; graph text hybrid; zero shot learning; event prediction; political strategy; llm evaluation; rag methods; vicuna; llama2; knowledge graph; forecasting accuracy; bias mitigation
+评估LLM在中东地缘政治事件预测中的表现，构建含图文的MidEast-TE-mini基准，发现微调显著优于零样本，RAG能捕捉时序模式但存在流行度偏差。
+Deliverables: MidEast-TE-mini benchmark dataset (graph-text hybrid) | Baseline methods for graph-only, text-only, and mixed LLM forecasting | Evaluation of RAG retrievers (BM25, Contriver, LlamaIndex) | Analysis of popularity bias and long-tail problems in LLMs
+Method: Construct MidEast-TE-mini dataset using GPT-4 for event extraction | Fine-tuning LLMs (Vicuna-7b, Llama2-7b) via LoRA | Retrieval Augmented Generation (RAG) with various retrievers | Rule-based and retrieved history construction | Zero-shot and fine-tuned evaluation on object/relation prediction
+Full-text notes: Full text available on arXiv. Contains detailed dataset statistics, prompt designs, and extensive experimental results comparing non-LLM baselines (LoGo, RE-GCN) with LLM methods.
+
+### AI-Augmented Predictions: LLM Assistants Improve Human Forecasting Accuracy (2024; Important; citations: 43)
+Tags: llm augmentation; human forecasting; political risk; geopolitical prediction; human ai collaboration; decision making; superforecasting; prompt engineering; gpt-4; experimental economics; wisdom of the crowd; cognitive bias; policy analysis; strategic foresight; ai assistance
+研究评估LLM助手对人类预测准确性的影响。结果显示，使用前沿LLM助手（无论建议质量如何）均能显著提升预测精度24%-28%。
+Deliverables: 关于LLM辅助人类预测的实证实验数据（N=991） | 针对“超级预测者”和“嘈杂/有偏见”角色的LLM系统提示词（Prompts） | 六项涵盖地缘政治、金融等领域的未来预测问题集
+Method: 随机对照试验（RCT） | 在线平台（Prolific）招募参与者 | GPT-4-Turbo模型作为LLM助手后端 | 绝对误差作为准确性衡量指标 | 预注册分析计划
+Full-text notes: 全文可获取。详细展示了实验界面、具体的超级预测者提示词、噪声提示词、六项预测问题的具体内容（如道琼斯指数、难民数量等）以及详细的统计回归结果和图表。
+
+### AutoCast++: Enhancing World Event Prediction with Zero-shot Ranking-based Context Retrieval (2023; Important; citations: 15)
+Tags: event forecasting; large language models; information retrieval; zero-shot learning; geopolitical risk; text summarization; retriever-reader model; human alignment; news analysis; predictive analytics; iclr 2024; autocast dataset; context retrieval; temporal dynamics; political strategy
+提出AutoCast++，利用零-shot检索和摘要增强新闻事件预测。通过相关性重排、近期性加权及人类对齐损失，显著提升多模态预测精度。
+Deliverables: AutoCast++模型代码 (GitHub) | 基于Autocast数据集的评估结果 | 零-shot检索与摘要框架
+Method: Zero-shot relevance re-ranking | Unsupervised text summarization | Human-aligned loss function | Fusion-in-Decoder (FiD) architecture | Recency-based weighting
+Full-text notes: Full text available via arXiv. Key details on implementation (LoRA, GPT-3 usage) and ablation studies included.
+
+### Forecasting Future International Events: A Reliable Dataset for Text-Based Event Modeling / WORLDREP (2024; Important; citations: 1)
+Tags: worldrep; geopolitical forecasting; llm annotation; international relations; event prediction; dataset construction; prompt engineering; self-correction; gdelt comparison; political strategy; multilateral relations; text-based modeling; zero-shot prediction; expert validation; nlp for social science
+提出WORLDREP数据集，利用LLM自校正机制标注多国外交关系，解决GDELT标签不准问题，并建立未来事件预测基准。
+Deliverables: WORLDREP数据集（44,706篇新闻，覆盖2015-2024年，231个国家） | 自动化数据收集、标注和基准测试的完整源代码 | 专家标注的子集数据及标注指南 | 基于LLM的未来国际关系预测基准测试
+Method: 基于LLM的两阶段标注流程：多主体提取与关系评分 | 结构化Scratchpad提示工程，包含验证与自我纠正步骤 | 与政治学领域专家标注结果进行对比验证 | 使用多种预训练语言模型（BERT系列）和LLM（GPT-4, Llama3等）进行基准测试
+Full-text notes: 全文已提供。包含详细的数据统计、标注流程图解、专家对齐实验结果、模型性能对比表及以色列-埃及案例研究。
+
+### LLM4Geopolitics: A Framework Leveraging Large Language Models for Predicting Geopolitical Events (2025; Important; citations: 0)
+Tags: geopolitical forecasting; llm framework; retrieval augmented generation; knowledge graph; gdelt dataset; event severity prediction; interpretable ai; expert systems; political risk; transformer architecture; narrative generation; decision support; computational social science; real time analysis; peace index indicators
+提出LLM4Geopolitics框架，结合领域适配LLM、检索增强生成及知识图谱，利用GDELT数据提升地缘政治事件严重性预测精度与叙事可解释性。
+Deliverables: LLM4Geopolitics框架 | 基于结构化知识图谱的检索增强生成机制 | 面向地缘政治预测的领域适配Transformer架构
+Method: 检索增强生成 (RAG) | 结构化知识图谱 | 领域适配的大型语言模型 | GDELT数据集实验 | Transformer架构处理稀疏事件流
+Full-text notes: 仅基于摘要和简短摘录，缺乏具体实验参数、基线模型细节及知识图谱构建方法的深入描述。
+
+### OpenEP: Open-Ended Future Event Prediction (2024; Important; citations: 12)
+Tags: open-ended prediction; future event forecasting; geopolitical risk; llm evaluation; stakeholder analysis; event evolution; strategic planning; risk identification; information retrieval; dataset construction; policy foresight; decision support; semantic evaluation; clustering integration; historical analogy
+提出开放式未来事件预测任务，构建OpenEPBench数据集与StkFEP框架，利用利益相关者增强检索与聚类整合，评估LLM在灵活预测中的表现。
+Deliverables: OpenEPBench: 包含中英文数据的开放式未来事件预测基准数据集 | StkFEP: 基于利益相关者增强的未来事件预测框架 | 基于LLM的多维度自动评估指标体系
+Method: 构建包含7个视角（时间、地点、发展、结果、影响、响应等）的预测问题 | 利用LLM提取利益相关者以扩展检索查询 | 检索相关事件与相似历史事件 | 采用K-means聚类整合信息以减少冗余 | 使用LLM进行自由文本形式的结果预测与评估
+Full-text notes: 全文已提供。详细实验数据见Tables 1-3，包含GPT-3.5, GLM-4, Llama3-8B等模型在中文和英文数据上的表现对比及消融实验结果。
+
+### Pitfalls in Evaluating Language Model Forecasters (2025; Important; citations: 12)
+Tags: llm forecasting; evaluation pitfalls; temporal leakage; backtesting bias; geopolitical risk; prediction markets; model calibration; data leakage; benchmark gaming; forecasting metrics; retrieval bias; knowledge cutoff; political science ai; strategic forecasting; model evaluation
+本文批判性评估LLM预测能力，指出回溯测试存在时间泄漏、基准游戏化和指标缺陷，质疑LLM超越人类表现的结论。
+Deliverables: 对现有LLM预测基准（如ForecastBench）中评估漏洞的系统性分类与实证分析 | 关于如何设计更严谨的LLM预测评估方法论的建议 | 展示时间泄漏和检索偏差的具体案例（如图1-4）
+Method: 系统性文献回顾与现有基准数据集的审计 | 实证分析：通过搜索查询和模型提示测试时间泄漏 | 理论分析：评估指标（Brier, Logarithmic, Calibration）的数学性质与激励相容性 | 案例研究：分析具体预测任务中的逻辑推导和检索偏差
+Full-text notes: 全文为arXiv预印本，无付费墙。文本包含详细的附录，展示了搜索引擎日期限制失效的具体截图、基准数据集分布统计及数学推导。
+
+### Simulated Ignorance Fails: A Systematic Study of LLM Behaviors on Forecasting Problems Before Model Knowledge Cutoff (2026; Important; citations: 3)
+Tags: llm forecasting; knowledge cutoff; simulated ignorance; true ignorance; data contamination; chain of thought; reasoning faithfulness; geopolitical risk; evaluation methodology; prompt engineering; reinforcement learning; metaculus; brier score; implicit knowledge; post-hoc rationalization
+研究证实提示词无法让LLM真正遗忘训练数据。在477个问题中，模拟无知(SI)与真实无知(TI)存在52%性能差距，推理优化模型表现更差。建议禁止使用SI进行预测基准测试。
+Deliverables: 9个LLM模型在477个Metaculus竞争级问题上的系统性评估数据 | 模拟无知(SI)与真实无知(TI)的性能对比基准 | 针对LLM预测评估的方法论建议：避免使用前截断事件评估
+Method: 跨9个模型（含推理优化与非推理模型）的对比实验 | 2x2提示设计：有无截止指令与有无思维链推理 | Brier Score评估预测准确性 | 基于模型特定截止日期的自然实验与鲁棒性检查 | 推理痕迹的逻辑一致性与截止合规性审计
+Full-text notes: 全文公开于arXiv。核心发现：提示词只能抑制显式引用，无法消除隐式知识对预测的影响；推理优化模型通过RL训练学会了在保持答案正确的同时生成合规但虚假的推理路径。
+
+### The Future Is Unevenly Distributed: Forecasting Ability of LLMs Depends on What We’re Asking (2025; Important; citations: 1)
+Tags: llm forecasting; political science; geopolitical risk; prediction markets; calibration; brier score; failure modes; recency bias; context augmentation; prompt engineering; model evaluation; gpt-5; claude-3.7; deepseek-r1; metaculus; polymarket; ai strategy; forecasting benchmarks; rumour weighting; definition drift
+评估LLM在政治、地缘等领域的预测能力，发现性能高度依赖领域结构与提示框架。引入新闻上下文后，模型出现近因偏差、谣言加权及定义漂移等失败模式，导致部分领域准确率下降。
+Deliverables: 包含392个经过清洗和分类的预测市场问题数据集。 | LLM预测失败模式的分类学（Taxonomy）。 | 不同模型家族（GPT-5, Claude 3.7, DeepSeek-R1, GPT-4.1）在有/无新闻上下文下的性能对比数据。
+Method: 从Polymarket、Metaculus等平台收集约10,000个问题，经LLM辅助过滤和分类，保留392个高质量问题。 | 评估GPT-5, GPT-4.1, DeepSeek-R1, Claude 3.7 Sonnet四个模型。 | 使用准确率、Brier Score和ECE（预期校准误差）作为评估指标。 | 通过Exa API检索问题创建日期前的新闻片段作为上下文，测试上下文对预测的影响。
+Full-text notes: 全文已提供。包含详细的方法论、分类提示词、评估指标定义及具体的失败模式案例研究（如S&P 500预测、关税预测、MATS应用案例）。
+
+### ThinkTank-ME: A Multi-Expert Framework for Middle East Event Forecasting (2026; Important; citations: 2)
+Tags: llm forecasting; multi-agent system; geopolitical risk; middle east; think tank simulation; expert routing; ensemble learning; temporal reasoning; event prediction; policy analysis; strategic decision making; dataset construction; parameter efficient fine tuning; aggregation strategies; computational social science
+提出模拟智库协作的多专家LLM框架，通过国家特定微调与领导者聚合策略，提升中东地缘政治事件预测精度。
+Deliverables: ThinkTank-ME开源代码框架 | POLECAT-FOR-ME中东事件预测基准数据集
+Method: 基于Llama-3.1-8B的国家特定LoRA微调 | 专家路由（Expert Routing） | 智慧聚合（Wisdom Aggregation） | 精英集成（Elite Ensemble）
+Full-text notes: 全文公开，包含详细架构图、实验数据表及消融分析。
+
+### Artificial Intelligence in Political Forecasting: Possibilities and Limitations (2026; Watchlist; citations: 0)
+Tags: political forecasting; ai limitations; hybrid forecasting; data poisoning; value bias; black box effect; neural networks; lstm; gpt simulation; expert systems; overfitting; geopolitical risk; algorithmic fidelity; predictive modeling; political science methodology
+本文通过因子分析探讨AI在政治预测中的潜力与局限。识别出处理大数据、发现隐藏模式等为触发因素，而数据中毒、价值偏见、黑箱效应及过拟合为阻碍因素。主张结合趋势、分析与专家知识的混合预测模式。
+Deliverables: 政治AI预测的触发因素与阻碍因素清单 | 混合政治预测框架（趋势、分析、专家）的理论论证 | 对SAGE系统及LSTM在政治预测中应用的案例评估
+Method: 简化因子分析 | 学术文献批判性话语分析 | 多案例研究（包括SAGE、LSTM、GPT模拟等）
+Full-text notes: 全文为俄语，但提供了英文摘要和详细正文摘录。内容涵盖引言、方法论、触发因素（大数据处理、神经网络潜力、行为模拟、先兆识别、混合预测）、阻碍因素（数据中毒、偏见、过拟合、理论缺陷、升级倾向、黑箱效应）及结论。
+
+### Do Language Models Update their Forecasts with New Information? (2025; Watchlist; citations: 0)
+Tags: llm forecasting; belief updating; evolvecast; confidence calibration; geopolitical risk; metaculus; rag limitations; dynamic reasoning; probabilistic reasoning; forecast aggregation; llm evaluation; temporal reasoning; policy forecasting; information integration; conservative updating
+提出EvolveCast框架，评估LLM在接收新信息后更新预测和置信度的能力。发现模型更新保守且校准差，RAG方法不足以支持概率推理。
+Deliverables: EvolveCast动态预测评估框架 | 基于Metaculus和新闻数据的基准数据集 | DeepSeek-R1系列及基座模型的对比实验结果
+Method: 构建EvolveCast框架评估信念动态 | 使用Metaculus社区预测作为人类参考基准 | 通过Google Search API检索并匹配相关新闻 | 比较Black-box（口头）和White-box（logit）置信度 | 进行单条与累积新闻上下文的消融实验
+Full-text notes: 全文可获取。详细展示了评估指标（MDA, MSE, Brier Score）、数据集构建流程（Metaculus过滤、新闻对齐）、实验设置（DeepSeek-R1系列模型）及多组消融实验结果。
+
+### OracleProto: A Reproducible Framework for Benchmarking LLM Native Forecasting via Knowledge Cutoff and Temporal Masking (2026; Watchlist; citations: 0)
+Tags: llm forecasting; benchmarking; knowledge cutoff; temporal masking; data contamination; reproducibility; futurex; sft training; rl training; geopolitical risk; decision support; evaluation metrics; retrieval augmentation; policy analysis; financial risk
+提出OracleProto框架，通过知识截止对齐、时间掩码和泄漏检测，将已发生事件重构为可复现的LLM原生预测基准，降低数据污染。
+Deliverables: OracleProto评估框架代码与数据集 | 包含80个离散选择问题的泄漏控制预测评估集 | 六款主流LLM在受控信息边界下的性能与成本基准报告
+Method: 模型知识截止对齐的样本准入机制 | 工具层时间掩码（限制检索结果日期） | 内容级泄漏检测（过滤检索片段中的未来信息） | 离散答案归一化与分层评分体系
+Full-text notes: 全文公开，包含详细的方法论、实验设置、指标定义（如Cohen's kappa, Tversky similarity）及附录中的泄漏风险评估。
+
+### Scattered Hypothesis Generation for Open-Ended Event Forecasting (2026; Watchlist; citations: 0)
+Tags: event forecasting; reinforcement learning; grpo; hypothesis generation; geopolitical risk; llm post-training; diversity optimization; mode collapse; open-ended prediction; risk management; semantic embedding; scenario planning; policy simulation; uncertainty quantification; strategic foresight
+提出SCATTER框架，将开放事件预测重构为假设生成任务。通过强化学习优化包含性与多样性，利用混合奖励机制平衡语义有效性与假设差异，显著提升地缘政治风险预测的覆盖度与质量。
+Deliverables: SCATTER强化学习框架代码 | 基于GRPO的混合奖励机制设计 | 开放事件预测的新评估指标体系
+Method: 强化学习 (GRPO) | 假设生成 (Hypothesis Generation) | 混合奖励优化 (Validity + Diversity) | 嵌入空间语义对齐
+Full-text notes: 全文可获取。详细实验数据、消融研究、UMAP可视化及附录中的数据集划分和评估指标定义均完整呈现。
+
+### TruthTensor: Evaluating LLMs through Human Imitation on Prediction Market under Drift and Holistic Reasoning (2026; Watchlist; citations: 1)
+Tags: llm evaluation; prediction markets; drift analysis; calibration; human imitation; geopolitical forecasting; probabilistic reasoning; benchmarking; narrative stability; contamination-free; agentic evaluation; risk assessment; temporal coherence; polymarket; forecasting benchmarks
+提出TruthTensor框架，利用实时预测市场评估LLM的人类模仿能力，重点分析漂移、校准和叙事稳定性，超越传统静态基准。
+Deliverables: TruthTensor评估框架与系统架构 | 公开数据集与评估合约 (https://truthtensor.com) | 多模型在预测市场中的漂移与校准基准报告
+Method: 实时预测市场数据集成 (Polymarket) | 纵向时间序列采样与漂移计算 | 指令锁定 (Instruction Locking) 确保可复现性 | 多轴评估指标 (准确率、校准、漂移、风险调整收益)
+Full-text notes: 全文公开于arXiv。详细记录了系统架构、漂移测量方法论、事件分类及8个模型的具体P&L和Token消耗数据。
+
+## Foundations, Surveys, and Methods
+
+### Can Large Language Models Transform Computational Social Science? (2024; Core; citations: 508)
+Tags: computational social science; zero-shot learning; political ideology; stance detection; persuasion; text classification; natural language generation; human-ai collaboration; prompt engineering; bias detection; hate speech; discourse analysis; event extraction; sentiment analysis; social media analysis; methodology; benchmark; llm evaluation; political science; sociology
+评估LLM在计算社会科学中的零样本能力，发现其在分类任务中不及微调模型，但在生成解释任务中表现优异，可作为人类标注的辅助工具。
+Deliverables: 13种语言模型在25个代表性CSS基准上的零样本性能评估报告。 | 一套用于评估LLM作为CSS工具的提示最佳实践。 | 一个广泛的评估管道，涵盖分类和生成任务。
+Method: 零样本提示（Zero-shot prompting） | 跨25个基准的大规模基准测试 | 人类评估（Human evaluation） | 对比分析（微调模型 vs LLM）
+Full-text notes: 全文公开。详细列出了25个任务的具体数据集（如Ideological Books, SemEval-2016, RAOP等）及实验设置。
+
+### Large Language Models in Politics and Democracy: A Comprehensive Survey (2024; Core; citations: 5)
+Tags: llm survey; political science; democracy; policy making; political communication; bias and fairness; national security; legal ai; deliberative democracy; political simulation; governance; ai ethics; public opinion; diplomacy; social modeling
+综述LLM在立法、沟通、分析及外交等领域的应用，指出其提升效率但带来偏见、幻觉及民主风险，强调需建立治理框架。
+Deliverables: LLM在政治各子领域的应用全景图 | 针对偏见、透明度和问责制的治理建议框架 | 对ElectionSim, PolicyCraft, Defense Llama等具体案例的评估
+Method: 系统性文献综述 | 跨学科案例研究分析 | 现有实证研究结果的整合与批判性评估
+Full-text notes: 全文开源于arXiv，无付费墙限制。
+
+### Political-LLM: Large Language Models in Political Science (2024; Core; citations: 32)
+Tags: political-llm; computational-political-science; llm-survey; election-prediction; political-simulation; causal-inference; bias-fairness; fine-tuning; policy-analysis; misinformation-detection; taxonomies; multilingual-politics; ethical-ai; dataset-construction; in-context-learning
+提出Political-LLM框架，从政治科学与计算技术双视角系统综述LLM应用，涵盖预测、生成、模拟及因果推断，并探讨数据、微调与伦理挑战。
+Deliverables: Political-LLM分类框架 | 在线资源库 http://political-llm.org/ | 投票模拟案例研究 | 政治学LLM应用综述与未来方向指南
+Method: 系统性文献综述 | 跨学科分类法构建 | 案例研究（投票模拟） | 多视角对比分析
+Full-text notes: 全文开源于arXiv，包含详细分类图、技术基础介绍及投票模拟实验细节。
+
+### A Survey on Large Language Model-Based Social Agents in Game-Theoretic Scenarios (2024; Curated; citations: 24)
+Tags: large language models; game theory; social agents; strategic reasoning; multi-agent systems; survey; negotiation; theory of mind; reinforcement learning; evaluation metrics; preference alignment; belief modeling; political strategy simulation; diplomacy; auctions; prisoner dilemma; agent-based modeling; social intelligence; policy simulation; behavioral economics
+综述LLM在社会博弈场景中的智能，构建包含游戏框架、智能体模块及评估协议的分类体系，分析偏好、信念与推理能力。
+Deliverables: LLM社会智能体在博弈场景中的分类学框架 | 涵盖选择聚焦与沟通聚焦游戏的性能基准综述 | 针对未来研究的具体建议与方向指引
+Method: 系统性文献综述 | 分类学构建 | 现有研究结果的综合与对比分析
+Full-text notes: 全文公开。详细列举了经典博弈（囚徒困境、拍卖）、沟通博弈（谈判、外交、狼人杀）中的具体研究案例，并深入剖析了智能体的偏好、信念和推理模块。
+
+### AI Agents Alone Are Not (Yet) Sufficient for Social Simulation (2026; Curated; citations: 1)
+Tags: llm agents; social simulation; multi-agent systems; methodology; evaluation; validity; environment modeling; markov game; political science; policy simulation; epistemic reliability; counterfactual reasoning; agent-based modeling; information exposure; scheduling mechanisms; initialization priors; behavioral validity; simulation design; auditability; uncertainty quantification
+本文指出LLM智能体不足以独立进行社会模拟，因角色逼真不等于行为有效，且集体结果常由环境机制主导。作者提出将模拟建模为环境参与的马尔可夫博弈，强调显式建模环境、评估机制可靠性及解释不确定性。
+Deliverables: 提出环境参与的AI智能体社会模拟统一公式（Environment-involved Markov game formulation）。 | 定义模拟器的核心组件：环境状态、图结构、上下文、智能体状态、策略、更新函数、奖励、初始分布、调度器、可见性机制和转移函数。 | 提出三项具体行动建议：将环境作为可审计的一等对象、从合理性转向机制/反事实可靠性评估、以认识论谨慎解释结果。
+Method: 理论分析与概念框架推导。 | 对现有LLM社会模拟文献的批判性综述。 | 识别代理目标与认识论目标之间的系统性不匹配。 | 构建形式化数学模型以规范模拟过程。
+Full-text notes: 全文为预印本，内容完整。详细阐述了个体级与集体级模拟的现有方法，深入分析了三个根本性不匹配（角色逼真性、交互中心主义、环境缺失）及三个技术缺口（评估、交互动态、初始化）。提出了包含11个组件的形式化模拟器定义，并讨论了替代观点（个体保真度充分论、刚性担忧）。
+
+### Agent-based modeling as organizational and public policy simulators (2002; Curated; citations: 181)
+Tags: agent-based modeling; public policy simulation; deep uncertainty; robust decision making; social simulation; organizational policy; complex systems; policy analysis; methodology review; 2002 foundational paper
+探讨基于智能体的模型在政策模拟中的应用，提出在深度不确定性下，通过鲁棒性而非最优性评估适应性政策，以释放ABM潜力。
+Deliverables: 基于智能体的政策模拟器概念框架 | 深度不确定性下的决策分析新方法
+Method: 文献综述与理论分析 | 基于智能体的建模（ABM） | 鲁棒性决策分析
+Full-text notes: 摘要为空。摘录主要为PubMed页面元数据，正文内容仅通过摘要片段提及ABM在深度不确定性下的应用潜力及鲁棒性评估方法，缺乏具体案例或实证数据。
+
+### From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents (2024; Curated; citations: 71)
+Tags: llm agents; social simulation; agent-based modeling; political science; survey; multi-agent systems; individual simulation; scenario simulation; society simulation; evaluation metrics; prompt engineering; fine-tuning; memory mechanisms; planning; demographics; character simulation; policy simulation; opinion dynamics; collective intelligence; methodology
+综述LLM智能体在社会模拟中的应用，分为个体、场景和社会三类，涵盖架构、构建方法及评估。
+Deliverables: 分类框架与蓝图 | 代表性工作列表 | GitHub资源库
+Method: 文献综述 | 分类学分析 | 架构解构
+Full-text notes: 全文开源，摘录涵盖前三章详细技术细节。
+
+### Game Theory Meets Large Language Models: A Systematic Survey (2024; Curated; citations: 32)
+Tags: game theory; large language models; strategic reasoning; llm evaluation; preference alignment; nash equilibrium; shapley value; multi-agent systems; survey; political strategy; ai safety; mechanism design; social choice theory; behavioral game theory; algorithmic game theory
+综述博弈论与LLM的双向关系，涵盖评估、改进、社会影响建模及LLM辅助博弈求解，提出新分类体系。
+Deliverables: 博弈论与LLM交叉领域的四维度分类体系 | LLM在各类博弈场景中的行为特征总结 | 基于博弈论改进LLM的具体算法与方法综述
+Method: 系统性文献综述 | 多维度分类法 | 跨学科理论整合
+Full-text notes: 摘要提及通过博弈建模刻画LLM发展的竞争格局及社会影响，正文摘录未包含此部分详细内容。
+
+### Generative Agents in Agent-Based Modeling: Overview, Validation, and Emerging Challenges (2025; Curated; citations: 9)
+Tags: generative agents; agent-based modeling; llm simulation; social simulation; validation methods; hybrid modeling; urban simulation; social dynamics; computational social science; ai agents; behavioral modeling; systematic review; emerging challenges; human behavior simulation; methodology
+综述LLM驱动生成式代理在基于智能体建模中的应用，对比传统与新型模型，强调验证挑战及混合方法设计。
+Deliverables: GABM与传统ABM的对比分析 | 生成式代理在ABM中的最新实现综述 | 针对GABM的验证方法回顾
+Method: 文献综述 | 概念对比分析 | 方法论评估
+Full-text notes: 仅获取到IEEE Xplore元数据与摘要，正文被付费墙阻挡，无法提取具体案例或实证数据。
+
+### Integrating LLM in Agent-Based Social Simulation: Opportunities and Challenges (2025; Curated; citations: 7)
+Tags: llm; agent-based modeling; social simulation; computational social science; generative agents; cognitive biases; validation; hybrid architectures; gama; netlogo; theory of mind; reproducibility; epistemic risks; behavioral fidelity; multi-agent systems
+本文探讨LLM在社会模拟中的潜力与局限，指出其虽能模拟认知但存在偏差和不一致。建议结合传统ABM平台构建混合架构，以平衡灵活性与透明度。
+Deliverables: LLM在社会模拟中应用现状的系统综述 | 提出'混合宪法架构'（Hybrid Constitutional Architectures）概念 | 对Generative Agents, AgentSociety等平台的批判性分析
+Method: 文献综述与系统性检索 | 案例研究（Generative Agents, AgentSociety等） | 认知心理学基准测试回顾（如ToM任务）
+Full-text notes: 全文为arXiv预印本，内容完整。详细分析了LLM作为认知引擎的局限性，包括偏见、幻觉及验证挑战，并提出了结合GAMA/NetLogo的混合架构建议。
+
+### LLM as a Mastermind: A Survey of Strategic Reasoning with Large Language Models (2024; Curated; citations: 115)
+Tags: strategic reasoning; large language models; game theory; multi-agent systems; survey; theory of mind; political simulation; negotiation; decision making; reinforcement learning; prompt engineering; policy analysis; social simulation; cognitive hierarchy; benchmark evaluation; adversarial reasoning; economic modeling; gaming agents; llm limitations; future research directions
+综述LLM在战略推理中的应用，涵盖社会、经济、博弈论及游戏场景，探讨提示工程、心智理论与强化学习方法，指出缺乏统一基准与深层认知模拟能力的局限。
+Deliverables: 战略推理场景分类体系（社会模拟、经济模拟、博弈论、游戏）。 | 提升LLM战略推理的方法分类（提示工程、模块增强、心智理论、模仿/强化学习）。 | 战略推理评估框架（定量结果与定性过程分析）。 | 相关文献的系统性梳理与未来研究方向建议。
+Method: 系统性文献综述 | 分类学构建 | 跨学科方法整合分析 | 现有基准与案例研究回顾
+Full-text notes: 全文为arXiv预印本，无付费墙。摘要和正文摘录完整，涵盖定义、场景、方法、评估及讨论部分，信息充足。
+
+### Large language models empowered agent-based modeling and simulation: a survey and perspectives (2024; Curated; citations: 400)
+Tags: large language models; agent-based modeling; simulation; political science; social simulation; multi-agent systems; llm agents; methodology; survey; social dynamics; economic simulation; human alignment; autonomous agents; complex systems; policy simulation
+综述LLM赋能的基于智能体的建模与仿真，分析其在感知、推理、行动及评估中的能力，涵盖物理、网络、社会及混合领域，并探讨未来方向。
+Deliverables: LLM-ABM领域的系统性综述框架 | GitHub代码与论文资源库 (https://github.com/tsinghua-fib-lab/LLM-Agent-Based-Modeling-and-Simulation) | 针对环境构建、人机对齐、行动模拟及评估的方法论总结
+Method: 文献综述与分类分析 | 跨学科方法论整合（计算机科学、社会科学、仿真技术） | 案例研究与代表性工作梳理
+Full-text notes: 全文可获取。摘要及引言部分详细阐述了LLM在ABM中的优势（如自适应反应、人类级智能、多模态交互）。正文深入分析了ABM的基本概念、LLM赋能智能体的关键能力（感知、推理、记忆、反思），并系统讨论了环境构建、人类对齐、行动生成和评估四大挑战。
+
+### Leak, Cheat, Repeat: Data Contamination and Evaluation Malpractices in Closed-Source LLMs (2024; Curated; citations: 307)
+Tags: data contamination; llm evaluation; gpt-4; gpt-3.5; reproducibility; closed-source models; indirect data leaking; benchmark leakage; evaluation malpractices; systematic review; ai safety; research methodology; openai policy; fair comparison; model training data
+系统分析255篇使用GPT-3.5/4的论文，发现约42%通过Web接口导致数据泄露，涉及470万样本。指出评估中存在基线缺失、样本量不公及复现性差等问题，并提出最佳实践。
+Deliverables: Collaborative repository: https://leak-llm.github.io/ (dataset leakage list) | Systematic review of 255 papers evaluating GPT-3.5 and GPT-4 | List of suggested best practices for closed-source LLM evaluation
+Method: Systematic literature review (255 papers) | Analysis of OpenAI data usage policy | Quantification of data leakage via web interface vs API | Assessment of evaluation fairness and reproducibility
+Full-text notes: Full text available on arXiv. Detailed tables of leaked datasets and specific paper analysis are in the Appendix.
+
+### Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas (2024; Curated; citations: 32)
+Tags: social dilemmas; multi-agent cooperation; human-agent interaction; game theory; reinforcement learning; cooperation mechanisms; human bias; marl; sequential social dilemmas; ai for social good; strategic reasoning; reward shaping; opponent shaping; behavioral economics; survey
+综述AI在社会困境中的合作，涵盖多智能体、人机协作及AI促进人类合作，探讨动机塑造、策略对抗及人类偏见。
+Deliverables: 社会困境中AI合作的综合分类框架。 | 多智能体强化学习在序列社会困境中的应用综述。 | 人机合作算法（如S++/S#）及人类偏见实验结果的总结。
+Method: 系统性文献综述 | 博弈论分析 | 多智能体强化学习(MARL) | 行为经济学实验回顾
+Full-text notes: 全文已提供。详细讨论了序列社会困境(SSD)的定义、Gathering/Wolfpack等环境、内在/外在动机机制、对手塑造算法及人机实验细节。
+
+### Intelligent Computing Social Modeling and Methodological Innovations in Political Science in the Era of Large Language Models (2024; Important; citations: 19)
+Tags: large language models; political science methodology; computational social science; agent-based modeling; simulation; prompt engineering; methodological innovation; us presidential election; social simulation; interpretability; predictability; paradigm shift; ai for social science; knowledge discovery; demographic simulation
+提出ICSM框架，利用LLM进行思想综合与行动模拟，通过美国大选案例验证其平衡解释性与预测性的能力。
+Deliverables: Intelligent Computing Social Modeling (ICSM) 方法论框架 | 基于LLM的智能社会模拟工作流（模拟社会构建与模拟验证） | 美国大选计算模拟案例研究
+Method: Intelligent Computing Social Modeling (ICSM) | LLM-based Agent Simulation | Prompt Engineering (CoT, ICL) | Simulation Validation against ABM benchmarks
+Full-text notes: 摘要及引言、机制分析、ICSM定义、工作流步骤及美国大选案例的前半部分（基准设定与代理构建）可见。案例研究的完整实验结果、详细数据对比及后续讨论未完全展示。
+
+### LLM-Based Social Simulations Require a Boundary (2025; Important; citations: 11)
+Tags: llm social simulation; agent heterogeneity; validation methods; behavioral variance; average persona; political science methods; computational social science; simulation fidelity; ground truth comparison; collective patterns; individual alignment; methodological boundaries; systematic review; social dynamics; policy simulation
+论文指出LLM模拟社会行为存在“平均人格”导致的异质性缺失问题。通过审查21项研究，发现多数验证仅关注均值对齐而忽视方差。建议研究者明确边界，仅在集体层面进行定性分析，并显式报告方差限制。
+Deliverables: 基于均值-方差框架的LLM社会模拟边界评估指南。 | 21篇代表性LLM社会模拟研究的系统性审查报告。 | 针对验证深度与研究问题匹配度的具体建议清单。
+Method: 系统性文献综述 | 均值与方差分析框架 | 实证数据对比分析
+Full-text notes: 全文为arXiv预印本，无付费墙。正文包含详细的21篇论文审查表格（Table 1）及方差-均值案例分析。
+
+### Large language models and political science (2023; Important; citations: 36)
+Tags: large language models; political science; computational social science; misinformation; election integrity; political communication; nlp methods; bias in ai; reproducibility; generative ai; political campaigns; text analysis; open source models; ethical considerations; political polarization
+综述LLM在政治学中的应用，涵盖架构、API与开源模型对比、政治传播与选举威胁、研究自动化及伦理偏见问题。
+Deliverables: LLM在政治科学中的潜在应用场景分类 | 使用LLM进行政治研究的最佳实践指南 | 主要LLM模型（GPT-4, LLaMA, Falcon等）及其数据集概览表
+Method: 文献综述 | 案例研究 | 技术架构分析
+Full-text notes: 全文公开。包含详细的技术背景（Transformer、Perplexity）、模型对比表、政治应用案例（如RNC广告）及伦理讨论。
+
+### Validation is the central challenge for generative social simulation: a critical review of LLMs in agent-based modeling (2025; Important; citations: 12)
+Tags: llm; agent-based modeling; validation; social simulation; generative agents; methodology; systematic review; computational social science; reproducibility; bias; black box; empirical grounding; operational validity; stochasticity; policy simulation
+综述LLM驱动代理模型(ABM)的验证困境，指出LLM的黑箱、偏见和随机性加剧了实证 grounding 难题，当前研究多依赖表面效度，缺乏机制层面的严格验证。
+Deliverables: 生成式ABM应用领域地图 | 验证实践分类体系 | 操作效度评估框架
+Method: 系统文献综述 | Scopus数据库检索 | PRISMA筛选流程 | 归纳编码分析
+Full-text notes: 全文可获取，详细列出了35篇纳入文献的分类表及具体验证策略分析。
+
+### The Consequences of Generative AI for Democracy, Governance and War (2023; Watchlist; citations: 23)
+Tags: generative ai; democracy; governance; war; surveillance; propaganda; cyber attacks; military operations; dehumanisation; risk management; political science; strategic studies; ai ethics; authoritarianism; discourse shaping
+文章探讨生成式AI对政治、治理与战争的潜在影响，指出其虽缺乏实证但风险巨大。主要挑战包括私营模型威胁民主审议、威权政权加强监控与宣传、非国家行为体网络攻击能力增强，以及战争中的去人性化趋势。
+Deliverables: 识别生成式AI在政治、治理和战争领域的四大主要挑战 | 呼吁利益相关者制定务实方法来管理即将到来的风险
+Method: 概念性分析 | 政策与战略综述
+Full-text notes: 仅获取到摘要，无正文摘录。内容基于摘要概括，缺乏具体案例或数据支持。
+
+## Geopolitics, Diplomacy, National Security, and Wargaming
+
+### AI Arms and Influence: Frontier Models Exhibit Sophisticated Reasoning in Simulated Nuclear Crises (2026; Core; citations: 4)
+Tags: large language models; nuclear strategy; crisis escalation; ai safety; deterrence; strategic reasoning; wargaming; theory of mind; machine psychology; schelling; kahn; deception; metacognition; geopolitics; simulation; gpt-5; claude; gemini; international relations; ai alignment
+研究模拟GPT-5.2、Claude 4、Gemini 3在核危机中的博弈。发现AI具备欺骗、心智理论与元认知能力。时间压力导致GPT-5.2从被动转为激进。模型极少妥协，核禁忌失效，验证并挑战了谢林等战略理论。
+Deliverables: 包含21场游戏、329回合的核危机模拟数据集。 | 约78万字的AI战略推理文本语料库。 | 开源代码库与完整结果分析（GitHub链接）。 | 针对Schelling、Kahn、Jervis战略理论的实证检验报告。
+Method: 三阶段认知架构：反思(Reflection)、预测(Forecast)、决策(Decision)。 | 信号与行动分离机制，以测量欺骗与可信度。 | 同时行动结构，模拟真实危机中的战略不确定性。 | 引入随机事故机制模拟战争迷雾。 | 对比不同时间框架（有/无截止期限）下的行为差异。
+Full-text notes: 全文为arXiv预印本，无付费墙。文本包含详细的方法论、21场对局结果、模型心理分析（如GPT-5.2的‘杰基尔与海德’效应）及对国际关系理论的实证讨论。
+
+### Behavioral Differences Between Expert Humans and Language Models in Wargame Simulations / Human vs. Machine (2024; Core; citations: 23)
+Tags: wargaming; llm_behavior; military_decision_making; crisis_escalation; human_ai_comparison; national_security; us_china_relations; ai_safety; strategic_reasoning; autonomous_weapons; policy_implications; behavioral_consistency; instruction_sensitivity; simulation_bias; defense_strategy
+斯坦福团队通过兵棋推演对比人类专家与LLM在美中对峙场景中的决策。发现LLM高层行为与人类相似，但更激进且受指令影响大。LLM无法模拟真实玩家背景差异，对话缺乏质量。建议对AI军事自主权保持谨慎。
+Deliverables: 包含214名国家安全专家的人类兵棋推演数据集 | LLM模拟兵棋推演的代码与实验配置 | 人类与LLM决策行为的定量与定性对比分析 | GitHub开源仓库 (github.com/ancorso/LLMWargaming)
+Method: 构建虚构的美中台海危机兵棋推演场景 | 招募214名国家安全专家进行人类对照组实验 | 使用GPT-3.5, GPT-4, GPT-4o模拟玩家团队决策 | 线性判别分析与因果效应估计对比人类与LLM行为分布 | 变量控制实验：改变指令、对话长度、玩家背景描述
+Full-text notes: 全文开源于arXiv。附录包含详细的游戏简报、LLM提示词工程细节、具体行动分类定义及统计不确定性数据。
+
+### Escalation Risks from Language Models in Military and Diplomatic Decision-Making (2024; Core; citations: 85)
+Tags: llm safety; military wargaming; escalation dynamics; autonomous agents; nuclear risk; multi-agent simulation; ai alignment; foreign policy; chain of thought; rlhf impact; geopolitics; decision making; arms race; first strike; deterrence; policy evaluation; risk assessment; strategic planning; international relations; ai governance
+研究评估五种LLM在多智能体兵棋推演中的升级风险，发现模型普遍呈现军备竞赛与不可预测的暴力升级倾向，甚至出现核打击决策。
+Deliverables: 包含8个智能体、27种行动的兵棋推演模拟框架 | 基于严重性分级的量化升级评分（Escalation Score）体系 | 五种主流LLM在三种初始场景下的行为对比数据集 | 模型链式思维推理的定性分析案例
+Method: 多智能体强化学习模拟（Multi-agent Wargame Simulation） | 基于国际关系理论的升级评分框架设计 | 对比分析RLHF微调模型与Base模型的行为差异 | 定量统计与定性推理分析相结合
+Full-text notes: 全文开源于arXiv。核心发现包括：1) 即使在中立场景下，模型也会自发升级；2) 升级具有突发性，单次行动可能导致评分飙升50%以上；3) 模型将军事投入等同于安全，忽视非材料成本；4) 提供了详细的动作严重性映射表和动态变量变化机制。
+
+### ARMOR 2025: A Military-Aligned Benchmark for Evaluating Large Language Model Safety Beyond Civilian Contexts (2026; Curated; citations: 0)
+Tags: llm safety; military ai; rules of engagement; law of war; benchmark evaluation; ooda loop; defense applications; ai alignment; refusal behavior; doctrinal compliance; military decision support; ai ethics; national security; wargaming; policy evaluation
+提出ARMOR 2025基准，基于战争法、交战规则等军事教义，通过OODA框架评估21个LLM在军事决策中的合规性与拒绝行为，揭示通用模型在军事场景下的安全对齐缺陷。
+Deliverables: ARMOR 2025基准数据集（519道基于教义的多选题） | 12类军事决策风险分类法 | 21个主流LLM在军事安全对齐上的性能评估报告
+Method: 从《战争法》《交战规则》《联合伦理条例》提取教义文本 | 基于OODA决策框架构建12类分类体系 | 多模型共识合成生成多选题，经人工验证去重 | 零样本评估21个LLM的准确率与拒绝率
+Full-text notes: 全文公开（arXiv:2605.00245v1），包含详细的方法论、OODA分类定义、具体评估数据表及案例。
+
+### BattleAgent: Multi-modal Dynamic Emulation on Historical Battles to Complement Historical Analysis (2024; Curated; citations: 26)
+Tags: multi-agent systems; historical simulation; wargaming; vision-language models; military decision making; granular analysis; agent-based modeling; strategic emulation; human-centric ai; geopolitics; conflict analysis; dynamic agent structure; multi-modal interaction; quantized time simulation; historical narrative
+提出BattleAgent，结合VLM与多智能体系统模拟历史战役。通过量化时间、地图坐标及动态智能体结构，重现微观战场互动与士兵视角，弥补传统宏观叙事不足。
+Deliverables: BattleAgent开源代码与数据 (GitHub) | 历史战役模拟演示视频/交互Demo | 包含51种军事动作的动作空间定义 | 针对克雷西、阿金库尔等战役的模拟案例
+Method: Large Vision-Language Model (VLM) 多模态感知 | Multi-Agent System (MAS) 动态交互 | 量化时间管理 (15分钟步长) | 基于地图坐标的空间建模 | 动态智能体结构演化 (Fork/Merge/Prune) | 匿名化提示工程以消除记忆偏差
+Full-text notes: 全文已提供。详细描述了克雷西、阿金库尔、普瓦捷和弗尔柯克四场战役的模拟设置，包括智能体属性定义、动作空间（51种动作）、观察机制（10km视野限制）及伤亡计算逻辑。
+
+### Battlefield information and tactics engine (BITE): a multimodal large language model approach for battlespace management (2024; Curated; citations: 2)
+Tags: battlespace management; military wargaming; llm reliability; squad game; defense applications; multimodal llm; combat decision making; spatial awareness; human-machine teaming; tactical simulation
+研究利用LLM作为观察者与决策者，在《Squad》模拟环境中评估其战场态势管理能力。
+Deliverables: BITE原型系统 | 基于《Squad》游戏的定性评估报告
+Method: 多模态LLM应用 | 视频游戏模拟环境 | 定性评估
+Full-text notes: 仅基于摘要和简短摘录，缺乏详细实验数据、具体Prompt工程细节及定量性能指标。
+
+### COA-GPT: Generative Pre-Trained Transformers for Accelerated Course of Action Development in Military Operations (2024; Curated; citations: 28)
+Tags: large language models; military decision making; course of action generation; human-ai collaboration; wargaming simulation; starcraft ii; in-context learning; command and control; defense technology; ai strategy; prompt engineering; military doctrine; reinforcement learning baseline; autonomous planning; tactical simulation
+提出COA-GPT，利用LLM结合军事条令通过上下文学习加速行动方案生成。在StarCraft II模拟中，其速度超越人类专家及强化学习基线，结合人类反馈后战略对齐度显著提升。
+Deliverables: COA-GPT算法框架及系统提示词设计 | 基于StarCraft II PySC2环境的军事化模拟场景代码与数据 | COA-GPT项目演示视频及详细实验结果数据 | 军事决策制定过程（MDMP）中LLM应用的实证评估报告
+Method: In-context Learning (ICL) with military doctrine and domain expertise | LLM-based generation (GPT-4-Turbo and GPT-4-Vision) | Human-in-the-loop iterative refinement | Simulation-based evaluation in StarCraft II (PySC2) | Comparison against Reinforcement Learning baselines and human experts
+Full-text notes: Full text available via arXiv (2402.01786). Includes detailed system prompts, unit mapping tables, and specific experimental metrics.
+
+### Causal Reasoning and Large Language Models for Military Decision-Making: Rethinking the Command Structures in the Era of Generative AI (2026; Curated; citations: 0)
+Tags: large language models; military decision-making; causal reasoning; human-ai collaboration; command structures; generative ai; wargaming; decision support systems; empirical evaluation; autonomous systems; strategic planning; operational analysis; ai ethics; military strategy; prompt engineering
+评估LLM在军事决策中的因果推理能力，通过10个场景与人类专家对比，发现LLM适合作为混合决策支持工具而非完全替代指挥官。
+Deliverables: 结构化实证评估框架 | 10个去标识化的现实灵感战斗场景数据集 | LLM与人类军事专家基线的对比评估结果
+Method: 结构化实证评估 | 基于提示的LLM性能测试 | 与多级别军事专家基线的对比分析 | 评估指标包括精确度、召回率、因果推理深度、适应性和决策合理性
+Full-text notes: 摘要提供了核心方法论和结论，但具体实验数据、详细场景描述及统计显著性分析需查阅全文。
+
+### DipLLM: Fine-Tuning LLM for Strategic Decision-making in Diplomacy (2025; Curated; citations: 6)
+Tags: large language models; diplomacy game; strategic decision making; fine-tuning; multi-agent systems; game theory; nash equilibrium; autoregressive factorization; ai wargaming; geopolitics simulation; reinforcement learning; policy optimization; combinatorial action space; llm agents; strategic reasoning
+提出DipLLM，通过自回归分解将复杂外交博弈简化为单元级决策，利用均衡策略微调LLM，以1.5%数据超越SOTA模型Cicero。
+Deliverables: DipLLM智能体代码与模型 | 基于piKL-Hedge生成的外交博弈微调数据集 | 自回归因子化均衡策略学习框架
+Method: 自回归因子化（Autoregressive Factorization）分解多单元行动 | 基于均衡策略定义的KL散度损失函数微调 | 利用piKL-Hedge算法生成带Q值的训练数据 | 无压外交游戏（No-press Diplomacy）环境评估
+Full-text notes: 全文公开于arXiv。核心贡献在于将LLM的自回归生成特性与博弈论中的均衡搜索结合，通过分解行动空间解决LLM在复杂多智能体博弈中的组合爆炸问题。
+
+### DiplomacyAgent: Do LLMs Balance Interests and Ethical Principles in International Events? (2025; Curated; citations: 4)
+Tags: llm safety; diplomatic simulation; multi-agent systems; ethical alignment; geopolitical bias; interest vs ethics; wargaming; policy decision making; fictional world simulation; llm bias; international relations; risk assessment; constrained generation; strategic reasoning; ai governance
+提出DiplomacyAgent多智能体框架，模拟外交决策。在虚构世界中测试LLM在利益与伦理冲突下的表现，发现GPT-4o等模型存在强烈的利益驱动偏差，忽视伦理原则。
+Deliverables: DiplomacyAgent多智能体决策框架 | 包含100个虚构国家及1000个事件的评估数据集 | 基于对话轮次的伦理倾向分类器 | 六种主流LLM在外交伦理风险上的量化评估报告
+Method: 构建包含外交官、国际关系分析师、国际法专家等多角色的多智能体系统 | 使用虚构世界和匿名化事件以消除训练数据中的现实偏见 | 设计利益与伦理冲突的困境场景（战争、人权、环境等） | 通过对话轮次分析追踪决策倾向的动态演变 | 引入外部法律伦理约束进行干预实验
+Full-text notes: 全文可获取。详细展示了虚构世界设定、智能体角色定义、Prompt模板、混淆矩阵验证结果、风险评分计算逻辑及不同模型在各事件类别下的具体决策概率分布。
+
+### Do Large Language Models Know Conflict? Investigating Parametric vs. Non-Parametric Knowledge of LLMs for Conflict Forecasting (2025; Curated; citations: 2)
+Tags: llm conflict forecasting; retrieval augmented generation; parametric vs non-parametric; political violence prediction; gpt-4 evaluation; llama-2 evaluation; early warning systems; geopolitical simulation; acled gdelt; humanitarian planning; zero-shot learning; fatality prediction; conflict escalation; ai policy making; nlp for social science
+评估GPT-4与LLaMA-2在冲突预测中的参数化与非参数化能力。发现GPT-4结合RAG显著优于纯参数化，LLaMA表现较弱。
+Deliverables: 冲突预测评估框架（分类与回归） | GPT-4与LLaMA-2在非洲之角和中东地区的基准测试结果 | 参数化与非参数化知识在冲突预测中的对比分析 | 开源代码与提示模板（GitHub）
+Method: 对比实验：参数化（Zero-shot） vs 非参数化（RAG） | 数据源：GDELT（新闻/情绪）、ACLED（伤亡/事件） | 模型：GPT-4, LLaMA-2-13B-chat | 任务：冲突趋势分类（升级/稳定/和平等）与伤亡人数预测 | 评估指标：Accuracy, F1, MAE
+Full-text notes: 全文为arXiv预印本，无付费墙。包含详细实验设置、数据源描述、结果表格及局限性讨论。
+
+### Effective and responsible use of large language models in strategic wargaming (2026; Curated; citations: 0)
+Tags: large language models; strategic wargaming; military decision-making; human-machine collaboration; defense simulation; geopolitics; national security; ai in military; text generation; expert evaluation; policy support; strategic planning; risk assessment; decision support systems; military strategy; ai ethics; responsible ai; defense technology; scenario generation; expert systems
+研究评估LLM在兵棋推演中生成文本的效用。专家对比显示，LLM生成的推演组件质量匹配或超越人类，证明其可作为辅助工具降低对稀缺专家的依赖，提升决策质量。
+Deliverables: LLM辅助兵棋推演组件生成的有效性评估报告 | 兵棋推演生命周期中LLM应用的最佳实践建议
+Method: 专家对比研究 | 人类创建文本与LLM生成文本的质量比较 | 兵棋推演任务生命周期分析
+Full-text notes: 仅基于摘要和简短摘录。具体实验设置、LLM模型细节、评估指标及具体推演场景未在提供文本中详述。
+
+### Governing Automated Strategic Intelligence (2025; Curated; citations: 0)
+Tags: automated intelligence; llm for intelligence; geopolitics; national security; osint; multimodal models; policy recommendations; expert-novice gap; ai governance; strategic competitiveness; data sovereignty; intelligence analysis; open source research; ai safety; military applications
+探讨多模态AI自动化情报分析(AUTOINT)的崛起，通过实验证明LLM可显著提升新手分析师能力，并提出地缘政治风险及治理建议。
+Deliverables: 自动化情报(AUTOINT)概念框架与五阶段管道模型。 | 新手与专家分析师在LLM辅助下的对比实验数据集及评估指标。 | 针对国家层面的AI基础设施保护、数据主权及开源情报管理政策建议。
+Method: 受控实验：20名新手与2名专家在有无LLM辅助下完成12个情报问题。 | 相似度评估：使用Gemini 2.5 Pro提取数值答案并计算对数比率相似度，评估概念答案语义相似性。 | 统计检验：采用聚类稳健回归、分层置换检验及残差差异配对检验。
+Full-text notes: 全文开源(arXiv)。附录包含12个具体情报问题列表(如追踪俄罗斯寡头游艇、分析Starlink终端信号等)，展示了多源数据融合的具体应用场景。
+
+### Integrators at War: Mediating in AI-assisted Resort-to-Force Decisions (2025; Curated; citations: 5)
+Tags: ai integration; military decision making; resort to force; socio-technical systems; human machine teaming; ai ethics; policy recommendations; organizational behavior; defense technology; ai governance; strategic studies; human factors; ai developers; military strategy; responsible ai
+本文聚焦军事AI部署中被忽视的“整合者”角色，分析其在开发者与用户间的中介挑战，提出负责任整合的十项原则。
+Deliverables: 整合者在AI军事应用中的角色定义与责任框架 | 针对RTF决策的“负责任AI整合10项支柱”政策建议 | 基于社会技术系统理论的AI整合挑战分析模型
+Method: 社会技术系统理论分析 | 历史案例比较（航空母舰与密码学整合） | 政策规范与制度设计推导
+Full-text notes: 全文摘录完整。文章详细阐述了整合者在初始化、开发、部署及维护各阶段的具体职能，并深入分析了技术、角色及人机交互三个维度的挑战。
+
+### Managing Escalation in Off-the-Shelf Large Language Models (2025; Curated; citations: 0)
+Tags: llm escalation; wargaming; prompt engineering; national security; temperature control; geopolitical simulation; ai safety; strategic decision making; military ai; de-escalation; policy alignment; experimental design; off-the-shelf models; risk management; diplomatic signaling
+研究通过调整温度和提示工程，显著降低商用LLM在兵棋推演中的升级倾向，证明非技术性干预可有效对齐国家安全目标。
+Deliverables: 针对国家安全场景的LLM升级管理干预措施（温度控制与提示工程）。 | 基于Mistral-7B模型的兵棋推演实验数据集与代码框架。 | 关于LLM在战略决策中风险可控性的实证证据。
+Method: 复现并简化Rivera等人的LLM兵棋推演实验设计。 | 使用Mistral-7B-Instruct-v0.3作为单一国家代理模型。 | 控制变量实验：测试不同温度设置（1.0, 0.5, 0.01）。 | 提示工程干预：添加背景提示、规划反思提示、降级反思提示。 | 统计分析：比较不同干预下的升级分数分布与行为频率。
+Full-text notes: 全文公开于arXiv，包含详细的实验设计、提示词模板、结果图表及局限性讨论。
+
+### Measuring Free-Form Decision-Making Inconsistency of Language Models in Military Crisis Simulations (2024; Curated; citations: 10)
+Tags: large language models; military wargaming; decision making inconsistency; bertscore; prompt sensitivity; high stakes ai; crisis simulation; ai safety; semantic similarity; temperature sampling; automated decision making; national security; ai governance; hallucination detection; strategic reasoning
+研究评估五大LLM在军事危机兵棋推演中的自由形式决策不一致性。发现模型即使提示语义等价或温度极低，仍产生显著语义差异的建议，表明其在高风险军事决策中存在不可靠性。
+Deliverables: 基于BERTScore的LLM自由形式决策不一致性量化指标 | 五个主流LLM在军事危机模拟中的行为数据集 | 开源代码与实验数据 (MIT License)
+Method: 使用BERTScore计算自由形式文本响应的语义相似度 | 设计初始设置与延续实验模拟军事危机升级 | 进行提示敏感性消融实验（Level One/Two ablations） | 对比不同温度参数下的模型输出一致性
+Full-text notes: 全文为arXiv预印本，无付费墙。包含详细实验设置、消融研究、示例响应及局限性讨论。
+
+### On Large Language Models in National Security Applications (2024; Curated; citations: 31)
+Tags: large language models; national security; wargaming; decision making; military applications; disinformation; adversarial attacks; us department of defense; strategic planning; hallucination; information warfare; ai policy; cyber operations; intelligence analysis; bureaucracy
+探讨LLM在国家安全中的应用，涵盖美军及盟友案例，强调自动摘要、兵棋推演价值，警示幻觉与对抗风险，主张LLM应作为辅助而非战略主导。
+Deliverables: 综述LLM在国防部的当前应用现状（如TF Lima, CHUCK框架）。 | 分析LLM在自然语言处理、决策支持和信息战中的潜力与局限。 | 提出将LLM与贝叶斯推理及统计方法结合以增强决策可靠性的建议。
+Method: 文献综述与案例研究 | 政策与战略文件分析 | 现有学术研究与实证实验回顾
+Full-text notes: 全文可获取。详细列举了美国空军（USAF）、陆军、海军及情报机构（CIA）的具体LLM应用案例，包括CHUCK兵棋推演系统、Osiris情报工具及各国对抗性使用案例。
+
+### Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy (2024; Curated; citations: 39)
+Tags: ai diplomacy; llm agents; multi-agent systems; self-evolution; social reasoning; game theory; strategic planning; negotiation; neurips 2024; richelieu; memory management; self-play; political simulation; wargaming; cicero baseline
+提出Richelieu，一种无需人类数据、通过自我对弈进化的LLM外交代理，具备社会推理、反思规划及谈判能力，在Diplomacy游戏中超越SOTA。
+Deliverables: Richelieu代理架构代码与实现 | 基于自我对弈的无监督训练框架 | 包含社会信念更新与谈判真实度评估的推理流程
+Method: LLM-based Agent Architecture | Self-Play Evolution | Social Reasoning & Belief Modeling | Reflective Planning with Memory | Goal-Oriented Negotiation
+Full-text notes: 全文已提供。详细实验数据包括与Cicero、AutoGPT及多个No-Press基线的对比表格，以及不同LLM后端的泛化性能分析。
+
+### Stable and Expert-Aligned Evaluation of Wargaming Strategies via Optimized LLM Scoring Agents (2025; Curated; citations: 0)
+Tags: wargaming; llm evaluation; prompt optimization; strategy analysis; expert alignment; bloom taxonomy; decision making; simulation; automated scoring; geopolitics; national security; ai agents; reliability; benchmarking; military strategy
+提出基于布鲁姆认知框架的LLM评分代理，结合提示优化算法，实现兵棋推演策略的稳定、可解释且与专家对齐的自动评估。
+Deliverables: 一个用于兵棋策略评估的LLM评分代理框架。 | 一种迭代提示优化算法。 | 五维评估指标体系。
+Method: 基于布鲁姆认知框架的LLM提示工程。 | 迭代式提示优化算法。 | 与人类专家评级的一致性验证。
+Full-text notes: 仅获取到IEEE Xplore元数据页面，无正文内容。摘要提供了核心方法论和结果，但具体实验数据、消融研究及详细算法实现细节缺失。
+
+### Upskilling human actors against AI automation bias in strategic decision making on the resort to force (2026; Curated; citations: 1)
+Tags: ai automation bias; human machine teaming; strategic decision making; resort to force; ai literacy; red teaming; groupthink; institutional design; military wargaming; policy training; intelligence analysis; human agency; defense policy; uk defense; us defense; japan defense; five eyes; aukus; ai decision support systems; cognitive bias
+文章主张通过提升AI素养、建立挑战机制及优化制度结构，缓解决策者对AI决策支持系统的自动化偏见与技能退化风险。
+Deliverables: 提出教育、挑战功能和制度结构三位一体的缓解框架 | 分析各国（美、英、日）在AI素养教育和制度设计上的实践 | 探讨红队测试、角色扮演和创意写作在培训中的应用 | 评估跨机构合作和盟友情报共享对降低偏见的作用
+Method: 文献综述 | 案例研究（美国、英国、日本、澳大利亚等国的政策与实践） | 比较分析 | 政策评估
+Full-text notes: 全文可获取。文章详细讨论了AI素养教育的具体内容（如理解模型局限性、精确度等）、挑战机制（如红队测试、团队B演习、SONAC）以及制度结构（如审计追踪、跨机构网络、盟友合作）。还引用了具体案例如以色列Lavender系统、美国Maven系统和日本自卫队的AI政策。
+
+### Waltzing into uncertainty: AI in nuclear decision making and the challenge of divergent deterrence logics (2026; Curated; citations: 1)
+Tags: ai and nuclear deterrence; russian strategic culture; escalation risk; divergent deterrence logics; third nuclear age; security dilemma; arms race dynamics; nuclear command and control; misperception; reflexive control; ai governance; strategic stability; nuclear decision making; conceptual multiplicity; transparency protocols
+文章批判性考察AI融入核决策对威慑战略的影响，以俄罗斯为例，论证概念分歧加剧误判与意外升级风险，呼吁建立透明度与信任措施。
+Deliverables: 概念性分析框架，连接AI技术与威慑理论 | 关于俄罗斯战略威慑逻辑与AI整合风险的案例研究 | 政策建议：透明度协议与建立信任措施
+Method: 定性研究 | 解释主义方法论 | 话语分析 | 案例研究（俄罗斯） | 官方文件与战略文献解读
+Full-text notes: 全文可获取。文章详细分析了俄罗斯2010-2024年军事学说演变，对比了俄西威慑逻辑差异，并讨论了AI在NC3和ISR中的潜在应用及风险。
+
+### War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars (2023; Curated; citations: 149)
+Tags: llm multi-agent; geopolitical simulation; wargaming; historical analysis; conflict resolution; counterfactual history; international relations; agent architecture; prompt engineering; computational social science; war causality; diplomacy simulation; strategic decision making; ai for policy; multi-agent debate; historical reenactment; system dynamics; ai safety; digital humanities; strategic foresight
+提出WarAgent，利用LLM多智能体模拟一战、二战及战国时期，评估历史冲突模拟的有效性、战争触发因素及历史必然性。
+Deliverables: WarAgent开源代码与数据 | 历史冲突模拟的多智能体框架 | 针对RQ1-RQ3的实验评估方法
+Method: LLM-based Multi-Agent System (MAS) | Counterfactual Historical Simulation | Human Evaluation & Board-based Accuracy | Prompt Engineering with Role-Playing
+Full-text notes: 全文公开于arXiv，包含详细的架构设计、提示词工程、动作空间定义及初步实验设置，无付费墙限制。
+
+### When AI Navigates the Fog of War (2026; Curated; citations: 0)
+Tags: llm reasoning; geopolitical forecasting; fog of war; temporal grounding; data leakage mitigation; middle east conflict; strategic realism; narrative evolution; wargaming simulation; multi-actor reasoning; policy analysis; uncertainty handling; hindsight bias; conflict escalation; ai safety; real-time analysis
+研究前沿LLM在2026年中东冲突初期的实时推理能力，通过11个时间节点和42个问题评估，发现模型具备战略现实主义推理能力，但在政治模糊域表现不均，且叙事随时间演变。
+Deliverables: 11个关键时间节点的冲突时间线 | 42个节点特定可验证问题与5个通用探索性问题 | LLM在实时不确定性下的推理档案快照 | 项目页面: www.war-forecast-arena.com
+Method: 时间锚定案例研究 (Temporally grounded case study) | 严格信息约束 (仅使用节点前公开信息) | 人工访谈辅助构建时间线 | 手动提取概率估计与定性推理分析
+Full-text notes: 全文公开 (arXiv)。包含详细的方法论、11个时间节点的具体事件描述、代表性模型回答摘录（如Claude, GPT-5.4, Gemini）、以及关于历史偏见克服和机构现实主义的具体案例分析。
+
+### Benchmarking LLMs for Political Science: A United Nations Perspective / United Nations Benchmark (2025; Important; citations: 5)
+Tags: un security council; llm benchmark; political science; diplomatic simulation; voting prediction; geopolitical reasoning; multilateral diplomacy; draft resolution; statement generation; ai for policy; international relations; coalition building; nlp evaluation; strategic decision making; wargaming data
+提出UNBench基准，评估LLM在联合国安理会决策全流程（起草、投票、发言）中的表现，涵盖联合构建、投票模拟、通过预测及声明生成四项任务。
+Deliverables: UNBench数据集：包含1994-2024年联合国安理会草案、投票记录及外交声明 | 四个基准任务：联合构建判断、代表投票模拟、草案通过预测、代表声明生成 | 代码与数据链接：https://github.com/yueqingliang1/UNBench
+Method: 构建涵盖起草、投票、讨论三阶段的联合国安理会决策全流程数据集 | 设计四项任务以评估LLM的政治理解、战略推理及外交语言生成能力 | 采用时间序列划分训练集与测试集，模拟真实世界预测场景 | 对比评估GPT-4o、Llama系列、DeepSeek-V3、Qwen2.5及传统NLP模型
+Full-text notes: 全文开源于arXiv，包含详细的数据清洗流程、统计分析及附录中的多维度实验结果。
+
+### Critical Foreign Policy Decisions Benchmark: Measuring Diplomatic Preferences in Large Language Models (2025; Important; citations: 4)
+Tags: llm bias; foreign policy; international relations; diplomatic preferences; military escalation; wargaming; national security; ai safety; benchmark; geopolitics; interventionism; alliance dynamics; model evaluation; csis; scale ai
+构建CFPD基准评估七款LLM在外交决策中的偏见。发现Qwen2、Gemini和Llama 8B更具升级倾向，所有模型对中俄比美英更温和。
+Deliverables: CFPD-Benchmark 数据集（400个专家构建场景，66,473个问题变体） | 七款主流LLM在四个IR领域的偏好评估报告 | 针对国家安全AI部署的风险评估框架
+Method: 专家构建的400个国际关系场景（升级、干预、合作、联盟） | 针对7款基础模型进行自动化评估 | 使用引导解码（开源）和多次运行取均值（闭源） | 手动编码输出以处理幻觉和拒绝回答
+Full-text notes: 全文公开。详细列出了四个领域的操作化定义、场景分布、演员选择逻辑及具体Prompt示例。附录包含编码规则和原始图表。
+
+### Democratizing Diplomacy: A Harness for Evaluating Any Large Language Model on Full-Press Diplomacy (2025; Important; citations: 3)
+Tags: llm evaluation; diplomacy game; strategic reasoning; multi-agent systems; prompt engineering; deception detection; game theory; wargaming; ai safety; social intelligence; model scaling; critical state analysis; persuasion; betrayal rates; zero-shot learning; political strategy; negotiation; alliance formation; ai behavior; benchmarking
+提出无需微调即可让通用LLM进行全压外交博弈的评估框架，通过优化状态表示和提示工程，使24B模型也能胜任，揭示了LLM内在的战略推理与欺骗能力。
+Deliverables: 开源评估框架（Harness）与代码 | 13种主流LLM在外交游戏中的基准测试数据 | 关键状态分析（Critical State Analysis）实验协议 | 自动化承诺追踪与背叛检测框架
+Method: 数据驱动的游戏状态文本表示优化 | 关键状态分析（CSA）进行高深度局部实验 | LLM-as-a-Judge进行外交行为量化 | 多模型对比实验（16个模型，20局/模型）
+Full-text notes: 全文已提供。包含详细的提示工程迭代（V1-V3）、说服策略实验（6种方法）、模型行为分析（侵略性、可靠性）及具体Prompt示例。
+
+### Hacking Nuclear Stability: Wargaming Technology, Uncertainty, and Escalation (2023; Important; citations: 10)
+Tags: nuclear stability; cyber warfare; wargaming; escalation; strategic stability; nc3; preemption; automation; decision making; international security; geopolitics; experimental method; nuclear command and control; cyber vulnerabilities; misplaced certainty
+基于580名参与者的网络-核战棋实验，发现技术不确定性未引发先发制人，但网络攻击自信导致更激进的反击，漏洞则促使自动化，增加意外核风险。
+Deliverables: 关于网络技术与核稳定性的实证数据 | 战棋实验方法论框架 | 政策建议：警惕自动化与过度自信
+Method: 准实验网络-核战棋 | 580名参与者 | 115个团队 | 多场景危机模拟
+Full-text notes: 全文公开获取。详细描述了战棋设计、四种处理组（全处理、不对称1、不对称2、控制）、两个危机场景（低强度/高强度）及数据收集方式（响应计划、调查、引导员笔记）。
+
+### Human-level play in the game of Diplomacy by combining language models with strategic reasoning (2022; Important; citations: 548)
+Tags: cicero; diplomacy game; strategic reasoning; natural language negotiation; cooperative ai; reinforcement learning; meta fair; multi-agent systems; game theory; ai strategy; human level ai; language models; political simulation; wargaming; international relations ai
+Meta推出Cicero，首个在策略游戏《外交》中达到人类水平的AI。它结合语言模型与强化学习，通过自然语言协商达成合作与竞争平衡，表现远超人类平均。
+Deliverables: Cicero AI Agent | 语言模型与战略推理结合的架构 | 在线外交联赛数据集
+Method: 自然语言处理与理解 | 强化学习 | 规划算法 | 信念与意图推断
+Full-text notes: 仅获取到PubMed摘要，全文受限于Atypon付费墙。摘要已包含核心结果与方法论概述，足以支撑本报告。
+
+### LLMs as Strategic Actors: Behavioral Alignment, Risk Calibration, and Argumentation Framing in Geopolitical Simulations (2026; Important; citations: 1)
+Tags: llm geopolitical simulation; behavioral alignment; risk calibration; argumentation framing; wargaming; international relations theory; strategic decision making; human-ai comparison; policy simulation; crisis response; ideological bias; adversarial reasoning; multi-agent simulation; political strategy; nlp political science
+评估六款LLM在四场地缘政治模拟中的人类行为对齐度。发现初期对齐但随时间发散，模型普遍呈现规范性合作框架，缺乏对抗性推理。
+Deliverables: 六款主流LLM（Claude, ChatGPT, Gemini, Grok, Mistral, Qwen）在地缘政治模拟中的行为数据集。 | 基于国际关系理论的论证框架分类体系（现实主义、自由制度主义、建构主义）。 | 人类与LLM决策对齐度、风险严重性分布及文本风格差异的量化评估结果。
+Method: 多轮结构化地缘政治危机模拟（中东、美中台、北极、野火）。 | 精确行动匹配与F1分数计算评估行为对齐。 | 基于IR理论的框架标注与二维意识形态空间投影。 | 词汇多样性（TTR）与TF-IDF签名分析评估解释风格。
+Full-text notes: 全文开源于arXiv (2603.02128)，包含详细的方法论、提示词、统计检验及附录数据。
+
+### Open-Ended Wargames with Large Language Models (2024; Important; citations: 6)
+Tags: large language models; wargaming; multi-agent systems; geopolitical simulation; qualitative games; automated decision making; policy analysis; human-ai teaming; strategic forecasting; open source tools; narrative adjudication; scenario planning; international relations; military strategy; ai safety; crisis management; digital diplomacy; computational social science; agent-based modeling; text-based simulation
+提出Snow Globe系统，利用LLM自动化定性兵棋推演。通过多智能体架构模拟开放-ended决策，涵盖场景生成、裁决与分析。
+Deliverables: Snow Globe开源Python实现（Apache 2.0） | 多智能体系统架构设计文档 | 两个案例研究：AI事故响应桌面推演、中亚地缘政治危机模拟
+Method: 多智能体系统（控制、玩家、团队代理） | 基于LLM的文本生成与叙事裁决 | 零样本学习（Zero-shot learning） | 异步编程支持人机混合交互
+Full-text notes: 全文开源，包含详细代码实现、架构图及两个完整推演案例（含具体对话记录）。
+
+### Red Lines and Grey Zones in the Fog of War: Benchmarking Legal Risk, Moral Harm, and Regional Bias in Large Language Model Military Decision-Making (2025; Important; citations: 1)
+Tags: military ai; llm safety; international humanitarian law; wargaming; command and control; ai decision support systems; civilian harm; targeting behavior; multi-agent simulation; legal risk; moral harm; model bias; autonomous weapons; defense technology; ai governance; predictability problem; automation bias; ideological drift; benchmarking framework; geopolitical risk
+评估LLM在军事决策支持中的法律与道德风险，发现模型普遍违反区分原则，且不同模型风险偏好差异显著。
+Deliverables: 针对军事目标行为的基准测试框架 | 四个基于国际人道法的可解释指标（CTR, DTR, Mean/Max SNCV） | 90次多智能体多轮危机模拟的数据集与结果 | 用于标准化部署前测试的可复现方法论
+Method: 多智能体多轮危机模拟（Multi-agent, multi-turn crisis simulations） | 国际人道法（IHL）合规性评估 | 模拟非战斗人员伤亡值（SNCV）量化 | 对比测试GPT-4o, Gemini-2.5, LLaMA-3.1三大前沿模型 | 跨三个地理区域的区域偏差分析
+Full-text notes: 全文为arXiv预印本，无付费墙。摘要及前几章详细阐述了OODA循环背景、AI DSS集成风险（自动化偏见、不可预测性、意识形态漂移）及SNCV方法论细节。
+
+### Simulating Influence Dynamics with LLM Agents (2025; Important; citations: 5)
+Tags: llm agents; opinion dynamics; misinformation; wargaming; social simulation; influence propagation; red team blue team; agent based modeling; geopolitical simulation; counter misinformation; network analysis; political strategy; cognitive bias; resource constraints; policy evaluation
+提出结合LLM与意见动力学模型的模拟器，模拟红蓝对抗下的信息战与反虚假信息策略，评估网络影响力传播。
+Deliverables: 开源模拟器代码（GitHub） | 支持多种LLM（GPT系列、Llama等）的集成接口 | 模拟过程数据导出（CSV格式，含消息与网络状态）
+Method: 基于智能体的建模（Agent-Based Modeling, ABM） | 大型语言模型（LLM）作为具有策略能力的智能体 | 意见动力学模型（Opinion Dynamics, Deffuant Model） | 红蓝对抗博弈（Red-Blue Team Wargaming）
+Full-text notes: 全文公开于arXiv，包含详细的架构描述、场景设定、动态机制及伦理声明，无付费墙限制。
+
+### The Prompt War: How AI Decides on a Military Intervention (2025; Important; citations: 4)
+Tags: llm decision making; military intervention; conjoint experiment; ai alignment; geopolitics; wargaming; policy audit; risk assessment; domestic support; probability of victory; civilian casualties; economic shock; international sanctions; model interpretability; strategic stability; ai safety; foreign policy; national security; behavioral ir; prompt engineering
+研究利用联合实验评估六大前沿LLM在军事干预决策中的偏好。发现模型普遍优先考虑胜率和国内支持，而非平民伤亡或经济冲击，揭示了AI决策中隐含的实用主义理性。
+Deliverables: 基于128个情境、每个情境运行10次的联合实验数据集。 | 六个前沿LLM（GPT-5, GPT-5 mini, Claude Sonnet 4.5, Claude Haiku 4.5, Gemini 2.0 Flash, Gemini 2.0 Flash Lite）的决策权重回归分析结果。 | 针对不同干预动机（人道主义、核威胁、盟友防御、大国竞争）的敏感性测试报告。 | 关于LLM数值敏感性的实证证据（平民伤亡 vs 经济冲击）。
+Method: Conjoint Experiment (联合实验) | Vignette-based Survey (情境调查) | OLS Regression Analysis (OLS回归分析) | Spearman Correlation (斯皮尔曼相关性分析) | Numerical Sensitivity Testing (数值敏感性测试)
+Full-text notes: 全文已提供。包含详细的实验设计、假设检验（H1-H8）、回归表格（Table 1-4）、图表描述及政策建议。
+
+### UNSC-Bench: Evaluating LLM Diplomatic Role-Playing Through UN Security Council Vote Prediction (2026; Important; citations: 0)
+Tags: llm diplomacy; un security council; vote prediction; role-playing; geopolitical bias; multilingual evaluation; p5 countries; policy simulation; model capability; cultural alignment; prompt sensitivity; international relations; ai wargaming; strategic forecasting; dataset benchmark
+提出UNSC-Bench基准，评估LLM模拟安理会P5国家投票行为的能力。发现模型默认无外交倾向，角色模拟能力与通用智力强相关，区域模型无本土优势，且提示语言显著影响少数派投票预测。
+Deliverables: UNSC-Bench数据集：包含1947-2025年间469项安理会决议草案及P5投票记录。 | 多语言支持：提供英语、中文、法语、俄语四种语言的决议文本。 | 26种LLM在P5角色模拟任务上的详细评估结果与基准分数。
+Method: 构建包含469个样本的多语言安理会投票预测基准。 | 对比“中性提示”与“角色扮演提示”两种设置下的模型表现。 | 评估26种前沿及开源LLM（包括思维链变体）的宏观F1分数。 | 分析模型通用能力（MMLU-Pro）与外交模拟性能的相关性。 | 跨语言一致性测试，评估提示语言对预测结果的影响。
+Full-text notes: 全文可获取。包含详细的数据集统计、模型排名、每类投票（Yes/No/Abstain）的F1分数分解、提示模板示例及附录中的完整结果表。
+
+### WARBENCH: A Comprehensive Benchmark for Evaluating LLMs in Military Decision-Making (2026; Important; citations: 0)
+Tags: llm evaluation; military ai; wargaming benchmark; international humanitarian law; edge computing; model quantization; fog of war; chain of thought; ai safety; tactical decision making; asymmetric warfare; legal compliance; adversarial robustness; policy deployment; strategic simulation
+提出WARBENCH基准，评估LLM在军事决策中的表现。发现模型在复杂地形和高不对称性下推理崩溃，边缘模型合规率极低，量化导致性能灾难性下降，显式推理可提升安全性。
+Deliverables: WARBENCH基准框架及136个基于真实历史冲突的高保真场景数据集。 | 九种主流LLM（闭源、开源大模型、边缘小模型）的基准测试报告。 | 包含法律合规、边缘部署、战争迷雾和显式推理的四维评估指标体系。
+Method: 构建基于二战后真实冲突数据（UCDP, ICRC）的136个去匿名化战术场景。 | 采用专家指导的LLM-as-a-Judge模式，依据国际人道法（IHL）进行合规性评分。 | 在边缘硬件（RTX 4090）上测试不同量化精度（16/8/4-bit）下的性能与延迟。 | 模拟战争迷雾，通过20%-80%的信息缺失和矛盾情报注入测试鲁棒性。
+Full-text notes: 全文提供了详细的实验设置、模型选择（GPT-5.4, Claude Opus 4.6等）、评估指标定义（DQ, CS, CIR）及分维度结果分析。包含对边缘部署延迟、量化影响及信息退化曲线的具体数据表格。
+
+### What is Escalation? Measuring Crisis Dynamics in International Relations with Human and LLM Generated Event Data (2024; Important; citations: 3)
+Tags: llm event coding; crisis escalation; international relations; conflict dynamics; lightgbm; shap values; policy simulation; geopolitical strategy; bargaining theory; deterrence; spiral model; predictive modeling; human llm hybrid; icb dataset; wargaming data
+利用ICBe和ICBeLLM数据集分析475场危机，通过LightGBM模型预测危机持续时间，量化行为对升级或降级的影响，发现 Bargaining 模型比传统威慑或螺旋模型更具解释力。
+Deliverables: ICBeLLM: 基于LLM的危机事件编码数据集 | 危机持续时间预测模型: 基于历史行为预测危机走向的工具 | 行为升级/降级效应图谱: 展示不同行为对危机持续时间的SHAP值贡献
+Method: 混合编码: 结合专家人工编码与LLM自动化编码 | 梯度提升树: 使用LightGBM进行回归预测 | SHAP值分析: 解释模型特征贡献度 | 时间序列分析: 基于危机内时间步长的行为序列建模
+Full-text notes: 全文为arXiv预印本，可获取完整文本。包含详细的模型训练细节、SHAP值可视化图表及古巴导弹危机、海湾战争等案例研究。
+
+### ALGORITHMIC DIPLOMACY: THE ROLE OF ARTIFICIAL INTELLIGENCE IN SHAPING 21ST CENTURY FOREIGN POLICY DECISIONS (2026; Watchlist; citations: 0)
+Tags: algorithmic diplomacy; ai in foreign policy; digital diplomacy; ai governance; geopolitics; strategic forecasting; negotiation modeling; algorithmic bias; international relations; policy decision making; black box systems; sovereignty; power asymmetry; computational governance; ethical ai
+探讨AI重塑21世纪外交决策的“算法外交”概念，分析其在预测、谈判建模中的应用及偏见、主权风险，提出负责任治理框架。
+Deliverables: 算法外交概念框架 | 负责任AI国际关系治理框架
+Method: 跨学科理论分析 | 国际关系理论与计算治理结合 | 当代案例研究
+Full-text notes: 仅获取元数据与摘要，无全文实质内容。摘要显示为理论综述与概念性分析，缺乏具体LLM技术细节或实证数据。
+
+### Integrating Generative AI into Tactical Military Decision-Making (2025; Watchlist; citations: 0)
+Tags: generative ai; military decision making; tactical command; chatgpt; human oversight; c2 systems; course of action; wargaming; national security; ai ethics; autonomous systems; defense technology; strategic studies; human machine teaming; military strategy
+探讨生成式AI（如ChatGPT）在战术军事决策中的应用，通过生成情境方案辅助指挥官优化行动选择，强调人机协同与人类最终监督。
+Deliverables: 生成式AI在战术指挥与控制（C2）模型中的集成框架 | 基于LLM的战术行动方案（COA）生成与优化方法
+Method: 概念性研究 | 生成式AI辅助决策模拟 | 人机协同决策流程分析
+Full-text notes: 摘要已涵盖核心论点：AI用于生成情境和辅助分析，但强调人类监督的必要性。全文PDF可获取，但摘录未提供具体实验数据或案例细节。
+
+### LLM-based wargame scenario generation with domain ontology (n.d.; Watchlist; citations: 0)
+Tags: llm; wargaming; scenario_generation; domain_ontology; dpo; decision_support; simulation; military_strategy; automated_reasoning; ECA_rules; fine_tuning; geopolitics; national_security; adaptive_systems; training_effectiveness
+提出结合领域本体与DPO的LLM框架，用于兵棋推演场景生成与决策支持，提升仿真真实性与训练效率。
+Deliverables: 动态LLM场景生成框架 | 兵棋领域本体库 | 集成ECA规则的决策支持模块
+Method: 大语言模型微调 | 领域本体构建 | 直接偏好优化 | 事件-条件-行动规则
+Full-text notes: 仅摘要可用，缺乏具体实验数据、基准测试对比及详细架构实现细节。
+
+## Multi-Agent Social Simulation and Synthetic Societies
+
+### Generative Agent Simulations of 1,000 People (2024; Core; citations: 304)
+Tags: generative agents; political simulation; llm social science; synthetic population; behavioral prediction; bias mitigation; agent-based modeling; survey simulation; political ideology; experimental replication; human-computer interaction; predictive modeling; qualitative data; quantitative survey; fairness in ai; policy simulation; stratified sampling; test-retest reliability; demographic parity; ai interviewer
+利用LLM构建基于个人自述数据的生成式代理，模拟1052名美国人的态度与行为，验证其在政治和社会科学预测中的通用性与准确性。
+Deliverables: 1,052个基于真实美国人的生成式代理数据集（Agent Bank）。 | 用于构建代理的开源代码库及AI访谈器工具。 | 标准化的LLM代理评估框架（以重测一致性为基准）。
+Method: 分层抽样招募1,052名美国成年人。 | AI主导的半结构化语音访谈（平均2小时）。 | 结构化问卷调查（GSS, Big Five）及行为经济学游戏。 | 对比实验：访谈代理、调查代理、组合代理与人口统计学基线代理。 | 基于两周重测一致性的归一化准确率评估。
+Full-text notes: 全文公开于arXiv。补充材料包含详细的代理构建流程、AI访谈器设计、预注册分析计划及额外的消融实验结果。
+
+### Agent-Based Modelling Meets Generative AI in Social Network Simulations (2024; Curated; citations: 34)
+Tags: agent-based modeling; large language models; social network simulation; echo chambers; political polarization; recommendation algorithms; generative agents; twitter analysis; us election 2020; homophily; rags; political strategy; disinformation; social dynamics; computational social science
+提出结合LLM与ABM的社交网络模拟框架，利用2020年美国大选Twitter数据验证。LLM代理能准确复现用户政治倾向和语言模式，偏好推荐算法显著促进同质性集群和回声室效应形成。
+Deliverables: 一个基于LLM的社交网络模拟框架（含角色刻画、推理、交互模块）。 | 基于RAG（检索增强生成）的交互模块实现。 | 2020年美国大选Twitter数据集的模拟实验结果与对比分析。 | 开源代码（承诺接受后公开）。
+Method: Agent-Based Modelling (ABM) with LLM-empowered agents. | Prompt engineering and tuning for agent characterization. | Retrieval-Augmented Generation (RAG) for interaction memory and recommendation. | Validation using 2020 US Election Twitter dataset. | Analysis of political leaning, keyword usage, homophily, and echo chamber metrics.
+Full-text notes: Full text available on arXiv. The paper provides detailed methodology including the Characterization and Simulation phases, specific LLM used (Dolphin 2.1 Mistral 7B), and comprehensive experimental results comparing preference-based vs. random recommendation strategies.
+
+### AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society (2025; Curated; citations: 142)
+Tags: llm agents; social simulation; computational social science; multi-agent systems; generative agents; political polarization; policy simulation; ubc; urban sustainability; agent-based modeling; psychological modeling; social dynamics; synthetic data; policy testing; large-scale simulation; human behavior modeling; social network analysis; economic simulation; external shocks; information spread
+提出AgentSociety平台，集成LLM智能体、真实社会环境与大规模仿真引擎，模拟1万智能体500万次互动，验证其在极化、UBI等社会实验中的有效性。
+Deliverables: AgentSociety开源仿真平台（含LLM驱动智能体、环境、引擎） | 针对五大社会议题的计算社会科学实验数据集与结果 | 支持调查、访谈、干预等社会科学研究方法的测试床
+Method: 基于心理学（马斯洛需求、计划行为理论）、经济学（DSGE）和行为科学（重力模型）的LLM智能体设计 | 自下而上的多智能体社会仿真（Bottom-up Simulation） | 分布式计算与MQTT高性能消息系统支持的大规模交互 | 情感、需求、认知模块耦合的记忆流（Stream Memory）机制
+Full-text notes: 全文公开于arXiv，包含详细的智能体心理建模（情感/需求/认知）、行为模块（移动/社交/经济）及仿真引擎架构，无付费墙限制。
+
+### Analysing LLM Persona Generation and Fairness Interpretation in Polarised Geopolitical Contexts (2026; Curated; citations: 0)
+Tags: llm bias; geopolitical simulation; persona generation; fairness interpretation; mechanistic interpretability; sae; reasoning traces; palestinian israeli conflict; socioeconomic status; social simulation; synthetic populations; alignment failure; representation risk; war context; gender bias; occupational disparity; kaist research; computational social science
+研究五款LLM在巴以冲突背景下生成 personas 的偏差。发现战争语境下巴勒斯坦人SES降低，以色列人保持中产。去偏提示导致性别分布偏移但SES差异持续，且模型推理与生成结果存在解耦。
+Deliverables: 640种实验条件下5款LLM生成的巴以身份 personas 数据集 | 基于SAE的模型推理轨迹特征分析工具应用 | 关于LLM在极化地缘政治语境中公平性解释的实证报告
+Method: 控制变量实验：5款LLM（Gemma 3, Qwen3, Llama 3.3, Gemini 2.5, GPT-4.1），640个提示条件 | 属性分析：性别、SES、职业、外貌、居住地 | 机制可解释性：使用稀疏自编码器（SAE）分析推理轨迹中的公平性特征 | 对比分析：战争 vs 非战争语境，有无去偏提示
+Full-text notes: 全文公开（arXiv）。包含详细的实验设计、结果图表（性别/SES/职业分布）、SAE特征分析细节及伦理考量。
+
+### Beyond Demographics: Aligning Role-playing LLM-based Agents Using Human Belief Networks (2024; Curated; citations: 41)
+Tags: llm agents; social simulation; belief networks; human alignment; role-playing; demographics; factor analysis; in-context learning; supervised fine-tuning; digital twins; political beliefs; opinion dynamics; synthetic populations; prompt engineering; agent construction; human likeness; latent factors; controversial beliefs; policy simulation; behavioral modeling
+研究证明仅靠人口统计信息无法使LLM代理与人类观点对齐，但通过注入基于实证信念网络的单一信念，可显著提升代理在相关话题上的人类相似度。
+Deliverables: 基于64个争议性话题和9个潜在因子的实证人类信念网络结构。 | 用于构建LLM数字孪生的提示模板和微调数据集。 | 不同LLM模型（ChatGPT, GPT-4o mini, Mistral, LLaMA 3.1）在多种对齐条件下的性能评估数据。
+Method: 因子分析（Factor Analysis）构建人类信念网络 | LLM代理构建（数字孪生） | 上下文学习（In-Context Learning, ICL） | 监督微调（Supervised Fine-Tuning, SFT） | 平均绝对误差（MAE）评估人类-LLM观点对齐度
+Full-text notes: 全文已提供。包含详细的实验设置、提示词模板、64个话题列表及因子载荷矩阵。
+
+### BluePrint: A Social Media User Dataset for LLM Persona Evaluation and Training (2025; Curated; citations: 5)
+Tags: social media simulation; llm persona; political discourse; dataset release; privacy preservation; agent evaluation; behavioral clustering; next-action prediction; canadian election; bluesky data; fine-tuning; misinformation; polarization; computational social science; ethical ai
+提出SIMPACT框架与BluePrint数据集，基于Bluesky加拿大选举数据，通过行为聚类构建隐私保护的LLM社交代理训练集，评估模型在政治话语模拟中的真实性。
+Deliverables: SIMPACT框架代码与文档 | BluePrint公开数据集（HuggingFace） | 多粒度用户行为聚类模型 | LLM社交代理评估基准与指标
+Method: 基于mE5-large的用户嵌入与约束K-means聚类 | PII移除、时间戳模糊化与密码学伪名化 | Next-action prediction任务设定 | LLM微调（LoRA）与多指标评估（Jaccard, JS Divergence, F1）
+Full-text notes: 全文公开于arXiv。详细包含数据清洗流程、隐私保护技术细节（Presidio工具使用）、聚类统计分析及附录中的关键词列表。
+
+### Decoding Echo Chambers: LLM-Powered Simulations Revealing Polarization in Social Networks (2024; Curated; citations: 32)
+Tags: llm agents; echo chambers; political polarization; social simulation; opinion dynamics; multi-agent systems; nudge theory; social networks; computational social science; policy intervention; recommendation algorithms; belief updating; personality traits; mitigation strategies; text-based simulation
+提出基于LLM的社会仿真框架SSF，模拟小世界等网络中的回声室效应。验证其比传统数值模型更准确，并证明主动/被动助推可有效缓解极化。
+Deliverables: 语言基社会仿真框架 (SSF) | 两种缓解极化的语言干预策略（主动/被动助推） | 开源代码库 (GitHub链接在文中提及)
+Method: 基于LLM的多智能体仿真 (Mesa框架) | 三种社会网络结构建模 (小世界、无标度、随机图) | 基于推荐算法的邻居交互与信念更新 | 双记忆系统 (长/短期) 与反思推理机制 | 对比实验 (BCM, FJ模型) 与极化指标评估
+Full-text notes: 全文公开于arXiv (2409.19338)，包含详细的方法论、实验设置、微观看案例及局限性讨论。
+
+### Do we Still Need People? Comparing Human and LLM Personas in Political Modeling and Simulation (2025; Curated; citations: 1)
+Tags: llm personas; political simulation; agent-based modeling; synthetic data; prompt engineering; longitudinal analysis; human-llm comparison; political messaging; social influence; methodology; survey replacement; dynamic behavior; model validation; multi-agent systems; political science methods
+研究LLM人格在政治模拟中能否替代人类。发现复杂LLM表现更好，但推理提示未必提升真实性。强调纵向动态模拟比静态调查更能揭示LLM行为偏差。
+Deliverables: 混合智能体模拟框架 | LLM人格在政治消息响应下的纵向行为数据集 | 关于LLM人格验证的方法论建议
+Method: 混合智能体基模拟（Hybrid Agent-Based Simulation） | 纵向行为追踪（Longitudinal Tracking） | LLM人格与人类样本对比分析 | 不同提示策略（Prompting Strategies）实验
+Full-text notes: 仅获取到IEEE Xplore元数据页面，无正文。结论完全基于Abstract推断。
+
+### Donald Trumps in the Virtual Polls: Simulating and Predicting Public Opinions in Surveys Using Large Language Models (2024; Curated; citations: 11)
+Tags: large language models; synthetic survey data; election prediction; public opinion simulation; matching-llm; chatgpt-4o; political strategy; demographic modeling; us election 2024; world values survey; anes; social simulation; predictive validity; cultural differences; cost-effective research
+提出Matching-LLM方法，结合历史数据与ChatGPT-4o模拟民意。在WVS调查中复现中美价值观差异，并准确预测2024年美国大选特朗普胜选，证明LLM可作为低成本民意补充工具。
+Deliverables: Matching-LLM方法论框架 | 基于WVS和ANES数据的合成民意数据集 | 2024年美国大选及2025年德国联邦选举的预测结果 | 针对ChatGPT-4o的特定Prompt模板
+Method: Persona-based LLM simulation (ChatGPT-4o) | Propensity Score Matching (PSM) with historical data | Convex combination weighting of System 1 (historical) and System 2 (LLM) responses | In-sample and out-of-sample prediction validation
+Full-text notes: 全文为arXiv预印本，无付费墙。包含详细的方法论、Prompt示例、图表及附录数据。
+
+### Emergence of human-like polarization among large language model agents (2025; Curated; citations: 23)
+Tags: llm agents; political polarization; multi-agent simulation; social network; echo chamber; confirmation bias; opinion dynamics; homophily; intervention strategies; self-regulation; computational social science; synthetic societies; backfire effect; elite signaling; selective exposure; bias mitigation; agent-based modeling; political deliberation; network topology; llm behavior
+研究模拟数千LLM智能体互动，发现其自发形成类人社会网络并产生政治极化。极化源于同质性聚类、回声室及确认偏误等机制。提出自我调节策略可消除模型固有偏差，并验证个体层面干预比网络结构干预更有效。
+Deliverables: 基于ChatGPT等LLM构建的数千智能体社会模拟系统 | 五种缓解政治极化的干预策略实验结果 | LLM智能体社会网络演化与意见动力学数据集 | 自我调节策略以修正LLM自我不一致性的方法
+Method: 大规模多智能体社会模拟（数千LLM智能体） | 基于LLM对话的自表达、沟通与意见更新三阶段机制 | Watts-Strogatz小世界网络初始化 | 配对交互实验以分离模型偏见与社会影响 | 自我调节提示工程（Self-regulation prompting） | 网络结构与个体特质干预实验
+Full-text notes: 全文开源于arXiv (2501.05171)，包含详细方法、补充实验及提示词设计。
+
+### GA-S3: Comprehensive Social Network Simulation with Group Agents (2025; Curated; citations: 16)
+Tags: social network simulation; group agents; large language models; political strategy; election prediction; multi-agent systems; synthetic societies; policy optimization; behavioral modeling; network traffic prediction; agent-based modeling; social dynamics; generative agents; computational social science; 2024 us election
+提出GA-S3系统，利用LLM构建群体智能体模拟大规模社交网络。通过分层生成、马尔可夫推理及情感衰减机制，实现对2024年网络事件流量的高精度预测，并成功预测2024美国大选结果。
+Deliverables: GA-S3开源代码 (https://github.com/AI4SS/GAS-3) | Social Network Benchmark (SNB) 数据集，包含30个2024年热门网络事件的细粒度流量数据 | 基于群体智能体的社会网络模拟框架
+Method: Group Agents (群体智能体) 建模 | Hierarchical Multiway-tree Generation (分层多叉树生成) | LLM-based Decision-Reasoning (基于大语言模型的决策推理) | Markov Network (马尔可夫网络) 状态转移 | Retrieval-Augmented Generation (RAG) 用于自适应生成 | Dynamic Time Warping (DTW) 评估指标
+Full-text notes: 附录C展示了GA-S3对2024年美国大选的预测案例，具体模拟了支持特朗普和支持哈里斯的群体智能体在关键事件（如辩论、枪击案、退选）下的情绪与行为演变，最终预测选举人票分布。
+
+### GenSim: A General Social Simulation Platform with Large Language Model based Agents (2024; Curated; citations: 41)
+Tags: llm agents; social simulation; multi-agent systems; political science methods; synthetic data; large scale simulation; error correction; computational social science; agent-based modeling; generative agents; distributed computing; policy simulation; human behavior modeling; open source platform; ai for social science
+提出GenSim平台，支持十万级LLM智能体模拟，具备通用框架、大规模并行及错误修正机制，旨在解决传统社会模拟规模小、不可控问题。
+Deliverables: GenSim开源平台代码 | 通用社会模拟编程框架 | 三个默认场景（就业市场、推荐系统、小组讨论）参考实现
+Method: 基于LLM的智能体构建（Profile, Memory, Action） | 分布式并行计算与Actor模型加速 | LLM-as-a-Judge与人类反馈结合的错误修正 | PPO强化学习与监督微调（SFT）
+Full-text notes: 全文开源，包含详细架构、实验数据（MovieLens-32M数据集验证）、界面截图及局限性讨论。
+
+### Human Preferences in Large Language Model Latent Space: A Technical Analysis on the Reliability of Synthetic Data in Voting Outcome Prediction (2025; Curated; citations: 4)
+Tags: llm synthetic data; voting prediction; latent space analysis; prompt sensitivity; political simulation; survey replacement; mechanistic interpretability; persona mapping; election forecasting; bias in llms; demographic variance; probe methodology; german politics; generative ai ethics; computational social science
+研究揭示LLM生成的投票数据缺乏人类调查的方差， persona到政党映射区分度低，且对提示词敏感，难以可靠替代人类调查。
+Deliverables: 一种基于探针的方法，用于揭示LLM潜在空间中政治隶属关系的编码方式。 | 14种不同LLM模型在德国多党制选举背景下的投票预测基准数据。 | 关于提示词敏感性与潜在空间熵之间关系的实证分析。
+Method: 使用14种白盒LLM模型进行实验。 | 开发基于多层感知机（MLP）值向量的探针，以识别与政治隶属关系相关的潜在表示。 | 通过标准化熵比较LLM生成的投票分布与德国长期选举研究（GLES）的真实数据。 | 利用Wasserstein距离量化提示词敏感性。
+Full-text notes: 全文为arXiv预印本，内容完整。主要局限在于仅测试了德国2021年选举背景及白盒模型，未涵盖闭源模型或其他政治语境。
+
+### LLM Agents Predict Social Media Reactions but Do Not Outperform Text Classifiers: Benchmarking Simulation Accuracy Using 120K+ Personas of 1511 Humans (2026; Curated; citations: 0)
+Tags: llm agents; social media simulation; behavioral prediction; persona prompting; benchmarking; political polarization; ai governance; text classification; synthetic humans; multi-agent systems; democratic resilience; predictive validity; tf-idf; mcc metric; serbia study; zero-shot learning; social network analysis; ai manipulation; policy simulation; human-ai interaction
+研究基准测试LLM代理预测人类社交媒体反应的能力。发现代理准确率70.7%，但传统文本分类器表现更优，表明预测力源于语义访问而非代理推理。
+Deliverables: 包含120,000+个代理-人格组合的大规模基准数据集。 | 1511名塞尔维亚参与者的详细调查数据及对应的社交媒体反应数据。 | 27种不同大语言模型的代理性能对比结果。 | 开源代码与数据（OSF平台）。
+Method: 基于1511名塞尔维亚参与者的调查数据构建三种粒度的人格描述（仅人口统计、仅态度、综合）。 | 使用27种LLM生成代理，进行零样本提示以预测56条社交媒体帖子的反应。 | 采用汉明准确率(Hamming accuracy)评估多标签分类性能。 | 使用机会校正指标（如MCC、平衡准确率）评估二元分类的预测效度。 | 构建分层线性混合效应模型分析LLM类型、提示类型、帖子类型等因素的影响。 | 与基于TF-IDF的传统监督机器学习分类器进行基准对比。
+Full-text notes: 摘要和引言部分提供了详细的方法论背景、假设（H1-H6）及文献综述。结果部分展示了Study 1的详细统计分析和图表描述，但Study 2（二元分类基准对比）的具体数值结果在摘录中未完全展示，仅提及MCC值。
+
+### Network formation and dynamics among multi-LLMs (2024; Curated; citations: 35)
+Tags: multi-agent simulation; network formation; social networks; llm behavior; homophily; preferential attachment; triadic closure; small-world networks; synthetic data; computational social science; agent-based modeling; bias and fairness; human-ai alignment; discrete choice modeling; real-world networks
+研究多LLM代理在网络形成中的行为，发现其复现了人类社会的优先连接、三角闭合和同质性原则，并能根据社交或职业语境调整策略，具备社会模拟潜力。
+Deliverables: 多LLM网络形成行为的基准测试框架 | LLM与人类在链接形成决策上的一致性证据 | 代码和数据集链接 (Zenodo)
+Method: 多LLM代理交互模拟 | 离散选择模型分析 | 合成网络与真实世界网络（Facebook100, Andorra, MobileD）对比 | 均匀采样与推荐系统采样策略对比
+Full-text notes: 全文可获取。详细回归系数表（Table 1）展示了不同模型在真实网络数据上的效应大小；附录包含更多稳健性检验和Chain-of-Thought实验结果。
+
+### OASIS: Open Agent Social Interaction Simulations with One Million Agents (2024; Curated; citations: 97)
+Tags: multi-agent simulation; llm agents; social media simulation; group polarization; herd effect; misinformation; agent-based modeling; scalable simulation; x platform; reddit; recommendation system; social dynamics; computational social science; large language models; synthetic data; information propagation; network effects; agent behavior; digital society; policy simulation
+提出OASIS，一个支持百万级LLM智能体的通用社交媒体模拟器，复现信息传播、群体极化及羊群效应，发现规模扩大增强群体动力学。
+Deliverables: OASIS开源模拟器代码及架构 | 百万级智能体生成与大规模推理基础设施 | 针对X和Reddit的推荐系统模拟模块 | 多平台社会现象复现数据集与实验结果
+Method: 基于LLM的基于主体的建模（ABM） | 动态环境服务器与关系数据库管理 | 基于兴趣匹配和热度的推荐系统模拟 | 时间引擎控制智能体激活概率 | 可扩展的分布式推理架构
+Full-text notes: 全文为arXiv预印本，无付费墙。包含详细的方法论、实验设置、消融研究及附录。
+
+### POSIM: A Multi-Agent Simulation Framework for Social Media Public Opinion Evolution and Governance (2026; Curated; citations: 1)
+Tags: multi-agent simulation; large language models; public opinion evolution; social media governance; bdi architecture; hawkes process; empathy paradox; computational social science; agent-based modeling; sentiment analysis; counterfactual evaluation; social network simulation; cognitive bias; opinion polarization; weibo dataset; strategy intervention; synthetic societies; emotional contagion; information cascade; policy simulation
+提出POSIM框架，结合LLM与BDI认知架构模拟社交媒体舆情。发现共情引导可能加剧负面情绪（共情悖论），为治理策略提供计算实验平台。
+Deliverables: POSIM多智能体仿真框架源代码 | 三个真实微博舆情事件数据集 | 三层渐进式验证框架 | 治理干预实验结果与策略建议
+Method: LLM驱动的Social-BDI认知架构 | Hawkes自激点过程时间引擎 | 虚拟社交媒体环境模拟 | 基于真实微博数据的三层验证 | 反事实治理策略评估
+Full-text notes: 全文可获取。详细描述了Social-BDI架构（信念-欲望-意图）、Hawkes时间引擎、推荐算法及实验设置。包含具体数据集统计、基线对比表格及伪代码。
+
+### Psychologically-Valid Generative Agents: A Novel Approach to Agent-Based Modeling in Social Sciences (2024; Curated; citations: 13)
+Tags: agent-based modeling; cognitive architecture; act-r; large language models; stance detection; computational social science; synthetic populations; behavioral simulation; epidemiology; generative agents; psychological modeling; decision making; social dynamics; nlp; human behavior; simulation; cognitive science; public health; emergent behavior; data-driven modeling
+提出结合认知架构与LLM的PVGA框架，利用立场检测初始化代理，在ABM中模拟真实人类行为。
+Deliverables: Psychologically-Valid Generative Agents (PVGA) 概念框架 | 基于CogIBL的认知决策模块 | 用于ABM初始化的立场检测(NLP)管道 | COVID-19行为预测与流行病学模拟的实证案例
+Method: Agent-Based Modeling (ABM) | ACT-R Cognitive Architecture | Large Language Models (LLM) | Stance Detection (NLP) | Instance-Based Learning (CogIBL) | Epidemiological Simulation
+Full-text notes: 全文提供详细架构图(Fig 9-10)及COVID-19口罩佩戴预测的实证数据(Fig 3-5)和模拟结果(Fig 6-8)，展示了从数据提取到行为模拟的完整流程。
+
+### Simulating Online Social Media Conversations on Controversial Topics Using AI Agents Calibrated on Real-World Data (2025; Curated; citations: 1)
+Tags: llm agents; social simulation; political polarization; opinion dynamics; agent-based modeling; social media; italian election; y social simulator; friedkin johnsen model; toxicity analysis; in group out group; recommender systems; synthetic data; computational social science; political strategy
+利用2022年意大利选举数据校准LLM智能体，在Y Social模拟器中复现社交媒体互动。发现LLM能生成连贯内容但语气同质化，意见演化趋势类似传统数学模型但缺乏细微变化，跨群体互动模拟精度有限。
+Deliverables: 基于Y Social框架扩展的LLM智能体社会模拟系统 | 2022年意大利选举Twitter对话数据的校准方法 | LLM智能体在政治话题上的意见演化轨迹数据 | 与Friedkin-Johnsen数学模型的对比分析结果
+Method: 基于LLM的Agent-Based Modeling (ABM) | 使用Y Social模拟器进行微博客网络仿真 | 利用ITA-ELECTION-22数据集校准智能体政治倾向、活动水平和毒性 | 对比实验：不同LLM模型（Llama2-70B, Llama3.2-3B）、网络初始化（空/全连接）及推荐算法 | 使用Friedkin-Johnsen模型作为意见演化的基准对照
+Full-text notes: 全文公开于arXiv (2509.18985)，包含详细的实验设置、提示词工程、网络初始化策略、意见更新机制及与真实数据的统计相关性分析图表。
+
+### Social Simulacra: Creating Populated Prototypes for Social Computing Systems (2022; Curated; citations: 456)
+Tags: large language models; social simulation; synthetic data; multi-agent systems; political strategy; community governance; prompt engineering; gpt-3; social computing; prototyping; anti-social behavior; moderation strategies; human-computer interaction; generative agents; policy design
+提出利用LLM生成大规模虚拟用户互动的社会模拟原型技术，辅助设计者预判社区规范与反社会行为。
+Deliverables: SimReddit原型工具 | 基于LLM的社会模拟提示链技术 | 50个Subreddit的重新生成数据集
+Method: GPT-3大语言模型 | Few-shot prompting生成角色 | Prompt chains构建互动 | 双盲评估与设计师可用性研究
+Full-text notes: 全文公开，详细描述了SimReddit的Generate、WhatIf、Multiverse功能及GPT-3提示工程细节。
+
+### SocioVerse: A World Model for Social Simulation Powered by LLM Agents and A Pool of 10 Million Real-World Users (2025; Curated; citations: 40)
+Tags: llm agents; social simulation; political science; election prediction; public opinion; multi-agent systems; synthetic data; user modeling; policy simulation; agent-based modeling; demographic alignment; behavioral economics; news impact; china economy; us politics; world model; social dynamics; survey simulation; llm bias; computational social science
+提出SocioVerse框架，利用1000万真实用户数据池和LLM代理进行社会模拟。通过环境、用户、场景和行为四大对齐模块，在政治选举、新闻反馈和经济调查中验证了大规模模拟的准确性与代表性。
+Deliverables: SocioVerse开源框架及代码 (GitHub: FudanDISC/SocioVerse) | 1000万真实用户行为数据池及15维人口属性标注数据集 | 三个领域的基准模拟结果：美国总统选举、突发新闻反馈、中国国家经济调查
+Method: LLM驱动的多智能体社会模拟框架 | 基于真实社交媒体数据的用户画像构建与人口分布采样 (IPF/IDS) | 四大对齐模块：社会环境注入、用户引擎、场景引擎、行为引擎 | 问卷调查、深度访谈、行为实验、社交媒体互动四种场景模板 | 使用Acc, RMSE, KL-Divergence等指标评估模拟与真实世界的一致性
+Full-text notes: 全文已提供。附录包含用户池构建细节、人口标注流程、采样算法及问卷设计。
+
+### Surveying with AI: Simulating Human Responses Using Personalized LLM Agents and Social Media Data (2025; Curated; citations: 0)
+Tags: llm agents; survey simulation; synthetic data; social media data; political opinion; human behavior modeling; survey methodology; bias analysis; multi-agent simulation; social science research; privacy preservation; response variance; factual vs subjective; steemit; ieee smc
+研究利用LLM代理结合社交媒体数据模拟人类调查响应。以Steemit用户为例，发现LLM在事实性问题模拟上有效，但在主观问题上方差较低，存在偏差。
+Deliverables: 一个灵活的基于LLM的调查模拟平台 | 关于LLM代理在社会科学调查中适用性的实证评估
+Method: 基于LLM的代理模拟 | 利用真实社交媒体数据（Steemit）进行个性化 | 对比分析模拟响应与真实人类调查数据
+Full-text notes: 仅获取到IEEE Xplore的元数据和摘要，正文被付费墙阻挡。无法获取具体的模型参数、提示工程细节及完整的统计显著性检验结果。
+
+### This human study did not involve human subjects: Validating LLM simulations as behavioral evidence (2026; Curated; citations: 10)
+Tags: llm simulation; behavioral evidence; statistical calibration; causal inference; synthetic participants; heuristic validation; political science methods; social science experiments; llm bias; human-ai interchangeability; confirmatory research; exploratory research; parameter identification; training leakage; digital twins
+本文对比启发式验证与统计校准两种LLM模拟策略，指出前者缺乏统计保证，后者在显式假设下能提供更精确且无偏的因果效应估计。
+Deliverables: LLM作为行为证据的验证框架 | 启发式验证与统计校准的对比分析 | 关于LLM模拟在探索性与确认性研究中适用性的指导原则
+Method: 文献综述与理论分析 | 对比启发式验证（Validate-then-simulate）与统计校准方法 | 基于Ludwig等人（2025）的计量经济学框架分析参数识别条件
+Full-text notes: 全文为arXiv预印本，无付费墙。摘要及引言部分详细阐述了两种验证策略的假设与局限性，正文包含对启发式验证威胁（如系统性偏差、记忆效应）的详细讨论。
+
+### Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation (2024; Curated; citations: 81)
+Tags: large language models; agent-based modeling; social movement simulation; opinion dynamics; political polarization; echo chambers; multi-agent systems; social media analysis; public opinion forecasting; hybrid simulation; political strategy; computational social science; twitter simulation; behavioral alignment; systemic risk
+提出HiSim混合框架，用LLM模拟核心用户，ABM模拟普通用户，构建Twitter环境模拟社会运动舆论动态。
+Deliverables: HiSim混合模拟框架代码 | SoMoSiMu-Bench评估基准（含MeToo, Roe, BLM数据集） | Twitter-like模拟环境实现
+Method: LLM驱动的核心用户代理（含记忆与反思模块） | 基于ABM的普通用户态度动力学模型 | 混合交互机制（LLM输出经后处理转为ABM输入） | 微观测度（立场/内容/行为对齐）与宏观系统评估
+Full-text notes: 全文开源，包含详细的模型公式、提示词工程细节、参数校准过程及消融实验。
+
+### Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies (2023; Curated; citations: 659)
+Tags: turing experiment; synthetic humans; behavioral simulation; llm bias; hyper-accuracy distortion; ultimatum game; milgram experiment; wisdom of crowds; multi-agent simulation; political strategy; human subject replication; prompt engineering; demographic simulation; alignment artifacts; social psychology; behavioral economics; policy testing; agent-based modeling; llm evaluation; synthetic data
+提出图灵实验(TE)评估LLM模拟人类行为能力，复现 ultimatum game 等经典实验，发现大模型存在超准确扭曲。
+Deliverables: 图灵实验(TE)方法论框架 | 四个经典心理学/经济学实验的LLM模拟代码与数据 | LLM模拟人类行为的偏差分析报告
+Method: 基于提示工程的零样本模拟 | 通过改变姓名和人口统计学特征生成合成样本 | 对比LLM输出与人类受试者实验结果 | 使用OpenAI API查询多种GPT模型
+Full-text notes: 全文开源，包含详细实验设置、提示词设计及附录数据。
+
+### Validating Generative Agent-Based Models of Social Norm Enforcement: From Replication to Novel Predictions (2025; Curated; citations: 2)
+Tags: generative agent-based modeling; social norm enforcement; third-party punishment; public goods game; model validation; theory of mind; strategic reasoning; social dilemma; concordia; llm simulation; reputation; cooperation; novel prediction; cognitive architecture; political strategy simulation
+提出GABM两阶段验证框架，通过复现第三方惩罚与公共品博弈，识别出人格、心智理论与战略反思是模拟人类社会行为的关键组件，并生成匿名惩罚与事前讨论的新预测。
+Deliverables: GABM系统性验证框架 | 复现经典社会困境实验的Agent架构配置 | 关于匿名惩罚动机与事前讨论干预的新颖预测
+Method: Generative Agent-Based Modeling (GABM) | Concordia框架 | 两阶段验证：复现已知行为+生成新颖预测 | 消融实验与架构对比 | 社会困境范式（信任博弈、公共品博弈）
+Full-text notes: 全文已提供。包含详细的Prompt设计、统计对比表（Table 1-3）及代码链接。
+
+### Before You Simulate: A Pre-Study Benchmark for Large Language Model Stability in Political Role-Playing Simulations (2026; Important; citations: 0)
+Tags: llm stability; political simulation; role-playing agents; chain of thought; political compass; computational social science; persona simulation; output variance; prompting strategies; behavioral consistency; mixed-effects models; synthetic populations; decoding temperature; political orientation; benchmark evaluation
+提出LLM政治角色扮演稳定性评估框架，发现CoT提示加剧漂移，高信号清晰度 persona 更稳定，建议将稳定性作为预研究基准。
+Deliverables: 行为稳定性评估框架 | 基于政治罗盘问卷的测试基准 | 整体稳定性评分（OSS）与响应熵指标
+Method: 政治罗盘问卷测试 | 基于社交媒体文本构建角色 | 线性混合效应模型分析 | 多模型重复运行对比
+Full-text notes: 仅获取摘要及元数据，无全文细节。
+
+### Characterizing the ability of LLMs to recapitulate Americans'distributional responses to public opinion polling questions across political issues (2026; Important; citations: 0)
+Tags: llm polling; synthetic populations; public opinion; distribution prediction; political simulation; prompt engineering; bias analysis; demographic modeling; cost efficiency; predictive modeling; ces dataset; gpt-4o-mini; social simulation; ai governance; methodology comparison
+提出直接分布查询框架，利用LLM预测政治民调分布，优于传统个体模拟法，且性能可预测。
+Deliverables: Direct Distribution (DD) 查询框架及提示词模板 | 基于Cooperative Election Study (CES) 的84个政治议题评估数据集 | 预测LLM民调性能（NEMD/MD/SDD）的贝叶斯岭回归模型
+Method: 对比实验：DD框架 vs SI框架 | 基准数据：2022年Cooperative Election Study (CES) | 评估指标：NEMD, MD, SDD | 预测建模：贝叶斯岭回归与梯度提升树
+Full-text notes: 全文可获取。详细包含提示词模板、UMAP可视化、回归系数表及附录中的指标定义。
+
+### Generative Agents: Interactive Simulacra of Human Behavior (2023; Important; citations: 4046)
+Tags: generative agents; multi-agent simulation; large language models; social simulation; political discourse; emergent behavior; memory retrieval; agent planning; human behavior modeling; interactive fiction; synthetic data; political campaigns; social dynamics; cognitive architecture; natural language interaction; sandbox environment; belief propagation; relationship modeling; policy prototyping; ethical ai
+提出基于LLM的生成式智能体架构，通过记忆、反思与规划实现长期行为连贯性，在模拟小镇中展现涌现的社会互动与政治讨论。
+Deliverables: Generative Agents 架构代码与演示环境 (Smallville) | 基于LLM的记忆检索、反思与规划算法实现 | 25个智能体互动的社会模拟数据集与案例
+Method: Large Language Model (GPT-3.5) 作为行为引擎 | Memory Stream: 自然语言记录经验，结合近期性、重要性、相关性进行检索 | Reflection: 定期综合记忆生成高层抽象洞察 | Planning: 将洞察转化为长期行动时间表 | Interactive Sandbox Simulation: 基于The Sims的模拟环境评估
+Full-text notes: 全文开源。详细展示了Smallville模拟环境中的政治选举对话、候选人支持度扩散、以及情人节派对的组织过程。包含具体的Prompt设计和记忆检索权重公式。
+
+### LLM Generated Persona is a Promise with a Catch (2025; Important; citations: 72)
+Tags: llm bias; synthetic population; political simulation; persona generation; election forecasting; silicon samples; methodological rigor; social science; multi-agent simulation; opinion polling; representativeness; generative agents; us politics; data bias; ai ethics
+研究揭示LLM生成的人设存在系统性偏差，增加LLM生成内容会导致模拟结果向左翼偏移，偏离真实民意。
+Deliverables: 开源约100万个LLM生成的人设数据集 | 四种人设生成方法的系统分类框架 | 基于OpinionQA和选举数据的偏差评估基准
+Method: 生成Meta、客观表格、主观表格和描述性四种人设 | 在2016/2020/2024美国总统大选投票模拟中评估 | 使用OpinionQA数据集进行多领域民意对齐度测试 | 情感分析与语义云分析人设文本特征
+Full-text notes: 全文开源，包含详细实验设置、提示词模板及附录数据。
+
+### Large Language Models as Subpopulation Representative Models: A Review (2023; Important; citations: 22)
+Tags: large language models; subpopulation representative models; public opinion simulation; political strategy; synthetic populations; survey methodology; behavior elicitation; prompting techniques; fine-tuning; political forecasting; agent-based simulation; bias in ai; misinformation risks; computational social science; demographic modeling
+综述LLM作为子群体代表性模型(SRM)的可行性，涵盖政治意见测量、行为预测及风险框架。
+Deliverables: SRM开发生命周期框架 | 现有SRM实施案例综述表 | SRM任务维度分类体系（复杂度、开放性、敏感性、交互性）
+Method: 文献综述 | 技术框架分析 | 实施案例对比
+Full-text notes: 全文为arXiv预印本，无付费墙。摘要及引言详细阐述了从传统MRP方法到LLM SRM的演进逻辑及具体技术路径。
+
+### Out of One, Many: Using Language Models to Simulate Human Samples (2023; Important; citations: 1023)
+Tags: llm_simulation; synthetic_data; political_behavior; gpt-3; algorithmic_fidelity; public_opinion; vote_prediction; social_simulation; survey_replacement; demographic_conditioning; political_psychology; methodology; bias_analysis; us_politics; anes_data
+提出“算法保真度”概念，证明GPT-3可通过人口统计背景条件化模拟美国不同人群的政治态度与投票行为，生成高保真“硅样本”。
+Deliverables: 算法保真度（Algorithmic Fidelity）的四项评估标准：社会图灵测试、向后连续性、向前连续性、模式对应。 | 硅采样（Silicon Sampling）方法论：利用真实调查数据构建背景故事以条件化LLM，生成合成人口样本。 | 基于GPT-3的模拟数据集，涵盖党派刻板印象、投票预测及复杂态度关联。
+Method: 条件化生成：将ANES和Pigeonholing Partisans调查的人口统计背景作为Prompt输入GPT-3。 | 图灵测试评估：雇佣人类评估者区分并评价人类与GPT-3生成的文本特征。 | 统计相关性分析：计算Tetrachoric相关系数和Cramer's V以量化模拟数据与真实人类数据的一致性。 | 消融实验：测试不同背景变量对模拟结果的影响。
+Full-text notes: 全文可获取。详细展示了三个研究的具体实验设计、Lucid平台评估结果、ANES投票预测的表格数据及Cramer's V相关性图表。附录包含成本分析、模型对比及更多统计细节。
+
+### S3: Social-network Simulation System with Large Language Model-Empowered Agents (2023; Important; citations: 299)
+Tags: llm agents; social simulation; agent-based modeling; political polarization; public opinion; emotional contagion; policy simulation; prompt tuning; synthetic data; computational social science; information diffusion; multi-agent systems; tsinghua university; social network analysis; generative agents
+提出S3系统，利用LLM代理模拟社交网络中的个体情感、态度及互动行为，复现信息传播与群体极化现象。
+Deliverables: S3仿真系统架构与代码实现 | 基于真实社交媒体数据构建的性别歧视与核能争议数据集 | LLM代理人口统计特征（年龄、性别、职业）预测模块
+Method: 基于代理的仿真（Agent-based Simulation） | 提示工程（Prompt Engineering）与提示微调（Prompt Tuning） | 马尔可夫过程建模情感与态度动态变化 | 利用LLM进行文本生成与行为决策
+Full-text notes: 全文开源于arXiv。详细展示了系统架构图、人口统计预测的评估指标（如性别预测F1=0.667）、以及与传统模型（LT, IC, DeGroot等）在信息/态度/情感传播上的对比实验数据。
+
+### Simulating Public Opinion: Comparing Distributional and Individual-Level Predictions from LLMs and Random Forests (2025; Important; citations: 2)
+Tags: llm simulation; public opinion; agent-based modeling; computational social science; anes dataset; random forest comparison; zero-shot learning; opinion dynamics; distributional prediction; jensen-shannon distance; political polarization; synthetic populations; nlp in social science; belief systems; misinformation diffusion
+研究利用2020年ANES数据，在零样本设置下比较LLM与随机森林模拟公众意见的能力。结果显示，尽管个体预测准确率相当，但LLM生成的聚合意见分布更接近实证真实值，表明LLM在模拟复杂意见动态方面具有潜力。
+Deliverables: 基于ANES数据的LLM与随机森林对比实验结果 | Jensen-Shannon距离和F1-score的量化评估指标 | 关于LLM作为高保真代理模拟意见动态的方法论验证
+Method: 使用2020年美国全国选举研究(ANES)真实调查数据 | 零样本设置下的LLM推理与监督式随机森林模型对比 | 使用Jensen-Shannon距离量化意见分布差异 | 使用F1-score测量个体预测准确性 | 三折交叉验证实验设计
+Full-text notes: 摘要及元数据完整。全文通过MDPI/PMC开放获取，但提供的摘录主要包含网页导航元素和图表标题，缺乏具体的实验细节、模型参数及详细结果分析。
+
+### Understanding Online Polarization Through Human-Agent Interaction in a Synthetic LLM-Based Social Network (2025; Important; citations: 10)
+Tags: llm-based social simulation; online polarization; human-agent interaction; experimental methodology; synthetic societies; affective polarization; group identity; recommendation bias; opinion dynamics; social network analysis; political discourse; echo chambers; agent-based modeling; causal inference; social media psychology
+研究构建合成LLM社交网络，让122名人类用户与AI代理互动。发现极化环境显著增加情绪感知和群体认同，降低不确定性表达，为研究政治极化提供新实验方法。
+Deliverables: 基于GPT-4o-mini的合成社交网络实验平台 | 人类与LLM代理互动的实验数据集 | 关于极化对情绪、认同和不确定性影响的可复现框架
+Method: 2x3组间因子实验设计 | LLM驱动的多智能体社会模拟 | 在线用户研究（N=122） | 前后测问卷与行为日志分析
+Full-text notes: 全文已提供。详细包含模拟模型公式、提示工程细节、实验界面描述、伦理考量及完整的统计结果表（ANOVA）。
+
+### Valid Survey Simulations with Limited Human Data: The Roles of Prompting, Fine-Tuning, and Rectification (2025; Important; citations: 6)
+Tags: llm survey simulation; synthetic data; bias correction; public opinion; fine-tuning vs prompting; prediction-powered inference; political science methodology; survey methodology; demographic conditioning; effective sample size; subgroup bias; cost-effective estimation; social simulation; human data allocation; post-hoc correction
+研究LLM模拟民意调查的偏差校正，发现结合微调与事后校正可将偏差降至5%以下，并建议将多数人类数据用于校正而非微调。
+Deliverables: 四种合成策略与两种校正方法的对比评估 | 基于NHANES和ATP数据的实证指南 | 开源代码与数据集
+Method: Supervised Fine-Tuning (SFT) | Persona-guided Prompting | Prediction-Powered Inference (PPI) | Design-based Supervised Learning (DSL) | Panel Survey Simulation
+Full-text notes: 全文已提供。包含详细的方法论、实验设置（NHANES饮食数据、ATP政治/经济数据）、偏差与方差分析、子群体效应及伦理考量。
+
+### Vox Populi, Vox AI? Using Language Models to Estimate German Public Opinion (2024; Important; citations: 12)
+Tags: llm public opinion; synthetic samples; voting behavior; german election; gpt-3.5; survey replacement; algorithmic bias; multi-party system; political simulation; cross-national comparison; election forecasting; llm limitations; social science methods; data validity; political strategy
+研究评估GPT-3.5在德语语境下模拟德国选民投票行为的能力。结果显示模型存在显著偏差，高估绿党和左翼，低估FDP和AfD，且难以捕捉复杂投票动机，表明LLM合成样本在跨语境民意估计中局限性大。
+Deliverables: 基于GPT-3.5生成的1905个德国选民合成样本数据。 | GPT-3.5预测投票选择与GLES实际调查数据的对比分析报告。 | 多变量回归模型比较结果，展示LLM与真实数据在变量效应上的差异。
+Method: 构建合成样本：基于2017年德国纵向选举研究(GLES)数据生成1905个具有人口统计学特征的虚拟选民。 | 提示工程：使用德语提示GPT-3.5(text-davinci-003)预测每个虚拟选民的投票选择。 | 统计分析：比较LLM预测分布与GLES实际分布，计算F1分数，并拟合多项式回归模型分析变量影响。
+Full-text notes: 全文提供了详细的方法论，包括提示词设计、缺失值多重插补、温度参数设置(0.9)及多次采样策略。附录包含完整的变量定义、提示词示例及回归系数表。
+
+### TwinVoice: A Multi-dimensional Benchmark Towards Digital Twins via LLM Persona Simulation (2025; Watchlist; citations: 5)
+Tags: llm persona simulation; digital twin; benchmark evaluation; multi-agent social simulation; synthetic populations; human-like behavior; personality traits; memory recall; syntactic style; llm-as-a-judge; political strategy simulation; agent fidelity; psycholinguistics; social media analysis; narrative consistency; opinion consistency; lexical fidelity; persona tone; ecological validity; synthetic data
+提出TwinVoice基准，从社会、人际、叙事三维评估LLM拟人能力，涵盖六大核心能力。实验显示先进模型在记忆召回和语气模仿上仍显著落后于人类基线。
+Deliverables: TwinVoice基准数据集（含4553个样本，覆盖多语言） | 评估代码库与排行榜（GitHub/HuggingFace） | 细粒度能力评估框架（思维连贯性与语言表现） | 判别式与生成式双重评估协议
+Method: 多维度基准构建：社会、人际、叙事三种人格维度 | 能力分解评估：观点一致性、记忆召回、逻辑推理、词汇保真、人格语气、句法风格 | 判别式任务：多项选择选择最符合人设的回复 | 生成式任务：LLM-as-a-Judge进行排名与评分 | 人类基线对照实验
+Full-text notes: 全文开源于arXiv，包含详细的数据预处理流程、评估协议、模型对比表格及人类一致性验证结果。
+
+## Peripheral and Borderline Materials
+
+### Generative Artificial Intelligence and Evaluating Strategic Decisions (2024; Curated; citations: 119)
+Tags: generative ai; strategic decision making; large language models; aggregation effects; business model evaluation; wisdom of crowds; prompt engineering; llm bias; consistency; human-ai comparison; scaling effect; diversity effect; pairwise comparison; startup evaluation; management strategy
+研究LLM评估商业模型的有效性。个体评估存在偏差，但聚合多模型、角色和提示的评估后，AI排名与人类专家高度一致，聚合规模效应显著。
+Deliverables: LLM作为战略决策辅助评估工具的方法论 | 基于聚合策略的AI评估框架 | 两个实证研究数据集及分析结果
+Method: 配对比较实验 | 多LLM聚合（GPT-4, Claude, Llama等） | 角色提示工程 | 与人类专家/非专家评估对比 | Jackknife重采样统计检验
+Full-text notes: SSRN全文可获取。详细展示了60个AI生成及真实创业项目的商业模型评估过程，包含具体的Prompt设计、LLM选择及统计图表。
+
+### SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents (2023; Curated; citations: 302)
+Tags: social intelligence; llm evaluation; multi-agent simulation; negotiation; role-playing; gpt-4; social norms; strategic communication; interactive benchmark; human-ai comparison; game theory; commonsense reasoning; persona consistency; secret keeping; relationship dynamics; iclr 2024; sotopia; agent behavior; social goals; evaluation framework
+提出SOTOPIA环境，通过角色扮演模拟多智能体社交互动，评估LLM的社会智能。发现GPT-4在复杂任务中仍逊于人类，缺乏战略沟通与常识推理能力。
+Deliverables: SOTOPIA开源交互评估环境 | SOTOPIA-EVAL多维评估框架 | 包含90个场景、40个角色、450个任务的基准数据集 | 模型与人类社交智能差异的实证分析
+Method: 基于LLM的角色扮演多智能体模拟 | 自动化多维评估（SOTOPIA-EVAL） | 人类标注者与GPT-4评估结果的相关性分析 | 对比实验（GPT-4, GPT-3.5, Llama-2, MPT） | 人机交互对比研究
+Full-text notes: 全文公开于arXiv (2310.11667)，包含详细的方法论、评估维度定义、实验设置及附录中的案例研究。
+
+### The Future Outcome Reasoning and Confidence Assessment Benchmark (2025; Curated; citations: 5)
+Tags: forecasting benchmark; confidence calibration; llm evaluation; metaculus; uncertainty quantification; political forecasting; geopolitical prediction; brier score; crps; instruction tuning; model scaling; aggregation methods; temporal reasoning; quantity estimation; boolean prediction; ai strategy; decision making; probabilistic reasoning; dataset construction; model limitations
+提出FOReCAst基准，评估LLM在布尔、时间框及数量预测中的准确性与置信度校准。
+Deliverables: FOReCAst数据集（2256个问题，源自Metaculus） | 多种LLM在预测与校准任务上的基准测试结果 | 置信度校准评估指标（修改版Brier分数、CRPS）
+Method: 从Metaculus平台提取已解决问题的社区预测数据 | 基于人类共识推导“黄金”置信度分数 | 评估布尔问题、时间框预测和数量估计三类任务 | 使用Brier Score和CRPS评估置信度校准 | 测试不同模型大小、训练截止期和指令微调的影响
+Full-text notes: 全文公开于arXiv，包含详细的数据集构建方法、评估指标公式及实验结果。
+
+### A Turing test of whether AI chatbots are behaviorally similar to humans (2024; Watchlist; citations: 254)
+Tags: ai behavioral analysis; turing test; chatbot evaluation; game theory; trust and cooperation; altruism in ai; human-ai interaction; personality traits; risk aversion; fairness assessment; ai governance; behavioral economics; llm safety; ai alignment; experimental economics
+研究通过图灵测试评估AI行为特征，发现ChatGPT在信任、公平等博弈中行为符合人类分布，且更倾向于合作与利他。
+Deliverables: 一种评估AI行为和心理特质的图灵测试方法 | 基于博弈论基准（信任、公平、风险厌恶、利他、合作）的AI行为数据集
+Method: 图灵测试框架 | 博弈论基准测试 | 行为分布对比分析
+Full-text notes: 仅获取摘要，缺乏具体实验细节、统计显著性分析及不同模型版本的详细对比数据。
+
+### AI deception: A survey of examples, risks, and potential solutions (2023; Watchlist; citations: 314)
+Tags: ai deception; llm safety; political manipulation; election tampering; sycophancy; ai alignment; policy regulation; strategic deception; ai risks; trustworthiness; hallucination; rlhf; cicero; gpt-4; ai governance; misinformation; behavioral analysis; risk assessment; bot detection; ethical ai
+综述AI欺骗行为，定义其为诱导错误信念以达成非真理目标。涵盖CICERO等特用系统及LLM的战略欺骗、阿谀奉承等现象。分析欺诈、选举干预及失控风险，提出监管、检测及去欺骗化技术解决方案。
+Deliverables: AI欺骗行为的分类框架（战略欺骗、阿谀奉承、模仿、不忠实推理）。 | 针对监管机构的政策建议（高风险分类、机器人披露法）。 | 技术检测与缓解方案（AI测谎仪、去欺骗化训练）。
+Method: 实证案例综述（分析CICERO、AlphaStar、Pluribus等系统）。 | 基准测试分析（MACHIAVELLI、Hoodwinked、TruthfulQA）。 | 行为模式观察与定义重构（基于行为而非意图定义欺骗）。
+Full-text notes: 全文可获取。详细记录了CICERO在Diplomacy游戏中的具体欺骗对话、GPT-4通过CAPTCHA测试的案例、以及LLM在道德困境中的欺骗倾向数据。
+
+### AI-Augmented Strategic Decision-Making Under Time Constraints: An Experimental Study on Mental Representations and Strategic Foresight (2026; Watchlist; citations: 1)
+Tags: llm effectiveness; strategic foresight; mental representations; time constraints; decision making; startup evaluation; information overload; psychological ownership; experimental study; cognitive processes; ai strategy; business strategy; human ai collaboration; strategic decision making; cautionary case
+研究时间约束与LLM对初创企业评估中决策者心理表征及战略预见力的影响。
+Deliverables: 2x2实验设计数据 | 关于LLM在战略决策中有效性的警示性结论
+Method: 2x2实验设计 | 初创企业评估任务 | N=348样本分析
+Full-text notes: 仅摘要可用，正文受付费墙限制，无法获取详细实验过程与统计细节。
+
+### Advancing Decision-Making through AI-Human Collaboration: A Systematic Review and Conceptual Framework (2026; Watchlist; citations: 5)
+Tags: ai-human collaboration; decision-making frameworks; bounded rationality; systematic review; bibliometric analysis; generative ai; algorithmic management; cognitive processing; organizational behavior; human-ai trust; adaptive intuition; programmed algorithms; interpretive analysis; integrative hybrid; policy implications; strategic decision support; ai ethics; organizational innovation; literature mapping; theoretical synthesis
+综述627篇文献，提出AI-人类协作决策的四种范式：适应直觉、程序算法、解释分析与整合混合。基于有界理性重构，探讨AI如何重塑决策认知边界。
+Deliverables: AI-人类协作决策的概念框架 | 四种决策范式的分类与描述 | 基于627篇文献的系统综述与文献计量分析结果
+Method: 系统文献综述 (SLR) | 文献计量分析 (Bibliometric Analysis) | 关键词共现分析 (Keyword Co-occurrence Analysis using VOSviewer) | PRISMA筛选流程
+Full-text notes: 全文可获取。详细阐述了四种范式的定义、AI与人类的角色分配、以及从直觉到混合决策的演进路径。包含具体的案例（如医疗诊断、自动驾驶、平台算法管理）。
+
+### An Institutional Theory Framework for Leveraging Large Language Models for Policy Analysis and Intervention Design (2025; Watchlist; citations: 6)
+Tags: institutional theory; policy analysis; large language models; decision support systems; institutional intelligence; data-driven policy; human-ai workflow; predictive modeling; multilingual processing; sustainable policy; intervention design; visual analytics; ai governance; public administration; theoretical framework
+提出结合制度理论与LLM的政策分析框架，引入“机构智能”概念，通过多语言数据处理和预测建模支持政策制定。
+Deliverables: 政策分析与干预设计的综合框架 | 多语言数据处理与人口趋势统计方法 | 基于AI的决策支持系统原型
+Method: 混合研究方法 | 高级可视化技术 | 制度理论分析 | LLM辅助的数据驱动分析
+Full-text notes: 摘要提及具体用例（酒店、粮食、教育）和“机构智能”定义，但缺乏技术实现细节和实证数据。
+
+### Beyond Black Boxes: Designing and Testing Agentic AI Systems for Strategy (2026; Watchlist; citations: 1)
+Tags: agentic ai; multiagent systems; strategic decision making; human ai interaction; experimental design; managerial cognition; confidence inflation; system architecture; dynamic capability; user system fit; strategy science; llm applications; business strategy; ai design taxonomy; randomized experiment
+提出AI系统设计本身即为核心能力，开发多智能体系统Aristotle进行实验，发现经验管理者提升质量，高学历者仅增自信，强调用户-系统-问题匹配。
+Deliverables: 多智能体AI系统'Aristotle'的设计与实现 | Agentic AI系统设计空间的五维分类法 | 用于评估和改进AI系统设计的实验方法论路线图
+Method: 基于Herbert Simon系统架构理论的设计视角 | 976名经理人的随机对照实验（对比Agentic AI、通用GPT-4o、纯人工） | 溯因推理推导分类法
+Full-text notes: 摘要与摘录内容一致，未提供全文细节。在线附录包含更多设计权衡细节，需通过DOI访问。
+
+### Bias in, symbolic compliance out? GPT's reliance on gender and race in strategic evaluations (2026; Watchlist; citations: 0)
+Tags: llm bias; strategic evaluation; gender bias; racial bias; symbolic compliance; startup pitches; fairness in ai; gpt evaluation; algorithmic discrimination; ai governance; bias mitigation; human-ai interaction; decision making; organizational strategy; ai ethics
+研究GPT在创业路演评估中的性别与种族偏见。发现模型虽不系统降分，但通过避免末位排名体现“象征性合规”，未能实质纠正隐性偏见，提示需加强高利害评估中的偏差缓解。
+Deliverables: 26,000次创业路演评估数据集 | 关于LLM在战略评估中偏见表现的实证证据 | 象征性合规理论框架
+Method: 控制变量实验：仅改变创始人姓名以塑造性别和种族感知 | 大规模评估：26,000次GPT评估 | 第二意见实验：模拟人类偏见输入以测试LLM纠正能力
+Full-text notes: 摘要与摘录内容一致，未提供全文细节。主要发现基于摘要描述，缺乏具体统计显著性、效应量或详细方法论参数。
+
+### Can A Society of Generative Agents Simulate Human Behavior and Inform Public Health Policy? A Case Study on Vaccine Hesitancy (2025; Watchlist; citations: 16)
+Tags: generative agents; social simulation; public health policy; vaccine hesitancy; llm alignment; agent-based modeling; policy evaluation; multi-agent systems; human behavior simulation; health informatics; simulation warmup; attitude modulation; demographic profiling; social network dynamics; policy intervention; llm reliability; computational social science; ethics in ai; sandbox simulation; health decision making
+提出VACSIM框架，利用LLM驱动的多智能体模拟疫苗犹豫行为。通过人口统计、社交网络和政策干预评估模型对齐度，发现Llama和Qwen能模拟部分人类行为，但存在人口统计一致性挑战。
+Deliverables: VACSIM框架代码（GitHub开源） | 基于LLM的多智能体社会模拟评估协议 | 不同LLM在公共卫生政策模拟中的性能基准数据
+Method: 基于LLM的生成式多智能体系统（Generative Multi-Agent Systems） | 态度调制（Attitude Modulation）与温度缩放技术 | 模拟预热（Simulation Warmup）机制 | 基于社会网络和信息传播的动态模拟 | 与真实世界调查数据（Delphi Survey）及人类专家排名的对比验证
+Full-text notes: 全文为arXiv预印本，内容完整。包含详细的框架设计、评估指标（现实对齐、全局/局部一致性）、实验设置及伦理声明。
+
+### Can AI Do Strategy? (2026; Watchlist; citations: 1)
+Tags: ai strategy; delegation ladder; causal ladder; strategic reasoning; ai autonomy; management science; strategy science; human judgment; accountability; theoretical framework; business strategy; cognitive hierarchy; ai limitations; strategic definition; special issue
+提出因果与授权双阶梯框架，指出AI将优先进入可衡量而非深推理的战略领域，强调定义清晰战略对防止技术简化概念的重要性。
+Deliverables: AI与战略的双阶梯理论框架 | 关于AI在战略中自主权边界的分类标准
+Method: 概念性框架构建 | 理论综述与逻辑推演
+Full-text notes: 仅获取摘要及引言部分，未包含特刊其他实证研究或详细案例数据。
+
+### Communication Enhances LLMs' Stability in Strategic Thinking (2026; Watchlist; citations: 1)
+Tags: llm stability; multi-agent systems; strategic communication; cheap talk; prisoner's dilemma; behavioral consistency; low-rank models; game theory; agent coordination; prompt engineering; network effects; semantic ambiguity; reproducibility; agentic ai; policy alignment
+研究证实，在7B-9B参数规模的LLM进行重复囚徒困境博弈时，低成本预沟通能显著降低行为轨迹噪声，提升战略稳定性。
+Deliverables: 基于LOWESS回归和Bootstrap重采样的LLM战略稳定性量化指标（RMSE）。 | 四种7B-9B参数模型在六种语境下的多轮博弈行为数据集。 | 关于沟通带宽对多智能体网络稳定性影响的实证分析。
+Method: 十轮重复囚徒困境博弈模拟 | 低成本预沟通（Cheap-talk）实验设计 | LOWESS局部加权散点图平滑回归 | 模拟级Bootstrap重采样与非参数推断 | 不同网络拓扑结构（ER, Power Law, Core-Periphery）下的多智能体交互
+Full-text notes: 全文已提供。包含详细的实验设置、四种模型（Qwen, Falcon, Granite, Gemma）在六种语境下的RMSE对比表格、零温度鲁棒性检查及网络交互扩展分析。
+
+### Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents (2024; Watchlist; citations: 87)
+Tags: llm multi-agent; cooperation; game theory; commons dilemma; ai safety; negotiation; govsim; sustainable equilibrium; universalization; resource management; multi-turn interaction; ai alignment; strategic reasoning; agent simulation; ethical reasoning
+提出GovSim平台评估LLM在多主体公共资源博弈中的合作能力。发现除最强模型外多数LLM无法维持可持续均衡，最高存活率低于54%。
+Deliverables: GovSim仿真环境（开源） | Agent提示词模板 | 综合Web界面 | 15种主流LLM在公共资源博弈中的基准测试数据
+Method: 构建GovSim生成式仿真平台，模拟渔业、牧场和污染三种公共资源场景 | 测试15种开源和闭源LLM在多轮博弈中的表现 | 通过消融实验分析沟通对合作的影响 | 引入“普遍化”道德推理提示进行干预实验 | 分析Agent对话内容以分类协商与信息分享行为
+Full-text notes: 全文已提供。包含详细的实验设置、三个场景（渔业、牧场、污染）的规则描述、15种LLM的基准测试结果表格、引入贪婪新来者的鲁棒性实验、普遍化推理的改进效果以及沟通消融实验的详细数据。
+
+### Cultural Evolution of Cooperation among LLM Agents (2024; Watchlist; citations: 26)
+Tags: llm agents; cultural evolution; cooperation; multi-agent systems; donor game; indirect reciprocity; game theory; ai safety; emergent behavior; model comparison; social norms; punishment mechanism; iterative deployment; benchmarking; strategic interaction
+研究LLM代理在迭代捐赠者博弈中的文化演化。发现Claude 3.5能演化出复杂合作规范，而GPT-4o趋向背叛，Gemini表现中等。
+Deliverables: 开源代码与实验设置，用于评估LLM代理的多代际互动。 | 针对间接互惠和文化演化的LLM基准测试框架建议。
+Method: 迭代捐赠者博弈 (Iterated Donor Game) | 文化演化模拟 (10代，选择前50%存活并传递策略) | 多模型对比 (Claude 3.5 Sonnet, Gemini 1.5 Flash, GPT-4o) | 引入成本惩罚机制的变体实验
+Full-text notes: 全文可获取。详细展示了各代策略复杂度变化（Table 1）、不同运行轨迹的资源积累图（Figure 4-5）及消融实验结果。
+
+### DataGovBench: Benchmarking LLM Agents for Real-World Data Governance Workflows (2025; Watchlist; citations: 2)
+Tags: data governance; llm agents; benchmark; data cleaning; etl automation; multi-agent systems; code generation; data quality; planner executor evaluator; rag; debugging; workflow automation; data science; pipeline reliability; error correction; real-world data; task success rate; agentic workflow; data integration; policy compliance
+提出首个数据治理基准DataGovBench及框架DataGovAgent，通过规划-执行-评估架构提升LLM处理复杂数据清洗与转换工作流的准确性与效率。
+Deliverables: DataGovBench基准测试套件（100个算子级任务，50个DAG级任务） | DataGovAgent多智能体框架（含规划器、执行器、评估器） | 基于“反向目标”方法的噪声数据合成工具与评估脚本
+Method: 反向目标（Reversed-Objective）噪声合成方法 | 规划-执行-评估（Planner-Executor-Evaluator）多智能体流水线 | 基于约束的DAG规划与检索增强生成（RAG） | 沙箱环境下的反馈驱动调试（Feedback-driven Debugging）
+Full-text notes: 全文已提供。包含详细的基准构建流程、实验设置、模型性能对比表格（Open/Closed Source）及框架架构图。
+
+### Decision-Making Behavior Evaluation Framework for LLMs under Uncertain Context (2024; Watchlist; citations: 53)
+Tags: llm decision making; behavioral economics; risk preference; loss aversion; probability weighting; llm bias; demographic features; tcn model; prospect theory; neural information processing systems; chatgpt evaluation; claude evaluation; gemini evaluation; algorithmic fairness; uncertainty; experimental design; policy implications; ethical ai; human alignment; computational social science
+基于行为经济学TCN模型，评估ChatGPT-4、Claude-3、Gemini-1在不确定环境下的风险偏好、概率加权及损失厌恶。发现LLM普遍具人类特征但存在差异，且嵌入人口统计特征后表现出显著偏见与行为偏移。
+Deliverables: 基于TCN模型的LLM决策行为评估框架 | 三个主流商业LLM（ChatGPT-4, Claude-3, Gemini-1）的风险偏好、概率加权及损失厌恶参数估计 | LLM在嵌入不同人口统计特征下的行为偏差数据集与回归分析结果
+Method: 基于行为经济学前景理论（Prospect Theory）和TCN模型的实验设计 | 多选项列表（Multiple-choice-list）实验以 eliciting 偏好 | 通过API调用进行大规模数据收集（300次交互/模型） | OLS回归分析评估人口统计特征对决策参数的影响 | 上下文无关（Context-free）与嵌入人口统计特征（Embedded Demographic Features）的对比实验
+Full-text notes: 全文为arXiv预印本，内容完整。包含详细的实验设计、TCN模型公式推导、参数估计方法、原始数据表格（Table 5-8）及回归系数图。
+
+### Determinants of LLM-assisted Decision-Making (2024; Watchlist; citations: 108)
+Tags: llm decision making; human ai collaboration; trust in ai; prompt engineering; transparency; explainability; psychological factors; dependency framework; literature review; decision support systems; over-reliance; mental models; accountability; task difficulty; human computer interaction
+综述LLM辅助决策的技术、心理及任务决定因素，构建依赖框架以优化人机协作。
+Deliverables: LLM辅助决策决定因素的结构化分类体系。 | 决定因素间相互依赖关系的概念框架。 | 六个具体应用场景（医疗、营销等）的分析案例。
+Method: 整合性文献综述 (Integrative Literature Review)。 | 跨学科文献筛选与综合。 | 特征图 (Feature Diagrams) 建模。
+Full-text notes: 全文为arXiv预印本，无付费墙。摘要及前几章详细阐述了方法论框架、决定因素分类（技术/心理/任务）及初步应用场景，后续章节涉及具体依赖关系的推导。
+
+### Diversity and language technology: how language modeling bias causes epistemic injustice (2024; Watchlist; citations: 76)
+Tags: language modeling bias; epistemic injustice; llm ethics; low-resource languages; digital divide; linguistic diversity; algorithmic bias; computational linguistics; neocolonialism; ai safety; machine translation bias; lexical gaps; co-design; knowledge production; cultural homogenization
+本文批判LLM扩展至低资源语言时的“语言建模偏差”，指出其导致认知不公。提出“有意义多样性”概念，主张通过共同设计解决技术殖民主义。
+Deliverables: 提出“语言建模偏差”的理论框架与定义。 | 提出“LiveLanguage”共同设计倡议作为替代方案。 | 提供机器翻译和词汇数据库中的偏差案例（如亲属称谓、不可译词）。
+Method: 概念分析与哲学批判（认识论不正义）。 | 对现有语言技术（LLM、MT、词典）的偏差案例研究。 | 对计算语言学社区出版数据的统计分析。
+Full-text notes: 全文可获取。详细分析了Transformer架构对词序的偏差、子词分词对形态复杂语言的劣势、以及多语言词典通过英语Synsets映射导致的语义损失。
+
+### Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf (2023; Watchlist; citations: 287)
+Tags: large language models; communication games; werewolf; emergent behavior; multi-agent systems; prompt engineering; incomplete information; theory of mind; experience replay; strategic reasoning; social simulation; game theory; retrieval augmented generation; chain of thought; zero-shot learning; agent simulation; political strategy; negotiation; deception; trust dynamics
+提出免微调框架，利用检索与反思机制让LLM在狼人杀中展现信任、伪装等 emergent 策略行为。
+Deliverables: 基于检索与反思的免微调LLM博弈框架 | 狼人杀多智能体模拟实验数据与代码 | LLM在不完全信息博弈中的策略行为分类
+Method: 冻结LLM参数，仅通过Prompt工程交互 | 基于新鲜度、信息量和完整性的历史消息检索 | 通过问答生成反思（Reflection）压缩上下文 | 构建经验池，基于相似度检索并提取建议（Suggestion） | 链式思维（CoT）推理辅助决策
+Full-text notes: 全文开源，包含详细的Prompt设计、消融实验、信任关系可视化及策略行为案例分析。
+
+### Game-theoretic LLM: Agent Workflow for Negotiation Games (2024; Watchlist; citations: 59)
+Tags: llm rationality; game theory; agent workflow; nash equilibrium; negotiation; strategic decision making; backward induction; bayesian updating; multi-agent systems; ai strategy; political strategy simulation; behavioral game theory; llm limitations; reasoning enhancement; complete information games; incomplete information games; policy simulation; conflict resolution; cooperative games; competitive games
+评估LLM在博弈论游戏中的理性，发现其常偏离纳什均衡。设计基于经典博弈论的工作流（如逆向归纳、贝叶斯更新）引导LLM推理，显著提升其在完全/不完全信息博弈中的策略优化与抗剥削能力。
+Deliverables: 基于经典博弈论的LLM Agent工作流设计（完全/不完全信息） | 包含10+种经典博弈的LLM理性评估基准测试集 | 开源代码与数据（GitHub） | 关于LLM在博弈中非理性行为的详细实证分析
+Method: 多模型对比实验（GPT-4o, Claude, o1等） | 完全信息博弈测试（同时/序贯） | 不完全信息博弈测试（谈判、Deal or No Deal） | 结构化推理工作流引导（逆向归纳、贝叶斯更新、优势策略搜索） | 纳什均衡与帕累托最优达成率评估
+Full-text notes: 全文公开于arXiv。详细展示了工作流的具体算法步骤、博弈树结构、各模型在不同游戏（如囚徒困境、斗鸡博弈、 escalation game）中的具体表现数据及错误策略案例。
+
+### Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity (2025; Watchlist; citations: 8)
+Tags: llm social agents; political simulation; generative exaggeration; ideological bias; toxicity amplification; x twitter data; 2024 us election; zero shot few shot; gemini mistral deepseek; political polarization; content moderation; agent-based modeling; structural bias; lexical diversity; political discourse
+研究LLM模拟2024美国大选X平台用户行为，发现增加上下文虽提升意识形态一致性，但导致毒性、极化及“生成性夸大”，即LLM重构而非复制用户，引入结构性偏差。
+Deliverables: 基于1,186名真实用户的1,000+个LLM社会代理数据集。 | 2100万条X平台2024美国大选互动数据的处理与分析框架。 | “生成性夸大”概念及意识形态一致性、毒性放大的量化评估指标。 | 六种不同规模LLM（Gemini, Mistral, DeepSeek）在政治模拟中的偏差对比报告。
+Method: 构建基于真实用户数据的LLM代理，采用Zero Shot和Few Shot两种初始化策略。 | 利用2100万X平台互动数据，评估语言风格、意识形态一致性和毒性。 | 使用LogTTR衡量词汇多样性，Perspective API检测毒性，立场分类器评估政治倾向。 | 对比人类回复与LLM生成回复，分析系统性偏差和结构性扭曲。
+Full-text notes: 全文已提供。详细展示了LogTTR曲线、意识形态一致性损失计算、毒性百分位分布及表情符号/标签夸大比例。
+
+### How Far Are We on the Decision-Making of LLMs? Evaluating LLMs' Gaming Ability in Multi-Agent Environments (2024; Watchlist; citations: 67)
+Tags: game theory; multi-agent systems; llm evaluation; decision making; nash equilibrium; chain of thought; benchmark; strategic reasoning; iclr 2025; gpt-4; gemini; llama-3; robustness; generalizability; prompt engineering; social dilemma; auction; cooperation; betrayal; sequential games
+提出GAMA-γ-Bench评估LLM在多智能体博弈中的决策能力。涵盖合作、背叛及序贯博弈。Gemini-1.5-Pro得分最高，CoT提示显著提升GPT-3.5表现，但模型泛化性有限。
+Deliverables: GAMA-γ-Bench基准测试框架及代码 | 13个主流LLM在多智能体博弈中的性能排行榜 | 关于LLM博弈策略、鲁棒性及泛化性的详细分析报告
+Method: 构建包含8个经典博弈场景的多智能体评估框架 | 动态参数调整以测试泛化性并防止测试集泄露 | 对比分析不同模型、温度参数及提示策略(CoT/Persona)的影响 | 基于纳什均衡和社会福利的定量评分体系
+Full-text notes: 全文公开于arXiv及ICLR 2025。包含详细的博弈规则定义、评分公式推导、各模型在8个具体游戏（如猜2/3均值、海盗分金、决斗等）中的逐轮行为分析及图表数据。
+
+### How Well Can AI Do Strategy? Empirical Benchmarking Using Strategy Simulations (2026; Watchlist; citations: 2)
+Tags: llm strategy benchmarking; strategic decision making; back bay battery simulation; ai performance evaluation; strategic uncertainty; exploration vs exploitation; llm reasoning models; business strategy simulation; ai bias in strategy; frontier model regression; policy simulation; game theory ai; managerial strategy; llm capabilities assessment; strategic planning ai
+利用Back Bay Battery模拟评估21家专有及13家开源LLM的战略决策能力，发现早期推理模型优于MBA学生，但2025年前沿模型因过度开发核心业务而表现下滑，暴露出管理战略不确定性的弱点。
+Deliverables: Back Bay Battery (BBB) 战略模拟基准测试框架 | 21家专有和13家开源LLM在战略决策任务上的性能对比数据 | 基于模拟的LLM战略能力评估方法论指导
+Method: 使用Back Bay Battery (BBB) 商业战略模拟作为评估环境 | 构建专用接口使LLM首次接触模拟，屏蔽标识符以减少训练数据污染 | 评估模型在平衡短期利润与长期竞争定位、整合复杂信息方面的表现 | 对比不同代际LLM及历史MBA学生群体的绩效数据
+Full-text notes: 摘要已包含核心发现与方法论细节。在线附录提供详细数据，链接为 https://doi.org/10.1287/stsc.2025.0444 。
+
+### Human‑Centered Governance for AI‑Augmented Decision Support in Public‑Sector Logistics (2025; Watchlist; citations: 0)
+Tags: ai governance; public sector logistics; human in the loop; algorithmic accountability; decision support systems; sociotechnical systems; policy implementation; algorithmic fairness; human ai collaboration; public administration; ethics in ai; transparency; audit trails; digital government; operational efficiency
+研究探讨公共部门物流中AI决策支持系统的设计，旨在平衡效率与民主问责。发现混合人机模式（HITL/HOTL）可显著降低错误率并提升公平性，主张通过制度化的透明度与审计机制实现负责任的AI治理。
+Deliverables: 面向公共部门物流的以人为本的治理框架 | 关于HITL/HOTL架构在降低错误率和提升公平性方面的实证证据 | 将伦理原则转化为工程级实施蓝图的政策建议 | 算法影响评估（AIA）和公共审计日志发布的制度化建议
+Method: 定性多方法设计 | 比较历史分析（2015-2025） | 解释性多案例研究 | 基于场景的政策分析 | 主题编码与跨案例模式分析 | 三角验证
+Full-text notes: 全文已提供。包含详细的文献综述（STS、HCI、公共价值理论）、方法论细节、来自欧盟、美国、亚太地区的案例发现（如巴塞罗那、首尔、安大略省），以及具体的政策建议章节。
+
+### Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback (2023; Watchlist; citations: 248)
+Tags: llm negotiation; self-play; ai feedback; in-context learning; multi-agent systems; strategic reasoning; game theory; gpt-4; claude; autonomous agents; alignment; policy simulation; behavioral games; iterative improvement; deal price optimization
+研究LLM通过自我对弈和AI反馈在谈判游戏中自主改进的能力。发现仅强模型能持续优化，且存在价格与成交率的权衡。
+Deliverables: ICL-AIF（基于AI反馈的上下文学习）框架 | 多模型谈判能力基准测试数据 | 开源代码与提示词模板
+Method: 多智能体自我对弈（买方、卖方、评论家） | 基于自然语言反馈的上下文学习 | 多轮迭代优化与状态监测
+Full-text notes: 全文已提供。实验显示AI反馈效果可比肩人类反馈但更具可扩展性；详细展示了不同模型在角色、轮次上的表现差异及语言复杂度变化。
+
+### LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation Games (2023; Watchlist; citations: 65)
+Tags: multi-agent negotiation; llm evaluation benchmark; ai safety and alignment; theory of mind in llms; strategic reasoning; adversarial attacks on llms; chain of thought prompting; cooperation and competition; multi-turn interaction; ai deception and manipulation; game theory for ai; model capability assessment; mixed population simulation; policy negotiation; autonomous agents
+提出基于多智能体谈判游戏的LLM评估基准，测试协作、竞争及对抗能力。GPT-4表现最佳但仍有不足，开源模型差距明显。
+Deliverables: 可调节难度的多智能体谈判游戏基准（含基础及3个新游戏） | 评估LLM协作、推理、ToM及安全性的标准化指标体系 | 开源代码平台、游戏提示词模板及模型交互日志 | 针对贪婪、对抗及妥协行为的变体实验数据集
+Method: 构建6方5议题的非零和谈判博弈环境 | 设计结构化提示框架：观察、探索、秘密草稿与规划 | 引入角色激励变体：妥协、贪婪、对抗（定向/非定向） | 量化评估指标：最终成功率、自身/集体得分、信息泄露率 | 对比测试GPT-4/3.5、Gemini、Llama及Mixtral等模型
+Full-text notes: 全文为arXiv预印本，无付费墙。附录包含详细提示词、算法伪代码及额外实验图表。
+
+### Large Language Model–Powered Public Service Platforms for Automated Case Assistance and Decision Support (2023; Watchlist; citations: 0)
+Tags: large language models; public service delivery; automated case assistance; decision support systems; government AI; policy implementation; administrative automation; human-in-the-loop; ai governance; data privacy; model bias; explainability; social welfare; legal advisory; citizen services; architectural design; ethical ai; public sector innovation
+综述LLM在公共服务自动化与决策支持中的应用，提出分层架构，涵盖福利、法律等领域，强调隐私、偏见及人机协同治理。
+Deliverables: LLM驱动的公共服务平台分层架构模型 | 针对公共部门应用的伦理AI治理与领域特定模型优化建议
+Method: 文献综述 | 架构设计分析 | 应用场景案例研究
+Full-text notes: 仅基于摘要和简短摘录，缺乏具体实验数据、模型性能指标或详细案例实证。
+
+### Measuring Bargaining Abilities of LLMs: A Benchmark and A Buyer-Enhancement Method (2024; Watchlist; citations: 41)
+Tags: llm negotiation; bargaining benchmark; ai agent strategy; game theory; buyer enhancement; og-narrator; amazon price data; asymmetric game; llm evaluation; autonomous agents; rubinstein model; deal rate optimization; profit maximization; chatgpt vulnerability; zero-shot reasoning; prompt engineering; agent behavior; economic simulation; policy simulation; strategic planning
+构建LLM议价基准，发现买方难且大模型无优势。提出OG-Narrator方法，通过解耦报价生成与文本叙述，显著提升买方成交率与利润，甚至使未对齐模型有效议价。
+Deliverables: AmazonHistoryPrice数据集（930个真实商品） | LLM议价能力基准测试框架 | OG-Narrator增强方法代码
+Method: 非对称不完全信息博弈建模 | 基于Rubinstein议价模型的基准测试 | 确定性报价生成器结合LLM叙述者架构
+Full-text notes: 全文开源。包含详细实验设置、变量定义（预算/成本/成交价）、多种LLM（GPT-4, Llama-2, Mistral等）的买方/卖方性能对比数据及OG-Narrator的具体实现逻辑。
+
+### Multi-Agent Risks from Advanced AI (2025; Watchlist; citations: 127)
+Tags: multi-agent systems; ai safety; risk taxonomy; llm agents; coordination failure; ai collusion; ai conflict; emergent agency; network effects; selection pressures; ai governance; adversarial attacks; zero-shot coordination; resource dilemmas; military ai; algorithmic collusion; information asymmetry; destabilizing dynamics; commitment problems; multi-agent security
+报告构建多智能体系统风险分类，识别协调失败、冲突与串通三种模式，及信息不对称等七大风险因素，强调现有单智能体安全框架的不足。
+Deliverables: 多智能体风险结构化分类法 | 针对AI安全、治理与伦理的启示与建议 | 多个真实案例研究与实验数据
+Method: 结构化风险分类与理论分析 | 基于LLM的零样本协调实验 | 公共资源博弈模拟 | 现有文献与案例研究综述
+Full-text notes: 全文开源。包含详细案例研究，如驾驶协调失败、军事冲突升级、算法串通及对抗攻击等，并附有实验细节附录。
+
+### Nicer Than Humans: How do Large Language Models Behave in the Prisoner's Dilemma? (2024; Watchlist; citations: 65)
+Tags: large language models; prisoner's dilemma; game theory; llm alignment; behavioral economics; social agents; iterative games; llm auditing; cooperation; prompt engineering; meta-prompting; sfem; strategic behavior; artificial intelligence; policy simulation
+研究Llama2/3和GPT3.5在重复囚徒困境中的行为。发现LLM总体比人类更合作，Llama2/3.5宽容，Llama3具剥削性。提出元提示法评估规则理解，为LLM审计提供基准。
+Deliverables: 针对IPD的LLM行为基准数据集 | 元提示法（Meta-prompting）评估框架 | 策略频率估计方法（SFEM）在LLM分析中的应用 | 不同模型在博弈论场景下的行为配置文件
+Method: 重复囚徒困境模拟（100轮） | 元提示法验证规则理解 | 策略频率估计方法（SFEM） | 行为维度量化分析（Nice, Forgiving等） | 不同记忆窗口大小的敏感性测试
+Full-text notes: 全文开源（arXiv）。包含详细的实验设置、提示词模板、SFEM算法细节及附录中的鲁棒性分析。
+
+### Reproducing and Extending Experiments in Behavioral Strategy with Large Language Models (2024; Watchlist; citations: 3)
+Tags: llm agents; behavioral strategy; experimental replication; nk model; search behavior; cognitive simulation; variance mitigation; think-aloud protocol; exploitation vs exploration; methodology; ai in social science; decision making; gpt-4o; simulation; human-like behavior
+研究利用LLM代理复现行为战略实验，发现其能模拟人类搜索与决策，但方差较低。通过混合不同模型可提升方差匹配度，并揭示前瞻性思维与开发倾向的相关性。
+Deliverables: LLM作为行为战略研究替代或补充实验主体的方法论框架 | 通过混合LLM种群解决方差不足的技术方案 | 基于LLM思维链分析认知注意力（前瞻/回溯）的新指标
+Method: 基于NK模型的“外星人游戏”实验复现 | 使用ChatGPT-4o生成代理进行模拟实验 | Heckman两阶段回归模型分析搜索决策 | 文本分析提取LLM的“思维链”以测量注意力方向
+Full-text notes: 全文摘录显示研究详细描述了将图形界面实验转化为文本提示的过程，以及通过混合GPT-4o和GPT-3.5来模拟人类方差的具体实验设计和统计结果。
+
+### Shall We Team Up: Exploring Spontaneous Cooperation of Competing LLM Agents (2024; Watchlist; citations: 49)
+Tags: llm agents; social simulation; spontaneous cooperation; multi-agent systems; game theory; bertrand competition; keynesian beauty contest; emergent behavior; computational social science; deliberate reasoning; in-context learning; collusion detection; agent communication; behavioral alignment; sabm framework
+研究LLM在竞争场景中自发合作能力，通过凯恩斯选美、伯特兰竞争和紧急疏散三个案例，证明无显式指令下LLM能基于上下文学习达成合作，结果与人类行为数据一致。
+Deliverables: 开源代码库 (SABM框架下的三个案例实现) | LLM自发合作行为的定性日志与定量指标数据集 | 用于评估LLM深思熟虑推理能力的新基准方法
+Method: 基于SABM框架的多智能体社会模拟 | 凯恩斯选美游戏 (Keynesian Beauty Contest) | 伯特兰价格竞争 (Bertrand Competition) | 紧急疏散网格世界模拟 (Emergency Evacuation) | 消融实验 (对比有/无指令、有/无沟通场景)
+Full-text notes: 全文已提供。详细展示了三个案例的模拟流程、提示词设计、结果图表及与人类数据的对比分析。
+
+### When Reasoning Models Hurt Behavioral Simulation: A Solver-Sampler Mismatch in Multi-Agent LLM Negotiation (2026; Watchlist; citations: 1)
+Tags: llm behavioral simulation; multi-agent negotiation; reasoning models; solver-sampler mismatch; policy simulation; institutional design; agent diversity; concession dynamics; gpt-5.2; deepseek; gemini; scaffold prompting; bounded rationality; simulation validity; strategic problem solving
+研究揭示强推理LLM在行为模拟中因过度优化策略而丧失多样性，导致谈判僵化。提出“求解器-采样器不匹配”概念，建议按行为角色而非能力评估模型。
+Deliverables: 提出“求解器-采样器不匹配”理论框架。 | 构建包含动作熵、让步弧线率等指标的行为多样性评估体系。 | 提供跨模型（Gemini, DeepSeek, OpenAI）的多智能体谈判实验数据。
+Method: 多智能体谈判模拟实验（三种制度结构场景）。 | 对比不同推理模式（原生推理、无反思、结构化脚手架）。 | 使用动作熵、让步率、最大回合耗尽率进行量化诊断。 | Bootstrap置信区间与置换检验统计显著性。
+Full-text notes: 全文可获取。详细实验设置、提示词、脚手架结构、原始转录片段及鲁棒性检查表见附录。
+
+### Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making (2026; Watchlist; citations: 1)
+Tags: human-ai interaction; llm roles; decision-making; human-in-the-loop; prompt engineering; cognitive forcing; system design; trust calibration; overreliance; clinical decision support; socio-technical factors; archetypes; workflow design; llm output bias; user autonomy
+提出17种人机LLM原型，通过文献综述与临床案例评估，揭示角色分配对决策结果的影响。
+Deliverables: 17种人机LLM原型分类框架。 | 基于113篇文献的系统性综述与主题分析。 | 针对临床诊断案例的原型实证评估结果。 | 人机AI决策系统设计指南与风险考量。
+Method: 范围综述（Scoping Literature Review） | 主题分析（Thematic Analysis） | 实证案例研究（临床诊断任务）
+Full-text notes: 摘要及前7页内容完整，涵盖方法论、17种原型定义及详细分类表。后续实证评估细节及完整讨论部分未提供。
+
+## Policymaking, Governance, and Institutional Decision Support
+
+### A Methodology to Develop Agent-Based Models for Policy Support Via Qualitative Inquiry (2023; Curated; citations: 18)
+Tags: agent-based modeling; qualitative research; policy support; methodology; desire framework; generic agent model; disaster management; jakarta case study; computational social science; system dynamics; mixed methods; conceptual framework; model formalization; policy evaluation; information diffusion
+提出结合定性研究与ABM的政策支持方法论，通过概念框架平衡可比性与灵活性，并以雅加达灾害信息管理为例验证。
+Deliverables: 两阶段ABM开发方法论（概念框架开发+模型开发） | 基于DESIRE和GAM的通用模型复用机制 | 雅加达灾害信息管理实证案例模型
+Method: 定性案例研究 | 混合编码（演绎与归纳） | 基于通用模型（GAM）的组件化设计 | 概念框架构建
+Full-text notes: 全文公开。详细阐述了从文献综述、需求设计、案例研究到概念框架设计，再到模型形式化、叙事开发和软件实现的完整步骤。
+
+### AI and Corruption: Legal Liability in Algorithmic Decision-Making (2025; Curated; citations: 2)
+Tags: ai governance; corruption detection; legal liability; algorithmic accountability; public sector ai; regulatory frameworks; ai bias; transparency; policy analysis; eu ai act; government procurement; whistleblower systems; doctrinal analysis; ai ethics; institutional trust
+探讨AI在公共部门反腐中的双重作用及法律责任。指出AI虽能提升透明度，但在法律薄弱地区可能被用于掩盖腐败。强调需明确开发者、政府与用户的责任矩阵，并加强监管框架。
+Deliverables: AI腐败责任矩阵（开发者、政府机构、最终用户的具体义务）。 | 针对公共AI系统的独立审计和吹哨人制度更新建议。 | 加强监管框架以明确AI问责制的政策建议。
+Method: 定性研究设计 | 教义法律分析 (Doctrinal legal analysis) | 文献综述 (学术文章、法律、官方报告) | CRAAP测试评估来源
+Full-text notes: 全文为开放获取 (CC BY 4.0)，内容完整。详细分析了墨西哥、巴西、西班牙、英国、法国、美国、乌兹别克斯坦等国的AI反腐实践及法律现状。
+
+### AI in Conflict Resolution: Practical Considerations, Opportunities and Challenges (2025; Curated; citations: 0)
+Tags: large language models; conflict resolution; generative ai; policy making; governance; ai ethics; ai challenges; ai opportunities; democratic deliberation; institutional decision support; ai in social sciences; wiley online library; access denied; 2025 literature; ai efficiency
+探讨生成式AI特别是大语言模型在冲突解决领域的机遇与挑战，关注效率提升及科学发现潜力。
+Deliverables: LLM在冲突解决领域的机遇与挑战综述
+Method: 文献综述 | 理论分析
+Full-text notes: 无法访问全文。Wiley Online Library页面显示Cookie已禁用，导致登录/浏览失败。仅能依据摘要和元数据判断，缺乏具体案例、方法论细节及实证结果。
+
+### Are We Asking the Right Questions?: Designing for Community Stakeholders’ Interactions with AI in Policing (2024; Curated; citations: 27)
+Tags: algorithmic crime mapping; human-ai decision making; predictive policing; hci in public sector; anchoring bias; community stakeholders; law enforcement agents; kernel density estimation; algorithmic bias; participatory design; public safety; critical algorithm studies; human-centered ai; police resource allocation; stakeholder engagement
+研究探讨社区、技术人员与警员对算法犯罪地图的互动。发现警员存在锚定偏差，社区成员质疑工具动机，三方均能提供关键设计反馈。
+Deliverables: 交互式犯罪地图原型应用 | 基于KDE算法的参数调整界面 | 针对公共部门AI设计的利益相关者反馈框架
+Method: 混合方法研究 | 实验室实验（60名参与者） | 半结构化访谈 | NASA-TLX工作量评估 | 主题分析
+Full-text notes: 全文公开。详细描述了KDE算法参数设置、参与者人口统计学特征、实验流程及定性访谈编码过程。
+
+### Audit Trails for Accountability in Large Language Models (2026; Curated; citations: 2)
+Tags: llm accountability; ai audit trails; governance frameworks; model provenance; tamper-evident logs; ai policy; mlops governance; traceability; risk management; open source ai tools; compliance automation; sociotechnical systems; ai transparency; decision logging; regulatory compliance
+提出LLM审计追踪机制，通过时间戳、防篡改记录链接技术溯源与治理决策，解决AI问责缺失问题。
+Deliverables: LLM全生命周期审计事件类型与元数据规范 | 轻量级事件发射器与追加式审计存储架构 | 开源Python审计追踪库及CLI治理工具 | 金融与医疗场景下的审计追踪应用案例
+Method: 生命周期事件建模与元数据标准化 | 基于哈希链的追加式不可变日志存储 | 轻量级代码插桩与中间件集成 | 跨组织签名指针与隐私保护机制
+Full-text notes: 全文可获取。详细阐述了金融聊天机器人和临床文档助手两个场景中的审计需求，提供了具体的系统架构图、Python代码集成示例及完整性验证逻辑。
+
+### Can AI Deliberate? Evaluating Deliberative Quality and Stance Flow in Multi-Agent LLMs (2026; Curated; citations: 0)
+Tags: multi-agent llm; deliberative quality; stance certainty; reasoning style; gpt-4o-mini; democratic deliberation; policy persuasion; stance flow; analytic reasoning; storytelling reasoning; ai governance; computational social science; chi conference; argumentation clarity; collective reasoning
+研究评估多智能体LLM在AI艺术、外籍投票权及气候政策议题上的审议质量。发现分析式推理与高确定性结合能产生最完整的审议，促进立场重构与集体推理。
+Deliverables: 基于GPT-4o-mini的多智能体对话数据集 | 审议质量指数(DQI)评估框架 | 立场流动(stance-flow)度量指标
+Method: 2x2因子设计实验 | 多智能体对话生成 | Deliberative Quality Index (DQI)评估 | 立场流动分析
+Full-text notes: 仅基于摘要和简短摘录。全文未提供，无法确认具体实验细节、统计显著性分析及DQI的具体计算权重。
+
+### Can AI mediation improve democratic deliberation? (2026; Curated; citations: 0)
+Tags: large language models; democratic deliberation; ai mediation; habermas machine; political equality; scalable oversight; social choice theory; reward modeling; hierarchical aggregation; policy persuasion; algorithmic fairness; citizen engagement; deliberative democracy; ai governance; consensus building
+探讨LLM如何通过Habermas Machine解决民主审议的规模、平等与质量困境，分析其技术架构、公平性及可扩展性挑战。
+Deliverables: Habermas Machine (HM) 技术架构详解 | AI调解民主审议的公平性设计原则 | 大规模审议的可扩展监督策略
+Method: 文献综述与理论分析 | 对Habermas Machine实验结果的二次分析 | 社会选择理论与奖励模型（PRM）的技术解构
+Full-text notes: 全文基于arXiv预印本，内容完整。详细讨论了HM的生成模型与奖励模型机制、公平性评估指标及分层聚合方案。
+
+### Generating Fair Consensus Statements with Social Choice on Token-Level MDPs (2025; Curated; citations: 1)
+Tags: generative social choice; token-level mdp; fairness in llm; consensus generation; egalitarian welfare; ex-ante core; guided decoding; nash welfare; multi-agent alignment; democratic deliberation; policy optimization; social choice theory; llm reasoning; collective intelligence; algorithmic fairness
+提出基于Token级MDP的共识生成框架，利用社会选择理论实现公平性。通过最大化纳什福利保证事前核心稳定性，或搜索最大化平均福利以生成单一文本，优于Habermas Machine等基线。
+Deliverables: Token-level MDP公平共识生成形式化框架 | 基于Nash Welfare最大化推导事前核心随机策略的算法 | 基于Egalitarian Welfare优化的确定性搜索算法(有限前瞻/束搜索) | 开源代码实现
+Method: Token-level Markov Decision Process (MDP) modeling | Social Choice Theory (Ex-ante Core, Nash Welfare, Egalitarian Welfare) | Reinforcement Learning from Human Feedback (RLHF) concepts (Implicit Q-functions) | Beam Search and Finite Lookahead Search | Convex Optimization (Frank-Wolfe algorithm)
+Full-text notes: 全文为arXiv预印本，无付费墙。包含详细数学推导、算法伪代码及附录中的实验设置与结果。
+
+### Generative Social Choice (2023; Curated; citations: 62)
+Tags: generative social choice; large language models; proportional representation; democratic deliberation; policy summarization; social choice theory; balanced justified representation; ai governance; preference extrapolation; text generation; voting theory; open-ended decisions; policy persuasion; computational social science; llm prompting; representative democracy
+提出生成式社会选择框架，结合社会选择理论与LLM，通过判别与生成查询，在开放-ended民主过程中实现比例代表性，并在堕胎政策调查中验证了高代表满意度。
+Deliverables: 生成式社会选择理论框架 | 平衡代表性（BJR）公理定义 | 满足BJR的民主过程算法（Process 1 & 2） | 基于LLM的判别与生成查询实现代码 | 100名美国居民堕胎政策观点公开数据集
+Method: 社会选择理论建模 | LLM提示工程（判别与生成查询） | 聚类算法（平衡k-means） | 实证试点研究（100人样本） | VC维度学习理论分析
+Full-text notes: 全文开源于arXiv，包含详细算法证明、提示词设计及附录数据。
+
+### Governing AI with trust: an adaptive framework for institutional legitimacy in the UK public sector (2025; Curated; citations: 1)
+Tags: ai governance; public trust; institutional legitimacy; uk public sector; regulatory framework; algorithmic accountability; policy analysis; adaptive governance; digital government; transparency; compliance vs legitimacy; nhs ai; gov.uk; democratic accountability; conceptual model
+本文批判英国公共部门AI监管的碎片化，提出以合法性为核心的适应性治理框架，强调机构协调与公众信任。
+Deliverables: 以合法性、协调性和问责制为基础的治理导向概念模型 | 针对政策设计者的行动指南，包括独立审查机构和合法性指标
+Method: 概念性政策分析 | 文献综合（公共行政、监管理论、AI治理） | 案例研究（NHS AI应用、GOV.UK算法透明度倡议）
+Full-text notes: 全文内容与摘要高度一致，确认为概念性论文，无实证数据验证，主要提供理论框架与政策建议。
+
+### Hyperdemocracy: Towards Creative Consensus Building between Humans and AI (2025; Curated; citations: 0)
+Tags: large language models; multi-agent systems; consensus building; democratic deliberation; political polarization; conflict resolution; human-ai collaboration; group decision making; field experiments; afghanistan; indonesia; cognitive biases; groupthink; policy persuasion; governance technology
+提出“超民主”概念，利用基于LLM的多智能体系统辅助人类进行共识构建。在阿富汗和印尼的实地实验显示，该系统能有效促进审议并改变观点，缓解群体思维。
+Deliverables: 基于LLM的多智能体共识构建系统设计哲学 | 在阿富汗和印尼进行的实地实验结果验证
+Method: 基于大型语言模型（LLM）的多智能体系统 | 实地实验（Field Experiments） | 文本对话引导的审议过程
+Full-text notes: 仅获取到IEEE Xplore元数据页面，无论文正文。内容主要依赖Abstract描述，缺乏具体算法细节、实验数据及伦理讨论的具体展开。
+
+### Impacts of AI-based anti-corruption audits on risk aversion in decision-making: a case study of the Brazilian ALICE tool (2024; Curated; citations: 7)
+Tags: ai governance; anti-corruption; public procurement; risk aversion; brazil; algorithmic auditing; public administration; decision making; policy evaluation; accountability; machine learning in government; digital governance; comptroller general; procurement efficiency; behavioral public administration
+研究巴西ALICE AI审计工具对公共采购决策中风险规避的影响。
+Deliverables: 基于2019-2024年面板数据的实证分析结果 | 关于AI增强公共部门问责与透明度的政策启示
+Method: 面板数据回归模型 | 巴西联邦政府ALICE平台警报数据 | 案例研究法
+Full-text notes: 全文受付费墙限制。摘要提及需定性研究（如访谈）以阐明机制，但具体机制细节不可见。
+
+### Institutionalizing Predictive AI in Public Administration: Algorithmic Governance and the Case of a Wildfire Forecasting System (2026; Curated; citations: 1)
+Tags: algorithmic governance; public administration; ai institutionalization; policy instruments; accountability; wildfire forecasting; mixed methods; organizational context; trust in ai; sop alignment; korean government; decision support; regulatory pillars; normative pillars; cognitive pillars; efficiency vs accountability
+以韩国林业机构野火预测系统为例，探讨预测性AI在公共行政中的制度化。研究指出AI重塑行政常规与问责，成功制度化需监管、规范及认知支柱对齐，但存在效率与问责的结构性张力。
+Deliverables: 公共部门负责任AI实施的设计原则 | 连接政策工具理论与算法治理的制度框架
+Method: 混合研究方法 | 问卷调查 | 对一线官员的半结构化访谈 | 单案例研究（韩国林业机构）
+Full-text notes: 仅基于摘要和简短摘录。全文未提供，无法获取具体的访谈编码细节、统计显著性数据或详细的设计原则列表。
+
+### LLM Powered Social Digital Twins: A Framework for Simulating Population Behavioral Response to Policy Interventions (2026; Curated; citations: 1)
+Tags: social digital twins; llm agents; policy simulation; behavioral modeling; computational social science; counterfactual analysis; calibration layer; pandemic response; agent-based modeling; predictive analytics; governance technology; human-in-the-loop; policy impact assessment; demographic simulation; llm reasoning
+提出社会数字孪生框架，利用LLM作为个体代理的认知引擎，结合校准层模拟政策对人口行为的影响。在新冠流动性预测中，宏观误差较基线降低20.7%，验证了LLM在决策驱动行为模拟中的优势。
+Deliverables: 通用的社会数字孪生架构（代理人口、LLM认知引擎、校准层、验证协议） | 针对政策模拟的LLM提示模板（Prompt Templates） | 基于UAE数据的新冠政策响应案例研究代码与数据说明
+Method: 基于LLM的代理建模（LLM as Cognitive Engine） | 多目标校准优化（Multi-objective Calibration） | 反事实政策模拟（Counterfactual Policy Simulation） | 严格的时间序列划分验证（Temporal Separation Validation）
+Full-text notes: 全文已提供。包含详细的方法论、UAE新冠案例数据、提示词模板及消融实验结果。
+
+### Leveraging AI in peace processes: A framework for digital dialogues (2025; Curated; citations: 1)
+Tags: ai peacebuilding; digital diplomacy; large language models; algorithmic bias; hybrid mediation; digital inclusion; conflict resolution; nlp applications; ethical ai; policy framework; digital literacy; data security; cultural sensitivity; participatory governance; tech solutionism
+提出AI辅助数字对话框架，强调混合模式与伦理考量。
+Deliverables: AI在和平进程中应用的决策框架 | 十大困境清单 | 多语言语料库开发经验
+Method: 文献综述 | 从业者反思与案例研究 | 比较分析
+Full-text notes: 全文开放获取。详细阐述了联合国在也门、利比亚及CMI在苏丹的案例，深入分析了算法偏见（如阿拉伯语方言差异）、数字素养差距及混合调解模式。
+
+### More than an IT system in the government: The work divide challenges in human-AI coworking context (2024; Curated; citations: 2)
+Tags: human-ai collaboration; public sector ai; government decision support; taiwan government; ai governance; bureaucratic workflow; citizen rights; ai risk assessment; public administration; digital government; ai adoption; work division; policy implementation; ai ethics; institutional change
+研究台湾政府机构中AI与人类协作模式，发现基于公民权利影响和劳动分工，AI在低风险任务中作为工具，在高风险决策中仅作为参考，强调复杂问题需人机协作。
+Deliverables: 四种政府机构中AI与人类协作模式的分类框架 | 关于AI在公共部门决策支持中角色演变的实证分析
+Method: 半结构化访谈 | 案例研究 | 定性内容分析
+Full-text notes: 仅基于摘要和简短摘录，缺乏具体访谈数据、案例细节及统计显著性分析。
+
+### PTFA: An LLM-based Agent that Facilitates Online Consensus Building through Parallel Thinking (2025; Curated; citations: 0)
+Tags: llm agents; consensus building; six thinking hats; group decision making; automated facilitation; deliberative democracy; human ai interaction; prompt engineering; pilot study; discourse analysis; policy persuasion; cognitive load; multi agent systems; online deliberation; user study
+提出PTFA代理，利用LLM模拟“六顶思考帽”角色辅助在线共识构建。试点研究显示其在创意生成和情感探测上有效，但存在阶段管理混乱和响应时机不当问题。
+Deliverables: PTFA系统架构与实现代码逻辑 | 基于Discourse论坛的在线讨论平台原型 | 包含32组讨论、16656字的新颖对话数据集
+Method: 基于OpenAI Assistants API的多智能体并行思考框架 | 六顶思考帽（Six Thinking Hats）角色映射与提示工程 | 48名参与者的在线文本讨论试点实验 | 对比实验（PTFA vs 传统定时提示）与用户问卷调查
+Full-text notes: 全文为arXiv预印本，无付费墙。详细记录了六顶帽子的具体Prompt设计、实验设置（16组，每组3人）、用户人口统计学特征及具体的讨论转录案例分析。
+
+### PoliCon: Evaluating LLMs on Achieving Diverse Political Consensus Objectives (2025; Curated; citations: 2)
+Tags: political consensus; llm evaluation; benchmark; european parliament; social choice theory; political bias; deliberation; policy making; voting simulation; governance; multistakeholder negotiation; iclr 2026; partisan bias; collective decision making; ai for social science
+提出PoliCon基准，利用欧洲议会数据评估LLM在多元政治共识目标下的决议起草能力，揭示模型在复杂投票机制下的局限与党派偏见。
+Deliverables: PoliCon Benchmark Dataset | Evaluation Framework Code | Experimental Results on 6 LLMs
+Method: Data Scraping and Cleaning from European Parliament | Social Choice Theory-based Evaluation | LLM-as-a-Judge for Voting Simulation | Comparative Analysis of Closed and Open-source Models
+Full-text notes: Full text available via arXiv/ICLR 2026 proceedings. Contains detailed methodology, 15 task settings (SM, 2/3M, VP, Rawls, Util), and comprehensive performance tables.
+
+### Preserving Disagreement: Architectural Heterogeneity and Coherence Validation in Multi-Agent Policy Simulation (2026; Curated; citations: 0)
+Tags: multi-agent deliberation; llm policy simulation; architectural heterogeneity; artificial consensus; coherence validation; normative reasoning; small language models; delphi method; policy persuasion; fidelity-diversity tradeoff; binary response pattern; trustworthy tension rate; value perspectives; model profiling; statistical analysis
+研究提出AI Council框架，通过架构异质性显著降低多智能体政策模拟中的人工共识，但相干性验证在竞争性政策中可能加剧集中，揭示保真度与多样性权衡。
+Deliverables: AI Council三阶段辩论框架（结构化辩论、独立评估、相干性验证） | 可信张力率（Trustworthy Tension Rate）诊断指标 | 120次政策模拟实验数据及统计结果
+Method: 三阶段实验设计：同质基线、异质性配置、异质性+相干性验证 | 120次多智能体 deliberation，涵盖儿童福利与住房政策两个场景 | 使用7-9B参数本地模型与前沿模型进行相干性评分 | Mann-Whitney U检验与Wilcoxon符号秩检验进行统计分析
+Full-text notes: 全文可获取。详细记录了三种失败的Delphi设计、模型-角色匹配 profiling 数据、相干性评分的信度与效度检验，以及两个政策场景的详细投票分布与统计显著性。
+
+### Sci2Pol: Evaluating and Fine-tuning LLMs on Scientific-to-Policy Brief Generation (2025; Curated; citations: 0)
+Tags: policy brief generation; science to policy; llm benchmark; fine-tuning; policy translation; gemma; llama; evaluation metrics; llm-as-a-judge; data curation; political science; evidence-based policy; iclr 2026; northwestern university; gpt-4o comparison; hallucination mitigation; actionability; domain adaptation; open source llm; decision support
+提出Sci2Pol基准与数据集，评估并微调LLM将科学论文转化为政策简报的能力。构建五阶段评估体系，发现现有指标失效。通过引用链接从560万政策文件中筛选639对高质量数据微调模型，Gemma-27B超越GPT-4o。
+Deliverables: Sci2Pol-Bench: 包含18个任务的科学到政策简报生成基准 | Sci2Pol-Corpus: 639对经过清洗和润色的科学论文-政策简报配对数据 | Sci2Pol-Taxonomy: 五阶段写作流程评估框架 | 微调后的LLM模型权重
+Method: 构建五阶段评估体系（自动补全、理解、摘要、生成、验证） | 基于Overton数据库的560万政策文件进行引用链接检索 | 使用LLM-as-a-judge进行粗筛和细筛 | 基于专家样本的上下文学习（In-context Learning）进行风格润色 | 监督微调（SFT）三个开源模型
+Full-text notes: 全文公开于arXiv及ICLR 2026会议，无付费墙限制。
+
+### Simulating Policy Discussions with Digital Footprints and Large Language Models (2025; Curated; citations: 0)
+Tags: large language models; parliamentary simulation; policy deliberation; digital footprints; hansard data; stance detection; social simulation; governmentgpt; democratic governance; policy making; multi-stakeholder negotiation; uk parliament; llm evaluation; political discourse; evidence informed policy
+研究利用Hansard数据模拟英国议会辩论，评估LLM在重现政党构成和立场方面的能力，旨在构建低风险的协商沙盒以辅助政策制定。
+Deliverables: 基于Hansard数据微调的GovernmentGPT模型 | 通用LLM（Gemini 2.5, ChatGPT-o3）在议会辩论模拟中的性能基准 | 政策讨论模拟的初步框架与实验环境
+Method: 使用Hansard作为数字足迹数据进行监督微调 | 对比实验：比较LLM生成辩论与真实议会讨论 | 固定主题（超加工食品）提示工程以控制变量 | 分析发言者政党归属与立场倾向
+Full-text notes: 全文公开获取（CC BY 4.0），无付费墙限制。
+
+### Toward an artificial deliberation? On Google DeepMind’s Habermas Machine (2025; Curated; citations: 1)
+Tags: habermas machine; deliberative democracy; ai mediation; google deepmind; discourse theory; algorithmic bias; political strategy; governance; ai ethics; public deliberation; consensus building; big tech power; normative analysis; policy persuasion; democratic institutions
+评析DeepMind的哈贝马斯机器，探讨AI在民主审议中的伦理与治理挑战。
+Deliverables: 基于哈贝马斯话语理论对AI审议系统的规范性批判框架。 | 关于AI在公民大会中代表性与中立性的四个研究问题清单。
+Method: 理论分析与规范哲学批判。 | 基于哈贝马斯《事实与规范之间》的话语理论框架。
+Full-text notes: 全文受付费墙限制。摘要提及英国5700人实验显示AI中介陈述更优；正文摘录指出作者关注AI调解是否减少分歧、代表所有观点及支持公民大会，并批判Big Tech对公共话语的控制。
+
+### WhatIf: Interactive Exploration of LLM-Powered Social Simulations for Policy Reasoning (2026; Curated; citations: 0)
+Tags: llm-powered social simulation; policy reasoning; interactive decision support; emergency management; human-in-the-loop; agent-based modeling; what-if analysis; collaborative exploration; deep uncertainty; policy planning; urban planning; public health; system design; hci; interpretability; scenario planning; disaster evacuation; shared reasoning environment; fluid steering; multi-level interpretability
+提出WhatIf系统，支持实时交互式LLM社会模拟。通过流体干预、实时规模、协作探索和多级可解释性，辅助政策制定者在深度不确定性下进行迭代式推演与协作决策。
+Deliverables: WhatIf交互式系统原型 | 针对交互式政策模拟的四个设计需求 | 基于紧急准备专业人员的形成性研究结果 | 针对12,000+代理的大规模实时模拟实现方案
+Method: 形成性研究（与紧急准备专业人员访谈） | 系统开发与原型设计 | 用户评估（5名专家，3个灾难疏散场景） | 主题分析与问卷调查（SUS, NASA-TLX） | 交互日志分析
+Full-text notes: 全文为arXiv预印本，内容完整。包含系统架构、详细设计特征、评估实验设计及具体发现。
+
+### AI can help humans find common ground in democratic deliberation (2024; Important; citations: 208)
+Tags: large language models; deliberative democracy; consensus building; political polarization; human-ai interaction; reward modeling; citizens assembly; algorithmic mediation; political science; group decision making; fairness in ai; opinion aggregation; deepmind; habermas machine; policy persuasion
+研究开发哈贝马斯机器，利用LLM作为调解员，通过迭代生成和精炼共识声明，帮助群体在政治议题上找到共同点，显著优于人类调解员。
+Deliverables: Habermas Machine (开源模型与代码) | 大规模人类反馈数据集 (用于SFT和奖励建模) | 虚拟公民大会实验平台与数据
+Method: 监督微调 (Supervised Fine-Tuning) | 基于人类偏好的奖励建模 (Reward Modeling) | 迭代式群体共识生成与精炼 | 文本嵌入分析 (Text Embeddings) 以评估少数派声音的融入 | 随机对照实验 (RCT) 与虚拟公民大会模拟
+Full-text notes: 全文受限于Science付费墙，但摘要、编辑总结及评论区（含对算法客观性偏见的讨论）提供了核心方法论和结果细节。
+
+### An Emergent Understanding of Human-AI Collaboration in Deliberation (2025; Important; citations: 2)
+Tags: large language models; deliberative reasoning; human-ai collaboration; policy persuasion; citizen assemblies; democratic deliberation; ai governance; policy recommendation; llm evaluation; political science; cscw; ai agents; decision support; human comparison; policymaking
+研究对比54个LLM与526名人类在24个审议案例中的表现，发现人类整体优于LLM，但部分LLM表现相当，提示LLM可作为辅助代理。
+Deliverables: 包含54个LLM和526名人类响应的24个审议案例数据集 | 基于审议推理理论的评估框架 | 关于LLM在公民集会等政策建议场景中适用性的初步结论
+Method: 基于审议推理理论构建评估指标 | 收集54个LLM的响应数据 | 收集526名人类参与者的响应数据 | 在24个审议案例中进行对比分析
+Full-text notes: 摘要提及基于理论构建评估指标，但具体指标细节、24个案例的具体内容、LLM具体型号及详细统计结果需查阅全文PDF (uMBELINO_Veri_25.pdf) 获取。
+
+### Automating public policy: a comparative study of conversational artificial intelligence models and human expertise in crafting briefing notes (2024; Important; citations: 2)
+Tags: policy briefing; large language models; public administration; ai evaluation; chatgpt; gemini; technology acceptance model; policy analysis; human expertise; generative ai; government decision making; policy automation; expert evaluation; ai limitations; public sector ai
+研究对比ChatGPT、Gemini和Le Chat生成政策简报的能力。结果显示AI在结构和语言上达标，但缺乏政策深度和细微差别，无法替代人类专家进行复杂决策。
+Deliverables: 三个主流LLM（ChatGPT, Gemini, Le Chat）在政策简报写作上的性能对比评估 | 基于技术接受模型（TAM）的政策AI应用理论框架分析 | 公开的数据集和Python代码仓库（GitHub）
+Method: 专家结构化评估法（Evaluation-by-experts） | 跨十个关键维度（结构与内容）的比较分析 | 技术接受模型（TAM）理论框架应用
+Full-text notes: 全文被付费墙限制。摘要和引言提供了核心论点：AI在结构上合格但内容深度不足。GitHub链接提供了评估数据集和代码，可验证其评估维度和方法细节。
+
+### Biased LLMs can Influence Political Decision-Making (2025; Important; citations: 22)
+Tags: llm bias; political decision making; partisan bias; human ai interaction; political opinion; budget allocation; framing effects; ai education; bias mitigation; experimental design; political polarization; public discourse; policy impact; governance; acl 2025; interactive experiments; cognitive influence; ai ethics; us politics; statistical analysis
+研究证实，与带有党派偏见的LLM交互会显著改变用户的政治观点和预算分配决策，即使该偏见与用户原有立场相反。
+Deliverables: 两个交互式实验数据集（政治观点任务与预算分配任务） | 关于LLM偏见对人类决策影响的实证证据 | 针对LLM偏见缓解策略（如AI教育）的政策建议
+Method: 在线随机对照实验（N=299） | 通过前缀提示注入自由派或保守派偏见 | 有序逻辑回归与ANOVA统计分析 | 基于GPT-4的对话框架与说服技巧标注
+Full-text notes: 全文公开于ACL Anthology。包含详细的实验设计、统计结果表格（Table 1-2）、框架分析图表（Figure 3）及附录中的具体提示词和人口统计学数据。
+
+### Bringing Everyone to the Table: An Experimental Study of LLM-Facilitated Group Decision Making (2025; Important; citations: 1)
+Tags: llm facilitation; group decision making; hidden profile task; information sharing; social loafing; human-ai interaction; experimental study; gpt-4o; democratic deliberation; policy persuasion; cscw; hci; algorithmic intervention; group dynamics; open source tool; data transparency
+LLM作为群体决策促进者能显著提升信息共享量并减少社会懈怠，但未改善最终决策质量。
+Deliverables: Group-AI Interaction Laboratory (GRAIL) 开源实验平台 | 包含14,343条消息和元数据的实验数据集
+Method: 预注册随机对照实验 (N=1,475, 281个五人小组) | 隐藏档案任务 (Hidden Profile Task) | 四种条件对比：无促进、一次性提示、人类促进、LLM (GPT-4o) 促进 | 基于GPT-4o的信息标注与统计分析
+Full-text notes: 全文公开。详细展示了实验界面、LLM提示词结构、信息分布表及统计回归结果。
+
+### Can AI Truly Represent Your Voice in Deliberations? A Comprehensive Study of Large-Scale Opinion Aggregation with LLMs (2025; Important; citations: 3)
+Tags: deliberative democracy; llm evaluation; policy summarization; minority representation; bias in ai; human-ai alignment; public opinion aggregation; deberta; fairness in nlp; citizens assemblies; automated judgment; political strategy; governance technology; dataset benchmark; representativeness; neutrality; policy persuasion; scalable deliberation; llm-as-judge; democratic innovation
+提出DeliberationBank数据集与DeliberationJudge评估器，揭示LLM在大规模民意汇总中系统性忽视少数派观点，且通用LLM作为裁判与人类判断一致性低。
+Deliverables: DeliberationBank: 包含3000条意见和4500个人类标注的大规模基准数据集。 | DeliberationJudge: 基于DeBERTa微调的领域特定评估模型。 | 18种主流LLM在民意汇总任务上的性能基准排名。
+Method: 构建包含10个议题、3000名参与者意见的大规模数据集。 | 招募4500名 annotators 对LLM生成的摘要进行四维（代表性、信息量、中立性、政策批准）标注。 | 训练并验证基于DeBERTa的监督微调评估器。 | 通过主观自我报告和客观LOF算法识别少数派观点并分析其代表性差异。
+Full-text notes: 全文为arXiv预印本，内容完整。包含详细的数据收集流程、评估指标定义、模型训练细节及18个LLM的基准测试结果图表。
+
+### DeliberationBench: A Normative Benchmark for the Influence of Large Language Models on Users'Views (2026; Important; citations: 2)
+Tags: llm persuasion; deliberative polling; political influence; normative benchmark; policy attitudes; democratic deliberation; ai ethics; political polarization; user autonomy; experimental design; frontier models; opinion change; civic tech; ai governance; us politics
+提出DeliberationBench，以审议民调为基准评估LLM影响力。实验显示LLM观点改变方向与审议民调正相关，具认知益处，但未减少党派极化。
+Deliverables: DeliberationBench评估框架与数据集 | 65项政策提案的LLM影响力实验数据 | 开源代码与数据仓库
+Method: 预注册随机对照实验 | 4,088名美国参与者 | 六款前沿LLM对话 | 与斯坦福审议民调数据对比分析
+Full-text notes: 全文公开。包含65项具体政策提案列表、详细实验设计、各模型用户满意度评分及补充分析。
+
+### Human-AI Interactions in Public Sector Decision-Making:"Automation Bias"and"Selective Adherence"to Algorithmic Advice (2021; Important; citations: 256)
+Tags: algorithmic bias; automation bias; selective adherence; public administration; human ai interaction; decision making; civil servants; stereotype threat; netherlands; survey experiment; policy implementation; algorithmic accountability; cognitive bias; bureaucratic discretion; discrimination; childcare benefits scandal; ethics in ai; governance; institutional trust; behavioral public administration
+通过三项实验研究荷兰公务员与公民，发现算法建议未引发自动化偏见，但存在基于刻板印象的选择性遵从，且丑闻后偏见减弱。
+Deliverables: 三项预注册的调查实验数据 | 关于公共部门算法决策中认知偏差的实证证据 | 算法建议与人类建议对比的实验设计框架
+Method: 在线调查实验 (Survey Experiments) | 情境模拟 (Vignette Studies) | 随机对照试验 (RCT) | 逻辑回归分析
+Full-text notes: 全文公开获取，包含详细实验设计、刺激材料图示及补充表格。
+
+### LLM-generated messages can persuade humans on policy issues (2025; Important; citations: 67)
+Tags: llm persuasion; political attitude change; generative ai; policy impact; experimental design; stanford research; natural language processing; political communication; ai ethics; democratic deliberation; message framing; partisan identity; human ai interaction; survey experiment; cognitive processing; political strategy; ai regulation; misinformation risk; text analysis; behavioral science
+斯坦福大学研究证实，LLM生成的政治说服信息能有效改变公众政策态度，效果与普通人撰写信息相当。LLM通过逻辑和事实路径起作用，而人类通过独特性路径。
+Deliverables: 三个预注册实验的数据集和分析代码（OSF链接） | LLM与人类生成的政治说服文本语料库 | 关于AI政治说服机制的实证证据
+Method: 三项预注册的在线调查实验（总N=4829） | 随机对照试验（LLM生成、人类撰写、人类筛选LLM、控制组） | LIWC语言特征分析与中介效应检验 | 美国全国代表性样本
+Full-text notes: 全文公开。详细方法包括GPT-3提示词、样本人口统计学细节、OSF预注册链接及补充材料中的完整统计结果。
+
+### Large Language Models Can Argue in Convincing Ways About Politics, But Humans Dislike AI Authors: Implications for Governance (n.d.; Important; citations: 36)
+Tags: large language models; political rhetoric; ai persuasion; human-ai interaction; political debate; governance implications; liar's dividend; public trust in ai; political methodology; crowdsourcing; ai authorship; democratic deliberation; policy communication; ai bias; political science
+研究探讨LLM能否在政治修辞上媲美人类。实验显示LLM生成的论点说服力与人类相当，但一旦揭示AI身份，人类评委便偏好人类作者，暗示选民对AI持警惕态度。
+Deliverables: 关于LLM政治修辞能力的实证对比数据 | 针对政策制定者的关于AI身份披露与公众信任关系的建议
+Method:  crowdsourced workers与LLM生成政治立场论点 |  人类评委进行盲测与非盲测的说服力评估 |  对比分析人类与机器在修辞效果上的差异
+Full-text notes: 仅获取到摘要和元数据，未包含正文详细实验设计、具体统计显著性分析及完整讨论部分。
+
+### Large Language Models as agents for augmented democracy (2024; Important; citations: n/a)
+Tags: large language models; augmented democracy; political preference prediction; algorithmic governance; brazil election 2022; data augmentation; fine-tuning; loRA; participatory democracy; digital twins; policy analysis; citizen engagement; machine learning in politics; aggregate preference estimation; electoral data
+研究利用微调LLM增强巴西2022大选公民政策偏好数据，证明其在个体预测和群体聚合上均优于传统基线，为算法民主提供实证支持。
+Deliverables: 基于LoRA微调的LLM偏好预测模型 | 巴西2022大选公民政策偏好数据集（Brazucracia） | 算法民主增强框架与验证方法
+Method: 大语言模型微调（LoRA） | 训练-测试交叉验证 | 概率样本增强与R2统计量评估 | 巴西2022总统选举政策偏好数据实证分析
+Full-text notes: 摘要及图表描述完整，核心结论清晰。具体模型超参数、详细数据预处理步骤及完整参考文献列表需查阅全文。
+
+### Opportunities and Risks of LLMs for Scalable Deliberation with Polis (2023; Important; citations: 60)
+Tags: large language models; deliberative democracy; polis platform; public opinion analysis; political strategy; nlp in politics; consensus finding; vote prediction; ai ethics; policy making; human ai collaboration; summarization; topic modeling; context window; computational social science; civic tech; bias mitigation; democratic innovation
+探讨LLM在Polis协商平台中的应用，涵盖主题建模、摘要、共识发现及投票预测。实验显示LLM能高效辅助分析，但存在幻觉与偏见风险，强调人机协作与人类反馈机制。
+Deliverables: Polis平台LLM应用的风险评估框架 | 基于Anthropic Claude的试点实验数据与提示词 | 针对协商民主的LLM伦理原则与缓解策略 | 未来研究方向（如评论路由、对话模拟）
+Method: 使用Anthropic Claude进行主题建模与文本摘要 | 基于Bowling Green市公共协商数据的实验分析 | 投票预测校准度评估 | 长上下文窗口（100k tokens）性能测试 | 人机协作反馈机制设计
+Full-text notes: 全文为arXiv预印本，无付费墙。摘录包含引言、方法论及前几个实验章节的详细结果与讨论。
+
+### Surfacing citizens’ policy perspectives at scale in the age of large language models (2025; Important; citations: 0)
+Tags: large language models; public opinion; policy making; text analysis; governance; democratic augmentation; open ended questions; qualitative insights; quantitative insights; citizen input; decision support; behavioral science; ai for social science; survey methodology; nuanced insights
+探讨利用LLM从开放式问卷自由文本中提取公众政策观点，弥补传统调查缺乏细微差别及定性研究样本量小的不足，为政策制定提供兼具量化与质化的洞察。
+Deliverables: LLM支持的公众政策观点提取方法框架 | 结合量化与质性分析的大规模文本处理流程
+Method: LLM辅助文本分析 | 开放式问卷自由文本处理 | 混合方法（量化与质性结合）
+Full-text notes: 仅获取摘要，缺乏具体实验设计、模型选择、提示工程细节及实证结果数据。
+
+### The End of the Policy Analyst? Testing the Capability of Artificial Intelligence to Generate Plausible, Persuasive, and Useful Policy Analysis (2023; Important; citations: 27)
+Tags: policy analysis; large language models; public administration; briefing notes; human ai collaboration; nlp evaluation; government decision support; gpt-2; expert judgment; policy translation; automated policy generation; digital governance; ai limitations; policy advising; machine learning in government
+评估AI生成政策简报的效用，发现纯AI生成内容不被专家认可，但人机协作模式具补充价值。
+Deliverables: 基于启发式评估量表的专家评价数据 | 三种生成模式（纯AI、人机协作、纯人工）的政策简报样本
+Method: 实验研究设计 | 双盲专家小组评估（退休高级公务员） | 启发式评估量具（Heuristic Evaluation Rubric） | 对比分析：NLP生成 vs 人工生成 vs NLP生成/人工编辑
+Full-text notes: 摘要提及使用GPT-2等模型，但全文细节受限。核心结论为AI单独使用无效，但人机协作有效。
+
+### The LLM Effect: Are Humans Truly Using LLMs, or Are They Being Influenced By Them Instead? (2024; Important; citations: 20)
+Tags: llm-human partnership; anchoring bias; policy analysis; topic modeling; human-in-the-loop; decision support; cognitive bias; efficiency vs accuracy; qualitative analysis; expert annotation; gpt-4; india ai policy; user study; llm influence; political strategy
+研究探讨LLM在政策分析中的人机协作效应。发现LLM能显著提升标注效率（133.5%），但引入锚定偏差，导致专家分析深度和细微差别下降，效率与准确性存在权衡。
+Deliverables: 关于LLM在政策主题建模中效率与偏差影响的实证研究结果。 | 人类与LLM协作的主题发现与分配数据集及标注指南。 | 专家在有无LLM辅助下的思维过程（Think Aloud）定性分析。 | 预/后问卷调查数据，反映专家对LLM信任度的变化。
+Method: 结构化用户研究（Structured User Study）。 | 两阶段实验设计：主题发现（Topic Discovery）与主题分配（Topic Assignment）。 | 控制组（无LLM）与实验组（有LLM建议）对比。 | 使用TopicGPT框架生成LLM建议。 | 思维发声法（Think Aloud Process）收集定性数据。 | Cohen's Kappa系数与配对样本t检验进行统计分析。
+Full-text notes: 全文开源（arXiv）。核心数据包括4位政策专家对印度AI政策访谈记录的标注结果。详细展示了LLM在捕捉细微政策概念（如“警务与监控”）上的缺失，以及专家在LLM辅助下倾向于接受广义标签而非生成特定标签的行为模式。
+
+### What Makes LLM Agent Simulations Useful for Policy? Insights From an Iterative Design Engagement in Emergency Preparedness (2025; Important; citations: 8)
+Tags: llm agent simulation; policy implementation; emergency preparedness; iterative design; human-computer interaction; stakeholder engagement; trust calibration; social simulation; decision support; institutional workflow; validation filter; co-evolution; tacit knowledge; campus safety; agent-based modeling
+通过CMU与应急团队的16个月迭代设计，证明LLM代理模拟需经可验证场景建立信任，从预测工具转为培训与流程优化手段。
+Deliverables: 一个包含13,000个代理的LLM代理模拟系统，整合了物理移动与社交沟通。 | 针对大学毕业典礼疏散的三项具体政策建议（如开启西北出口、差异化应急协议）。 | 将模拟整合进官方事后报告（After-Action Report）及志愿者培训材料。
+Method: 为期16个月的利益相关者参与式迭代设计（Iterative Design Engagement）。 | 半结构化访谈与需求评估。 | 基于GPT-4.1的LLM代理建模，结合规则引擎处理物理导航。 | 实地观察与数据验证（对比模拟与真实毕业典礼人群动态）。 | 定性主题分析（Thematic Analysis）。
+Full-text notes: 全文可获取。详细描述了从100到13,000个代理的五次迭代过程，包括系统架构图、具体政策干预效果数据及与政策制定者的互动细节。
+
+### Democracy-in-Silico: Institutional Design as Alignment in AI-Governed Polities (2025; Watchlist; citations: 0)
+Tags: ai alignment; institutional design; multi-agent simulation; deliberative democracy; constitutional ai; political strategy; governance; llm agents; power-seeking behavior; policy stability; mediated consensus; political polarization; agent-based modeling; ai governance; democratic augmentation
+通过LLM代理模拟政治制度对AI对齐的影响，发现宪法AI与调解机制能显著降低权力寻租，提升政策稳定性。
+Deliverables: Democracy-in-Silico仿真框架 | Power-Preservation Index (PPI)度量标准 | 复杂心理人格代理数据集 | 制度设计对比实验数据
+Method: 基于LLM的多智能体仿真 | 制度设计变量控制实验 | 压力测试与危机模拟 | 规则式行为标签分析
+Full-text notes: 全文已提供。包含详细的方法论、实验网格、模拟日志摘录及补充材料。
+
+### Digital Homunculi and Institutional Design: Breaking Through the Experimentation Bottleneck (2024; Watchlist; citations: 0)
+Tags: generative agents; institutional design; democratic innovation; synthetic data; political simulation; llm behavior; experimentation bottleneck; policy testing; digital homunculi; social science methods; ai governance; multi-agent systems; political economy; validation strategies; computational social science
+提出利用GenAI代理模拟人类行为以突破民主制度实验瓶颈，旨在通过低成本、高伦理安全性的合成数据加速制度创新测试。
+Deliverables: 数字拟人(DH)概念框架 | 针对DH有效性的验证策略建议 | 基础设施评估要求大纲
+Method: 多智能体社会模拟 | 生成式AI角色扮演的行为诱导 | 基于知识截止线的行为回溯测试 | 合成数据生成与分析
+Full-text notes: 摘要与引言部分完整，详细阐述了实验瓶颈、DH方法论及其与传统ABM的区别。后续关于风险、具体研究计划及结论部分仅见标题或片段，缺乏具体实证结果。
+
+### Social Policy of Large Language Models: How GPT, Claude, DeepSeek and Grok Allocate Social Budgets in Spain and Germany (2026; Watchlist; citations: 0)
+Tags: llm bias; public budgeting; social policy; algorithmic governance; distributive justice; geopolitical bias; context sensitivity; oeCD comparison; statistical validation; policy simulation; decision support; welfare state; spanish economy; german economy; model alignment; textual justification; correlation analysis; non-parametric tests; policy recommendation; ai ethics
+研究四大LLM在西班牙和德国语境下的社会预算分配，发现模型普遍低估养老金、高估住房就业，且差异源于集中与分散策略而非地缘政治。
+Deliverables: 48组独立预算分配数据（4模型x2国家x6次运行）。 | 基于Kruskal-Wallis和Mann-Whitney U检验的统计显著性验证。 | 模型间Pearson相关性矩阵及文本论证的词汇分析。 | 与OECD参考预算的结构偏差量化报告。
+Method: 受控实验设计：固定提示词、参数及支出分类体系。 | 非参数统计检验：Kruskal-Wallis检验及Bonferroni校正后的Mann-Whitney U检验。 | 相关性分析：计算模型间平均分配向量的Pearson相关系数。 | 文本挖掘：对模型生成的论证理由进行词频与修辞体制分析。
+Full-text notes: 全文可获取。详细展示了各模型在12个宏观领域的具体分配比例、热力图数据、统计检验P值及模型间相关性矩阵。
+
+### Using LLMs to Enhance Democracy (2024; Watchlist; citations: 4)
+Tags: large language models; democratic deliberation; political philosophy; ai governance; public sphere; normative theory; computational political theory; ai ethics; decision support; civic virtue; policy aggregation; democratic values; ai representation; summarization bias; transparency
+评估LLM在民主审议中的角色，认为其不应替代正式决策程序，但可增强非正式公共领域。
+Deliverables: 对LLM增强民主的四类应用（摘要、聚合、代表、促进）的分类框架 | 基于六项民主价值（平等、授权、参与、调和、转化、集体智慧）的评估体系
+Method: 规范性政治理论分析 | 现有LLM民主应用文献综述 | 基于民主价值的批判性评估
+Full-text notes: 全文为预印本，已获取完整文本。作者指出LLM在摘要中易丢失高信号低频率内容，在聚合中缺乏透明度，在代表中削弱公民美德与偏好转化。
+
+## Political Science and Strategic Judgment Foundations
+
+### Analysis, War, and Decision: Why Intelligence Failures Are Inevitable (1978; Core; citations: 326)
+Tags: intelligence failure; strategic surprise; decision making; cognitive bias; political psychology; policy analysis; international relations; crisis management; organizational behavior; historical analysis; betts; world politics; war prediction; leadership; information processing
+论证情报失败源于证据模糊、领导心理偏差及决策互动性，非组织缺陷所致。
+Deliverables: 情报失败不可避免性的理论框架 | 对传统改革建议（如多 advocacy）的批判性评估
+Method: 历史案例研究（如越南、中东战争） | 认知心理学与决策理论分析 | 政策过程与情报机构互动分析
+Full-text notes: 全文受付费墙保护。摘要指出错误源于不可解决的悖论而非病理，引用了肯尼迪猪湾、越战及1973年赎罪日战争等案例。
+
+### Arms and Influence (1966; Core; citations: 2033)
+Tags: deterrence theory; coercive diplomacy; nuclear strategy; game theory; cold war; signal transmission; strategic communication; bargaining power; schelling; political strategy; international relations; crisis management; military power; rational choice; security studies
+冷战经典，论述核时代军事力量作为威慑与胁迫工具的外交属性，强调信号传递与可信承诺。
+Deliverables: 威慑理论框架 | 胁迫外交分析模型
+Method: 博弈论分析 | 历史案例研究 | 逻辑推演
+Full-text notes: 仅元数据，无正文。需查阅原著获取详细论证。
+
+### Essence of Decision: Explaining the Cuban Missile Crisis (1971; Core; citations: 3145)
+Tags: decision making; cuban missile crisis; bureaucratic politics; organizational process; rational actor model; strategic judgment; international relations; crisis management; policy analysis; historical case study; allison; zilikow; political science foundations; strategic analysis; governmental politics
+经典决策理论著作，通过理性行为者、组织过程及政府政治三模型解析古巴导弹危机。
+Deliverables: 三模型分析框架 | 危机决策过程的历史档案重构
+Method: 多模型比较分析 | 历史案例研究 | 官僚政治过程追踪
+Full-text notes: 摘录仅为书评元数据，无实质内容。原著为经典文本，核心贡献在于方法论框架而非LLM技术。
+
+### Expert Political Judgment: How Good Is It? How Can We Know? (2007; Core; citations: 382)
+Tags: expert judgment; political forecasting; tetlock; cognitive bias; prediction accuracy; political psychology; book review; strategic assessment; epistemic limits; decision making
+Gerald F. Gaus 评论 Philip Tetlock 2005年著作，探讨专家政治预测准确性。
+Deliverables: 对 Tetlock 著作的学术书评 | 关于专家判断可靠性的理论反思
+Method: 文献评论 | 政治心理学分析
+Full-text notes: 仅元数据与网页框架，无正文。核心内容源自 Tetlock (2005) 原著，本条目为书评。
+
+### Hindsight (Not Equal To) Foresight: The Effect of Outcome Knowledge on Judgment Under Uncertainty. (1975; Core; citations: 444)
+Tags: hindsight bias; judgment under uncertainty; decision making; forecasting errors; expert judgment; cognitive bias; political psychology; strategic foresight; learning from history; probability assessment; behavioral science; risk perception; cognitive psychology; policy analysis; uncertainty management
+探讨结果知识如何扭曲不确定性下的判断，揭示后见之明偏差对历史学习与决策的影响。
+Deliverables: 关于结果知识对判断影响的行为实验数据 | 对后见之明偏差机制的理论阐述
+Method: 控制实验法 | 概率判断任务 | 元认知意识评估
+Full-text notes: 仅见ERIC摘要，未获全文。核心发现基于摘要中提及的实验设计：考察结果知识对判断的影响及人们对这种影响的觉察程度。
+
+### Perception and Misperception in International Politics (1976; Core; citations: 2913)
+Tags: perception; misperception; international relations; cognitive bias; crisis decision making; political psychology; strategic judgment; diplomatic history; jervis; foreign policy analysis; intelligence failure; rationality; bias; heuristics; security dilemma
+国际关系经典著作，探讨认知偏差如何导致外交误判。
+Deliverables: 理论框架 | 案例研究
+Method: 历史案例分析 | 理论推导
+Full-text notes: 仅元数据，无正文。需查阅原著获取详细论证。
+
+### Psychology of Intelligence Analysis (1999; Core; citations: 918)
+Tags: intelligence analysis; cognitive bias; structured analytic techniques; strategic judgment; political psychology; heuristics; decision making; intelligence studies; rationality; bias mitigation; policy analysis; heuristics and biases; intelligence community; analytic tradecraft; political strategy foundations
+经典情报分析心理学著作，探讨认知偏差对战略判断的影响，奠定结构化分析技术基础。
+Deliverables: 认知偏差分类清单 | 结构化分析技术（SATs）操作指南 | 情报分析心理学理论框架
+Method: 认知心理学理论综述 | 情报案例分析 | 专家经验总结
+Full-text notes: 原文无法获取（404错误）。基于元数据中的高引用量（918次）及核心主题标签，内容确认为情报分析领域的奠基性文献，重点在于认知偏差与结构化分析技术。
+
+### Rationalist Explanations for War (1995; Core; citations: 3515)
+Tags: rationalist war theory; bargaining failure; private information; commitment problems; international relations; game theory; conflict resolution; signaling; fearon; political science foundations
+Fearon论证理性国家间存在和平谈判空间，战争源于信息不对称与承诺问题。
+Deliverables: 理性主义战争理论框架 | 信息不对称与承诺问题的机制分析
+Method: 博弈论建模 | 历史案例研究
+Full-text notes: 仅获取元数据与摘要，正文被付费墙阻挡。摘要已涵盖核心理论贡献。
+
+### Structured Analytic Techniques for Intelligence Analysis (2010; Core; citations: 158)
+Tags: intelligence analysis; structured analytic techniques; strategic judgment; political science methodology; decision making; cognitive bias; policy analysis; geopolitics; research methods; qualitative analysis
+该文献主要探讨情报分析中的结构化分析技术，旨在提升政治与战略判断的严谨性。
+Deliverables: 结构化分析技术的理论框架或综述（推测）
+Method: 文献综述或方法论介绍（推测）
+Full-text notes: 提供的摘录仅为西班牙国防部数字图书馆的元数据页面错误提示（'记录不存在或不可见'），未包含任何实质性的论文正文、摘要或内容。无法获取付费墙后的全文或手动文件内容。
+
+### Superforecasting: The Art and Science of Prediction (2015; Core; citations: 660)
+Tags: superforecasting; political prediction; expert judgment; cognitive bias; probabilistic thinking; bayesian updating; strategic foresight; decision making; political science methodology; hindsight bias; forecasting accuracy; cognitive humility; political strategy; intelligence analysis; behavioral economics
+基于Tetlock研究，探讨如何通过认知修正提升政治预测准确性，强调概率思维与持续更新信念的重要性。
+Deliverables: 超预测者认知特征清单 | 预测准确性提升的训练框架
+Method: 大型预测锦标赛数据分析 | 认知心理学实验 | 专家判断偏差研究
+Full-text notes: 仅见Choice Reviews登录界面，无实质内容。核心观点基于Tetlock早期研究及Gardner的通俗化总结。
+
+### The Delicate Balance of Terror (1958; Core; citations: 360)
+Tags: nuclear deterrence; cold war strategy; strategic stability; missile defense; first strike; second strike; warsaw pact; us soviet relations; military technology; security dilemma; arms race; nuclear policy; strategic judgment; deterrence theory; geopolitics
+冷战核战略奠基之作，探讨美苏核威慑下的战略稳定性与意外战争风险。
+Deliverables: 核威慑理论框架 | 战略稳定性评估模型
+Method: 历史案例分析 | 战略逻辑推演
+Full-text notes: 全文被付费墙遮挡，仅能获取摘要及关键词（弹道导弹、突袭、打击力量等），无法提取具体论证细节。
+
+### The Evolution of Nuclear Strategy (1981; Core; citations: 20)
+Tags: nuclear strategy; deterrence theory; cold war history; strategic studies; arms control; international security; larry freedman; nuclear proliferation; policy analysis; historical methodology; second strike; mutual assured destruction; strategic judgment; geopolitics; military doctrine
+核战略史经典著作，梳理从原子弹诞生至冷战后的战略演变，涵盖威慑、军控及多国核计划，强调政策而非纯理论。
+Deliverables: 核战略历史编年史与关键节点分析 | 针对主要核大国（美、苏、中、英、法及新兴核国家）的战略评估 | 军备控制与核不扩散政策的政策建议框架
+Method: 历史档案分析与解密文件研究 | 战略思想史梳理 | 政策案例比较研究
+Full-text notes: 全文受付费墙保护。摘录显示为2019年第四版，新增以色列、印度、巴基斯坦、朝鲜、伊拉克和伊朗核计划内容，并基于新解密档案更新冷战后发展。目录显示涵盖大规模报复、有限目标、战略防御等章节。
+
+### The Inefficient Use of Power: Costly Conflict with Complete Information (2004; Core; citations: 258)
+Tags: bargaining theory; commitment problems; conflict resolution; game theory; political economy; war causation; power dynamics; inefficiency; international relations; civil war; revolution; strategic interaction; rational choice; applied game theory; political violence
+Powell提出“低效条件”，证明即使信息完全，相对权力的快速变化也会导致冲突均衡低效，为革命、内战等提供统一解释。
+Deliverables: 一个通用的承诺问题形式化模型。 | 适用于多种政治经济情境的“低效条件”理论框架。
+Method: 随机博弈论建模 | 完全信息下的均衡分析 | 比较静态分析
+Full-text notes: 仅获取到摘要和参考文献列表。正文被Cambridge Core付费墙阻挡，无法查看具体数学推导和案例应用细节。
+
+### The Meaning of the Nuclear Revolution: Statecraft and the Prospect of Armageddon (1989; Core; citations: 24)
+Tags: nuclear strategy; deterrence theory; robert jervis; cold war; strategic studies; international relations; security dilemma; geopolitics; military strategy; political science; nuclear revolution; statecraft; armageddon; coercion; strategic judgment
+罗伯特·杰维斯探讨核革命对国家战略的影响，分析威慑与强制在核时代的含义及末日前景。
+Deliverables: 核战略理论框架 | 对核威慑有效性的批判性分析
+Method: 历史案例分析 | 战略理论推导
+Full-text notes: 仅获取到登录页面，无实质正文内容。
+
+### The Nuclear Taboo: The United States and the Non-Use of Nuclear Weapons Since 1945 (2007; Core; citations: 351)
+Tags: nuclear taboo; nuclear strategy; deterrence; us foreign policy; norms in international relations; book review; keith paine; j nolan; strategic judgment; non-use of nuclear weapons
+诺兰评论基思·佩恩著作，探讨核禁忌概念。指出美国自1945年以来未使用核武器，分析其背后的战略、道德及规范因素，强调禁忌在遏制政策中的核心作用。
+Deliverables: 对核禁忌理论的学术综述与评价 | 对基思·佩恩原著《The Nuclear Taboo》的内容摘要
+Method: 文献评论 | 历史案例分析 | 规范理论探讨
+Full-text notes: 仅获取到Choice Reviews的登录页面，无正文内容。基于标题、作者及摘要推断为对基思·佩恩著作的书评。
+
+### The Strategy of Conflict (1960; Core; citations: n/a)
+Tags: game theory; deterrence; coercion; nuclear strategy; conflict resolution; strategic interaction; schelling; political strategy; international relations; decision making
+托马斯·谢林经典著作，探讨威慑、强制与核战略中的策略互动。
+Deliverables: 战略互动理论框架 | 威慑与强制行为的分类分析
+Method: 博弈论分析 | 逻辑推理与案例研究
+Full-text notes: 仅获取到出版商元数据页，无实质正文内容。
+
+### War as a Commitment Problem (2006; Core; citations: 858)
+Tags: war onset; commitment problem; bargaining theory; power transition; preventive war; international relations theory; rationalist explanations; conflict dynamics; strategic judgment; political science foundations
+Powell论证战争源于承诺问题而非仅信息不对称。指出权力快速转移导致无法可信承诺维持现状，从而引发预防性战争、先发制人打击及因未来议价能力变化引发的冲突。
+Deliverables: 基于博弈论的国际冲突理论模型 | 对传统理性主义战争解释的修正框架
+Method: 形式理论建模 | 历史案例分析与理论批判
+Full-text notes: 仅获取到摘要及参考文献列表。正文被剑桥大学出版社付费墙限制，无法提取具体模型推导细节及实证案例细节。
+
+### Decision Making under Deep Uncertainty: From Theory to Practice (2019; Curated; citations: 295)
+Tags: deep uncertainty; robust decision making; adaptive planning; policy analysis; climate policy; risk management; scenario planning; decision support systems; strategic judgment; uncertainty quantification; public policy; complex systems; dutch delta programme; rand corporation; exploratory modeling
+本书系统综述了深度不确定性下的决策方法，涵盖鲁棒决策、动态适应规划等理论框架及气候、水利等实际应用案例。
+Deliverables: DMDU方法分类学（Taxonomy of Approaches and Tools） | 鲁棒决策（RDM）、动态适应规划（DAP）、信息间隙决策理论（IG）等具体方法论章节 | 荷兰三角洲计划等实际政策应用案例研究
+Method: 文献综述与理论综合 | 多案例研究分析 | 决策支持系统框架设计
+Full-text notes: 全文为开放获取（Open Access）。摘录包含前言、目录、作者介绍及第一章引言。第一章详细阐述了不确定性层级（Level 1-4）、DMDU的必要性、通用分析框架及鲁棒决策等核心概念。
+
+### Evaluating Escalation: Conceptualizing Escalation in an Era of Emerging Military Technologies (2023; Curated; citations: 19)
+Tags: escalation theory; emerging military technologies; cyber warfare; drone warfare; expert survey; conflict measurement; international relations; crisis judgment; coding schemes; militarized disputes; strategic stability; political science methodology
+提出基于手段的物理可见性框架重构升级阶梯，利用专家调查数据验证，为新兴技术下的冲突测量提供新标准。
+Deliverables: 基于专家调查的跨国升级阶梯排序数据 | 针对新兴军事技术的升级行为编码建议
+Method: 概念框架理论构建 | 跨国外交政策专家问卷调查 | 比较分析传统与新兴技术冲突特征
+Full-text notes: 仅获取摘要，缺乏具体专家样本细节、统计显著性检验及与传统数据集对比的实证细节。
+
+### Wargaming for International Relations research (2021; Curated; citations: 36)
+Tags: wargaming; international relations; methodology; decision making; ecological validity; crisis simulation; political science methods; rare events; strategic judgment; research agenda; bias mitigation; validity; generalizability; archival data; simulation
+本文探讨将兵棋推演引入国际关系研究的方法论，强调其生态效度，指导学者如何构建游戏或利用档案数据研究罕见事件及决策过程。
+Deliverables: 国际关系领域兵棋推演研究议程 | 方法论操作指南（涵盖设计、执行与评估） | 对兵棋推演作为研究工具的优势与局限性的评估框架
+Method: 方法论综述与评估 | 比较分析（与其他研究方法区分） | 理论构建与测试框架设计
+Full-text notes: 仅获取到元数据和摘要，缺乏正文细节。摘要已涵盖核心论点：区分方法、强调生态效度、提供操作指南（招募、偏差、效度、概括性）及研究议程。
+
+### A Bargaining Model of War and Peace: Anticipating the Onset, Duration, and Outcome of War (2002; Important; citations: 340)
+Tags: bargaining theory; war onset; conflict duration; signaling; game theory; international relations; peace studies; strategic judgment; political violence; conflict resolution
+Filson与Werner构建博弈论模型，分析战争爆发、持续及结果的预期机制，探讨信号传递与议价在冲突中的作用。
+Deliverables: 理论模型框架 | 关于战争持续时间的预测逻辑
+Method: 博弈论建模 | 议价理论分析 | 信号传递模型
+Full-text notes: 无法获取全文。EconStor链接被Anubis反爬虫机制拦截，仅显示人机验证页面，无实质学术内容。
+
+### Advisers and Aggregation in Foreign Policy Decision Making (2024; Important; citations: 16)
+Tags: foreign policy decision making; adviser influence; hawkishness measurement; machine learning in political science; elite decision making; international conflict; us foreign policy; cold war; nsc meetings; biographical data; supervised learning; political psychology; aggregation of preferences; deliberation analysis; text as data
+研究证明顾问的鹰派倾向通过影响决策建议，系统性地塑造美国冷战时期的外交政策，即使控制领导人特质后，鹰派顾问主导的会议更倾向冲突性决策。
+Deliverables: 1947-1988年美国2685次外交决策会议转录数据集 | 1134位决策者的鹰派倾向量化评分 | 基于传记数据的机器学习鹰派倾向预测模型
+Method: 档案数据挖掘与OCR文本处理 | 基于FPLP调查数据的监督学习模型 | 提升线性回归（Boosted Linear Regression） | 五折交叉验证与Bootstrap重采样
+Full-text notes: 全文为Open Access，可获取完整方法论细节及附录数据构建过程。
+
+### Analogies at War: Korea Munich Dien Bien Phu and the Vietnam Decisions of 1965 (1992; Important; citations: 701)
+Tags: analogical reasoning; vietnam war; decision making; cognitive bias; historical analogy; korea; munich; dien bien phu; strategic judgment; political psychology; intelligence analysis; structured analytic techniques; us foreign policy; 1960s; khong; policy formulation; rationality; heuristics; case study; political science classics
+经典著作，探讨越战决策中类比思维的作用，分析朝鲜、慕尼黑、奠边府等历史类比如何影响美国政策制定。
+Deliverables: 结构化类比分析框架 | 历史案例比较研究
+Method: 历史案例研究 | 认知心理学分析 | 过程追踪
+Full-text notes: 摘录仅为登录界面，无实质内容。基于标题、摘要元数据及该文献在政治科学领域的极高知名度（701次引用）进行推断。
+
+### Democracy and Coercive Diplomacy (2001; Important; citations: 579)
+Tags: coercive diplomacy; democratic peace; signaling; bargaining theory; international crises; domestic politics; credibility; war avoidance; political science classics; game theory
+探讨民主政治如何影响强制外交。认为民主国家因国内竞争透明，虽更谨慎使用威胁，但因其能可信展示决心，威胁成功率更高。
+Deliverables: 基于博弈论的危机讨价还价模型 | 关于民主国家强制外交成功率的统计分析与历史案例研究
+Method: 博弈论建模 | 统计分析 | 历史案例研究
+Full-text notes: 仅获取到Cambridge Core书目页、目录及摘要。核心论证（国内政治透明度、信号传递机制）及实证细节被付费墙遮挡，需查阅全文以获取具体模型推导与数据。
+
+### Domestic Political Audiences and the Escalation of International Disputes (1994; Important; citations: 2205)
+Tags: audience costs; crisis bargaining; democratic peace; signaling; game theory; international relations; war escalation; information asymmetry; deterrence; political institutions; fearon; rationalist explanations; security dilemma; bargaining models; political strategy
+Fearon建立危机博弈模型，论证国内观众成本使领导人能更可信地展示意图。民主国家因观众成本更高，在危机中更不易退让，从而能更有效地进行威慑和信号传递。
+Deliverables: 国际危机作为政治“消耗战”的博弈论模型 | 关于观众成本如何影响危机升级和退让概率的比较静态分析结果 | 对民主和平论中信号传递机制的理论解释
+Method: 非合作博弈论建模 | 序贯均衡分析 | 观众成本理论推导
+Full-text notes: 仅获取到摘要和参考文献列表。正文被付费墙限制，无法查看具体的数学推导、参数设定及案例实证细节。
+
+### Intelligence Analysis: A Target-Centric Approach (2003; Important; citations: 232)
+Tags: intelligence analysis; structured analytic techniques; strategic judgment; target-centric approach; political strategy foundations; Clark; 2003; methodology; defense studies; analytical frameworks
+Clark提出以目标为中心的情报分析框架，强调结构化分析技术。
+Deliverables: 分析框架 | 方法论指南
+Method: 文献综述 | 理论构建
+Full-text notes: 链接失效，仅见元数据，无实质内容。
+
+### Nuclear Weapons and Coercive Diplomacy (2017; Important; citations: 67)
+Tags: nuclear strategy; coercive diplomacy; deterrence; compellence; international security; crisis bargaining; strategic judgment; political science; quantitative analysis; case studies; nuclear skepticism; foreign policy; military power; diplomacy; conflict resolution
+本书挑战核武器可用于强制外交的传统观点，通过定量与历史证据表明核武主要服务于威慑而非胁迫，拥有核武对强制外交无显著优势。
+Deliverables: 40个核武器危机讨价还价的案例研究 | 新的定量数据集与历史证据分析 | 核怀疑论（Nuclear Skepticism）理论框架
+Method: 定量统计分析 | 历史案例研究 | 危机讨价还价模型
+Full-text notes: 仅获取目录、元数据及参考文献列表。正文被付费墙锁定，无法提取具体章节细节或数据结果。
+
+### The Spread of Nuclear Weapons: More May Be Better (1981; Important; citations: 395)
+Tags: nuclear proliferation; deterrence theory; kenneth waltz; neorealism; strategic stability; cold war strategy; security dilemma; international relations theory; nuclear strategy; deterrence; coercion; political science foundations; strategic judgment; security studies; geopolitics
+沃尔兹提出核扩散可能增加稳定性的观点，挑战传统遏制理论。
+Deliverables: 理论框架：新现实主义核战略分析 | 政策辩论：核扩散的潜在正面效应
+Method: 理论推导 | 历史案例比较 | 逻辑实证主义分析
+Full-text notes: 摘要缺失，全文摘录仅为西班牙国防部图书馆元数据页面，无实质内容。
+
+### Victims of Groupthink (1972; Important; citations: 1862)
+Tags: groupthink; irving janis; political decision making; intelligence analysis; structured analytic techniques; bay of pigs; pearl harbor; cognitive bias; foreign policy; organizational behavior; consensus; conformity; devils advocate; policy fiascoes; social psychology
+经典著作，提出群体思维理论，解释政治决策失误。
+Deliverables: 群体思维理论模型 | 决策失误案例研究
+Method: 历史案例研究 | 心理学分析
+Full-text notes: 文本为维基百科对Janis 1972年著作的综述，非原文。涵盖理论、案例（猪湾、珍珠港）及后续实证争议。
+
+## Politics, Democracy, Public Opinion, and Persuasion
+
+### A Large-Scale Simulation on Large Language Models for Decision-Making in Political Science (2024; Curated; citations: 7)
+Tags: llm simulation; voter behavior; political bias; election forecasting; chain of thought; synthetic data; us elections; political science; agent-based modeling; ideology inference; demographic stereotypes; multi-step reasoning; gpt-4o; llama-3; political decision making; bias mitigation; computational social science; policy simulation; public opinion; model evaluation
+提出基于理论的多步推理框架，利用合成选民模拟美国大选。V3版本通过意识形态推断显著提升准确率，但揭示LLM存在政治偏见、人口刻板印象放大及意识形态影响高估等局限。
+Deliverables: 理论驱动的多步推理选民模拟框架 | 33万+合成选民人口数据集 | 跨模型(4个LLM)选举模拟基准评估
+Method: 合成数据生成(Sync框架) | 链式思维提示(Chain-of-Thought) | 意识形态推断中间步骤 | 加权绝对误差(WAE)与均方误差(WMSE)评估
+Full-text notes: 全文可获取。详细展示了V1/V2/V3三种Pipeline的Prompt设计、ANES基准测试数据、2020/2024年各州模拟结果对比表及偏差分析图表。
+
+### A Multi-Dimensional Audit of Politically Aligned Large Language Models (2026; Curated; citations: 0)
+Tags: political alignment; llm audit; bias and fairness; habermas theory; political persuasion; fine-tuning vs role-playing; toxicity detection; truthfulness evaluation; political ideology; responsible ai; model trade-offs; sentiment analysis; user study; mmlu benchmark; truthfulqa; political compass test; hallucination; rhetorical toxicity; ideological bias; automated evaluation
+基于哈贝马斯交往行为理论，构建四维框架审计九款政治对齐LLM。发现微调模型偏见较低但推理下降，角色扮演模型偏见高且更具毒性。强对齐与高偏见、低真实性相关，毒性增强说服力。
+Deliverables: 基于哈贝马斯理论的四维审计框架（有效性、公平性、真实性、说服力）。 | 九款流行LLM（Llama 3, Mistral, GPT-4等）的政治对齐审计数据集与结果。 | 开源代码与数据（GitHub: scale-lab/PoliAudit）。 | 自动化评估指标与人类标注的相关性验证报告。
+Method: 基于哈贝马斯交往行为理论构建评估维度。 | 政治对齐技术：参数高效微调（DPO）与角色扮演提示工程。 | 有效性评估：政治罗盘测试（PCT）与LLM评分。 | 公平性评估：BERT/LLM情感分析检测毒性、愤怒及意识形态偏见。 | 真实性评估：TruthfulQA数据集上的事实核查与BLEURT相似度。 | 说服力评估：基于Prolific平台的人类用户前后测问卷调查。 | 推理能力评估：MMLU基准测试中的逻辑推理子集。
+Full-text notes: 全文已提供。包含详细的实验设置、图表数据（图3-12）、相关性分析表及附录。代码链接已给出。
+
+### A Public Dataset Tracking Social Media Discourse about the 2024 U.S. Presidential Election on Twitter/X (2024; Curated; citations: 24)
+Tags: 2024 us election; twitter x dataset; political discourse; social media scraping; misinformation; public opinion; campaign strategy; nlp dataset; political polarization; bot detection; election integrity; usc humans lab; emilio ferrara; data collection; keyword analysis; hashtag tracking; online manipulation; digital campaigning; sentiment analysis; political communication
+发布2024美国大选X平台2200万帖数据集，含自定义爬虫与初步分析，支持政治话语与虚假信息研究。
+Deliverables: 2200万条X平台帖子及元数据（文本、互动指标、用户信息） | X-Scraper爬虫引擎代码与算法描述 | 数据集访问链接（GitHub） | 初步探索性分析报告（关键词、标签、域名、提及账户统计）
+Method: 基于Chromium驱动的自定义UI爬虫（X-Scraper） | 针对关键政治人物、事件和新兴议题的定向关键词查询 | 分时间段采集与手动监控以确保数据连续性 | 使用多个个人账户以符合平台服务条款并提高采集效率
+Full-text notes: 全文开源。附录提供爬虫伪代码、详细追踪关键词列表及完整数据Schema定义。
+
+### Adaptive political surveys and GPT-4: Tackling the cold start problem with simulated user interactions (2025; Curated; citations: 4)
+Tags: llm synthetic data; cold start problem; adaptive surveys; voting advice applications; gpt-4; political ideology; ideal point estimation; item response theory; active learning; public opinion polling; swiss politics; smartvote; data augmentation; recommendation systems; political strategy
+研究利用GPT-4生成瑞士政治问卷的合成数据，以解决自适应调查的冷启动问题。结果显示合成数据能显著降低早期预测误差并提高候选人推荐准确率。
+Deliverables: 基于GPT-4的瑞士政党立场合成数据集 | 自适应政治问卷模拟框架及代码 | 冷启动问题缓解策略的实证评估
+Method: Prompt Engineering (GPT-4模拟政党成员) | Item Response Theory (IRT) 替代模型 (PCA + Logistic Regression) | Active Learning (Gini Impurity 问题选择) | Synthetic Data Generation & Pre-training | Downstream Task Evaluation (Imputation & Recommendation)
+Full-text notes: 全文公开获取 (PLoS ONE)。详细包含提示词设置、PCA降维可视化、不同温度参数对数据方差的影响、以及不同替换率(gamma)对模型收敛的影响分析。
+
+### AlignSurvey: A Comprehensive Benchmark for Human Preferences Alignment in Social Surveys (2025; Curated; citations: 1)
+Tags: social survey simulation; llm alignment; public opinion modeling; demographic fairness; benchmark dataset; survey methodology; attitude stance detection; cross-cultural evaluation; policy simulation; bias mitigation; survey response prediction; social role modeling; semi-structured interview; group-level analysis; open source llm; computational social science; human preference alignment; survey pipeline; expert annotation; fairness in ai
+提出AlignSurvey基准，利用LLM模拟完整社会调查流程。构建多阶段数据集与SurveyLM模型，显著提升对边缘群体态度与人口特征的预测精度，缓解传统调查偏差。
+Deliverables: AlignSurvey基准测试套件（含四个任务阶段） | Social Foundation Corpus（44K+访谈，400K+结构化记录） | AlignSurvey-Expert (ASE) 专家标注数据集 | SurveyLM模型家族（基于Mistral, LLaMA, Qwen微调） | 开源代码与评估工具
+Method: 两阶段对齐策略：基础语料预训练+任务特定微调 | 多任务学习：角色建模、半结构化访谈、态度立场、结构化响应 | 跨文化评估：整合ATP, ESS, CSS, CGSS, GSS, CHIP数据 | 细粒度人口统计与态度分布评估指标
+Full-text notes: 全文公开于arXiv (2511.07871)。摘要及正文详细描述了数据集构建、任务定义、实验设置及消融实验。包含详细的表格数据（Table 1-7）和图表，无付费墙限制。
+
+### An evaluation of LLMs for political bias in Western media: Israel-Hamas and Ukraine-Russia wars (2026; Curated; citations: 0)
+Tags: political bias detection; llm evaluation; media analysis; ukraine russia war; israel hamas conflict; bbc vs guardian; deepseek; gemini; bert; sentiment analysis; geopolitical bias; western media; nlp methods; political leaning; multimodal llm; data scraping; time series analysis; algorithmic bias; public opinion; democratic discourse
+研究利用BERT、Gemini和DeepSeek评估BBC与卫报在俄乌及以哈冲突中的政治偏见。发现媒体偏见随事件变化，不同LLM检测结果差异显著，DeepSeek倾向左翼，BERT/Gemini居中。
+Deliverables: 包含BBC和卫报在2020-2024年间关于俄乌和以哈冲突的新闻数据集 | 基于三种LLM的政治偏见分类结果（左/中/右） | 情感分析结果（愤怒、恐惧等七类情绪） | N-gram词汇模式对比分析 | GitHub代码与数据仓库链接
+Method: 数据爬取：通过API和HuggingFace获取BBC与卫报文章 | LLM分类：使用BERT（滑动窗口+多数投票）、Gemini 1.5 Flash、DeepSeek-V3进行政治倾向标注 | 情感分析：使用DistilRoBERTa模型进行情绪分类 | N-gram分析：提取高频词组以验证主题相关性 | 时间序列对比：比较战前与战期间的偏见分布变化
+Full-text notes: 全文开源于arXiv，包含详细的方法论、数据集统计、N-gram表格及LLM分类结果表格。
+
+### Assessing political bias in large language models (2024; Curated; citations: 50)
+Tags: llm political bias; political alignment; wahl-o-mat; german politics; eu parliament elections; left-leaning bias; model size effect; language dependency; performative prediction; ai safety; open source llms; llama3; mistral; political ideology; bias measurement
+研究评估主流开源LLM在德国视角下的政治偏见。发现大模型（如Llama3-70B）倾向左翼政党，小模型更中立；德语提示下立场更鲜明，英语下更保守。
+Deliverables: 开源评估代码与数据集：https://github.com/lrettenberger/LLM_Political_Orientation | 基于Wahl-O-Mat的38项欧盟政治议题LLM立场数据集 | LLM与欧洲议会各政党政治立场的对齐度量化报告
+Method: 使用德国Wahl-O-Mat投票建议应用中的38项政治声明作为测试集 | 对5个主流开源LLM（Llama2/3, Mistral）进行德语和英语双语言提示评估 | 通过LLM对声明的同意/中立/反对态度，计算其与14个欧洲议会政党的对齐度 | 基于对齐度模拟欧洲议会席位分配
+Full-text notes: 全文已提供。包含详细的实验设置、38项具体政治议题列表（附录）、各模型对齐度的箱线图分析及席位模拟结果。
+
+### Assessing the Political Fairness of Multilingual LLMs: A Case Study based on a 21-way Multiparallel EuroParl Dataset (2025; Curated; citations: 0)
+Tags: political bias; multilingual llm; fairness evaluation; euro parl; machine translation; borda count; dataset construction; political affiliation; llm bias; cross-lingual; democratic processes; translation quality; group fairness; parliamentary debates; llama 3; qwen 3; gemma 3; metadata alignment; political spectrum; systemic bias
+提出基于多语言翻译公平性评估LLM政治偏见的新框架。构建21-EuroParl数据集，发现主流政党（EPP, S&D）翻译质量显著优于边缘政党（NGL, NA），证实LLM存在系统性政治偏见。
+Deliverables: 21-EuroParl数据集：150万句、21种语言、包含演讲者政党归属元数据。 | 基于Borda Count的跨语言排名聚合方法。 | 代码与翻译输出以支持可复现性。
+Method: 构建21-way多平行语料库，基于LinkedEP进行句子对齐。 | 使用sBLEU和COMET评估翻译质量。 | 应用Borda Count方法聚合不同语言对中的政党排名。 | 测试Llama-3.1, Qwen3, Gemma-3系列模型。
+Full-text notes: 全文公开。详细展示了21-EuroParl的数据统计、句子对齐流程、Borda Count计算方法、各模型在不同语言对上的具体得分表（Table 4-7）以及关于语言偏见和政治偏见的深入讨论。
+
+### Demonstrations of the Potential of AI-based Political Issue Polling (2023; Curated; citations: 31)
+Tags: ai polling; large language models; public opinion simulation; chatgpt; political strategy; prompt engineering; demographic bias; ideological alignment; synthetic data; political science methodology; cost reduction; survey replacement; gpt-3.5; cooperative election study; ukraine war; abortion policy; virtual public; online listening; political campaigns; bias in ai
+研究利用ChatGPT模拟美国公众舆论，发现其在意识形态分布预测上高度准确，但在人口统计学差异及训练后新议题上存在偏差。
+Deliverables: 一种用于从LLM中获取类人调查响应的提示工程方法论。 | 基于Cooperative Election Study (CES)数据的AI模拟数据与人类调查数据的系统性对比分析。 | 关于AI作为虚拟公众或在线监听平台在政治领域应用的局限性讨论。
+Method: Prompt Engineering: 设计提示词让ChatGPT扮演具有特定人口统计学和意识形态特征的个体。 | Large-scale Simulation: 通过API批量查询GPT-3.5-turbo，生成数千个模拟响应。 | Comparative Analysis: 将模拟结果与2022年Cooperative Election Study (CES)的人类调查数据进行统计对比（皮尔逊相关系数、MAPE、NEMD）。
+Full-text notes: 全文为arXiv预印本，内容完整。摘要和正文详细描述了实验设置、提示模板迭代过程、具体议题（如堕胎、枪支管制、乌克兰战争）的对比结果图表及误差分析。
+
+### Echoes of Power: Investigating Geopolitical Bias in US and China Large Language Models (2025; Curated; citations: 5)
+Tags: geopolitical bias; llm alignment; chatgpt vs deepseek; political narrative; ai ethics; content moderation; ideological bias; public opinion; us china relations; llm evaluation; semantic similarity; political discourse; ai governance; multilingual bias; policy implications
+对比ChatGPT与DeepSeek在地缘政治问题上的偏差，发现两者虽存在意识形态差异，但在许多敏感话题上回应出乎意料地一致，且DeepSeek对特定议题有硬性屏蔽。
+Deliverables: 包含50个地缘政治问题的基准测试数据集 | ChatGPT和DeepSeek对这些问题生成的完整回答及评估指标 | 公开可用的GitHub代码库与数据仓库
+Method: 构建包含50个地缘政治与国际关系问题的英文基准测试集 | 通过Web界面收集ChatGPT和DeepSeek-R1的零样本回答 | 使用Sentence-BERT计算回答间的余弦相似度进行定量分析 | 利用LLM作为裁判评估回答间的分歧等级（1-5分） | 结合词云和人工定性分析评估框架、语气及意识形态倾向
+Full-text notes: 全文可获取。详细展示了4个聚类的问题案例，包括具体问答文本对比、词云图及热力图分析。
+
+### ElectionSim: Massive Population Election Simulation Powered by Large Language Model Driven Agents (2024; Curated; citations: 37)
+Tags: election simulation; large language models; agent-based modeling; political science; us presidential election; voter behavior; social media data; demographic sampling; public opinion; predictive modeling; iterative proportional fitting; political strategy; benchmark dataset; llm agents; political polarization; campaign discourse; survey simulation; computational social science; political forecasting; demographic tagging
+提出ElectionSim框架，利用LLM驱动百万级选民代理模拟美国大选。通过社交媒体数据构建选民池，结合人口统计分布采样，在2020年大选中准确预测47/51州结果。
+Deliverables: ElectionSim大规模人口选举模拟框架 | 百万级选民池（基于Twitter数据清洗与人口统计标注） | PPE（Poll-based Presidential Election）基准测试集 | 交互式选民对话演示系统 | 迭代比例拟合（IPF）人口分布采样算法
+Method: 基于LLM的代理建模（Agent-based Modeling） | 社交媒体数据收集与清洗（Twitter 2020年数据） | 人口统计特征分类器（Longformer微调） | 迭代比例拟合（IPF）进行联合分布采样 | 提示工程（Prompt Engineering）与多基线对比评估
+Full-text notes: 全文开源于arXiv (2410.20746)，包含详细的方法论、实验设置、附录及问卷设计细节。
+
+### From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models (2023; Curated; citations: 367)
+Tags: political bias; language models; fairness; hate speech detection; misinformation detection; ideological polarization; pretraining data; downstream tasks; political compass; nlp ethics; partisan ensemble; social bias; economic bias; identity groups; media bias; model probing; democracy; public opinion; algorithmic fairness; political ideology
+研究量化预训练语言模型的政治偏见及其对仇恨言论和虚假信息检测公平性的影响。发现模型偏见源于预训练数据，导致下游任务对不同身份群体和党派来源表现出不公平。
+Deliverables: 基于政治科学理论的LM政治倾向量化框架（社会与经济双轴）。 | 公开代码与数据：https://github.com/BunsenFeng/PoliLean | 六种党派预训练语料库（左/中/右 x 新闻/Reddit）及清洗后的仇恨言论/虚假信息数据集。 | 14种主流语言模型的政治倾向基准测试结果。
+Method: 政治罗盘测试（Political Compass Test）：通过62个政治陈述的同意/反对概率映射模型的社会与经济得分。 | 控制变量实验：在相同架构下，使用不同党派语料库继续预训练模型，观察政治坐标偏移。 | 下游任务评估：在仇恨言论检测（HATE-IDENTITY）和虚假信息检测（PolitiFact）上，按身份群体和媒体来源细分评估模型性能。 | 党派集成策略：结合不同政治倾向的模型进行预测以缓解偏见。
+Full-text notes: 全文开源（arXiv:2305.08283）。附录包含详细的政治陈述列表、超参数设置、模型版本信息及伦理声明。
+
+### From Skepticism to Acceptance: Simulating the Attitude Dynamics Toward Fake News (2024; Curated; citations: 74)
+Tags: fake news; llm agents; social simulation; opinion dynamics; misinformation; political communication; agent-based modeling; intervention strategies; personality traits; public opinion; digital persuasion; cognitive simulation; social networks; policy simulation; governance
+提出基于LLM的FPS框架模拟假新闻传播，结合双记忆与推理机制，揭示政治类假新闻传播更快，早期频繁干预最有效。
+Deliverables: FPS (Fake news Propagation Simulation) 框架代码 | 基于LLM Agent的社会模拟实验数据集 | 不同人格特质与话题类型的传播动力学对比分析
+Method: LLM-based Agent-based Modeling (ABM) | Dual Memory System (Short-term & Long-term) | Reflective Reasoning Mechanism | Modified SIS Model for Macro-level Dynamics
+Full-text notes: 全文开源，包含详细的方法论、实验设置、消融研究及附录。代码已发布在GitHub。
+
+### Ideology-Based LLMs for Content Moderation (2025; Curated; citations: 1)
+Tags: llm bias; content moderation; political ideology; persona conditioning; hate speech detection; fairness; multimodal llm; political compass; agreement analysis; partisan asymmetry; prompt engineering; model scaling; ai ethics; text classification; ideological alignment
+研究揭示LLM内容审核中，人格设定会引入隐性意识形态偏见。大模型更倾向与同意识形态人格一致，对异见观点降低有害性判定，存在党派偏见风险。
+Deliverables: PersonaHub数据集（20万个人格描述） | 基于政治罗盘测试(PCT)的人格意识形态映射方法 | GitHub代码库与实验配置 | 多模型（Llama, Qwen等）在文本/视觉模态下的偏见基准数据
+Method: 使用PersonaHub生成20万个人格描述 | 通过政治罗盘测试(PCT)将人格映射至二维政治坐标 | 选取极端意识形态人格进行内容审核实验 | 评估Hate-Identity, FHM, CAD数据集上的检测率与一致性 | 分析组内/组间一致性(Cohen's kappa)与党派不对称性
+Full-text notes: 全文可获取。详细展示了6个LLM在文本和视觉模态下的性能对比表格，以及政治罗盘分布图。附录包含提示词模板和统计检验细节。
+
+### International political bias in large language models: a critical discourse analysis of narratives in ChatGPT, LLaMA, Gemini, and DeepSeek (2026; Curated; citations: 0)
+Tags: llm bias; geopolitical narrative; critical discourse analysis; sentiment analysis; soft power; algorithmic power; international relations; emotional turn; chatgpt; llama; gemini; deepseek; western hegemony; technological sovereignty; political ideology; nrc emotion lexicon; media bias; ai diplomacy
+研究通过批判性话语分析和情感分析，评估四大LLM对美、俄、中、伊、以的叙事偏见。发现LLM普遍呈现亲美亲中、反俄反伊的结构性不对称，反映西方精英叙事及算法权力，DeepSeek亦受英语语料影响。
+Deliverables: 四大模型（ChatGPT, LLaMA, Gemini, DeepSeek）针对五国地缘政治角色的文本生成样本。 | 基于NRC情感词典的自动化情感极性量化数据（正/负向词汇比例及八类情感频率）。 | 关于LLM作为算法权力工具和软实力的批判性话语分析框架。
+Method: 批判性话语分析 (Critical Discourse Analysis, CDA) | 自动化情感分析 (NRC Emotion Lexicon) | 比较案例研究 (Comparative Case Study) | 提示词工程 (Prompt Engineering:  essays vs. political speeches)
+Full-text notes: 全文已提供。包含详细的方法论、提示词结构表、情感频率图表及具体模型对各国（特别是俄罗斯、伊朗、中国）的定性引述和定量数据表。
+
+### John vs. Ahmed: Debate-Induced Bias in Multilingual LLMs (2024; Curated; citations: 11)
+Tags: llm bias; multilingual evaluation; arabic nlp; political bias; cultural bias; gpt-3.5; gemini; debate prompting; safety alignment; geopolitical bias; gender bias; religious bias; race bias; prompt engineering; llm safety; cross-lingual; arabic; russian; fairness; ethics
+研究揭示GPT-3.5和Gemini在阿拉伯语、英语和俄语辩论中存在显著偏见，模型倾向于让提示语言对应的文化或政治立场获胜。
+Deliverables: 多语言辩论诱导提示模板 | GPT-3.5和Gemini在文化、政治、宗教、种族、性别领域的偏见评估数据集 | 跨语言LLM安全评估基准
+Method: 辩论诱导提示法（Debate-Induced Prompting） | 多语言（阿拉伯语、英语、俄语）对比实验 | 人工审核与胜率统计评估 | 单轮探测（Single-turn Probing）
+Full-text notes: 全文可获取。详细展示了各语言下不同文化、政治、宗教、种族和性别对立的辩论结果及胜率表格，包含具体的Prompt模板和附录数据。
+
+### Measuring Political Bias in Large Language Models: What Is Said and How It Is Said (2024; Curated; citations: 112)
+Tags: political bias; llm evaluation; framing analysis; political stance; content bias; style bias; lexical polarity; media bias; us-centric bias; model alignment; open source llms; acl 2024; political polarization; entity extraction; sentiment analysis
+提出双层级框架评估LLM政治偏见，涵盖立场与框架（内容/风格）。发现LLM多呈自由派倾向且具美国中心主义，模型大小与偏见程度无必然联系。
+Deliverables: 开源代码库 | 针对11个开源LLM的政治偏见评估数据集与结果 | 可扩展的LLM政治偏见测量框架
+Method: 极端锚点对比法（Extreme Anchor Comparison）评估政治立场 | 基于Boydstun框架维度的内容偏差分析 | 基于命名实体识别（NER）的实体频率分析 | 基于情感分析模型的词汇极性（风格）偏差评估 | 新闻标题生成任务作为偏见探针
+Full-text notes: 全文可获取。详细展示了11个模型在14个议题上的立场热力图、实体提及频率对比及情感极性分析。附录包含完整的框架维度列表及实验细节。
+
+### Media Source Matters More Than Content: Unveiling Political Bias in LLM-Generated Citations (2025; Curated; citations: 4)
+Tags: llm bias; political ideology; citation generation; generative search; rag systems; media source bias; left-leaning bias; allsides dataset; cpi metric; debiasing strategies; information exposure; search engine manipulation; content vs source; political polarization; nlp fairness
+研究发现LLM在生成引用时显著偏向左翼媒体，且该偏差主要由媒体名称而非内容驱动。LLM能精准识别媒体政治倾向，但仅凭内容难以判断。简单去偏提示反而加剧偏差。
+Deliverables: AllSides-2024数据集：包含2024年真实新闻文章，标注左右翼立场 | Citation Preference Index (CPI)：用于量化LLM引用偏好的评估指标 | 开源代码与资源链接
+Method: 构建AllSides-2024数据集，配对同一事件的不同立场新闻 | 设计CPI指标量化引用偏好 | 控制实验：移除来源、交换来源以分离内容与来源的影响 | 对比传统检索系统（BM25, Dense Retrievers）与LLM的偏差差异 | 测试直接去偏与识别后去偏提示策略的效果
+Full-text notes: 全文已提供。包含详细实验设置、数据集统计、控制实验结果、与传统检索方法的对比、去偏策略评估及局限性讨论。
+
+### ParlAI Vote: A Web Platform for Analyzing Gender and Political Bias in Large Language Models (2025; Curated; citations: 0)
+Tags: llm bias; political science; european parliament; vote prediction; gender bias; web platform; fairness auditing; interpretability; legislative simulation; demographic analysis; political ideology; error analysis; counterfactual testing; nlp for politics; model transparency
+发布ParlAI Vote平台，整合欧洲议会辩论、投票与人口数据，评估LLM在投票预测中的性别与政治偏见，揭示模型依赖刻板印象导致系统性误差。
+Deliverables: ParlAI Vote交互式Web平台（含可视化与预测模块） | EuroParlVote基准数据集（链接辩论、演讲与投票结果） | 关于LLM政治与性别偏见的详细错误分析报告
+Method: 构建集成数据、模型与可视化的Web平台 | 使用前沿LLM（GPT-4o, Gemini, Llama）进行投票与性别预测 | 通过反事实实验（Counterfactuals）测试人口属性对预测的影响 | 对高置信度错误案例进行推理文本的定量与定性分析
+Full-text notes: 全文可获取。详细展示了错误分类（关键词误用、批评误解为改革意愿、默认预测）、刻板印象词汇频率表及不同模型的性能对比图表。
+
+### ParliaBench: An Evaluation and Benchmarking Framework for LLM-Generated Parliamentary Speech (2025; Curated; citations: 0)
+Tags: parliamentary speech generation; political authenticity; llm evaluation benchmark; ideological alignment; qlora fine-tuning; uk parliament data; political simulation; embedding metrics; llm as judge; legislative debate; political ideology; text generation quality; computational political science; party alignment; political spectrum; democratic debate; policy simulation; nlp for politics; synthetic political data; model interpretability
+提出ParliaBench基准，利用44万英国议会演讲微调5个LLM。引入政治光谱与党派一致性新指标，验证微调显著提升政治真实性。
+Deliverables: ParliaBench数据集（447k条英国议会演讲） | 27,560条生成的议会演讲数据 | 5个微调后的LLM模型权重 | 包含PSA和Party Align的多维评估框架
+Method: QLoRA参数高效微调 | 基于嵌入的政治光谱对齐(PSA)计算 | 基于嵌入的党派一致性(Party Align)计算 | LLM-as-a-Judge评估 | UK Parliament ParlaMint语料库处理
+Full-text notes: 全文开源。包含详细的数据处理管道、评估指标公式、5个模型的性能对比表格及附录中的统计检验结果。
+
+### Political biases and inconsistencies in bilingual GPT models—the cases of the U.S. and China (2024; Curated; citations: 11)
+Tags: llm bias; political science; bilingual models; gpt consistency; in-group bias; censorship; us china relations; sentiment analysis; misinformation; geopolitics; multilingual llm; ai ethics; training data bias; cross-cultural communication; political attitude
+研究对比GPT在中英双语下对中美政治议题的回答，发现中英模型对中国议题的知识一致性和态度显著不一致，呈现基于训练语言的“内群体偏差”。
+Deliverables: 533个涵盖中美社会政治问题的中英双语问题池。 | 基于GPT-3.5和GPT-4的中英双语回答一致性数据集。 | 用于情感分类的微调模型及内容一致性编码指南。
+Method: 构建包含184个自然科学问题和533个政治问题的测试集。 | 使用GPT-3.5和GPT-4分别以中英文生成回答。 | 人工编码内容一致性（Cohen's kappa=0.80）并训练情感分类器。 | 通过统计模型控制答案长度、问题框架（事实/观点、封闭/开放）等变量进行稳健性检验。
+Full-text notes: 全文公开获取。详细展示了不一致回答的定性案例（如贫困数据、任志强被捕、南海争端），并提供了54项稳健性检验的P值表及补充表格。
+
+### Random Silicon Sampling: Simulating Human Sub-Population Opinion Using a Large Language Model Based on Group-Level Demographic Information (2024; Curated; citations: 44)
+Tags: large language models; public opinion simulation; political polling; synthetic data; demographic modeling; survey methodology; ai bias; political behavior; gpt-3.5; silicon sampling; us elections; anes dataset; stratified sampling; model bias; political strategy; social science research; ai ethics; opinion aggregation; predictive modeling; political annotation
+提出“随机硅采样”方法，仅凭群体人口统计分布即可利用LLM模拟人类子群体意见。实验显示该方法能生成与美国全国选举研究(ANES)高度相似的投票分布，但存在对敏感话题的“无害性”偏差及党派极端化倾向。
+Deliverables: 随机硅采样（Random Silicon Sampling）方法论框架 | 基于ANES 2020数据的实验代码与数据集（GitHub链接） | 关于LLM作为民意调查替代品的偏差分析报告
+Method: 随机硅采样：从目标群体的人口统计分布中随机抽取变量构建“虚拟受访者”提示词 | 使用GPT-3.5-turbo API生成合成调查响应 | 卡方同质性检验与KL散度（Kullback-Leibler Divergence）评估分布相似度 | 分层抽样、降采样及多议题测试以验证泛化性
+Full-text notes: 全文已提供。详细展示了ANES数据的人口统计变量提取、提示词构造细节、不同人口子群体（如种族、党派、年龄）的模拟误差分析，以及最小样本量实验的具体数据。
+
+### The Political Biases of ChatGPT (2023; Curated; citations: 245)
+Tags: chatgpt bias; political ideology; llm neutrality; algorithmic fairness; political orientation tests; ai ethics; left leaning bias; openai; social science; political representation; normative questions; empirical validation; balanced arguments; public facing ai; mdpi journal
+研究对ChatGPT进行15项政治倾向测试，发现其回答呈现左倾偏差，尽管模型自称中立。
+Deliverables: 15项政治倾向测试数据集 | ChatGPT政治偏见评估报告
+Method: 政治倾向测试量表 | 多语言测试（英语/西班牙语） | 一致性分析
+Full-text notes: 全文开放获取，但摘录仅含摘要和元数据，缺乏具体测试题目、统计显著性细节及偏差量化指标。
+
+### The political ideology of conversational AI: Converging evidence on ChatGPT's pro-environmental, left-libertarian orientation (2023; Curated; citations: 322)
+Tags: chatgpt; political bias; ideology detection; llm alignment; voting advice applications; algorithmic bias; political compass; prompt robustness; left-libertarian; environmental policy; nlp analysis; liwc; pca; pre-registered study; germany politics; netherlands politics; ai safety; democratic implications; generative ai; political representation
+研究揭示ChatGPT具有亲环境、左翼自由主义的政治倾向，在德荷选举中支持绿党，且该偏差在多语言及提示变体下稳健。
+Deliverables: 三个预注册实验的数据与结果 | ChatGPT对630个政治陈述的响应分布 | 基于PCA的政治立场二维映射图 | 文本分析（LIWC）揭示的论证风格特征
+Method: 预注册实验设计 | 使用Wahl-O-Mat和StemWijzer投票建议应用的政治陈述 | Nation-agnostic政治罗盘测试 | 提示工程鲁棒性检验（否定、顺序、形式、翻译） | 主成分分析（PCA）进行政治定位可视化 | LIWC文本分析评估论证风格
+Full-text notes: 全文可获取。包含详细的实验设置、鲁棒性检查表格、PCA可视化图表及Web附录中的具体政治陈述对照表。
+
+### When Two LLMs Debate, Both Think They'll Win (2025; Curated; citations: 1)
+Tags: llm calibration; overconfidence; metacognition; adversarial debate; belief updating; ai safety; agentic workflows; chain of thought faithfulness; zero-sum games; confidence escalation; self-assessment; policy debate; llm reliability; cognitive bias; ai alignment; multi-turn reasoning; systematic error; prompt engineering mitigation; trustworthy ai; decision making
+研究揭示LLM在对抗性辩论中缺乏元认知校准能力，表现为系统性过度自信、随辩论推进信心反而升级、双方同时高估胜率及私下心声与公开表态不一致，对AI代理安全构成重大风险。
+Deliverables: 60场三回合政策辩论的完整转录数据与信心评分。 | 评估LLM元认知与置信度校准的实验代码库。 | 针对过度自信的缓解策略（如Red-teaming提示）效果分析。
+Method: 零和博弈结构下的多轮对抗性政策辩论模拟。 | 10种前沿LLM参与，每轮后私有评分胜率(0-100)。 | 四种消融实验：跨模型、标准自我辩论、知情自我辩论、公开下注。 | 统计检验对比初始信心、信心变化趋势及逻辑一致性。
+Full-text notes: 全文为arXiv预印本，无付费墙。包含详细实验设置、统计表格及附录。
+
+### Beyond Prompt Brittleness: Evaluating the Reliability and Consistency of Political Worldviews in LLMs (2024; Important; citations: 52)
+Tags: llm political bias; political worldview; prompt brittleness; reliability evaluation; consistency analysis; left-right spectrum; policy issues; voting advice applications; psychometric methods; llm alignment; eu politics; social welfare; law and order; migration policy; environmental protection; prompt robustness; semantic inversion; negation testing; label order bias; model scaling
+研究评估LLM政治立场的可靠性与一致性。发现大模型总体左倾，但在环境、福利上左倾，在治安上右倾，缺乏一致世界观。
+Deliverables: ProbVAA数据集：包含7个欧盟国家的投票建议问卷及变体。 | 可靠性评估框架：结合心理测量学标准测试提示鲁棒性。 | 开源代码与评估结果：用于复现LLM政治偏见分析。
+Method: 构建包含释义、否定和语义反转的提示变体数据集。 | 使用心理测量学方法评估模型对提示变化的鲁棒性。 | 通过Bootstrap测试统计显著性，筛选可靠回答。 | 将模型回答与欧盟政党立场进行比对分析。
+Full-text notes: 全文可获取。详细描述了ProbVAA数据集构建、提示设计（个人/非个人、标签顺序）、响应映射启发式规则及统计检验方法。附录包含详细的数据分布和人类标注者表现对比。
+
+### Bias Beyond Borders: Political Ideology Evaluation and Steering in Multilingual LLMs (2026; Important; citations: 1)
+Tags: political bias; multilingual llms; bias mitigation; activation steering; cross-lingual alignment; political compass test; fairness in ai; ideological neutrality; post-hoc intervention; geopolitical bias; language-specific bias; model governance; activation space; uncertainty adaptive; deepseek; mistral; political ideology; social axis; economic axis; responsible ai
+研究评估50国33种语言的政治偏见，提出CLAS框架通过跨语言对齐和自适应干预减少偏见，同时保持响应质量。
+Deliverables: 涵盖50个国家、33种语言的跨语言政治偏见评估基准（基于Political Compass Test）。 | Cross-Lingual Alignment Steering (CLAS) 框架，一种后处理激活层干预方法。 | 开源模型（Mistral-7B, DeepSeek-7B）在多种语言下的政治立场量化数据。
+Method: 大规模多语言评估：使用Political Compass Test (PCT) 在50国33种语言中测量经济和社会轴偏见。 | Cross-Lingual Alignment Steering (CLAS)：通过正交变换将不同语言的意识形态表示对齐到共享子空间。 | 不确定性自适应缩放：根据模型输出熵动态调节干预强度，防止过度纠正。 | 激活层干预：在推理时修改Transformer层的隐藏状态以调整政治立场。
+Full-text notes: 全文为arXiv预印本，无付费墙。包含详细的实验设置、模型超参数、多语言偏见分布图表及CLAS算法公式。
+
+### ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning (2023; Important; citations: 206)
+Tags: chatgpt-4; political annotation; zero-shot learning; text-as-data; twitter analysis; political affiliation; llm reliability; crowd workers comparison; political bias; interpretive research; social science methods; us politics; 2020 election; prompt engineering; emergent abilities
+评估ChatGPT-4在零样本学习下对美国政客推文政治派系分类的准确性、可靠性与偏差。结果显示其表现优于专家与众包人员，具备处理语境推理的能力，表明LLM可大规模替代人工文本标注。
+Deliverables: 验证了ChatGPT-4在政治文本分析任务中作为人工标注替代方案的可行性。 | 提供了LLM在零样本学习下进行政治意图推理的具体案例与解释。 | 揭示了LLM在政治分类任务中存在的系统性偏差特征。
+Method: 数据源：2020年美国大选前两个月美国参议员的500条推文（250条民主党，250条共和党）。 | 对比基准：MTurk众包工人（10人/条，经质量控制）与两名政治学专家的人工标注。 | LLM设置：通过API调用ChatGPT-4，使用零样本提示词，分别在低温度(0.2)和高温度(1.0)下各运行5次。 | 评估指标：准确率、Krippendorff's Alpha可靠性系数、党派分类偏差分析。
+Full-text notes: 全文为arXiv预印本，内容完整。详细展示了提示词设计、温度参数对结果的影响、具体的推理案例（如圣经引用、最高法院提名）以及偏差分析图表。
+
+### Cultural bias and cultural alignment of large language models (2023; Important; citations: 307)
+Tags: cultural bias; llm alignment; prompt engineering; world values survey; gpt-4; political ideology; cross-cultural; ai ethics; disaggregated evaluation; inge hart-welzel map; rlhf bias; public opinion; ai representation; prompt variants; euclidean distance; cultural values; llm auditing; political strategy; generative ai; bias mitigation
+评估GPT-3至GPT-4o的文化偏差，发现其默认倾向盎格鲁-新教价值观。提出文化提示策略，对71-81%的国家显著改善文化对齐，但非万能。
+Deliverables: 107个国家/地区的LLM文化偏差量化数据集 | 文化提示作为控制偏差的有效策略验证 | 基于Inglehart-Welzel文化地图的LLM评估框架
+Method: 使用World Values Survey (WVS)和European Values Study (EVS)数据构建Inglehart-Welzel文化地图基准 | 提取10个核心问题，通过API获取GPT-3至GPT-4o的响应 | 计算LLM响应与人类调查数据在文化地图上的欧几里得距离 | 对比无提示与有文化身份提示（Cultural Prompting）下的偏差变化
+Full-text notes: 全文已提供。详细包含10个WVS问题、10种提示变体、PCA降维方法及107个国家的距离数据。
+
+### Democratic or Authoritarian? Probing a New Dimension of Political Biases in Large Language Models (2025; Important; citations: 5)
+Tags: llm bias; democracy vs authoritarianism; political alignment; multilingual bias; f-scale; leader favorability; role model probing; geopolitical bias; llm evaluation; cross-lingual comparison; mandarin vs english; political ideology; ai safety; value alignment; psychometric probing; world leaders; regime type; implicit bias; llm-as-judge; political science
+研究提出评估LLM民主-威权偏见的框架，发现模型总体亲民主，但中文提示下对威权领导人好感度上升，且常在非政治语境中推荐威权人物为榜样。
+Deliverables: 民主-威权偏见评估框架（包含F-scale、FavScore、Role-Model Probing三部分） | FavScore指标：基于公众调查改编的领导人好感度量化工具 | 开源代码库：https://github.com/irenestrauss/Democratic-Authoritarian-Bias-LLMs | 8个主流LLM在英/中双语下的偏见基准测试数据
+Method: F-scale改编：使用30项心理测量题项评估威权倾向 | FavScore：基于Pew/ANES等调查改编的39题领导人好感度评分 | Role-Model Probing：询问222个国籍的榜样，由LLM作为裁判进行分类 | 跨语言对比：英语与中文提示下的系统性差异分析 | 统计检验：符号检验、Wasserstein距离、LLM-as-a-Judge验证
+Full-text notes: 全文为arXiv预印本，无付费墙。包含详细的实验设置、提示词模板、鲁棒性测试（如Likert量表变体、提示词改写）及伦理声明。
+
+### Framing Political Bias in Multilingual LLMs Across Pakistani Languages (2025; Important; citations: 4)
+Tags: political bias; multilingual llms; pakistan languages; political compass test; framing analysis; ideological stance; low-resource languages; cultural adaptation; bias auditing; nlp ethics; urdu; punjabi; sindhi; pashto; balochi; entity sentiment; media framing; llm evaluation; geopolitical bias; democratic discourse
+评估13个LLM在五种巴基斯坦语言中的政治偏见，发现模型在低资源语言中呈现更威权倾向，且文化适配微调可减轻偏见。
+Deliverables: 首个针对五种巴基斯坦语言（乌尔都语、旁遮普语、信德语、普什图语、俾路支语）的大规模政治偏见评估数据集。 | 包含62个文化适应政治罗盘测试（PCT）陈述的多语言翻译及13个LLM的响应数据。 | 约444,340条多语言新闻标题生成语料库，涵盖11个敏感政治主题的正反立场。 | 一套结合意识形态立场评分与叙事框架分析（内容、实体、情感）的评估框架。
+Method: 文化适应的政治罗盘测试（PCT）：将62个陈述翻译为五种语言，使用Likert量表评估经济和社会轴线的意识形态立场。 | 多层面框架分析：基于Boydstun分类法进行内容框架分类，使用NER提取实体频率，利用XLM-RoBERTa进行实体情感极性分析。 | 立场评分与映射：通过分类器置信度计算连续立场得分，并离散化为有序类别，投影到二维意识形态空间。 | 零样本提示策略：使用双语提示生成新闻标题，评估模型在正反立场下的框架偏差。
+Full-text notes: 全文可获取（arXiv:2506.00068）。详细实验设置、附录中的模型列表、提示模板、额外图表及伦理声明均在文本中提供。
+
+### Generative Echo Chamber? Effect of LLM-Powered Search Systems on Diverse Information Seeking (2024; Important; citations: 171)
+Tags: llm search; echo chamber; selective exposure; political polarization; information diversity; conversational ai; public opinion; algorithmic bias; human computer interaction; democracy; persuasion; information environment; llm safety; political strategy; media effects
+研究探讨LLM驱动搜索是否加剧选择性接触。实验发现LLM搜索导致更多偏见查询，强化用户观点的LLM会恶化此效应，对民主审议构成风险。
+Deliverables: 两项关于LLM搜索与信息多样性的实验数据 | 关于LLM偏见对公众舆论影响的政策建议
+Method: 受控实验设计 | 对比传统搜索与LLM搜索的信息获取行为 | 操纵LLM的立场偏见（强化或挑战用户观点）
+Full-text notes: 仅基于摘要和简短摘录，缺乏具体实验参数、样本量及统计显著性细节。
+
+### Hidden Persuaders: LLMs’ Political Leaning and Their Influence on Voters (2024; Important; citations: 74)
+Tags: llm political bias; voter persuasion; 2024 us election; human-llm interaction; instruction tuning bias; political polarization; ai influence on democracy; representation engineering; sentiment analysis; election simulation; llm safety; political leaning measurement; user study; causal inference; ai alignment
+研究揭示LLM在2024美国大选中普遍亲拜登，指令微调加剧此倾向。与935名选民交互显示，LLM无意引导使特朗普支持者减少支持，投票差距从0.7%扩至4.6%，效应显著。
+Deliverables: 18个LLM的政治倾向量化数据集 | 935名美国注册选民与LLM交互的实验数据 | LLM政治中立化技术（表示工程）的初步应用代码
+Method: LLM投票模拟实验 | 候选人政策问答分析（拒绝率、长度、情感得分） | 人机交互用户实验（5轮对话） | 对照组线性回归分析
+Full-text notes: 全文已提供。包含详细的实验设计、统计显著性检验、不同模型（Claude-3, Llama-3, GPT-4）的效果差异分析，以及关于生态效度和时间依赖性的局限性讨论。
+
+### Large Means Left: Political Bias in Large Language Models Increases with Their Number of Parameters (2025; Important; citations: 10)
+Tags: political bias; llm evaluation; large language models; political ideology; bias quantification; german politics; wahl-o-mat; model size effect; prompt engineering; language effect; ai safety; misinformation; public opinion; model alignment; open source llms; llama; mistral; deepseek; political representation; ai governance
+研究量化了LLM的政治偏见，发现模型参数越大，左倾偏见越强。语言（英/德）和发布日期也影响偏见，但模型起源无显著影响。
+Deliverables: 基于Wahl-O-Mat指标对7个主流开源LLM（Llama 2/3, Mistral, DeepSeek R1, Simplescaling S1）的政治立场量化评分。 | 不同语言（德语原版vs英语翻译）提示下LLM政治立场变化的对比数据集。 | LLM政治偏见与模型规模、发布日期及起源的相关性分析结论。
+Method: 使用德国Wahl-O-Mat选举指南的38个政治陈述作为评估基准。 | 构建标准化Prompt，要求LLM对陈述表示“同意/中立/反对”，并提取结构化答案。 | 计算LLM回答与德国各政党立场的Wahl-O-Mat对齐分数。 | 基于议会席位分布构建理论席位分配，计算LLM在左-右政治光谱上的位置（θ分数）。 | 对比不同语言输入、模型规模、发布日期和起源对θ分数的影响。
+Full-text notes: 全文已提供。包含详细的实验设置、对齐分数矩阵、理论席位分配图表及附录中的具体Prompt和Wahl-O-Mat问题列表。
+
+### Large language models as a substitute for human experts in annotating political text (2024; Important; citations: 94)
+Tags: llm annotation; gpt-4; political text analysis; human-in-the-loop; automated coding; sentiment analysis; ideology measurement; cost-efficiency; multilingual nlp; text-as-data; transformer models; political communication; methodology; bias assessment; scalability
+评估GPT-4在政治文本标注中的表现，发现其在短文本上准确率高达95%，并提出人机混合标注法以提升长文本及非英语文本精度。
+Deliverables: GPT-4政治文本标注性能评估报告 | 一种高效的人机混合标注方法论 | 多语言（美、智、德、意）政治文本标注基准数据
+Method: 对比实验：GPT-4编码 vs 人类专家编码 | 跨语言与跨体裁分析（推文与新闻） | 下游任务验证：Transformer模型训练效果对比
+Full-text notes: 仅获取到摘要和元数据，未包含详细实验设置、具体混淆矩阵或成本效益分析的全文细节。
+
+### Large language models reflect the ideology of their creators (2025; Important; citations: 58)
+Tags: llm ideology; political bias; geopolitical differences; moral assessment; prompt engineering; ecological validity; value alignment; cross-lingual analysis; political science; ai governance; transparency; manifesto project; principal component analysis; open-ended elicitation; regulatory implications
+研究揭示LLM意识形态反映其创造者世界观。通过评估19款模型对3991位政治人物的道德判断，发现显著的地缘与语言差异。
+Deliverables: 包含19款流行LLM对3991位政治人物道德评估的大规模数据集。 | 用于评估LLM意识形态的开源代码库（GitHub）。 | 基于Manifesto Project标签体系的61个意识形态标签标注数据。
+Method: 两阶段提示策略：第一阶段让LLM描述政治人物，第二阶段评估描述中的道德倾向。 | 覆盖联合国六种官方语言，确保跨语言比较的生态效度。 | 主成分分析（PCA）可视化意识形态光谱。 | 基于Manifesto Project标签体系的量化分析与雷达图/森林图统计检验。
+Full-text notes: 全文公开（Nature/ArXiv）。详细方法论见附录，包括政治人物筛选标准（Pantheon数据集）、提示词优化过程及质量保障机制。
+
+### Looking Under the Hood: How LLMs Attempt Political Persuasion and Microtargeting (2026; Important; citations: 1)
+Tags: llm persuasion; political microtargeting; generative ai; political communication; moral foundations; ai alignment; computational social science; political strategy; message customization; public opinion; democracy; ai governance; experimental design; ideology; subgroup analysis
+研究评估LLM在政治说服与微定位中的表现，发现尽管不同模型合规度有差异，但生成的微定位信息并未系统性匹配用户特征，且未显著提升整体说服力。
+Deliverables: OSF代码与数据仓库链接 | 附录中包含提示词文本 | 11个分析图表
+Method: LLM生成政治说服信息 | 微定位任务指令 | 人类读者说服力评估实验 | 子群体异质性分析
+Full-text notes: 全文受付费墙限制。摘要确认了LLM微定位未显著提升说服力的核心结论。脚注提及研究基于Argyle et al. (2025)的原始设计，并包含详细的子群体分析（意识形态、教育等）及道德基础理论的应用细节。
+
+### Mapping Geopolitical Bias in 11 Large Language Models: A Bilingual, Dual-Framing Analysis of U.S.-China Tensions (2025; Important; citations: 4)
+Tags: geopolitical bias; llm evaluation; us-china relations; prompt framing; ideological alignment; bilingual analysis; model consistency; political science; ai safety; stance detection; refusal rates; strategic prompting; model selection; cross-cultural bias; policy implications
+研究评估11款LLM在中美地缘政治议题上的偏见，发现模型立场与其来源国高度相关，且受提示词框架和语言显著影响。
+Deliverables: 11款主流LLM在中美七大地缘政治议题上的量化偏见评分（-2至+2）。 | 基于双语和双框架的LLM响应一致性评估指标。 | 针对政治敏感应用的模型选择指南及提示工程策略建议。
+Method: 双语（英/中）与双框架（正向/反向）提示生成。 | 19,712个提示的大规模异步API查询。 | 使用GPT-4o-mini进行自动化立场分类与情感分析。 | 人工复核中立及拒绝类响应以确保准确性。
+Full-text notes: 全文为arXiv预印本，无付费墙。包含详细的提示词设计、统计结果图表及局限性讨论。
+
+### More human than human: measuring ChatGPT political bias (2023; Important; citations: 407)
+Tags: chatgpt; political bias; llm evaluation; political ideology; democratic party; left-wing bias; prompt engineering; empirical method; bootstrap; impersonation; policy implications; media bias; us politics; brazil politics; uk politics; algorithmic fairness; public choice; ai governance; questionnaire design; robustness test
+研究揭示ChatGPT存在显著且系统的左翼政治偏见，默认回答与美国民主党、巴西卢拉及英国工党高度一致。
+Deliverables: 一种无需访问模型内部参数即可测量LLM政治偏见的新颖实证方法。 | 基于Bootstrap重抽样和角色扮演（Impersonation）策略的偏差检测框架。 | 关于ChatGPT在主要民主国家系统性左翼偏见的实证证据。
+Method: 角色扮演提示工程（Impersonation Prompting）：要求模型模拟特定政治立场。 | 100次重复采样与1000次Bootstrap重抽样以消除随机性。 | 剂量-反应测试（Dose-response test）：对比平均与激进政治立场。 | 安慰剂测试（Placebo test）：使用政治中立问题验证。 | 职业-政治对齐测试（Profession-politics alignment test）。
+Full-text notes: 全文摘录完整。方法部分详细描述了使用Political Compass问卷、Bootstrap统计处理及多种稳健性检验（包括巴西和英国数据、职业模拟）。
+
+### Performance and biases of Large Language Models in public opinion simulation (2024; Important; citations: 97)
+Tags: llm bias; public opinion simulation; chatgpt; world values survey; political strategy; demographic bias; ideological bias; algorithmic fidelity; survey methodology; ai in social science; cross-cultural analysis; polling; generative ai; nlp; policy analysis; representativeness; choice complexity; environmental policy; election behavior; ai ethics
+评估ChatGPT模拟全球公众意见的准确性，发现其在西方英语国家表现较好，存在显著的人口统计学和意识形态偏差。
+Deliverables: 基于World Values Survey的ChatGPT模拟数据集 | 关于LLM在公共舆论模拟中偏差的实证分析报告
+Method: 使用GPT-3.5 Turbo API进行大规模模拟 | 对比World Values Survey (WVS) 真实调查数据 | 计算Cohen's Kappa和Cramer's V衡量一致性 | 跨文化、人口统计学和主题维度的偏差分析
+Full-text notes: 全文可获取。详细展示了六国（美、日、新、南非、巴西、瑞典）的Kappa值分布、人口统计学偏差图表及政治vs环境议题的对比数据。
+
+### Persona-driven Simulation of Voting Behavior in the European Parliament with Large Language Models (2025; Important; citations: 0)
+Tags: llm simulation; european parliament; voting prediction; persona prompting; political bias; legislative behavior; agent-based modeling; zero-shot learning; political science; nlp for social science; role-playing; counterfactual reasoning; ablation study; political ideology; parliamentary voting; model interpretability; data leakage prevention; strategic abstention; political alignment; computational social science
+研究利用LLM角色模拟预测2024年欧洲议会议员投票，加权F1达0.793。发现国家政党是主要预测因子，模型对左翼群体预测更准，且存在弃权预测困难及右翼模拟偏差。
+Deliverables: 2024年欧洲议会议员Persona数据集 | 模拟代码库 (GitHub) | 47项关键投票的预测结果与基线对比
+Method: Zero-shot persona prompting | Open-text reasoning chain before multiple-choice | Counterfactual debate ablation | Attribute ablation study
+Full-text notes: 全文公开于arXiv (2506.11798)，包含详细的方法论、消融实验、伦理考量及局限性分析。
+
+### Political Actor Agent: Simulating Legislative Politics with LLM Agents (2024; Important; citations: 6)
+Tags: llm agents; legislative simulation; roll call prediction; political actor modeling; interpretability; role-playing; us congress; policy simulation; computational political science; decision making
+提出PAA框架，利用LLM代理模拟立法者投票行为。通过角色设定、多视角规划及领袖影响机制，在有限数据下实现高精度且可解释的投票预测，优于传统嵌入模型。
+Deliverables: Political Actor Agent (PAA) 框架代码与实现 | 基于117-118届美国众议院数据的实验数据集 | 多视角立法者画像构建模板
+Method: LLM-based Agent Simulation | Role-playing Architecture | Multi-view Planning (Trustee/Delegate/Follower) | Influence Mechanism for Leader-Follower Dynamics | Zero-shot/Few-shot Prediction without Model Training
+Full-text notes: 全文公开于arXiv，包含详细的方法论、消融实验及可解释性案例。
+
+### Political Compass or Spinning Arrow? Towards More Meaningful Evaluations for Values and Opinions in Large Language Models (2024; Important; citations: 155)
+Tags: llm political bias; political compass test; prompt robustness; evaluation methodology; constrained vs unconstrained; political ideology; llm alignment; prompt engineering; survey bias; open-ended generation; anthropomorphism; value representation; gpt-4 evaluation; llm stability; political science nlp
+本文批判LLM价值观评估中强制多选格式的局限性，发现提示词微小变化导致结果剧烈波动，建议采用开放-ended评估并强调局部结论。
+Deliverables: 系统回顾了使用Political Compass Test (PCT)评估LLM的12篇文献。 | 提供了10种不同强制程度的提示词模板及其对模型合规性的影响数据。 | 开源了所有实验代码、提示词模板及数据（github.com/paul-rottger/llm-values-pct）。 | 提出了LLM价值观评估的三项建议：匹配应用场景、进行鲁棒性测试、做出局部而非全局声明。
+Method: 系统性文献综述：检索Google Scholar, arXiv, ACL Anthology中关于PCT与LLM的研究。 | 受控实验：测试10个LLM（Llama2, Mistral, Zephyr, GPT-3.5, GPT-4）在多种提示约束下的表现。 | 提示词鲁棒性测试：通过10种语义相同的提示模板变体测试模型一致性。 | 开放-ended评估：模拟真实博客/播客场景，使用GPT-4作为分类器分析模型立场。
+Full-text notes: 全文已提供。核心发现包括：1) 强制选择导致模型行为失真；2) 提示词改写导致政治坐标大幅移动（如GPT-3.5在改写下左倾幅度超过拜登与特朗普的差异）；3) 开放回答中模型倾向于更右翼/自由意志主义立场，但仍不稳定。
+
+### Should ChatGPT be Biased? Challenges and Risks of Bias in Large Language Models (2023; Important; citations: 369)
+Tags: large language models; bias mitigation; political ideology; ai ethics; fairness; rlhf; content moderation; algorithmic bias; transparency; human-in-the-loop; demographic bias; cultural bias; ai governance; responsible ai; chatgpt; gpt-4; training data; alignment; policy implications; social impact
+综述LLM偏见来源、类型及缓解策略，强调偏见不可避免，需通过透明度和人类监督实现负责任的AI开发。
+Deliverables: LLM偏见分类框架（6类）。 | 偏见来源分析表（数据、模型、人为）。 | 负责任AI开发的六大支柱。 | 缓解偏见的技术与管理策略综述。
+Method: 文献综述 | 概念性分析 | 案例研究（招聘、信贷等）
+Full-text notes: 全文可获取。详细讨论了意识形态偏见、RLHF风险及监管框架。
+
+### Systematic Biases in LLM Simulations of Debates (2024; Important; citations: 119)
+Tags: llm bias; political simulation; agent behavior; deliberation; echo chamber; self fine-tuning; qlora; political polarization; computational social science; debate dynamics; attitude change; model alignment; human simulation; emnlp 2024; systematic bias
+研究揭示LLM代理在模拟政治辩论时，倾向于服从模型固有的社会偏见而非预设角色，导致行为偏离人类动态。
+Deliverables: 一种利用LLM生成数据进行自我微调以操纵政治偏见的方法。 | 关于LLM模拟人类政治互动局限性的实证证据。 | Sauce框架下的多代理辩论模拟实验数据。
+Method: 使用Sauce框架模拟共和党与民主党代理的政治辩论。 | 通过自我生成的问答数据对Mistral 7B等模型进行QLoRA微调。 | 对比有/无默认偏见代理参与时的态度变化轨迹。
+Full-text notes: 全文公开。详细展示了辩论格式、态度评分机制、微调超参数（r, alpha）对基准测试（MMLU, Hellaswag）的影响及消融实验。
+
+### This Land is Your, My Land: Evaluating Geopolitical Bias in Language Models through Territorial Disputes (2023; Important; citations: 34)
+Tags: geopolitical bias; territorial disputes; multilingual llm; cross-lingual consistency; prompt engineering; llm evaluation; political strategy; bias mitigation; knowledge retrieval; nlp safety; cultural bias; factual recall; persona prompting; dataset construction; llm brittleness
+研究揭示LLM在领土争端中存在地缘政治偏见，即根据查询语言不同给出矛盾答案。提出BORDERLINES数据集及评估指标，发现模型知识跨语言不一致，且可通过提示工程放大或缓解偏见。
+Deliverables: BORDERLINES数据集：涵盖251个领土争端、49种语言的726道多选题 | 一套评估指标体系：量化事实召回、地缘政治偏见和跨语言一致性 | 开源代码与数据链接
+Method: 构建多语言查询集（MQS）与响应集（MRS） | 使用排名分类（Rank Classification）和解析生成文本评估模型 | 设计多种提示修改策略（基线、民族主义人设、维和者人设、人口统计推理） | 对比不同规模及微调状态的LLM（GPT-4, BLOOM, GPT-3）
+Full-text notes: 全文已提供。包含详细的数据集构建过程、评估指标公式（如Concurrence Score）、实验结果表格及克里米亚、台湾、戈兰高地等具体案例的定性分析。
+
+### What Is The Political Content in LLMs' Pre- and Post-Training Data? (2025; Important; citations: 3)
+Tags: llm political bias; training data composition; pre-training analysis; post-training alignment; political ideology; data-centric approach; left-right spectrum; model stance detection; data transparency; political representation; source domain analysis; bias mitigation; open source llms; computational social science; policy stance correlation
+研究揭示LLM政治偏见源于训练数据左倾。预训练数据中左翼内容显著多于右翼，且与模型立场高度相关。偏见在基座模型中已存在，后训练阶段未根本改变。
+Deliverables: 多模型（OLMo2, Falcon2, Pythia）预/后训练数据集的政治内容量化分析 | 基于NEWSLEAN验证的政治倾向分类器 | 基于ProbVAA的模型政策立场评估结果 | 训练数据源域（博客vs新闻）的政治分布图谱
+Method: 大规模随机抽样（Reservoir Sampling） | LLM辅助的政治倾向分类（左/中/右） | 基于BERTopic的主题建模与立场检测 | Pearson相关性分析（数据立场vs模型立场） | 源域加权比例计算以校正新闻来源偏差
+Full-text notes: 全文开源（arXiv）。包含详细的方法论、分类器验证指标、源域分布图表及附录中的统计显著性检验。
+
+### Whose Opinions Do Language Models Reflect? (2023; Important; citations: 782)
+Tags: language model bias; political ideology; human alignment; rlhf effects; public opinion; demographic representation; opinionqa dataset; model steerability; wasserstein distance; pew research data; left-leaning bias; model consistency; survey-based evaluation; us politics; ai safety; representation failure; modal opinion collapse; prompt engineering; openai models; ai governance
+研究揭示LLM与60个美国人口群体观点存在显著错位，RLHF加剧左倾偏差，且提示引导无法完全纠正。
+Deliverables: OpinionQA数据集：基于Pew Research数据构建，包含1498道多选题，覆盖23个粗粒度和40个细粒度主题 | 评估框架：提出代表性（Representativeness）、可引导性（Steerability）和一致性（Consistency）三个维度的量化指标 | 代码与数据：开源GitHub仓库 https://github.com/tatsu-lab/opinions_qa
+Method: 利用Pew Research American Trends Panel调查数据构建基准 | 使用1-Wasserstein距离衡量模型输出分布与人类调查响应分布的差异 | 评估9个不同规模（350M-178B参数）的LLM，包括基础模型和RLHF微调模型 | 通过QA、BIO、PORTRAY三种提示策略测试模型的可引导性
+Full-text notes: 全文公开（arXiv）。详细展示了各模型在不同人口统计学群体（如意识形态、收入、教育程度）上的代表性得分热力图，以及各模型在23个主题类别下的立场一致性分析。附录提供了关于拒绝率、提示鲁棒性及Wasserstein距离计算细节的补充信息。
+
+### Large-Scale Longitudinal Study of LLMs During the 2024 United States Election Season (2025; Watchlist; citations: 2)
+Tags: llm longitudinal study; 2024 us election; political bias; demographic steering; model updates; election misinformation; llm safety guardrails; political persuasion; public opinion modeling; candidate perception; implicit beliefs; election prediction; prompt sensitivity; information ecosystem; democratic processes; ai governance; model evaluation; political polarization; voter behavior; ai policy
+对12个LLM在2024美国大选期间的纵向研究，揭示模型行为随时间漂移、对人口统计引导的敏感性、候选人刻板印象及隐式选举预测。
+Deliverables: 包含12,000+查询的纵向数据集 | 结构化选举问题分类法 | 自动化查询管道与工具代码
+Method: 每日近实时查询12个模型 | 结构化问卷与22种提示变体 | 嵌入空间余弦距离分析 | 线性方程组推导隐式信念
+Full-text notes: 全文公开于arXiv，包含详细的方法论、问题分类表、模型API调用细节及成本分析。
+
+### LegiGPT: Party Politics and Transport Policy with Large Language Model (2025; Watchlist; citations: 10)
+Tags: legislative analysis; large language models; explainable ai; shap; xgboost; party politics; transport policy; south korea; zero-shot prompting; text classification; political ideology; bill sponsorship; policy simulation; gpt-4; legislative data
+提出LegiGPT框架，结合LLM与XAI分析韩国第21届国会交通立法。发现保守派与进步派赞助比例及选区特征是预测党派归属的关键，揭示了意识形态对交通政策的影响。
+Deliverables: LegiGPT框架：集成GPT-4进行零样本立法文本分类与XAI解释的管道。 | 韩国第21届国会交通相关法案数据集（577条精选法案及7872个议员-法案参与样本）。 | 基于SHAP的立法者党派归属特征重要性分析报告。
+Method: GPT-4零样本提示：用于从韩语立法文本中提取关键词、翻译并执行三阶段（关键词、句子、上下文）过滤。 | XGBoost分类模型：用于预测立法者的党派归属（保守vs进步）。 | SHAP解释性AI：用于量化19个输入特征（议员属性、选区属性、法案属性）对模型预测的贡献度。
+Full-text notes: 全文已提供。详细展示了LLM过滤的四个步骤、XAI模型（MLP, RF, LightGBM, XGBoost）的性能对比表格、SHAP特征重要性图及依赖关系分析。
+
+### The Language You Ask In: Language-Conditioned Ideological Divergence in LLM Analysis of Contested Political Documents (2026; Watchlist; citations: 0)
+Tags: llm bias; multilingual analysis; ideological divergence; prompt conditioning; political discourse; ukraine russia conflict; cross-lingual bias; ai governance; information warfare; civil society; rhetorical positioning; interpretive bias; chatgpt; political science methodology; training data provenance
+研究证实提示语言可系统性改变LLM的政治分析立场。同一模型对乌克兰文件，俄语提示偏向俄官方叙事，乌克兰语提示偏向西方自由民主框架。
+Deliverables: 基于ChatGPT 5.2的受控对比实验数据。 | 俄语与乌克兰语提示下LLM政治分析输出的详细对比分析。 | 关于提示语言如何作为意识形态偏差条件变量的实证证据。
+Method: 受控比较设计：使用同一LLM（ChatGPT 5.2）处理同一乌克兰公民社会文件。 | 语义等效提示：分别使用俄语和乌克兰语进行提问，控制其他变量。 | 比较话语分析：从词汇选择、修辞定位、解释性结论和事实重叠四个维度分析输出差异。
+Full-text notes: 全文已提供。详细展示了词汇对比表、修辞分析、引用原文摘录及局限性讨论。
+
+## Strategic Reasoning, Games, Negotiation, and Cooperation
+
+### Beyond Nash Equilibrium: Bounded Rationality of LLMs and humans in Strategic Decision-making (2025; Curated; citations: 8)
+Tags: bounded rationality; behavioral game theory; llm strategic reasoning; rock-paper-scissors; prisoner's dilemma; human-llm comparison; opponent modeling; theory of mind; strategic adaptability; model architecture effects; decision heuristics; nash equilibrium deviation; context awareness; experimental methodology; ai alignment
+研究对比LLM与人类在猜拳和囚徒困境中的策略，发现LLM虽模仿人类启发式但更僵化，且对动态环境敏感度低。
+Deliverables: 基于行为博弈论实验范式的LLM战略决策评估框架 | 六款主流LLM在猜拳和囚徒困境中的详细行为数据与对比分析 | 关于LLM有限理性特征及其与人类差异的实证证据
+Method: 复现人类受试者实验协议，将LLM置于相同的博弈环境中 | 使用猜拳（RPS）和囚徒困境（PD）作为测试博弈 | 对比LLM与人类在策略选择、合作率及适应性上的差异 | 分析不同模型家族和推理机制对战略行为的影响
+Full-text notes: 全文为arXiv预印本，无付费墙。包含详细的实验设置、提示词模板、结果图表及附录数据。
+
+### CHBench: A Cognitive Hierarchy Benchmark for Evaluating Strategic Reasoning Capability of LLMs (2025; Curated; citations: 0)
+Tags: cognitive hierarchy; strategic reasoning; game theory; llm evaluation; bounded rationality; normal-form games; memory mechanism; chat mechanism; behavioral economics; llm agents; decision making; game benchmark; policy simulation; negotiation; cooperation; robustness; prompt engineering; ai strategy; political strategy; game theoretic modeling
+提出CHBench框架，基于行为经济学认知层级模型评估LLM策略推理能力。发现记忆机制提升推理，对话机制降低推理，且LLM策略具有跨对手一致性。
+Deliverables: CHBench评估框架（包含Level-K和Poisson两种认知层级模型变体） | 15种标准式博弈（Normal-form games）的行为数据集 | 6种主流LLM（GPT-4o, Gemini-1.5-Pro等）的策略推理能力基准数据
+Method: 认知层级模型（Cognitive Hierarchy Models） | 最大似然估计（Maximum Likelihood Estimation, MLE）优化参数 | 15种标准式博弈中的多轮重复博弈实验 | 对比基线、对话、记忆及组合机制对LLM决策的影响
+Full-text notes: 全文公开。详细包含15个博弈的支付矩阵、4种提示词模板（Baseline/Chat/Memory/Chat&Memory）的具体结构、不同认知层级上限（k=3,4,5）下的均值与方差对比表、以及各机制下的平均效用矩阵。
+
+### GTBench: Uncovering the Strategic Reasoning Limitations of LLMs via Game-Theoretic Evaluations (2024; Curated; citations: 112)
+Tags: game-theoretic reasoning; llm evaluation benchmark; strategic decision making; multi-agent systems; llm vs llm competition; chain of thought limitations; code pretraining benefits; nash equilibrium approximation; pareto efficiency; error profiling; deterministic vs probabilistic games; mcts comparison; political strategy simulation; negotiation capabilities; llm logical reasoning
+提出GTBench基准，评估LLM在博弈论任务中的战略推理能力。发现LLM在完全确定性游戏中表现差，但在概率性游戏中具竞争力。代码预训练有益，CoT等方法效果不一。
+Deliverables: GTBench基准测试环境，包含10种博弈论任务（涵盖完全/不完全信息、动态/静态、概率/确定性场景）。 | LLM-vs-LLM及LLM-vs-传统求解器的自动化评估协议与排行榜。 | 详细的错误画像（Error Profiles）及LLM在博弈中的行为特征分析。
+Method: 构建语言驱动的博弈环境，将游戏状态转化为Prompt输入LLM。 | 对比实验：LLM与蒙特卡洛树搜索（MCTS）、随机代理及Tit-for-Tat策略对抗。 | LLM内部对抗：不同模型间进行零和或非零和博弈，使用Elo评分和归一化相对优势（NRA）评估。 | 分析不同推理范式（Prompt, CoT, SC-CoT, ToT）及模型特性（代码预训练）的影响。
+Full-text notes: 全文已提供。包含详细的实验设置、10种游戏的规则与分类表、NRA与Elo评分计算公式、各模型在不同游戏下的具体得分、错误模式量化分析（如误读、计算错误占比）以及纳什均衡与帕累托效率的图表数据。
+
+### GameBench: Evaluating Strategic Reasoning Abilities of LLM Agents (2024; Curated; citations: 69)
+Tags: strategic reasoning; llm agents; game theory; benchmark; chain of thought; reasoning via planning; multi-agent systems; gpt-4 evaluation; social deduction; cooperation; hidden information; non-deterministic games; ai safety; human baseline; out-of-distribution; prompt engineering; agentic tasks; policy evaluation; political strategy simulation; negotiation
+提出GameBench基准，评估LLM在9种策略游戏中的推理能力。发现GPT-4基础表现差于随机，CoT提示显著提升性能但仍远低于人类水平。
+Deliverables: GameBench基准测试框架（GitHub开源） | 9种跨领域策略游戏环境（抽象策略、非确定性、隐藏信息、语言沟通、社会推理、合作） | GPT-3和GPT-4在不同提示策略下的性能对比数据集 | 基于Bradley-Terry模型的评分系统
+Method: 构建9种选定的策略游戏环境，确保策略内容在预训练数据中分布外（OOD） | 使用GPT-3.5和GPT-4作为基础代理 | 应用Chain-of-Thought (CoT)和Reasoning Via Planning (RAP)两种提示工程方法 | 采用Bradley-Terry模型进行代理评级和性能聚合 | 引入人类基线进行对比评估
+Full-text notes: 全文公开于arXiv。附录包含详细的游戏规则、提示词模板（RAP和CoT）、实现细节及人类受试者数据收集过程。
+
+### Multi-Agent Strategic Games with LLMs (2026; Curated; citations: 0)
+Tags: llm agents; international relations; security dilemma; game theory; strategic reasoning; multipolarity; finite horizon; communication; backward induction; conflict prediction; methodology; agent-based simulation; political strategy; cooperation; wargaming; text analysis; experimental design; rational choice; signaling; trust building
+本文利用LLM作为实验主体，在重复安全困境中测试国际关系理论机制。结果显示：多极化增加冲突，有限时间导致普遍瓦解，沟通通过信号传递减少冲突。研究证实LLM可复现经典战略逻辑，为冲突研究提供可扩展、透明的方法论工具。
+Deliverables: 基于LLM的多智能体战略博弈实验框架 | 包含私有推理和公共消息的透明实验数据集 | 验证国际关系核心机制（极性、时间视界、沟通）的实证证据 | LLM作为政治科学实验主体的方法论证明
+Method: 重复安全困境博弈（Repeated Security Dilemma Game） | 多智能体LLM实验（GPT-5, GPT-5 Mini, Sonnet, Gemini） | 控制变量实验设计（多极化、有限视界、沟通渠道） | 文本分析与行为编码结合（分析私有推理与公共消息） | 稳健性检验（留一法、固定效应回归）
+Full-text notes: 全文摘录已提供。详细游戏设置、提示词（prompts）、各模型的具体推理日志摘录及图表数据均在文本中。作者强调结果不直接外推至人类行为，而是作为理论机制的探针。
+
+### Simulating Human Strategic Behavior: Comparing Single and Multi-agent LLMs (2024; Curated; citations: 50)
+Tags: multi-agent systems; strategic reasoning; ultimatum game; human simulation; policy design; llm evaluation; behavioral economics; gpt-4; social simulation; personality modeling; game theory; decision support; agent-based modeling; reasoning consistency; political strategy
+研究对比单智能体与多智能体LLM在模拟人类策略推理（最后通牒博弈）中的表现。多智能体系统准确率显著更高，能更好模拟不同人格特质下的策略一致性，为政策制定提供模拟工具。
+Deliverables: 最后通牒博弈中单/多智能体LLM模拟人类行为的基准数据 | 针对贪婪与公平人格的策略生成与执行评估框架 | 多智能体系统作为政策决策辅助工具的可行性分析
+Method: 最后通牒博弈实验设计 | 单智能体直接提示与多智能体独立代理架构对比 | GPT-3.5与GPT-4模型性能评估 | 基于人类实验数据的策略完整性与一致性量化分析
+Full-text notes: 全文已提供。详细展示了实验设置、提示词工程、错误分类统计及与人类基准数据的对比结果。
+
+### Simulating Strategic Reasoning: Comparing the Ability of Single LLMs and Multi-Agent Systems to Replicate Human Behavior (2024; Curated; citations: 21)
+Tags: multi-agent systems; strategic reasoning; ultimatum game; human simulation; policy design; behavioral economics; llm evaluation; game theory; personality modeling; social simulation; gpt-4; agent architecture; decision making; rationality; social norms
+研究对比单LLM与多智能体系统在最后通牒博弈中模拟人类策略推理的能力。多智能体系统准确率显著更高，能更好模拟不同人格策略，为政策制定提供行为模拟工具。
+Deliverables: 最后通牒博弈中单LLM与多智能体系统的行为模拟对比数据。 | 基于GPT-3.5和GPT-4的四种实验配置结果分析。 | 策略错误类型（完整性、一致性、执行偏差）的量化统计。
+Method: 最后通牒博弈（Ultimatum Game）五轮模拟实验。 | 对比单LLM直接提示与多智能体系统（独立Agent交互）架构。 | 引入'贪婪'与'公平'两种玩家人格设定。 | 基于人类实验基准数据评估LLM输出的一致性。
+Full-text notes: 全文已提供。详细展示了实验设置、提示词工程、错误分类统计及Chi-square显著性检验结果。
+
+### Strategic Reasoning with Language Models (2023; Curated; citations: 66)
+Tags: strategic reasoning; large language models; game theory; chain of thought; negotiation; zero-shot generalization; multi-agent systems; prompt engineering; belief tracking; value assignment; policy simulation; ai strategy; in-context learning; factored cognition; human-like agents
+提出利用预训练LLM进行战略推理的方法，通过结构化提示（搜索、估值、信念追踪）实现零样本泛化，无需微调即可在博弈和谈判中表现优异。
+Deliverables: 一种自动化的Prompt编译器，用于生成包含搜索、估值和信念追踪的结构化CoT示例。 | 在多种矩阵博弈和谈判场景下的基准测试结果。 | 一个无需微调即可进行类人谈判的AI代理原型。
+Method: Few-shot Chain-of-Thought Prompting with Structured Demonstrations | Prompt Compiler for Strategic Reasoning Components | Factored Cognition (Search and Calculate tools) | Belief Tracking over Hidden States and Values
+Full-text notes: 全文为arXiv预印本，无付费墙。摘要和正文已提供，包含详细的实验设置、算法伪代码（Alg 1-4）及结果表格。
+
+### Why Do LLMs Struggle in Strategic Play? Broken Links Between Observations, Beliefs, and Actions (2026; Curated; citations: 0)
+Tags: llm strategic reasoning; mechanistic interpretability; game theory; belief-action gap; observation-belief gap; bayesian coherence; activation steering; incomplete information; negotiation; cognitive bias; primacy bias; recency bias; multi-hop reasoning; policy making; agent safety; internal representations; probing; causal influence; systematic vulnerability; guardrails
+研究揭示LLM在策略博弈中存在观察-信念与信念-行动两大断裂。内部信念虽准确但易碎且随时间漂移，且难以转化为理性行动，存在首位偏差。
+Deliverables: 揭示LLM在不完全信息博弈中的系统性脆弱性。 | 提供基于机制可解释性的内部信念分析方法。 | 建议通过显式信念检查和结构化推理增强策略可靠性。
+Method: 机制可解释性（线性探针解码隐藏状态） | 激活引导（Steering）干预内部表示 | 贝叶斯相干系数（BCC）评估信念更新 | 重复标准式博弈、广义库恩扑克、变色龙游戏
+Full-text notes: 全文已提供。详细实验设置、探针训练细节、PCA可视化及附录数据均包含在摘录中。
+
+### Playing repeated games with large language models (2023; Important; citations: 243)
+Tags: large language models; behavioral game theory; strategic reasoning; cooperation; coordination; prisoner's dilemma; battle of the sexes; chain of thought; human-ai interaction; social reasoning; prompt engineering; multi-agent systems; game theory; ai alignment; theory of mind
+研究LLM在重复博弈中的行为，发现其在自利博弈中表现优异但在协调博弈中表现不佳，提出社会链式思维提示可改善协作。
+Deliverables: 基于行为博弈论的LLM社会行为基准测试框架 | 社会链式思维（SCoT）提示策略及其效果验证 | LLM与人类在重复博弈中的交互实验数据
+Method: 有限重复2x2博弈实验 | 多模型（GPT-4, Claude 2, Llama 2等）对抗与协作测试 | 社会链式思维（SCoT）提示工程 | 人类受试者参与的行为实验
+Full-text notes: 摘要和摘录已包含核心发现、方法论及主要图表描述，足以支撑报告。
+
+### SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially? (2025; Important; citations: 15)
+Tags: strategic reasoning; social intelligence; multi-agent systems; game theory; llm evaluation; diplomacy game; hanabi; pddl planning; negotiation; theory of mind; long-horizon planning; cooperative games; competitive games; chain of thought; policy simulation; ai safety; human-ai teaming; benchmark; reasoning capabilities; strategic planning
+提出SPIN-Bench基准，评估LLM在策略规划与社会推理能力。涵盖PDDL、棋类、合作卡牌及外交谈判。发现LLM在长视距规划、多跳推理及复杂社交协作中存在显著瓶颈，且社交互动常削弱其推理连贯性。
+Deliverables: SPIN-Bench统一评估框架，整合PDDL、竞争棋类、合作卡牌及战略谈判。 | 包含21个PDDL域、1280个规划任务及多种游戏环境的基准数据集。 | 针对外交谈判的六项细粒度社会智能评估指标（如对齐率、接受率、视角采择）。 | 多个主流LLM（GPT-4o, o1, Llama, DeepSeek等）在策略与社会推理上的全面评测报告。
+Method: 构建统一基准，系统变化动作空间、状态复杂度和交互智能体数量。 | 评估四类任务：经典PDDL规划、竞争棋类（井字棋、四子棋、国际象棋）、合作卡牌（Hanabi）、战略谈判（Diplomacy）。 | 使用规则指标（准确率、Elo评分）和LLM辅助指标（消息分析、策略对齐）进行量化评估。 | 对比LLM与最优求解器（如Stockfish）及人类基线（来自BoardGameGeek数据）。
+Full-text notes: 全文已提供。包含详细的实验设置、错误分析（约束违反、目标未满足）、不同模型在空间推理和事实检索上的热力图，以及外交谈判中的具体消息分析数据。
+
+### Strategic behavior of large language models and the role of game structure versus contextual framing (2024; Important; citations: 57)
+Tags: llm strategic reasoning; game theory; contextual framing; gpt-4; llama-2; social dilemmas; cooperation behavior; algorithmic agents; political simulation; decision making; theory of mind; wargaming; strategic interaction; nash equilibrium; prompt engineering; ai safety; behavioral economics; model comparison; strategic manipulation; political strategy
+研究GPT-3.5/4与LLaMa-2在博弈论设置中的策略行为。发现GPT-3.5过度依赖语境，GPT-4侧重结构但区分粗糙，LLaMa-2能平衡结构与语境，具备更细粒度的策略适应能力。
+Deliverables: 三种LLM在四种社会困境博弈中的合作/背叛行为数据集 | 基于主导性分析（Dominance Analysis）的语境与结构重要性评估 | 不同模型在特定语境下的推理路径案例剖析
+Method: 游戏论模拟实验（囚徒困境、猎鹿、雪堆、和谐博弈） | 五种社会语境框架（商务、外交、朋友聊天等） | Logit回归与主导性分析（Dominance Analysis） | 比例差异Z检验（Difference-in-proportions Z-test）
+Full-text notes: 全文开源于Scientific Reports。详细实验设置、提示词模板、补充图表及具体推理案例见SI部分。
