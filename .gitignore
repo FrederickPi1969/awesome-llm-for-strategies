@@ -1,9 +1,11 @@
 .DS_Store
 __pycache__/
 *.pyc
+.venv-paper-pipeline/
 .env
 *.log
 semantic_scholar_api_keys.json
+data/paper_cache/
 data/raw/source_*.csv
 data/processed/candidate_related_papers_preliminary.csv
 data/processed/expansion_edges_preliminary.csv
