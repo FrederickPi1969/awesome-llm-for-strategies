@@ -21,6 +21,7 @@ TARGETED_RELATED_WORKS = ROOT / "data" / "processed" / "targeted_related_works_s
 CLASSICAL_POLITICAL_NLP_IE = ROOT / "data" / "processed" / "classical_political_nlp_ie_enriched.csv"
 FOG_OF_WAR_RELATED_WORKS = ROOT / "data" / "processed" / "fog_of_war_related_works_enriched.csv"
 CRITIQUE_PRIORITY_ADDITIONS = ROOT / "data" / "processed" / "critique_priority_expansion" / "curated_additions.csv"
+STRATEGIC_STUDIES_FOUNDATION = ROOT / "data" / "processed" / "strategic_studies_foundation_enriched.csv"
 RUN_SUMMARY = ROOT / "data" / "processed" / "run_summary.json"
 SECOND_ORDER_SUMMARY = ROOT / "data" / "processed" / "second_order" / "run_summary.json"
 TARGETED_SUMMARY = ROOT / "data" / "processed" / "targeted_strategic_decisions" / "run_summary.json"
@@ -44,7 +45,10 @@ THEME_ORDER = [
 
 SUBTHEME_ORDER = {
     "Political Science and Strategic Judgment Foundations": [
+        "Deterrence, coercion, and nuclear strategy",
+        "Bargaining, signaling, and war",
         "International politics, intelligence, and crisis judgment",
+        "Intelligence analysis and structured analytic techniques",
         "Forecasting, hindsight bias, and expert judgment",
     ],
     "Foundations, Surveys, and Methods": [
@@ -104,10 +108,34 @@ SUBTHEME_ORDER = {
 }
 
 THEME_ASSIGNMENTS = """
+Political Science and Strategic Judgment Foundations|Deterrence, coercion, and nuclear strategy|Arms and Influence
+Political Science and Strategic Judgment Foundations|Deterrence, coercion, and nuclear strategy|The Strategy of Conflict
+Political Science and Strategic Judgment Foundations|Deterrence, coercion, and nuclear strategy|The Delicate Balance of Terror
+Political Science and Strategic Judgment Foundations|Deterrence, coercion, and nuclear strategy|The Meaning of the Nuclear Revolution: Statecraft and the Prospect of Armageddon
+Political Science and Strategic Judgment Foundations|Deterrence, coercion, and nuclear strategy|The Evolution of Nuclear Strategy
+Political Science and Strategic Judgment Foundations|Deterrence, coercion, and nuclear strategy|The Nuclear Taboo: The United States and the Non-Use of Nuclear Weapons Since 1945
+Political Science and Strategic Judgment Foundations|Deterrence, coercion, and nuclear strategy|Nuclear Weapons and Coercive Diplomacy
+Political Science and Strategic Judgment Foundations|Deterrence, coercion, and nuclear strategy|The Spread of Nuclear Weapons: More May Be Better
+Political Science and Strategic Judgment Foundations|Bargaining, signaling, and war|Rationalist Explanations for War
+Political Science and Strategic Judgment Foundations|Bargaining, signaling, and war|War as a Commitment Problem
+Political Science and Strategic Judgment Foundations|Bargaining, signaling, and war|The Inefficient Use of Power: Costly Conflict with Complete Information
+Political Science and Strategic Judgment Foundations|Bargaining, signaling, and war|Bargaining and Learning While Fighting
+Political Science and Strategic Judgment Foundations|Bargaining, signaling, and war|Exploring the Bargaining Model of War
+Political Science and Strategic Judgment Foundations|Bargaining, signaling, and war|Domestic Political Audiences and the Escalation of International Disputes
+Political Science and Strategic Judgment Foundations|Bargaining, signaling, and war|Democracy and Coercive Diplomacy
+Political Science and Strategic Judgment Foundations|Bargaining, signaling, and war|A Bargaining Model of War and Peace: Anticipating the Onset, Duration, and Outcome of War
 Political Science and Strategic Judgment Foundations|International politics, intelligence, and crisis judgment|Analysis, War, and Decision: Why Intelligence Failures Are Inevitable
 Political Science and Strategic Judgment Foundations|International politics, intelligence, and crisis judgment|Perception and Misperception in International Politics
 Political Science and Strategic Judgment Foundations|International politics, intelligence, and crisis judgment|Wargaming for International Relations research
 Political Science and Strategic Judgment Foundations|International politics, intelligence, and crisis judgment|Evaluating Escalation: Conceptualizing Escalation in an Era of Emerging Military Technologies
+Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Psychology of Intelligence Analysis
+Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Structured Analytic Techniques for Intelligence Analysis
+Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Pearl Harbor: Warning and Decision
+Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Essence of Decision: Explaining the Cuban Missile Crisis
+Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Victims of Groupthink
+Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Analogies at War: Korea Munich Dien Bien Phu and the Vietnam Decisions of 1965
+Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Intelligence Analysis: A Target-Centric Approach
+Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Thinking in Time: The Uses of History for Decision-Makers
 Political Science and Strategic Judgment Foundations|Forecasting, hindsight bias, and expert judgment|Hindsight (Not Equal To) Foresight: The Effect of Outcome Knowledge on Judgment Under Uncertainty.
 Political Science and Strategic Judgment Foundations|Forecasting, hindsight bias, and expert judgment|Expert Political Judgment: How Good Is It? How Can We Know?
 Political Science and Strategic Judgment Foundations|Forecasting, hindsight bias, and expert judgment|Superforecasting: The Art and Science of Prediction
@@ -192,22 +220,15 @@ Policymaking, Governance, and Institutional Decision Support|Strategic and insti
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Generative Artificial Intelligence and Evaluating Strategic Decisions
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|How Well Can AI Do Strategy? Empirical Benchmarking Using Strategy Simulations
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|AI-Augmented Strategic Decision-Making Under Time Constraints: An Experimental Study on Mental Representations and Strategic Foresight
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Generative AI in Managerial Decision-Making: Redefining Boundaries through Ambiguity Resolution and Sycophancy Analysis
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Effect of Generative Artificial Intelligence on Strategic Decision Making in Entrepreneurial Business Initiatives: A Systematic Literature Review
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Towards Using Prompt Engineering in Large Language Models to Assist Decision Making
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Beyond Black Boxes: Designing and Testing Agentic AI Systems for Strategy
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|The role of artificial intelligence in international strategic decision-making for SMEs
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|When Artificial Intelligence Does Strategy: Learning, Good Times, Lock-in, and Human-Driven Strategic Renewal
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|AI in strategic alliance formation: a framework for human-AI collaboration
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Can AI Do Strategy?
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Reliance on AI in augmented strategic decision-making: Navigating cultural and national dynamics
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Advancing Decision-Making through AI-Human Collaboration: A Systematic Review and Conceptual Framework
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Can AI Do Strategy? A Dialogue and Debate
 Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|Reproducing and Extending Experiments in Behavioral Strategy with Large Language Models
 Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|AI strategy under institutional pressure: strategic conformity and decision-making in large language models
 Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|Bias in, symbolic compliance out? GPT's reliance on gender and race in strategic evaluations
 Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|From Problems to Solutions in Strategic Decision-Making: The Effects of Generative AI on Problem Formulation
-Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|How AI-assisted scenario thinking develops agile minds for a successful digital strategy?
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Human-level play in the game of Diplomacy by combining language models with strategic reasoning
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Critical Foreign Policy Decisions Benchmark: Measuring Diplomatic Preferences in Large Language Models
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Benchmarking LLMs for Political Science: A United Nations Perspective / United Nations Benchmark
@@ -328,6 +349,22 @@ def normalize(value: str) -> str:
     return " ".join((value or "").lower().split())
 
 
+EXCLUDED_TITLES = {
+    normalize(title)
+    for title in [
+        "Generative AI in Managerial Decision-Making: Redefining Boundaries through Ambiguity Resolution and Sycophancy Analysis",
+        "Effect of Generative Artificial Intelligence on Strategic Decision Making in Entrepreneurial Business Initiatives: A Systematic Literature Review",
+        "The role of artificial intelligence in international strategic decision-making for SMEs",
+        "When Artificial Intelligence Does Strategy: Learning, Good Times, Lock-in, and Human-Driven Strategic Renewal",
+        "AI in strategic alliance formation: a framework for human-AI collaboration",
+        "Reliance on AI in augmented strategic decision-making: Navigating cultural and national dynamics",
+        "How AI-assisted scenario thinking develops agile minds for a successful digital strategy?",
+    ]
+}
+
+S2_UNDERCOUNT_TITLES = {normalize("The Strategy of Conflict")}
+
+
 def title_tokens(value: str) -> set[str]:
     stopwords = {"a", "an", "and", "as", "at", "for", "from", "in", "of", "on", "the", "to", "with"}
     return {
@@ -356,6 +393,8 @@ def as_int(value: Any, default: int = 0) -> int:
 
 def citation_display(seed: dict[str, str], enriched: dict[str, str] | None) -> str:
     if not enriched:
+        return "n/a"
+    if normalize(seed["title"]) in S2_UNDERCOUNT_TITLES:
         return "n/a"
     method = enriched.get("resolution_method", "")
     resolved_title = enriched.get("resolved_title", "")
@@ -513,6 +552,23 @@ def source_rows() -> list[dict[str, str]]:
             }
         )
 
+    for row in read_csv_if_exists(STRATEGIC_STUDIES_FOUNDATION):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("year_or_timeframe") or row.get("resolved_year", ""),
+                "citationCount": citation_display({"title": row["title"]}, row),
+                "importance": row.get("priority", "Core"),
+                "url": row.get("semantic_scholar_url") or row.get("source_url", ""),
+                "doi": row.get("doi", ""),
+                "arxiv": row.get("arxiv", ""),
+                "venue": row.get("venue", ""),
+                "authors": row.get("authors", ""),
+                "abstract": row.get("abstract", ""),
+                "source_tables": "strategic_studies_foundation_enriched.csv",
+            }
+        )
+
     for row in read_csv_if_exists(CRITIQUE_PRIORITY_ADDITIONS):
         rows.append(
             {
@@ -530,7 +586,7 @@ def source_rows() -> list[dict[str, str]]:
             }
         )
 
-    return rows
+    return [row for row in rows if normalize(row["title"]) not in EXCLUDED_TITLES]
 
 
 def merge_rows(
@@ -692,11 +748,13 @@ def build_readme() -> str:
             "- `data/raw/targeted_strategic_decisions_seed.csv`: targeted trace seed for the strategic-decision paper.",
             "- `data/raw/classical_political_nlp_ie_seed.csv`: curated classical political NLP and information-extraction seed list.",
             "- `data/raw/fog_of_war_related_work_seed.csv`: curated Fog of War related-work and foundation seed list.",
+            "- `data/raw/strategic_studies_foundation_seed.csv`: curated strategic-studies foundation seed list.",
             "- `data/raw/critique_priority_expansion_seeds.csv`: critique-selected high-priority trace seeds.",
             "- `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.",
             "- `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.",
             "- `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.",
             "- `data/processed/fog_of_war_related_works_enriched.csv`: Semantic Scholar metadata for Fog of War related-work additions.",
+            "- `data/processed/strategic_studies_foundation_enriched.csv`: Semantic Scholar metadata for strategic-studies foundation additions.",
             "- `data/processed/critique_priority_expansion/curated_additions.csv`: selected additions from critique-priority seed expansion.",
             "- `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.",
             "- `data/processed/fog_of_war/run_summary.json`: Fog of War trace summary.",
