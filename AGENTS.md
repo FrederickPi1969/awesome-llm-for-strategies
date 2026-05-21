@@ -22,7 +22,7 @@ Exclude finance-only, trading, stock prediction, portfolio management, cryptocur
 - Do not keep "first-order expansion" or "second-order expansion" sections in the README. Expansion provenance belongs in data files; accepted papers must be merged into thematic sections.
 - Add a new theme only when the existing themes would mix genuinely different literatures.
 - When adding a source table, update `scripts/build_readme.py` so the generated README, `docs/full-bibliography.md`, and `data/processed/thematic_papers.csv` include every accepted paper.
-- Prefer adding narrower subthemes over overloading broad ones when a survey-paper gap becomes visible. Current examples include `Evaluation, validity, and contamination` and `Multilingual and geopolitical bias`.
+- Prefer adding narrower subthemes over overloading broad ones when a survey-paper gap becomes visible. Current examples include `Evaluation, validity, and contamination`, `Multilingual and geopolitical bias`, `Public-sector decision support and institutional workflow`, and `Accountability, auditing, and public-sector AI governance`.
 
 ## Foundation Papers
 
@@ -115,6 +115,7 @@ source_paths = [
     'data/processed/critique_followup_expansion/curated_additions.csv',
     'data/processed/critique_round3_expansion/curated_additions.csv',
     'data/processed/survey_readiness_expansion/curated_additions.csv',
+    'data/processed/institutional_workflow_expansion/curated_additions.csv',
 ]
 
 def norm(value):

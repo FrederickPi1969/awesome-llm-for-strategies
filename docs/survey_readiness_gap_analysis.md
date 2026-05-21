@@ -10,7 +10,7 @@ Current assessment after the survey-readiness expansion: **about 80/100** for su
 - Clear separation between non-AI foundation papers, classical political NLP/information extraction, and LLM-era technical papers.
 - Better coverage of evaluation validity, including social-simulation validation, contamination, temporal leakage, political-worldview robustness, and LLM-as-measurement inference.
 - Better multilingual and geopolitical-bias coverage, including territorial disputes, U.S.-China bilingual framing, Pakistani languages, democracy-authoritarianism framing, and cross-lingual ideology steering.
-- Stronger institutional-strategy coverage through UN benchmarks, foreign-policy decision benchmarks, Diplomacy harnesses, crisis escalation measurement, and adviser aggregation in foreign-policy decision-making.
+- Stronger institutional-strategy coverage through UN benchmarks, foreign-policy decision benchmarks, Diplomacy harnesses, crisis escalation measurement, adviser aggregation in foreign-policy decision-making, policy-brief generation, public-sector algorithmic advice, public-service workflows, and LLM auditability.
 
 ## What A Survey Paper Still Needs
 
@@ -58,7 +58,7 @@ The current `Core`, `Important`, `Curated`, and `Watchlist` labels are useful fo
 
 ## Remaining Coverage Gaps
 
-- Real institutional workflows: more evidence from governments, multilaterals, diplomacy, intelligence analysis, emergency management, and military planning.
+- Real institutional workflows: coverage is better after the institutional-workflow expansion, but the survey still needs more evidence from governments, multilaterals, diplomacy, intelligence analysis, emergency management, and military planning over time.
 - Non-Western and multilingual politics beyond U.S./Europe/China/Pakistan: Africa, Latin America, Southeast Asia, Middle East regional politics, and low-resource languages remain thin.
 - Longitudinal and post-deployment evidence: few studies observe human organizations using LLM systems over time.
 - Mechanistic strategic behavior: the list has many strategic games, but fewer papers explaining belief formation, signaling, commitment, escalation, and deception mechanisms in politically realistic environments.

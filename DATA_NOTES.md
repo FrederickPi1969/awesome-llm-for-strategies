@@ -4,7 +4,7 @@ This repository is scoped to LLMs for political strategy, geopolitics, policymak
 
 Current generated coverage:
 
-- Full thematic bibliography: 355 unique papers
+- Full thematic bibliography: 378 unique papers
 - README highlights: Core and Important papers only
 - Theme count: 10 public-facing reader-oriented themes
 - Citation source: Semantic Scholar Graph API
@@ -32,6 +32,8 @@ Current generated coverage:
 - `data/raw/critique_round3_search_queries.csv`: targeted Semantic Scholar query-search terms for influence operations, diplomacy, and social simulation.
 - `data/raw/survey_readiness_expansion_seeds.csv`: critique-selected seeds for survey-readiness gaps in validity, multilingual/geopolitical bias, diplomacy, and strategic reasoning.
 - `data/raw/survey_readiness_search_queries.csv`: targeted Semantic Scholar query-search terms for those survey-readiness gaps.
+- `data/raw/institutional_workflow_expansion_seeds.csv`: critique-selected seeds for public-sector and institutional decision-support workflows.
+- `data/raw/institutional_workflow_search_queries.csv`: targeted Semantic Scholar query-search terms for public-sector workflow gaps.
 
 Processed curated CSVs hold Semantic Scholar metadata, citation counts, authors, venues, DOI/arXiv IDs, URLs, abstracts, and source provenance where available.
 
@@ -54,6 +56,8 @@ The critique-followup expansion traced `ForecastBench: A Dynamic Benchmark of AI
 The critique-round-3 expansion traced `Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations`, `Human-level play in the game of Diplomacy by combining language models with strategic reasoning`, and the Semantic Scholar record for `Generative Agent Simulations of 1,000 People` (`LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals`). It also ran targeted query searches for political influence operations, AI diplomacy/strategic negotiation, and validated synthetic-population simulation. After critique review, it accepted 41 non-duplicate papers and explicitly rejected economic negotiation, generic games, generic social agents, generic misinformation/safety, corporate/marketing persuasion, and finance/trading/time-series-adjacent items.
 
 The survey-readiness expansion traced validation/social-simulation, forecasting-evaluation, multilingual/geopolitical-bias, UN/diplomacy, and strategic-reasoning seeds. It also ran targeted query searches for validity, temporal leakage, multilingual political bias, non-Western politics, institutional diplomacy, and strategic negotiation. After critique review, it accepted 33 non-duplicate papers, added two more precise subthemes (`Evaluation, validity, and contamination`; `Multilingual and geopolitical bias`), and rejected generic agent papers, generic/economic negotiation, finance-specific temporal-modeling papers, and broad multilingual-bias papers without political relevance.
+
+The institutional-workflow expansion traced `The LLM Effect`, `Biased LLMs can Influence Political Decision-Making`, `Sci2Pol`, `Generative Artificial Intelligence and Evaluating Strategic Decisions`, `WhatIf`, and `Surfacing citizens' policy perspectives`. It also ran targeted query searches for public-sector decision support, briefing notes, government workflows, auditability, procurement/accountability, and science-to-policy translation. After critique review, it accepted 23 non-duplicate papers, added public-sector workflow and public-sector AI governance subthemes, and rejected generic agent bias, business/management decision-making, finance/trading, healthcare-only decision support, and operations papers without a policy or public-administration link.
 
 ## Semantic Scholar Limitations
 

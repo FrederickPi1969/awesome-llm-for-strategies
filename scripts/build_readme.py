@@ -25,6 +25,7 @@ CRITIQUE_NEXT_ADDITIONS = ROOT / "data" / "processed" / "critique_next_expansion
 CRITIQUE_FOLLOWUP_ADDITIONS = ROOT / "data" / "processed" / "critique_followup_expansion" / "curated_additions.csv"
 CRITIQUE_ROUND3_ADDITIONS = ROOT / "data" / "processed" / "critique_round3_expansion" / "curated_additions.csv"
 SURVEY_READINESS_ADDITIONS = ROOT / "data" / "processed" / "survey_readiness_expansion" / "curated_additions.csv"
+INSTITUTIONAL_WORKFLOW_ADDITIONS = ROOT / "data" / "processed" / "institutional_workflow_expansion" / "curated_additions.csv"
 STRATEGIC_STUDIES_FOUNDATION = ROOT / "data" / "processed" / "strategic_studies_foundation_enriched.csv"
 RUN_SUMMARY = ROOT / "data" / "processed" / "run_summary.json"
 SECOND_ORDER_SUMMARY = ROOT / "data" / "processed" / "second_order" / "run_summary.json"
@@ -39,6 +40,8 @@ CRITIQUE_ROUND3_SEARCH_SUMMARY = ROOT / "data" / "processed" / "critique_round3_
 CRITIQUE_ROUND3_SOCIAL_SUMMARY = ROOT / "data" / "processed" / "critique_round3_expansion" / "social_simulation_seed_trace_summary.json"
 SURVEY_READINESS_SUMMARY = ROOT / "data" / "processed" / "survey_readiness_expansion" / "run_summary.json"
 SURVEY_READINESS_SEARCH_SUMMARY = ROOT / "data" / "processed" / "survey_readiness_expansion" / "search_summary.json"
+INSTITUTIONAL_WORKFLOW_SUMMARY = ROOT / "data" / "processed" / "institutional_workflow_expansion" / "run_summary.json"
+INSTITUTIONAL_WORKFLOW_SEARCH_SUMMARY = ROOT / "data" / "processed" / "institutional_workflow_expansion" / "search_summary.json"
 THEMATIC_PAPERS = ROOT / "data" / "processed" / "thematic_papers.csv"
 README = ROOT / "README.md"
 FULL_BIBLIOGRAPHY = ROOT / "docs" / "full-bibliography.md"
@@ -62,6 +65,7 @@ SUBTHEME_ORDER = {
         "Bargaining, signaling, and war",
         "International politics, intelligence, and crisis judgment",
         "Intelligence analysis and structured analytic techniques",
+        "Policy analysis and decision-making under deep uncertainty",
         "Forecasting, hindsight bias, and expert judgment",
     ],
     "Foundations, Surveys, and Methods": [
@@ -88,6 +92,8 @@ SUBTHEME_ORDER = {
         "Policy translation and policy brief generation",
         "Policy persuasion and democratic deliberation",
         "Strategic and institutional decision support",
+        "Public-sector decision support and institutional workflow",
+        "Accountability, auditing, and public-sector AI governance",
         "AI-assisted strategy and managerial decision-making",
         "Strategic evaluation, bias, and foresight",
     ],
@@ -152,6 +158,7 @@ Political Science and Strategic Judgment Foundations|Intelligence analysis and s
 Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Analogies at War: Korea Munich Dien Bien Phu and the Vietnam Decisions of 1965
 Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Intelligence Analysis: A Target-Centric Approach
 Political Science and Strategic Judgment Foundations|Intelligence analysis and structured analytic techniques|Thinking in Time: The Uses of History for Decision-Makers
+Political Science and Strategic Judgment Foundations|Policy analysis and decision-making under deep uncertainty|Decision Making under Deep Uncertainty: From Theory to Practice
 Political Science and Strategic Judgment Foundations|Forecasting, hindsight bias, and expert judgment|Hindsight (Not Equal To) Foresight: The Effect of Outcome Knowledge on Judgment Under Uncertainty.
 Political Science and Strategic Judgment Foundations|Forecasting, hindsight bias, and expert judgment|Expert Political Judgment: How Good Is It? How Can We Know?
 Political Science and Strategic Judgment Foundations|Forecasting, hindsight bias, and expert judgment|Superforecasting: The Art and Science of Prediction
@@ -166,6 +173,7 @@ Foundations, Surveys, and Methods|Social simulation and agent-based modeling rev
 Foundations, Surveys, and Methods|Social simulation and agent-based modeling reviews|Validation is the central challenge for generative social simulation: a critical review of LLMs in agent-based modeling
 Foundations, Surveys, and Methods|Social simulation and agent-based modeling reviews|Integrating LLM in Agent-Based Social Simulation: Opportunities and Challenges
 Foundations, Surveys, and Methods|Social simulation and agent-based modeling reviews|Generative Agents in Agent-Based Modeling: Overview, Validation, and Emerging Challenges
+Foundations, Surveys, and Methods|Social simulation and agent-based modeling reviews|Agent-based modeling as organizational and public policy simulators
 Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews|LLM as a Mastermind: A Survey of Strategic Reasoning with Large Language Models
 Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews|Game Theory Meets Large Language Models: A Systematic Survey
 Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews|Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas
@@ -173,6 +181,8 @@ Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews
 Foundations, Surveys, and Methods|Evaluation, validity, and contamination|AI Agents Alone Are Not (Yet) Sufficient for Social Simulation
 Foundations, Surveys, and Methods|Evaluation, validity, and contamination|LLM-Based Social Simulations Require a Boundary
 Foundations, Surveys, and Methods|Evaluation, validity, and contamination|Leak, Cheat, Repeat: Data Contamination and Evaluation Malpractices in Closed-Source LLMs
+Foundations, Surveys, and Methods|Evaluation, validity, and contamination|Determinants of LLM-assisted Decision-Making
+Foundations, Surveys, and Methods|Evaluation, validity, and contamination|Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Computer-Assisted Text Analysis for Comparative Politics
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|A Method of Automated Nonparametric Content Analysis for Social Science
@@ -186,6 +196,7 @@ Classical Political NLP and Information Extraction|Political text as data and po
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Measuring Scalar Constructs in Social Science with LLMs
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Synthetically generated text for supervised text analysis
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Using Imperfect Surrogates for Downstream Inference: Design-based Supervised Learning for Social Science Applications of Large Language Models
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Replacing or enhancing the human coder? Multiclass classification of policy documents with large language models
 Classical Political NLP and Information Extraction|Legislative speech and policy text classification|Measuring Political Positions from Legislative Speech
 Classical Political NLP and Information Extraction|Legislative speech and policy text classification|Get out the vote: Determining support or opposition from Congressional floor-debate transcripts
 Classical Political NLP and Information Extraction|Legislative speech and policy text classification|Predicting Legislative Roll Calls from Text
@@ -274,6 +285,8 @@ Policymaking, Governance, and Institutional Decision Support|Democratic governan
 Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Democracy-in-Silico: Institutional Design as Alignment in AI-Governed Polities
 Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Using LLMs to Enhance Democracy
 Policymaking, Governance, and Institutional Decision Support|Policy translation and policy brief generation|Sci2Pol: Evaluating and Fine-tuning LLMs on Scientific-to-Policy Brief Generation
+Policymaking, Governance, and Institutional Decision Support|Policy translation and policy brief generation|The End of the Policy Analyst? Testing the Capability of Artificial Intelligence to Generate Plausible, Persuasive, and Useful Policy Analysis
+Policymaking, Governance, and Institutional Decision Support|Policy translation and policy brief generation|Automating public policy: a comparative study of conversational artificial intelligence models and human expertise in crafting briefing notes
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|AI can help humans find common ground in democratic deliberation
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Large Language Models Can Argue in Convincing Ways About Politics, But Humans Dislike AI Authors: Implications for Governance
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|LLM-generated messages can persuade humans on policy issues
@@ -299,6 +312,22 @@ Policymaking, Governance, and Institutional Decision Support|Strategic and insti
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Can A Society of Generative Agents Simulate Human Behavior and Inform Public Health Policy? A Case Study on Vaccine Hesitancy
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|LLM Powered Social Digital Twins: A Framework for Simulating Population Behavioral Response to Policy Interventions
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|WhatIf: Interactive Exploration of LLM-Powered Social Simulations for Policy Reasoning
+Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Social Policy of Large Language Models: How GPT, Claude, DeepSeek and Grok Allocate Social Budgets in Spain and Germany
+Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|Human-AI Interactions in Public Sector Decision-Making:"Automation Bias"and"Selective Adherence"to Algorithmic Advice
+Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|What Makes LLM Agent Simulations Useful for Policy? Insights From an Iterative Design Engagement in Emergency Preparedness
+Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|Are We Asking the Right Questions?: Designing for Community Stakeholders’ Interactions with AI in Policing
+Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|A Methodology to Develop Agent-Based Models for Policy Support Via Qualitative Inquiry
+Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|An Institutional Theory Framework for Leveraging Large Language Models for Policy Analysis and Intervention Design
+Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|More than an IT system in the government: The work divide challenges in human-AI coworking context
+Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|Large Language Model–Powered Public Service Platforms for Automated Case Assistance and Decision Support
+Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|Human‑Centered Governance for AI‑Augmented Decision Support in Public‑Sector Logistics
+Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|Institutionalizing Predictive AI in Public Administration: Algorithmic Governance and the Case of a Wildfire Forecasting System
+Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|DataGovBench: Benchmarking LLM Agents for Real-World Data Governance Workflows
+Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|Audit Trails for Accountability in Large Language Models
+Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|Informing Human Decision-Making in Public Administration through NLP Algorithm Audits
+Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|Impacts of AI-based anti-corruption audits on risk aversion in decision-making: a case study of the Brazilian ALICE tool
+Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|AI and Corruption: Legal Liability in Algorithmic Decision-Making
+Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|Governing AI with trust: an adaptive framework for institutional legitimacy in the UK public sector
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|How Well Can AI Do Strategy? Empirical Benchmarking Using Strategy Simulations
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|AI-Augmented Strategic Decision-Making Under Time Constraints: An Experimental Study on Mental Representations and Strategic Foresight
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Towards Using Prompt Engineering in Large Language Models to Assist Decision Making
@@ -972,6 +1001,23 @@ def source_rows() -> list[dict[str, str]]:
             }
         )
 
+    for row in read_csv_if_exists(INSTITUTIONAL_WORKFLOW_ADDITIONS):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("year", ""),
+                "citationCount": row.get("citationCount", ""),
+                "importance": row.get("importance", "Curated"),
+                "url": row_url(row),
+                "doi": row.get("doi", ""),
+                "arxiv": row.get("arxiv", ""),
+                "venue": row.get("venue", ""),
+                "authors": row.get("authors", ""),
+                "abstract": row.get("abstract", ""),
+                "source_tables": "institutional_workflow_expansion/curated_additions.csv",
+            }
+        )
+
     return [row for row in rows if normalize(row["title"]) not in EXCLUDED_TITLES]
 
 
@@ -1174,6 +1220,8 @@ def build_readme() -> str:
     critique_round3_social_summary = read_json_if_exists(CRITIQUE_ROUND3_SOCIAL_SUMMARY)
     survey_readiness_summary = read_json_if_exists(SURVEY_READINESS_SUMMARY)
     survey_readiness_search_summary = read_json_if_exists(SURVEY_READINESS_SEARCH_SUMMARY)
+    institutional_workflow_summary = read_json_if_exists(INSTITUTIONAL_WORKFLOW_SUMMARY)
+    institutional_workflow_search_summary = read_json_if_exists(INSTITUTIONAL_WORKFLOW_SEARCH_SUMMARY)
     highlighted_rows = [row for row in rows if is_highlighted(row)]
     label_counts = Counter(row["importance"] for row in rows)
 
@@ -1256,6 +1304,8 @@ def build_readme() -> str:
             f"- Critique-round-3 Semantic Scholar query results screened: {critique_round3_search_summary.get('result_count', 0)}",
             f"- Survey-readiness citation/reference edges scanned: {survey_readiness_summary.get('edge_count', 0)}",
             f"- Survey-readiness Semantic Scholar query results screened: {survey_readiness_search_summary.get('result_count', 0)}",
+            f"- Institutional-workflow citation/reference edges scanned: {institutional_workflow_summary.get('edge_count', 0)}",
+            f"- Institutional-workflow Semantic Scholar query results screened: {institutional_workflow_search_summary.get('result_count', 0)}",
             "",
             "Data files:",
             "",
@@ -1276,6 +1326,8 @@ def build_readme() -> str:
             "- `data/raw/critique_round3_search_queries.csv`: targeted Semantic Scholar query-search terms for influence operations, diplomacy, and social simulation.",
             "- `data/raw/survey_readiness_expansion_seeds.csv`: critique-selected survey-readiness seeds for validity, multilingual/geopolitical bias, diplomacy, and strategic reasoning.",
             "- `data/raw/survey_readiness_search_queries.csv`: targeted Semantic Scholar query-search terms for survey-readiness gaps.",
+            "- `data/raw/institutional_workflow_expansion_seeds.csv`: critique-selected seeds for public-sector and institutional decision-support workflows.",
+            "- `data/raw/institutional_workflow_search_queries.csv`: targeted Semantic Scholar query-search terms for public-sector workflow gaps.",
             "- `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.",
             "- `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.",
             "- `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.",
@@ -1286,6 +1338,7 @@ def build_readme() -> str:
             "- `data/processed/critique_followup_expansion/curated_additions.csv`: selected additions from ForecastBench, democratic-deliberation, and WARBENCH follow-up expansion.",
             "- `data/processed/critique_round3_expansion/curated_additions.csv`: selected additions from influence-operations, Diplomacy, and social-simulation expansion.",
             "- `data/processed/survey_readiness_expansion/curated_additions.csv`: selected additions from validity, multilingual/geopolitical-bias, diplomacy, and strategic-reasoning expansion.",
+            "- `data/processed/institutional_workflow_expansion/curated_additions.csv`: selected additions from public-sector workflow, accountability, and policy-analysis expansion.",
             "- `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.",
             "- `data/processed/fog_of_war/run_summary.json`: Fog of War trace summary.",
             "- `data/processed/critique_priority_expansion/run_summary.json`: critique-priority trace summary.",
@@ -1297,6 +1350,8 @@ def build_readme() -> str:
             "- `data/processed/critique_round3_expansion/social_simulation_seed_trace_summary.json`: critique-round-3 social-simulation direct-trace summary.",
             "- `data/processed/survey_readiness_expansion/run_summary.json`: survey-readiness trace summary.",
             "- `data/processed/survey_readiness_expansion/search_summary.json`: survey-readiness query-search summary.",
+            "- `data/processed/institutional_workflow_expansion/run_summary.json`: institutional-workflow trace summary.",
+            "- `data/processed/institutional_workflow_expansion/search_summary.json`: institutional-workflow query-search summary.",
             "",
             "Scripts:",
             "",
@@ -1307,6 +1362,7 @@ def build_readme() -> str:
             "- `scripts/build_critique_followup_expansion.py`: selects critique-reviewed additions from the ForecastBench, deliberation, and WARBENCH follow-up pass.",
             "- `scripts/build_critique_round3_expansion.py`: selects critique-reviewed additions from the influence-operations, Diplomacy, and social-simulation pass.",
             "- `scripts/build_survey_readiness_expansion.py`: selects critique-reviewed additions from the survey-readiness pass.",
+            "- `scripts/build_institutional_workflow_expansion.py`: selects critique-reviewed additions from the public-sector workflow pass.",
             "- `scripts/build_readme.py`: rebuilds this README and validates that every curated paper is assigned to a theme.",
             "",
             "## Contributing",

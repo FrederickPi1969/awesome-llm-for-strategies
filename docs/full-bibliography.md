@@ -3,14 +3,14 @@
 This is the complete thematic bibliography generated from `data/processed/thematic_papers.csv`.
 The public README highlights Core and Important items; this file keeps Curated and Watchlist entries visible without overloading the homepage.
 
-Total papers: **355**.
+Total papers: **378**.
 
 Label counts:
 
 - Core: 60
-- Important: 112
-- Curated: 163
-- Watchlist: 20
+- Important: 119
+- Curated: 176
+- Watchlist: 23
 
 ## Papers
 
@@ -18,7 +18,7 @@ Label counts:
 
 Canonical IR, strategic-studies, intelligence-analysis, and forecasting foundations for interpreting LLM behavior in strategic settings.
 
-32 papers.
+33 papers.
 
 #### Deterrence, coercion, and nuclear strategy
 
@@ -61,6 +61,10 @@ Canonical IR, strategic-studies, intelligence-analysis, and forecasting foundati
 - [Structured Analytic Techniques for Intelligence Analysis](https://www.semanticscholar.org/paper/8adafdfdd58e8dcbf31d9cd21e2a6afaec61bfc4) (2010) - Core; citations: 158.
 - [Pearl Harbor: Warning and Decision](https://www.semanticscholar.org/paper/0cdc0746b4c5678c9bd455f74f30c75ee3477381) (1962) - Core; citations: 129.
 
+#### Policy analysis and decision-making under deep uncertainty
+
+- [Decision Making under Deep Uncertainty: From Theory to Practice](https://www.semanticscholar.org/paper/82ad55fe8d7e7c9b66575e048fbad1767f09b2bb) (2019) - Curated; citations: 295.
+
 #### Forecasting, hindsight bias, and expert judgment
 
 - [Superforecasting: The Art and Science of Prediction](https://www.semanticscholar.org/paper/7fd0b7c04157ca1459ca16607de9ec139fd9ad51) (2015) - Core; citations: 660.
@@ -71,7 +75,7 @@ Canonical IR, strategic-studies, intelligence-analysis, and forecasting foundati
 
 LLM-era surveys and methodological overviews that orient political science, social simulation, and game-theoretic agent work.
 
-18 papers.
+21 papers.
 
 #### Political science and computational social science overviews
 
@@ -85,6 +89,7 @@ LLM-era surveys and methodological overviews that orient political science, soci
 #### Social simulation and agent-based modeling reviews
 
 - [Large language models empowered agent-based modeling and simulation: a survey and perspectives](https://www.nature.com/articles/s41599-024-03611-3) (2024) - Core; venue: Humanities and Social Sciences Communications; citations: 400.
+- [Agent-based modeling as organizational and public policy simulators](https://www.semanticscholar.org/paper/0aedf8c3a48d450462d6d1b4f204f4088e1f02f8) (2002) - Curated; venue: Proceedings of the National Academy of Sciences of the United States of America; citations: 181.
 - [From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents](https://www.semanticscholar.org/paper/11a6d66791e244b01bf1a23a98158be789854876) (2024) - Important; venue: ACM Computing Surveys; citations: 71.
 - [Validation is the central challenge for generative social simulation: a critical review of LLMs in agent-based modeling](https://www.semanticscholar.org/paper/5cd29f769cced349fb7c5affb5c6d27fb387a69c) (2025) - Important; venue: Artificial Intelligence Review; citations: 12.
 - [Generative Agents in Agent-Based Modeling: Overview, Validation, and Emerging Challenges](https://www.semanticscholar.org/paper/93649b764b1d9f57b75a57561107e4884a7dda0b) (2025) - Curated; venue: IEEE Transactions on Artificial Intelligence; citations: 9.
@@ -100,14 +105,16 @@ LLM-era surveys and methodological overviews that orient political science, soci
 #### Evaluation, validity, and contamination
 
 - [Leak, Cheat, Repeat: Data Contamination and Evaluation Malpractices in Closed-Source LLMs](https://www.semanticscholar.org/paper/798feda076ad710df65d509a7884bd15937c8056) (2024) - Curated; venue: Conference of the European Chapter of the Association for Computational Linguistics; citations: 307.
+- [Determinants of LLM-assisted Decision-Making](https://www.semanticscholar.org/paper/550676250271276becf5a400f072241daf734f4f) (2024) - Curated; venue: arXiv.org; citations: 108.
 - [LLM-Based Social Simulations Require a Boundary](https://www.semanticscholar.org/paper/345a35ad4020dee737cb905239af9234584fbd33) (2025) - Important; venue: arXiv.org; citations: 11.
 - [AI Agents Alone Are Not (Yet) Sufficient for Social Simulation](https://www.semanticscholar.org/paper/b591727c39c8df8a7dc55b8e2c4ce032afc08644) (2026) - Important; venue: arXiv; citations: 1.
+- [Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making](https://www.semanticscholar.org/paper/6dd8fb1bcd2e81190183df9695535a553b97b997) (2026) - Watchlist; venue: Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems; citations: 1.
 
 ### Political Text and Measurement
 
 Pre-LLM and bridge methods for political text measurement, legislative text classification, and event-data extraction.
 
-42 papers.
+43 papers.
 
 #### Political text as data and policy-position extraction
 
@@ -124,6 +131,7 @@ Pre-LLM and bridge methods for political text measurement, legislative text clas
 - [Synthetically generated text for supervised text analysis](https://www.semanticscholar.org/paper/1a3099125dd700a65dbe6c1c2cc4067e12d5171a) (2023) - Curated; venue: Political Analysis; citations: 16.
 - [Measurement in the Age of LLMs: An Application to Ideological Scaling](https://www.semanticscholar.org/paper/f1847c5693f7dac9ba89b3e0571ee27cfca720dc) (2023) - Curated; venue: arXiv.org; citations: 15.
 - [Measuring Scalar Constructs in Social Science with LLMs](https://www.semanticscholar.org/paper/26730e1800a33de13aa8ce01f1400b4818e9de42) (2025) - Curated; venue: Conference on Empirical Methods in Natural Language Processing; citations: 8.
+- [Replacing or enhancing the human coder? Multiclass classification of policy documents with large language models](https://www.semanticscholar.org/paper/a969b710d616aea6773b7a101763b5b2cab7ccf6) (2025) - Curated; venue: Journal of Computational Social Science; citations: 2.
 
 #### Legislative speech and policy text classification
 
@@ -240,7 +248,7 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 
 Papers on public decision support, policy communication, democratic deliberation, and institutional uses of LLMs.
 
-43 papers.
+61 papers.
 
 #### Democratic governance and augmentation
 
@@ -253,6 +261,8 @@ Papers on public decision support, policy communication, democratic deliberation
 
 #### Policy translation and policy brief generation
 
+- [The End of the Policy Analyst? Testing the Capability of Artificial Intelligence to Generate Plausible, Persuasive, and Useful Policy Analysis](https://www.semanticscholar.org/paper/22b39e38e2fd52591ca23904b474eb19dc17b610) (2023) - Important; venue: Digit. Gov. Res. Pract.; citations: 27.
+- [Automating public policy: a comparative study of conversational artificial intelligence models and human expertise in crafting briefing notes](https://www.semanticscholar.org/paper/883be2ffec2fcb09f0854af0386a98196efc587c) (2024) - Important; venue: Ai & Society; citations: 2.
 - [Sci2Pol: Evaluating and Fine-tuning LLMs on Scientific-to-Policy Brief Generation](https://arxiv.org/abs/2509.21493) (2025) - Important; venue: arXiv.org; citations: 0.
 
 #### Policy persuasion and democratic deliberation
@@ -284,7 +294,29 @@ Papers on public decision support, policy communication, democratic deliberation
 - [The LLM Effect: Are Humans Truly Using LLMs, or Are They Being Influenced By Them Instead?](https://www.semanticscholar.org/paper/4046475556d334a61612c63622a40676907c7b5d) (2024) - Important; venue: Conference on Empirical Methods in Natural Language Processing; citations: 20.
 - [Can A Society of Generative Agents Simulate Human Behavior and Inform Public Health Policy? A Case Study on Vaccine Hesitancy](https://www.semanticscholar.org/paper/96e60d784c44c95669c36c0aee3c300c7d492833) (2025) - Curated; venue: arXiv.org; citations: 16.
 - [LLM Powered Social Digital Twins: A Framework for Simulating Population Behavioral Response to Policy Interventions](https://www.semanticscholar.org/paper/063a4e8d7dbde3cd6214c1e68ce83594f5936386) (2026) - Curated; venue: arXiv.org; citations: 1.
+- [Social Policy of Large Language Models: How GPT, Claude, DeepSeek and Grok Allocate Social Budgets in Spain and Germany](https://www.semanticscholar.org/paper/c2580e7aca253ba5fcc8cb502f088562507a7b0a) (2026) - Curated; venue: arXiv; citations: 0.
 - [WhatIf: Interactive Exploration of LLM-Powered Social Simulations for Policy Reasoning](https://www.semanticscholar.org/paper/64e3fdcf6c41137189752b0f50ff8f192f1e780a) (2026) - Curated; venue: arXiv; citations: 0.
+
+#### Public-sector decision support and institutional workflow
+
+- [Human-AI Interactions in Public Sector Decision-Making:"Automation Bias"and"Selective Adherence"to Algorithmic Advice](https://www.semanticscholar.org/paper/6ad001313456f0bd4ddf7acde97cfe6911da0e7f) (2021) - Important; venue: arXiv; citations: 256.
+- [Are We Asking the Right Questions?: Designing for Community Stakeholders’ Interactions with AI in Policing](https://www.semanticscholar.org/paper/34ff3baeb735ccf2e8df86572c421ca43e67c696) (2024) - Curated; venue: International Conference on Human Factors in Computing Systems; citations: 27.
+- [A Methodology to Develop Agent-Based Models for Policy Support Via Qualitative Inquiry](https://www.semanticscholar.org/paper/001b11109c20e2cdf66f7c67e88bc5330491e510) (2023) - Curated; venue: Journal of Artificial Societies and Social Simulation; citations: 18.
+- [What Makes LLM Agent Simulations Useful for Policy? Insights From an Iterative Design Engagement in Emergency Preparedness](https://www.semanticscholar.org/paper/c65e057b8d3d1fbf3d1b5e67a5fa9de9d739c10e) (2025) - Important; venue: arXiv.org; citations: 8.
+- [An Institutional Theory Framework for Leveraging Large Language Models for Policy Analysis and Intervention Design](https://www.semanticscholar.org/paper/a308f7b920098e579d19bcb16802e42729a45156) (2025) - Curated; venue: Future Internet; citations: 6.
+- [More than an IT system in the government: The work divide challenges in human-AI coworking context](https://www.semanticscholar.org/paper/e5e9871ac048cbc28b004289496e03ac5c76dd9d) (2024) - Curated; venue: Digital Government Research; citations: 2.
+- [Institutionalizing Predictive AI in Public Administration: Algorithmic Governance and the Case of a Wildfire Forecasting System](https://www.semanticscholar.org/paper/1834987904af05c26069f1eeec9a3429662f7f30) (2026) - Important; venue: Policy &amp; Internet; citations: 1.
+- [Human‑Centered Governance for AI‑Augmented Decision Support in Public‑Sector Logistics](https://www.semanticscholar.org/paper/1bf6bb0f3709da47d2f630fa1129fbd89a7504e0) (2025) - Watchlist; venue: International journal of supply chain and logistics; citations: 0.
+- [Large Language Model–Powered Public Service Platforms for Automated Case Assistance and Decision Support](https://www.semanticscholar.org/paper/8098f00e197740d98a0a8af2890059f86c19003e) (2023) - Watchlist; venue: International Journal of Advanced Research in Electrical Electronics and Instrumentation Engineering; citations: 0.
+
+#### Accountability, auditing, and public-sector AI governance
+
+- [Impacts of AI-based anti-corruption audits on risk aversion in decision-making: a case study of the Brazilian ALICE tool](https://www.semanticscholar.org/paper/3e9abe03ff3381db3a1b84052b0577122e8a06d1) (2024) - Curated; venue: Global Public Policy and Governance; citations: 7.
+- [Audit Trails for Accountability in Large Language Models](https://www.semanticscholar.org/paper/f243230bf6b79bcbe371a28a483bd6fe794ad218) (2026) - Important; venue: arXiv.org; citations: 2.
+- [DataGovBench: Benchmarking LLM Agents for Real-World Data Governance Workflows](https://www.semanticscholar.org/paper/fb2bdc51f56275a6c010dcee066fee2f4ff2f951) (2025) - Important; venue: arXiv.org; citations: 2.
+- [AI and Corruption: Legal Liability in Algorithmic Decision-Making](https://www.semanticscholar.org/paper/f734ac6754d7a8854a987e9572e85e0261e49b3b) (2025) - Curated; venue: Access to Justice in Eastern Europe; citations: 2.
+- [Governing AI with trust: an adaptive framework for institutional legitimacy in the UK public sector](https://www.semanticscholar.org/paper/9cfc61d935030f46f066ca0e667ac5f529fc074b) (2025) - Curated; venue: Transforming Government: People, Process and Policy; citations: 1.
+- [Informing Human Decision-Making in Public Administration through NLP Algorithm Audits](https://www.semanticscholar.org/paper/5ce73f6faaa8b9cbb5367c3c7e33d01b34bec57e) (2025) - Curated; citations: 0.
 
 #### AI-assisted strategy and managerial decision-making
 

@@ -4,7 +4,7 @@ A curated guide to large language models for political strategy, geopolitics, po
 
 The README is intentionally a curated route through the literature. The full bibliography remains available in [`docs/full-bibliography.md`](docs/full-bibliography.md) and `data/processed/thematic_papers.csv`.
 
-Current coverage: **355 papers** in the full bibliography; **172 Core/Important papers** highlighted on this page.
+Current coverage: **378 papers** in the full bibliography; **179 Core/Important papers** highlighted on this page.
 
 Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-21.
 
@@ -73,7 +73,7 @@ This section highlights Core and Important papers only. See [`docs/full-bibliogr
 
 Canonical IR, strategic-studies, intelligence-analysis, and forecasting foundations for interpreting LLM behavior in strategic settings.
 
-30 highlighted papers; 32 total in the full bibliography.
+30 highlighted papers; 33 total in the full bibliography.
 
 #### Deterrence, coercion, and nuclear strategy
 
@@ -124,7 +124,7 @@ Canonical IR, strategic-studies, intelligence-analysis, and forecasting foundati
 
 LLM-era surveys and methodological overviews that orient political science, social simulation, and game-theoretic agent work.
 
-10 highlighted papers; 18 total in the full bibliography.
+10 highlighted papers; 21 total in the full bibliography.
 
 #### Political science and computational social science overviews
 
@@ -149,7 +149,7 @@ LLM-era surveys and methodological overviews that orient political science, soci
 
 Pre-LLM and bridge methods for political text measurement, legislative text classification, and event-data extraction.
 
-31 highlighted papers; 42 total in the full bibliography.
+31 highlighted papers; 43 total in the full bibliography.
 
 #### Political text as data and policy-position extraction
 
@@ -242,7 +242,7 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 
 Papers on public decision support, policy communication, democratic deliberation, and institutional uses of LLMs.
 
-15 highlighted papers; 43 total in the full bibliography.
+22 highlighted papers; 61 total in the full bibliography.
 
 #### Democratic governance and augmentation
 
@@ -251,6 +251,8 @@ Papers on public decision support, policy communication, democratic deliberation
 
 #### Policy translation and policy brief generation
 
+- [The End of the Policy Analyst? Testing the Capability of Artificial Intelligence to Generate Plausible, Persuasive, and Useful Policy Analysis](https://www.semanticscholar.org/paper/22b39e38e2fd52591ca23904b474eb19dc17b610) (2023) - Important; venue: Digit. Gov. Res. Pract.; citations: 27.
+- [Automating public policy: a comparative study of conversational artificial intelligence models and human expertise in crafting briefing notes](https://www.semanticscholar.org/paper/883be2ffec2fcb09f0854af0386a98196efc587c) (2024) - Important; venue: Ai & Society; citations: 2.
 - [Sci2Pol: Evaluating and Fine-tuning LLMs on Scientific-to-Policy Brief Generation](https://arxiv.org/abs/2509.21493) (2025) - Important; venue: arXiv.org; citations: 0.
 
 #### Policy persuasion and democratic deliberation
@@ -270,6 +272,17 @@ Papers on public decision support, policy communication, democratic deliberation
 - [Generative Artificial Intelligence and Evaluating Strategic Decisions](https://www.semanticscholar.org/paper/1b43632036f7e1f45a4759849f2924478eccc81e) (2024) - Important; venue: Social Science Research Network; citations: 119.
 - [Biased LLMs can Influence Political Decision-Making](https://aclanthology.org/2025.acl-long.328/) (2025) - Important; venue: Annual Meeting of the Association for Computational Linguistics; citations: 22.
 - [The LLM Effect: Are Humans Truly Using LLMs, or Are They Being Influenced By Them Instead?](https://www.semanticscholar.org/paper/4046475556d334a61612c63622a40676907c7b5d) (2024) - Important; venue: Conference on Empirical Methods in Natural Language Processing; citations: 20.
+
+#### Public-sector decision support and institutional workflow
+
+- [Human-AI Interactions in Public Sector Decision-Making:"Automation Bias"and"Selective Adherence"to Algorithmic Advice](https://www.semanticscholar.org/paper/6ad001313456f0bd4ddf7acde97cfe6911da0e7f) (2021) - Important; venue: arXiv; citations: 256.
+- [What Makes LLM Agent Simulations Useful for Policy? Insights From an Iterative Design Engagement in Emergency Preparedness](https://www.semanticscholar.org/paper/c65e057b8d3d1fbf3d1b5e67a5fa9de9d739c10e) (2025) - Important; venue: arXiv.org; citations: 8.
+- [Institutionalizing Predictive AI in Public Administration: Algorithmic Governance and the Case of a Wildfire Forecasting System](https://www.semanticscholar.org/paper/1834987904af05c26069f1eeec9a3429662f7f30) (2026) - Important; venue: Policy &amp; Internet; citations: 1.
+
+#### Accountability, auditing, and public-sector AI governance
+
+- [Audit Trails for Accountability in Large Language Models](https://www.semanticscholar.org/paper/f243230bf6b79bcbe371a28a483bd6fe794ad218) (2026) - Important; venue: arXiv.org; citations: 2.
+- [DataGovBench: Benchmarking LLM Agents for Real-World Data Governance Workflows](https://www.semanticscholar.org/paper/fb2bdc51f56275a6c010dcee066fee2f4ff2f951) (2025) - Important; venue: arXiv.org; citations: 2.
 
 ### Geopolitics, Diplomacy, and Wargaming
 
@@ -408,13 +421,13 @@ Political influence, persuasion risk, deception, bias, and social risks relevant
 
 ## Data and Collection
 
-- Total unique papers in the full thematic bibliography: 355
-- Papers highlighted on this page: 172
-- Label counts: Core 60, Important 112, Curated 163, Watchlist 20
-- Source rows checked before merge: 377
+- Total unique papers in the full thematic bibliography: 378
+- Papers highlighted on this page: 179
+- Label counts: Core 60, Important 119, Curated 176, Watchlist 23
+- Source rows checked before merge: 400
 - Duplicate source rows removed during merge: 22
 - Core seed papers: 40
-- Curated additions merged into themes: 315
+- Curated additions merged into themes: 338
 - Initial citation/reference edges scanned: 3889
 - Additional citation/reference edges scanned from priority papers: 2871
 - Targeted strategic-decision related-work edges scanned: 119
@@ -428,6 +441,8 @@ Political influence, persuasion risk, deception, bias, and social risks relevant
 - Critique-round-3 Semantic Scholar query results screened: 132
 - Survey-readiness citation/reference edges scanned: 721
 - Survey-readiness Semantic Scholar query results screened: 166
+- Institutional-workflow citation/reference edges scanned: 273
+- Institutional-workflow Semantic Scholar query results screened: 339
 
 Data files:
 
@@ -448,6 +463,8 @@ Data files:
 - `data/raw/critique_round3_search_queries.csv`: targeted Semantic Scholar query-search terms for influence operations, diplomacy, and social simulation.
 - `data/raw/survey_readiness_expansion_seeds.csv`: critique-selected survey-readiness seeds for validity, multilingual/geopolitical bias, diplomacy, and strategic reasoning.
 - `data/raw/survey_readiness_search_queries.csv`: targeted Semantic Scholar query-search terms for survey-readiness gaps.
+- `data/raw/institutional_workflow_expansion_seeds.csv`: critique-selected seeds for public-sector and institutional decision-support workflows.
+- `data/raw/institutional_workflow_search_queries.csv`: targeted Semantic Scholar query-search terms for public-sector workflow gaps.
 - `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.
 - `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.
 - `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.
@@ -458,6 +475,7 @@ Data files:
 - `data/processed/critique_followup_expansion/curated_additions.csv`: selected additions from ForecastBench, democratic-deliberation, and WARBENCH follow-up expansion.
 - `data/processed/critique_round3_expansion/curated_additions.csv`: selected additions from influence-operations, Diplomacy, and social-simulation expansion.
 - `data/processed/survey_readiness_expansion/curated_additions.csv`: selected additions from validity, multilingual/geopolitical-bias, diplomacy, and strategic-reasoning expansion.
+- `data/processed/institutional_workflow_expansion/curated_additions.csv`: selected additions from public-sector workflow, accountability, and policy-analysis expansion.
 - `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.
 - `data/processed/fog_of_war/run_summary.json`: Fog of War trace summary.
 - `data/processed/critique_priority_expansion/run_summary.json`: critique-priority trace summary.
@@ -469,6 +487,8 @@ Data files:
 - `data/processed/critique_round3_expansion/social_simulation_seed_trace_summary.json`: critique-round-3 social-simulation direct-trace summary.
 - `data/processed/survey_readiness_expansion/run_summary.json`: survey-readiness trace summary.
 - `data/processed/survey_readiness_expansion/search_summary.json`: survey-readiness query-search summary.
+- `data/processed/institutional_workflow_expansion/run_summary.json`: institutional-workflow trace summary.
+- `data/processed/institutional_workflow_expansion/search_summary.json`: institutional-workflow query-search summary.
 
 Scripts:
 
@@ -479,6 +499,7 @@ Scripts:
 - `scripts/build_critique_followup_expansion.py`: selects critique-reviewed additions from the ForecastBench, deliberation, and WARBENCH follow-up pass.
 - `scripts/build_critique_round3_expansion.py`: selects critique-reviewed additions from the influence-operations, Diplomacy, and social-simulation pass.
 - `scripts/build_survey_readiness_expansion.py`: selects critique-reviewed additions from the survey-readiness pass.
+- `scripts/build_institutional_workflow_expansion.py`: selects critique-reviewed additions from the public-sector workflow pass.
 - `scripts/build_readme.py`: rebuilds this README and validates that every curated paper is assigned to a theme.
 
 ## Contributing

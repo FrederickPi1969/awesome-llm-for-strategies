@@ -115,3 +115,13 @@ Current status: complete for this pass. The trace scanned 1,064 influence/diplom
 - Reject generic agent papers, economic negotiation, finance-specific forecasting, and generic multilingual-bias work without political or geopolitical content.
 
 Current status: complete for this pass. The trace scanned 721 citation/reference edges and 166 Semantic Scholar query results. The critique-reviewed merge added 33 non-duplicate papers, bringing the full bibliography to 355 unique papers. See `docs/survey_readiness_gap_analysis.md` for the remaining survey-paper gaps.
+
+## Institutional Workflow Expansion
+
+- Use Critique's top priority cluster to deepen public-sector and institutional decision-support evidence.
+- Trace `The LLM Effect`, `Biased LLMs can Influence Political Decision-Making`, `Sci2Pol`, `Generative Artificial Intelligence and Evaluating Strategic Decisions`, `WhatIf`, and `Surfacing citizens' policy perspectives`.
+- Accept papers only when they improve coverage of policy analyst workflows, briefing notes, public-sector algorithmic advice, emergency-management simulation, public administration, data governance, auditability, accountability, or institutionalized AI in public agencies.
+- Add two narrower subthemes: `Public-sector decision support and institutional workflow` and `Accountability, auditing, and public-sector AI governance`.
+- Reject generic AI decision-making, business/management strategy, finance/trading, healthcare-only decision support, generic agent bias, and operations/logistics papers without a public-sector governance link.
+
+Current status: complete for this pass. The trace scanned 273 citation/reference edges and 339 Semantic Scholar query results. The critique-reviewed merge added 23 non-duplicate papers, bringing the full bibliography to 378 unique papers.
