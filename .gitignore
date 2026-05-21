@@ -18,3 +18,12 @@ data/processed/targeted_strategic_decisions/expansion_edges_preliminary.csv
 data/processed/targeted_strategic_decisions/resolve_failures.csv
 data/processed/targeted_strategic_decisions/seeds_enriched.csv
 data/processed/targeted_strategic_decisions/related_work_skill_check.csv
+data/processed/fog_of_war/candidate_related_papers_preliminary.csv
+data/processed/fog_of_war/expansion_edges_preliminary.csv
+data/processed/fog_of_war/resolve_failures.csv
+data/processed/fog_of_war/seeds_enriched.csv
+data/processed/critique_priority_expansion/candidate_related_papers_preliminary.csv
+data/processed/critique_priority_expansion/expansion_edges_preliminary.csv
+data/processed/critique_priority_expansion/resolve_failures.csv
+data/processed/critique_priority_expansion/seeds_enriched.csv
+data/processed/critique_priority_expansion/shortlist_preliminary.csv

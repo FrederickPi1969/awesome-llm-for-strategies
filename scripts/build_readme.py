@@ -19,13 +19,18 @@ PRIORITY_SEEDS = ROOT / "data" / "processed" / "priority_expansion_seeds.csv"
 SECOND_ORDER_CANDIDATES = ROOT / "data" / "processed" / "second_order_candidate_additions_strategy.csv"
 TARGETED_RELATED_WORKS = ROOT / "data" / "processed" / "targeted_related_works_strategy.csv"
 CLASSICAL_POLITICAL_NLP_IE = ROOT / "data" / "processed" / "classical_political_nlp_ie_enriched.csv"
+FOG_OF_WAR_RELATED_WORKS = ROOT / "data" / "processed" / "fog_of_war_related_works_enriched.csv"
+CRITIQUE_PRIORITY_ADDITIONS = ROOT / "data" / "processed" / "critique_priority_expansion" / "curated_additions.csv"
 RUN_SUMMARY = ROOT / "data" / "processed" / "run_summary.json"
 SECOND_ORDER_SUMMARY = ROOT / "data" / "processed" / "second_order" / "run_summary.json"
 TARGETED_SUMMARY = ROOT / "data" / "processed" / "targeted_strategic_decisions" / "run_summary.json"
+FOG_OF_WAR_SUMMARY = ROOT / "data" / "processed" / "fog_of_war" / "run_summary.json"
+CRITIQUE_PRIORITY_SUMMARY = ROOT / "data" / "processed" / "critique_priority_expansion" / "run_summary.json"
 THEMATIC_PAPERS = ROOT / "data" / "processed" / "thematic_papers.csv"
 README = ROOT / "README.md"
 
 THEME_ORDER = [
+    "Political Science and Strategic Judgment Foundations",
     "Foundations, Surveys, and Methods",
     "Classical Political NLP and Information Extraction",
     "Politics, Democracy, Public Opinion, and Persuasion",
@@ -38,6 +43,10 @@ THEME_ORDER = [
 ]
 
 SUBTHEME_ORDER = {
+    "Political Science and Strategic Judgment Foundations": [
+        "International politics, intelligence, and crisis judgment",
+        "Forecasting, hindsight bias, and expert judgment",
+    ],
     "Foundations, Surveys, and Methods": [
         "Political science and computational social science overviews",
         "Social simulation and agent-based modeling reviews",
@@ -95,6 +104,13 @@ SUBTHEME_ORDER = {
 }
 
 THEME_ASSIGNMENTS = """
+Political Science and Strategic Judgment Foundations|International politics, intelligence, and crisis judgment|Analysis, War, and Decision: Why Intelligence Failures Are Inevitable
+Political Science and Strategic Judgment Foundations|International politics, intelligence, and crisis judgment|Perception and Misperception in International Politics
+Political Science and Strategic Judgment Foundations|International politics, intelligence, and crisis judgment|Wargaming for International Relations research
+Political Science and Strategic Judgment Foundations|International politics, intelligence, and crisis judgment|Evaluating Escalation: Conceptualizing Escalation in an Era of Emerging Military Technologies
+Political Science and Strategic Judgment Foundations|Forecasting, hindsight bias, and expert judgment|Hindsight (Not Equal To) Foresight: The Effect of Outcome Knowledge on Judgment Under Uncertainty.
+Political Science and Strategic Judgment Foundations|Forecasting, hindsight bias, and expert judgment|Expert Political Judgment: How Good Is It? How Can We Know?
+Political Science and Strategic Judgment Foundations|Forecasting, hindsight bias, and expert judgment|Superforecasting: The Art and Science of Prediction
 Foundations, Surveys, and Methods|Political science and computational social science overviews|Political-LLM: Large Language Models in Political Science
 Foundations, Surveys, and Methods|Political science and computational social science overviews|Large Language Models in Politics and Democracy: A Comprehensive Survey
 Foundations, Surveys, and Methods|Political science and computational social science overviews|Can Large Language Models Transform Computational Social Science?
@@ -114,6 +130,10 @@ Classical Political NLP and Information Extraction|Political text as data and po
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Fightin' Words: Lexical Feature Selection and Evaluation for Identifying the Content of Political Conflict
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|How to Analyze Political Attention with Minimal Assumptions and Costs
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|A Bayesian Hierarchical Topic Model for Political Texts: Measuring Expressed Agendas in Senate Press Releases
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|How to train your stochastic parrot: large language models for political texts
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Measurement in the Age of LLMs: An Application to Ideological Scaling
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Measuring Scalar Constructs in Social Science with LLMs
+Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Synthetically generated text for supervised text analysis
 Classical Political NLP and Information Extraction|Legislative speech and policy text classification|Measuring Political Positions from Legislative Speech
 Classical Political NLP and Information Extraction|Legislative speech and policy text classification|Get out the vote: Determining support or opposition from Congressional floor-debate transcripts
 Classical Political NLP and Information Extraction|Legislative speech and policy text classification|Predicting Legislative Roll Calls from Text
@@ -136,6 +156,11 @@ Classical Political NLP and Information Extraction|Political event data and conf
 Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Creating a Real-Time, Reproducible Event Dataset
 Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Political Event Coding as Text-to-Text Sequence Generation
 Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Creating Custom Event Data Without Dictionaries: A Bag-of-Tricks
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Coding with the machines: machine-assisted coding of rare event data
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|ConfliBERT: A Pre-trained Language Model for Political Conflict and Violence
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Socio-political Events of Conflict and Unrest: A Survey of Available Datasets
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Bayesian Poisson Tensor Factorization for Inferring Multilateral Relations from Sparse Dyadic Event Counts
+Classical Political NLP and Information Extraction|Political event data and conflict information extraction|Multilingual Protest News Detection - Shared Task 1, CASE 2021
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Whose Opinions Do Language Models Reflect?
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Large language models reflect the ideology of their creators
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Echoes of Power: Investigating Geopolitical Bias in US and China Large Language Models
@@ -151,6 +176,7 @@ Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and
 Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|Demonstrations of the Potential of AI-based Political Issue Polling
 Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|Performance and biases of Large Language Models in public opinion simulation
 Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|Random Silicon Sampling: Simulating Human Sub-Population Opinion Using a Large Language Model Based on Group-Level Demographic Information
+Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning
 Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|Generative Echo Chamber? Effect of LLM-Powered Search Systems on Diverse Information Seeking
 Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|Systematic Biases in LLM Simulations of Debates
 Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|From Skepticism to Acceptance: Simulating the Attitude Dynamics Toward Fake News
@@ -186,6 +212,9 @@ Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and internati
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Critical Foreign Policy Decisions Benchmark: Measuring Diplomatic Preferences in Large Language Models
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Benchmarking LLMs for Political Science: A United Nations Perspective / United Nations Benchmark
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|UNSC-Bench: Evaluating LLM Diplomatic Role-Playing Through UN Security Council Vote Prediction
+Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|DipLLM: Fine-Tuning LLM for Strategic Decision-making in Diplomacy
+Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy
+Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|DiplomacyAgent: Do LLMs Balance Interests and Ethical Principles in International Events?
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Escalation Risks from Language Models in Military and Diplomatic Decision-Making
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Behavioral Differences Between Expert Humans and Language Models in Wargame Simulations / Human vs. Machine
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Open-Ended Wargames with Large Language Models
@@ -194,18 +223,27 @@ Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-makin
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|BattleAgent: Multi-modal Dynamic Emulation on Historical Battles to Complement Historical Analysis
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Causal Reasoning and Large Language Models for Military Decision-Making: Rethinking the Command Structures in the Era of Generative AI
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Effective and responsible use of large language models in strategic wargaming
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Red Lines and Grey Zones in the Fog of War: Benchmarking Legal Risk, Moral Harm, and Regional Bias in Large Language Model Military Decision-Making
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|WARBENCH: A Comprehensive Benchmark for Evaluating LLMs in Military Decision-Making
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|ARMOR 2025: A Military-Aligned Benchmark for Evaluating Large Language Model Safety Beyond Civilian Contexts
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Stable and Expert-Aligned Evaluation of Wargaming Strategies via Optimized LLM Scoring Agents
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|The Prompt War: How AI Decides on a Military Intervention
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Measuring Free-Form Decision-Making Inconsistency of Language Models in Military Crisis Simulations
 Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|Simulating Influence Dynamics with LLM Agents
 Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|LLMs as Strategic Actors: Behavioral Alignment, Risk Calibration, and Argumentation Framing in Geopolitical Simulations
 Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars
 Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|Do Large Language Models Know Conflict? Investigating Parametric vs. Non-Parametric Knowledge of LLMs for Conflict Forecasting
 Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|When AI Navigates the Fog of War
 Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|Managing Escalation in Off-the-Shelf Large Language Models
+Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|AI Arms and Influence: Frontier Models Exhibit Sophisticated Reasoning in Simulated Nuclear Crises
 Geopolitics, Diplomacy, National Security, and Wargaming|National security applications and doctrine|On Large Language Models in National Security Applications
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|MIRAI: Evaluating LLM Agents for Event Forecasting
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Forecasting Future International Events: A Reliable Dataset for Text-Based Event Modeling / WORLDREP
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|OpenEP: Open-Ended Future Event Prediction
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Forecasting Future World Events with Neural Networks
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Bench to the Future: A Pastcasting Benchmark for Forecasting Agents
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|The Future Outcome Reasoning and Confidence Assessment Benchmark
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Approaching Human-Level Forecasting with Language Models
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|A Comprehensive Evaluation of Large Language Models on Temporal Event Forecasting
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|The Power of Simplicity in LLM-Based Event Forecasting
@@ -213,7 +251,21 @@ Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggreg
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Wisdom of the silicon crowd: LLM ensemble prediction capabilities rival human crowd accuracy
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Large Language Model Prediction Capabilities: Evidence from a Real-World Forecasting Tournament
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Advancing Event Forecasting through Massive Training of Large Language Models: Challenges, Solutions, and Broader Impacts
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|AIA Forecaster: Technical Report
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Pitfalls in Evaluating Language Model Forecasters
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Do Language Models Update their Forecasts with New Information?
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|LLMs Can Teach Themselves to Better Predict the Future
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Evaluating LLMs on Real-World Forecasting Against Expert Forecasters
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Can Language Models Use Forecasting Strategies?
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|TimeSeek: Temporal Reliability of Agentic Forecasters
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Agentic Forecasting using Sequential Bayesian Updating of Linguistic Beliefs
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Simulated Ignorance Fails: A Systematic Study of LLM Behaviors on Forecasting Problems Before Model Knowledge Cutoff
 Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|LLM4Geopolitics: A Framework Leveraging Large Language Models for Predicting Geopolitical Events
+Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|Multi-Source Models for Civil Unrest Forecasting
+Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|Toward Better Temporal Structures for Geopolitical Events Forecasting
+Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|Agentic Reasoning for Social Event Extrapolation: Integrating Knowledge Graphs and Language Models
+Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|ThinkTank-ME: A Multi-Expert Framework for Middle East Event Forecasting
 Forecasting, Geopolitical Risk, and Foresight|Geoeconomic and geopolitical risk signals|Geoeconomic Pressure
 Forecasting, Geopolitical Risk, and Foresight|Geoeconomic and geopolitical risk signals|The AI-GPR Index: Measuring Geopolitical Risk using Artificial Intelligence
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Playing repeated games with large language models
@@ -223,6 +275,8 @@ Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and stra
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|How Far Are We on the Decision-Making of LLMs? Evaluating LLMs' Gaming Ability in Multi-Agent Environments
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Game-theoretic LLM: Agent Workflow for Negotiation Games
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Decision-Making Behavior Evaluation Framework for LLMs under Uncertain Context
+Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially?
+Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Multi-Agent Strategic Games with LLMs
 Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents
 Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf
 Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback
@@ -442,6 +496,40 @@ def source_rows() -> list[dict[str, str]]:
             }
         )
 
+    for row in read_csv_if_exists(FOG_OF_WAR_RELATED_WORKS):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("resolved_year") or row.get("year_or_timeframe", ""),
+                "citationCount": citation_display({"title": row["title"]}, row),
+                "importance": row.get("priority", "Curated"),
+                "url": row.get("semantic_scholar_url") or row.get("source_url", ""),
+                "doi": row.get("doi", ""),
+                "arxiv": row.get("arxiv", ""),
+                "venue": row.get("venue", ""),
+                "authors": row.get("authors", ""),
+                "abstract": row.get("abstract", ""),
+                "source_tables": "fog_of_war_related_works_enriched.csv",
+            }
+        )
+
+    for row in read_csv_if_exists(CRITIQUE_PRIORITY_ADDITIONS):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("year", ""),
+                "citationCount": row.get("citationCount", ""),
+                "importance": "Curated",
+                "url": row_url(row),
+                "doi": row.get("doi", ""),
+                "arxiv": row.get("arxiv", ""),
+                "venue": row.get("venue", ""),
+                "authors": row.get("authors", ""),
+                "abstract": row.get("abstract", ""),
+                "source_tables": "critique_priority_expansion/curated_additions.csv",
+            }
+        )
+
     return rows
 
 
@@ -542,6 +630,8 @@ def build_readme() -> str:
     first_summary = json.loads(RUN_SUMMARY.read_text(encoding="utf-8"))
     second_summary = read_json_if_exists(SECOND_ORDER_SUMMARY)
     targeted_summary = read_json_if_exists(TARGETED_SUMMARY)
+    fog_summary = read_json_if_exists(FOG_OF_WAR_SUMMARY)
+    critique_priority_summary = read_json_if_exists(CRITIQUE_PRIORITY_SUMMARY)
     theme_counts = {theme: sum(len(items) for items in by_theme.get(theme, {}).values()) for theme in THEME_ORDER}
 
     lines = [
@@ -553,7 +643,7 @@ def build_readme() -> str:
         "",
         "Out of scope: finance, trading, stock prediction, portfolio management, generic financial LLM benchmarks, and generic foundation-model papers unless they directly support one of the five focus areas above.",
         "",
-        "Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-20.",
+        "Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-21.",
         "",
         f"Current curated coverage: **{len(rows)} unique papers** organized into {len(THEME_ORDER)} themes.",
         "",
@@ -592,6 +682,8 @@ def build_readme() -> str:
             f"- Initial citation/reference edges scanned: {first_summary.get('edge_count', 0)}",
             f"- Additional citation/reference edges scanned from priority papers: {second_summary.get('edge_count', 0)}",
             f"- Targeted strategic-decision related-work edges scanned: {targeted_summary.get('edge_count', 0)}",
+            f"- Fog-of-war related-work edges scanned: {fog_summary.get('edge_count', 0)}",
+            f"- Critique-priority citation/reference edges scanned: {critique_priority_summary.get('edge_count', 0)}",
             "",
             "Data files:",
             "",
@@ -599,10 +691,16 @@ def build_readme() -> str:
             "- `data/raw/core_seed_papers.csv`: original core seed list.",
             "- `data/raw/targeted_strategic_decisions_seed.csv`: targeted trace seed for the strategic-decision paper.",
             "- `data/raw/classical_political_nlp_ie_seed.csv`: curated classical political NLP and information-extraction seed list.",
+            "- `data/raw/fog_of_war_related_work_seed.csv`: curated Fog of War related-work and foundation seed list.",
+            "- `data/raw/critique_priority_expansion_seeds.csv`: critique-selected high-priority trace seeds.",
             "- `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.",
             "- `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.",
             "- `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.",
+            "- `data/processed/fog_of_war_related_works_enriched.csv`: Semantic Scholar metadata for Fog of War related-work additions.",
+            "- `data/processed/critique_priority_expansion/curated_additions.csv`: selected additions from critique-priority seed expansion.",
             "- `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.",
+            "- `data/processed/fog_of_war/run_summary.json`: Fog of War trace summary.",
+            "- `data/processed/critique_priority_expansion/run_summary.json`: critique-priority trace summary.",
             "",
             "Scripts:",
             "",

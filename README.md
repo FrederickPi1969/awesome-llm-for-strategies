@@ -6,9 +6,9 @@ This repository focuses on how LLMs and LLM agents analyze political behavior, f
 
 Out of scope: finance, trading, stock prediction, portfolio management, generic financial LLM benchmarks, and generic foundation-model papers unless they directly support one of the five focus areas above.
 
-Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-20.
+Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-21.
 
-Current curated coverage: **159 unique papers** organized into 9 themes.
+Current curated coverage: **204 unique papers** organized into 10 themes.
 
 ## Contents
 
@@ -17,6 +17,23 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 - [Contributing](#contributing)
 
 ## Papers by Theme
+
+### Political Science and Strategic Judgment Foundations
+
+7 papers.
+
+#### International politics, intelligence, and crisis judgment
+
+- [Perception and Misperception in International Politics](https://www.semanticscholar.org/paper/4339c93c91e296e34ce08cb3555e48d6244ac0f8) (1976) - Core; citations: 2913.
+- [Analysis, War, and Decision: Why Intelligence Failures Are Inevitable](https://www.semanticscholar.org/paper/0d5f8a5303dc849f3a3c0080fbf0ca683066024d) (1978) - Core; citations: 326.
+- [Wargaming for International Relations research](https://www.semanticscholar.org/paper/972ce50bb17b167190e785b1bbe08d48a07a3a56) (2021) - citations: 36.
+- [Evaluating Escalation: Conceptualizing Escalation in an Era of Emerging Military Technologies](https://www.semanticscholar.org/paper/d2c9d39b2773231954b20b9a884d2b323d8402d9) (2023) - citations: 19.
+
+#### Forecasting, hindsight bias, and expert judgment
+
+- [Superforecasting: The Art and Science of Prediction](https://www.semanticscholar.org/paper/7fd0b7c04157ca1459ca16607de9ec139fd9ad51) (2015) - Core; citations: 660.
+- [Hindsight (Not Equal To) Foresight: The Effect of Outcome Knowledge on Judgment Under Uncertainty.](https://www.semanticscholar.org/paper/e1f8236ec4aadff6caa0f55b91c87b02f2e9b6f9) (1975) - Core; citations: 444.
+- [Expert Political Judgment: How Good Is It? How Can We Know?](https://www.semanticscholar.org/paper/adb3753db12988a3269c4b0e7ec42db87ff61e5e) (2007) - Core; citations: 382.
 
 ### Foundations, Surveys, and Methods
 
@@ -44,7 +61,7 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 
 ### Classical Political NLP and Information Extraction
 
-30 papers.
+39 papers.
 
 #### Political text as data and policy-position extraction
 
@@ -56,6 +73,10 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 - [Fightin' Words: Lexical Feature Selection and Evaluation for Identifying the Content of Political Conflict](https://www.semanticscholar.org/paper/ebc37575aa4e4afeb1dc94a18022cc0ebeb2fe09) (2008) - Core; citations: 646.
 - [A Bayesian Hierarchical Topic Model for Political Texts: Measuring Expressed Agendas in Senate Press Releases](https://www.semanticscholar.org/paper/b06056c20f4ed118e7db9f4e35e674570b2cf8f6) (2010) - Core; citations: 584.
 - [Computer-Assisted Text Analysis for Comparative Politics](https://www.semanticscholar.org/paper/ca1469279ace2e341fd385c884129367e1b7dda7) (2015) - Core; citations: 464.
+- [How to train your stochastic parrot: large language models for political texts](https://www.semanticscholar.org/paper/d0416928f4f8ecc7adc81d4072ae22911a863664) (2025) - citations: 57.
+- [Synthetically generated text for supervised text analysis](https://www.semanticscholar.org/paper/1a3099125dd700a65dbe6c1c2cc4067e12d5171a) (2023) - citations: 16.
+- [Measurement in the Age of LLMs: An Application to Ideological Scaling](https://www.semanticscholar.org/paper/f1847c5693f7dac9ba89b3e0571ee27cfca720dc) (2023) - citations: 15.
+- [Measuring Scalar Constructs in Social Science with LLMs](https://www.semanticscholar.org/paper/26730e1800a33de13aa8ce01f1400b4818e9de42) (2025) - citations: 8.
 
 #### Legislative speech and policy text classification
 
@@ -72,22 +93,27 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 - [Conflict and Mediation Event Observations (CAMEO): A New Event Data Framework for the Analysis of Foreign Policy Interactions](https://www.semanticscholar.org/paper/775d7f7262ffb42972e5b87a245bc4b63c20396d) (2002) - Core; citations: 189.
 - [Political Science: KEDS-A Program for the Machine Coding of Event Data](https://www.semanticscholar.org/paper/f2a0ce8d7316814628853ec135d465e25dd89279) (1994) - Core; citations: 165.
 - [Precedents, Progress, and Prospects in Political Event Data](https://www.semanticscholar.org/paper/86b1d0c06965266939a167ebe135bfda62234d0d) (2012) - Important; citations: 126.
+- [Bayesian Poisson Tensor Factorization for Inferring Multilateral Relations from Sparse Dyadic Event Counts](https://www.semanticscholar.org/paper/4ddb48f5e50ecf3595a0ef2517d36d077f968e25) (2015) - citations: 112.
 - [Learning to Extract International Relations from Political Context](https://www.semanticscholar.org/paper/de0c0563ee36f3485b5547482cf2b9296107d716) (2013) - Core; citations: 76.
 - [Automated Coding of International Event Data Using Sparse Parsing Techniques](https://www.semanticscholar.org/paper/f9dc1de1dea55eef0bfdea0231e95045dd7e64b3) (2000) - Core; citations: 67.
 - [The CAMEO (Conflict and Mediation Event Observations) Actor Coding Framework](https://www.semanticscholar.org/paper/dd9b3253977b889490c5baf33502230b6939fa6b) (2008) - Important; citations: 67.
 - [Automated Coding of Political Event Data](https://www.semanticscholar.org/paper/f572d3ae9579b94dd7576ea16ff879ee357c54d9) (2013) - Important; citations: 52.
 - [Automatic Extraction of Events from Open Source Text for Predictive Forecasting](https://www.semanticscholar.org/paper/323d03d202b9fea2696cbfa86ef86a29bea10b50) (2013) - Important; citations: 52.
 - [Three's a Charm?: Open Event Data Coding with EL:DIABLO, PETRARCH, and the Open Event Data Alliance.](https://www.semanticscholar.org/paper/ebec268b3097a364f04c9630521ca2c16a3bdfb2) (2014) - Important; citations: 49.
+- [Multilingual Protest News Detection - Shared Task 1, CASE 2021](https://www.semanticscholar.org/paper/766e30612f93e2e2b1f517fbb0f6fa4c7e953b71) (2021) - citations: 49.
+- [ConfliBERT: A Pre-trained Language Model for Political Conflict and Violence](https://www.semanticscholar.org/paper/9b05db2352c046b3b29bd9bf258cda8895d96d31) (2022) - citations: 42.
 - [Automated Production of High-Volume, Near-Real-Time Political Event Data](https://www.semanticscholar.org/paper/22317c1fb2e0339771cb6f263e58c31ea421054c) (2011) - Important; citations: 35.
 - [Improving the selection of news reports for event coding using ensemble classification](https://www.semanticscholar.org/paper/b1dc323fcad19c28240906b989afc02f7d2849d4) (2015) - Important; citations: 34.
 - [Creating Custom Event Data Without Dictionaries: A Bag-of-Tricks](https://www.semanticscholar.org/paper/3a8d5ee46951eda62e38ca4d9b364de5387d8be4) (2023) - Important; citations: 9.
+- [Socio-political Events of Conflict and Unrest: A Survey of Available Datasets](https://www.semanticscholar.org/paper/e2f0fca4113a62ff2cfdc8901265f89af6bf4516) (2024) - citations: 7.
 - [Creating a Real-Time, Reproducible Event Dataset](https://www.semanticscholar.org/paper/680ef0b7b3e0a415a29ca28e4bb40dad220ad69e) (2016) - Important; citations: 5.
+- [Coding with the machines: machine-assisted coding of rare event data](https://www.semanticscholar.org/paper/a92f37aa991a60147f51ffdd24e86bd6c011370c) (2024) - citations: 5.
 - [Political Event Coding as Text-to-Text Sequence Generation](https://www.semanticscholar.org/paper/f4666ec25c7af298ed359c0eca05295b908bab59) (2022) - Important; citations: 3.
 - [GDELT: Global Data on Events, Location and Tone, 1979-2012](https://data.gdeltproject.org/documentation/ISA.2013.GDELT.pdf) (2013) - Core; citations: n/a.
 
 ### Politics, Democracy, Public Opinion, and Persuasion
 
-21 papers.
+22 papers.
 
 #### Political ideology, representation, and bias
 
@@ -108,6 +134,7 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 
 #### Public opinion, polling, and political annotation
 
+- [ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning](https://www.semanticscholar.org/paper/6354f2639d07bf8d5b08a4dcaef4c5db5fe19fdb) (2023) - citations: 206.
 - [Performance and biases of Large Language Models in public opinion simulation](https://www.semanticscholar.org/paper/e6d14d140c4faaf8f3d9f47e61cc5c6091bccf1e) (2024) - citations: 97.
 - [Large language models as a substitute for human experts in annotating political text](https://www.semanticscholar.org/paper/f8b64c2dad165c92cfb43081c7e0ed70b077ae85) (2024) - citations: 94.
 - [Random Silicon Sampling: Simulating Human Sub-Population Opinion Using a Large Language Model Based on Group-Level Demographic Information](https://www.semanticscholar.org/paper/c9110c103f26a886ebaea98ef6501724add1d5a4) (2024) - citations: 44.
@@ -174,13 +201,16 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 
 ### Geopolitics, Diplomacy, National Security, and Wargaming
 
-19 papers.
+29 papers.
 
 #### Diplomacy and international institutions
 
 - [Human-level play in the game of Diplomacy by combining language models with strategic reasoning](https://www.semanticscholar.org/paper/e89ed6bb1864558e3889f5f2fb8931643c633479) (2022) - citations: 548.
+- [Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy](https://www.semanticscholar.org/paper/7dae752721176a5d1a2d50b951c8e7471d137195) (2024) - citations: 39.
+- [DipLLM: Fine-Tuning LLM for Strategic Decision-making in Diplomacy](https://www.semanticscholar.org/paper/81e0f65ab7e9bf411ee7d96b287f11f1db1b1624) (2025) - citations: 6.
 - [Benchmarking LLMs for Political Science: A United Nations Perspective / United Nations Benchmark](https://arxiv.org/abs/2502.14122) (2025) - Core; citations: 5.
 - [Critical Foreign Policy Decisions Benchmark: Measuring Diplomatic Preferences in Large Language Models](https://arxiv.org/abs/2503.06263) (2025) - Core; citations: 4.
+- [DiplomacyAgent: Do LLMs Balance Interests and Ethical Principles in International Events?](https://www.semanticscholar.org/paper/042527cf922c53bcaa831699276205a110c42fbb) (2025) - citations: 4.
 - [UNSC-Bench: Evaluating LLM Diplomatic Role-Playing Through UN Security Council Vote Prediction](https://aclanthology.org/2026.mme-main.10.pdf) (2026) - Core; citations: 0.
 
 #### Military decision-making and wargaming
@@ -189,15 +219,22 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 - [COA-GPT: Generative Pre-Trained Transformers for Accelerated Course of Action Development in Military Operations](https://www.semanticscholar.org/paper/a1b7eb8f067eff50e726555d1e69cbd6a0b0fea0) (2024) - citations: 28.
 - [BattleAgent: Multi-modal Dynamic Emulation on Historical Battles to Complement Historical Analysis](https://www.semanticscholar.org/paper/fca5511c66bb1f8647063ce2a08a81441a254a36) (2024) - citations: 26.
 - [Behavioral Differences Between Expert Humans and Language Models in Wargame Simulations / Human vs. Machine](https://arxiv.org/html/2403.03407v4) (2024) - Core; citations: 23.
+- [Measuring Free-Form Decision-Making Inconsistency of Language Models in Military Crisis Simulations](https://www.semanticscholar.org/paper/52495428476931949de8c4a5ac67c7d9af9897a8) (2024) - citations: 10.
 - [Open-Ended Wargames with Large Language Models](https://arxiv.org/html/2404.11446v1) (2024) - Important; citations: 6.
+- [The Prompt War: How AI Decides on a Military Intervention](https://www.semanticscholar.org/paper/5711422371477106fcb16ce63599a75a45477711) (2025) - Important; citations: 4.
+- [Red Lines and Grey Zones in the Fog of War: Benchmarking Legal Risk, Moral Harm, and Regional Bias in Large Language Model Military Decision-Making](https://www.semanticscholar.org/paper/6a690b749ac5eaafc0918b452c8cec5cff72c723) (2025) - Core; citations: 1.
+- [WARBENCH: A Comprehensive Benchmark for Evaluating LLMs in Military Decision-Making](https://www.semanticscholar.org/paper/0f12312d9802499773ef7adfa506937263c4f523) (2026) - Core; citations: 0.
+- [ARMOR 2025: A Military-Aligned Benchmark for Evaluating Large Language Model Safety Beyond Civilian Contexts](https://www.semanticscholar.org/paper/893c4cf88cd76f31a267cca45ad6b30846e31ec3) (2026) - Important; citations: 0.
 - [LLM-based wargame scenario generation with domain ontology](https://journals.sagepub.com/doi/10.1177/00375497251415245) (2025 or 2026) - Optional / Engineering; citations: 0.
 - [Causal Reasoning and Large Language Models for Military Decision-Making: Rethinking the Command Structures in the Era of Generative AI](https://www.semanticscholar.org/paper/bb10ecd849b7b311d81d6924f89aa2dc787ebb05) (2026) - citations: 0.
 - [Effective and responsible use of large language models in strategic wargaming](https://www.semanticscholar.org/paper/af91a7279ff3496824ac33e9088a780fa1192d5f) (2026) - citations: 0.
+- [Stable and Expert-Aligned Evaluation of Wargaming Strategies via Optimized LLM Scoring Agents](https://www.semanticscholar.org/paper/3910061e1f702c845750d5b1f7a5ac019d9546a7) (2025) - citations: 0.
 
 #### Conflict, escalation, and geopolitical simulation
 
 - [War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars](https://www.semanticscholar.org/paper/9ad3edeea4732cb44a26f39652a668d1a562b0cf) (2023) - citations: 149.
 - [Simulating Influence Dynamics with LLM Agents](https://arxiv.org/html/2503.08709v1) (2025) - Important; citations: 5.
+- [AI Arms and Influence: Frontier Models Exhibit Sophisticated Reasoning in Simulated Nuclear Crises](https://www.semanticscholar.org/paper/61159eaad2619f56621105de3670b54da562e340) (2026) - Core; citations: 4.
 - [Do Large Language Models Know Conflict? Investigating Parametric vs. Non-Parametric Knowledge of LLMs for Conflict Forecasting](https://www.semanticscholar.org/paper/e6f29dbbebaa8ce2c2da9581781aa03a58b4ed28) (2025) - citations: 2.
 - [LLMs as Strategic Actors: Behavioral Alignment, Risk Calibration, and Argumentation Framing in Geopolitical Simulations](https://arxiv.org/abs/2603.02128) (2026) - Important; citations: 1.
 - [Managing Escalation in Off-the-Shelf Large Language Models](https://www.semanticscholar.org/paper/ec7922ef52feca9f78f4f2a9062e7b71ef71d5c3) (2025) - citations: 0.
@@ -209,7 +246,7 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 
 ### Forecasting, Geopolitical Risk, and Foresight
 
-15 papers.
+31 papers.
 
 #### Forecasting benchmarks and datasets
 
@@ -217,6 +254,8 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 - [Forecasting Future World Events with Neural Networks](https://www.semanticscholar.org/paper/2a85c44afeeeb336c5eafcd4001ccb033d3d1f1c) (2022) - citations: 45.
 - [MIRAI: Evaluating LLM Agents for Event Forecasting](https://arxiv.org/abs/2407.01231) (2024) - Core; citations: 33.
 - [OpenEP: Open-Ended Future Event Prediction](https://arxiv.org/html/2408.06578v2) (2024) - Important; citations: 12.
+- [Bench to the Future: A Pastcasting Benchmark for Forecasting Agents](https://www.semanticscholar.org/paper/23ceef7184f878336ab25a444b78f0331fd571de) (2025) - citations: 8.
+- [The Future Outcome Reasoning and Confidence Assessment Benchmark](https://www.semanticscholar.org/paper/453baf82f811e32aa005a57e807415857d7b4685) (2025) - Important; citations: 5.
 - [Forecasting Future International Events: A Reliable Dataset for Text-Based Event Modeling / WORLDREP](https://arxiv.org/abs/2411.14042) (2024) - Core; citations: 1.
 
 #### Forecasting performance and aggregation
@@ -225,12 +264,26 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 - [Wisdom of the silicon crowd: LLM ensemble prediction capabilities rival human crowd accuracy](https://www.semanticscholar.org/paper/e78188daf9a18840933f3acfc9b3ccfea3db7856) (2024) - citations: 72.
 - [Large Language Model Prediction Capabilities: Evidence from a Real-World Forecasting Tournament](https://www.semanticscholar.org/paper/5a23700c5198e44a05336f7a2e7a7d7d183ad625) (2023) - citations: 26.
 - [A Comprehensive Evaluation of Large Language Models on Temporal Event Forecasting](https://arxiv.org/html/2407.11638v2) (2024) - Important; citations: 12.
+- [Pitfalls in Evaluating Language Model Forecasters](https://www.semanticscholar.org/paper/aceb94676d003e84cdc29a9c72259c3d412c7e61) (2025) - Important; citations: 12.
+- [Can Language Models Use Forecasting Strategies?](https://www.semanticscholar.org/paper/cbdbd93f4f30693ad408e480b2060a5ffda09994) (2024) - citations: 12.
 - [Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle](https://www.semanticscholar.org/paper/51229961bb32b1233be87b77946bfebefaff1f96) (2024) - citations: 11.
+- [Advancing Event Forecasting through Massive Training of Large Language Models: Challenges, Solutions, and Broader Impacts](https://www.semanticscholar.org/paper/aae0ff0d91cbbd131ed406eeb8a8f311f7b17f8e) (2025) - citations: 4.
+- [LLMs Can Teach Themselves to Better Predict the Future](https://www.semanticscholar.org/paper/4fd865860aa5508e092201b6b321926d84ef2ace) (2025) - citations: 4.
+- [Simulated Ignorance Fails: A Systematic Study of LLM Behaviors on Forecasting Problems Before Model Knowledge Cutoff](https://www.semanticscholar.org/paper/9a08a05560778e664c3ae47108be0fc501385d63) (2026) - Important; citations: 3.
+- [Evaluating LLMs on Real-World Forecasting Against Expert Forecasters](https://www.semanticscholar.org/paper/1716271fd5d30cb017515309f5db0330a8944755) (2025) - citations: 2.
 - [The Future Is Unevenly Distributed: Forecasting Ability of LLMs Depends on What We’re Asking](https://arxiv.org/abs/2511.18394) (2025) - Important; citations: 1.
 - [The Power of Simplicity in LLM-Based Event Forecasting](https://aclanthology.org/2025.realm-1.32/) (2025) - Important; citations: 1.
+- [Agentic Forecasting using Sequential Bayesian Updating of Linguistic Beliefs](https://www.semanticscholar.org/paper/4f08618d4da746986a6346d328d1b243f9524363) (2026) - citations: 1.
+- [AIA Forecaster: Technical Report](https://www.semanticscholar.org/paper/382522641d17bebeb394dd07fe6557a6563defcd) (2025) - citations: 1.
+- [Do Language Models Update their Forecasts with New Information?](https://www.semanticscholar.org/paper/eb24c93d4efa0d9fb6c7823ae0adf61a6d025208) (2025) - Important; citations: 0.
+- [TimeSeek: Temporal Reliability of Agentic Forecasters](https://www.semanticscholar.org/paper/ebdd99354e7e8768df6ec012bd4d7ae5134595ff) (2026) - citations: 0.
 
 #### Geopolitical event prediction systems
 
+- [Multi-Source Models for Civil Unrest Forecasting](https://www.semanticscholar.org/paper/02099cbba1256232aa1a26fa88be9796db514846) (2016) - citations: 27.
+- [ThinkTank-ME: A Multi-Expert Framework for Middle East Event Forecasting](https://www.semanticscholar.org/paper/a29b9d962c17189d7f122b02e5ed217499e19e5b) (2026) - Core; citations: 2.
+- [Agentic Reasoning for Social Event Extrapolation: Integrating Knowledge Graphs and Language Models](https://www.semanticscholar.org/paper/08cb00d8291409bfc4616fdf19b1ef8a28694f10) (2025) - citations: 1.
+- [Toward Better Temporal Structures for Geopolitical Events Forecasting](https://www.semanticscholar.org/paper/dba33ae55b387a5ca5779c448c4e15cc7d00cb10) (2026) - citations: 1.
 - [LLM4Geopolitics: A Framework Leveraging Large Language Models for Predicting Geopolitical Events](https://onlinelibrary.wiley.com/doi/10.1111/exsy.70258) (2025) - Important; citations: 0.
 
 #### Geoeconomic and geopolitical risk signals
@@ -240,7 +293,7 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 
 ### Strategic Reasoning, Games, Negotiation, and Cooperation
 
-17 papers.
+19 papers.
 
 #### Game-theoretic and strategic reasoning benchmarks
 
@@ -251,6 +304,8 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 - [Game-theoretic LLM: Agent Workflow for Negotiation Games](https://www.semanticscholar.org/paper/659d78d44ed1fab15ac2a7b8d81dd6f9641b2d7c) (2024) - citations: 59.
 - [Strategic behavior of large language models and the role of game structure versus contextual framing](https://www.semanticscholar.org/paper/e46db119b320df6ac4a5091e1561c54c5aece797) (2024) - citations: 57.
 - [Decision-Making Behavior Evaluation Framework for LLMs under Uncertain Context](https://www.semanticscholar.org/paper/a5a3dd4af6e754ac82670751f6789c389e91d533) (2024) - citations: 53.
+- [SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially?](https://www.semanticscholar.org/paper/ec26efa475d105905d8553eedd141f7905967e5c) (2025) - Core; citations: 15.
+- [Multi-Agent Strategic Games with LLMs](https://www.semanticscholar.org/paper/58b591a6b644d5c0767abff1804ed46d7b5e60d9) (2026) - citations: 0.
 
 #### Negotiation, bargaining, and communication games
 
@@ -320,14 +375,16 @@ Current curated coverage: **159 unique papers** organized into 9 themes.
 
 ## Data and Collection
 
-- Total unique papers in the thematic list: 159
-- Source rows checked before merge: 177
-- Duplicate source rows removed during merge: 18
+- Total unique papers in the thematic list: 204
+- Source rows checked before merge: 226
+- Duplicate source rows removed during merge: 22
 - Core seed papers: 40
-- Curated additions merged into themes: 119
+- Curated additions merged into themes: 164
 - Initial citation/reference edges scanned: 3889
 - Additional citation/reference edges scanned from priority papers: 2871
 - Targeted strategic-decision related-work edges scanned: 119
+- Fog-of-war related-work edges scanned: 49
+- Critique-priority citation/reference edges scanned: 2009
 
 Data files:
 
@@ -335,10 +392,16 @@ Data files:
 - `data/raw/core_seed_papers.csv`: original core seed list.
 - `data/raw/targeted_strategic_decisions_seed.csv`: targeted trace seed for the strategic-decision paper.
 - `data/raw/classical_political_nlp_ie_seed.csv`: curated classical political NLP and information-extraction seed list.
+- `data/raw/fog_of_war_related_work_seed.csv`: curated Fog of War related-work and foundation seed list.
+- `data/raw/critique_priority_expansion_seeds.csv`: critique-selected high-priority trace seeds.
 - `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.
 - `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.
 - `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.
+- `data/processed/fog_of_war_related_works_enriched.csv`: Semantic Scholar metadata for Fog of War related-work additions.
+- `data/processed/critique_priority_expansion/curated_additions.csv`: selected additions from critique-priority seed expansion.
 - `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.
+- `data/processed/fog_of_war/run_summary.json`: Fog of War trace summary.
+- `data/processed/critique_priority_expansion/run_summary.json`: critique-priority trace summary.
 
 Scripts:
 

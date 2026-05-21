@@ -1,0 +1,2 @@
+id,priority,primary_category,short_name,title,year_or_timeframe,paper_type_or_source,source_url,notes
+fog-of-war-001,Core,"Geopolitics, Diplomacy, and Strategic Simulation",Fog of War,When AI Navigates the Fog of War,2026,arXiv preprint,https://arxiv.org/abs/2603.16642,Targeted trace for temporally grounded LLM reasoning in unfolding geopolitical conflict.
