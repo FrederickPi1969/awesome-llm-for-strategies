@@ -22,6 +22,7 @@ CLASSICAL_POLITICAL_NLP_IE = ROOT / "data" / "processed" / "classical_political_
 FOG_OF_WAR_RELATED_WORKS = ROOT / "data" / "processed" / "fog_of_war_related_works_enriched.csv"
 CRITIQUE_PRIORITY_ADDITIONS = ROOT / "data" / "processed" / "critique_priority_expansion" / "curated_additions.csv"
 CRITIQUE_NEXT_ADDITIONS = ROOT / "data" / "processed" / "critique_next_expansion" / "curated_additions.csv"
+CRITIQUE_FOLLOWUP_ADDITIONS = ROOT / "data" / "processed" / "critique_followup_expansion" / "curated_additions.csv"
 STRATEGIC_STUDIES_FOUNDATION = ROOT / "data" / "processed" / "strategic_studies_foundation_enriched.csv"
 RUN_SUMMARY = ROOT / "data" / "processed" / "run_summary.json"
 SECOND_ORDER_SUMMARY = ROOT / "data" / "processed" / "second_order" / "run_summary.json"
@@ -29,6 +30,8 @@ TARGETED_SUMMARY = ROOT / "data" / "processed" / "targeted_strategic_decisions" 
 FOG_OF_WAR_SUMMARY = ROOT / "data" / "processed" / "fog_of_war" / "run_summary.json"
 CRITIQUE_PRIORITY_SUMMARY = ROOT / "data" / "processed" / "critique_priority_expansion" / "run_summary.json"
 CRITIQUE_NEXT_SUMMARY = ROOT / "data" / "processed" / "critique_next_expansion" / "run_summary.json"
+CRITIQUE_FOLLOWUP_SUMMARY = ROOT / "data" / "processed" / "critique_followup_expansion" / "run_summary.json"
+CRITIQUE_FOLLOWUP_SEARCH_SUMMARY = ROOT / "data" / "processed" / "critique_followup_expansion" / "search_summary.json"
 THEMATIC_PAPERS = ROOT / "data" / "processed" / "thematic_papers.csv"
 README = ROOT / "README.md"
 FULL_BIBLIOGRAPHY = ROOT / "docs" / "full-bibliography.md"
@@ -205,6 +208,8 @@ Politics, Democracy, Public Opinion, and Persuasion|Political ideology, represen
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|An evaluation of LLMs for political bias in Western media: Israel-Hamas and Ukraine-Russia wars
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Ideology-Based LLMs for Content Moderation
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Media Source Matters More Than Content: Unveiling Political Bias in LLM-Generated Citations
+Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Assessing the Political Fairness of Multilingual LLMs: A Case Study based on a 21-way Multiparallel EuroParl Dataset
+Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|A Multi-Dimensional Audit of Politically Aligned Large Language Models
 Politics, Democracy, Public Opinion, and Persuasion|Elections, voters, and campaign discourse|ElectionSim: Massive Population Election Simulation Powered by Large Language Model Driven Agents
 Politics, Democracy, Public Opinion, and Persuasion|Elections, voters, and campaign discourse|Large-Scale Longitudinal Study of LLMs During the 2024 United States Election Season
 Politics, Democracy, Public Opinion, and Persuasion|Elections, voters, and campaign discourse|A Public Dataset Tracking Social Media Discourse about the 2024 U.S. Presidential Election on Twitter/X
@@ -220,12 +225,18 @@ Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, an
 Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|Systematic Biases in LLM Simulations of Debates
 Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|From Skepticism to Acceptance: Simulating the Attitude Dynamics Toward Fake News
 Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|When Two LLMs Debate, Both Think They'll Win
+Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|Looking Under the Hood: How LLMs Attempt Political Persuasion and Microtargeting
 Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|Political Actor Agent: Simulating Legislative Politics with LLM Agents
 Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|LegiGPT: Party Politics and Transport Policy with Large Language Model
 Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|A Large-Scale Simulation on Large Language Models for Decision-Making in Political Science
 Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|ParlAI Vote: A Web Platform for Analyzing Gender and Political Bias in Large Language Models
 Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|ParliaBench: An Evaluation and Benchmarking Framework for LLM-Generated Parliamentary Speech
 Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Large Language Models as agents for augmented democracy
+Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Surfacing citizens’ policy perspectives at scale in the age of large language models
+Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Simulating Policy Discussions with Digital Footprints and Large Language Models
+Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Digital Homunculi and Institutional Design: Breaking Through the Experimentation Bottleneck
+Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Democracy-in-Silico: Institutional Design as Alignment in AI-Governed Polities
+Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Using LLMs to Enhance Democracy
 Policymaking, Governance, and Institutional Decision Support|Policy translation and policy brief generation|Sci2Pol: Evaluating and Fine-tuning LLMs on Scientific-to-Policy Brief Generation
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|AI can help humans find common ground in democratic deliberation
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Large Language Models Can Argue in Convincing Ways About Politics, But Humans Dislike AI Authors: Implications for Governance
@@ -233,6 +244,18 @@ Policymaking, Governance, and Institutional Decision Support|Policy persuasion a
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|PoliCon: Evaluating LLMs on Achieving Diverse Political Consensus Objectives
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Can AI Truly Represent Your Voice in Deliberations? A Comprehensive Study of Large-Scale Opinion Aggregation with LLMs
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|AI in Conflict Resolution: Practical Considerations, Opportunities and Challenges
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|DeliberationBench: A Normative Benchmark for the Influence of Large Language Models on Users'Views
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Bringing Everyone to the Table: An Experimental Study of LLM-Facilitated Group Decision Making
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|An Emergent Understanding of Human-AI Collaboration in Deliberation
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Hyperdemocracy: Towards Creative Consensus Building between Humans and AI
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Generative Social Choice
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Leveraging AI in peace processes: A framework for digital dialogues
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|PTFA: An LLM-based Agent that Facilitates Online Consensus Building through Parallel Thinking
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Can AI Deliberate? Evaluating Deliberative Quality and Stance Flow in Multi-Agent LLMs
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Can AI mediation improve democratic deliberation?
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Generating Fair Consensus Statements with Social Choice on Token-Level MDPs
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Preserving Disagreement: Architectural Heterogeneity and Coherence Validation in Multi-Agent Policy Simulation
+Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Toward an artificial deliberation? On Google DeepMind’s Habermas Machine
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Biased LLMs can Influence Political Decision-Making
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Generative Artificial Intelligence and Evaluating Strategic Decisions
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|The LLM Effect: Are Humans Truly Using LLMs, or Are They Being Influenced By Them Instead?
@@ -271,6 +294,7 @@ Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-makin
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Battlefield information and tactics engine (BITE): a multimodal large language model approach for battlespace management
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Integrators at War: Mediating in AI-assisted Resort-to-Force Decisions
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Upskilling human actors against AI automation bias in strategic decision making on the resort to force
+Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Integrating Generative AI into Tactical Military Decision-Making
 Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|Simulating Influence Dynamics with LLM Agents
 Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|LLMs as Strategic Actors: Behavioral Alignment, Risk Calibration, and Argumentation Framing in Geopolitical Simulations
 Geopolitics, Diplomacy, National Security, and Wargaming|Conflict, escalation, and geopolitical simulation|War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars
@@ -289,6 +313,11 @@ Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and dataset
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Forecasting Future World Events with Neural Networks
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Bench to the Future: A Pastcasting Benchmark for Forecasting Agents
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|The Future Outcome Reasoning and Confidence Assessment Benchmark
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Automating Forecasting Question Generation and Resolution for AI Evaluation
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|PROPHET: An Inferable Future Forecasting Benchmark with Causal Intervened Likelihood Estimation
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|LLM-as-a-Prophet: Understanding Predictive Intelligence with Prophet Arena
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|OracleProto: A Reproducible Framework for Benchmarking LLM Native Forecasting via Knowledge Cutoff and Temporal Masking
+Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|TruthTensor: Evaluating LLMs through Human Imitation on Prediction Market under Drift and Holistic Reasoning
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Approaching Human-Level Forecasting with Language Models
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|A Comprehensive Evaluation of Large Language Models on Temporal Event Forecasting
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|The Power of Simplicity in LLM-Based Event Forecasting
@@ -307,11 +336,16 @@ Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggreg
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Agentic Forecasting using Sequential Bayesian Updating of Linguistic Beliefs
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Simulated Ignorance Fails: A Systematic Study of LLM Behaviors on Forecasting Problems Before Model Knowledge Cutoff
 Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Artificial Intelligence in Political Forecasting: Possibilities and Limitations
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|AI-Augmented Predictions: LLM Assistants Improve Human Forecasting Accuracy
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Scaling Open-Ended Reasoning to Predict the Future
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Crowdsourced versus large language models forecasting: evidence for the accuracy–correlation effect
+Forecasting, Geopolitical Risk, and Foresight|Forecasting performance and aggregation|Scattered Hypothesis Generation for Open-Ended Event Forecasting
 Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|LLM4Geopolitics: A Framework Leveraging Large Language Models for Predicting Geopolitical Events
 Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|Multi-Source Models for Civil Unrest Forecasting
 Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|Toward Better Temporal Structures for Geopolitical Events Forecasting
 Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|Agentic Reasoning for Social Event Extrapolation: Integrating Knowledge Graphs and Language Models
 Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|ThinkTank-ME: A Multi-Expert Framework for Middle East Event Forecasting
+Forecasting, Geopolitical Risk, and Foresight|Geopolitical event prediction systems|AutoCast++: Enhancing World Event Prediction with Zero-shot Ranking-based Context Retrieval
 Forecasting, Geopolitical Risk, and Foresight|Geoeconomic and geopolitical risk signals|Geoeconomic Pressure
 Forecasting, Geopolitical Risk, and Foresight|Geoeconomic and geopolitical risk signals|The AI-GPR Index: Measuring Geopolitical Risk using Artificial Intelligence
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Playing repeated games with large language models
@@ -356,6 +390,8 @@ AI Safety, Influence Operations, and Societal Risk|Influence operations and pers
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Ignore All Previous Instructions: Jailbreaking as a de-escalatory peace building practise to resist LLM social media bots
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Charting the Landscape of Nefarious Uses of Generative Artificial Intelligence for Online Election Interference
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Simulating Misinformation Vulnerabilities with Agent Personas
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Prompt Injection Vulnerability of Consensus Generating Applications in Digital Democracy
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|New parameters of power: On LLM-based manipulation and control and the spectre of strategic AI
 AI Safety, Influence Operations, and Societal Risk|Deception, multi-agent risk, and control|Multi-Agent Risks from Advanced AI
 AI Safety, Influence Operations, and Societal Risk|Deception, multi-agent risk, and control|AI deception: A survey of examples, risks, and potential solutions
 AI Safety, Influence Operations, and Societal Risk|Bias, toxicity, and cultural alignment risks|Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity
@@ -802,6 +838,23 @@ def source_rows() -> list[dict[str, str]]:
             }
         )
 
+    for row in read_csv_if_exists(CRITIQUE_FOLLOWUP_ADDITIONS):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("year", ""),
+                "citationCount": row.get("citationCount", ""),
+                "importance": row.get("importance", "Curated"),
+                "url": row_url(row),
+                "doi": row.get("doi", ""),
+                "arxiv": row.get("arxiv", ""),
+                "venue": row.get("venue", ""),
+                "authors": row.get("authors", ""),
+                "abstract": row.get("abstract", ""),
+                "source_tables": "critique_followup_expansion/curated_additions.csv",
+            }
+        )
+
     return [row for row in rows if normalize(row["title"]) not in EXCLUDED_TITLES]
 
 
@@ -997,6 +1050,8 @@ def build_readme() -> str:
     fog_summary = read_json_if_exists(FOG_OF_WAR_SUMMARY)
     critique_priority_summary = read_json_if_exists(CRITIQUE_PRIORITY_SUMMARY)
     critique_next_summary = read_json_if_exists(CRITIQUE_NEXT_SUMMARY)
+    critique_followup_summary = read_json_if_exists(CRITIQUE_FOLLOWUP_SUMMARY)
+    critique_followup_search_summary = read_json_if_exists(CRITIQUE_FOLLOWUP_SEARCH_SUMMARY)
     highlighted_rows = [row for row in rows if is_highlighted(row)]
     label_counts = Counter(row["importance"] for row in rows)
 
@@ -1072,6 +1127,8 @@ def build_readme() -> str:
             f"- Fog-of-war related-work edges scanned: {fog_summary.get('edge_count', 0)}",
             f"- Critique-priority citation/reference edges scanned: {critique_priority_summary.get('edge_count', 0)}",
             f"- Critique-next citation/reference edges scanned: {critique_next_summary.get('edge_count', 0)}",
+            f"- Critique-followup citation/reference edges scanned: {critique_followup_summary.get('edge_count', 0)}",
+            f"- Critique-followup Semantic Scholar query results screened: {critique_followup_search_summary.get('result_count', 0)}",
             "",
             "Data files:",
             "",
@@ -1085,6 +1142,8 @@ def build_readme() -> str:
             "- `data/raw/strategic_studies_foundation_seed.csv`: curated strategic-studies foundation seed list.",
             "- `data/raw/critique_priority_expansion_seeds.csv`: critique-selected high-priority trace seeds.",
             "- `data/raw/critique_next_expansion_seeds.csv`: next-round critique seed list for escalation risk and Political-LLM traces.",
+            "- `data/raw/critique_followup_expansion_seeds.csv`: critique-followup seeds for forecasting, democratic deliberation, and WARBENCH traces.",
+            "- `data/raw/critique_followup_search_queries.csv`: targeted Semantic Scholar query-search terms for the critique-followup pass.",
             "- `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.",
             "- `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.",
             "- `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.",
@@ -1092,16 +1151,21 @@ def build_readme() -> str:
             "- `data/processed/strategic_studies_foundation_enriched.csv`: Semantic Scholar metadata for strategic-studies foundation additions.",
             "- `data/processed/critique_priority_expansion/curated_additions.csv`: selected additions from critique-priority seed expansion.",
             "- `data/processed/critique_next_expansion/curated_additions.csv`: selected additions from escalation-risk and Political-LLM seed expansion.",
+            "- `data/processed/critique_followup_expansion/curated_additions.csv`: selected additions from ForecastBench, democratic-deliberation, and WARBENCH follow-up expansion.",
             "- `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.",
             "- `data/processed/fog_of_war/run_summary.json`: Fog of War trace summary.",
             "- `data/processed/critique_priority_expansion/run_summary.json`: critique-priority trace summary.",
             "- `data/processed/critique_next_expansion/run_summary.json`: critique-next trace summary.",
+            "- `data/processed/critique_followup_expansion/run_summary.json`: critique-followup trace summary.",
+            "- `data/processed/critique_followup_expansion/search_summary.json`: critique-followup query-search summary.",
             "",
             "Scripts:",
             "",
             "- `scripts/expand_semantic_scholar.py`: resolves seeds, fetches citations/references, and writes candidate tables.",
+            "- `scripts/search_semantic_scholar.py`: runs targeted Semantic Scholar paper-search queries without fetching TLDR fields.",
             "- `scripts/fetch_seed_metadata.py`: enriches seed papers with Semantic Scholar metadata.",
             "- `scripts/build_targeted_related_works.py`: selects targeted related-work additions from a trace longlist.",
+            "- `scripts/build_critique_followup_expansion.py`: selects critique-reviewed additions from the ForecastBench, deliberation, and WARBENCH follow-up pass.",
             "- `scripts/build_readme.py`: rebuilds this README and validates that every curated paper is assigned to a theme.",
             "",
             "## Contributing",

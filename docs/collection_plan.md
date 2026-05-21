@@ -50,7 +50,7 @@ Current status: complete for the first strategy-only pass. The README now includ
 - Track deferred/rejected candidates separately if needed.
 - Avoid turning the README into a data report; data and pipeline details belong below the paper list or in docs.
 
-Current status: superseded by the curated-guide pass. The full bibliography now contains 248 unique papers across 10 reader-oriented themes, while the README highlights only Core and Important papers.
+Current status: superseded by the curated-guide pass. The full bibliography now contains 281 unique papers across 10 reader-oriented themes, while the README highlights only Core and Important papers.
 
 ## Targeted Related-Work Tracing
 
@@ -86,3 +86,12 @@ Current status: complete for the first pass. The README highlights Core and Impo
 - Mark low-citation but precise 2025-2026 papers as `Curated` or `Watchlist` unless they are central enough to highlight.
 
 Current status: complete for this pass. The trace scanned 144 citation/reference edges and added 27 non-duplicate papers.
+
+## Critique-Followup Expansion
+
+- Use Critique's next recommendation to trace `ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities`, `AI can help humans find common ground in democratic deliberation`, and a small-radius `WARBENCH: A Comprehensive Benchmark for Evaluating LLMs in Military Decision-Making` pass.
+- Add targeted Semantic Scholar query searches for forecasting benchmarks, democratic deliberation, citizen policy representation, consensus generation, and military decision-making.
+- Reject retail forecasting, finance-specific forecasting, generic time-series forecasting, generic business strategy, generic safety/security, and defense AI without LLM-based military decision evaluation.
+- Mark low-citation 2025-2026 papers as `Curated` or `Watchlist` unless they are unusually central, preregistered, field-validated, or directly political/policy/military.
+
+Current status: complete for this pass. The trace scanned 367 citation/reference edges, the query-search screened 98 Semantic Scholar results, and the critique-reviewed merge added 33 non-duplicate papers.

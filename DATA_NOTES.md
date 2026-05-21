@@ -4,7 +4,7 @@ This repository is scoped to LLMs for political strategy, geopolitics, policymak
 
 Current generated coverage:
 
-- Full thematic bibliography: 248 unique papers
+- Full thematic bibliography: 281 unique papers
 - README highlights: Core and Important papers only
 - Theme count: 10 public-facing reader-oriented themes
 - Citation source: Semantic Scholar Graph API
@@ -25,6 +25,8 @@ Current generated coverage:
 - `data/raw/strategic_studies_foundation_seed.csv`: strategic studies, deterrence, bargaining, intelligence, and crisis-decision foundations.
 - `data/raw/critique_priority_expansion_seeds.csv`: critique-selected high-priority expansion seeds.
 - `data/raw/critique_next_expansion_seeds.csv`: next-round critique seeds for escalation-risk and Political-LLM tracing.
+- `data/raw/critique_followup_expansion_seeds.csv`: critique-followup seeds for ForecastBench, democratic deliberation, and WARBENCH tracing.
+- `data/raw/critique_followup_search_queries.csv`: targeted Semantic Scholar query-search terms for forecasting, deliberation, and military decision-making.
 
 Processed curated CSVs hold Semantic Scholar metadata, citation counts, authors, venues, DOI/arXiv IDs, URLs, abstracts, and source provenance where available.
 
@@ -41,6 +43,8 @@ Entries are manually curated after Semantic Scholar expansion. Raw citation-neig
 Preprints are allowed when they are highly relevant to the repository scope, especially for fast-moving LLM benchmark, wargaming, forecasting, and political-simulation work. Low-citation or recent papers are kept as Curated or Watchlist unless they are central to a topic.
 
 The critique-next expansion traced `Escalation Risks from Language Models in Military and Diplomatic Decision-Making` and `Political-LLM: Large Language Models in Political Science`, then accepted 27 non-duplicate papers into the taxonomy.
+
+The critique-followup expansion traced `ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities`, `AI can help humans find common ground in democratic deliberation`, and `WARBENCH: A Comprehensive Benchmark for Evaluating LLMs in Military Decision-Making`. It also ran targeted Semantic Scholar query searches for event forecasting, democratic deliberation, and military decision-making. After critique review, it accepted 33 non-duplicate papers into the taxonomy and explicitly rejected retail forecasting, finance-specific forecasting, generic time-series forecasting, and generic defense-AI items.
 
 ## Semantic Scholar Limitations
 

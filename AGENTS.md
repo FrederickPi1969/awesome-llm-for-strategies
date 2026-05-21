@@ -57,6 +57,14 @@ For targeted deep dives, be stricter than for broad discovery. If the seed is ab
 - Preserve source URLs. Prefer Semantic Scholar URLs for resolved papers and primary URLs when Semantic Scholar cannot resolve the paper.
 - Never commit or expose API keys in this public repository.
 
+## Critique-Guided Expansion
+
+- Use the `critique` agent as a gatekeeper for major expansion rounds.
+- Ask critique to choose seed papers, state the preferred expansion mode, define acceptance standards, and name directions to pause.
+- Ask critique to review shortlists before merging low-citation or broad candidates.
+- Critique should not edit files directly; implementation and merge decisions stay in the main repository workflow.
+- Preserve critique decisions through explicit seed files, curated-addition files, and collection-plan notes.
+
 ## Data Workflow
 
 - Put curated seed files in `data/raw/`.
@@ -102,15 +110,31 @@ source_paths = [
     'data/processed/strategic_studies_foundation_enriched.csv',
     'data/processed/critique_priority_expansion/curated_additions.csv',
     'data/processed/critique_next_expansion/curated_additions.csv',
+    'data/processed/critique_followup_expansion/curated_additions.csv',
 ]
 
 def norm(value):
     return ' '.join((value or '').lower().split())
 
+excluded_titles = {
+    norm(title)
+    for title in [
+        'Generative AI in Managerial Decision-Making: Redefining Boundaries through Ambiguity Resolution and Sycophancy Analysis',
+        'Effect of Generative Artificial Intelligence on Strategic Decision Making in Entrepreneurial Business Initiatives: A Systematic Literature Review',
+        'The role of artificial intelligence in international strategic decision-making for SMEs',
+        'When Artificial Intelligence Does Strategy: Learning, Good Times, Lock-in, and Human-Driven Strategic Renewal',
+        'AI in strategic alliance formation: a framework for human-AI collaboration',
+        'Reliance on AI in augmented strategic decision-making: Navigating cultural and national dynamics',
+        'How AI-assisted scenario thinking develops agile minds for a successful digital strategy?',
+    ]
+}
+
 source = []
 for path in source_paths:
     for row in csv.DictReader(open(path, newline='', encoding='utf-8')):
-        source.append(norm(row['title']))
+        title = norm(row['title'])
+        if title not in excluded_titles:
+            source.append(title)
 
 thematic = [
     norm(row['title'])

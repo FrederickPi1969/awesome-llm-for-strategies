@@ -4,7 +4,7 @@ A curated guide to large language models for political strategy, geopolitics, po
 
 The README is intentionally a curated route through the literature. The full bibliography remains available in [`docs/full-bibliography.md`](docs/full-bibliography.md) and `data/processed/thematic_papers.csv`.
 
-Current coverage: **248 papers** in the full bibliography; **136 Core/Important papers** highlighted on this page.
+Current coverage: **281 papers** in the full bibliography; **144 Core/Important papers** highlighted on this page.
 
 Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-21.
 
@@ -188,7 +188,7 @@ Pre-LLM and bridge methods for political text measurement, legislative text clas
 
 LLM work on ideology, voter behavior, opinion simulation, political annotation, deliberation, and persuasion.
 
-13 highlighted papers; 31 total in the full bibliography.
+14 highlighted papers; 34 total in the full bibliography.
 
 #### Political ideology, representation, and bias
 
@@ -213,6 +213,7 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 
 - [Generative Echo Chamber? Effect of LLM-Powered Search Systems on Diverse Information Seeking](https://www.semanticscholar.org/paper/0b26abcbb54394c79234eeefe9cb1da5f183d47b) (2024) - Important; venue: International Conference on Human Factors in Computing Systems; citations: 171.
 - [Systematic Biases in LLM Simulations of Debates](https://www.semanticscholar.org/paper/f503b95c0a64f6a84eb1d90e5ea1e094b1e1892b) (2024) - Important; venue: Conference on Empirical Methods in Natural Language Processing; citations: 119.
+- [Looking Under the Hood: How LLMs Attempt Political Persuasion and Microtargeting](https://www.semanticscholar.org/paper/0f0f6e16b4f9cb45cda4f38f377c676725eac2aa) (2026) - Important; venue: Chinese Political Science Review; citations: 1.
 
 #### Legislative and political-agent simulation
 
@@ -222,10 +223,11 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 
 Papers on public decision support, policy communication, democratic deliberation, and institutional uses of LLMs.
 
-9 highlighted papers; 22 total in the full bibliography.
+14 highlighted papers; 39 total in the full bibliography.
 
 #### Democratic governance and augmentation
 
+- [Surfacing citizens’ policy perspectives at scale in the age of large language models](https://www.semanticscholar.org/paper/44ffede29c637f737fbbfb1574799301e628e8f8) (2025) - Important; venue: Behavioral Science &amp; Policy; citations: 0.
 - [Large Language Models as agents for augmented democracy](https://royalsocietypublishing.org/rsta/article/382/2285/20240100/108429/Large-language-models-LLMs-as-agents-for-augmented) (2024) - Important; citations: n/a.
 
 #### Policy translation and policy brief generation
@@ -238,6 +240,10 @@ Papers on public decision support, policy communication, democratic deliberation
 - [LLM-generated messages can persuade humans on policy issues](https://www.semanticscholar.org/paper/da2ed9d7804f138a1108089891fd07df15a70a3a) (2025) - Important; venue: Nature Communications; citations: 67.
 - [Large Language Models Can Argue in Convincing Ways About Politics, But Humans Dislike AI Authors: Implications for Governance](https://collaborate.princeton.edu/en/publications/large-language-models-can-argue-in-convincing-ways-about-politics/) (n.d.) - Important; venue: Political science; citations: 36.
 - [Can AI Truly Represent Your Voice in Deliberations? A Comprehensive Study of Large-Scale Opinion Aggregation with LLMs](https://www.semanticscholar.org/paper/29ecbb1c2fde56565ea283fb292f17dce21b2f0c) (2025) - Important; venue: arXiv.org; citations: 3.
+- [An Emergent Understanding of Human-AI Collaboration in Deliberation](https://www.semanticscholar.org/paper/82fdc8bb274a1bc21b9e005c033a952883b8c3e9) (2025) - Important; venue: CSCW Companion; citations: 2.
+- [DeliberationBench: A Normative Benchmark for the Influence of Large Language Models on Users'Views](https://www.semanticscholar.org/paper/c6ab228fd5f44cb3ec05705752f1135a15877387) (2026) - Important; venue: arXiv; citations: 2.
+- [Bringing Everyone to the Table: An Experimental Study of LLM-Facilitated Group Decision Making](https://www.semanticscholar.org/paper/ea2fa853bcaa3a13880b9538c9a1edaa1d9d360f) (2025) - Important; venue: arXiv.org; citations: 1.
+- [Hyperdemocracy: Towards Creative Consensus Building between Humans and AI](https://www.semanticscholar.org/paper/afdd5d55e0962c15fd0ac3496af702a6718eb409) (2025) - Important; venue: International Conference on Agents; citations: 0.
 
 #### Strategic and institutional decision support
 
@@ -249,7 +255,7 @@ Papers on public decision support, policy communication, democratic deliberation
 
 Diplomatic agents, military decision support, escalation behavior, national security applications, and wargaming.
 
-15 highlighted papers; 35 total in the full bibliography.
+15 highlighted papers; 36 total in the full bibliography.
 
 #### Diplomacy and international institutions
 
@@ -279,7 +285,7 @@ Diplomatic agents, military decision support, escalation behavior, national secu
 
 Forecasting benchmarks, event-prediction systems, calibration studies, and geopolitical risk signals.
 
-16 highlighted papers; 32 total in the full bibliography.
+18 highlighted papers; 42 total in the full bibliography.
 
 #### Forecasting benchmarks and datasets
 
@@ -292,6 +298,7 @@ Forecasting benchmarks, event-prediction systems, calibration studies, and geopo
 #### Forecasting performance and aggregation
 
 - [Approaching Human-Level Forecasting with Language Models](https://arxiv.org/abs/2402.18563) (2024) - Core; venue: Neural Information Processing Systems; citations: 77. Key reference for comparing LLM forecasting systems with human forecasting performance.
+- [AI-Augmented Predictions: LLM Assistants Improve Human Forecasting Accuracy](https://www.semanticscholar.org/paper/38472e4242e0aa632ed594c3b0ed9c0bd6429c41) (2024) - Important; venue: ACM Trans. Interact. Intell. Syst.; citations: 43.
 - [A Comprehensive Evaluation of Large Language Models on Temporal Event Forecasting](https://arxiv.org/html/2407.11638v2) (2024) - Important; venue: arXiv.org; citations: 12.
 - [Pitfalls in Evaluating Language Model Forecasters](https://www.semanticscholar.org/paper/aceb94676d003e84cdc29a9c72259c3d412c7e61) (2025) - Important; venue: arXiv.org; citations: 12.
 - [Simulated Ignorance Fails: A Systematic Study of LLM Behaviors on Forecasting Problems Before Model Knowledge Cutoff](https://www.semanticscholar.org/paper/9a08a05560778e664c3ae47108be0fc501385d63) (2026) - Important; venue: arXiv.org; citations: 3.
@@ -301,6 +308,7 @@ Forecasting benchmarks, event-prediction systems, calibration studies, and geopo
 
 #### Geopolitical event prediction systems
 
+- [AutoCast++: Enhancing World Event Prediction with Zero-shot Ranking-based Context Retrieval](https://www.semanticscholar.org/paper/e0605eaba26fee093d972cc667770912c8d2eec9) (2023) - Important; venue: International Conference on Learning Representations; citations: 15.
 - [ThinkTank-ME: A Multi-Expert Framework for Middle East Event Forecasting](https://www.semanticscholar.org/paper/a29b9d962c17189d7f122b02e5ed217499e19e5b) (2026) - Core; venue: Proceedings of the ACM Web Conference 2026; citations: 2.
 - [LLM4Geopolitics: A Framework Leveraging Large Language Models for Predicting Geopolitical Events](https://onlinelibrary.wiley.com/doi/10.1111/exsy.70258) (2025) - Important; venue: Expert systems; citations: 0.
 
@@ -350,7 +358,7 @@ Generative agents, synthetic populations, and large-scale simulations of social 
 
 Political influence, persuasion risk, deception, bias, and social risks relevant to governance and strategy.
 
-3 highlighted papers; 7 total in the full bibliography.
+3 highlighted papers; 9 total in the full bibliography.
 
 #### Influence operations and persuasion risk
 
@@ -363,19 +371,21 @@ Political influence, persuasion risk, deception, bias, and social risks relevant
 
 ## Data and Collection
 
-- Total unique papers in the full thematic bibliography: 248
-- Papers highlighted on this page: 136
-- Label counts: Core 60, Important 76, Curated 106, Watchlist 6
-- Source rows checked before merge: 270
+- Total unique papers in the full thematic bibliography: 281
+- Papers highlighted on this page: 144
+- Label counts: Core 60, Important 84, Curated 123, Watchlist 14
+- Source rows checked before merge: 303
 - Duplicate source rows removed during merge: 22
 - Core seed papers: 40
-- Curated additions merged into themes: 208
+- Curated additions merged into themes: 241
 - Initial citation/reference edges scanned: 3889
 - Additional citation/reference edges scanned from priority papers: 2871
 - Targeted strategic-decision related-work edges scanned: 119
 - Fog-of-war related-work edges scanned: 49
 - Critique-priority citation/reference edges scanned: 2009
 - Critique-next citation/reference edges scanned: 144
+- Critique-followup citation/reference edges scanned: 367
+- Critique-followup Semantic Scholar query results screened: 98
 
 Data files:
 
@@ -389,6 +399,8 @@ Data files:
 - `data/raw/strategic_studies_foundation_seed.csv`: curated strategic-studies foundation seed list.
 - `data/raw/critique_priority_expansion_seeds.csv`: critique-selected high-priority trace seeds.
 - `data/raw/critique_next_expansion_seeds.csv`: next-round critique seed list for escalation risk and Political-LLM traces.
+- `data/raw/critique_followup_expansion_seeds.csv`: critique-followup seeds for forecasting, democratic deliberation, and WARBENCH traces.
+- `data/raw/critique_followup_search_queries.csv`: targeted Semantic Scholar query-search terms for the critique-followup pass.
 - `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.
 - `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.
 - `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.
@@ -396,16 +408,21 @@ Data files:
 - `data/processed/strategic_studies_foundation_enriched.csv`: Semantic Scholar metadata for strategic-studies foundation additions.
 - `data/processed/critique_priority_expansion/curated_additions.csv`: selected additions from critique-priority seed expansion.
 - `data/processed/critique_next_expansion/curated_additions.csv`: selected additions from escalation-risk and Political-LLM seed expansion.
+- `data/processed/critique_followup_expansion/curated_additions.csv`: selected additions from ForecastBench, democratic-deliberation, and WARBENCH follow-up expansion.
 - `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.
 - `data/processed/fog_of_war/run_summary.json`: Fog of War trace summary.
 - `data/processed/critique_priority_expansion/run_summary.json`: critique-priority trace summary.
 - `data/processed/critique_next_expansion/run_summary.json`: critique-next trace summary.
+- `data/processed/critique_followup_expansion/run_summary.json`: critique-followup trace summary.
+- `data/processed/critique_followup_expansion/search_summary.json`: critique-followup query-search summary.
 
 Scripts:
 
 - `scripts/expand_semantic_scholar.py`: resolves seeds, fetches citations/references, and writes candidate tables.
+- `scripts/search_semantic_scholar.py`: runs targeted Semantic Scholar paper-search queries without fetching TLDR fields.
 - `scripts/fetch_seed_metadata.py`: enriches seed papers with Semantic Scholar metadata.
 - `scripts/build_targeted_related_works.py`: selects targeted related-work additions from a trace longlist.
+- `scripts/build_critique_followup_expansion.py`: selects critique-reviewed additions from the ForecastBench, deliberation, and WARBENCH follow-up pass.
 - `scripts/build_readme.py`: rebuilds this README and validates that every curated paper is assigned to a theme.
 
 ## Contributing

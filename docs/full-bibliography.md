@@ -3,14 +3,14 @@
 This is the complete thematic bibliography generated from `data/processed/thematic_papers.csv`.
 The public README highlights Core and Important items; this file keeps Curated and Watchlist entries visible without overloading the homepage.
 
-Total papers: **248**.
+Total papers: **281**.
 
 Label counts:
 
 - Core: 60
-- Important: 76
-- Curated: 106
-- Watchlist: 6
+- Important: 84
+- Curated: 123
+- Watchlist: 14
 
 ## Papers
 
@@ -152,7 +152,7 @@ Pre-LLM and bridge methods for political text measurement, legislative text clas
 
 LLM work on ideology, voter behavior, opinion simulation, political annotation, deliberation, and persuasion.
 
-31 papers.
+34 papers.
 
 #### Political ideology, representation, and bias
 
@@ -166,7 +166,9 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 - [Echoes of Power: Investigating Geopolitical Bias in US and China Large Language Models](https://www.semanticscholar.org/paper/a0a77a0d66e213c6014aefb8f9a0705aed0da1f5) (2025) - Curated; venue: Humanities and Social Sciences Communications; citations: 5.
 - [Media Source Matters More Than Content: Unveiling Political Bias in LLM-Generated Citations](https://www.semanticscholar.org/paper/8be09e69ebbcfbcfa93c912146ed8ea9cb665862) (2025) - Curated; venue: Conference on Empirical Methods in Natural Language Processing; citations: 4.
 - [Ideology-Based LLMs for Content Moderation](https://www.semanticscholar.org/paper/0673fa71acff0a399f2996615c4d8c11f70bf371) (2025) - Curated; venue: ACM Transactions on Intelligent Systems and Technology; citations: 1.
+- [A Multi-Dimensional Audit of Politically Aligned Large Language Models](https://www.semanticscholar.org/paper/2612ab7c6481f5ae634ab11c34f36d56897ddc12) (2026) - Curated; venue: arXiv; citations: 0.
 - [An evaluation of LLMs for political bias in Western media: Israel-Hamas and Ukraine-Russia wars](https://www.semanticscholar.org/paper/b6908b838ad2d52233bc4b9898086ca2969d8d00) (2026) - Curated; venue: arXiv.org; citations: 0.
+- [Assessing the Political Fairness of Multilingual LLMs: A Case Study based on a 21-way Multiparallel EuroParl Dataset](https://www.semanticscholar.org/paper/39ee3b79aa1e63fe327c7f59001077a8d2ad8bb2) (2025) - Curated; venue: arXiv.org; citations: 0.
 
 #### Elections, voters, and campaign discourse
 
@@ -190,6 +192,7 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 - [Generative Echo Chamber? Effect of LLM-Powered Search Systems on Diverse Information Seeking](https://www.semanticscholar.org/paper/0b26abcbb54394c79234eeefe9cb1da5f183d47b) (2024) - Important; venue: International Conference on Human Factors in Computing Systems; citations: 171.
 - [Systematic Biases in LLM Simulations of Debates](https://www.semanticscholar.org/paper/f503b95c0a64f6a84eb1d90e5ea1e094b1e1892b) (2024) - Important; venue: Conference on Empirical Methods in Natural Language Processing; citations: 119.
 - [From Skepticism to Acceptance: Simulating the Attitude Dynamics Toward Fake News](https://www.semanticscholar.org/paper/1bd4b8be136072c8f56114f2f8479aaed2ad6d9b) (2024) - Curated; venue: International Joint Conference on Artificial Intelligence; citations: 74.
+- [Looking Under the Hood: How LLMs Attempt Political Persuasion and Microtargeting](https://www.semanticscholar.org/paper/0f0f6e16b4f9cb45cda4f38f377c676725eac2aa) (2026) - Important; venue: Chinese Political Science Review; citations: 1.
 - [When Two LLMs Debate, Both Think They'll Win](https://www.semanticscholar.org/paper/bf5582762ab423c157ff64b3c66d2dbe3d13476f) (2025) - Curated; venue: arXiv.org; citations: 1.
 
 #### Legislative and political-agent simulation
@@ -204,10 +207,15 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 
 Papers on public decision support, policy communication, democratic deliberation, and institutional uses of LLMs.
 
-22 papers.
+39 papers.
 
 #### Democratic governance and augmentation
 
+- [Using LLMs to Enhance Democracy](https://www.semanticscholar.org/paper/550b7c7a69e04585bd29767baf51c2f4817ec8aa) (2024) - Watchlist; venue: Minds and Machines; citations: 4.
+- [Surfacing citizens’ policy perspectives at scale in the age of large language models](https://www.semanticscholar.org/paper/44ffede29c637f737fbbfb1574799301e628e8f8) (2025) - Important; venue: Behavioral Science &amp; Policy; citations: 0.
+- [Simulating Policy Discussions with Digital Footprints and Large Language Models](https://www.semanticscholar.org/paper/566d152a968bffc58d145541faa1e2dbb4b65f4d) (2025) - Curated; venue: International Journal of Population Data Science; citations: 0.
+- [Democracy-in-Silico: Institutional Design as Alignment in AI-Governed Polities](https://www.semanticscholar.org/paper/987f6999013e8732d63563150e91daedce8bede2) (2025) - Watchlist; venue: arXiv.org; citations: 0.
+- [Digital Homunculi and Institutional Design: Breaking Through the Experimentation Bottleneck](https://www.semanticscholar.org/paper/ad416524ff9ec736dde1c95b31a72b48c9cce5ab) (2024) - Watchlist; venue: arXiv; citations: 0.
 - [Large Language Models as agents for augmented democracy](https://royalsocietypublishing.org/rsta/article/382/2285/20240100/108429/Large-language-models-LLMs-as-agents-for-augmented) (2024) - Important; citations: n/a.
 
 #### Policy translation and policy brief generation
@@ -218,10 +226,22 @@ Papers on public decision support, policy communication, democratic deliberation
 
 - [AI can help humans find common ground in democratic deliberation](https://www.semanticscholar.org/paper/5456e833710dba2bb3ae92621fa89c27733b1db0) (2024) - Important; venue: Science; citations: 208.
 - [LLM-generated messages can persuade humans on policy issues](https://www.semanticscholar.org/paper/da2ed9d7804f138a1108089891fd07df15a70a3a) (2025) - Important; venue: Nature Communications; citations: 67.
+- [Generative Social Choice](https://www.semanticscholar.org/paper/faacd17525147b8cf89948573e3d13f3cf8023e9) (2023) - Curated; venue: ACM Conference on Economics and Computation; citations: 62.
 - [Large Language Models Can Argue in Convincing Ways About Politics, But Humans Dislike AI Authors: Implications for Governance](https://collaborate.princeton.edu/en/publications/large-language-models-can-argue-in-convincing-ways-about-politics/) (n.d.) - Important; venue: Political science; citations: 36.
 - [Can AI Truly Represent Your Voice in Deliberations? A Comprehensive Study of Large-Scale Opinion Aggregation with LLMs](https://www.semanticscholar.org/paper/29ecbb1c2fde56565ea283fb292f17dce21b2f0c) (2025) - Important; venue: arXiv.org; citations: 3.
+- [An Emergent Understanding of Human-AI Collaboration in Deliberation](https://www.semanticscholar.org/paper/82fdc8bb274a1bc21b9e005c033a952883b8c3e9) (2025) - Important; venue: CSCW Companion; citations: 2.
+- [DeliberationBench: A Normative Benchmark for the Influence of Large Language Models on Users'Views](https://www.semanticscholar.org/paper/c6ab228fd5f44cb3ec05705752f1135a15877387) (2026) - Important; venue: arXiv; citations: 2.
 - [PoliCon: Evaluating LLMs on Achieving Diverse Political Consensus Objectives](https://www.semanticscholar.org/paper/258d264d7fa1e9f35e16baa91ca602f99d36563d) (2025) - Curated; venue: arXiv; citations: 2.
+- [Bringing Everyone to the Table: An Experimental Study of LLM-Facilitated Group Decision Making](https://www.semanticscholar.org/paper/ea2fa853bcaa3a13880b9538c9a1edaa1d9d360f) (2025) - Important; venue: arXiv.org; citations: 1.
+- [Generating Fair Consensus Statements with Social Choice on Token-Level MDPs](https://www.semanticscholar.org/paper/b21807e3e7b81e1823da7ed1bb069fd22da9c885) (2025) - Curated; venue: arXiv.org; citations: 1.
+- [Leveraging AI in peace processes: A framework for digital dialogues](https://www.semanticscholar.org/paper/23268b757d5bf55e094f85f0836baca537c7a3c3) (2025) - Curated; venue: Data & Policy; citations: 1.
+- [Toward an artificial deliberation? On Google DeepMind’s Habermas Machine](https://www.semanticscholar.org/paper/b41c5f23454df095d567f1659c87b5a874099cc2) (2025) - Curated; venue: Ethics and Information Technology; citations: 1.
+- [Hyperdemocracy: Towards Creative Consensus Building between Humans and AI](https://www.semanticscholar.org/paper/afdd5d55e0962c15fd0ac3496af702a6718eb409) (2025) - Important; venue: International Conference on Agents; citations: 0.
 - [AI in Conflict Resolution: Practical Considerations, Opportunities and Challenges](https://www.semanticscholar.org/paper/031268c2c479dddae3cc7b1c957afb1cf1a02cd6) (2025) - Curated; venue: Conflict Resolution Quarterly; citations: 0.
+- [Can AI Deliberate? Evaluating Deliberative Quality and Stance Flow in Multi-Agent LLMs](https://www.semanticscholar.org/paper/21280dad6ed06cd0a7427c9cb826a9e0f172aa60) (2026) - Curated; venue: Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems; citations: 0.
+- [Can AI mediation improve democratic deliberation?](https://www.semanticscholar.org/paper/d768caae1760fe807662be18771d1048821b67e0) (2026) - Curated; venue: arXiv.org; citations: 0.
+- [Preserving Disagreement: Architectural Heterogeneity and Coherence Validation in Multi-Agent Policy Simulation](https://www.semanticscholar.org/paper/c5fd60bdb34cf11de6e4cc397ab8ca241a194de3) (2026) - Curated; venue: arXiv; citations: 0.
+- [PTFA: An LLM-based Agent that Facilitates Online Consensus Building through Parallel Thinking](https://www.semanticscholar.org/paper/a443602153e7adefd2dc0c59adeeb4d7f78e89f9) (2025) - Curated; venue: arXiv; citations: 0.
 
 #### Strategic and institutional decision support
 
@@ -250,7 +270,7 @@ Papers on public decision support, policy communication, democratic deliberation
 
 Diplomatic agents, military decision support, escalation behavior, national security applications, and wargaming.
 
-35 papers.
+36 papers.
 
 #### Diplomacy and international institutions
 
@@ -280,6 +300,7 @@ Diplomatic agents, military decision support, escalation behavior, national secu
 - [Causal Reasoning and Large Language Models for Military Decision-Making: Rethinking the Command Structures in the Era of Generative AI](https://www.semanticscholar.org/paper/bb10ecd849b7b311d81d6924f89aa2dc787ebb05) (2026) - Curated; venue: Applied Informatics; citations: 0.
 - [Effective and responsible use of large language models in strategic wargaming](https://www.semanticscholar.org/paper/af91a7279ff3496824ac33e9088a780fa1192d5f) (2026) - Curated; venue: The Journal of Defence Modeling and Simulation: Applications, Methodology, Technology; citations: 0.
 - [Stable and Expert-Aligned Evaluation of Wargaming Strategies via Optimized LLM Scoring Agents](https://www.semanticscholar.org/paper/3910061e1f702c845750d5b1f7a5ac019d9546a7) (2025) - Curated; venue: 2025 6th International Conference on Machine Learning and Computer Application (ICMLCA); citations: 0.
+- [Integrating Generative AI into Tactical Military Decision-Making](https://www.semanticscholar.org/paper/072939125f2c3ea02b965598f2900be1e06fe9ba) (2025) - Watchlist; venue: Strategos; citations: 0.
 - [LLM-based wargame scenario generation with domain ontology](https://journals.sagepub.com/doi/10.1177/00375497251415245) (n.d.) - Watchlist; venue: Simulation (San Diego, Calif.); citations: 0.
 
 #### Conflict, escalation, and geopolitical simulation
@@ -303,7 +324,7 @@ Diplomatic agents, military decision support, escalation behavior, national secu
 
 Forecasting benchmarks, event-prediction systems, calibration studies, and geopolitical risk signals.
 
-32 papers.
+42 papers.
 
 #### Forecasting benchmarks and datasets
 
@@ -311,19 +332,26 @@ Forecasting benchmarks, event-prediction systems, calibration studies, and geopo
 - [Forecasting Future World Events with Neural Networks](https://www.semanticscholar.org/paper/2a85c44afeeeb336c5eafcd4001ccb033d3d1f1c) (2022) - Curated; venue: Neural Information Processing Systems; citations: 45.
 - [MIRAI: Evaluating LLM Agents for Event Forecasting](https://arxiv.org/abs/2407.01231) (2024) - Core; venue: arXiv.org; citations: 33.
 - [OpenEP: Open-Ended Future Event Prediction](https://arxiv.org/html/2408.06578v2) (2024) - Important; venue: ACM Transactions on Information Systems; citations: 12.
+- [LLM-as-a-Prophet: Understanding Predictive Intelligence with Prophet Arena](https://www.semanticscholar.org/paper/70c1ab60e9c8411426846cdad6a5258d1f816cbf) (2025) - Curated; venue: arXiv.org; citations: 9.
 - [Bench to the Future: A Pastcasting Benchmark for Forecasting Agents](https://www.semanticscholar.org/paper/23ceef7184f878336ab25a444b78f0331fd571de) (2025) - Curated; venue: arXiv.org; citations: 8.
 - [The Future Outcome Reasoning and Confidence Assessment Benchmark](https://www.semanticscholar.org/paper/453baf82f811e32aa005a57e807415857d7b4685) (2025) - Important; venue: arXiv.org; citations: 5.
+- [PROPHET: An Inferable Future Forecasting Benchmark with Causal Intervened Likelihood Estimation](https://www.semanticscholar.org/paper/dfdbe546389eade0e4b161363d7c71385beaa48a) (2025) - Curated; venue: arXiv.org; citations: 5.
 - [Forecasting Future International Events: A Reliable Dataset for Text-Based Event Modeling / WORLDREP](https://arxiv.org/abs/2411.14042) (2024) - Core; venue: Conference on Empirical Methods in Natural Language Processing; citations: 1.
+- [Automating Forecasting Question Generation and Resolution for AI Evaluation](https://www.semanticscholar.org/paper/4a4f53d54e1b284592c3a97c2a1648b834b36231) (2026) - Curated; venue: arXiv.org; citations: 1.
+- [TruthTensor: Evaluating LLMs through Human Imitation on Prediction Market under Drift and Holistic Reasoning](https://www.semanticscholar.org/paper/a3846e88d8f7aa7d19b1ec6b7d90b5fac704b007) (2026) - Watchlist; venue: arXiv.org; citations: 1.
+- [OracleProto: A Reproducible Framework for Benchmarking LLM Native Forecasting via Knowledge Cutoff and Temporal Masking](https://www.semanticscholar.org/paper/ee0a3d33b5c2cc4f630dd4457aa9a175d5688f7a) (2026) - Watchlist; venue: arXiv; citations: 0.
 
 #### Forecasting performance and aggregation
 
 - [Approaching Human-Level Forecasting with Language Models](https://arxiv.org/abs/2402.18563) (2024) - Core; venue: Neural Information Processing Systems; citations: 77.
 - [Wisdom of the silicon crowd: LLM ensemble prediction capabilities rival human crowd accuracy](https://www.semanticscholar.org/paper/e78188daf9a18840933f3acfc9b3ccfea3db7856) (2024) - Curated; venue: Science Advances; citations: 72.
+- [AI-Augmented Predictions: LLM Assistants Improve Human Forecasting Accuracy](https://www.semanticscholar.org/paper/38472e4242e0aa632ed594c3b0ed9c0bd6429c41) (2024) - Important; venue: ACM Trans. Interact. Intell. Syst.; citations: 43.
 - [Large Language Model Prediction Capabilities: Evidence from a Real-World Forecasting Tournament](https://www.semanticscholar.org/paper/5a23700c5198e44a05336f7a2e7a7d7d183ad625) (2023) - Curated; venue: arXiv.org; citations: 26.
 - [A Comprehensive Evaluation of Large Language Models on Temporal Event Forecasting](https://arxiv.org/html/2407.11638v2) (2024) - Important; venue: arXiv.org; citations: 12.
 - [Pitfalls in Evaluating Language Model Forecasters](https://www.semanticscholar.org/paper/aceb94676d003e84cdc29a9c72259c3d412c7e61) (2025) - Important; venue: arXiv.org; citations: 12.
 - [Can Language Models Use Forecasting Strategies?](https://www.semanticscholar.org/paper/cbdbd93f4f30693ad408e480b2060a5ffda09994) (2024) - Curated; venue: arXiv.org; citations: 12.
 - [Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle](https://www.semanticscholar.org/paper/51229961bb32b1233be87b77946bfebefaff1f96) (2024) - Curated; venue: International Conference on Machine Learning; citations: 11.
+- [Scaling Open-Ended Reasoning to Predict the Future](https://www.semanticscholar.org/paper/91fd88896184dfb2d7aabcdd27f4a13f809832d2) (2025) - Curated; venue: arXiv.org; citations: 6.
 - [Advancing Event Forecasting through Massive Training of Large Language Models: Challenges, Solutions, and Broader Impacts](https://www.semanticscholar.org/paper/aae0ff0d91cbbd131ed406eeb8a8f311f7b17f8e) (2025) - Curated; venue: arXiv.org; citations: 4.
 - [LLMs Can Teach Themselves to Better Predict the Future](https://www.semanticscholar.org/paper/4fd865860aa5508e092201b6b321926d84ef2ace) (2025) - Curated; venue: arXiv.org; citations: 4.
 - [Simulated Ignorance Fails: A Systematic Study of LLM Behaviors on Forecasting Problems Before Model Knowledge Cutoff](https://www.semanticscholar.org/paper/9a08a05560778e664c3ae47108be0fc501385d63) (2026) - Important; venue: arXiv.org; citations: 3.
@@ -332,13 +360,16 @@ Forecasting benchmarks, event-prediction systems, calibration studies, and geopo
 - [The Power of Simplicity in LLM-Based Event Forecasting](https://aclanthology.org/2025.realm-1.32/) (2025) - Important; venue: Proceedings of the 1st Workshop for Research on Agent Language Models (REALM 2025); citations: 1.
 - [Agentic Forecasting using Sequential Bayesian Updating of Linguistic Beliefs](https://www.semanticscholar.org/paper/4f08618d4da746986a6346d328d1b243f9524363) (2026) - Curated; venue: arXiv; citations: 1.
 - [AIA Forecaster: Technical Report](https://www.semanticscholar.org/paper/382522641d17bebeb394dd07fe6557a6563defcd) (2025) - Curated; venue: arXiv.org; citations: 1.
+- [Crowdsourced versus large language models forecasting: evidence for the accuracy–correlation effect](https://www.semanticscholar.org/paper/6c82a21f4e814d2650a6aaf34a5a7576df874327) (2026) - Curated; venue: Philosophical Transactions B; citations: 1.
 - [Do Language Models Update their Forecasts with New Information?](https://www.semanticscholar.org/paper/eb24c93d4efa0d9fb6c7823ae0adf61a6d025208) (2025) - Important; venue: arXiv; citations: 0.
 - [TimeSeek: Temporal Reliability of Agentic Forecasters](https://www.semanticscholar.org/paper/ebdd99354e7e8768df6ec012bd4d7ae5134595ff) (2026) - Curated; venue: arXiv; citations: 0.
 - [Artificial Intelligence in Political Forecasting: Possibilities and Limitations](https://www.semanticscholar.org/paper/3c6f7f8d9918e0858325522de2fe3be56d167046) (2026) - Watchlist; venue: RUDN Journal of Political Science; citations: 0.
+- [Scattered Hypothesis Generation for Open-Ended Event Forecasting](https://www.semanticscholar.org/paper/865afb1a343d72fc9f617e3679256a09934df9e1) (2026) - Watchlist; venue: arXiv; citations: 0.
 
 #### Geopolitical event prediction systems
 
 - [Multi-Source Models for Civil Unrest Forecasting](https://www.semanticscholar.org/paper/02099cbba1256232aa1a26fa88be9796db514846) (2016) - Curated; venue: Social Network Analysis and Mining; citations: 27.
+- [AutoCast++: Enhancing World Event Prediction with Zero-shot Ranking-based Context Retrieval](https://www.semanticscholar.org/paper/e0605eaba26fee093d972cc667770912c8d2eec9) (2023) - Important; venue: International Conference on Learning Representations; citations: 15.
 - [ThinkTank-ME: A Multi-Expert Framework for Middle East Event Forecasting](https://www.semanticscholar.org/paper/a29b9d962c17189d7f122b02e5ed217499e19e5b) (2026) - Core; venue: Proceedings of the ACM Web Conference 2026; citations: 2.
 - [Agentic Reasoning for Social Event Extrapolation: Integrating Knowledge Graphs and Language Models](https://www.semanticscholar.org/paper/08cb00d8291409bfc4616fdf19b1ef8a28694f10) (2025) - Curated; venue: IEEE Access; citations: 1.
 - [Toward Better Temporal Structures for Geopolitical Events Forecasting](https://www.semanticscholar.org/paper/dba33ae55b387a5ca5779c448c4e15cc7d00cb10) (2026) - Curated; venue: arXiv.org; citations: 1.
@@ -424,14 +455,16 @@ Generative agents, synthetic populations, and large-scale simulations of social 
 
 Political influence, persuasion risk, deception, bias, and social risks relevant to governance and strategy.
 
-7 papers.
+9 papers.
 
 #### Influence operations and persuasion risk
 
 - [Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations](https://www.semanticscholar.org/paper/c9ad9d69d7568110dd5527598a92c7f8b335eef4) (2023) - Important; venue: arXiv.org; citations: 317.
 - [Charting the Landscape of Nefarious Uses of Generative Artificial Intelligence for Online Election Interference](https://www.semanticscholar.org/paper/4af68a3cc8871dfe6fe68f91b93cfd17d81076f7) (2024) - Important; venue: First Monday; citations: 14.
+- [Prompt Injection Vulnerability of Consensus Generating Applications in Digital Democracy](https://www.semanticscholar.org/paper/5159fecd2a40e8b77ec7e040ef0211cd48353123) (2025) - Curated; venue: arXiv.org; citations: 1.
 - [Simulating Misinformation Vulnerabilities with Agent Personas](https://www.semanticscholar.org/paper/7f571dcc44b2a48e2d649654847b40db50dbb7ca) (2025) - Curated; venue: Online World Conference on Soft Computing in Industrial Applications; citations: 1.
 - [Ignore All Previous Instructions: Jailbreaking as a de-escalatory peace building practise to resist LLM social media bots](https://www.semanticscholar.org/paper/a164f92960cefeff0e8cd9968bc716cdcc4a16f8) (2026) - Watchlist; venue: arXiv; citations: 0.
+- [New parameters of power: On LLM-based manipulation and control and the spectre of strategic AI](https://www.semanticscholar.org/paper/fdeddbfc88a935c4829a059c86b7f18c41b66811) (2026) - Watchlist; venue: Big Data &amp; Society; citations: 0.
 
 #### Deception, multi-agent risk, and control
 

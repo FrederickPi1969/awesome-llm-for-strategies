@@ -1,0 +1,7 @@
+id,focus,query,max_results
+forecasting-001,"Forecasting, Geopolitical Risk, and Foresight","LLM forecasting benchmark geopolitical forecasting calibration Brier prediction tournament",50
+forecasting-002,"Forecasting, Geopolitical Risk, and Foresight","large language model forecasting benchmark temporal event forecasting pastcasting",50
+deliberation-001,"Policymaking, Governance, and Institutional Decision Support","large language model democratic deliberation common ground policy consensus",50
+deliberation-002,"Policymaking, Governance, and Institutional Decision Support","LLM mediation citizen assembly opinion aggregation collective decision-making",50
+military-001,"Geopolitics, Diplomacy, National Security, and Wargaming","large language model military decision-making benchmark course of action",50
+military-002,"Geopolitics, Diplomacy, National Security, and Wargaming","WARBENCH course of action military LLM evaluation rules of engagement",50
