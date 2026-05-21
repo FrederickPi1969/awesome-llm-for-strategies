@@ -50,7 +50,7 @@ Current status: complete for the first strategy-only pass. The README now includ
 - Track deferred/rejected candidates separately if needed.
 - Avoid turning the README into a data report; data and pipeline details belong below the paper list or in docs.
 
-Current status: complete. The homepage now uses a thematic structure with 159 unique papers across 9 themes and 34 subthemes.
+Current status: superseded by the curated-guide pass. The full bibliography now contains 221 unique papers across 10 reader-oriented themes, while the README highlights only Core and Important papers.
 
 ## Targeted Related-Work Tracing
 
@@ -68,3 +68,12 @@ Current status: complete for `Generative Artificial Intelligence and Evaluating 
 - Keep this as a methods/foundations theme, not a finance/trading expansion.
 
 Current status: complete for the first pass. The README now includes 30 classical political NLP and IE papers, including Text as Data, Wordscores, Wordfish-style scaling, Hopkins-King content analysis, congressional debate stance extraction, King-Lowe event IE, KEDS, CAMEO, IDEA, GDELT, PETRARCH/Open Event Data, Phoenix/POLECAT bridge work, and neural event coding.
+
+## Public Repository Quality Pass
+
+- Make the README a curated route through the literature rather than a full generated bibliography.
+- Keep complete coverage in `docs/full-bibliography.md` and `data/processed/thematic_papers.csv`.
+- Add reader guidance, Start Here papers, public label definitions, selection criteria, and stricter contribution standards.
+- Normalize public theme names around reader intent: foundations, political text, public opinion, policy support, geopolitics/wargaming, forecasting, strategic games, social simulation, and risk.
+
+Current status: complete for the first pass. The README highlights Core and Important papers only, and `docs/full-bibliography.md` preserves the full 221-paper list.

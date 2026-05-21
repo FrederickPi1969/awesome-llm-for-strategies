@@ -21,7 +21,7 @@ Exclude finance-only, trading, stock prediction, portfolio management, cryptocur
 - Do not create catch-all sections.
 - Do not keep "first-order expansion" or "second-order expansion" sections in the README. Expansion provenance belongs in data files; accepted papers must be merged into thematic sections.
 - Add a new theme only when the existing themes would mix genuinely different literatures.
-- When adding a source table, update `scripts/build_readme.py` so the generated README and `data/processed/thematic_papers.csv` include every accepted paper.
+- When adding a source table, update `scripts/build_readme.py` so the generated README, `docs/full-bibliography.md`, and `data/processed/thematic_papers.csv` include every accepted paper.
 
 ## Foundation Papers
 
@@ -64,12 +64,12 @@ For targeted deep dives, be stricter than for broad discovery. If the seed is ab
 - Keep raw longlists, edge dumps, and noisy citation-neighborhood outputs out of the README.
 - Use explicit provenance filenames for targeted traces, for example a seed file and an enriched file named after the target paper or topic.
 - If a new accepted source table is added, wire it into `scripts/build_readme.py`.
-- Every source title that should appear in the README must have a theme assignment in `scripts/build_readme.py`.
+- Every accepted source title must have a theme assignment in `scripts/build_readme.py` and must appear in the generated full bibliography. The README intentionally highlights only `Core` and `Important` items.
 - The build should fail if a curated source row lacks a theme assignment or if an assignment has no source row.
 
 ## README Standard
 
-- The README should open with papers, not pipeline details.
+- The README should open with scope and a curated paper route, not pipeline details.
 - Every paper line should include title, URL, year, importance label when useful, and citation count.
 - Keep the "Data and Collection" section concise.
 - Do not fill the homepage with raw logs, scripts, or process notes.
@@ -98,6 +98,9 @@ source_paths = [
     'data/processed/second_order_candidate_additions_strategy.csv',
     'data/processed/targeted_related_works_strategy.csv',
     'data/processed/classical_political_nlp_ie_enriched.csv',
+    'data/processed/fog_of_war_related_works_enriched.csv',
+    'data/processed/strategic_studies_foundation_enriched.csv',
+    'data/processed/critique_priority_expansion/curated_additions.csv',
 ]
 
 def norm(value):

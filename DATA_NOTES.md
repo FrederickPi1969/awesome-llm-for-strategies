@@ -1,31 +1,46 @@
 # Data Notes
 
-This repository is now scoped to five areas only:
+This repository is scoped to LLMs for political strategy, geopolitics, policymaking, strategic studies, and high-stakes decision-making.
 
-- Politics
-- Geopolitics
-- Policymaking
-- Strategic studies
-- Decision-making
+Current generated coverage:
 
-The current homepage is built from `data/processed/thematic_papers.csv`. It contains 159 unique papers organized into thematic sections and subthemes.
+- Full thematic bibliography: 221 unique papers
+- README highlights: Core and Important papers only
+- Theme count: 10 public-facing reader-oriented themes
+- Citation source: Semantic Scholar Graph API
+- Citation metadata date: 2026-05-21
 
-The original public seed table is `data/raw/core_seed_papers.csv`. It contains 40 papers selected from the politics/geopolitics/governance seed list and excludes finance, trading, stock prediction, portfolio management, and generic financial LLM material.
+## Files
 
-The earlier mixed 110-seed expansion artifacts were removed because they blended finance/trading candidates with the strategy literature and were not suitable for the repository homepage.
+- `README.md`: curated public route through the literature.
+- `docs/full-bibliography.md`: complete generated bibliography, including Curated and Watchlist entries.
+- `data/processed/thematic_papers.csv`: canonical merged table used to build both Markdown files.
+- `docs/selection-criteria.md`: inclusion rules, labels, rejection rules, and provenance notes.
 
-Future expansion should use `core_seed_papers.csv` as the seed set, not the previous combined finance dataset.
+## Source Inputs
 
-The strategy-only Semantic Scholar collection produced:
+- `data/raw/core_seed_papers.csv`: original strategy-only seed list.
+- `data/raw/classical_political_nlp_ie_seed.csv`: curated political NLP, text-as-data, and event-data foundations.
+- `data/raw/fog_of_war_related_work_seed.csv`: targeted Fog of War related-work and foundation list.
+- `data/raw/strategic_studies_foundation_seed.csv`: strategic studies, deterrence, bargaining, intelligence, and crisis-decision foundations.
+- `data/raw/critique_priority_expansion_seeds.csv`: critique-selected high-priority expansion seeds.
 
-- `data/processed/core_seed_papers_enriched.csv`: Semantic Scholar citation counts and metadata for core seeds.
-- `data/processed/thematic_papers.csv`: merged theme-assigned paper table used for the README.
-- `data/processed/candidate_additions_strategy.csv`: manually filtered high-citation/high-relevance related papers used as provenance for the thematic table.
-- `data/processed/targeted_related_works_strategy.csv`: targeted related-work additions from the "Generative Artificial Intelligence and Evaluating Strategic Decisions" trace.
-- `data/raw/classical_political_nlp_ie_seed.csv`: curated seed list for classical political NLP, text-as-data, legislative text classification, and event-data information extraction.
-- `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.
-- `data/processed/run_summary.json`: request and expansion summary.
+Processed CSVs hold Semantic Scholar metadata, citation counts, authors, venues, DOI/arXiv IDs, URLs, abstracts, and source provenance where available.
 
-The classical political NLP and IE pass adds 30 pre-LLM and bridge papers covering Wordscores/Wordfish-style policy-position extraction, political text-as-data methods, congressional speech and bill text classification, and KEDS/CAMEO/IDEA/GDELT/PETRARCH-style event extraction.
+## Merge Process
 
-Raw longlists and edge dumps are treated as local intermediate files because they can contain citation-neighborhood noise outside the repository scope. The README should remain a paper-first thematic map, not a pipeline report.
+The build script merges source rows by normalized title, applies a manually maintained theme/subtheme assignment table, removes explicit out-of-scope titles, normalizes importance labels, and writes `data/processed/thematic_papers.csv`.
+
+`Source rows checked before merge` means all rows loaded from curated source CSVs before title deduplication. `Duplicate source rows removed during merge` means normalized title collisions across sources, not necessarily bad records.
+
+## Selection and Review
+
+Entries are manually curated after Semantic Scholar expansion. Raw citation-neighborhood longlists and edge dumps are treated as local intermediate files because they can contain finance, business, biomedical, generic NLP, or other off-scope noise.
+
+Preprints are allowed when they are highly relevant to the repository scope, especially for fast-moving LLM benchmark, wargaming, forecasting, and political-simulation work. Low-citation or recent papers are kept as Curated or Watchlist unless they are central to a topic.
+
+## Semantic Scholar Limitations
+
+Citation counts and metadata can be incomplete, stale, duplicated across editions, or wrong for books and classic articles. Known undercounts are displayed as `n/a` when they would mislead readers. Year fields that cannot be resolved to a single year are normalized to `n.d.` in generated outputs.
+
+The README should remain a curated guide. The full bibliography and CSV are the appropriate place for long-tail coverage and provenance details.

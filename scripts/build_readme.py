@@ -6,7 +6,7 @@ from __future__ import annotations
 import csv
 import json
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
@@ -29,6 +29,7 @@ FOG_OF_WAR_SUMMARY = ROOT / "data" / "processed" / "fog_of_war" / "run_summary.j
 CRITIQUE_PRIORITY_SUMMARY = ROOT / "data" / "processed" / "critique_priority_expansion" / "run_summary.json"
 THEMATIC_PAPERS = ROOT / "data" / "processed" / "thematic_papers.csv"
 README = ROOT / "README.md"
+FULL_BIBLIOGRAPHY = ROOT / "docs" / "full-bibliography.md"
 
 THEME_ORDER = [
     "Political Science and Strategic Judgment Foundations",
@@ -363,6 +364,143 @@ EXCLUDED_TITLES = {
 }
 
 S2_UNDERCOUNT_TITLES = {normalize("The Strategy of Conflict")}
+BAD_VENUES = {"Sam Nunn"}
+
+THEME_DISPLAY_NAMES = {
+    "Political Science and Strategic Judgment Foundations": "Foundations and Theory",
+    "Foundations, Surveys, and Methods": "LLM Surveys and Method Overviews",
+    "Classical Political NLP and Information Extraction": "Political Text and Measurement",
+    "Politics, Democracy, Public Opinion, and Persuasion": "Public Opinion, Elections, and Persuasion",
+    "Policymaking, Governance, and Institutional Decision Support": "Policy and Governance Support",
+    "Geopolitics, Diplomacy, National Security, and Wargaming": "Geopolitics, Diplomacy, and Wargaming",
+    "Forecasting, Geopolitical Risk, and Foresight": "Forecasting and Foresight",
+    "Strategic Reasoning, Games, Negotiation, and Cooperation": "Strategic Reasoning and Multi-Agent Games",
+    "Multi-Agent Social Simulation and Synthetic Societies": "Social Simulation and Synthetic Populations",
+    "AI Safety, Influence Operations, and Societal Risk": "Risks, Bias, and Influence Operations",
+}
+
+THEME_NOTES = {
+    "Political Science and Strategic Judgment Foundations": "Canonical IR, strategic-studies, intelligence-analysis, and forecasting foundations for interpreting LLM behavior in strategic settings.",
+    "Foundations, Surveys, and Methods": "LLM-era surveys and methodological overviews that orient political science, social simulation, and game-theoretic agent work.",
+    "Classical Political NLP and Information Extraction": "Pre-LLM and bridge methods for political text measurement, legislative text classification, and event-data extraction.",
+    "Politics, Democracy, Public Opinion, and Persuasion": "LLM work on ideology, voter behavior, opinion simulation, political annotation, deliberation, and persuasion.",
+    "Policymaking, Governance, and Institutional Decision Support": "Papers on public decision support, policy communication, democratic deliberation, and institutional uses of LLMs.",
+    "Geopolitics, Diplomacy, National Security, and Wargaming": "Diplomatic agents, military decision support, escalation behavior, national security applications, and wargaming.",
+    "Forecasting, Geopolitical Risk, and Foresight": "Forecasting benchmarks, event-prediction systems, calibration studies, and geopolitical risk signals.",
+    "Strategic Reasoning, Games, Negotiation, and Cooperation": "LLM strategic reasoning in games, bargaining, negotiation, cooperation, and multi-agent social dilemmas.",
+    "Multi-Agent Social Simulation and Synthetic Societies": "Generative agents, synthetic populations, and large-scale simulations of social networks or political behavior.",
+    "AI Safety, Influence Operations, and Societal Risk": "Political influence, persuasion risk, deception, bias, and social risks relevant to governance and strategy.",
+}
+
+IMPORTANCE_OVERRIDES = {
+    normalize(title): "Important"
+    for title in [
+        "Whose Opinions Do Language Models Reflect?",
+        "More human than human: measuring ChatGPT political bias",
+        "Should ChatGPT be Biased? Challenges and Risks of Bias in Large Language Models",
+        "Cultural bias and cultural alignment of large language models",
+        "Hidden Persuaders: LLMs’ Political Leaning and Their Influence on Voters",
+        "ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning",
+        "Performance and biases of Large Language Models in public opinion simulation",
+        "Large language models as a substitute for human experts in annotating political text",
+        "Generative Echo Chamber? Effect of LLM-Powered Search Systems on Diverse Information Seeking",
+        "Systematic Biases in LLM Simulations of Debates",
+        "AI can help humans find common ground in democratic deliberation",
+        "LLM-generated messages can persuade humans on policy issues",
+        "Generative Artificial Intelligence and Evaluating Strategic Decisions",
+        "Playing repeated games with large language models",
+        "Strategic behavior of large language models and the role of game structure versus contextual framing",
+        "GTBench: Uncovering the Strategic Reasoning Limitations of LLMs via Game-Theoretic Evaluations",
+        "GameBench: Evaluating Strategic Reasoning Abilities of LLM Agents",
+        "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents",
+        "Human-level play in the game of Diplomacy by combining language models with strategic reasoning",
+        "From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents",
+        "Validation is the central challenge for generative social simulation: a critical review of LLMs in agent-based modeling",
+        "Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations",
+        "Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity",
+    ]
+}
+
+START_HERE = [
+    (
+        "Perception and Misperception in International Politics",
+        "Classic baseline for interpreting misperception, signaling, and crisis reasoning.",
+    ),
+    (
+        "Arms and Influence",
+        "The core coercion and bargaining frame behind much of the escalation literature.",
+    ),
+    (
+        "Rationalist Explanations for War",
+        "Canonical account of war through information problems, incentives, and commitment problems.",
+    ),
+    (
+        "Essence of Decision: Explaining the Cuban Missile Crisis",
+        "Foundational decision-making models for crisis behavior and bureaucratic politics.",
+    ),
+    (
+        "Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts",
+        "Methodological bridge from political text measurement to current LLM annotation and scaling work.",
+    ),
+    (
+        "Conflict and Mediation Event Observations (CAMEO): A New Event Data Framework for the Analysis of Foreign Policy Interactions",
+        "Core event-data ontology for conflict, diplomacy, and foreign-policy interactions.",
+    ),
+    (
+        "Can Large Language Models Transform Computational Social Science?",
+        "Broad orientation to what LLMs change, and do not change, in computational social science.",
+    ),
+    (
+        "Whose Opinions Do Language Models Reflect?",
+        "High-impact entry point for political representation and bias in language models.",
+    ),
+    (
+        "AI can help humans find common ground in democratic deliberation",
+        "A flagship empirical case for LLMs in democratic deliberation and policy communication.",
+    ),
+    (
+        "Escalation Risks from Language Models in Military and Diplomatic Decision-Making",
+        "Core LLM crisis-simulation paper for military and diplomatic escalation behavior.",
+    ),
+    (
+        "Human-level play in the game of Diplomacy by combining language models with strategic reasoning",
+        "Major demonstration of language-mediated strategic action in a diplomatic game.",
+    ),
+    (
+        "ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities",
+        "Central benchmark for evaluating AI forecasting across changing real-world questions.",
+    ),
+    (
+        "MIRAI: Evaluating LLM Agents for Event Forecasting",
+        "Agent-oriented benchmark for event forecasting and temporal reasoning.",
+    ),
+    (
+        "Approaching Human-Level Forecasting with Language Models",
+        "Key reference for comparing LLM forecasting systems with human forecasting performance.",
+    ),
+    (
+        "Playing repeated games with large language models",
+        "Useful baseline for strategic behavior in repeated interaction.",
+    ),
+    (
+        "Generative Agents: Interactive Simulacra of Human Behavior",
+        "Canonical generative-agent paper behind many social and political simulation systems.",
+    ),
+    (
+        "Out of One, Many: Using Language Models to Simulate Human Samples",
+        "High-impact foundation for synthetic samples and population-level opinion simulation.",
+    ),
+    (
+        "Generative Agent Simulations of 1,000 People",
+        "Recent large-scale person-specific simulation reference with direct social-science relevance.",
+    ),
+    (
+        "Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations",
+        "Core risk framing for automated influence operations and strategic information environments.",
+    ),
+]
+
+CORE_NOTES = {normalize(title): note for title, note in START_HERE}
 
 
 def title_tokens(value: str) -> set[str]:
@@ -389,6 +527,38 @@ def as_int(value: Any, default: int = 0) -> int:
         return int(value)
     except (TypeError, ValueError):
         return default
+
+
+def display_year(value: str) -> str:
+    value = (value or "").strip()
+    return value if re.fullmatch(r"\d{4}", value) else "n.d."
+
+
+def normalize_importance(title: str, value: str) -> str:
+    key = normalize(title)
+    if key in IMPORTANCE_OVERRIDES:
+        return IMPORTANCE_OVERRIDES[key]
+    normalized = (value or "Curated").strip()
+    if normalized in {"Optional", "Optional / Important", "Optional / Engineering"}:
+        return "Watchlist"
+    if normalized not in {"Core", "Important", "Curated", "Watchlist"}:
+        return "Curated"
+    return normalized
+
+
+def is_highlighted(row: dict[str, str]) -> bool:
+    return row.get("importance") in {"Core", "Important"}
+
+
+def venue_or_type(row: dict[str, str]) -> str:
+    venue = (row.get("venue") or "").strip()
+    if venue in BAD_VENUES:
+        venue = ""
+    if venue:
+        return venue
+    if row.get("arxiv"):
+        return "arXiv"
+    return ""
 
 
 def citation_display(seed: dict[str, str], enriched: dict[str, str] | None) -> str:
@@ -618,6 +788,9 @@ def merge_rows(
     output = list(merged.values())
     if len(output) != len({normalize(row["title"]) for row in output}):
         raise RuntimeError("Merged rows contain duplicate normalized titles.")
+    for row in output:
+        row["importance"] = normalize_importance(row["title"], row.get("importance", ""))
+        row["year"] = display_year(row.get("year", ""))
     duplicate_count = source_count - len(output)
     return output, source_count, duplicate_count
 
@@ -625,7 +798,7 @@ def merge_rows(
 def theme_sort_key(row: dict[str, str]) -> tuple[int, int, int, int, str]:
     theme_index = THEME_ORDER.index(row["theme"])
     subtheme_index = SUBTHEME_ORDER[row["theme"]].index(row["subtheme"])
-    importance_rank = {"Core": 0, "Important": 1, "Optional": 2, "Optional / Engineering": 2, "Curated": 3}.get(
+    importance_rank = {"Core": 0, "Important": 1, "Curated": 2, "Watchlist": 3}.get(
         row.get("importance", ""),
         3,
     )
@@ -666,71 +839,182 @@ def clean_csv_value(value: Any) -> str:
     return " ".join(str(value or "").split())
 
 
-def paper_line(row: dict[str, str]) -> str:
-    importance = row.get("importance", "")
-    label = f"{importance}; " if importance and importance != "Curated" else ""
+def paper_line(row: dict[str, str], *, include_note: bool = False, include_venue: bool = False) -> str:
+    importance = row.get("importance") or "Curated"
+    parts = [importance]
+    venue = venue_or_type(row) if include_venue or importance == "Core" else ""
+    if venue:
+        parts.append(f"venue: {venue}")
     citation_count = row.get("citationCount") or "n/a"
-    return f"- {markdown_link(row['title'], row.get('url', ''))} ({row.get('year') or 'n.d.'}) - {label}citations: {citation_count}."
+    parts.append(f"citations: {citation_count}")
+    note = CORE_NOTES.get(normalize(row["title"]), "") if include_note else ""
+    suffix = f" {note}" if note else ""
+    return f"- {markdown_link(row['title'], row.get('url', ''))} ({display_year(row.get('year', ''))}) - {'; '.join(parts)}.{suffix}"
 
 
-def build_readme() -> str:
+def theme_display(theme: str) -> str:
+    return THEME_DISPLAY_NAMES.get(theme, theme)
+
+
+def rows_grouped_by_theme(rows: list[dict[str, str]]) -> dict[str, dict[str, list[dict[str, str]]]]:
+    by_theme: dict[str, dict[str, list[dict[str, str]]]] = defaultdict(lambda: defaultdict(list))
+    for row in rows:
+        by_theme[row["theme"]][row["subtheme"]].append(row)
+    return by_theme
+
+
+def build_paper_sections(
+    rows: list[dict[str, str]],
+    *,
+    highlighted_only: bool,
+    include_notes: bool,
+    include_venue: bool,
+) -> list[str]:
+    by_theme = rows_grouped_by_theme(rows)
+    lines: list[str] = []
+    for theme in THEME_ORDER:
+        theme_rows = [row for subtheme in by_theme.get(theme, {}).values() for row in subtheme]
+        papers_in_theme = [row for row in theme_rows if not highlighted_only or is_highlighted(row)]
+        if not papers_in_theme:
+            continue
+        highlighted_count = sum(1 for row in theme_rows if is_highlighted(row))
+        lines.extend([f"### {theme_display(theme)}", ""])
+        if THEME_NOTES.get(theme):
+            lines.extend([THEME_NOTES[theme], ""])
+        if highlighted_only:
+            lines.extend([f"{highlighted_count} highlighted papers; {len(theme_rows)} total in the full bibliography.", ""])
+        else:
+            lines.extend([f"{len(theme_rows)} papers.", ""])
+        for subtheme in SUBTHEME_ORDER[theme]:
+            subtheme_rows = by_theme.get(theme, {}).get(subtheme, [])
+            papers = [row for row in subtheme_rows if not highlighted_only or is_highlighted(row)]
+            if not papers:
+                continue
+            lines.extend([f"#### {subtheme}", ""])
+            for row in papers:
+                lines.append(paper_line(row, include_note=include_notes, include_venue=include_venue))
+            lines.append("")
+    return lines
+
+
+def build_start_here(rows: list[dict[str, str]]) -> list[str]:
+    rows_by_title = {normalize(row["title"]): row for row in rows}
+    lines = ["## Start Here", ""]
+    for title, note in START_HERE:
+        row = rows_by_title.get(normalize(title))
+        if not row:
+            continue
+        citation_count = row.get("citationCount") or "n/a"
+        lines.append(
+            f"- {markdown_link(row['title'], row.get('url', ''))} ({display_year(row.get('year', ''))}) - "
+            f"{row.get('importance', 'Curated')}; citations: {citation_count}. {note}"
+        )
+    lines.append("")
+    return lines
+
+
+def write_full_bibliography(rows: list[dict[str, str]]) -> None:
+    label_counts = Counter(row["importance"] for row in rows)
+    lines = [
+        "# Full Bibliography",
+        "",
+        "This is the complete thematic bibliography generated from `data/processed/thematic_papers.csv`.",
+        "The public README highlights Core and Important items; this file keeps Curated and Watchlist entries visible without overloading the homepage.",
+        "",
+        f"Total papers: **{len(rows)}**.",
+        "",
+        "Label counts:",
+        "",
+    ]
+    for label in ["Core", "Important", "Curated", "Watchlist"]:
+        lines.append(f"- {label}: {label_counts.get(label, 0)}")
+    lines.extend(["", "## Papers", ""])
+    lines.extend(build_paper_sections(rows, highlighted_only=False, include_notes=False, include_venue=True))
+    FULL_BIBLIOGRAPHY.parent.mkdir(parents=True, exist_ok=True)
+    FULL_BIBLIOGRAPHY.write_text("\n".join(lines), encoding="utf-8")
+
+
+def build_catalog() -> tuple[list[dict[str, str]], int, int]:
     assignments = parse_assignments()
     rows, source_count, duplicate_count = merge_rows(source_rows(), assignments)
     rows = sorted(rows, key=theme_sort_key)
     write_thematic_csv(rows)
+    write_full_bibliography(rows)
+    return rows, source_count, duplicate_count
 
-    by_theme: dict[str, dict[str, list[dict[str, str]]]] = defaultdict(lambda: defaultdict(list))
-    for row in rows:
-        by_theme[row["theme"]][row["subtheme"]].append(row)
 
+def build_readme() -> str:
+    rows, source_count, duplicate_count = build_catalog()
     first_summary = json.loads(RUN_SUMMARY.read_text(encoding="utf-8"))
     second_summary = read_json_if_exists(SECOND_ORDER_SUMMARY)
     targeted_summary = read_json_if_exists(TARGETED_SUMMARY)
     fog_summary = read_json_if_exists(FOG_OF_WAR_SUMMARY)
     critique_priority_summary = read_json_if_exists(CRITIQUE_PRIORITY_SUMMARY)
-    theme_counts = {theme: sum(len(items) for items in by_theme.get(theme, {}).values()) for theme in THEME_ORDER}
+    highlighted_rows = [row for row in rows if is_highlighted(row)]
+    label_counts = Counter(row["importance"] for row in rows)
 
     lines = [
-        "# Awesome LLM for Strategies",
+        "# Awesome LLMs for Political Strategy, Geopolitics, and Decision-Making",
         "",
-        "A curated paper list on large language models for politics, geopolitics, policymaking, strategic studies, and decision-making.",
+        "A curated guide to large language models for political strategy, geopolitics, policymaking, strategic studies, and high-stakes decision-making.",
         "",
-        "This repository focuses on how LLMs and LLM agents analyze political behavior, forecast events, support policy reasoning, simulate social and diplomatic systems, and behave in strategic environments.",
+        "The README is intentionally a curated route through the literature. The full bibliography remains available in [`docs/full-bibliography.md`](docs/full-bibliography.md) and `data/processed/thematic_papers.csv`.",
         "",
-        "Out of scope: finance, trading, stock prediction, portfolio management, generic financial LLM benchmarks, and generic foundation-model papers unless they directly support one of the five focus areas above.",
+        "Current coverage: **{total} papers** in the full bibliography; **{highlighted} Core/Important papers** highlighted on this page.".format(
+            total=len(rows),
+            highlighted=len(highlighted_rows),
+        ),
         "",
         "Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-21.",
         "",
-        f"Current curated coverage: **{len(rows)} unique papers** organized into {len(THEME_ORDER)} themes.",
-        "",
         "## Contents",
         "",
+        "- [What Belongs Here](#what-belongs-here)",
+        "- [Reader Guide](#reader-guide)",
+        "- [Start Here](#start-here)",
         "- [Papers by Theme](#papers-by-theme)",
         "- [Data and Collection](#data-and-collection)",
         "- [Contributing](#contributing)",
         "",
-        "## Papers by Theme",
+        "## What Belongs Here",
+        "",
+        "A paper belongs in this repository if it satisfies at least one of these tests:",
+        "",
+        "- It directly studies LLMs or LLM agents in politics, geopolitics, policymaking, strategic studies, diplomacy, forecasting, wargaming, public opinion, or high-stakes decision-making.",
+        "- It provides a benchmark, dataset, evaluation method, or empirical application for political or strategic LLM behavior.",
+        "- It is a foundational political-science, IR, strategic-studies, intelligence-analysis, or forecasting work needed to interpret LLM-for-strategy research.",
+        "- It is a classical political NLP, text-as-data, or event-data paper that current LLM methods build on.",
+        "",
+        "Out of scope: finance-only LLMs, trading systems, stock prediction, portfolio management, generic financial benchmarks, generic foundation-model papers, and generic safety papers without a direct political, policy, geopolitical, or strategic-decision link.",
+        "",
+        "Importance labels:",
+        "",
+        "- `Core`: field-shaping work or necessary background.",
+        "- `Important`: strong empirical, methodological, benchmark, dataset, or research value.",
+        "- `Curated`: relevant but not essential for the public README route.",
+        "- `Watchlist`: recent, low-citation, unresolved, or borderline work kept for review in the full bibliography.",
+        "",
+        "## Reader Guide",
+        "",
+        "- New to the area: start with Foundations and Theory, then Forecasting and Foresight, then Geopolitics, Diplomacy, and Wargaming.",
+        "- Building benchmarks or agents: use Forecasting, Strategic Reasoning, Diplomacy, Wargaming, and Social Simulation.",
+        "- Studying democratic effects: use Public Opinion, Elections, Persuasion, and Policy and Governance Support.",
+        "- Looking for data sources: use Political Text and Measurement plus `data/processed/thematic_papers.csv`.",
+        "- Checking long-tail coverage: use [`docs/full-bibliography.md`](docs/full-bibliography.md).",
         "",
     ]
 
-    for theme in THEME_ORDER:
-        if theme not in by_theme:
-            continue
-        lines.extend([f"### {theme}", "", f"{theme_counts[theme]} papers.", ""])
-        for subtheme in SUBTHEME_ORDER[theme]:
-            papers = by_theme[theme].get(subtheme, [])
-            if not papers:
-                continue
-            lines.extend([f"#### {subtheme}", ""])
-            for row in papers:
-                lines.append(paper_line(row))
-            lines.append("")
+    lines.extend(build_start_here(rows))
+    lines.extend(["## Papers by Theme", "", "This section highlights Core and Important papers only. See [`docs/full-bibliography.md`](docs/full-bibliography.md) for all Curated and Watchlist entries.", ""])
+    lines.extend(build_paper_sections(rows, highlighted_only=True, include_notes=True, include_venue=True))
 
     lines.extend(
         [
             "## Data and Collection",
             "",
-            f"- Total unique papers in the thematic list: {len(rows)}",
+            f"- Total unique papers in the full thematic bibliography: {len(rows)}",
+            f"- Papers highlighted on this page: {len(highlighted_rows)}",
+            f"- Label counts: Core {label_counts.get('Core', 0)}, Important {label_counts.get('Important', 0)}, Curated {label_counts.get('Curated', 0)}, Watchlist {label_counts.get('Watchlist', 0)}",
             f"- Source rows checked before merge: {source_count}",
             f"- Duplicate source rows removed during merge: {duplicate_count}",
             f"- Core seed papers: {sum(1 for row in rows if row.get('source_tables') == 'core_seed_papers.csv')}",
@@ -743,7 +1027,9 @@ def build_readme() -> str:
             "",
             "Data files:",
             "",
-            "- `data/processed/thematic_papers.csv`: merged thematic paper table used to build the homepage.",
+            "- `docs/full-bibliography.md`: complete generated bibliography.",
+            "- `docs/selection-criteria.md`: inclusion rules, exclusion rules, labels, and provenance notes.",
+            "- `data/processed/thematic_papers.csv`: merged thematic paper table used to build the README and full bibliography.",
             "- `data/raw/core_seed_papers.csv`: original core seed list.",
             "- `data/raw/targeted_strategic_decisions_seed.csv`: targeted trace seed for the strategic-decision paper.",
             "- `data/raw/classical_political_nlp_ie_seed.csv`: curated classical political NLP and information-extraction seed list.",
@@ -769,7 +1055,7 @@ def build_readme() -> str:
             "",
             "## Contributing",
             "",
-            "Additions should clearly fit one of the five focus areas: politics, geopolitics, policymaking, strategic studies, or decision-making. Please include title, year, URL, category, citation count if available, and a short reason for inclusion.",
+            "Additions should clearly fit politics, geopolitics, policymaking, strategic studies, or decision-making. See [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`docs/selection-criteria.md`](docs/selection-criteria.md) before proposing papers.",
             "",
         ]
     )
