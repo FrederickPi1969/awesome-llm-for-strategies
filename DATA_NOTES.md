@@ -4,7 +4,7 @@ This repository is scoped to LLMs for political strategy, geopolitics, policymak
 
 Current generated coverage:
 
-- Full thematic bibliography: 281 unique papers
+- Full thematic bibliography: 322 unique papers
 - README highlights: Core and Important papers only
 - Theme count: 10 public-facing reader-oriented themes
 - Citation source: Semantic Scholar Graph API
@@ -27,6 +27,8 @@ Current generated coverage:
 - `data/raw/critique_next_expansion_seeds.csv`: next-round critique seeds for escalation-risk and Political-LLM tracing.
 - `data/raw/critique_followup_expansion_seeds.csv`: critique-followup seeds for ForecastBench, democratic deliberation, and WARBENCH tracing.
 - `data/raw/critique_followup_search_queries.csv`: targeted Semantic Scholar query-search terms for forecasting, deliberation, and military decision-making.
+- `data/raw/critique_round3_expansion_seeds.csv`: critique-round-3 seeds for influence operations, Diplomacy, and synthetic-population tracing.
+- `data/raw/critique_round3_search_queries.csv`: targeted Semantic Scholar query-search terms for influence operations, diplomacy, and social simulation.
 
 Processed curated CSVs hold Semantic Scholar metadata, citation counts, authors, venues, DOI/arXiv IDs, URLs, abstracts, and source provenance where available.
 
@@ -45,6 +47,8 @@ Preprints are allowed when they are highly relevant to the repository scope, esp
 The critique-next expansion traced `Escalation Risks from Language Models in Military and Diplomatic Decision-Making` and `Political-LLM: Large Language Models in Political Science`, then accepted 27 non-duplicate papers into the taxonomy.
 
 The critique-followup expansion traced `ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities`, `AI can help humans find common ground in democratic deliberation`, and `WARBENCH: A Comprehensive Benchmark for Evaluating LLMs in Military Decision-Making`. It also ran targeted Semantic Scholar query searches for event forecasting, democratic deliberation, and military decision-making. After critique review, it accepted 33 non-duplicate papers into the taxonomy and explicitly rejected retail forecasting, finance-specific forecasting, generic time-series forecasting, and generic defense-AI items.
+
+The critique-round-3 expansion traced `Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations`, `Human-level play in the game of Diplomacy by combining language models with strategic reasoning`, and the Semantic Scholar record for `Generative Agent Simulations of 1,000 People` (`LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals`). It also ran targeted query searches for political influence operations, AI diplomacy/strategic negotiation, and validated synthetic-population simulation. After critique review, it accepted 41 non-duplicate papers and explicitly rejected economic negotiation, generic games, generic social agents, generic misinformation/safety, corporate/marketing persuasion, and finance/trading/time-series-adjacent items.
 
 ## Semantic Scholar Limitations
 

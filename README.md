@@ -4,7 +4,7 @@ A curated guide to large language models for political strategy, geopolitics, po
 
 The README is intentionally a curated route through the literature. The full bibliography remains available in [`docs/full-bibliography.md`](docs/full-bibliography.md) and `data/processed/thematic_papers.csv`.
 
-Current coverage: **281 papers** in the full bibliography; **144 Core/Important papers** highlighted on this page.
+Current coverage: **322 papers** in the full bibliography; **157 Core/Important papers** highlighted on this page.
 
 Citation counts are from the Semantic Scholar Graph API, collected on 2026-05-21.
 
@@ -188,7 +188,7 @@ Pre-LLM and bridge methods for political text measurement, legislative text clas
 
 LLM work on ideology, voter behavior, opinion simulation, political annotation, deliberation, and persuasion.
 
-14 highlighted papers; 34 total in the full bibliography.
+15 highlighted papers; 37 total in the full bibliography.
 
 #### Political ideology, representation, and bias
 
@@ -218,12 +218,13 @@ LLM work on ideology, voter behavior, opinion simulation, political annotation, 
 #### Legislative and political-agent simulation
 
 - [Political Actor Agent: Simulating Legislative Politics with LLM Agents](https://arxiv.org/abs/2412.07144) (2024) - Important; venue: arXiv.org; citations: 6.
+- [Persona-driven Simulation of Voting Behavior in the European Parliament with Large Language Models](https://www.semanticscholar.org/paper/f4e98cd3a09593e02240f97dab0e75ea556bec75) (2025) - Important; venue: Conference of the European Chapter of the Association for Computational Linguistics; citations: 0.
 
 ### Policy and Governance Support
 
 Papers on public decision support, policy communication, democratic deliberation, and institutional uses of LLMs.
 
-14 highlighted papers; 39 total in the full bibliography.
+14 highlighted papers; 42 total in the full bibliography.
 
 #### Democratic governance and augmentation
 
@@ -255,7 +256,7 @@ Papers on public decision support, policy communication, democratic deliberation
 
 Diplomatic agents, military decision support, escalation behavior, national security applications, and wargaming.
 
-15 highlighted papers; 36 total in the full bibliography.
+15 highlighted papers; 37 total in the full bibliography.
 
 #### Diplomacy and international institutions
 
@@ -321,7 +322,7 @@ Forecasting benchmarks, event-prediction systems, calibration studies, and geopo
 
 LLM strategic reasoning in games, bargaining, negotiation, cooperation, and multi-agent social dilemmas.
 
-6 highlighted papers; 19 total in the full bibliography.
+6 highlighted papers; 22 total in the full bibliography.
 
 #### Game-theoretic and strategic reasoning benchmarks
 
@@ -339,7 +340,7 @@ LLM strategic reasoning in games, bargaining, negotiation, cooperation, and mult
 
 Generative agents, synthetic populations, and large-scale simulations of social networks or political behavior.
 
-7 highlighted papers; 19 total in the full bibliography.
+15 highlighted papers; 38 total in the full bibliography.
 
 #### Generative agents and social simulation platforms
 
@@ -353,17 +354,32 @@ Generative agents, synthetic populations, and large-scale simulations of social 
 - [Out of One, Many: Using Language Models to Simulate Human Samples](https://www.cambridge.org/core/journals/political-analysis/article/out-of-one-many-using-language-models-to-simulate-human-samples/035D7C8A55B237942FB6DBAD7CAA4E49) (2023) - Important; venue: Political Analysis; citations: 1023. High-impact foundation for synthetic samples and population-level opinion simulation.
 - [Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies](https://proceedings.mlr.press/v202/aher23a/aher23a.pdf) (2023) - Important; venue: International Conference on Machine Learning; citations: 659.
 - [Generative Agent Simulations of 1,000 People](https://arxiv.org/abs/2411.10109) (2024) - Core; venue: arXiv; citations: 304. Recent large-scale person-specific simulation reference with direct social-science relevance.
+- [LLM Generated Persona is a Promise with a Catch](https://www.semanticscholar.org/paper/3ea29481ec11d1568fde727d236f71e44e4e2ad0) (2025) - Important; venue: arXiv.org; citations: 72.
+- [Large Language Models as Subpopulation Representative Models: A Review](https://www.semanticscholar.org/paper/306f4aa90c2f2d3f55b81a99f0068d0e8ab8d359) (2023) - Important; venue: arXiv.org; citations: 22.
+- [Vox Populi, Vox AI? Using Language Models to Estimate German Public Opinion](https://www.semanticscholar.org/paper/95a41d1598d3f888dbc38905817390bb70d65a66) (2024) - Important; venue: Social science computer review; citations: 12.
+- [Valid Survey Simulations with Limited Human Data: The Roles of Prompting, Fine-Tuning, and Rectification](https://www.semanticscholar.org/paper/b3f15b5a6796ddf87045ba1f8db725ef101c8cac) (2025) - Important; venue: arXiv.org; citations: 6.
+- [Simulating Public Opinion: Comparing Distributional and Individual-Level Predictions from LLMs and Random Forests](https://www.semanticscholar.org/paper/a4ec508e5e0de8fc07c7552c1e0012c2e712442a) (2025) - Important; venue: Entropy; citations: 2.
+- [Before You Simulate: A Pre-Study Benchmark for Large Language Model Stability in Political Role-Playing Simulations](https://www.semanticscholar.org/paper/5881e53178afcf627e0e8b0225b93be8934596dc) (2026) - Important; venue: Applied Sciences; citations: 0.
+- [Characterizing the ability of LLMs to recapitulate Americans'distributional responses to public opinion polling questions across political issues](https://www.semanticscholar.org/paper/d325f69c6ea6e829a4bb7cb8b870bddf77910ef9) (2026) - Important; venue: arXiv; citations: 0.
+
+#### Social networks, movements, and polarization
+
+- [Understanding Online Polarization Through Human-Agent Interaction in a Synthetic LLM-Based Social Network](https://www.semanticscholar.org/paper/2d71545ba1a2ff9f30703cef3df75a15d159b525) (2025) - Important; venue: International Conference on Web and Social Media; citations: 10.
 
 ### Risks, Bias, and Influence Operations
 
 Political influence, persuasion risk, deception, bias, and social risks relevant to governance and strategy.
 
-3 highlighted papers; 9 total in the full bibliography.
+7 highlighted papers; 21 total in the full bibliography.
 
 #### Influence operations and persuasion risk
 
 - [Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations](https://www.semanticscholar.org/paper/c9ad9d69d7568110dd5527598a92c7f8b335eef4) (2023) - Important; venue: arXiv.org; citations: 317. Core risk framing for automated influence operations and strategic information environments.
+- [Evaluating the persuasive influence of political microtargeting with large language models](https://www.semanticscholar.org/paper/de9a0af5100600ff21a9ded6e42409e0de89de8a) (2024) - Important; venue: Proceedings of the National Academy of Sciences of the United States of America; citations: 116.
+- [Characterizing the 2016 Russian IRA influence campaign](https://www.semanticscholar.org/paper/d73777af16df99b7c8e8fe4afc7748d66aeb9346) (2018) - Important; venue: Social Network Analysis and Mining; citations: 114.
 - [Charting the Landscape of Nefarious Uses of Generative Artificial Intelligence for Online Election Interference](https://www.semanticscholar.org/paper/4af68a3cc8871dfe6fe68f91b93cfd17d81076f7) (2024) - Important; venue: First Monday; citations: 14.
+- [Assessing the risks and opportunities posed by AI-enhanced influence operations on social media](https://www.semanticscholar.org/paper/5eb988d1926b80963c382abe0cfb623cc018c308) (2024) - Important; venue: Place Branding and Public Diplomacy; citations: 10.
+- [Do Bots Do It Better? Analyzing the Effectiveness of Automated Agents in State-Sponsored Information Operations](https://www.semanticscholar.org/paper/66d045db96c75b6162c28f47e7afdda323307926) (2025) - Important; venue: International Conference on Web and Social Media; citations: 0.
 
 #### Bias, toxicity, and cultural alignment risks
 
@@ -371,13 +387,13 @@ Political influence, persuasion risk, deception, bias, and social risks relevant
 
 ## Data and Collection
 
-- Total unique papers in the full thematic bibliography: 281
-- Papers highlighted on this page: 144
-- Label counts: Core 60, Important 84, Curated 123, Watchlist 14
-- Source rows checked before merge: 303
+- Total unique papers in the full thematic bibliography: 322
+- Papers highlighted on this page: 157
+- Label counts: Core 60, Important 97, Curated 147, Watchlist 18
+- Source rows checked before merge: 344
 - Duplicate source rows removed during merge: 22
 - Core seed papers: 40
-- Curated additions merged into themes: 241
+- Curated additions merged into themes: 282
 - Initial citation/reference edges scanned: 3889
 - Additional citation/reference edges scanned from priority papers: 2871
 - Targeted strategic-decision related-work edges scanned: 119
@@ -386,6 +402,9 @@ Political influence, persuasion risk, deception, bias, and social risks relevant
 - Critique-next citation/reference edges scanned: 144
 - Critique-followup citation/reference edges scanned: 367
 - Critique-followup Semantic Scholar query results screened: 98
+- Critique-round-3 influence/diplomacy citation/reference edges scanned: 1064
+- Critique-round-3 social-simulation citation/reference edges scanned: 304
+- Critique-round-3 Semantic Scholar query results screened: 132
 
 Data files:
 
@@ -401,6 +420,8 @@ Data files:
 - `data/raw/critique_next_expansion_seeds.csv`: next-round critique seed list for escalation risk and Political-LLM traces.
 - `data/raw/critique_followup_expansion_seeds.csv`: critique-followup seeds for forecasting, democratic deliberation, and WARBENCH traces.
 - `data/raw/critique_followup_search_queries.csv`: targeted Semantic Scholar query-search terms for the critique-followup pass.
+- `data/raw/critique_round3_expansion_seeds.csv`: critique-round-3 seeds for influence operations, Diplomacy, and synthetic-population traces.
+- `data/raw/critique_round3_search_queries.csv`: targeted Semantic Scholar query-search terms for influence operations, diplomacy, and social simulation.
 - `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.
 - `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.
 - `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.
@@ -409,12 +430,16 @@ Data files:
 - `data/processed/critique_priority_expansion/curated_additions.csv`: selected additions from critique-priority seed expansion.
 - `data/processed/critique_next_expansion/curated_additions.csv`: selected additions from escalation-risk and Political-LLM seed expansion.
 - `data/processed/critique_followup_expansion/curated_additions.csv`: selected additions from ForecastBench, democratic-deliberation, and WARBENCH follow-up expansion.
+- `data/processed/critique_round3_expansion/curated_additions.csv`: selected additions from influence-operations, Diplomacy, and social-simulation expansion.
 - `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.
 - `data/processed/fog_of_war/run_summary.json`: Fog of War trace summary.
 - `data/processed/critique_priority_expansion/run_summary.json`: critique-priority trace summary.
 - `data/processed/critique_next_expansion/run_summary.json`: critique-next trace summary.
 - `data/processed/critique_followup_expansion/run_summary.json`: critique-followup trace summary.
 - `data/processed/critique_followup_expansion/search_summary.json`: critique-followup query-search summary.
+- `data/processed/critique_round3_expansion/run_summary.json`: critique-round-3 influence/diplomacy trace summary.
+- `data/processed/critique_round3_expansion/search_summary.json`: critique-round-3 query-search summary.
+- `data/processed/critique_round3_expansion/social_simulation_seed_trace_summary.json`: critique-round-3 social-simulation direct-trace summary.
 
 Scripts:
 
@@ -423,6 +448,7 @@ Scripts:
 - `scripts/fetch_seed_metadata.py`: enriches seed papers with Semantic Scholar metadata.
 - `scripts/build_targeted_related_works.py`: selects targeted related-work additions from a trace longlist.
 - `scripts/build_critique_followup_expansion.py`: selects critique-reviewed additions from the ForecastBench, deliberation, and WARBENCH follow-up pass.
+- `scripts/build_critique_round3_expansion.py`: selects critique-reviewed additions from the influence-operations, Diplomacy, and social-simulation pass.
 - `scripts/build_readme.py`: rebuilds this README and validates that every curated paper is assigned to a theme.
 
 ## Contributing

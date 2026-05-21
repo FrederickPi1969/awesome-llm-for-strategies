@@ -50,7 +50,7 @@ Current status: complete for the first strategy-only pass. The README now includ
 - Track deferred/rejected candidates separately if needed.
 - Avoid turning the README into a data report; data and pipeline details belong below the paper list or in docs.
 
-Current status: superseded by the curated-guide pass. The full bibliography now contains 281 unique papers across 10 reader-oriented themes, while the README highlights only Core and Important papers.
+Current status: superseded by the curated-guide pass. The full bibliography now contains 322 unique papers across 10 reader-oriented themes, while the README highlights only Core and Important papers.
 
 ## Targeted Related-Work Tracing
 
@@ -95,3 +95,13 @@ Current status: complete for this pass. The trace scanned 144 citation/reference
 - Mark low-citation 2025-2026 papers as `Curated` or `Watchlist` unless they are unusually central, preregistered, field-validated, or directly political/policy/military.
 
 Current status: complete for this pass. The trace scanned 367 citation/reference edges, the query-search screened 98 Semantic Scholar results, and the critique-reviewed merge added 33 non-duplicate papers.
+
+## Critique Round 3: Influence Operations, Diplomacy, and Social Simulation
+
+- Use Critique's recommendation to trace `Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations`, `Human-level play in the game of Diplomacy by combining language models with strategic reasoning`, and the Semantic Scholar record behind `Generative Agent Simulations of 1,000 People`.
+- Add targeted Semantic Scholar query searches for LLM-enabled influence operations, political microtargeting, state-sponsored information operations, AI diplomacy, strategic negotiation, and validated synthetic-population simulation.
+- Accept influence-operations papers only when they are political, electoral, state-actor, or strategic-information-environment papers.
+- Accept social-simulation papers only when they include validation, calibration, public-opinion evidence, political behavior, policy scenario evaluation, or reusable datasets/benchmarks.
+- Reject economic negotiation, generic games, generic agent platforms, generic misinformation/safety, corporate/marketing persuasion, and finance/trading/time-series-adjacent candidates.
+
+Current status: complete for this pass. The trace scanned 1,064 influence/diplomacy citation-reference edges, 304 social-simulation related-work edges, and 132 Semantic Scholar query results. The critique-reviewed merge added 41 non-duplicate papers.

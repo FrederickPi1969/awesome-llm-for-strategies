@@ -23,6 +23,7 @@ FOG_OF_WAR_RELATED_WORKS = ROOT / "data" / "processed" / "fog_of_war_related_wor
 CRITIQUE_PRIORITY_ADDITIONS = ROOT / "data" / "processed" / "critique_priority_expansion" / "curated_additions.csv"
 CRITIQUE_NEXT_ADDITIONS = ROOT / "data" / "processed" / "critique_next_expansion" / "curated_additions.csv"
 CRITIQUE_FOLLOWUP_ADDITIONS = ROOT / "data" / "processed" / "critique_followup_expansion" / "curated_additions.csv"
+CRITIQUE_ROUND3_ADDITIONS = ROOT / "data" / "processed" / "critique_round3_expansion" / "curated_additions.csv"
 STRATEGIC_STUDIES_FOUNDATION = ROOT / "data" / "processed" / "strategic_studies_foundation_enriched.csv"
 RUN_SUMMARY = ROOT / "data" / "processed" / "run_summary.json"
 SECOND_ORDER_SUMMARY = ROOT / "data" / "processed" / "second_order" / "run_summary.json"
@@ -32,6 +33,9 @@ CRITIQUE_PRIORITY_SUMMARY = ROOT / "data" / "processed" / "critique_priority_exp
 CRITIQUE_NEXT_SUMMARY = ROOT / "data" / "processed" / "critique_next_expansion" / "run_summary.json"
 CRITIQUE_FOLLOWUP_SUMMARY = ROOT / "data" / "processed" / "critique_followup_expansion" / "run_summary.json"
 CRITIQUE_FOLLOWUP_SEARCH_SUMMARY = ROOT / "data" / "processed" / "critique_followup_expansion" / "search_summary.json"
+CRITIQUE_ROUND3_SUMMARY = ROOT / "data" / "processed" / "critique_round3_expansion" / "run_summary.json"
+CRITIQUE_ROUND3_SEARCH_SUMMARY = ROOT / "data" / "processed" / "critique_round3_expansion" / "search_summary.json"
+CRITIQUE_ROUND3_SOCIAL_SUMMARY = ROOT / "data" / "processed" / "critique_round3_expansion" / "social_simulation_seed_trace_summary.json"
 THEMATIC_PAPERS = ROOT / "data" / "processed" / "thematic_papers.csv"
 README = ROOT / "README.md"
 FULL_BIBLIOGRAPHY = ROOT / "docs" / "full-bibliography.md"
@@ -210,6 +214,7 @@ Politics, Democracy, Public Opinion, and Persuasion|Political ideology, represen
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Media Source Matters More Than Content: Unveiling Political Bias in LLM-Generated Citations
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|Assessing the Political Fairness of Multilingual LLMs: A Case Study based on a 21-way Multiparallel EuroParl Dataset
 Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|A Multi-Dimensional Audit of Politically Aligned Large Language Models
+Politics, Democracy, Public Opinion, and Persuasion|Political ideology, representation, and bias|The Language You Ask In: Language-Conditioned Ideological Divergence in LLM Analysis of Contested Political Documents
 Politics, Democracy, Public Opinion, and Persuasion|Elections, voters, and campaign discourse|ElectionSim: Massive Population Election Simulation Powered by Large Language Model Driven Agents
 Politics, Democracy, Public Opinion, and Persuasion|Elections, voters, and campaign discourse|Large-Scale Longitudinal Study of LLMs During the 2024 United States Election Season
 Politics, Democracy, Public Opinion, and Persuasion|Elections, voters, and campaign discourse|A Public Dataset Tracking Social Media Discourse about the 2024 U.S. Presidential Election on Twitter/X
@@ -221,6 +226,7 @@ Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and
 Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning
 Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|AlignSurvey: A Comprehensive Benchmark for Human Preferences Alignment in Social Surveys
 Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|Can AI reflect public opinion? Evidence from replicating Hainmueller and Hopkins' immigration experiment with LLMs
+Politics, Democracy, Public Opinion, and Persuasion|Public opinion, polling, and political annotation|Adaptive political surveys and GPT-4: Tackling the cold start problem with simulated user interactions
 Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|Generative Echo Chamber? Effect of LLM-Powered Search Systems on Diverse Information Seeking
 Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|Systematic Biases in LLM Simulations of Debates
 Politics, Democracy, Public Opinion, and Persuasion|Deliberation, persuasion, and information environments|From Skepticism to Acceptance: Simulating the Attitude Dynamics Toward Fake News
@@ -231,6 +237,7 @@ Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-ag
 Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|A Large-Scale Simulation on Large Language Models for Decision-Making in Political Science
 Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|ParlAI Vote: A Web Platform for Analyzing Gender and Political Bias in Large Language Models
 Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|ParliaBench: An Evaluation and Benchmarking Framework for LLM-Generated Parliamentary Speech
+Politics, Democracy, Public Opinion, and Persuasion|Legislative and political-agent simulation|Persona-driven Simulation of Voting Behavior in the European Parliament with Large Language Models
 Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Large Language Models as agents for augmented democracy
 Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Surfacing citizens’ policy perspectives at scale in the age of large language models
 Policymaking, Governance, and Institutional Decision Support|Democratic governance and augmentation|Simulating Policy Discussions with Digital Footprints and Large Language Models
@@ -259,6 +266,9 @@ Policymaking, Governance, and Institutional Decision Support|Policy persuasion a
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Biased LLMs can Influence Political Decision-Making
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Generative Artificial Intelligence and Evaluating Strategic Decisions
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|The LLM Effect: Are Humans Truly Using LLMs, or Are They Being Influenced By Them Instead?
+Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Can A Society of Generative Agents Simulate Human Behavior and Inform Public Health Policy? A Case Study on Vaccine Hesitancy
+Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|LLM Powered Social Digital Twins: A Framework for Simulating Population Behavioral Response to Policy Interventions
+Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|WhatIf: Interactive Exploration of LLM-Powered Social Simulations for Policy Reasoning
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|How Well Can AI Do Strategy? Empirical Benchmarking Using Strategy Simulations
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|AI-Augmented Strategic Decision-Making Under Time Constraints: An Experimental Study on Mental Representations and Strategic Foresight
 Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Towards Using Prompt Engineering in Large Language Models to Assist Decision Making
@@ -277,6 +287,7 @@ Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and internati
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|DipLLM: Fine-Tuning LLM for Strategic Decision-making in Diplomacy
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|DiplomacyAgent: Do LLMs Balance Interests and Ethical Principles in International Events?
+Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|ALGORITHMIC DIPLOMACY: THE ROLE OF ARTIFICIAL INTELLIGENCE IN SHAPING 21ST CENTURY FOREIGN POLICY DECISIONS
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Escalation Risks from Language Models in Military and Diplomatic Decision-Making
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Behavioral Differences Between Expert Humans and Language Models in Wargame Simulations / Human vs. Machine
 Geopolitics, Diplomacy, National Security, and Wargaming|Military decision-making and wargaming|Open-Ended Wargames with Large Language Models
@@ -357,6 +368,7 @@ Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and stra
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Decision-Making Behavior Evaluation Framework for LLMs under Uncertain Context
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially?
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Multi-Agent Strategic Games with LLMs
+Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Strategic Reasoning with Language Models
 Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents
 Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf
 Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback
@@ -367,6 +379,8 @@ Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social 
 Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social dilemmas|Cultural Evolution of Cooperation among LLM Agents
 Strategic Reasoning, Games, Negotiation, and Cooperation|Behavioral game tests and human-like strategy|A Turing test of whether AI chatbots are behaviorally similar to humans
 Strategic Reasoning, Games, Negotiation, and Cooperation|Behavioral game tests and human-like strategy|Simulating Human Strategic Behavior: Comparing Single and Multi-agent LLMs
+Strategic Reasoning, Games, Negotiation, and Cooperation|Behavioral game tests and human-like strategy|Simulating Strategic Reasoning: Comparing the Ability of Single LLMs and Multi-Agent Systems to Replicate Human Behavior
+Strategic Reasoning, Games, Negotiation, and Cooperation|Behavioral game tests and human-like strategy|Beyond Nash Equilibrium: Bounded Rationality of LLMs and humans in Strategic Decision-making
 Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|Generative Agents: Interactive Simulacra of Human Behavior
 Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society
 Multi-Agent Social Simulation and Synthetic Societies|Generative agents and social simulation platforms|S3: Social-network Simulation System with Large Language Model-Empowered Agents
@@ -381,17 +395,48 @@ Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and 
 Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Beyond Demographics: Aligning Role-playing LLM-based Agents Using Human Belief Networks
 Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Analysing LLM Persona Generation and Fairness Interpretation in Polarised Geopolitical Contexts
 Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Do we Still Need People? Comparing Human and LLM Personas in Political Modeling and Simulation
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|LLM Generated Persona is a Promise with a Catch
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Large Language Models as Subpopulation Representative Models: A Review
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Vox Populi, Vox AI? Using Language Models to Estimate German Public Opinion
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Valid Survey Simulations with Limited Human Data: The Roles of Prompting, Fine-Tuning, and Rectification
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Simulating Public Opinion: Comparing Distributional and Individual-Level Predictions from LLMs and Random Forests
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Characterizing the ability of LLMs to recapitulate Americans'distributional responses to public opinion polling questions across political issues
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Before You Simulate: A Pre-Study Benchmark for Large Language Model Stability in Political Role-Playing Simulations
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Psychologically-Valid Generative Agents: A Novel Approach to Agent-Based Modeling in Social Sciences
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Donald Trumps in the Virtual Polls: Simulating and Predicting Public Opinions in Surveys Using Large Language Models
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|This human study did not involve human subjects: Validating LLM simulations as behavioral evidence
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|TwinVoice: A Multi-dimensional Benchmark Towards Digital Twins via LLM Persona Simulation
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Human Preferences in Large Language Model Latent Space: A Technical Analysis on the Reliability of Synthetic Data in Voting Outcome Prediction
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Surveying with AI: Simulating Human Responses Using Personalized LLM Agents and Social Media Data
+Multi-Agent Social Simulation and Synthetic Societies|Synthetic populations and human samples|Validating Generative Agent-Based Models of Social Norm Enforcement: From Replication to Novel Predictions
 Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Network formation and dynamics among multi-LLMs
 Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Emergence of human-like polarization among large language model agents
 Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation
 Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Agent-Based Modelling Meets Generative AI in Social Network Simulations
 Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Decoding Echo Chambers: LLM-Powered Simulations Revealing Polarization in Social Networks
+Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Understanding Online Polarization Through Human-Agent Interaction in a Synthetic LLM-Based Social Network
+Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|BluePrint: A Social Media User Dataset for LLM Persona Evaluation and Training
+Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|Simulating Online Social Media Conversations on Controversial Topics Using AI Agents Calibrated on Real-World Data
+Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|LLM Agents Predict Social Media Reactions but Do Not Outperform Text Classifiers: Benchmarking Simulation Accuracy Using 120K+ Personas of 1511 Humans
+Multi-Agent Social Simulation and Synthetic Societies|Social networks, movements, and polarization|POSIM: A Multi-Agent Simulation Framework for Social Media Public Opinion Evolution and Governance
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Ignore All Previous Instructions: Jailbreaking as a de-escalatory peace building practise to resist LLM social media bots
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Charting the Landscape of Nefarious Uses of Generative Artificial Intelligence for Online Election Interference
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Simulating Misinformation Vulnerabilities with Agent Personas
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Prompt Injection Vulnerability of Consensus Generating Applications in Digital Democracy
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|New parameters of power: On LLM-based manipulation and control and the spectre of strategic AI
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Evaluating the persuasive influence of political microtargeting with large language models
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Assessing the risks and opportunities posed by AI-enhanced influence operations on social media
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Do Bots Do It Better? Analyzing the Effectiveness of Automated Agents in State-Sponsored Information Operations
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Characterizing the 2016 Russian IRA influence campaign
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|ClausewitzGPT Framework: A New Frontier in Theoretical Large Language Model Enhanced Information Operations
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Navigating the Web of Disinformation and Misinformation: Large Language Models as Double-Edged Swords
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Generative artificial intelligence in the electoral processes of 2024 in the world: disinformation campaigns and online trolls
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|AI-Slop and Political Propaganda: The Role of AI-Generated Content in Memes and Influence Campaigns
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Exposing influence campaigns in the age of LLMs: a behavioral-based AI approach to detecting state-sponsored trolls
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Recent Trends in Online Foreign Influence Efforts
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|How Strategic Information Operations Affect Peacekeeping: Two Case Studies from the Central African Republic
+AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Whose story wins? LLM-powered chatbots as sites and agents of memory-political contestation and corporate greenwashing
 AI Safety, Influence Operations, and Societal Risk|Deception, multi-agent risk, and control|Multi-Agent Risks from Advanced AI
 AI Safety, Influence Operations, and Societal Risk|Deception, multi-agent risk, and control|AI deception: A survey of examples, risks, and potential solutions
 AI Safety, Influence Operations, and Societal Risk|Bias, toxicity, and cultural alignment risks|Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity
@@ -855,6 +900,23 @@ def source_rows() -> list[dict[str, str]]:
             }
         )
 
+    for row in read_csv_if_exists(CRITIQUE_ROUND3_ADDITIONS):
+        rows.append(
+            {
+                "title": row["title"],
+                "year": row.get("year", ""),
+                "citationCount": row.get("citationCount", ""),
+                "importance": row.get("importance", "Curated"),
+                "url": row_url(row),
+                "doi": row.get("doi", ""),
+                "arxiv": row.get("arxiv", ""),
+                "venue": row.get("venue", ""),
+                "authors": row.get("authors", ""),
+                "abstract": row.get("abstract", ""),
+                "source_tables": "critique_round3_expansion/curated_additions.csv",
+            }
+        )
+
     return [row for row in rows if normalize(row["title"]) not in EXCLUDED_TITLES]
 
 
@@ -1052,6 +1114,9 @@ def build_readme() -> str:
     critique_next_summary = read_json_if_exists(CRITIQUE_NEXT_SUMMARY)
     critique_followup_summary = read_json_if_exists(CRITIQUE_FOLLOWUP_SUMMARY)
     critique_followup_search_summary = read_json_if_exists(CRITIQUE_FOLLOWUP_SEARCH_SUMMARY)
+    critique_round3_summary = read_json_if_exists(CRITIQUE_ROUND3_SUMMARY)
+    critique_round3_search_summary = read_json_if_exists(CRITIQUE_ROUND3_SEARCH_SUMMARY)
+    critique_round3_social_summary = read_json_if_exists(CRITIQUE_ROUND3_SOCIAL_SUMMARY)
     highlighted_rows = [row for row in rows if is_highlighted(row)]
     label_counts = Counter(row["importance"] for row in rows)
 
@@ -1129,6 +1194,9 @@ def build_readme() -> str:
             f"- Critique-next citation/reference edges scanned: {critique_next_summary.get('edge_count', 0)}",
             f"- Critique-followup citation/reference edges scanned: {critique_followup_summary.get('edge_count', 0)}",
             f"- Critique-followup Semantic Scholar query results screened: {critique_followup_search_summary.get('result_count', 0)}",
+            f"- Critique-round-3 influence/diplomacy citation/reference edges scanned: {critique_round3_summary.get('edge_count', 0)}",
+            f"- Critique-round-3 social-simulation citation/reference edges scanned: {critique_round3_social_summary.get('edge_count', 0)}",
+            f"- Critique-round-3 Semantic Scholar query results screened: {critique_round3_search_summary.get('result_count', 0)}",
             "",
             "Data files:",
             "",
@@ -1144,6 +1212,8 @@ def build_readme() -> str:
             "- `data/raw/critique_next_expansion_seeds.csv`: next-round critique seed list for escalation risk and Political-LLM traces.",
             "- `data/raw/critique_followup_expansion_seeds.csv`: critique-followup seeds for forecasting, democratic deliberation, and WARBENCH traces.",
             "- `data/raw/critique_followup_search_queries.csv`: targeted Semantic Scholar query-search terms for the critique-followup pass.",
+            "- `data/raw/critique_round3_expansion_seeds.csv`: critique-round-3 seeds for influence operations, Diplomacy, and synthetic-population traces.",
+            "- `data/raw/critique_round3_search_queries.csv`: targeted Semantic Scholar query-search terms for influence operations, diplomacy, and social simulation.",
             "- `data/processed/core_seed_papers_enriched.csv`: seed metadata with citation counts, authors, venues, abstracts, and resolution method.",
             "- `data/processed/targeted_related_works_strategy.csv`: selected additions from the targeted strategic-decision trace.",
             "- `data/processed/classical_political_nlp_ie_enriched.csv`: Semantic Scholar metadata for the classical political NLP and IE additions.",
@@ -1152,12 +1222,16 @@ def build_readme() -> str:
             "- `data/processed/critique_priority_expansion/curated_additions.csv`: selected additions from critique-priority seed expansion.",
             "- `data/processed/critique_next_expansion/curated_additions.csv`: selected additions from escalation-risk and Political-LLM seed expansion.",
             "- `data/processed/critique_followup_expansion/curated_additions.csv`: selected additions from ForecastBench, democratic-deliberation, and WARBENCH follow-up expansion.",
+            "- `data/processed/critique_round3_expansion/curated_additions.csv`: selected additions from influence-operations, Diplomacy, and social-simulation expansion.",
             "- `data/processed/targeted_strategic_decisions/run_summary.json`: targeted trace summary.",
             "- `data/processed/fog_of_war/run_summary.json`: Fog of War trace summary.",
             "- `data/processed/critique_priority_expansion/run_summary.json`: critique-priority trace summary.",
             "- `data/processed/critique_next_expansion/run_summary.json`: critique-next trace summary.",
             "- `data/processed/critique_followup_expansion/run_summary.json`: critique-followup trace summary.",
             "- `data/processed/critique_followup_expansion/search_summary.json`: critique-followup query-search summary.",
+            "- `data/processed/critique_round3_expansion/run_summary.json`: critique-round-3 influence/diplomacy trace summary.",
+            "- `data/processed/critique_round3_expansion/search_summary.json`: critique-round-3 query-search summary.",
+            "- `data/processed/critique_round3_expansion/social_simulation_seed_trace_summary.json`: critique-round-3 social-simulation direct-trace summary.",
             "",
             "Scripts:",
             "",
@@ -1166,6 +1240,7 @@ def build_readme() -> str:
             "- `scripts/fetch_seed_metadata.py`: enriches seed papers with Semantic Scholar metadata.",
             "- `scripts/build_targeted_related_works.py`: selects targeted related-work additions from a trace longlist.",
             "- `scripts/build_critique_followup_expansion.py`: selects critique-reviewed additions from the ForecastBench, deliberation, and WARBENCH follow-up pass.",
+            "- `scripts/build_critique_round3_expansion.py`: selects critique-reviewed additions from the influence-operations, Diplomacy, and social-simulation pass.",
             "- `scripts/build_readme.py`: rebuilds this README and validates that every curated paper is assigned to a theme.",
             "",
             "## Contributing",
