@@ -7,7 +7,7 @@ The pipeline is intentionally conservative about storage:
 - Downloaded PDFs, HTML pages, manual files, and extracted full text stay under `data/paper_cache/`.
 - `data/paper_cache/` is ignored by Git because many papers are copyrighted or paywalled.
 - Generated manifests and summaries are written to `data/processed/paper_summaries/`.
-- The compact human-readable report is written to `docs/paper_summary_report.md`.
+- The detailed English human-readable report is written to `docs/paper_summary_report_detailed_v2.md`.
 
 ## Setup
 
@@ -47,8 +47,8 @@ This performs:
 1. `download`: resolve open PDFs/HTML from arXiv, ACL Anthology, publisher URLs, and Semantic Scholar open-access metadata.
 2. `recover-manual`: search unresolved entries again through DOI publisher templates, DOI landing metadata, OpenAlex OA locations, arXiv title search, and Semantic Scholar open-access metadata.
 3. `extract`: extract local text from PDF/HTML/TXT files and cap model input at 50,000 characters. If the file cannot be recovered but the catalog has an abstract, the pipeline writes an `abstract_missing_download` fallback.
-4. `summarize`: call Qwen 3.6 35B and write structured JSONL/CSV summaries.
-5. `report`: build a compact Markdown report for human reading.
+4. `summarize`: call Qwen 3.6 35B and write structured English JSONL/CSV summaries.
+5. `report`: build a detailed Markdown report for human reading.
 
 All commands are resumable by default. Re-run the same command after interruptions.
 
@@ -138,15 +138,22 @@ Each JSONL row contains paper metadata and a `summary` object:
 
 ```json
 {
-  "summary_zh": "short Chinese summary",
-  "important_results": ["key result"],
+  "summary_en": "short English summary, max 80 tokens",
+  "detailed_summary_en": "detailed English summary, max 500 tokens",
+  "core_argument": "paper's main claim or research question",
+  "research_design": "study design, theory, model, experiment, or case setup",
+  "data_and_materials": "datasets, corpora, benchmarks, cases, or unknown/limited",
+  "important_results": ["key result or argument"],
   "deliverables": ["dataset, benchmark, code, framework, typology, etc."],
   "method": ["study design or method"],
+  "limitations": ["substantive or source limitation"],
+  "taxonomy_fit": "why the paper belongs in its theme/subtheme",
   "paywall_or_fulltext_notes": "what was visible from full text/manual text",
+  "source_quality": "substantial_full_text|partial_text|abstract_only|metadata_or_very_short",
   "repo_relevance": "core|important|peripheral|watchlist",
-  "tags": ["10-20 searchable tags"],
+  "tags": ["10-20 lowercase searchable tags, max 200 total tokens"],
   "confidence": "high|medium|low"
 }
 ```
 
-If only the abstract is available, `paywall_or_fulltext_notes` records that limitation.
+If only the abstract or metadata page is available, `source_quality`, `confidence`, and `paywall_or_fulltext_notes` record that limitation. Tag post-processing lowercases tags, removes underscores, filters vague one-word tags, avoids author/venue tags, and normalizes known cases such as `react`, `lora`, `oecd`, `bradley-terry`, and `government ai`.

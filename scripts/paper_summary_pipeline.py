@@ -37,10 +37,11 @@ MANUAL_DIR = CACHE_DIR / "manual"
 OUT_DIR = ROOT / "data" / "processed" / "paper_summaries"
 DOWNLOAD_MANIFEST = OUT_DIR / "download_manifest.csv"
 TEXT_MANIFEST = OUT_DIR / "text_manifest.csv"
-SUMMARY_JSONL = OUT_DIR / "paper_summaries.jsonl"
-SUMMARY_CSV = OUT_DIR / "paper_summaries.csv"
+SUMMARY_VERSION = "detailed-v2"
+SUMMARY_JSONL = OUT_DIR / "paper_summaries_detailed_v2.jsonl"
+SUMMARY_CSV = OUT_DIR / "paper_summaries_detailed_v2.csv"
 MANUAL_DOWNLOADS = OUT_DIR / "manual_downloads.csv"
-REPORT_MD = ROOT / "docs" / "paper_summary_report.md"
+REPORT_MD = ROOT / "docs" / "paper_summary_report_detailed_v2.md"
 
 LOCAL_LLM_BASE = os.environ.get("LOCAL_LLM_BASE", "")
 LOCAL_LLM_TOKEN = os.environ.get("LOCAL_LLM_TOKEN", "")
@@ -967,6 +968,18 @@ def check_model(args: argparse.Namespace) -> None:
         raise SystemExit(f"model not found: {args.model}")
 
 
+def infer_source_quality(text_row: dict[str, str]) -> str:
+    source = text_row.get("text_source", "")
+    chars = as_int(text_row.get("text_chars", ""))
+    if source in {"abstract", "abstract_missing_download"}:
+        return "abstract_only"
+    if chars < 1000:
+        return "metadata_or_very_short"
+    if chars < 5000 or source == "html":
+        return "partial_text"
+    return "substantial_full_text"
+
+
 def build_prompt(row: dict[str, str], text: str, max_model_chars: int) -> list[dict[str, str]]:
     excerpt = text[:max_model_chars]
     metadata = {
@@ -981,29 +994,52 @@ def build_prompt(row: dict[str, str], text: str, max_model_chars: int) -> list[d
         "venue": row.get("venue", ""),
         "authors": row.get("authors", ""),
         "abstract": row.get("abstract", ""),
+        "text_source": row.get("text_source", ""),
+        "text_chars": row.get("text_chars", ""),
+        "source_quality": row.get("source_quality", ""),
     }
     system = (
-        "你是一个严谨的政治科学、地缘政治、政策制定与战略研究文献助理。"
-        "只输出合法 JSON，不要 Markdown，不要解释你的步骤。"
-        "不要长篇引用原文；如果正文来自付费墙或手动文件，只做短摘录式概括。"
+        "You are a rigorous literature assistant for political science, geopolitics, policymaking, "
+        "strategic studies, and LLM-based political/strategic applications. Output valid JSON only. "
+        "Do not use Markdown. Do not invent details not supported by the excerpt or abstract."
     )
     user = f"""
-请根据 metadata、abstract 和 paper_text_excerpt 生成一份短报告。报告面向人工筛读，不要过长。
+Write an English structured summary using metadata, abstract, and paper_text_excerpt.
 
-要求：
-1. 摘录核心内容，包括：(a) 重要摘要与结果，(b) Deliverables，(c) Method，(d) Paywall/manual/full-text 内能看到的实质内容。
-2. 如果只有 abstract 或摘录不足，请明确写出 limitation。
-3. 给 10 到 20 个 tags，tags 用英文小写短语，便于后续检索。
-4. 判断它对本 repo 主题 Large Language Models for Political Science & Political Strategies 的相关性。
-5. 输出 JSON，schema 固定如下：
+Length constraints:
+- summary_en: max 80 tokens.
+- detailed_summary_en: max 500 tokens.
+- all tags combined: max 200 tokens.
+- Each array item must be one concise sentence; use at most 7 items per array.
+
+Quality requirements:
+1. Add value beyond the abstract: explain the research question, method/data, core findings, deliverables, limitations, and taxonomy fit.
+2. If source_quality is abstract_only or metadata_or_very_short, explicitly state the limitation and set confidence to medium or low, never high.
+3. If the excerpt is a login page, publisher metadata page, cookie page, table of contents, 404/403 page, or review page, do not infer full-text details.
+4. Tags must be 10-20 English lowercase tags. Normalize tag quality:
+   - lowercase everything, including terms such as react, lora, oecd, bradley-terry, government ai.
+   - use short searchable phrases, not sentences.
+   - use spaces or hyphens, never underscores.
+   - avoid one-word person-name tags such as "clark"; use concept tags such as "target-centric intelligence analysis".
+   - avoid author-name tags and venue/journal tags unless the tag names a standard method, dataset, or benchmark.
+   - avoid vague tags such as "ai", "paper", "study", "politics", "llm" unless they are part of a more specific phrase.
+5. repo_relevance must respect metadata.theme and metadata.importance; Peripheral/Watchlist papers should not be labeled core unless the excerpt clearly proves direct relevance.
+6. Output JSON with exactly this schema:
 {{
   "title": "...",
   "year": "...",
-  "summary_zh": "...不超过 180 个中文字...",
-  "important_results": ["...", "...", "..."],
+  "summary_en": "...",
+  "detailed_summary_en": "...",
+  "core_argument": "...",
+  "research_design": "...",
+  "data_and_materials": "...",
+  "important_results": ["...", "..."],
   "deliverables": ["...", "..."],
   "method": ["...", "..."],
+  "limitations": ["...", "..."],
+  "taxonomy_fit": "...",
   "paywall_or_fulltext_notes": "...",
+  "source_quality": "substantial_full_text|partial_text|abstract_only|metadata_or_very_short",
   "repo_relevance": "core|important|peripheral|watchlist",
   "tags": ["tag1", "tag2"],
   "confidence": "high|medium|low"
@@ -1051,7 +1087,79 @@ def load_jsonl_by_slug(path: Path) -> dict[str, dict[str, Any]]:
 
 
 def successful_summary(item: dict[str, Any]) -> bool:
-    return bool(item.get("summary")) and not item.get("error") and not item.get("parse_error")
+    return item.get("summary_version") == SUMMARY_VERSION and bool(item.get("summary")) and not item.get("error") and not item.get("parse_error")
+
+
+def estimate_tokens(value: str) -> int:
+    return len(re.findall(r"[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)?|[^\w\s]", value or ""))
+
+
+def normalize_tag(value: str) -> str:
+    tag = html.unescape(str(value or "")).strip().lower()
+    aliases = {
+        "react": "react prompting",
+        "react framework": "react prompting",
+        "lora": "lora adaptation",
+        "government ai": "government ai",
+        "bradley-terry model": "bradley-terry model",
+        "eca_rules": "eca rules",
+        "oecd comparison": "oecd comparison",
+        "clark": "target-centric intelligence analysis",
+    }
+    tag = aliases.get(tag, tag)
+    tag = tag.replace("_", " ")
+    tag = re.sub(r"[/:|]+", " ", tag)
+    tag = re.sub(r"[^a-z0-9+\- ]+", "", tag)
+    tag = re.sub(r"\s+", " ", tag).strip(" -")
+    return aliases.get(tag, tag)
+
+
+def normalize_tags(value: Any) -> list[str]:
+    raw_tags = as_list(value)
+    vague = {"ai", "llm", "paper", "study", "politics", "political", "research", "model"}
+    banned_substrings = {" journal", " conference", " proceedings", "monroe colaresi quinn"}
+    tags: list[str] = []
+    seen: set[str] = set()
+    for raw in raw_tags:
+        tag = normalize_tag(raw)
+        if not tag or tag in vague or len(tag) > 80 or any(banned in f" {tag}" for banned in banned_substrings):
+            continue
+        if tag not in seen:
+            tags.append(tag)
+            seen.add(tag)
+        if len(tags) >= 20:
+            break
+    while estimate_tokens("; ".join(tags)) > 200 and len(tags) > 10:
+        tags.pop()
+    return tags
+
+
+def constrained_repo_relevance(summary: dict[str, Any], row: dict[str, str]) -> str:
+    relevance = str(summary.get("repo_relevance") or "").lower()
+    if relevance not in {"core", "important", "peripheral", "watchlist"}:
+        relevance = "important"
+    theme = row.get("theme", "")
+    importance = row.get("importance", "")
+    if theme == "Peripheral and Borderline Materials" and relevance == "core":
+        return "watchlist" if importance == "Watchlist" else "peripheral"
+    if importance == "Watchlist" and relevance == "core":
+        return "watchlist"
+    return relevance
+
+
+def postprocess_summary(summary: dict[str, Any], row: dict[str, str], text_row: dict[str, str]) -> dict[str, Any]:
+    processed = dict(summary)
+    quality = infer_source_quality(text_row)
+    processed["source_quality"] = quality
+    processed["tags"] = normalize_tags(processed.get("tags"))
+    processed["repo_relevance"] = constrained_repo_relevance(processed, row)
+    confidence = str(processed.get("confidence") or "").lower()
+    if confidence not in {"high", "medium", "low"}:
+        confidence = "medium"
+    if quality in {"abstract_only", "metadata_or_very_short"} and confidence == "high":
+        confidence = "medium" if quality == "abstract_only" else "low"
+    processed["confidence"] = confidence
+    return processed
 
 
 def append_jsonl(path: Path, item: dict[str, Any]) -> None:
@@ -1080,13 +1188,15 @@ def command_summarize(args: argparse.Namespace) -> None:
             print(f"[{index}/{len(selected)}] missing_text_file {row['title']}", flush=True)
             continue
         text = text_path.read_text(encoding="utf-8", errors="replace")
-        merged_row = {**catalog.get(slug, {}), **row}
+        merged_row = {**catalog.get(slug, {}), **row, **text_row, "source_quality": infer_source_quality(text_row)}
         messages = build_prompt(merged_row, text, args.max_model_chars)
         for attempt in range(1, args.retries + 1):
             try:
                 raw = local_llm_chat(messages, args.model, args.max_tokens, args.timeout)
                 parsed, parse_error = parse_json_response(raw)
+                parsed = postprocess_summary(parsed, row, text_row)
                 item = {
+                    "summary_version": SUMMARY_VERSION,
                     "slug": slug,
                     "title": row["title"],
                     "year": row.get("year", ""),
@@ -1109,6 +1219,7 @@ def command_summarize(args: argparse.Namespace) -> None:
                     append_jsonl(
                         SUMMARY_JSONL,
                         {
+                            "summary_version": SUMMARY_VERSION,
                             "slug": slug,
                             "title": row["title"],
                             "year": row.get("year", ""),
@@ -1153,15 +1264,26 @@ def write_summary_csv() -> None:
                 "theme": item.get("theme", ""),
                 "subtheme": item.get("subtheme", ""),
                 "citationCount": item.get("citationCount", ""),
-                "summary_zh": str(summary.get("summary_zh", "")),
+                "summary_version": item.get("summary_version", ""),
+                "summary_en": str(summary.get("summary_en", "")),
+                "detailed_summary_en": str(summary.get("detailed_summary_en", "")),
+                "summary_token_estimate": estimate_tokens(str(summary.get("detailed_summary_en", ""))),
+                "core_argument": str(summary.get("core_argument", "")),
+                "research_design": str(summary.get("research_design", "")),
+                "data_and_materials": str(summary.get("data_and_materials", "")),
                 "important_results": " | ".join(as_list(summary.get("important_results"))),
                 "deliverables": " | ".join(as_list(summary.get("deliverables"))),
                 "method": " | ".join(as_list(summary.get("method"))),
+                "limitations": " | ".join(as_list(summary.get("limitations"))),
+                "taxonomy_fit": str(summary.get("taxonomy_fit", "")),
                 "paywall_or_fulltext_notes": str(summary.get("paywall_or_fulltext_notes", "")),
+                "source_quality": str(summary.get("source_quality", "")),
                 "repo_relevance": str(summary.get("repo_relevance", "")),
-                "tags": "; ".join(as_list(summary.get("tags"))),
+                "tags": "; ".join(normalize_tags(summary.get("tags"))),
+                "tag_token_estimate": estimate_tokens("; ".join(normalize_tags(summary.get("tags")))),
                 "confidence": str(summary.get("confidence", "")),
                 "text_source": item.get("text_source", ""),
+                "text_chars": item.get("text_chars", ""),
                 "model": item.get("model", ""),
                 "error": item.get("error", "") or item.get("parse_error", ""),
             }
@@ -1173,15 +1295,26 @@ def write_summary_csv() -> None:
         "theme",
         "subtheme",
         "citationCount",
-        "summary_zh",
+        "summary_version",
+        "summary_en",
+        "detailed_summary_en",
+        "summary_token_estimate",
+        "core_argument",
+        "research_design",
+        "data_and_materials",
         "important_results",
         "deliverables",
         "method",
+        "limitations",
+        "taxonomy_fit",
         "paywall_or_fulltext_notes",
+        "source_quality",
         "repo_relevance",
         "tags",
+        "tag_token_estimate",
         "confidence",
         "text_source",
+        "text_chars",
         "model",
         "error",
     ]
@@ -1199,12 +1332,13 @@ def command_report(args: argparse.Namespace) -> None:
     for row in rows:
         by_theme.setdefault(row.get("theme", "Other"), []).append(row)
     lines = [
-        "# Paper Summary Report",
+        "# Detailed Paper Summary Report",
         "",
         f"Generated from `{SUMMARY_JSONL.relative_to(ROOT)}`.",
         f"Summaries included: **{len(rows)}**.",
         "",
-        "Each entry is intentionally compact; full-text caches remain local under `data/paper_cache/` and are not committed.",
+        "Each entry is capped for review use: detailed summaries target <=500 tokens and tags target <=200 tokens.",
+        "Full-text caches remain local under `data/paper_cache/` and are not committed.",
         "",
     ]
     for theme, items in by_theme.items():
@@ -1214,14 +1348,30 @@ def command_report(args: argparse.Namespace) -> None:
             lines.append(f"### {row.get('title', '')} ({row.get('year', '')}; {row.get('importance', '')}; citations: {row.get('citationCount', '')})")
             if tags:
                 lines.append(f"Tags: {tags}")
-            if row.get("summary_zh"):
-                lines.append(row["summary_zh"])
+            if row.get("summary_en"):
+                lines.append(f"Short summary: {row['summary_en']}")
+            if row.get("detailed_summary_en"):
+                lines.append(row["detailed_summary_en"])
+            if row.get("core_argument"):
+                lines.append(f"Core argument: {row['core_argument']}")
+            if row.get("research_design"):
+                lines.append(f"Research design: {row['research_design']}")
+            if row.get("data_and_materials"):
+                lines.append(f"Data/materials: {row['data_and_materials']}")
             if row.get("deliverables"):
                 lines.append(f"Deliverables: {row['deliverables']}")
             if row.get("method"):
                 lines.append(f"Method: {row['method']}")
+            if row.get("limitations"):
+                lines.append(f"Limitations: {row['limitations']}")
+            if row.get("taxonomy_fit"):
+                lines.append(f"Taxonomy fit: {row['taxonomy_fit']}")
             if row.get("paywall_or_fulltext_notes"):
                 lines.append(f"Full-text notes: {row['paywall_or_fulltext_notes']}")
+            lines.append(
+                f"Quality: source={row.get('source_quality', '')}; relevance={row.get('repo_relevance', '')}; confidence={row.get('confidence', '')}; "
+                f"summary_tokens~{row.get('summary_token_estimate', '')}; tag_tokens~{row.get('tag_token_estimate', '')}"
+            )
             if row.get("error"):
                 lines.append(f"Pipeline note: {row['error']}")
             lines.append("")
@@ -1284,7 +1434,7 @@ def build_parser() -> argparse.ArgumentParser:
     summarize.add_argument("--resume", action=argparse.BooleanOptionalAction, default=True)
     summarize.add_argument("--model", default=DEFAULT_MODEL)
     summarize.add_argument("--max-model-chars", type=int, default=DEFAULT_MAX_MODEL_CHARS)
-    summarize.add_argument("--max-tokens", type=int, default=1400)
+    summarize.add_argument("--max-tokens", type=int, default=2400)
     summarize.add_argument("--timeout", type=int, default=240)
     summarize.add_argument("--retries", type=int, default=2)
     summarize.add_argument("--retry-sleep", type=float, default=8.0)
@@ -1307,7 +1457,7 @@ def build_parser() -> argparse.ArgumentParser:
     run_all.add_argument("--max-model-chars", type=int, default=DEFAULT_MAX_MODEL_CHARS)
     run_all.add_argument("--min-text-chars", type=int, default=800)
     run_all.add_argument("--model", default=DEFAULT_MODEL)
-    run_all.add_argument("--max-tokens", type=int, default=1400)
+    run_all.add_argument("--max-tokens", type=int, default=2400)
     run_all.add_argument("--retries", type=int, default=2)
     run_all.add_argument("--retry-sleep", type=float, default=8.0)
     run_all.set_defaults(func=command_run_all)
