@@ -40,6 +40,9 @@ TEXT_MANIFEST = OUT_DIR / "text_manifest.csv"
 SUMMARY_VERSION = "detailed-v2"
 SUMMARY_JSONL = OUT_DIR / "paper_summaries_detailed_v2.jsonl"
 SUMMARY_CSV = OUT_DIR / "paper_summaries_detailed_v2.csv"
+TAGGING_VERSION = "curated-tags-v1"
+TAGS_JSONL = OUT_DIR / "paper_tags_curated_v1.jsonl"
+TAGS_CSV = OUT_DIR / "paper_tags_curated_v1.csv"
 MANUAL_DOWNLOADS = OUT_DIR / "manual_downloads.csv"
 REPORT_MD = ROOT / "docs" / "paper_summary_report_detailed_v2.md"
 
@@ -1134,6 +1137,315 @@ def normalize_tags(value: Any) -> list[str]:
     return tags
 
 
+def normalize_curated_tag(value: str) -> str:
+    tag = html.unescape(str(value or "")).strip().lower()
+    tag = tag.replace("_", " ")
+    tag = re.sub(r"[/:|]+", " ", tag)
+    tag = re.sub(r"[^a-z0-9+ -]+", "", tag)
+    tag = tag.replace("-", " ")
+    tag = re.sub(r"\s+", " ", tag).strip()
+    replacements = {
+        "react": "react prompting",
+        "react framework": "react prompting",
+        "lora": "lora adaptation",
+        "gpt4": "frontier model comparison",
+        "gpt 4": "frontier model comparison",
+        "chatgpt": "chatbot political behavior",
+    }
+    return replacements.get(tag, tag)
+
+
+def forbidden_curated_tag(tag: str) -> bool:
+    if not tag:
+        return True
+    exact = {
+        "ai",
+        "llm",
+        "paper",
+        "study",
+        "model",
+        "research",
+        "politics",
+        "political",
+        "source quality",
+    }
+    substrings = {
+        "large language model",
+        "generative ai",
+        "artificial intelligence",
+        "computational social science",
+        "political science",
+        "public administration",
+        "international relations",
+        "policy analysis",
+        "decision support",
+        "ai ethics",
+        "ai governance",
+        "machine learning",
+        "natural language processing",
+        "metadata only",
+        "abstract only",
+        "partial text",
+        "full text",
+        "source limited",
+        "source tag",
+        "journal",
+        "conference",
+        "proceedings",
+    }
+    names_and_models = {
+        "fearon",
+        "waltz",
+        "khong",
+        "jervis",
+        "schelling",
+        "heuer",
+        "clark",
+        "gpt",
+        "gpt 4",
+        "gpt 4o",
+        "chatgpt",
+        "llama",
+        "qwen",
+        "gemini",
+        "deepseek",
+        "claude",
+        "mistral",
+        "palm",
+    }
+    if tag in exact:
+        return True
+    if any(item in tag for item in substrings):
+        return True
+    if any(re.search(rf"\b{re.escape(item)}\b", tag) for item in names_and_models):
+        return True
+    return False
+
+
+def curated_tag_target(source_quality: str) -> tuple[int, int]:
+    if source_quality == "metadata_or_very_short":
+        return 5, 7
+    if source_quality == "abstract_only":
+        return 7, 9
+    return 8, 10
+
+
+def normalize_curated_tags(values: Any, row: dict[str, str]) -> list[str]:
+    raw_tags = as_list(values)
+    old_tags = [tag.strip() for tag in row.get("tags", "").split(";") if tag.strip()]
+    candidates = raw_tags + old_tags
+    min_count, max_count = curated_tag_target(row.get("source_quality", ""))
+    evidence_text = " ".join(
+        [
+            row.get("title", ""),
+            row.get("theme", ""),
+            row.get("subtheme", ""),
+            row.get("summary_en", ""),
+            row.get("detailed_summary_en", ""),
+            row.get("core_argument", ""),
+            row.get("data_and_materials", ""),
+        ]
+    ).lower()
+    tags: list[str] = []
+    seen: set[str] = set()
+    for raw in candidates:
+        tag = normalize_curated_tag(raw)
+        if forbidden_curated_tag(tag) or len(tag.split()) > 6 or len(tag) > 72:
+            continue
+        if "synthetic" in tag and "synthetic" not in evidence_text:
+            continue
+        if "brief" in tag and "brief" not in evidence_text:
+            continue
+        if ("managerial" in tag or "management strategy" in tag) and not any(term in evidence_text for term in ["manager", "management", "business strategy", "business model"]):
+            continue
+        if tag not in seen:
+            tags.append(tag)
+            seen.add(tag)
+        if len(tags) >= max_count:
+            break
+    while estimate_tokens("; ".join(tags)) > 200 and len(tags) > min_count:
+        tags.pop()
+    return tags
+
+
+def build_tag_prompt(row: dict[str, str]) -> list[dict[str, str]]:
+    source_quality = row.get("source_quality", "")
+    if source_quality == "metadata_or_very_short":
+        quantity = "6 candidate tags; the final system may keep 5-7."
+    elif source_quality == "abstract_only":
+        quantity = "8 candidate tags; the final system may keep 7-9."
+    else:
+        quantity = "10 candidate tags; the final system may keep 8-10."
+    paper = {
+        "title": row.get("title", ""),
+        "year": row.get("year", ""),
+        "theme": row.get("theme", ""),
+        "subtheme": row.get("subtheme", ""),
+        "importance": row.get("importance", ""),
+        "source_quality": source_quality,
+        "repo_relevance": row.get("repo_relevance", ""),
+        "summary_en": row.get("summary_en", ""),
+        "detailed_summary_en": row.get("detailed_summary_en", ""),
+        "core_argument": row.get("core_argument", ""),
+        "research_design": row.get("research_design", ""),
+        "data_and_materials": row.get("data_and_materials", ""),
+        "limitations": row.get("limitations", ""),
+    }
+    system = "You are a careful taxonomy editor for a public scholarly bibliography. Output valid JSON only."
+    user = f"""
+Create curated discovery tags for this paper. These tags will power filtering in an Awesome-style repository.
+
+Output JSON with exactly this schema:
+{{"title":"...","curated_tags":["tag", "..."],"tag_rationale":"one sentence"}}
+
+Quantity:
+- Produce {quantity}
+
+Style:
+- Lowercase English noun phrases, 2-5 words each.
+- Prefer spaces, not underscores. Avoid hyphens except standard phrases.
+- Each tag must be narrower than the paper's theme.
+- Tags should identify method, task, domain object, dataset/context, and risk/evaluation where applicable.
+- Do not include source-quality tags.
+
+Forbidden if the exact phrase or substring appears anywhere in a tag:
+large language model, generative ai, artificial intelligence, computational social science, political science,
+public administration, international relations, policy analysis, decision support, ai ethics, ai governance,
+machine learning, natural language processing, author name, journal, conference, proceedings.
+
+Replacement examples:
+- decision support -> wargaming component generation / procurement audit behavior / policy brief workflow / managerial strategy evaluation
+- policy analysis -> policy brief generation / science-to-policy briefing / policy position extraction
+- international relations -> diplomatic role-play benchmark / crisis bargaining / geopolitical event forecasting
+- generative ai -> artificial evaluator aggregation / synthetic training text / ai-generated briefing notes
+
+These replacement examples are not default tags. Use them only if the paper text directly supports them.
+
+For metadata_or_very_short: do not infer details beyond title/theme; use bibliographic-level concepts only and state source limits in tag_rationale.
+For Peripheral and Borderline Materials: include one scope tag such as peripheral strategy, management strategy evaluation, generic negotiation games, or generic safety background when appropriate.
+
+Paper:
+{json.dumps(paper, ensure_ascii=False, indent=2)}
+"""
+    return [{"role": "system", "content": system}, {"role": "user", "content": user.strip()}]
+
+
+def command_retag(args: argparse.Namespace) -> None:
+    ensure_dirs()
+    if not SUMMARY_CSV.exists():
+        raise SystemExit(f"missing summary CSV: {SUMMARY_CSV}")
+    rows = list(csv.DictReader(SUMMARY_CSV.open(newline="", encoding="utf-8")))
+    if args.title_regex:
+        rx = re.compile(args.title_regex, re.I)
+        rows = [row for row in rows if rx.search(row["title"])]
+    if args.only_core_important:
+        rows = [row for row in rows if row.get("importance") in {"Core", "Important"}]
+    if args.include_watchlist is False:
+        rows = [row for row in rows if row.get("importance") != "Watchlist"]
+    if args.limit:
+        rows = rows[: args.limit]
+    completed = load_jsonl_by_slug(TAGS_JSONL) if args.resume else {}
+    for index, row in enumerate(rows, start=1):
+        slug = slug_for(row["title"])
+        done = completed.get(slug, {})
+        if done.get("tagging_version") == TAGGING_VERSION and done.get("curated_tags") and not done.get("error"):
+            print(f"[{index}/{len(rows)}] skip {row['title']}", flush=True)
+            continue
+        messages = build_tag_prompt(row)
+        for attempt in range(1, args.retries + 1):
+            try:
+                raw = local_llm_chat(messages, args.model, args.max_tokens, args.timeout)
+                parsed, parse_error = parse_json_response(raw)
+                tags = normalize_curated_tags(parsed.get("curated_tags"), row)
+                item = {
+                    "tagging_version": TAGGING_VERSION,
+                    "slug": slug,
+                    "title": row.get("title", ""),
+                    "year": row.get("year", ""),
+                    "importance": row.get("importance", ""),
+                    "theme": row.get("theme", ""),
+                    "subtheme": row.get("subtheme", ""),
+                    "source_quality": row.get("source_quality", ""),
+                    "repo_relevance": row.get("repo_relevance", ""),
+                    "curated_tags": tags,
+                    "tag_count": len(tags),
+                    "tag_token_estimate": estimate_tokens("; ".join(tags)),
+                    "tag_rationale": str(parsed.get("tag_rationale", "")),
+                    "raw_curated_tags": as_list(parsed.get("curated_tags")),
+                    "model": args.model,
+                    "parse_error": parse_error,
+                }
+                append_jsonl(TAGS_JSONL, item)
+                print(f"[{index}/{len(rows)}] tagged {row['title']} ({len(tags)} tags)", flush=True)
+                break
+            except Exception as exc:
+                if attempt == args.retries:
+                    append_jsonl(
+                        TAGS_JSONL,
+                        {
+                            "tagging_version": TAGGING_VERSION,
+                            "slug": slug,
+                            "title": row.get("title", ""),
+                            "year": row.get("year", ""),
+                            "importance": row.get("importance", ""),
+                            "theme": row.get("theme", ""),
+                            "subtheme": row.get("subtheme", ""),
+                            "source_quality": row.get("source_quality", ""),
+                            "repo_relevance": row.get("repo_relevance", ""),
+                            "curated_tags": [],
+                            "tag_count": 0,
+                            "tag_token_estimate": 0,
+                            "tag_rationale": "",
+                            "model": args.model,
+                            "error": str(exc),
+                        },
+                    )
+                    print(f"[{index}/{len(rows)}] failed {row['title']}: {exc}", flush=True)
+                else:
+                    time.sleep(args.retry_sleep * attempt)
+    write_tags_csv()
+
+
+def write_tags_csv() -> None:
+    items = list(load_jsonl_by_slug(TAGS_JSONL).values())
+    rows: list[dict[str, Any]] = []
+    for item in sorted(items, key=lambda row: (row.get("theme", ""), row.get("title", ""))):
+        tags = as_list(item.get("curated_tags"))
+        rows.append(
+            {
+                "title": item.get("title", ""),
+                "year": item.get("year", ""),
+                "importance": item.get("importance", ""),
+                "theme": item.get("theme", ""),
+                "subtheme": item.get("subtheme", ""),
+                "source_quality": item.get("source_quality", ""),
+                "repo_relevance": item.get("repo_relevance", ""),
+                "curated_tags": "; ".join(tags),
+                "tag_count": len(tags),
+                "tag_token_estimate": estimate_tokens("; ".join(tags)),
+                "tag_rationale": item.get("tag_rationale", ""),
+                "model": item.get("model", ""),
+                "error": item.get("error", "") or item.get("parse_error", ""),
+            }
+        )
+    columns = [
+        "title",
+        "year",
+        "importance",
+        "theme",
+        "subtheme",
+        "source_quality",
+        "repo_relevance",
+        "curated_tags",
+        "tag_count",
+        "tag_token_estimate",
+        "tag_rationale",
+        "model",
+        "error",
+    ]
+    write_csv(TAGS_CSV, rows, columns)
+
+
 def constrained_repo_relevance(summary: dict[str, Any], row: dict[str, str]) -> str:
     relevance = str(summary.get("repo_relevance") or "").lower()
     if relevance not in {"core", "important", "peripheral", "watchlist"}:
@@ -1439,6 +1751,16 @@ def build_parser() -> argparse.ArgumentParser:
     summarize.add_argument("--retries", type=int, default=2)
     summarize.add_argument("--retry-sleep", type=float, default=8.0)
     summarize.set_defaults(func=command_summarize)
+
+    retag = subparsers.add_parser("retag", help="Generate curated high-precision discovery tags from detailed summaries")
+    add_common_filters(retag)
+    retag.add_argument("--resume", action=argparse.BooleanOptionalAction, default=True)
+    retag.add_argument("--model", default=DEFAULT_MODEL)
+    retag.add_argument("--max-tokens", type=int, default=1200)
+    retag.add_argument("--timeout", type=int, default=180)
+    retag.add_argument("--retries", type=int, default=2)
+    retag.add_argument("--retry-sleep", type=float, default=6.0)
+    retag.set_defaults(func=command_retag)
 
     report = subparsers.add_parser("report", help="Build compact Markdown report from summary JSONL")
     add_common_filters(report)
