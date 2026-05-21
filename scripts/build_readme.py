@@ -57,6 +57,7 @@ THEME_ORDER = [
     "Strategic Reasoning, Games, Negotiation, and Cooperation",
     "Multi-Agent Social Simulation and Synthetic Societies",
     "AI Safety, Influence Operations, and Societal Risk",
+    "Peripheral and Borderline Materials",
 ]
 
 SUBTHEME_ORDER = {
@@ -126,6 +127,14 @@ SUBTHEME_ORDER = {
         "Deception, multi-agent risk, and control",
         "Bias, toxicity, and cultural alignment risks",
     ],
+    "Peripheral and Borderline Materials": [
+        "Business and managerial strategy",
+        "Generic decision support and human-AI workflow",
+        "Policy-adjacent service delivery and operations",
+        "Generic negotiation and behavioral games",
+        "Generic AI safety and language-bias background",
+        "General forecasting benchmarks",
+    ],
 }
 
 THEME_ASSIGNMENTS = """
@@ -181,8 +190,8 @@ Foundations, Surveys, and Methods|Strategic reasoning and game-theoretic reviews
 Foundations, Surveys, and Methods|Evaluation, validity, and contamination|AI Agents Alone Are Not (Yet) Sufficient for Social Simulation
 Foundations, Surveys, and Methods|Evaluation, validity, and contamination|LLM-Based Social Simulations Require a Boundary
 Foundations, Surveys, and Methods|Evaluation, validity, and contamination|Leak, Cheat, Repeat: Data Contamination and Evaluation Malpractices in Closed-Source LLMs
-Foundations, Surveys, and Methods|Evaluation, validity, and contamination|Determinants of LLM-assisted Decision-Making
-Foundations, Surveys, and Methods|Evaluation, validity, and contamination|Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making
+Peripheral and Borderline Materials|Generic decision support and human-AI workflow|Determinants of LLM-assisted Decision-Making
+Peripheral and Borderline Materials|Generic decision support and human-AI workflow|Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|Computer-Assisted Text Analysis for Comparative Politics
 Classical Political NLP and Information Extraction|Political text as data and policy-position extraction|A Method of Automated Nonparametric Content Analysis for Social Science
@@ -307,38 +316,38 @@ Policymaking, Governance, and Institutional Decision Support|Policy persuasion a
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Toward an artificial deliberation? On Google DeepMind’s Habermas Machine
 Policymaking, Governance, and Institutional Decision Support|Policy persuasion and democratic deliberation|Opportunities and Risks of LLMs for Scalable Deliberation with Polis
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Biased LLMs can Influence Political Decision-Making
-Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Generative Artificial Intelligence and Evaluating Strategic Decisions
+Peripheral and Borderline Materials|Business and managerial strategy|Generative Artificial Intelligence and Evaluating Strategic Decisions
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|The LLM Effect: Are Humans Truly Using LLMs, or Are They Being Influenced By Them Instead?
-Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Can A Society of Generative Agents Simulate Human Behavior and Inform Public Health Policy? A Case Study on Vaccine Hesitancy
+Peripheral and Borderline Materials|Policy-adjacent service delivery and operations|Can A Society of Generative Agents Simulate Human Behavior and Inform Public Health Policy? A Case Study on Vaccine Hesitancy
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|LLM Powered Social Digital Twins: A Framework for Simulating Population Behavioral Response to Policy Interventions
 Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|WhatIf: Interactive Exploration of LLM-Powered Social Simulations for Policy Reasoning
-Policymaking, Governance, and Institutional Decision Support|Strategic and institutional decision support|Social Policy of Large Language Models: How GPT, Claude, DeepSeek and Grok Allocate Social Budgets in Spain and Germany
+Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|Social Policy of Large Language Models: How GPT, Claude, DeepSeek and Grok Allocate Social Budgets in Spain and Germany
 Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|Human-AI Interactions in Public Sector Decision-Making:"Automation Bias"and"Selective Adherence"to Algorithmic Advice
 Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|What Makes LLM Agent Simulations Useful for Policy? Insights From an Iterative Design Engagement in Emergency Preparedness
 Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|Are We Asking the Right Questions?: Designing for Community Stakeholders’ Interactions with AI in Policing
 Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|A Methodology to Develop Agent-Based Models for Policy Support Via Qualitative Inquiry
-Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|An Institutional Theory Framework for Leveraging Large Language Models for Policy Analysis and Intervention Design
+Peripheral and Borderline Materials|Generic decision support and human-AI workflow|An Institutional Theory Framework for Leveraging Large Language Models for Policy Analysis and Intervention Design
 Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|More than an IT system in the government: The work divide challenges in human-AI coworking context
-Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|Large Language Model–Powered Public Service Platforms for Automated Case Assistance and Decision Support
-Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|Human‑Centered Governance for AI‑Augmented Decision Support in Public‑Sector Logistics
-Policymaking, Governance, and Institutional Decision Support|Public-sector decision support and institutional workflow|Institutionalizing Predictive AI in Public Administration: Algorithmic Governance and the Case of a Wildfire Forecasting System
-Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|DataGovBench: Benchmarking LLM Agents for Real-World Data Governance Workflows
+Peripheral and Borderline Materials|Policy-adjacent service delivery and operations|Large Language Model–Powered Public Service Platforms for Automated Case Assistance and Decision Support
+Peripheral and Borderline Materials|Policy-adjacent service delivery and operations|Human‑Centered Governance for AI‑Augmented Decision Support in Public‑Sector Logistics
+Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|Institutionalizing Predictive AI in Public Administration: Algorithmic Governance and the Case of a Wildfire Forecasting System
+Peripheral and Borderline Materials|Generic decision support and human-AI workflow|DataGovBench: Benchmarking LLM Agents for Real-World Data Governance Workflows
 Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|Audit Trails for Accountability in Large Language Models
 Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|Informing Human Decision-Making in Public Administration through NLP Algorithm Audits
 Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|Impacts of AI-based anti-corruption audits on risk aversion in decision-making: a case study of the Brazilian ALICE tool
 Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|AI and Corruption: Legal Liability in Algorithmic Decision-Making
 Policymaking, Governance, and Institutional Decision Support|Accountability, auditing, and public-sector AI governance|Governing AI with trust: an adaptive framework for institutional legitimacy in the UK public sector
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|How Well Can AI Do Strategy? Empirical Benchmarking Using Strategy Simulations
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|AI-Augmented Strategic Decision-Making Under Time Constraints: An Experimental Study on Mental Representations and Strategic Foresight
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Towards Using Prompt Engineering in Large Language Models to Assist Decision Making
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Beyond Black Boxes: Designing and Testing Agentic AI Systems for Strategy
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Can AI Do Strategy?
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Advancing Decision-Making through AI-Human Collaboration: A Systematic Review and Conceptual Framework
-Policymaking, Governance, and Institutional Decision Support|AI-assisted strategy and managerial decision-making|Can AI Do Strategy? A Dialogue and Debate
-Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|Reproducing and Extending Experiments in Behavioral Strategy with Large Language Models
-Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|AI strategy under institutional pressure: strategic conformity and decision-making in large language models
-Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|Bias in, symbolic compliance out? GPT's reliance on gender and race in strategic evaluations
-Policymaking, Governance, and Institutional Decision Support|Strategic evaluation, bias, and foresight|From Problems to Solutions in Strategic Decision-Making: The Effects of Generative AI on Problem Formulation
+Peripheral and Borderline Materials|Business and managerial strategy|How Well Can AI Do Strategy? Empirical Benchmarking Using Strategy Simulations
+Peripheral and Borderline Materials|Business and managerial strategy|AI-Augmented Strategic Decision-Making Under Time Constraints: An Experimental Study on Mental Representations and Strategic Foresight
+Peripheral and Borderline Materials|Generic decision support and human-AI workflow|Towards Using Prompt Engineering in Large Language Models to Assist Decision Making
+Peripheral and Borderline Materials|Business and managerial strategy|Beyond Black Boxes: Designing and Testing Agentic AI Systems for Strategy
+Peripheral and Borderline Materials|Business and managerial strategy|Can AI Do Strategy?
+Peripheral and Borderline Materials|Generic decision support and human-AI workflow|Advancing Decision-Making through AI-Human Collaboration: A Systematic Review and Conceptual Framework
+Peripheral and Borderline Materials|Business and managerial strategy|Can AI Do Strategy? A Dialogue and Debate
+Peripheral and Borderline Materials|Business and managerial strategy|Reproducing and Extending Experiments in Behavioral Strategy with Large Language Models
+Peripheral and Borderline Materials|Business and managerial strategy|AI strategy under institutional pressure: strategic conformity and decision-making in large language models
+Peripheral and Borderline Materials|Business and managerial strategy|Bias in, symbolic compliance out? GPT's reliance on gender and race in strategic evaluations
+Peripheral and Borderline Materials|Business and managerial strategy|From Problems to Solutions in Strategic Decision-Making: The Effects of Generative AI on Problem Formulation
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Human-level play in the game of Diplomacy by combining language models with strategic reasoning
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Critical Foreign Policy Decisions Benchmark: Measuring Diplomatic Preferences in Large Language Models
 Geopolitics, Diplomacy, National Security, and Wargaming|Diplomacy and international institutions|Benchmarking LLMs for Political Science: A United Nations Perspective / United Nations Benchmark
@@ -384,7 +393,7 @@ Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and dataset
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|OpenEP: Open-Ended Future Event Prediction
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Forecasting Future World Events with Neural Networks
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Bench to the Future: A Pastcasting Benchmark for Forecasting Agents
-Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|The Future Outcome Reasoning and Confidence Assessment Benchmark
+Peripheral and Borderline Materials|General forecasting benchmarks|The Future Outcome Reasoning and Confidence Assessment Benchmark
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|Automating Forecasting Question Generation and Resolution for AI Evaluation
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|PROPHET: An Inferable Future Forecasting Benchmark with Causal Intervened Likelihood Estimation
 Forecasting, Geopolitical Risk, and Foresight|Forecasting benchmarks and datasets|LLM-as-a-Prophet: Understanding Predictive Intelligence with Prophet Arena
@@ -424,25 +433,25 @@ Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and stra
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Strategic behavior of large language models and the role of game structure versus contextual framing
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|GTBench: Uncovering the Strategic Reasoning Limitations of LLMs via Game-Theoretic Evaluations
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|GameBench: Evaluating Strategic Reasoning Abilities of LLM Agents
-Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|How Far Are We on the Decision-Making of LLMs? Evaluating LLMs' Gaming Ability in Multi-Agent Environments
-Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Game-theoretic LLM: Agent Workflow for Negotiation Games
-Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Decision-Making Behavior Evaluation Framework for LLMs under Uncertain Context
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|How Far Are We on the Decision-Making of LLMs? Evaluating LLMs' Gaming Ability in Multi-Agent Environments
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|Game-theoretic LLM: Agent Workflow for Negotiation Games
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|Decision-Making Behavior Evaluation Framework for LLMs under Uncertain Context
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially?
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Multi-Agent Strategic Games with LLMs
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Strategic Reasoning with Language Models
 Strategic Reasoning, Games, Negotiation, and Cooperation|Game-theoretic and strategic reasoning benchmarks|Why Do LLMs Struggle in Strategic Play? Broken Links Between Observations, Beliefs, and Actions
-Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents
-Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf
-Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback
-Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|Measuring Bargaining Abilities of LLMs: A Benchmark and A Buyer-Enhancement Method
-Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|When Reasoning Models Hurt Behavioral Simulation: A Solver-Sampler Mismatch in Multi-Agent LLM Negotiation
-Strategic Reasoning, Games, Negotiation, and Cooperation|Negotiation, bargaining, and communication games|LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation Games
-Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social dilemmas|Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents
-Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social dilemmas|Nicer Than Humans: How do Large Language Models Behave in the Prisoner's Dilemma?
-Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social dilemmas|Shall We Team Up: Exploring Spontaneous Cooperation of Competing LLM Agents
-Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social dilemmas|Cultural Evolution of Cooperation among LLM Agents
-Strategic Reasoning, Games, Negotiation, and Cooperation|Cooperation and social dilemmas|Communication Enhances LLMs' Stability in Strategic Thinking
-Strategic Reasoning, Games, Negotiation, and Cooperation|Behavioral game tests and human-like strategy|A Turing test of whether AI chatbots are behaviorally similar to humans
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|Measuring Bargaining Abilities of LLMs: A Benchmark and A Buyer-Enhancement Method
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|When Reasoning Models Hurt Behavioral Simulation: A Solver-Sampler Mismatch in Multi-Agent LLM Negotiation
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation Games
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|Nicer Than Humans: How do Large Language Models Behave in the Prisoner's Dilemma?
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|Shall We Team Up: Exploring Spontaneous Cooperation of Competing LLM Agents
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|Cultural Evolution of Cooperation among LLM Agents
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|Communication Enhances LLMs' Stability in Strategic Thinking
+Peripheral and Borderline Materials|Generic negotiation and behavioral games|A Turing test of whether AI chatbots are behaviorally similar to humans
 Strategic Reasoning, Games, Negotiation, and Cooperation|Behavioral game tests and human-like strategy|Simulating Human Strategic Behavior: Comparing Single and Multi-agent LLMs
 Strategic Reasoning, Games, Negotiation, and Cooperation|Behavioral game tests and human-like strategy|Simulating Strategic Reasoning: Comparing the Ability of Single LLMs and Multi-Agent Systems to Replicate Human Behavior
 Strategic Reasoning, Games, Negotiation, and Cooperation|Behavioral game tests and human-like strategy|Beyond Nash Equilibrium: Bounded Rationality of LLMs and humans in Strategic Decision-making
@@ -503,10 +512,10 @@ AI Safety, Influence Operations, and Societal Risk|Influence operations and pers
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Recent Trends in Online Foreign Influence Efforts
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|How Strategic Information Operations Affect Peacekeeping: Two Case Studies from the Central African Republic
 AI Safety, Influence Operations, and Societal Risk|Influence operations and persuasion risk|Whose story wins? LLM-powered chatbots as sites and agents of memory-political contestation and corporate greenwashing
-AI Safety, Influence Operations, and Societal Risk|Deception, multi-agent risk, and control|Multi-Agent Risks from Advanced AI
-AI Safety, Influence Operations, and Societal Risk|Deception, multi-agent risk, and control|AI deception: A survey of examples, risks, and potential solutions
-AI Safety, Influence Operations, and Societal Risk|Bias, toxicity, and cultural alignment risks|Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity
-AI Safety, Influence Operations, and Societal Risk|Bias, toxicity, and cultural alignment risks|Diversity and language technology: how language modeling bias causes epistemic injustice
+Peripheral and Borderline Materials|Generic AI safety and language-bias background|Multi-Agent Risks from Advanced AI
+Peripheral and Borderline Materials|Generic AI safety and language-bias background|AI deception: A survey of examples, risks, and potential solutions
+Peripheral and Borderline Materials|Generic AI safety and language-bias background|Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity
+Peripheral and Borderline Materials|Generic AI safety and language-bias background|Diversity and language technology: how language modeling bias causes epistemic injustice
 """.strip()
 
 
@@ -554,6 +563,7 @@ THEME_DISPLAY_NAMES = {
     "Strategic Reasoning, Games, Negotiation, and Cooperation": "Strategic Reasoning and Multi-Agent Games",
     "Multi-Agent Social Simulation and Synthetic Societies": "Social Simulation and Synthetic Populations",
     "AI Safety, Influence Operations, and Societal Risk": "Risks, Bias, and Influence Operations",
+    "Peripheral and Borderline Materials": "Peripheral and Borderline",
 }
 
 THEME_NOTES = {
@@ -567,6 +577,7 @@ THEME_NOTES = {
     "Strategic Reasoning, Games, Negotiation, and Cooperation": "LLM strategic reasoning in games, bargaining, negotiation, cooperation, and multi-agent social dilemmas.",
     "Multi-Agent Social Simulation and Synthetic Societies": "Generative agents, synthetic populations, and large-scale simulations of social networks or political behavior.",
     "AI Safety, Influence Operations, and Societal Risk": "Political influence, persuasion risk, deception, bias, and social risks relevant to governance and strategy.",
+    "Peripheral and Borderline Materials": "Useful but non-core adjacent work kept visible for auditability; these items should not drive the public README route unless later evidence establishes a direct politics, policy, geopolitical, or strategic-studies link.",
 }
 
 IMPORTANCE_OVERRIDES = {
@@ -595,6 +606,94 @@ IMPORTANCE_OVERRIDES = {
         "Validation is the central challenge for generative social simulation: a critical review of LLMs in agent-based modeling",
         "Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations",
         "Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity",
+    ]
+}
+
+IMPORTANCE_DOWNGRADES = {
+    normalize(title): label
+    for title, label in [
+        ("Generative Artificial Intelligence and Evaluating Strategic Decisions", "Curated"),
+        ("Generative Agents: Interactive Simulacra of Human Behavior", "Important"),
+        ("Large language models empowered agent-based modeling and simulation: a survey and perspectives", "Curated"),
+        ("From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents", "Curated"),
+        ("AI Agents Alone Are Not (Yet) Sufficient for Social Simulation", "Curated"),
+        ("SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially?", "Important"),
+        ("GTBench: Uncovering the Strategic Reasoning Limitations of LLMs via Game-Theoretic Evaluations", "Curated"),
+        ("GameBench: Evaluating Strategic Reasoning Abilities of LLM Agents", "Curated"),
+        ("Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies", "Curated"),
+        ("AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society", "Curated"),
+        ("GA-S3: Comprehensive Social Network Simulation with Group Agents", "Curated"),
+        ("The Power of Simplicity in LLM-Based Event Forecasting", "Curated"),
+        ("Do Language Models Update their Forecasts with New Information?", "Watchlist"),
+        ("Hyperdemocracy: Towards Creative Consensus Building between Humans and AI", "Curated"),
+        ("Sci2Pol: Evaluating and Fine-tuning LLMs on Scientific-to-Policy Brief Generation", "Curated"),
+        ("Benchmarking LLMs for Political Science: A United Nations Perspective / United Nations Benchmark", "Important"),
+        ("DataGovBench: Benchmarking LLM Agents for Real-World Data Governance Workflows", "Watchlist"),
+        ("Audit Trails for Accountability in Large Language Models", "Curated"),
+        (
+            "Institutionalizing Predictive AI in Public Administration: Algorithmic Governance and the Case of a Wildfire Forecasting System",
+            "Curated",
+        ),
+        ("The Future Outcome Reasoning and Confidence Assessment Benchmark", "Curated"),
+        ("ARMOR 2025: A Military-Aligned Benchmark for Evaluating Large Language Model Safety Beyond Civilian Contexts", "Curated"),
+        ("Critical Foreign Policy Decisions Benchmark: Measuring Diplomatic Preferences in Large Language Models", "Important"),
+        ("UNSC-Bench: Evaluating LLM Diplomatic Role-Playing Through UN Security Council Vote Prediction", "Important"),
+        ("WARBENCH: A Comprehensive Benchmark for Evaluating LLMs in Military Decision-Making", "Important"),
+        (
+            "Red Lines and Grey Zones in the Fog of War: Benchmarking Legal Risk, Moral Harm, and Regional Bias in Large Language Model Military Decision-Making",
+            "Important",
+        ),
+        ("ThinkTank-ME: A Multi-Expert Framework for Middle East Event Forecasting", "Important"),
+        ("Forecasting Future International Events: A Reliable Dataset for Text-Based Event Modeling / WORLDREP", "Important"),
+        ("Determinants of LLM-assisted Decision-Making", "Watchlist"),
+        ("Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making", "Watchlist"),
+        ("Human‑Centered Governance for AI‑Augmented Decision Support in Public‑Sector Logistics", "Watchlist"),
+        ("Large Language Model–Powered Public Service Platforms for Automated Case Assistance and Decision Support", "Watchlist"),
+        ("An Institutional Theory Framework for Leveraging Large Language Models for Policy Analysis and Intervention Design", "Watchlist"),
+        (
+            "Can A Society of Generative Agents Simulate Human Behavior and Inform Public Health Policy? A Case Study on Vaccine Hesitancy",
+            "Watchlist",
+        ),
+        (
+            "Social Policy of Large Language Models: How GPT, Claude, DeepSeek and Grok Allocate Social Budgets in Spain and Germany",
+            "Watchlist",
+        ),
+        ("Can AI Do Strategy? A Dialogue and Debate", "Watchlist"),
+        ("How Well Can AI Do Strategy? Empirical Benchmarking Using Strategy Simulations", "Watchlist"),
+        (
+            "AI-Augmented Strategic Decision-Making Under Time Constraints: An Experimental Study on Mental Representations and Strategic Foresight",
+            "Watchlist",
+        ),
+        ("Beyond Black Boxes: Designing and Testing Agentic AI Systems for Strategy", "Watchlist"),
+        ("Can AI Do Strategy?", "Watchlist"),
+        (
+            "AI strategy under institutional pressure: strategic conformity and decision-making in large language models",
+            "Watchlist",
+        ),
+        ("Bias in, symbolic compliance out? GPT's reliance on gender and race in strategic evaluations", "Watchlist"),
+        ("Reproducing and Extending Experiments in Behavioral Strategy with Large Language Models", "Watchlist"),
+        ("From Problems to Solutions in Strategic Decision-Making: The Effects of Generative AI on Problem Formulation", "Watchlist"),
+        ("Advancing Decision-Making through AI-Human Collaboration: A Systematic Review and Conceptual Framework", "Watchlist"),
+        ("Towards Using Prompt Engineering in Large Language Models to Assist Decision Making", "Watchlist"),
+        ("SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents", "Curated"),
+        ("Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf", "Watchlist"),
+        ("Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback", "Watchlist"),
+        ("Measuring Bargaining Abilities of LLMs: A Benchmark and A Buyer-Enhancement Method", "Watchlist"),
+        ("When Reasoning Models Hurt Behavioral Simulation: A Solver-Sampler Mismatch in Multi-Agent LLM Negotiation", "Watchlist"),
+        ("LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation Games", "Watchlist"),
+        ("How Far Are We on the Decision-Making of LLMs? Evaluating LLMs' Gaming Ability in Multi-Agent Environments", "Watchlist"),
+        ("Game-theoretic LLM: Agent Workflow for Negotiation Games", "Watchlist"),
+        ("Decision-Making Behavior Evaluation Framework for LLMs under Uncertain Context", "Watchlist"),
+        ("Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents", "Watchlist"),
+        ("Nicer Than Humans: How do Large Language Models Behave in the Prisoner's Dilemma?", "Watchlist"),
+        ("Shall We Team Up: Exploring Spontaneous Cooperation of Competing LLM Agents", "Watchlist"),
+        ("Cultural Evolution of Cooperation among LLM Agents", "Watchlist"),
+        ("Communication Enhances LLMs' Stability in Strategic Thinking", "Watchlist"),
+        ("A Turing test of whether AI chatbots are behaviorally similar to humans", "Watchlist"),
+        ("AI deception: A survey of examples, risks, and potential solutions", "Watchlist"),
+        ("Multi-Agent Risks from Advanced AI", "Watchlist"),
+        ("Generative Exaggeration in LLM Social Agents: Consistency, Bias, and Toxicity", "Watchlist"),
+        ("Diversity and language technology: how language modeling bias causes epistemic injustice", "Watchlist"),
     ]
 }
 
@@ -713,6 +812,8 @@ def display_year(value: str) -> str:
 
 def normalize_importance(title: str, value: str) -> str:
     key = normalize(title)
+    if key in IMPORTANCE_DOWNGRADES:
+        return IMPORTANCE_DOWNGRADES[key]
     if key in IMPORTANCE_OVERRIDES:
         return IMPORTANCE_OVERRIDES[key]
     normalized = (value or "Curated").strip()
